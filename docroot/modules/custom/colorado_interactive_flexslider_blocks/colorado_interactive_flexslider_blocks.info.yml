@@ -1,0 +1,14 @@
+name: 'Flexslider Blocks'
+description: 'Configuration for Flexslider Blocks'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - field
+  - file
+  - flexslider
+  - flexslider_fields
+  - image
+  - text
+version: 8.x
+package: 'Colorado Interactive'

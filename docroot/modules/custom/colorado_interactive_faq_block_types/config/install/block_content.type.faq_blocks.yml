@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: faq_blocks
+label: 'FAQ Blocks'
+revision: 1
+description: 'Questions and Answer Block using accordion animation.'

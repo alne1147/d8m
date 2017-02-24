@@ -1,0 +1,12 @@
+name: 'Location Blocks'
+description: 'Location Block Type Configuration'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - field
+  - simple_gmap
+  - text
+  - workbench_moderation
+version: '8'
+package: 'Colorado Interactive'
