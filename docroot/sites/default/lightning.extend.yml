@@ -22,6 +22,9 @@ modules:
   - linkit
   - masquerade
   - simple_gmap
+  - colorado_interactive_faq_block_types
+  - colorado_interactive_flexslider_blocks
+  - colorado_interactive_location_blocks
   - default_content
   - d8m_content
 #

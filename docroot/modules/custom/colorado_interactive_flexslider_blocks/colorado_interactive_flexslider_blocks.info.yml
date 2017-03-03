@@ -10,5 +10,6 @@ dependencies:
   - flexslider_fields
   - image
   - text
+  - workbench_moderation
 version: 8.x
 package: 'Colorado Interactive'
