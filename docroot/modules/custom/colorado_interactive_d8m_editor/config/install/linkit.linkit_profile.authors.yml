@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: authors
+label: Authors
+description: 'For content editors.'
+attributes: {  }
+matchers:
+  d0b879b2-ac19-4777-9bcc-b284f8fca1c5:
+    uuid: d0b879b2-ac19-4777-9bcc-b284f8fca1c5
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        landing_page: landing_page
+        page: page
+      group_by_bundle: false
+      include_unpublished: false
