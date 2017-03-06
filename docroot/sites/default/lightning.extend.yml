@@ -27,6 +27,15 @@ modules:
   - colorado_interactive_location_blocks
   - default_content
   - d8m_content
+  - color
+  - ckeditor_balloonpanel
+  - ckeditor_a11ychecker
+  - ckeditor_btns
+  - ckeditor_font
+  - ckeditor_smiley
+  - ckeditor_widgets
+  - colorbutton
+  - panelbutton
 #
 #
 # # A system path to redirect to once installation is complete.
