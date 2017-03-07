@@ -1,0 +1,10 @@
+always_save_userinfo: true
+userinfo_mappings:
+  timezone: zoneinfo
+  ldap_user_puid_sid: 0
+  ldap_user_puid: 0
+  ldap_user_puid_property: 0
+  ldap_user_current_dn: 0
+  ldap_user_prov_entries: 0
+  ldap_user_last_checked: 0
+  ldap_user_ldap_exclude: 0
