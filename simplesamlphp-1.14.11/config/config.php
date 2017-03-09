@@ -1,41 +1,27 @@
 <?php
-/*
- * The configuration of SimpleSAMLphp
- *
- */
-
-$$config = (
-  // Default Library settings template.
-  // I would not recommend to change any of those settings
-  // Instead just override them below the `$config` varaible.
-);
-
 // All custom changes below. Modify as needed.
 // Defines account specific settings.
 // $ah_options['database_name'] should be the Acquia Cloud workflow database name which
 // will store SAML session information.set
 // You can use any database that you have defined in your workflow.
 // Use the database "role" without the stage ("dev", "stage", or "test", etc.)
+//This file was last modified on Nov 4, 2015.
 $ah_options = array(
-  'database_name' => '[DATABASE-NAME]',
+  'database_name' => 'coloradoddb124446',
   'session_store' => array(
-    'prod' => 'memcache', // This can be either `memcache` or `database`
-    'test' => 'memcache', // This can be either `memcache` or `database`
-    'dev'  => 'database', // This can be either `memcache` or `database`
+    'prod' => 'memcache',
+    'test' => 'memcache',
+    'dev'  => 'database',
   ),
 );
-// Base URL
-$config['baseurlpath'] = 'https://'. $_SERVER['HTTP_HOST'] .'/simplesaml/';
-// Remove memcache prefix
-unset($config['memcache_store.prefix']);
 // Set some security and other configs that are set above, however we
 // overwrite them here to keep all changes in one area
-$config['technicalcontact_name'] = "Technical Contact Name";
-$config['technicalcontact_email'] = "email@example.com";
+$config['baseurlpath'] = "https://{$_SERVER['SERVER_NAME']}/simplesaml/";
+$config['technicalcontact_name'] = "Your Name";
+$config['technicalcontact_email'] = "your_email@yourdomain.com";
 // Change these for your installation
-$config['secretsalt'] = '[YOUR-SECERET-SALT]';
-$config['auth.adminpassword'] = '[ADMIN-PASSWORD]';
-$config['admin.protectindexpage'] = TRUE;
+$config['secretsalt'] = 'y0h9d13pki9qdhfm3l5nws4jjn55j6hj';
+$config['auth.adminpassword'] = 'mysupersecret';
 // Prevent Varnish from interfering with SimpleSAMLphp.
 setcookie('NO_CACHE', '1');
 if (empty($_ENV['AH_SITE_ENVIRONMENT'])) {
