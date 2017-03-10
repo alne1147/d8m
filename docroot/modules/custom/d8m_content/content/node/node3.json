@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/1?_format=hal_json"
+            "href": "http:\/\/default\/node\/3?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
@@ -20,17 +20,17 @@
     },
     "nid": [
         {
-            "value": "1"
+            "value": "3"
         }
     ],
     "uuid": [
         {
-            "value": "0fccf698-d727-4dee-87fb-ec834cf0fdbc"
+            "value": "af8d7458-5276-4df9-9ba4-92cfaf92f8da"
         }
     ],
     "vid": [
         {
-            "value": "4"
+            "value": "7"
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "title": [
         {
-            "value": "Home",
+            "value": "Demo Page",
             "lang": "en"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "4bd8c1c3-7ff6-4c9d-9adc-aa1ea19e6a77"
+                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
                     }
                 ],
                 "lang": "en"
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "4bd8c1c3-7ff6-4c9d-9adc-aa1ea19e6a77"
+                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
                     }
                 ]
             }
@@ -95,13 +95,13 @@
     ],
     "created": [
         {
-            "value": "1488479191",
+            "value": "1489100255",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "1488488730",
+            "value": "1489100811",
             "lang": "en"
         }
     ],
@@ -119,7 +119,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "1488488551"
+            "value": "1489100298"
         }
     ],
     "revision_translation_affected": [
@@ -142,8 +142,8 @@
     ],
     "body": [
         {
-            "value": "<p>Pellentesque habitant morbi tristique senectus et netus. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Tityre, tu patulae recubans sub tegmine fagi &nbsp;dolor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus.<\/p>\r\n",
-            "format": "rich_text",
+            "value": "<p>This is a demo page with elements that display blocks and other examples.<\/p>\r\n",
+            "format": "ci_d8_editor",
             "summary": "",
             "lang": "en"
         }
@@ -160,38 +160,68 @@
             "default": "__bundle_default__",
             "panels_display": {
                 "blocks": {
-                    "b785708b-ac05-4715-83cf-ec9e4ce54e52": {
-                        "id": "system_menu_block:account",
-                        "label": "User account menu",
-                        "provider": "system",
+                    "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259": {
+                        "id": "block_content:c980713f-0f72-4d3a-87dc-e6a0710da171",
+                        "label": "Basic Block",
+                        "provider": "block_content",
                         "label_display": "visible",
-                        "level": "1",
-                        "depth": "0",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
                         "context_mapping": [],
-                        "region": "left_below",
-                        "uuid": "b785708b-ac05-4715-83cf-ec9e4ce54e52",
+                        "region": "left",
+                        "uuid": "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259",
                         "weight": 1
                     },
-                    "57d0ed1b-e991-4e3c-a30d-ac731b617285": {
-                        "id": "masquerade",
-                        "label": "Masquerade",
-                        "provider": "masquerade",
-                        "label_display": 0,
+                    "6b8100f6-a751-48f3-8969-5d54fc7510af": {
+                        "id": "block_content:947ed954-da66-49fc-95b2-6d7396465f7c",
+                        "label": "FAQ Block",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
                         "context_mapping": [],
-                        "region": "right_above",
-                        "uuid": "57d0ed1b-e991-4e3c-a30d-ac731b617285",
+                        "region": "middle",
+                        "uuid": "6b8100f6-a751-48f3-8969-5d54fc7510af",
                         "weight": 1
+                    },
+                    "f0889157-54ed-402f-ba47-1c900a8e340b": {
+                        "id": "block_content:e21f4ff4-0b51-4017-a225-6a9e88c7267c",
+                        "label": "FlexSlider Block",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "right",
+                        "uuid": "f0889157-54ed-402f-ba47-1c900a8e340b",
+                        "weight": 1
+                    },
+                    "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2": {
+                        "id": "block_content:03dacdd7-f00a-48f3-99ca-492789ca1356",
+                        "label": "Location Block",
+                        "provider": "block_content",
+                        "label_display": "visible",
+                        "status": true,
+                        "info": "",
+                        "view_mode": "full",
+                        "context_mapping": [],
+                        "region": "left",
+                        "uuid": "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2",
+                        "weight": 2
                     }
                 },
                 "id": "panels_variant",
                 "uuid": "1a312aa0-75a2-4467-8421-33670a7bd039",
                 "label": "Single Column",
                 "weight": 0,
-                "layout": "twocol_bricks",
+                "layout": "threecol_33_34_33_stacked",
                 "layout_settings": [],
                 "page_title": "[node:title]",
                 "storage_type": "panelizer_field",
-                "storage_id": "node:1:full",
+                "storage_id": "node:3:full",
                 "pattern": "panelizer",
                 "builder": "ipe",
                 "static_context": []

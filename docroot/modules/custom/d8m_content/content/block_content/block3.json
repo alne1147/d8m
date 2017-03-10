@@ -1,0 +1,170 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/flex_sliders"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/flex_sliders\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/flex_sliders\/field_images": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-03\/highway-wallpaper-3-798x350.jpg"
+            },
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-03\/lightning-10_3598416k.jpg"
+            },
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2017-03\/recent-images-11.jpg"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": "3"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e21f4ff4-0b51-4017-a225-6a9e88c7267c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "flex_sliders"
+        }
+    ],
+    "info": [
+        {
+            "value": "FlexSlider Block",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1489100706",
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1489100706"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/flex_sliders\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/flex_sliders\/field_images": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-03\/highway-wallpaper-3-798x350.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fff29383-573b-432f-afa5-8bf7cae698ed"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/2017-03\/highway-wallpaper-3-798x350.jpg"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-03\/lightning-10_3598416k.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c8918502-ac7a-4429-b2a3-e84d2a4c47c0"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/2017-03\/lightning-10_3598416k.jpg"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2017-03\/recent-images-11.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "60e70302-c2de-425f-9996-a9b39257bfb1"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/2017-03\/recent-images-11.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Cum sociis natoque penatibus et magnis dis parturient. Hi omnes lingua, institutis, legibus inter se differunt. A communi observantia non est recedendum. Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus. Phasellus laoreet lorem vel dolor tempus vehicula.<\/p>\r\n",
+            "format": "ci_d8_editor",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

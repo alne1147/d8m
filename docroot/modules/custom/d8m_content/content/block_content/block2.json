@@ -1,0 +1,109 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/faq_blocks"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/faq_blocks\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": "2"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "947ed954-da66-49fc-95b2-6d7396465f7c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "faq_blocks"
+        }
+    ],
+    "info": [
+        {
+            "value": "FAQ Block",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1489100483",
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1489100483"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/faq_blocks\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
+                    }
+                ]
+            }
+        ]
+    },
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Here are some FAQ's.<\/p>\n",
+            "format": "ci_d8_editor",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_faq": [
+        {
+            "question": "Question 1",
+            "answer": "Answer to that Question.",
+            "answer_format": "plain_text"
+        },
+        {
+            "question": "Question 2",
+            "answer": "Another answer to that question.",
+            "answer_format": "plain_text"
+        }
+    ]
+}
