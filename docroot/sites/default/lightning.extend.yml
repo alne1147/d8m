@@ -22,6 +22,32 @@ modules:
   - linkit
   - masquerade
   - simple_gmap
+  - default_content
+  - color
+  - ckeditor_balloonpanel
+  - ckeditor_a11ychecker
+  - ckeditor_btns
+  - ckeditor_font
+  - ckeditor_smiley
+  - ckeditor_widgets
+  - colorbutton
+  - panelbutton
+  - pathauto
+  - features_ui
+
+  #Features
+  - colorado_interactive_d8m_editor
+  - colorado_interactive_faq_block_types
+  - colorado_interactive_flexslider_blocks
+  - colorado_interactive_location_blocks
+
+  # #Custom modules
+  # - d8m_content
+
+themes:
+  - bartik
+  - seven
+  - ci_xy
 #
 #
 # # A system path to redirect to once installation is complete.
