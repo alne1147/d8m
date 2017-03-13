@@ -32,6 +32,8 @@ modules:
   - ckeditor_widgets
   - colorbutton
   - panelbutton
+  - pathauto
+  - features_ui
 
   #Features
   - colorado_interactive_d8m_editor
