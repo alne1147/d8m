@@ -1,0 +1,9 @@
+name: 'Open ID'
+description: 'Open ID Settings'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - openid_connect
+version: 8.x
+package: 'Colorado Interactive'
