@@ -34,6 +34,10 @@ modules:
   - panelbutton
   - pathauto
   - features_ui
+  - edit_ui
+  - edit_ui_block
+  - edit_ui_contextual
+  - panelizer_quickedit
 
   #Features
   - colorado_interactive_d8m_editor
@@ -48,8 +52,8 @@ themes:
   - bartik
   - seven
   - ci_xy
-#
-#
+
+
 # # A system path to redirect to once installation is complete.
 # redirect:
 #   path: acme-install-complete
