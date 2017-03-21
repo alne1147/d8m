@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - paragraphs.paragraphs_type.article_variation
+  module:
+    - text
+id: paragraph.article_variation.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: article_variation
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
