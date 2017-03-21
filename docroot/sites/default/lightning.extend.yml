@@ -44,6 +44,7 @@ modules:
   - colorado_interactive_faq_block_types
   - colorado_interactive_flexslider_blocks
   - colorado_interactive_location_blocks
+  - colorado_interactive_advanced_sliders
 
   # #Custom modules
   # - d8m_content
