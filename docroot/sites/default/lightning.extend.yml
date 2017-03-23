@@ -13,6 +13,7 @@ lightning_extensions:
 
 # List of additional modules to enable after Lightning is installed.
 modules:
+  - bootstrap_layouts
   - features
   - config_ignore
   - faqfield
@@ -34,12 +35,17 @@ modules:
   - panelbutton
   - pathauto
   - features_ui
+  - edit_ui
+  - edit_ui_block
+  - edit_ui_contextual
+  - panelizer_quickedit
 
   #Features
   - colorado_interactive_d8m_editor
   - colorado_interactive_faq_block_types
   - colorado_interactive_flexslider_blocks
   - colorado_interactive_location_blocks
+  - colorado_interactive_advanced_sliders
 
   # #Custom modules
   # - d8m_content
@@ -48,8 +54,8 @@ themes:
   - bartik
   - seven
   - ci_xy
-#
-#
+
+
 # # A system path to redirect to once installation is complete.
 # redirect:
 #   path: acme-install-complete

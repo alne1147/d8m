@@ -1,4 +1,4 @@
-uuid: cc537d95-3703-4468-8f5d-38e00c6de841
+uuid: d5e7e5af-c1b7-4a5e-b95e-eeaec5b1dc28
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
   module:
     - text
     - workbench_moderation
+_core:
+  default_config_hash: IIM_V1O25eBGbx3bdUjzOu03o9FHEKlpkzQ00FqQjHI
 id: block_content.location.default
 targetEntityType: block_content
 bundle: location

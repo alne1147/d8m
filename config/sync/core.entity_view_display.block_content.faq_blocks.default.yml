@@ -1,4 +1,4 @@
-uuid: 1201e73b-cdf4-428b-a68b-d52d839a3cc9
+uuid: 05b212a9-85b4-4076-8502-8e548edf1d5e
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
   module:
     - faqfield
     - text
+_core:
+  default_config_hash: UAUYHa2HIWZyqn_8Qt15OiLVQ4F_D5OFpa9Cg9D2maY
 id: block_content.faq_blocks.default
 targetEntityType: block_content
 bundle: faq_blocks

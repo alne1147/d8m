@@ -1,0 +1,22 @@
+bundle: colorado_interactive
+required:
+  - block_content.type.advanced_sliders
+  - core.entity_form_display.block_content.advanced_sliders.default
+  - core.entity_form_display.paragraph.article_variation.default
+  - core.entity_view_display.block_content.advanced_sliders.default
+  - core.entity_view_display.paragraph.article_variation.default
+  - features.bundle.colorado_interactive
+  - field.field.block_content.advanced_sliders.body
+  - field.field.block_content.advanced_sliders.field_paragraphs
+  - field.field.paragraph.article_variation.field_caption
+  - field.field.paragraph.article_variation.field_headline
+  - field.field.paragraph.article_variation.field_image
+  - field.field.paragraph.article_variation.field_link
+  - field.storage.block_content.field_paragraphs
+  - field.storage.paragraph.field_caption
+  - field.storage.paragraph.field_headline
+  - field.storage.paragraph.field_image
+  - field.storage.paragraph.field_link
+  - image.style.advanced_slider
+  - paragraphs.paragraphs_type.article_variation
+  - slick.optionset.default

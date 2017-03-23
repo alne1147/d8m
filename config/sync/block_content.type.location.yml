@@ -1,7 +1,9 @@
-uuid: b008dab9-71f1-42a5-a4fa-bdba016e02c9
+uuid: cddfdcc1-7e0c-41e4-9f1c-3cf46731be4b
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: '-hCQsRr463JeyKr3URa1_qUYawf1mlpz1wSJTzKtQp8'
 id: location
 label: 'Location Block'
 revision: 1

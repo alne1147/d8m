@@ -1,4 +1,4 @@
-uuid: 3f39ef9f-dd11-4704-aa54-58a0d56f059d
+uuid: f7adc709-33ad-41ca-81d0-b845ef94fb42
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: ci_xy_local_actions
 theme: ci_xy
 region: content
-weight: -20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

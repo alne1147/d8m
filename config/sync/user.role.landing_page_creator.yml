@@ -1,4 +1,4 @@
-uuid: bbd3e249-4592-4bff-a438-986f989cb79c
+uuid: b8157596-0971-4958-84b2-c2c72d1d00d9
 langcode: en
 status: true
 dependencies: {  }
@@ -24,3 +24,4 @@ permissions:
   - 'use needs_review_needs_review transition'
   - 'view latest version'
   - 'access image_browser entity browser pages'
+  - 'view files'

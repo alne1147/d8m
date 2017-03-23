@@ -8,7 +8,7 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/user\/0?_format=hal_json",
                 "lang": "en"
             }
         ],
@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": "7"
+            "value": "10"
         }
     ],
     "langcode": [
@@ -55,7 +55,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/0?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
+                        "value": "5b6ec38d-1e64-4786-b4f1-bce568e590a9"
                     }
                 ],
                 "lang": "en"
@@ -81,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "aff15a09-4382-4a5f-9560-f5cb3228dc2d"
+                        "value": "fdba84d2-4f45-4deb-b542-69d4814d8621"
                     }
                 ]
             }
@@ -89,7 +89,7 @@
     },
     "status": [
         {
-            "value": "0",
+            "value": "1",
             "lang": "en"
         }
     ],
@@ -101,7 +101,7 @@
     ],
     "changed": [
         {
-            "value": "1489100811",
+            "value": "1490292058",
             "lang": "en"
         }
     ],
@@ -119,7 +119,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "1489100298"
+            "value": "1490292058"
         }
     ],
     "revision_translation_affected": [
@@ -136,7 +136,7 @@
     ],
     "moderation_state": [
         {
-            "target_id": "draft",
+            "target_id": "published",
             "lang": "en"
         }
     ],
@@ -160,19 +160,6 @@
             "default": "__bundle_default__",
             "panels_display": {
                 "blocks": {
-                    "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259": {
-                        "id": "block_content:c980713f-0f72-4d3a-87dc-e6a0710da171",
-                        "label": "Basic Block",
-                        "provider": "block_content",
-                        "label_display": "visible",
-                        "status": true,
-                        "info": "",
-                        "view_mode": "full",
-                        "context_mapping": [],
-                        "region": "left",
-                        "uuid": "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259",
-                        "weight": 1
-                    },
                     "6b8100f6-a751-48f3-8969-5d54fc7510af": {
                         "id": "block_content:947ed954-da66-49fc-95b2-6d7396465f7c",
                         "label": "FAQ Block",
@@ -182,21 +169,8 @@
                         "info": "",
                         "view_mode": "full",
                         "context_mapping": [],
-                        "region": "middle",
+                        "region": "upper_left",
                         "uuid": "6b8100f6-a751-48f3-8969-5d54fc7510af",
-                        "weight": 1
-                    },
-                    "f0889157-54ed-402f-ba47-1c900a8e340b": {
-                        "id": "block_content:e21f4ff4-0b51-4017-a225-6a9e88c7267c",
-                        "label": "FlexSlider Block",
-                        "provider": "block_content",
-                        "label_display": "visible",
-                        "status": true,
-                        "info": "",
-                        "view_mode": "full",
-                        "context_mapping": [],
-                        "region": "right",
-                        "uuid": "f0889157-54ed-402f-ba47-1c900a8e340b",
                         "weight": 1
                     },
                     "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2": {
@@ -208,20 +182,20 @@
                         "info": "",
                         "view_mode": "full",
                         "context_mapping": [],
-                        "region": "left",
+                        "region": "upper_right",
                         "uuid": "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2",
-                        "weight": 2
+                        "weight": 1
                     }
                 },
                 "id": "panels_variant",
                 "uuid": "1a312aa0-75a2-4467-8421-33670a7bd039",
                 "label": "Single Column",
                 "weight": 0,
-                "layout": "threecol_33_34_33_stacked",
+                "layout": "booststrap-6-6-bricks",
                 "layout_settings": [],
                 "page_title": "[node:title]",
                 "storage_type": "panelizer_field",
-                "storage_id": "node:3:full",
+                "storage_id": "node:3:full:10",
                 "pattern": "panelizer",
                 "builder": "ipe",
                 "static_context": []

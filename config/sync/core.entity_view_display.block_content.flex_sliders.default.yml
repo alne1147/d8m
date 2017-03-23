@@ -1,4 +1,4 @@
-uuid: 211ff98f-9fd2-415b-9b5f-1e74e6ad6d60
+uuid: ef6e4092-2c13-4263-ba6d-638a1e2b244b
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
   module:
     - flexslider_fields
     - text
+_core:
+  default_config_hash: 8JnrQ8TBitLeJ597Q2tYjpRmAxLwRGEUiU4X0ewSpXs
 id: block_content.flex_sliders.default
 targetEntityType: block_content
 bundle: flex_sliders

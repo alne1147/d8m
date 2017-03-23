@@ -1,0 +1,64 @@
+uuid: eab59cca-7792-41f3-8b47-ef56dc5b9a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ci_d8_editor
+  module:
+    - ckeditor
+_core:
+  default_config_hash: BWWSXjS8W9hjhZocL-l_ccxfR8C7Bpd0jcJHqe2-dIo
+format: ci_d8_editor
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - widgetcommonQuotebox
+            - Underline
+        -
+          name: Links
+          items:
+            - DrupalUnlink
+            - DrupalLink
+            - Linkit
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Smiley
+            - media_browser
+        -
+          name: Tools
+          items:
+            - Table
+            - WidgetTemplateMenu
+            - A11ychecker
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    colorbutton:
+      colors: ''
+    linkit:
+      linkit_profile: authors
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

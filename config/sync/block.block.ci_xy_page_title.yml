@@ -1,4 +1,4 @@
-uuid: f5987373-5808-4ad5-abc0-b85e224be5d3
+uuid: 6488e7e8-5714-4434-810f-a4e82eadf2f9
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: ci_xy_page_title
 theme: ci_xy
 region: content
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

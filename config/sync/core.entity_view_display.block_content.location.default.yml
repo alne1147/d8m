@@ -1,4 +1,4 @@
-uuid: 9a130a81-cce5-4d9d-9bcc-24d706e6f171
+uuid: b1975233-2ee1-42bb-a2f5-fbe13811f921
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
   module:
     - simple_gmap
     - text
+_core:
+  default_config_hash: pngj1W8sgyBftmHrKce5TJAkGMOCp3AvqGheMXfI4GM
 id: block_content.location.default
 targetEntityType: block_content
 bundle: location

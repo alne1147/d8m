@@ -1,0 +1,10 @@
+uuid: e14b6f08-5047-4506-9261-a4bd9b12b02c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yEJ9ePhnZ2Wk0AbGF8e1X4Q4Kvz9fruoqK0S18xgXuk
+id: advanced_sliders
+label: 'Advanced Sliders'
+revision: 1
+description: 'Advanced Slider blocks that provide text, links and images with different variations.'

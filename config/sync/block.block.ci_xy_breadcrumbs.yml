@@ -1,4 +1,4 @@
-uuid: 700f45ce-a030-4661-90eb-75ac6e6aeaaa
+uuid: 3e9c58b2-4349-4fd7-94fd-69548b64fa83
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: ci_xy_breadcrumbs
 theme: ci_xy
 region: branding
-weight: 0
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

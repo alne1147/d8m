@@ -1,4 +1,4 @@
-uuid: c13deba4-3d62-4b81-9699-b980c469f7a1
+uuid: dc24a5a4-d81c-400a-be8c-97a10a2786c1
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: ci_xy_help
 theme: ci_xy
 region: content
-weight: -30
+weight: -7
 provider: null
 plugin: help_block
 settings:

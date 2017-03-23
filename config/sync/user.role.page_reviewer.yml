@@ -1,4 +1,4 @@
-uuid: 8d98b825-01b9-463f-90b5-30cc4cdf0f56
+uuid: 54ab8f6a-2a78-408d-a9ff-d3749650ccc8
 langcode: en
 status: true
 dependencies: {  }
@@ -15,3 +15,4 @@ permissions:
   - 'use needs_review_published transition'
   - 'use published_published transition'
   - 'use published_archived transition'
+  - 'view files'

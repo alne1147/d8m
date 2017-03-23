@@ -1,4 +1,4 @@
-uuid: 7903698a-672d-4277-be26-26a9f80e0f46
+uuid: 16edbf6a-ef77-4f9f-be11-51d36f118d74
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: ci_xy_main_menu
 theme: ci_xy
 region: branding
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

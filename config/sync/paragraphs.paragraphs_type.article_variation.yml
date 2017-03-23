@@ -1,0 +1,8 @@
+uuid: ce34fcc1-05d3-4c0f-8740-df6cc8d8fd6f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rmioptrFQrjTDaCyLmfo032UGCawwjwPYxsABtvTrf4
+id: article_variation
+label: 'Article Variation'

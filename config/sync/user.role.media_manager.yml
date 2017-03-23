@@ -1,4 +1,4 @@
-uuid: 9b619f99-a64d-4a83-8e08-f57ded31b658
+uuid: 1ebe7a5d-ce79-476e-a4de-e15871f4467d
 langcode: en
 status: true
 dependencies: {  }
@@ -14,3 +14,4 @@ permissions:
   - 'administer media'
   - 'administer media bundles'
   - 'access image_browser entity browser pages'
+  - 'view files'

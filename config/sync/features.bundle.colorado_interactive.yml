@@ -1,9 +1,9 @@
-uuid: 5d6b510f-2110-49a9-9e3a-35cb4d97a0a9
+uuid: 2e24a61f-9799-48e4-998c-b9690519d705
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: rV83WLC4NN4hJgui1bMbyMbir3L4Q0NMZ_mBA4dIWxU
+  default_config_hash: 8_Obv1XQMM489etNr4nW2fpm1RkgiD0ndHbzMVe0mPI
 name: 'Colorado Interactive'
 machine_name: colorado_interactive
 description: 'Auto-generated bundle from package Colorado Interactive'
@@ -75,7 +75,7 @@ assignments:
         migration: migration
         shortcut_set: shortcut_set
         tour: tour
-    enabled: false
+    enabled: true
     weight: 10
   site:
     types:
