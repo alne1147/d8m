@@ -1,22 +1,41 @@
 module:
-  acquia_connector: 0
+  blazy: 0
+  blazy_ui: 0
   block: 0
   block_content: 0
   block_styles: 0
+  bootstrap_layouts: 0
   breakpoint: 0
-  ci_layouts: 0
   ckeditor: 0
+  ckeditor_a11ychecker: 0
+  ckeditor_balloonpanel: 0
+  ckeditor_btns: 0
+  ckeditor_font: 0
+  ckeditor_smiley: 0
+  ckeditor_widgets: 0
+  classy_paragraphs: 0
+  color: 0
+  colorado_interactive_advanced_sliders: 0
+  colorado_interactive_d8m_editor: 0
+  colorado_interactive_faq_block_types: 0
+  colorado_interactive_flexslider_blocks: 0
+  colorado_interactive_location_blocks: 0
+  colorbutton: 0
   config: 0
   config_ignore: 0
   config_update: 0
   contact: 0
+  contact_block: 0
   contact_storage: 0
   contextual: 0
   ctools: 0
   ctools_block: 0
   datetime: 0
   dblog: 0
+  default_content: 0
   diff: 0
+  edit_ui: 0
+  edit_ui_contextual: 0
   editor: 0
   embed: 0
   entity: 0
@@ -24,16 +43,20 @@ module:
   entity_browser: 0
   entity_embed: 0
   entity_reference: 0
+  entity_reference_revisions: 0
   faqfield: 0
   features: 0
   features_ui: 0
   field: 0
+  field_slideshow: 0
   field_ui: 0
   file: 0
+  file_entity: 0
   filter: 0
   flexslider: 0
   flexslider_fields: 0
-  flexslider_views: 0
+  google_analytics: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
@@ -56,6 +79,8 @@ module:
   lightning_search: 0
   lightning_workflow: 0
   link: 0
+  linkit: 0
+  masquerade: 0
   media_entity: 0
   media_entity_document: 0
   media_entity_image: 0
@@ -65,20 +90,31 @@ module:
   metatag: 0
   node: 0
   options: 0
+  outside_in: 0
   page_cache: 0
   page_manager: 0
+  panelbutton: 0
   panelizer: 0
   panelizer_quickedit: 0
   panels: 0
   panels_ipe: 0
+  paragraphs: 0
+  paragraphs_layouts: 0
+  paragraphs_type_permissions: 0
   path: 0
   quickedit: 0
   rdf: 0
+  responsive_image: 0
+  rest: 0
   scheduled_updates: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   shortcut: 0
   simple_gmap: 0
+  slick: 0
+  slick_paragraphs: 0
+  slick_ui: 0
   styles_api: 0
   system: 0
   taxonomy: 0
@@ -89,10 +125,14 @@ module:
   user: 0
   video_embed_field: 0
   video_embed_media: 0
+  video_embed_wysiwyg: 0
   views_infinite_scroll: 0
+  views_templates: 0
   views_ui: 0
   workbench_moderation: 0
+  edit_ui_block: 1
   menu_link_content: 1
+  pathauto: 1
   views: 10
 theme:
   stable: 0

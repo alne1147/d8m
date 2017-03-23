@@ -160,19 +160,6 @@
             "default": "__bundle_default__",
             "panels_display": {
                 "blocks": {
-                    "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259": {
-                        "id": "block_content:c980713f-0f72-4d3a-87dc-e6a0710da171",
-                        "label": "Basic Block",
-                        "provider": "block_content",
-                        "label_display": "visible",
-                        "status": true,
-                        "info": "",
-                        "view_mode": "full",
-                        "context_mapping": [],
-                        "region": "bottom",
-                        "uuid": "9cc1a158-9f9b-4cc0-b4db-fe62ddc45259",
-                        "weight": 2
-                    },
                     "6b8100f6-a751-48f3-8969-5d54fc7510af": {
                         "id": "block_content:947ed954-da66-49fc-95b2-6d7396465f7c",
                         "label": "FAQ Block",
@@ -186,19 +173,6 @@
                         "uuid": "6b8100f6-a751-48f3-8969-5d54fc7510af",
                         "weight": 1
                     },
-                    "f0889157-54ed-402f-ba47-1c900a8e340b": {
-                        "id": "block_content:e21f4ff4-0b51-4017-a225-6a9e88c7267c",
-                        "label": "FlexSlider Block",
-                        "provider": "block_content",
-                        "label_display": "visible",
-                        "status": true,
-                        "info": "",
-                        "view_mode": "full",
-                        "context_mapping": [],
-                        "region": "bottom",
-                        "uuid": "f0889157-54ed-402f-ba47-1c900a8e340b",
-                        "weight": 1
-                    },
                     "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2": {
                         "id": "block_content:03dacdd7-f00a-48f3-99ca-492789ca1356",
                         "label": "Location Block",
@@ -210,19 +184,6 @@
                         "context_mapping": [],
                         "region": "upper_right",
                         "uuid": "6a5c581e-1bae-49a1-89c5-0645ac7fd3b2",
-                        "weight": 1
-                    },
-                    "5d51ff66-68ad-48dd-91bb-9b1b3c2487c5": {
-                        "id": "block_content:67d3bed0-121a-44bd-8881-728f98032748",
-                        "label": "Advanced Slider Demo",
-                        "provider": "block_content",
-                        "label_display": "visible",
-                        "status": true,
-                        "info": "",
-                        "view_mode": "full",
-                        "context_mapping": [],
-                        "region": "top",
-                        "uuid": "5d51ff66-68ad-48dd-91bb-9b1b3c2487c5",
                         "weight": 1
                     }
                 },

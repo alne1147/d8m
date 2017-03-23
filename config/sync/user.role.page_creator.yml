@@ -1,4 +1,4 @@
-uuid: aec8a514-90dc-441c-9bef-187cbb16a72e
+uuid: 7d3f8f86-4d4f-44b6-8f37-f7e93e93eddb
 langcode: en
 status: true
 dependencies: {  }
@@ -24,3 +24,4 @@ permissions:
   - 'use draft_needs_review transition'
   - 'use needs_review_needs_review transition'
   - 'view latest version'
+  - 'view files'

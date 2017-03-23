@@ -1,4 +1,4 @@
-uuid: b6581571-3f6b-4746-93db-f336bcfaff1c
+uuid: 9dc22427-4057-481a-92b2-af115740a023
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - field.storage.block_content.body
   module:
     - text
+_core:
+  default_config_hash: cJtDM5lFKvyBBzeo9rE-lYfsA-VZ_kO1dvbNU6FnU3E
 id: block_content.flex_sliders.body
 field_name: body
 entity_type: block_content

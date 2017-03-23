@@ -1,4 +1,4 @@
-uuid: db4393b4-0e7b-4f09-a227-b5dc38e4796a
+uuid: c4d97f2b-f0b6-4fcb-99db-7919df306aa6
 langcode: en
 status: true
 dependencies: {  }
@@ -13,3 +13,4 @@ permissions:
   - 'administer panelizer'
   - 'administer panelizer node landing_page defaults'
   - 'administer panelizer node page defaults'
+  - 'view files'

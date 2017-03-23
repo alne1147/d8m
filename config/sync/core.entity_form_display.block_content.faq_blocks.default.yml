@@ -1,4 +1,4 @@
-uuid: c5f0239e-ae56-4c2b-938f-2da711ecd5bb
+uuid: bd199564-7a04-463f-babb-85de4f526926
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
     - faqfield
     - text
     - workbench_moderation
+_core:
+  default_config_hash: kI9susUn-YW83JsUss6fj9ADLShbPYehNsNl07q91Ao
 id: block_content.faq_blocks.default
 targetEntityType: block_content
 bundle: faq_blocks

@@ -1,10 +1,12 @@
-uuid: 6c42adf4-b347-406e-a375-7cfe5d1a1d5a
+uuid: a2bebbae-6012-4451-a8dc-5777fcacad17
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
     - faqfield
+_core:
+  default_config_hash: UnlsSFGsNx3JUEtekHadmpHsfg59tWAHIMwoqAHKHmk
 id: block_content.field_faq
 field_name: field_faq
 entity_type: block_content

@@ -1,4 +1,4 @@
-uuid: 8b6e053f-158a-4c17-a8a1-c314163cb291
+uuid: 80351a76-4f2f-42b9-9369-adbb18608bf5
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - field.storage.block_content.field_faq
   module:
     - faqfield
+_core:
+  default_config_hash: fTAf_sPY53hALv3s1NYZUCJs2YBqd9NmphKjqYUmOA4
 id: block_content.faq_blocks.field_faq
 field_name: field_faq
 entity_type: block_content

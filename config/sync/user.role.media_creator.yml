@@ -1,4 +1,4 @@
-uuid: 28c31292-25bc-4778-bd40-88a604f69b9d
+uuid: f2ed71d5-b6e7-47ab-adf4-eb344a915c74
 langcode: en
 status: true
 dependencies: {  }
@@ -15,3 +15,4 @@ permissions:
   - 'delete media'
   - 'update media'
   - 'access image_browser entity browser pages'
+  - 'view files'

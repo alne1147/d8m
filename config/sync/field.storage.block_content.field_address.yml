@@ -1,9 +1,11 @@
-uuid: f27cf4c9-3d5b-431f-83c5-c8780f85f544
+uuid: 68da5e19-bd48-4a40-abe8-a0c8d981c1fa
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+_core:
+  default_config_hash: YuuoBsLaEs5l45efgHEcZHW0_46CkEGIGNuj8Rg1YE4
 id: block_content.field_address
 field_name: field_address
 entity_type: block_content

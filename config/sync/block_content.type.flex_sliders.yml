@@ -1,7 +1,9 @@
-uuid: d5b739a3-e983-4c1c-8e16-cf499cb4ecf0
+uuid: b1e5b1ae-45eb-4bb0-a3da-01dab5cc8f23
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ka-167ox18fv9lhuf639nsi5vGQ9Ou__vqXl8LC_e_I
 id: flex_sliders
 label: 'Flex Sliders'
 revision: 1

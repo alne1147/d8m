@@ -1,0 +1,33 @@
+uuid: 9f0517d2-69de-4266-99de-b1d4a41367ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: f36jr25TfI90iIJDvs2tpK5fD_27smbu-kFMxbvlaFs
+id: authors
+label: Authors
+description: 'For content editors.'
+attributes: {  }
+matchers:
+  d0b879b2-ac19-4777-9bcc-b284f8fca1c5:
+    uuid: d0b879b2-ac19-4777-9bcc-b284f8fca1c5
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        landing_page: landing_page
+        page: page
+      group_by_bundle: false
+      include_unpublished: false
+  ba7c90ff-55e9-4225-aede-257156fd4ff3:
+    uuid: ba7c90ff-55e9-4225-aede-257156fd4ff3
+    id: 'entity:block_content'
+    weight: 0
+    settings:
+      result_description: 'Advanced Slider Linkit'
+      bundles:
+        advanced_sliders: advanced_sliders
+      group_by_bundle: false

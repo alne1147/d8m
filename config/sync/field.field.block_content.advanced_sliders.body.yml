@@ -1,0 +1,24 @@
+uuid: 67c6eb79-8fb0-4b92-afd6-8efc7613ba42
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.advanced_sliders
+    - field.storage.block_content.body
+  module:
+    - text
+_core:
+  default_config_hash: Mk3D4LbhA0tokqePGxJQiyAGX0ls4Dhkx-wHSlcN_G4
+id: block_content.advanced_sliders.body
+field_name: body
+entity_type: block_content
+bundle: advanced_sliders
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

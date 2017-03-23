@@ -1,4 +1,4 @@
-uuid: 71e45e62-e02d-4472-be30-083fe46c5e89
+uuid: d7c211fb-38af-45cd-9952-ddc5ec7b1cc9
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - field.storage.block_content.field_images
   module:
     - image
+_core:
+  default_config_hash: JPrVKHpGmle5nt02UNmDxNk8Ip2ZRLPMM56cG1z6w8U
 id: block_content.flex_sliders.field_images
 field_name: field_images
 entity_type: block_content
