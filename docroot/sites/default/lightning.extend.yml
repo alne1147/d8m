@@ -13,7 +13,7 @@ lightning_extensions:
 
 # List of additional modules to enable after Lightning is installed.
 modules:
-  - bootstrap_layouts
+
   - features
   - config_ignore
   - faqfield
@@ -21,6 +21,7 @@ modules:
   - flexslider
   - libraries
   - linkit
+  - layout_plugin
   - masquerade
   - simple_gmap
   - default_content
@@ -39,6 +40,7 @@ modules:
   - edit_ui_block
   - edit_ui_contextual
   - panelizer_quickedit
+  - bootstrap_layouts
 
   #Features
   - colorado_interactive_d8m_editor

@@ -20,6 +20,7 @@ use Drupal\Core\Logger\LoggerChannelFactory;
 use Drupal\Core\Site\Settings;
 use Drupal\Core\StringTranslation\Translator\FileTranslation;
 use Drupal\Core\StackMiddleware\ReverseProxyMiddleware;
+use Drupal\Core\StreamWrapper\PublicStream;
 use Drupal\Core\Extension\ExtensionDiscovery;
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use Drupal\Core\Url;
@@ -441,6 +442,12 @@ function install_begin_request($class_loader, &$install_state) {
     if (isset($install_state['profile_info']['distribution']['install']['theme'])) {
       $install_state['theme'] = $install_state['profile_info']['distribution']['install']['theme'];
     }
+    // Ensure all profile directories are registered.
+    $profiles = \Drupal::service('profile_handler')->getProfiles($profile);
+    $profile_directories = array_map(function($extension) {
+      return $extension->getPath();
+    }, $profiles);
+    $listing->setProfileDirectories($profile_directories);
   }
 
   // Use the language from the profile configuration, if available, to override
@@ -1036,6 +1043,21 @@ function install_base_system(&$install_state) {
   // Install system.module.
   drupal_install_system($install_state);
 
+  // Prevent the installer from using the system temporary directory after the
+  // system module has been installed.
+  if (drupal_valid_test_ua()) {
+    // While the temporary directory could be preset/enforced in settings.php
+    // like the public files directory, some tests expect it to be configurable
+    // in the UI. If declared in settings.php, they would no longer be
+    // configurable. The temporary directory needs to match what is set in each
+    // test types ::prepareEnvironment() step.
+    $temporary_directory = dirname(PublicStream::basePath()) . '/temp';
+    file_prepare_directory($temporary_directory, FILE_MODIFY_PERMISSIONS | FILE_CREATE_DIRECTORY);
+    \Drupal::configFactory()->getEditable('system.file')
+      ->set('path.temporary', $temporary_directory)
+      ->save();
+  }
+
   // Call file_ensure_htaccess() to ensure that all of Drupal's standard
   // directories (e.g., the public files directory and config directory) have
   // appropriate .htaccess files. These directories will have already been
@@ -1193,6 +1215,8 @@ function install_select_profile(&$install_state) {
  *   - For non-interactive installations via install_drupal() settings.
  * - A discovered profile that is a distribution. If multiple profiles are
  *   distributions, then the first discovered profile will be selected.
+ *   If an inherited profile is detected that is a distribution, it will be
+ *   chosen over its base profile.
  * - Only one visible profile is available.
  *
  * @param array $install_state
@@ -1215,11 +1239,8 @@ function _install_select_profile(&$install_state) {
     }
   }
   // Check for a distribution profile.
-  foreach ($install_state['profiles'] as $profile) {
-    $profile_info = install_profile_info($profile->getName());
-    if (!empty($profile_info['distribution'])) {
-      return $profile->getName();
-    }
+  if ($distribution = \Drupal::service('profile_handler')->selectDistribution(array_keys($install_state['profiles']))) {
+    return $distribution;
   }
 
   // Get all visible (not hidden) profiles.
@@ -1552,7 +1573,10 @@ function install_profile_themes(&$install_state) {
  *   An array of information about the current installation state.
  */
 function install_install_profile(&$install_state) {
-  \Drupal::service('module_installer')->install(array(drupal_get_profile()), FALSE);
+  $profiles = \Drupal::service('profile_handler')->getProfiles();
+
+  // Install all the profiles.
+  \Drupal::service('module_installer')->install(array_keys($profiles), FALSE);
   // Install all available optional config. During installation the module order
   // is determined by dependencies. If there are no dependencies between modules
   // then the order in which they are installed is dependent on random factors
