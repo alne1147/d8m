@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: flex_sliders
-label: 'Flex Sliders'
-revision: 1
-description: 'A slideshow block using the Flexslider Javascript library.'
