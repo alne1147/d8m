@@ -59,13 +59,16 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Branding #}
 {% block global_header %}
-  <header role="banner" class="{{ container }}">
-    {{ page.global_header }}
-    {{ page.search }}
-    </div>
+<header role="banner" class="header">
+  <div class="{{ container }}">
+    <div class="row">
+        {{ page.global_header }}
 
-  </header>
+    </div>
+  </div>
+</header>
 {% endblock %}
+{{ page.search }}
 {{ page.jumbotron }}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
