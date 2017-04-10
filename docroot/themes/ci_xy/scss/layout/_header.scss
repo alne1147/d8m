@@ -1,0 +1,16 @@
+/* HEADER (global page header)
+ 1. .header
+ */
+
+//[1]
+.header {
+  background-color: #fff;
+  opacity: 0.85;
+  padding:12px 0 6px 0;
+  &__logo {
+      display: block;
+    &--image {
+      height:40px;
+    }
+  }
+}
