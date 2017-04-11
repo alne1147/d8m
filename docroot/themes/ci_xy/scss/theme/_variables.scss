@@ -12,7 +12,8 @@ $font-family-base:          $font-family-sans-serif !default;
 // [2]
 $font-weight-300:           300 !default;
 $font-weight-500:           500 !default;
-$font-weight-1000:          900 !default;
+$font-weight-700:           700 !default;
+$font-weight-900:           900 !default;
 // [3]
 $headings-font-weight:      $font-weight-500 !default;
 $headings-font-family:      $font-family-serif !default;
@@ -55,8 +56,11 @@ $container-large-desktop:   (1340px + $grid-gutter-width) !default;
 
 /* COLORS
  * These colors are part of the Brand Colorado Marketing, https://drive.google.com/file/d/0B29p7msKOLwATGlhLVVSaEJNcjA/edit
+
  * 1. Brand Colorado Primary
- * 2. Brand Colorado Secondary
+ * 3. Brand Colorado Secondary
+ * 3. Link variables
+ * 4. Bootstrap color variable override
  */
 
 // [1]
@@ -113,3 +117,9 @@ $color-mineral-green:             #3f5b57;
 $color-pine-needle:               #46797a;
 $color-corduroy:                  #5f7774;
 $color-sea-foam:                  #95a495;
+
+//3
+$link-color: $color-pacific-blue !default;
+
+//4
+$brand-primary: $color-pacific-blue !default
