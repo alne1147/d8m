@@ -21,9 +21,10 @@ body {
     padding-bottom: ($navbar-height + ($grid-gutter-width / 2));
   }
 
-  @media #{$tablet} {
-    margin-top: ($grid-gutter-width / 2);
-  }
+  // @media #{$tablet} {
+  //   margin-top: ($grid-gutter-width / 2);
+  // }
+
   @media #{$mobile} {
     &.toolbar-vertical {
       &.navbar-is-fixed-top,
