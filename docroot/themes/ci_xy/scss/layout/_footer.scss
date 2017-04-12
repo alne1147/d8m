@@ -9,19 +9,53 @@ footer {
   background-color: $color-brand-slate;
 }
 
+//[2]
+.footer__global-footer {
+  padding: 18px 0;
+  &--links {
+    // margin-bottom: 0;
+    padding-left: 0;
+    opacity: .64;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      text-align: left;
+      margin: 0;
+    }
+    li {
+      color: #fff;
+      font-size: 14px;
+      font-weight: $font-weight-100;
+      display: inline;
+      list-style-type: none;
+      &:after {
+        content: "|";
+        padding: 0 2px 0 6px;
+      }
+      &:last-child:after {
+        content:"";
+      }
+      a {
+        color: #fff;
+        display: inline-block;
+      }
+    }
+  }
+}
+
 // [3]
 .logo--cogov {
   background-image: url(../images/cogov_logo-white.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  margin: 0 auto;
   display:block;
-  height:28px;
+  width: 164px;
+  height: 28px;
   opacity: .64;
 }
-@media (min-width: $screen-sm) {
-}
+@media (min-width: $screen-sm) {}
 @media (min-width: $screen-md) {
   .logo--cogov {
-    background-position: right
+    float: right;
   }
 }
