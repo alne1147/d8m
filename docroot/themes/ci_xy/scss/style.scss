@@ -1,3 +1,7 @@
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+
 /* THEME
  * Describe how modules or layouts might look (global modifiers)
  */
@@ -15,7 +19,6 @@
  */
 
 // CI theme components
-@import "component/top-navigation";
 @import "component/jumbotron";
 @import "component/left-navigation";
 // @import "component/main-footer";
@@ -24,9 +27,10 @@
 /* LAYOUT
  * Holds one or more modules together
  */
- @import "layout/blocks";
- @import "layout/header";
- @import "layout/footer";
+@import "layout/blocks";
+@import "layout/header";
+@import "layout/top-nav";
+@import "layout/footer";
 
 /* STATE
  * How our modules or layouts will look when in a particular state. (e.x. hover, active, media query)
@@ -34,13 +38,14 @@
 
 /* BOOTSTRAP
  * version: 3.3.7
+ 1. Bootstrap Framework
+ 2. Bootstrap Components
  */
 
-// Bootstrap Framework.
+// [1]
 @import '../bootstrap/assets/stylesheets/bootstrap';
 
-
-// Bootstrap Components.
+// [2]
 @import "component/alert";
 @import "component/ajax";
 @import "component/field";

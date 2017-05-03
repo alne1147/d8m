@@ -13,7 +13,7 @@ $font-family-base:          $font-family-sans-serif !default;
 $font-weight-100:           100 !default;
 $font-weight-300:           300 !default;
 $font-weight-500:           500 !default;
-$font-weight-700:           700 !default;
+//$font-weight-700:           700 !default;
 $font-weight-900:           900 !default;
 // [3]
 $headings-font-weight:      $font-weight-500 !default;
@@ -42,6 +42,10 @@ $screen-sm-min:              $screen-sm !default;
 $screen-md:                  992px !default; // Medium screen / desktop
 $screen-md-min:              $screen-md !default;
 
+$screen-md-lg:               1366px !default; // Medium screen / desktop
+$screen-md-lg-min:           $screen-md-lg !default;
+
+
 $screen-lg:                  1400px !default; // Large screen / wide desktop
 $screen-lg-min:              $screen-lg !default;
 
@@ -53,6 +57,31 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 // [2]
 $grid-gutter-width:         30px !default;
 $container-large-desktop:   (1340px + $grid-gutter-width) !default;
+
+
+//$ipad-pro-portrait-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px)";
+//$ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
+//
+//// Responsive Mixins
+//@mixin respond($media) {
+//  @if $media == ipad-pro-portrait {
+//    @media only screen and #{$ipad-pro-portrait-breakpoint} { @content; }
+//  }
+//  @else if $media == ipad-pro-landscape {
+//    @media only screen and #{$ipad-pro-landscape-breakpoint} { @content; }
+//  }
+//}
+
+/* GRID SYSTEM
+ */
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+$grid-float-breakpoint:     $screen-sm-min !default;
+
+/* NAVBAR
+ */
+$navbar-height:                    50px !default;
+$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 
 
 /* COLORS
@@ -121,6 +150,5 @@ $color-sea-foam:                  #95a495;
 
 //3
 $link-color: $color-pacific-blue !default;
-
 //4
 $brand-primary: $color-pacific-blue !default
