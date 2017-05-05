@@ -60,17 +60,6 @@
 {# Branding #}
 {% block global_header %}
 <header role="banner" class="header">
-
-  {# Header #}
-  {% if page.header %}
-    {% block header %}
-      <div class="col-sm-12" role="heading">
-        {{ page.header }}
-      </div>
-    {% endblock %}
-  {% endif %}
-
-
   <div class="{{ container }}">
     <div class="row">
         {{ page.global_header }}
@@ -121,6 +110,7 @@
   {% endblock %}
 {% endif %}
 
+{# Background #}
 {% block background %}
   {{ page.background }}
 {% endblock %}
@@ -129,6 +119,23 @@
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
+
+      {# Breadcrumbs #}
+      {% if breadcrumb %}
+        {% block breadcrumb %}
+          {{ breadcrumb }}
+        {% endblock %}
+      {% endif %}
+
+      {# Header #}
+      {% if page.header %}
+          {% block header %}
+              <div class="col-sm-12" role="heading">
+                  {{ page.header }}
+              </div>
+          {% endblock %}
+      {% endif %}
+
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -153,13 +160,6 @@
         {% if page.highlighted %}
           {% block highlighted %}
             <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
-        {# Breadcrumbs #}
-        {% if breadcrumb %}
-          {% block breadcrumb %}
-            {{ breadcrumb }}
           {% endblock %}
         {% endif %}
 
