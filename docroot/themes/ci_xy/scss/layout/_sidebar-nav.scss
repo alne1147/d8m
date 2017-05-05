@@ -1,0 +1,27 @@
+.sidebar-nav {
+  background-color: $color-gray-sand;
+  border-radius: $border-radius;
+  &.nav {
+    li {
+      width: 100%;
+      a {
+        color: $color-black;
+        padding-left: 18px;
+        font-size: ceil(($font-size-base * 1.05));
+        transition: background-color 0.3s ease-out;
+        &.is-active {
+          background-color: darken($color-gray-sand, 4.5%); // #eaeaea
+          border-left: 4px solid $color-pacific-blue;
+          font-weight: $font-weight-500;
+          padding-left: 14px;
+        }
+        &:hover {
+          background-color: darken($color-gray-sand, 4.5%); // #eaeaea
+          border-left: 4px solid $color-pacific-blue;
+          //font-weight: $font-weight-500;
+          padding-left: 14px;
+        }
+      }
+    }
+  }
+}
