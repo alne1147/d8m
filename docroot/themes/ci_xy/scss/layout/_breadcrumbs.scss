@@ -1,0 +1,19 @@
+.breadcrumb {
+  background-color: transparent!important;
+  border-radius: 0px!important;
+  font-size: ceil(($font-size-base * 0.9));
+  padding:0!important;
+  li > a {
+    color: $color-black;
+    text-decoration: underline;
+  }
+  >.active {
+    color: $color-black!important;
+  }
+  >li + li:before {
+    content: "\f105"!important;
+    color: $color-black!important;
+    font-family:FontAwesome;
+    font-size: ceil(($font-size-base * 0.7));
+  }
+}
