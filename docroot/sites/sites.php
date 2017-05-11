@@ -2,6 +2,6 @@
 
 $sites = [
     // http://dogs.kalose.net/
-    'ci.pilot-dev.colorado.gov' => 'coloradointeractive',
-
+    'pilot-dev.ci.colorado.gov' => 'coloradointeractive',
+    'pilot-dev.colorado.gov.coloradointeractive' => 'coloradointeractive',
 ];
