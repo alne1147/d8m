@@ -57,6 +57,6 @@
 $sites = array(
     'ci.d8m:8888' => 'coloradointeractive',
     'pilot-dev.colorado.gov' => 'dev',
-    'pilot.ci.colorado.gov' => 'coloradointeractive',
+    'ci.pilot-dev.colorado.gov' => 'coloradointeractive',
 );
 
