@@ -54,11 +54,7 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 
-// $sites = array(
-//     'ci.d8m:8888' => 'coloradointeractive',
-//     'pilot-dev.colorado.gov' => 'dev',
-//     'ci.pilot-dev.colorado.gov' => 'coloradointeractive',
-// );
+$sites = array(
+'ci.pilot-dev.colorado.gov' => 'coloradointeractive',
 
-$sites['pilot-dev.colorado.gov'] = 'pilot-dev.colorado.gov.coloradointeractive';
-$sites['pilot-dev.ci.colorado.gov'] = 'coloradointeractive';
+);
