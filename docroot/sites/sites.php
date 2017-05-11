@@ -1,6 +1,4 @@
 <?php
 
-
-$sites['pilot-ci.colorado.gov'] = 'pilot-ci.colorado.gov';
 $sites['ci.pilot-dev.colorado.gov'] = 'coloradointeractive';
-$sites['ci.pilot-dev.colorado.gov'] = 'coloradointeractive';
+$sites['pilot-dev.colorado.gov.ci'] = 'coloradointeractive';
