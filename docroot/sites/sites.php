@@ -1,4 +1,6 @@
 <?php
 
-$sites['ci.pilot-dev.colorado.gov'] = 'coloradointeractive';
-$sites['pilot-dev.colorado.gov.ci'] = 'coloradointeractive';
+$sites = array(
+    // http://dogs.kalose.net/
+    'ci.pilot-dev.colorado.gov' => 'coloradointeractive',
+);
