@@ -61,3 +61,4 @@ $sites = array(
 );
 
 $sites['ci.pilot-dev.colorado.gov'] = 'coloradointeractive';
+$sites['pilot-dev.ci.colorado.gov'] = 'coloradointeractive';
