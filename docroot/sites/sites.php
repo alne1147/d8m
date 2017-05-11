@@ -2,4 +2,4 @@
 
 
 $sites[' pilot-ci.colorado.gov'] = 'pilot-ci.colorado.gov';
-$sites[' pilot-ci.colorado.gov'] = 'coloradointeractive';
+$sites[' ci.pilot.colorado.gov'] = 'coloradointeractive';
