@@ -5,3 +5,5 @@
 
 echo "Hello, Cloud!"
 
+cd docroot
+drush cr
