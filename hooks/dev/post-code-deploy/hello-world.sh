@@ -4,6 +4,3 @@
 # output. It will work in any hook directory.
 
 echo "Hello, Cloud!"
-
-cd docroot
-drush cr
