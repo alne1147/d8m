@@ -2,7 +2,7 @@
 #
 # Cloud Hook: drush-cache-rebuild
 #
-# Run drush cache-clear all in the target environment. This script works as
+# Run drush cache-rebuild all in the target environment. This script works as
 # any Cloud hook.
 
 
