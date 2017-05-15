@@ -15,3 +15,5 @@ drush @$site.$target_env -l www.pilot-stg.colorado.gov updatedb --yes
 
 
 echo "Hello, Cloud!"
+
+ls
