@@ -11,6 +11,7 @@ target_env=$2
 drush_alias=$site'.'$target_env
 
 # Execute a standard drush command.
-drush @$drush_alias @sites cr
+drush @$site.$target_env -l pilot-stg.colorado.gov updatedb --yes
+
 
 echo "Hello, Cloud!"
