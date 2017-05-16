@@ -1,0 +1,165 @@
+name: D8M Starter
+type: profile
+description: 'Colorado Interactive Profile Starter Kit for Project D8M.'
+core: 8.x
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: D8M Starter
+  # If you want your distribution to pre-select a language you can specify
+  # the language code, as well. This will prevent the user from selecting
+  # a language code in the user interface. While not recommended for generic
+  # community distributions, this can be very useful for distributions that
+  # are tailored to a language-specific audience (for example government
+  # institutions in a certain country) but also site-specific installation
+  # profiles. Note that this language code will also be used when installing
+  # the site via Drush.
+  langcode: en
+
+# Required modules
+dependencies:
+ - filter_perms
+ - blazy
+ - blazy_ui
+ - block_content_permissions
+ - block_permissions
+ - block_region_permissions
+ - ctools
+ - ctools_block
+ - ckeditor_a11ychecker
+ - ckeditor_accordion
+ - anchor_link
+ - ckeditor_balloonpanel
+ - ckeditor_bootstrap_buttons
+ - ckeditor_templates
+ - colorbutton
+ - notification
+ - panelbutton
+ - ckwordcount
+ - context
+ - context_ui
+ - automated_cron
+ - big_pipe
+ - block
+ - breakpoint
+ - ckeditor
+ - color
+ - comment
+ - config
+ - contact
+ - contextual
+ - block_content
+ - menu_link_content
+ - dblog
+ - field
+ - field_ui
+ - filter
+ - help
+ - history
+ - dynamic_page_cache
+ - page_cache
+ - menu_ui
+ - node
+ - path
+ - quickedit
+ - rdf
+ - responsive_image
+ - search
+ - shortcut
+ - system
+ - taxonomy
+ - editor
+ - toolbar
+ - tour
+ - update
+ - user
+ - views
+ - views_ui
+ - content_moderation
+ - datetime_range
+ - layout_discovery
+ - block_place
+ - workflows
+ - linkit
+ - role_delegation
+ - calendar
+ - calendar_datetime
+ - features
+ - features_ui
+ - datetime
+ - entity_reference_revisions
+ - field_collection
+ - file
+ - iframe
+ - image
+ - link
+ - options
+ - simple_gmap
+ - text
+ - field_group
+ - field_slideshow
+ - inline_entity_form
+ - entity_embed
+ - flexslider
+ - focal_point
+ - crop
+ - dropzonejs
+ - dropzonejs_eb_widget
+ - entity_browser
+ - entity_browser_entity_form
+ - image_widget_crop
+ - media
+ - media_entity
+ - crop_media_entity
+ - media_entity_document
+ - media_entity_image
+ - media_entity_instagram
+ - media_entity_slideshow
+ - media_entity_twitter
+ - social_login
+ - block_class
+ - block_visibility_groups
+ - block_visibility_groups_admin
+ - config_update
+ - contact_formatter
+ - embed
+ - entity
+ - libraries
+ - masquerade
+ - menu_block
+ - menu_condition
+ - pathauto
+ - roleassign
+ - scheduled_updates
+ - term_condition
+ - token
+ - bootstrap_paragraphs
+ - classy_paragraphs
+ - paragraphs
+ - paragraphs_browser
+ - paragraphs_type_permissions
+ - paragraphs_layouts
+ - slick
+ - slick_media
+ - slick_paragraphs
+ - slick_ui
+ - block_styles
+ - styles_api
+ - chosen
+ - chosen_field
+ - chosen_lib
+ - video_embed_field
+ - video_embed_media
+ - video_embed_wysiwyg
+ - viewsreference
+ - views_templates
+ - webform
+ - webform_node
+ - webform_templates
+ - webform_ui
+ - bootstrap
+ - ci_xy
+ - seven
