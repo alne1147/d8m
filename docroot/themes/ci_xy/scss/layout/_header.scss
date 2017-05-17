@@ -39,6 +39,11 @@
       }
     }
   }
+  .col-sm-4 {
+    @media (min-width: $screen-sm-min) {
+      text-align: right;
+    }
+  }
   // [3]
   &__search {
     display: inline-block;
