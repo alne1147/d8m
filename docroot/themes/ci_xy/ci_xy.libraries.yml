@@ -20,6 +20,10 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
+ci_xy-scripts:
+    js:
+      js/translation.js: {}
+
 font-awesome:
   css:
     theme:
