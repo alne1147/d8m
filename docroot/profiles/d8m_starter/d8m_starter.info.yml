@@ -146,6 +146,7 @@ dependencies:
  - slick_media
  - slick_paragraphs
  - slick_ui
+ - slider_blocks
  - block_styles
  - styles_api
  - chosen
@@ -160,6 +161,6 @@ dependencies:
  - webform_node
  - webform_templates
  - webform_ui
- - bootstrap
- - ci_xy
- - seven
+ # - bootstrap
+ # - ci_xy
+ # - seven
