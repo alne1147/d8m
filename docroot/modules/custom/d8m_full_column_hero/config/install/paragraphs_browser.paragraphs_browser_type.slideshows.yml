@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slideshows
+label: Slideshows
+groups:
+  block_slider_op:
+    label: 'Block Slider Options'
+    id: block_slider_op
+    weight: 0
+map:
+  bp_carousel: block_slider_op
+  bp_image: block_slider_op
+  bp_columns_three_uneven: block_slider_op
+  bp_columns_two_uneven: block_slider_op

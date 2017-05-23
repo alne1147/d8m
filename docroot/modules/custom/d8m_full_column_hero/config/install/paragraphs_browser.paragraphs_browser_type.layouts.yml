@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: layouts
+label: Layouts
+groups:
+  rows:
+    label: Rows
+    id: rows
+    weight: 0
+map:
+  bp_columns: rows
+  bp_columns_three_uneven: rows
+  bp_columns_two_uneven: rows

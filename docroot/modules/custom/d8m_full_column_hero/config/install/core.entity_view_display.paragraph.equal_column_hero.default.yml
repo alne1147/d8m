@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.equal_column_hero.field_background_image
+    - field.field.paragraph.equal_column_hero.field_cards
+    - paragraphs.paragraphs_type.equal_column_hero
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.equal_column_hero.default
+targetEntityType: paragraph
+bundle: equal_column_hero
+mode: default
+content:
+  field_background_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

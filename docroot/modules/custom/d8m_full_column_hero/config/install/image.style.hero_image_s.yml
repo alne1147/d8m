@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: hero_image_s
+label: 'Hero Image Style'
+effects:
+  35d1649d-8e75-43cf-980d-83374dbcaa9d:
+    uuid: 35d1649d-8e75-43cf-980d-83374dbcaa9d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: hero
