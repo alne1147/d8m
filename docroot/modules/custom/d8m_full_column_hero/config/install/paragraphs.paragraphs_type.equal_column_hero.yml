@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: equal_column_hero
+label: 'Equal Column Hero'
+behavior_plugins: {  }

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_blocks
+    - field.field.block_content.hero_blocks.field_paragraphs
+  module:
+    - content_moderation
+    - paragraphs_browser
+id: block_content.hero_blocks.default
+targetEntityType: block_content
+bundle: hero_blocks
+mode: default
+content:
+  field_paragraphs:
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: paragraphs_browser
+      form_display_mode: default
+      default_paragraph_type: bp_image
+      paragraphs_browser: _na
+    third_party_settings: {  }
+    type: entity_reference_paragraphs_browser
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
