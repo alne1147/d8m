@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card_basic
+label: 'Card - Basic'
+behavior_plugins: {  }
