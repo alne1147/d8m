@@ -18,7 +18,7 @@ assignments:
         node_type: node_type
       content:
         user: user
-    enabled: true
+    enabled: false
     weight: -2
   core:
     types:
@@ -31,10 +31,10 @@ assignments:
         responsive_image_style: responsive_image_style
         user_role: user_role
         entity_view_mode: entity_view_mode
-    enabled: true
+    enabled: false
     weight: 5
   dependency:
-    enabled: true
+    enabled: false
     weight: 15
   exclude:
     types:
@@ -46,13 +46,13 @@ assignments:
       profile: true
       namespace: true
       namespace_any: false
-    enabled: true
+    enabled: false
     weight: -5
   existing:
-    enabled: true
+    enabled: false
     weight: 12
   forward_dependency:
-    enabled: true
+    enabled: false
     weight: 4
   namespace:
     enabled: true
@@ -60,10 +60,10 @@ assignments:
   optional:
     types:
       config: {  }
-    enabled: true
+    enabled: false
     weight: 0
   packages:
-    enabled: true
+    enabled: false
     weight: -20
   profile:
     curated: true
@@ -78,7 +78,7 @@ assignments:
         migration: migration
         shortcut_set: shortcut_set
         tour: tour
-    enabled: true
+    enabled: false
     weight: 10
   site:
     types:
@@ -91,7 +91,7 @@ assignments:
         taxonomy_vocabulary: taxonomy_vocabulary
         editor: editor
         filter_format: filter_format
-    enabled: true
+    enabled: false
     weight: 7
-profile_name: ''
+profile_name: d8m_starter
 is_profile: false
