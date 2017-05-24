@@ -1,3 +1,18 @@
 .main-container {
   flex: 1;
+  .content {
+    > .field--name-body {
+      > h1:nth-child(1),
+      > h2:nth-child(1),g
+      > h3:nth-child(1),
+      > h4:nth-child(1),
+      > h5:nth-child(5),
+      > h6:nth-child(6)
+      {
+        line-height:1;
+        margin-top: 0;
+        margin-bottom:18px;
+      }
+    }
+  }
 }
