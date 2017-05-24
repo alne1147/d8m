@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bp_blank
+label: Blank
+behavior_plugins: {  }
