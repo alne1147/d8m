@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.equal_column_hero.field_background_image
     - field.field.paragraph.equal_column_hero.field_cards
+    - image.style.hero_image_s
     - paragraphs.paragraphs_type.equal_column_hero
   module:
     - entity_reference_revisions
@@ -17,7 +18,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: hero_image_s
       image_link: ''
     third_party_settings: {  }
     type: image
