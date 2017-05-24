@@ -9,6 +9,8 @@
   background-color: #fff;
   opacity: 0.85;
   padding:12px 0 6px 0;
+  position: relative;
+  z-index: 2;
   &__logo {
       display: block;
     &--image {
