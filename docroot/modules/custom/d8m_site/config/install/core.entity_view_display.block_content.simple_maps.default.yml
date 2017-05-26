@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_maps
+    - field.field.block_content.simple_maps.body
+    - field.field.block_content.simple_maps.field_address
+  module:
+    - simple_gmap
+    - text
+id: block_content.simple_maps.default
+targetEntityType: block_content
+bundle: simple_maps
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 1
+    label: hidden
+    settings:
+      include_map: '1'
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: 300px
+      static_scale: '1'
+      link_text: 'View larger map'
+      zoom_level: '14'
+      map_type: m
+      langcode: en
+      include_static_map: 0
+      include_link: 0
+      include_text: 0
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+hidden: {  }

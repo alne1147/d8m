@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_maps
+    - field.field.block_content.simple_maps.body
+    - field.field.block_content.simple_maps.field_address
+  module:
+    - content_moderation
+    - text
+id: block_content.simple_maps.default
+targetEntityType: block_content
+bundle: simple_maps
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
