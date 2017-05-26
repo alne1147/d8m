@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slideshow_blocks
+    - field.field.block_content.slideshow_blocks.field_paragraphs
+  module:
+    - content_moderation
+    - paragraphs_browser
+id: block_content.slideshow_blocks.default
+targetEntityType: block_content
+bundle: slideshow_blocks
+mode: default
+content:
+  field_paragraphs:
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: paragraphs_browser
+      form_display_mode: default
+      default_paragraph_type: _none
+      paragraphs_browser: slideshows
+    third_party_settings: {  }
+    type: entity_reference_paragraphs_browser
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: structure_editor
+label: 'Structure Editor'
+weight: 9
+is_admin: null
