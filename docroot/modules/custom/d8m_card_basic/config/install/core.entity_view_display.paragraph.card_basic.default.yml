@@ -10,30 +10,15 @@ dependencies:
     - paragraphs.paragraphs_type.card_basic
   module:
     - image
-    - options
     - text
 id: paragraph.card_basic.default
 targetEntityType: paragraph
 bundle: card_basic
 mode: default
 content:
-  bp_background:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_alignment:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_background_image:
-    weight: 3
-    label: above
+    weight: 2
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -42,17 +27,19 @@ content:
     region: content
   field_body:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  bp_background: true
+  field_alignment: true
