@@ -146,7 +146,6 @@ dependencies:
  - slick_media
  - slick_paragraphs
  - slick_ui
- - slider_blocks
  - block_styles
  - styles_api
  - chosen
