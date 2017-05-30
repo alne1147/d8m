@@ -10,9 +10,9 @@ dependencies:
     - node.type.article
   module:
     - content_moderation
+    - entity_reference_revisions
     - field_group
     - image
-    - paragraphs_browser
     - path
     - text
 third_party_settings:
@@ -59,17 +59,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_rows:
-    weight: 26
+    weight: 27
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: paragraphs_browser
-      form_display_mode: default
-      default_paragraph_type: _none
-      paragraphs_browser: layouts
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_paragraphs_browser
+    type: entity_reference_revisions_autocomplete
     region: content
   field_tags:
     type: entity_reference_autocomplete_tags

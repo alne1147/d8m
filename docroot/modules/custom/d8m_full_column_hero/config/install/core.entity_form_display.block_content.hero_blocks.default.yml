@@ -6,24 +6,20 @@ dependencies:
     - field.field.block_content.hero_blocks.field_paragraphs
   module:
     - content_moderation
-    - paragraphs_browser
+    - entity_reference_revisions
 id: block_content.hero_blocks.default
 targetEntityType: block_content
 bundle: hero_blocks
 mode: default
 content:
   field_paragraphs:
-    weight: 27
+    weight: 28
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: paragraphs_browser
-      form_display_mode: default
-      default_paragraph_type: bp_image
-      paragraphs_browser: _na
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_paragraphs_browser
+    type: entity_reference_revisions_autocomplete
     region: content
   info:
     type: string_textfield
