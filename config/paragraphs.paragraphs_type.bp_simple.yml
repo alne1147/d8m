@@ -1,0 +1,9 @@
+uuid: b76dd65d-63bc-4308-b238-dbde74f34117
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jcMvJkZG_3HM9e_Xzefix-L2gtvy7DV029WWBITxnRI
+id: bp_simple
+label: Simple
+behavior_plugins: {  }

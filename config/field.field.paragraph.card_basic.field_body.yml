@@ -1,0 +1,23 @@
+uuid: bd05dddb-fb7c-462b-aaca-cfe93824be0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.card_basic
+  module:
+    - text
+_core:
+  default_config_hash: YEP-i72J6XqFAn-w4bXH8DzbRVKM64SEUdkqf7OcA6k
+id: paragraph.card_basic.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: card_basic
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

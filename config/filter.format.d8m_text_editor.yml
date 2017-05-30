@@ -1,0 +1,22 @@
+uuid: 89114430-ca6c-4ea9-9d82-a0d3370b0989
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_wysiwyg
+name: 'D8M Text Editor'
+format: d8m_text_editor
+weight: -10
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: true
+    weight: 0
+    settings: {  }

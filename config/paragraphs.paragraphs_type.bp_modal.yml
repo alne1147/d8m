@@ -1,0 +1,9 @@
+uuid: b4874ed3-f049-41e0-b1b6-7da64595a5f3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rhs4nySgAefo5LklRhZSZ4Ga3rB7hg9FaHofTb5CRPc
+id: bp_modal
+label: Modal
+behavior_plugins: {  }

@@ -1,9 +1,0 @@
-uuid: c9adacf0-acbf-43a6-894b-b86dd986f70f
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: '-pPpg38qzaI58DvXs7RXZ6qZdpqWpHdgINM8xXp6YkY'
-id: layout_fluid_column
-label: 'Layout: Fluid column'
-classes: flex-grid__fluid-col
