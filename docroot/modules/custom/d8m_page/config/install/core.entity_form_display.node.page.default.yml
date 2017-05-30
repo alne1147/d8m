@@ -7,8 +7,8 @@ dependencies:
     - node.type.page
   module:
     - content_moderation
-    - entity_reference_revisions
     - field_group
+    - paragraphs
     - path
     - text
 third_party_settings:
@@ -49,11 +49,14 @@ content:
   field_rows:
     weight: 33
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
   path:
     type: path
