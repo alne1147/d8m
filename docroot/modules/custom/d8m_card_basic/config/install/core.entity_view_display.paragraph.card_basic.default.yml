@@ -10,12 +10,27 @@ dependencies:
     - paragraphs.paragraphs_type.card_basic
   module:
     - image
+    - options
     - text
 id: paragraph.card_basic.default
 targetEntityType: paragraph
 bundle: card_basic
 mode: default
 content:
+  bp_background:
+    type: list_key
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_alignment:
+    type: list_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_background_image:
     weight: 2
     label: hidden
@@ -40,6 +55,4 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden:
-  bp_background: true
-  field_alignment: true
+hidden: {  }
