@@ -1,0 +1,20 @@
+uuid: 79879b67-3a89-4c13-9493-1cfd14d8092e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ci_xy
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: ci_xy_page_title
+theme: ci_xy
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

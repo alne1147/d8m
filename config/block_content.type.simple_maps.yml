@@ -1,0 +1,8 @@
+uuid: 4e472da4-1e69-4b27-91fe-e8b9d658e81d
+langcode: en
+status: true
+dependencies: {  }
+id: simple_maps
+label: 'Simple Maps'
+revision: 0
+description: 'Add a simple map to be used anywhere on your site.'

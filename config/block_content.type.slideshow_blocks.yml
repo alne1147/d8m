@@ -1,0 +1,8 @@
+uuid: 0e277fe0-8fb9-4b2f-929e-93a4360bb0cc
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow_blocks
+label: 'Slideshow Blocks'
+revision: 0
+description: 'Create a slideshow to be placed anywhere on your site.'

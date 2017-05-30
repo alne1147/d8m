@@ -1,0 +1,48 @@
+uuid: ed1954fb-670a-4c58-bb93-9c90fa0aa085
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:slideshow_blocks:3dcd74a3-8f93-4125-afd5-6b945a68e6b2'
+  module:
+    - block_class
+    - block_content
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: imageslider
+theme: ci_xy
+region: jumbotron
+weight: 0
+provider: null
+plugin: 'block_content:3dcd74a3-8f93-4125-afd5-6b945a68e6b2'
+settings:
+  id: 'block_content:3dcd74a3-8f93-4125-afd5-6b945a68e6b2'
+  label: 'Image Slider'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
