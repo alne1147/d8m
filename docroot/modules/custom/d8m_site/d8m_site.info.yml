@@ -16,7 +16,6 @@ dependencies:
   - entity_reference_revisions
   - field
   - filter
-  - paragraphs_browser
   - rdf
   - simple_gmap
   - slick_paragraphs

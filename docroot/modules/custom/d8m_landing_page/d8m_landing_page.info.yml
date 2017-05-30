@@ -8,7 +8,7 @@ dependencies:
   - field
   - menu_ui
   - node
-  - paragraphs_browser
+  - paragraphs
   - path
   - user
 package: d8m
