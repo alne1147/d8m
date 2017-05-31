@@ -153,6 +153,7 @@ $color-sea-foam:                  #95a495;
 
 //3
 $link-color: $color-pacific-blue !default;
+$link-hover-color: darken($link-color, 15%) !default;
 //4
 $brand-primary: $color-pacific-blue !default
 
