@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.equal_column_hero.field_background_image
     - field.field.paragraph.equal_column_hero.field_cards
+    - field.field.paragraph.equal_column_hero.field_row_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.equal_column_hero
   module:
@@ -16,7 +17,7 @@ bundle: equal_column_hero
 mode: default
 content:
   field_background_image:
-    weight: 0
+    weight: 1
     settings:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
@@ -31,7 +32,7 @@ content:
     region: content
   field_cards:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 2
     settings:
       title: Card
       title_plural: Cards
@@ -40,6 +41,14 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
+    region: content
+  field_row_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true
