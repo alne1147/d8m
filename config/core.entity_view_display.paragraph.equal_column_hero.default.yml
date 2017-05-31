@@ -1,0 +1,38 @@
+uuid: e17ab255-51d4-41e3-b9ae-0a65af0d96bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.equal_column_hero.field_background_image
+    - field.field.paragraph.equal_column_hero.field_cards
+    - image.style.hero_image_s
+    - paragraphs.paragraphs_type.equal_column_hero
+  module:
+    - entity_reference_revisions
+    - image
+_core:
+  default_config_hash: 0SGSdP8GaddE2QfT8bCi94zcSApxTNc3LfYWCrlW6OA
+id: paragraph.equal_column_hero.default
+targetEntityType: paragraph
+bundle: equal_column_hero
+mode: default
+content:
+  field_background_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: hero_image_s
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

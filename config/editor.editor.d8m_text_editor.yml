@@ -1,0 +1,93 @@
+uuid: 5d587bb7-2981-4c25-8dcb-d76f4ee4f150
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.d8m_text_editor
+  module:
+    - ckeditor
+format: d8m_text_editor
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Underline
+            - Italic
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Links
+          items:
+            - Anchor
+            - DrupalLink
+            - DrupalUnlink
+            - Linkit
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - video_embed
+            - media
+        -
+          name: Tools
+          items:
+            - Source
+            - A11ychecker
+            - btbutton
+            - Accordion
+            - Templates
+            - Maximize
+        -
+          name: Styling
+          items:
+            - Format
+            - Styles
+            - TextColor
+            - BGColor
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    templates:
+      template_path: ''
+      replace_content: 0
+    wordcount:
+      enable: 1
+      show_paragraphs: 0
+      show_word_count: 1
+      show_char_count: 0
+      count_spaces: 0
+      count_html: 0
+      max_words: '-1'
+      max_chars: '-1'
+    colorbutton:
+      colors: ''
+    linkit:
+      linkit_profile: content_authors
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

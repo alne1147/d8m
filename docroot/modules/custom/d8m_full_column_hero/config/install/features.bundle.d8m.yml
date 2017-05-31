@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 name: d8m
 machine_name: d8m
-description: ''
+description: 'Auto-generated bundle from package d8m'
 assignments:
   alter:
     core: true
@@ -93,5 +93,5 @@ assignments:
         filter_format: filter_format
     enabled: true
     weight: 7
-profile_name: ''
+profile_name: d8m_starter
 is_profile: false

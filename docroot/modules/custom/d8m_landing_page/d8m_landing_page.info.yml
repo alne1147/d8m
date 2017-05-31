@@ -1,0 +1,14 @@
+name: 'Landing Page'
+description: 'Configuration for Landing Page Content Types.'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - user
+package: d8m

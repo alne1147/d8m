@@ -1,0 +1,35 @@
+uuid: aaba1ca1-38d5-4071-9f3e-ddca694d5880
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_blocks
+    - field.field.block_content.hero_blocks.field_paragraphs
+  module:
+    - content_moderation
+    - entity_reference_revisions
+_core:
+  default_config_hash: JUaAttuNYzyd7_o3sI3BNy6cICY19KscQ4wuFlElWG4
+id: block_content.hero_blocks.default
+targetEntityType: block_content
+bundle: hero_blocks
+mode: default
+content:
+  field_paragraphs:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

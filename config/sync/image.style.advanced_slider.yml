@@ -1,9 +1,0 @@
-uuid: ecd7cf6a-96b5-4c9e-bd85-5a6fb650764d
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 1Vnol_quGC0AF443mT4OmMtRTw0S1sNkrsWkpOYKUkM
-name: advanced_slider
-label: 'Advanced Slider'
-effects: {  }

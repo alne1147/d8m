@@ -1,0 +1,15 @@
+name: Events
+description: 'Provides Events content type and related configuration. A Date Driven Content Type.'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - datetime
+  - field
+  - menu_ui
+  - node
+  - path
+  - simple_gmap
+  - text
+  - user
+package: d8m

@@ -1,0 +1,20 @@
+name: 'Basic page'
+description: 'Provides Basic page content type and related configuration. Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - d8m_core
+  - d8m_full_column_hero
+  - d8m_general_card_config
+  - d8m_landing_page
+  - entity_reference_revisions
+  - field
+  - field_group
+  - node
+  - paragraphs
+  - path
+  - rdf
+  - text
+  - user
+package: d8m

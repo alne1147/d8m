@@ -1,0 +1,9 @@
+palette:
+  main-container: '#ffffff'
+  navbar-collapse: '#5c666f'
+logo: 'public://color/ci_xy-fa78551c/logo.svg'
+stylesheets:
+  - 'public://color/ci_xy-fa78551c/colors.css'
+files:
+  - 'public://color/ci_xy-fa78551c/logo.svg'
+  - 'public://color/ci_xy-fa78551c/colors.css'

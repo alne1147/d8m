@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow_blocks
+label: 'Slideshow Blocks'
+revision: 0
+description: 'Create a slideshow to be placed anywhere on your site.'

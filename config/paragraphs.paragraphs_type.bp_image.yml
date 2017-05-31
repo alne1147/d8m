@@ -1,0 +1,9 @@
+uuid: 3b7ea783-36a0-409e-a78d-1f754bb0ea1b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: K5-DV_V_SZK85eMu1h1Lu2mNTHyWYOOwI_Q33gfZArc
+id: bp_image
+label: Image
+behavior_plugins: {  }

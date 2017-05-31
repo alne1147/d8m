@@ -1,0 +1,19 @@
+uuid: c1800dd7-a071-4e69-887d-b0731e746068
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: sidebars
+label: Sidebars
+logic: and
+conditions:
+  6e48d5da-10f3-454e-bc4d-d8efeda5e8b2:
+    id: user_role
+    roles:
+      structure_administrator: structure_administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    uuid: 6e48d5da-10f3-454e-bc4d-d8efeda5e8b2
+allow_other_conditions: false
