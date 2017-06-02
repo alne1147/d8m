@@ -7,7 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
-    - paragraphs.paragraphs_type.equal_column_hero
+    - paragraphs.paragraphs_type.full_column_hero
   module:
     - entity_reference_revisions
 id: node.page.field_rows
@@ -27,7 +27,7 @@ settings:
       bp_columns: bp_columns
       bp_columns_three_uneven: bp_columns_three_uneven
       bp_columns_two_uneven: bp_columns_two_uneven
-      equal_column_hero: equal_column_hero
+      full_column_hero: full_column_hero
     target_bundles_drag_drop:
       bp_accordion:
         weight: 16
@@ -77,7 +77,7 @@ settings:
       card_basic:
         weight: 33
         enabled: false
-      equal_column_hero:
+      full_column_hero:
         enabled: true
         weight: 34
 field_type: entity_reference_revisions

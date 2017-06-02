@@ -3,17 +3,17 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_rows
-    - node.type.article
+    - node.type.landing_page
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
     - paragraphs.paragraphs_type.full_column_hero
   module:
     - entity_reference_revisions
-id: node.article.field_rows
+id: node.landing_page.field_rows
 field_name: field_rows
 entity_type: node
-bundle: article
+bundle: landing_page
 label: Rows
 description: ''
 required: false
@@ -65,10 +65,10 @@ settings:
       bp_simple:
         weight: 27
         enabled: false
-      bp_tabs:
+      bp_tab_section:
         weight: 28
         enabled: false
-      bp_tab_section:
+      bp_tabs:
         weight: 29
         enabled: false
       bp_view:
