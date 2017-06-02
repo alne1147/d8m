@@ -1,4 +1,4 @@
-{#
+  {#
 /**
  * @file
  * Default theme implementation for a branding block.
@@ -16,11 +16,11 @@
 #}
 {% block content %}
   {% if site_logo %}
-    <div class="col-md-9">
-      <a class="header__logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+    {#<div class="col-md-9">#}
+      <a class="header__logo navbar-btn" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
         <img class="header__logo--image" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
       </a>
-    </div>
+    {#</div>#}
   {% elseif site_name %}
     <a class="name navbar-brand" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
   {% endif %}

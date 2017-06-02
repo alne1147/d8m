@@ -1,8 +1,19 @@
 /* Headers
+ 1. h1-h5
+ 2. page headers
  */
+
+// [1]
 h1,h2,h3,h4,h5 {
-  font-family: $font-family-serif;
+  font-family: $font-family-base;
 }
+// [2]
+h1.page-header {
+  border-bottom: none!important;
+  margin: 28px 0 22px!important;
+  padding-bottom: 0!important;
+}
+
 
 /* Links
  */

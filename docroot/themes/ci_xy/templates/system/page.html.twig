@@ -62,13 +62,27 @@
 <header role="banner" class="header">
   <div class="{{ container }}">
     <div class="row">
+      <div class="col-sm-8">
         {{ page.global_header }}
+      </div>
+      <div class="col-sm-4">
+        <div class="header__translation">
+          <div id="google_translate_element"></div>
+        </div>
+        <div class="header__search"><i class="fa fa-search" aria-hidden="true""></i></div>
+      </div>
+      </div>
     </div>
   </div>
 </header>
 {% endblock %}
 {{ page.search }}
-{{ page.jumbotron }}
+{# Jumbotron #}
+{% if page.jumbotron %}
+  <div class="jumbotron">
+    {{ page.jumbotron }}
+  </div>
+{% endif %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -109,24 +123,16 @@
     </div>
   {% endblock %}
 {% endif %}
-
-{# Background #}
-{% block background %}
-  {{ page.background }}
-{% endblock %}
-
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-
       {# Breadcrumbs #}
       {% if breadcrumb %}
         {% block breadcrumb %}
           {{ breadcrumb }}
         {% endblock %}
       {% endif %}
-
       {# Header #}
       {% if page.header %}
           {% block header %}
@@ -135,7 +141,6 @@
               </div>
           {% endblock %}
       {% endif %}
-
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -144,7 +149,6 @@
           </aside>
         {% endblock %}
       {% endif %}
-
       {# Content #}
       {%
         set content_classes = [
@@ -155,35 +159,30 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
             <div class="highlighted">{{ page.highlighted }}</div>
           {% endblock %}
         {% endif %}
-
         {# Action Links #}
         {% if action_links %}
           {% block action_links %}
             <ul class="action-links">{{ action_links }}</ul>
           {% endblock %}
         {% endif %}
-
         {# Help #}
         {% if page.help %}
           {% block help %}
             {{ page.help }}
           {% endblock %}
         {% endif %}
-
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
           {{ page.content }}
         {% endblock %}
       </section>
-
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
@@ -195,7 +194,7 @@
     </div>
   </div>
 {% endblock %}
-
+{# footer #}
 {% if page.footer %}
   {% block footer %}
     <footer class="footer" role="contentinfo">
@@ -205,6 +204,7 @@
     </footer>
   {% endblock %}
 {% endif %}
+{# global footer #}
 {% block global_footer %}
 <footer class="footer__global-footer" role="contentinfo">
   <div class="container">
@@ -225,6 +225,5 @@
       </div>
     </div>
   </div>
-  {{ page.global_footer }}
 </footer>
 {% endblock %}

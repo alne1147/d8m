@@ -1,11 +1,13 @@
 .top-nav {
   background-color: $color-brand-slate;
+  margin-bottom: 24px;
   @media (min-width: $screen-md-min) {
     text-align: center;
   }
   .navbar {
     border: none;
     line-height: 0;
+    margin-bottom:0;
     @media (min-width: $screen-sm-min) {
       border-radius: 0px!important;
     }
