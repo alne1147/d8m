@@ -3,7 +3,6 @@ description: 'Provides Card - Basic paragraphs type and related configuration.'
 type: module
 core: 8.x
 dependencies:
-  - ci_cr_out_of_the_box_paragraph_config
   - content_moderation
   - field
   - file

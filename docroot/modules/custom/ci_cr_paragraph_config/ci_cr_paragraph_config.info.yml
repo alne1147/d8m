@@ -1,0 +1,23 @@
+name: 'Paragraph Config'
+description: 'General Paragraph Config and overrides.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - ci_blocks_row_blocks
+  - classy_paragraphs
+  - contact
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - link
+  - options
+  - paragraphs
+  - text
+  - views
+  - viewsreference
+version: 8.x
+package: ci_cards
