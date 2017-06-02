@@ -1,6 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: equal_column_hero
-label: 'Row - Equal Column Hero'
-behavior_plugins: {  }
