@@ -11,16 +11,16 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: top
+      value: 'paragraph--alignment paragraph--alignment-top'
       label: top
     -
-      value: right
+      value: 'paragraph--alignment paragraph--alignment-right'
       label: right
     -
-      value: bottom
+      value: 'paragraph--alignment paragraph--alignment-bottom'
       label: bottom
     -
-      value: left
+      value: 'paragraph--alignment paragraph--alignment-left'
       label: left
   allowed_values_function: ''
 module: options
