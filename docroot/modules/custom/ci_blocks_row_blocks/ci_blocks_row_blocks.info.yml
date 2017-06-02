@@ -1,0 +1,14 @@
+name: 'Row Blocks'
+description: 'Row Block Configuration'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - ci_cr_full_column_hero
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - paragraphs
+  - text
+version: 8.x
+package: 'ci blocks'
