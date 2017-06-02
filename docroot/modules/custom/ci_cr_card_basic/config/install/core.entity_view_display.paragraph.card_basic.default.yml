@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_basic.bp_background
+    - field.field.paragraph.card_basic.bp_width
     - field.field.paragraph.card_basic.field_alignment
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
@@ -11,12 +12,27 @@ dependencies:
     - paragraphs.paragraphs_type.card_basic
   module:
     - image
+    - options
     - text
 id: paragraph.card_basic.default
 targetEntityType: paragraph
 bundle: card_basic
 mode: default
 content:
+  bp_background:
+    type: list_key
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  bp_width:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
   field_card_background_image:
     weight: 2
     label: hidden
@@ -42,5 +58,4 @@ content:
     type: string
     region: content
 hidden:
-  bp_background: true
   field_alignment: true
