@@ -59,10 +59,10 @@
 {% if content.field_alignment|render %}
   {% set layout_al = content.field_alignment['#items'].getString() %}
   {% set layout_al_classes = [
-    'top' == layout_al ? 'top',
-    'right' == layout_al ? 'right',
-    'bottom' == layout_al ? 'bottom',
-    'left' == layout_al ? 'left',
+    'paragraph--alignment paragraph--alignment-top' == layout_al ? 'paragraph--alignment paragraph--alignment-top',
+    'paragraph--alignment paragraph--alignment-right' == layout_al ? 'paragraph--alignment paragraph--alignment-right',
+    'paragraph--alignment paragraph--alignment-bottom' == layout_al ? 'paragraph--alignment paragraph--alignment-bottom',
+    'paragraph--alignment paragraph--alignment-left' == layout_al ? 'paragraph--alignment paragraph--alignment-left',
   ]
   %}
 {% endif %}
