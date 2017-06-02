@@ -4,19 +4,18 @@ type: module
 core: 8.x
 dependencies:
   - content_moderation
-  - d8m_core
-  - d8m_full_column_hero
-  - d8m_general_card_config
-  - d8m_landing_page
+  - d8m_cards_and_rows
   - entity_reference_revisions
   - field
   - field_group
   - file
   - image
   - node
+  - paragraphs
   - path
   - rdf
   - taxonomy
   - text
   - user
-package: d8m
+version: 8.x
+package: D8M

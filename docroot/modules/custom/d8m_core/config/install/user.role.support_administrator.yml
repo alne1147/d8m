@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: support_administrator
-label: 'Support Administrator'
-weight: 3
-is_admin: null

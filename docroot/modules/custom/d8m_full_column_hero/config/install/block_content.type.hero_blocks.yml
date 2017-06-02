@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: hero_blocks
-label: 'Hero Blocks'
-revision: 0
-description: ''

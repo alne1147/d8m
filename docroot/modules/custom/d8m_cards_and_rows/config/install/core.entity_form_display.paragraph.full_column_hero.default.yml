@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_column_hero.bp_background
+    - field.field.paragraph.full_column_hero.bp_column_content
+    - field.field.paragraph.full_column_hero.field_row_background_image
+    - field.field.paragraph.full_column_hero.field_row_title
+    - image.style.crop_thumbnail
+    - paragraphs.paragraphs_type.full_column_hero
+  module:
+    - content_moderation
+    - image_widget_crop
+    - paragraphs
+id: paragraph.full_column_hero.default
+targetEntityType: paragraph
+bundle: full_column_hero
+mode: default
+content:
+  bp_background:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  bp_column_content:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_row_background_image:
+    weight: 1
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: crop_thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - media_crop
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_row_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

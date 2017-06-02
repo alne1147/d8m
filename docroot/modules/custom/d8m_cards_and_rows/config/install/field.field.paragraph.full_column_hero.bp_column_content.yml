@@ -2,19 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_rows
-    - node.type.article
-    - paragraphs.paragraphs_type.bp_columns
-    - paragraphs.paragraphs_type.bp_columns_three_uneven
-    - paragraphs.paragraphs_type.bp_columns_two_uneven
+    - field.storage.paragraph.bp_column_content
+    - paragraphs.paragraphs_type.card_basic
     - paragraphs.paragraphs_type.full_column_hero
   module:
     - entity_reference_revisions
-id: node.article.field_rows
-field_name: field_rows
-entity_type: node
-bundle: article
-label: Rows
+id: paragraph.full_column_hero.bp_column_content
+field_name: bp_column_content
+entity_type: paragraph
+bundle: full_column_hero
+label: 'Cards Content'
 description: ''
 required: false
 translatable: true
@@ -24,60 +21,57 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      bp_columns: bp_columns
-      bp_columns_three_uneven: bp_columns_three_uneven
-      bp_columns_two_uneven: bp_columns_two_uneven
-      full_column_hero: full_column_hero
+      card_basic: card_basic
     target_bundles_drag_drop:
       bp_accordion:
-        weight: 16
-        enabled: false
-      bp_accordion_section:
         weight: 17
         enabled: false
-      bp_blank:
+      bp_accordion_section:
         weight: 18
         enabled: false
-      bp_block:
+      bp_blank:
         weight: 19
         enabled: false
-      bp_carousel:
+      bp_block:
         weight: 20
         enabled: false
-      bp_columns:
-        enabled: true
+      bp_carousel:
         weight: 21
-      bp_columns_three_uneven:
-        enabled: true
+        enabled: false
+      bp_columns:
         weight: 22
-      bp_columns_two_uneven:
-        enabled: true
+        enabled: false
+      bp_columns_three_uneven:
         weight: 23
-      bp_contact:
+        enabled: false
+      bp_columns_two_uneven:
         weight: 24
         enabled: false
-      bp_image:
+      bp_contact:
         weight: 25
         enabled: false
-      bp_modal:
+      bp_image:
         weight: 26
         enabled: false
-      bp_simple:
+      bp_modal:
         weight: 27
         enabled: false
-      bp_tabs:
+      bp_simple:
         weight: 28
         enabled: false
       bp_tab_section:
         weight: 29
         enabled: false
-      bp_view:
+      bp_tabs:
         weight: 30
         enabled: false
-      card_basic:
-        weight: 33
+      bp_view:
+        weight: 31
         enabled: false
       full_column_hero:
+        weight: 32
+        enabled: false
+      card_basic:
         enabled: true
-        weight: 34
+        weight: 33
 field_type: entity_reference_revisions
