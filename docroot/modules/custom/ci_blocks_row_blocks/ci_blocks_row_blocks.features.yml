@@ -1,9 +1,2 @@
 bundle: ci_blocks
-required:
-  - block_content.type.row_block
-  - core.entity_form_display.block_content.row_block.default
-  - core.entity_view_display.block_content.row_block.default
-  - field.field.block_content.row_block.body
-  - field.field.block_content.row_block.field_row
-  - field.storage.block_content.body
-  - field.storage.block_content.field_row
+required: true

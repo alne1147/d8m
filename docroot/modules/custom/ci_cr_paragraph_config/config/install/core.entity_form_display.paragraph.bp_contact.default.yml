@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.bp_contact.bp_contact
     - field.field.paragraph.bp_contact.bp_width
     - paragraphs.paragraphs_type.bp_contact
+  module:
+    - content_moderation
 id: paragraph.bp_contact.default
 targetEntityType: paragraph
 bundle: bp_contact

@@ -9,6 +9,7 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.bp_image
   module:
+    - content_moderation
     - image
     - link
 id: paragraph.bp_image.default

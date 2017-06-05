@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.bp_block.bp_block
     - field.field.paragraph.bp_block.bp_width
     - paragraphs.paragraphs_type.bp_block
+  module:
+    - content_moderation
 id: paragraph.bp_block.default
 targetEntityType: paragraph
 bundle: bp_block
