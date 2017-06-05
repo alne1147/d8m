@@ -1,0 +1,18 @@
+name: 'Row -Equal Column Hero'
+description: 'Provides Full Column Hero paragraphs type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - ci_cr_card_basic
+  - ci_cr_full_column_hero
+  - ci_cr_paragraph_config
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - image_widget_crop
+  - options
+  - paragraphs
+version: 8.x
+package: ci_cards

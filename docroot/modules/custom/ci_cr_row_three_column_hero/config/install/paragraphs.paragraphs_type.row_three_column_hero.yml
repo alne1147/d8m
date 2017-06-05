@@ -1,6 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-id: full_column_hero
-label: 'Full Column Hero'
+id: row_three_column_hero
+label: 'Row - Three Column Hero'
 behavior_plugins: {  }
