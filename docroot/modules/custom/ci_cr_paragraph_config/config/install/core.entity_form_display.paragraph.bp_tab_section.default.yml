@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.bp_tab_section.bp_tab_section_title
     - paragraphs.paragraphs_type.bp_tab_section
   module:
+    - content_moderation
     - paragraphs
 id: paragraph.bp_tab_section.default
 targetEntityType: paragraph

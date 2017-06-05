@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.bp_blank.bp_width
     - paragraphs.paragraphs_type.bp_blank
   module:
+    - content_moderation
     - text
 id: paragraph.bp_blank.default
 targetEntityType: paragraph

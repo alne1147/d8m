@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.bp_accordion.bp_width
     - paragraphs.paragraphs_type.bp_accordion
   module:
+    - content_moderation
     - paragraphs
 id: paragraph.bp_accordion.default
 targetEntityType: paragraph

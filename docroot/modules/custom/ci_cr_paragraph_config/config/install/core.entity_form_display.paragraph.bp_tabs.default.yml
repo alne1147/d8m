@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.bp_tabs.bp_width
     - paragraphs.paragraphs_type.bp_tabs
   module:
+    - content_moderation
     - paragraphs
 id: paragraph.bp_tabs.default
 targetEntityType: paragraph

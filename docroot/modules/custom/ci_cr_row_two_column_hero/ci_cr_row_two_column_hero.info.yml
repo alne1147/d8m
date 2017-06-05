@@ -4,7 +4,6 @@ type: module
 core: 8.x
 dependencies:
   - ci_cr_card_basic
-  - ci_cr_full_column_hero
   - ci_cr_paragraph_config
   - content_moderation
   - entity_reference_revisions

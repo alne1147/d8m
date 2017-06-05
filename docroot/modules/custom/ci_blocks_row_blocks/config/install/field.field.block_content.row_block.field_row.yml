@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
     - paragraphs.paragraphs_type.full_column_hero
+    - paragraphs.paragraphs_type.row_three_column_hero
+    - paragraphs.paragraphs_type.row_two_column_hero
   module:
     - entity_reference_revisions
 id: block_content.row_block.field_row
@@ -28,6 +30,8 @@ settings:
       bp_columns_three_uneven: bp_columns_three_uneven
       bp_columns_two_uneven: bp_columns_two_uneven
       full_column_hero: full_column_hero
+      row_three_column_hero: row_three_column_hero
+      row_two_column_hero: row_two_column_hero
     target_bundles_drag_drop:
       bp_accordion:
         weight: 18
@@ -80,4 +84,10 @@ settings:
       full_column_hero:
         enabled: true
         weight: 34
+      row_three_column_hero:
+        enabled: true
+        weight: 37
+      row_two_column_hero:
+        enabled: true
+        weight: 38
 field_type: entity_reference_revisions

@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_width
     - paragraphs.paragraphs_type.bp_modal
   module:
+    - content_moderation
     - paragraphs
 id: paragraph.bp_modal.default
 targetEntityType: paragraph

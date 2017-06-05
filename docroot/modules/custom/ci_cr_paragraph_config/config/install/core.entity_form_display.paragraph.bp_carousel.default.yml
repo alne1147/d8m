@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.bp_carousel.bp_width
     - paragraphs.paragraphs_type.bp_carousel
   module:
+    - content_moderation
     - paragraphs
 id: paragraph.bp_carousel.default
 targetEntityType: paragraph
