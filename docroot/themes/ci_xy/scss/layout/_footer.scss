@@ -1,7 +1,12 @@
 /* FOOTER
  1. <footer> element styling
- 2. footer__global-footer
+ 2. Global Footer
+    - These styles are set in the page.html.twig template.
+    - The Global Footer is controlled in code by the drupal themer.
  3. Colorado.gov logo
+ 4. Content Footer - These
+    - These styles are set in the page.html.twig template.
+    - The Content Footer is controlled by the site authors.
  */
 
 //[1]
@@ -11,6 +16,7 @@ footer {
 
 //[2]
 .footer__global-footer {
+  background-color: lighten($color-brand-slate, 4%);
   padding: 18px 0;
   &--links {
     // margin-bottom: 0;
@@ -57,5 +63,67 @@ footer {
 @media (min-width: $screen-md) {
   .logo--cogov {
     float: right;
+  }
+}
+
+// [4]
+.footer__content-footer {
+  padding-bottom: 30px;
+  .block-block-content {
+    margin-bottom: 0;
+    padding: 20px 0 0;
+  }
+  .paragraph {
+    &.paragraph--type--bp-columns {
+      .paragraph--type--bp-columns__1col,
+      .paragraph--type--bp-columns__2col,
+      .paragraph--type--bp-columns__3col,
+      .paragraph--type--bp-columns__4col,
+      .paragraph--type--bp-columns__5col,
+      .paragraph--type--bp-columns__6col {
+        padding-left: 0;
+        &:last-child {
+          padding-right:0;
+        }
+        &:nth-child(n+2) {
+          .paragraph--type--bp-simple {
+            .paragraph__column {
+              @media (max-width: $screen-sm-min) {
+                padding-top:5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .paragraph__column {
+      h1,h2,h3,h4,h5,h6 {
+        font-family: $font-family-sans-serif;
+        margin-bottom: 26px;
+        text-transform: uppercase;
+      }
+      color: #fff;
+      ul {
+        list-style-type: none;
+        padding:0;
+        > li {
+          margin-bottom: 12px;
+        }
+      }
+      a {
+        color: #fff;
+        border-bottom:1px solid #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &.paragraph--color {
+      border-radius: $border-radius;
+      > .paragraph__column {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
   }
 }
