@@ -18,7 +18,7 @@ bundle: row_two_column_hero
 mode: default
 content:
   bp_background:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -36,7 +36,7 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_row_background_image:
-    weight: 1
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
