@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.bp_columns_three_uneven.bp_column_content_3
     - field.field.paragraph.bp_columns_three_uneven.bp_column_style_3
     - field.field.paragraph.bp_columns_three_uneven.bp_width
+    - field.field.paragraph.bp_columns_three_uneven.field_row_title
     - paragraphs.paragraphs_type.bp_columns_three_uneven
   module:
     - content_moderation
@@ -16,13 +17,13 @@ bundle: bp_columns_three_uneven
 mode: default
 content:
   bp_background:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   bp_column_content_3:
-    weight: 6
+    weight: 4
     settings:
       title: Card
       title_plural: Cards
@@ -34,16 +35,24 @@ content:
     type: entity_reference_paragraphs
     region: content
   bp_column_style_3:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   bp_width:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_row_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true
