@@ -17,4 +17,4 @@ dependencies:
   - rdf
   - text
   - user
-package: ci_cards
+package: ci_ct

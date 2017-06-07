@@ -1,0 +1,7 @@
+name: 'CI Feature Bundles'
+description: 'Feature Bundles Configuration.'
+type: module
+core: 8.x
+dependencies:
+  - features
+version: 8.x
