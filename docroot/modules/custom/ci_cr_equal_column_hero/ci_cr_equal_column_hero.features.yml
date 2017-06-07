@@ -1,2 +1,4 @@
 bundle: ci_cr
+excluded:
+  - image.style.max_1300x1300
 required: true
