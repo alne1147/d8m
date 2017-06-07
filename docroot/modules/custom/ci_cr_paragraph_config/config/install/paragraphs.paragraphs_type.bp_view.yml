@@ -2,5 +2,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: bp_view
-label: View
+label: 'Card - View'
 behavior_plugins: {  }

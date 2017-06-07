@@ -6,6 +6,7 @@ dependencies:
   - block
   - block_content
   - ci_blocks_row_blocks
+  - ci_cr_card_basic
   - classy_paragraphs
   - contact
   - content_moderation
