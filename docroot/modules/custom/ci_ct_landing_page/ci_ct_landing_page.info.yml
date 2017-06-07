@@ -15,4 +15,4 @@ dependencies:
   - paragraphs
   - path
   - user
-package: ci_cards
+package: ci_ct
