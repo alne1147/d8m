@@ -2,5 +2,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: bp_modal
-label: Modal
+label: 'Card - Modal'
 behavior_plugins: {  }

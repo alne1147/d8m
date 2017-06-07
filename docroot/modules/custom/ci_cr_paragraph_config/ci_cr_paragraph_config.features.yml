@@ -17,7 +17,6 @@ required:
   - core.entity_form_display.paragraph.bp_tab_section.default
   - core.entity_form_display.paragraph.bp_view.default
   - core.entity_view_display.block_content.basic.default
-  - field.field.block_content.basic.field_paragraphs
   - field.field.paragraph.bp_accordion.bp_accordion_section
   - field.field.paragraph.bp_accordion.bp_background
   - field.field.paragraph.bp_accordion.bp_width

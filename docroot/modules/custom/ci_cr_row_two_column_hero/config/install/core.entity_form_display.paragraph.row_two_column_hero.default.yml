@@ -26,12 +26,12 @@ content:
   bp_column_content_2:
     weight: 3
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Card
+      title_plural: Cards
       edit_mode: closed
-      add_mode: button
+      add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: card_basic
+      default_paragraph_type: _none
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
