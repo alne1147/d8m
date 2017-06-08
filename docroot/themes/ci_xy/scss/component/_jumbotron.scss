@@ -3,8 +3,6 @@
   padding-bottom:0!important;
   margin-bottom:0!important;
   background-color: transparent!important;
-  //position: relative;
-  //top:-71px;
   .block-block-content {
     margin-bottom: 0;
     padding: 0;
@@ -17,16 +15,14 @@
     }
     .paragraph--type--card-basic {
       .paragraph__column {
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        top: 15%;
-        transform: translate(-50%, -50%);
-        width: 1370px;
+        margin-top:100px;
         .field--name-field-card-body {
           color: #fff;
         }
       }
+    }
+    [class^="hero__responsive_"] {
+      min-height: 460px;
     }
   }
 }
