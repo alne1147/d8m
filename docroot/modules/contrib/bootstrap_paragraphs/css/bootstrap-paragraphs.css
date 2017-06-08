@@ -19,7 +19,7 @@
       .paragraph.paragraph--type--bp-columns-three-uneven {} -- Is used below
       .paragraph.paragraph--type--bp-columns-two-uneven {} -- Is used below
       .paragraph.paragraph--type--bp-contact {}
-      .paragraph.paragraph--type--bp-image {}
+      .paragraph.paragraph--type--bp-image {} -- Is used below
       .paragraph.paragraph--type--bp-modal {} -- Is used below
       .paragraph.paragraph--type--bp-simple {}
       .paragraph.paragraph--type--bp-tabs {} -- Is used below
@@ -341,7 +341,18 @@
   padding: 0;
 }
 /* Columns Modifiers inside of Columns Element  */
-.paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__6col,
+.paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__6col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__6col {
+    float: left;
+    width: 16.66666667%;
+  }
+}
 .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__5col {
   position: relative;
   min-height: 1px;
@@ -349,10 +360,9 @@
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__6col,
   .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__5col {
     float: left;
-    width: 16.66666667%;
+    width: 20%;
   }
 }
 .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__4col {
@@ -899,6 +909,12 @@
     float: left;
     width: 66.66666667%;
   }
+}
+/* Image Paragraph. */
+/* .paragraph--bp-image.html.twig */
+.paragraph--type--bp-image.paragraph--width--full .paragraph__column {
+  padding-left: 0;
+  padding-right: 0;
 }
 /* Modal Paragraph. */
 /* .paragraph--bp-modal.html.twig */
