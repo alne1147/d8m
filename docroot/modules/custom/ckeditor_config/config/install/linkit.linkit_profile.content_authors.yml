@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_authors
+label: 'Content Authors'
+description: ''
+attributes: {  }
+matchers: {  }
