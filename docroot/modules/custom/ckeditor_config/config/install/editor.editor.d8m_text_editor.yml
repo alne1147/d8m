@@ -46,6 +46,7 @@ settings:
             - Source
             - A11ychecker
             - Accordion
+            - btbutton
             - Templates
             - Table
             - Maximize
