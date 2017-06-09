@@ -22,6 +22,8 @@
       }
     }
     [class^="hero__responsive_"] {
+      -webkit-background-size:cover;
+      background-size:cover;
       min-height: 460px;
     }
   }
