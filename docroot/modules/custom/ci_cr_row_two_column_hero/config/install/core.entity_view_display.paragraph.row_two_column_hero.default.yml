@@ -9,8 +9,8 @@ dependencies:
     - image.style.max_1920
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
+    - background_image_formatter
     - entity_reference_revisions
-    - image
     - options
 id: paragraph.row_two_column_hero.default
 targetEntityType: paragraph
@@ -38,9 +38,10 @@ content:
     label: hidden
     settings:
       image_style: max_1920
-      image_link: ''
+      background_image_output_type: inline
+      background_image_selector: hero__responsive
     third_party_settings: {  }
-    type: image
+    type: background_image_formatter
     region: content
   field_row_title:
     weight: 0

@@ -3,6 +3,7 @@ description: 'Provides Full Column Hero paragraphs type and related configuratio
 type: module
 core: 8.x
 dependencies:
+  - background_image_formatter
   - ci_cr_card_basic
   - ci_cr_paragraph_config
   - content_moderation
