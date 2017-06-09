@@ -153,7 +153,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   {% set classes = classes|merge(layout_width_classes) %}
 {% endif %}
 
-{# Merges Width field with classes. #}
+{# Merges alignment field with classes. #}
 {% set al_field = content.field_alignment|render %}
 {% if al_field %}
   {% set classes = classes|merge(layout_al_classes) %}
@@ -169,7 +169,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div{{ attributes.addClass(classes) }}>
     <div class="paragraph__column">
       <div class="container">
-        {{ content|without('bp_width', 'bp_background') }}
+        {{ content|without('bp_width', 'bp_background','field_alignment') }}
       </div>
   </div>
 </div>
