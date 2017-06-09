@@ -14,6 +14,22 @@
       padding-bottom: 0;
     }
     .paragraph--type--card-basic {
+      &.paragraph--color {
+        border-radius: $border-radius;
+        float: left;
+        position: relative;
+        top: 100px;
+        left: 50%;
+        right: 50%;
+        margin-top:100px;
+        //margin-left: 15px;
+        //margin-right: 15px;
+        transform: translate(-50%, -50%);
+        width: auto;
+        .paragraph__column {
+          margin-top: 0;
+        }
+      }
       .paragraph__column {
         margin-top:100px;
         .field--name-field-card-body {
