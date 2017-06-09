@@ -26,25 +26,25 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      bp_accordion: bp_accordion
       card_basic: card_basic
+      bp_accordion: bp_accordion
       bp_block: bp_block
       bp_modal: bp_modal
       bp_tabs: bp_tabs
       bp_view: bp_view
     target_bundles_drag_drop:
-      bp_accordion:
-        enabled: true
-        weight: -39
-      bp_accordion_section:
-        weight: -38
-        enabled: false
-      bp_blank:
-        weight: -37
-        enabled: false
       card_basic:
         enabled: true
+        weight: -39
+      bp_accordion:
+        enabled: true
+        weight: -38
+      bp_accordion_section:
+        weight: -37
+        enabled: false
+      bp_blank:
         weight: -36
+        enabled: false
       bp_block:
         enabled: true
         weight: -35

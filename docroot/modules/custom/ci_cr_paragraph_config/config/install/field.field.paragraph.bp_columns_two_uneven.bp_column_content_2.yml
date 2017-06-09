@@ -26,43 +26,43 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      bp_accordion: bp_accordion
       card_basic: card_basic
+      bp_accordion: bp_accordion
       bp_block: bp_block
       bp_modal: bp_modal
       bp_tabs: bp_tabs
       bp_view: bp_view
     target_bundles_drag_drop:
-      bp_simple:
+      card_basic:
+        enabled: true
         weight: -39
-        enabled: false
-      bp_image:
+      bp_simple:
         weight: -38
         enabled: false
-      bp_blank:
+      bp_image:
         weight: -37
+        enabled: false
+      bp_blank:
+        weight: -36
         enabled: false
       bp_accordion:
         enabled: true
-        weight: -36
-      bp_carousel:
         weight: -35
-        enabled: false
-      bp_columns:
+      bp_carousel:
         weight: -34
         enabled: false
-      bp_columns_three_uneven:
+      bp_columns:
         weight: -33
         enabled: false
-      bp_columns_two_uneven:
+      bp_columns_three_uneven:
         weight: -32
         enabled: false
-      bp_contact:
+      bp_columns_two_uneven:
         weight: -31
         enabled: false
-      card_basic:
-        enabled: true
+      bp_contact:
         weight: -30
+        enabled: false
       bp_block:
         enabled: true
         weight: -29
