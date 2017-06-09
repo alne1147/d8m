@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.row_two_column_hero.bp_column_content_2
     - field.field.paragraph.row_two_column_hero.field_row_background_image
     - field.field.paragraph.row_two_column_hero.field_row_title
-    - image.style.thumbnail
+    - image.style.crop_thumbnail
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
     - content_moderation
@@ -38,13 +38,14 @@ content:
   field_row_background_image:
     weight: 2
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-      crop_preview_image_style: crop_thumbnail
-      crop_list: null
-      show_crop_area: false
       show_default_crop: true
       warn_multiple_usages: true
+      preview_image_style: crop_thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero_cropping
+      progress_indicator: throbber
+      show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
     region: content

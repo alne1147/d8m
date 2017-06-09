@@ -1,14 +1,22 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
 name: max_1920
 label: 'Max 1920'
 effects:
   4553afc6-f755-4dab-bbfe-bb7c65dd0efb:
     uuid: 4553afc6-f755-4dab-bbfe-bb7c65dd0efb
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 1920
       height: null
-      upscale: false
+      upscale: true
+  5992c7f9-c52f-4e82-906f-d17b3e1ba6c5:
+    uuid: 5992c7f9-c52f-4e82-906f-d17b3e1ba6c5
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_cropping

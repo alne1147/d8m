@@ -43,7 +43,7 @@ content:
       preview_image_style: crop_thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - media_crop
+        - hero_cropping
       progress_indicator: throbber
       show_crop_area: false
     third_party_settings: {  }
