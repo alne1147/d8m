@@ -5,4 +5,5 @@ docroot/sites/*/settings.local*.php
 docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
+!docroot/sites/all/services.yml
 !docroot/sites/all/
