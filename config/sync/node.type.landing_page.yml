@@ -1,0 +1,20 @@
+uuid: 5a5e472a-d208-459d-999a-23d00071710b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 1y_F3j8S-TtsBjOSkwDvKEtBeMd0leHwMA5vwREQxYE
+name: 'Landing Page'
+type: landing_page
+description: 'Used to create a homepage.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

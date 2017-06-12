@@ -1,0 +1,48 @@
+uuid: 52da300e-6135-464f-9300-45e66a73e004
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:row_block:b2f981d7-8ea5-4287-bdc0-0c029528241c'
+  module:
+    - block_class
+    - block_content
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: footer3equalcolumns
+theme: ci_xy
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:b2f981d7-8ea5-4287-bdc0-0c029528241c'
+settings:
+  id: 'block_content:b2f981d7-8ea5-4287-bdc0-0c029528241c'
+  label: 'Footer - 3 equal columns'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'

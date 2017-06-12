@@ -1,0 +1,9 @@
+uuid: fc669f7f-318c-4834-b78d-7077ab0e68ca
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b6fknrDj8oDCMVE4YVoQ8UIzmh4C4Pt4hNOCWmBwEJk
+id: row_two_column_hero
+label: 'Row - Two Column Hero'
+behavior_plugins: {  }

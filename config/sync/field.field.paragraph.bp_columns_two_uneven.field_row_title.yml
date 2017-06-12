@@ -1,0 +1,19 @@
+uuid: 652021e2-3f97-4803-8671-6822e1f69c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_title
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+id: paragraph.bp_columns_two_uneven.field_row_title
+field_name: field_row_title
+entity_type: paragraph
+bundle: bp_columns_two_uneven
+label: 'Row Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

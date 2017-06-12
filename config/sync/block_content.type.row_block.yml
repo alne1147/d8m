@@ -1,0 +1,10 @@
+uuid: dad27981-064c-4ec8-bf4f-5d25d311c105
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6VGw2RQ359KCJ3reHmjmB875gAWzpsP2-NhJfDWEsKY
+id: row_block
+label: 'Row Block'
+revision: 0
+description: 'A Block type that uses rows.'

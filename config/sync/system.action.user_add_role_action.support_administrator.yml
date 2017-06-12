@@ -1,0 +1,14 @@
+uuid: bdf24397-62c2-4b17-b61a-7bc2646a9502
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.support_administrator
+  module:
+    - user
+id: user_add_role_action.support_administrator
+label: 'Add the Support Administrator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: support_administrator

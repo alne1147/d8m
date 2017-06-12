@@ -1,0 +1,21 @@
+uuid: 40b1eb70-e846-45ec-9d1f-7b8cfaf73a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_width
+    - paragraphs.paragraphs_type.card_basic
+  module:
+    - options
+id: paragraph.card_basic.bp_width
+field_name: bp_width
+entity_type: paragraph
+bundle: card_basic
+label: Width
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
