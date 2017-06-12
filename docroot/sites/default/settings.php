@@ -764,7 +764,6 @@ $settings['file_scan_ignore_directories'] = [
   include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
-
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
 // settings.php for development on your local workstation, set $db_url
@@ -772,15 +771,6 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
 }
-$databases['default']['default'] = array (
-  'database' => 'D8M',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-
 $config_directories['sync'] = '../config/sync';
+
+$settings['install_profile'] = 'config_installer';
