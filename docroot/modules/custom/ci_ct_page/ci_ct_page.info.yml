@@ -11,6 +11,7 @@ dependencies:
   - entity_reference_revisions
   - field
   - field_group
+  - metatag
   - node
   - paragraphs
   - path

@@ -3,11 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_meta
     - field.field.node.page.field_rows
     - node.type.page
   module:
     - content_moderation
     - field_group
+    - metatag
     - paragraphs
     - path
     - text
@@ -46,6 +48,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_rows:
     weight: 33
     settings:
