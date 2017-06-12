@@ -2,10 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_rows
     - node.type.landing_page
   module:
     - content_moderation
+    - metatag
     - paragraphs
     - path
 id: node.landing_page.default
@@ -19,6 +21,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_rows:
     weight: 26
     settings:

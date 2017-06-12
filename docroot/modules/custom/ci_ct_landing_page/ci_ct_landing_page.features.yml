@@ -1,1 +1,7 @@
 bundle: ci_ct
+required:
+  - core.entity_form_display.node.landing_page.default
+  - core.entity_view_display.node.landing_page.default
+  - core.entity_view_display.node.landing_page.teaser
+  - field.field.node.landing_page.field_rows
+  - node.type.landing_page
