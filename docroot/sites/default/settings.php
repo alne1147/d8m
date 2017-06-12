@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'PeLNpn3khYftaTWiuajfRln_0wYqOtkc9U9WeZQu4EafwZLy21b9t3wnzNtUAm5vHAvojVgYSQ';
 
 /**
  * Deployment identifier.
@@ -772,3 +772,15 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
 }
+$databases['default']['default'] = array (
+  'database' => 'D8M',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
+$config_directories['sync'] = '../config/sync';
