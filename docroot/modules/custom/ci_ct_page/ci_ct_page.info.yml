@@ -7,6 +7,7 @@ dependencies:
   - ci_cr_paragraph_config
   - ci_cr_row_three_column_hero
   - ci_cr_row_two_column_hero
+  - ci_ct_landing_page
   - content_moderation
   - entity_reference_revisions
   - field
