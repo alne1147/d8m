@@ -771,6 +771,7 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/ag-settings.inc');
 }
+
 $config_directories['sync'] = '../config/sync';
 
-$settings['install_profile'] = 'config_installer';
+

@@ -772,4 +772,4 @@ if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
 }
 $config_directories['sync'] = '../config/sync';
-$settings['install_profile'] = 'config_installer';
+$settings['install_profile'] = 'standard';
