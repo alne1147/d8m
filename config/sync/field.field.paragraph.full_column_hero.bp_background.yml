@@ -1,0 +1,23 @@
+uuid: 870a3331-03fe-4ec8-ab97-bcadd8a60273
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.full_column_hero
+  module:
+    - options
+_core:
+  default_config_hash: SspwXE0aBd-yV05ywJ0y9FU2uJ2nzTYglLwhat-Ogus
+id: paragraph.full_column_hero.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: full_column_hero
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

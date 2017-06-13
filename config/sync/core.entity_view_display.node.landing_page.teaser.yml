@@ -1,0 +1,23 @@
+uuid: 5287f61e-6271-412c-9f26-e447376b6726
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_rows
+    - node.type.landing_page
+  module:
+    - user
+_core:
+  default_config_hash: 1vJRYBh1xfP07WzwTAJff_LabFE15R4e4kx0I69Xc2g
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_meta: true
+  field_rows: true

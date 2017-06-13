@@ -1,0 +1,14 @@
+uuid: 30abb113-08ec-46a1-87d9-9180f003690d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OrgxLvqEk0Cst9OsAJAk1Q9ICK_ZAKeybBwz5ycnz2Y
+label: 'Hero Cropping'
+id: hero_cropping
+description: 'Used for Hero Images'
+aspect_ratio: '96:23'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 920
+hard_limit_height: null

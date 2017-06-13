@@ -1,0 +1,9 @@
+uuid: c55d0b6f-581f-4e26-baab-b0851a47342c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CniXjCPqvI04Ncctb1NN5y4TjzoHLCuxDCnIsOefgfs
+id: row_three_column_hero
+label: 'Row - Three Column Hero'
+behavior_plugins: {  }

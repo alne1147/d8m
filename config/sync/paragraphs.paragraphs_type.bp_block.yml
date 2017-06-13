@@ -1,0 +1,9 @@
+uuid: fdaac80e-33e6-426c-9666-e368c9dd7a31
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 41WqzVUZjZ9Yk7vHyg5Inbl34VtA6QZhpIGx_C3TTb8
+id: bp_block
+label: 'Card - Block'
+behavior_plugins: {  }

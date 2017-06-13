@@ -1,0 +1,14 @@
+uuid: 24bc9250-5330-4e40-abb7-11e3b1697d7b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xHETyxbmvwdYoTyuCX61gFLDLuz6dwPaXBynqRWoKJk
+id: content_editor
+label: 'Content Editor'
+weight: 7
+is_admin: null
+permissions:
+  - 'administer meta tags'
+  - 'edit any webform'
+  - 'use editorial transition create_new_draft'
