@@ -1,9 +1,0 @@
-uuid: d6db17fc-a1ed-4e56-9983-08774c7e3ac6
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: B9wuDoQUIODlkv7xdDsk1pilOD3GCz2qVYPRiBdjbFI
-id: layout_clear
-label: 'Layout: Clear'
-classes: flex-grid__clear-after

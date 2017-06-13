@@ -95,7 +95,7 @@ content:
       box_caption: {  }
       box_caption_custom: ''
       box_style: ''
-      icon: false
+      icon: ''
       dimension: ''
       thumbnail_position: ''
     third_party_settings: {  }

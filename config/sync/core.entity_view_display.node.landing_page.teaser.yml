@@ -19,4 +19,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta: true
   field_rows: true

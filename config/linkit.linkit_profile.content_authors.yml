@@ -1,9 +1,0 @@
-uuid: 6fcd357b-8afa-450a-812d-28d118fbf9a7
-langcode: en
-status: true
-dependencies: {  }
-id: content_authors
-label: 'Content Authors'
-description: ''
-attributes: {  }
-matchers: {  }

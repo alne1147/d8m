@@ -1,9 +1,0 @@
-uuid: b13c0eb7-3d52-402f-a46f-d562f55a43a5
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: ivM2s6m6O7z6AyOl0JhqFKspRoX9aTuRSigK-TrMMDA
-id: card_basic
-label: 'Card - Basic'
-behavior_plugins: {  }
