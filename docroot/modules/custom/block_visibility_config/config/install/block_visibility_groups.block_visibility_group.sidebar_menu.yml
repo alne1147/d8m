@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: sidebar_menu
+label: 'Sidebar Menu'
+logic: and
+conditions:
+  6da87205-8961-4386-b8c7-8bff2daa8815:
+    id: term
+    negate: 0
+    tid: '1'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 6da87205-8961-4386-b8c7-8bff2daa8815
+allow_other_conditions: null

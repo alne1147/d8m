@@ -1,0 +1,9 @@
+name: 'Block Visibility Config'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_class
+  - block_visibility_groups
+  - menu_block
+  - term_condition
