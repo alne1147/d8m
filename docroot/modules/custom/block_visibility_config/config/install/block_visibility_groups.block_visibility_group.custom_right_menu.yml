@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: custom_right_menu
+label: 'Custom Right Menu'
+logic: and
+conditions: {  }
+allow_other_conditions: false
