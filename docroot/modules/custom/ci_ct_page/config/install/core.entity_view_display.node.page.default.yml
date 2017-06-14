@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_block_options
     - field.field.node.page.field_meta
     - field.field.node.page.field_rows
     - node.type.page
@@ -37,4 +38,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_block_options: true
   field_meta: true
