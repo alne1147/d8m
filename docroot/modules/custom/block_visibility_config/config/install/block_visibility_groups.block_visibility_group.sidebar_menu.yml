@@ -4,7 +4,7 @@ dependencies:
   module:
     - term_condition
 id: sidebar_menu
-label: 'Sidebar Menu'
+label: 'Sidebar Left Menu'
 logic: and
 conditions:
   6da87205-8961-4386-b8c7-8bff2daa8815:
@@ -14,4 +14,4 @@ conditions:
     context_mapping:
       node: '@node.node_route_context:node'
     uuid: 6da87205-8961-4386-b8c7-8bff2daa8815
-allow_other_conditions: null
+allow_other_conditions: false
