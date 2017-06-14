@@ -17,6 +17,7 @@ dependencies:
   - paragraphs
   - path
   - rdf
+  - taxonomy
   - text
   - user
 package: ci_ct
