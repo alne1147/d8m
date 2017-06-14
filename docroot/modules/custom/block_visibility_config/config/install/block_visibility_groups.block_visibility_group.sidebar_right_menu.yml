@@ -1,8 +1,17 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - term_condition
 id: sidebar_right_menu
 label: 'Sidebar Right Menu'
 logic: and
-conditions: {  }
+conditions:
+  887744c8-3cf5-42d2-8323-bc1f9c1bcc22:
+    id: term
+    negate: 0
+    tid: '21'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 887744c8-3cf5-42d2-8323-bc1f9c1bcc22
 allow_other_conditions: false
