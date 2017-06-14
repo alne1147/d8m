@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+    - user
+id: custom_menu
+label: 'Custom Menu'
+logic: and
+conditions:
+  a29ea33f-f97d-4f78-804a-f7cdbd8ad275:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      support_administrator: support_administrator
+      user_administrator: user_administrator
+      content_administrator: content_administrator
+      content_publisher: content_publisher
+      content_editor: content_editor
+      structure_administrator: structure_administrator
+      structure_editor: structure_editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    uuid: a29ea33f-f97d-4f78-804a-f7cdbd8ad275
+  af19b24b-868b-496e-a369-5e39e2fa7ef5:
+    id: term
+    negate: 0
+    tid: '2'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: af19b24b-868b-496e-a369-5e39e2fa7ef5
+allow_other_conditions: false
