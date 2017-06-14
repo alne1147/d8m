@@ -53,7 +53,7 @@ content:
     weight: 5
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_meta:
     weight: 9
