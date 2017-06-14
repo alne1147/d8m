@@ -1,8 +1,17 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - term_condition
 id: custom_right_menu
 label: 'Custom Right Menu'
 logic: and
-conditions: {  }
+conditions:
+  1c97eaf9-eb2b-4edd-b62d-2a8dd5a68949:
+    id: term
+    negate: 0
+    tid: '16'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 1c97eaf9-eb2b-4edd-b62d-2a8dd5a68949
 allow_other_conditions: false
