@@ -166,10 +166,12 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% endif %}
 
 {# Prints div with classes, and content without Width and Background. #}
-<div{{ attributes.addClass(classes) }}>
-    <div class="paragraph__column">
-      <div class="container">
-        {{ content|without('bp_width', 'bp_background','field_alignment') }}
-      </div>
-  </div>
+<div class="paragraph__card">
+  {#<div class="container">#}
+  <div{{ attributes.addClass(classes) }}>
+      <div class="paragraph__column">
+          {{ content|without('bp_width', 'bp_background','field_alignment') }}
+        </div>
+    </div>
+  {#</div>#}
 </div>
