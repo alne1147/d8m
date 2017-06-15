@@ -774,4 +774,4 @@ if (file_exists('/var/www/site-php')) {
 
 $config_directories['sync'] = '../config/sync';
 
-$settings['install_profile'] = 'config_installer';
+$settings['install_profile'] = 'ci_start';

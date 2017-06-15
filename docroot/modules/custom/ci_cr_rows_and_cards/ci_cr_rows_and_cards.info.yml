@@ -1,0 +1,24 @@
+name: 'Rows and Cards'
+description: 'Config for all Rows and Cards'
+type: module
+core: 8.x
+dependencies:
+  - background_image_formatter
+  - block
+  - classy_paragraphs
+  - contact
+  - contact_formatter
+  - content_moderation
+  - crop
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - image_widget_crop
+  - link
+  - options
+  - paragraphs
+  - text
+  - views
+  - viewsreference
+package: ci_cards

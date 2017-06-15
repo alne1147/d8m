@@ -1,0 +1,19 @@
+name: 'Content Types'
+description: 'Content Type Configuration'
+type: module
+core: 8.x
+dependencies:
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - field_group
+  - menu_ui
+  - metatag
+  - node
+  - paragraphs
+  - path
+  - rdf
+  - taxonomy
+  - text
+  - user
+package: ci_ct
