@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_rows
     - node.type.landing_page
   module:
@@ -16,4 +17,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta: true
   field_rows: true

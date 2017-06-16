@@ -4,6 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_block_options
+    - field.field.node.page.field_meta
     - field.field.node.page.field_rows
     - node.type.page
   module:
@@ -26,4 +28,6 @@ content:
     weight: 101
     region: content
 hidden:
+  field_block_options: true
+  field_meta: true
   field_rows: true

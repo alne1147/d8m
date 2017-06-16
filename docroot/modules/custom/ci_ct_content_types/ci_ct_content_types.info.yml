@@ -3,6 +3,7 @@ description: 'Content Type Configuration'
 type: module
 core: 8.x
 dependencies:
+  - ci_cr_rows_and_cards
   - content_moderation
   - entity_reference_revisions
   - field
