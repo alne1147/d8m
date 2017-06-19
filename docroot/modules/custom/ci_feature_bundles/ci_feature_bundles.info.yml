@@ -4,4 +4,5 @@ type: module
 core: 8.x
 dependencies:
   - features
+package: Colorado Interactive
 version: 8.x
