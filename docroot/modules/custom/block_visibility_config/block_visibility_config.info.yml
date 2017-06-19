@@ -4,9 +4,14 @@ core: 8.x
 dependencies:
   - block
   - block_class
+  - block_content
   - block_visibility_groups
+  - ctools
+  - help
+  - masquerade
   - menu_block
   - menu_condition
+  - search
   - system
   - term_condition
   - user

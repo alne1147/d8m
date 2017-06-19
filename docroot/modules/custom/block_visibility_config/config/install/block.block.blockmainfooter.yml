@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:row_block:8e0f4fc5-1848-4e37-892d-08efb5472307'
+  module:
+    - block_class
+    - block_content
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: blockmainfooter
+theme: ci_xy
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:8e0f4fc5-1848-4e37-892d-08efb5472307'
+settings:
+  id: 'block_content:8e0f4fc5-1848-4e37-892d-08efb5472307'
+  label: 'Block - Main Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
