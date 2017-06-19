@@ -1,0 +1,35 @@
+.jumbotron {
+  padding-top:0!important;
+  padding-bottom:0!important;
+  margin-bottom:0!important;
+  //background-color: transparent!important;
+  .block-block-content {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  [class^="paragraph--type--bp-columns__"] {
+    margin-top:100px;
+    @media (max-width: $screen-sm-min) {
+      &:nth-of-type(n+2) {
+      }
+    }
+    &:first-child {
+      padding-left:0!important;
+    }
+    &:last-child {
+      padding-right:0!important;
+    }
+  }
+  .paragraph--type--full-column-hero,
+  .paragraph--type--row-two-column-hero,
+  .paragraph--type--row-three-column-hero {
+    .row__title {
+      margin-top:70px;
+    }
+  }
+  [class^="hero__responsive_"] {
+    -webkit-background-size:cover;
+    background-size:cover;
+    min-height: 460px;
+  }
+}
