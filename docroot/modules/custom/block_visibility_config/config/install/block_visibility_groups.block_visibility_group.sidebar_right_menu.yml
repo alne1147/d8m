@@ -4,7 +4,7 @@ dependencies:
   module:
     - term_condition
 id: sidebar_right_menu
-label: 'Sidebar Right Menu'
+label: 'Main Menu - Right'
 logic: and
 conditions:
   887744c8-3cf5-42d2-8323-bc1f9c1bcc22:

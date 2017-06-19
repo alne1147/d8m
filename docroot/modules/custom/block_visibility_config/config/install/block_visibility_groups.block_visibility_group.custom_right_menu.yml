@@ -4,7 +4,7 @@ dependencies:
   module:
     - term_condition
 id: custom_right_menu
-label: 'Custom Right Menu'
+label: 'Second Menu - Right'
 logic: and
 conditions:
   1c97eaf9-eb2b-4edd-b62d-2a8dd5a68949:

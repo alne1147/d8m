@@ -2,6 +2,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: custom-menu
-label: 'Custom Menu'
-description: ''
+label: 'Second Menu'
+description: 'Custom Second Menu - Selected By Page Options Vocab'
 locked: false

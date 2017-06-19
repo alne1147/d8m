@@ -6,6 +6,7 @@ dependencies:
   - block_class
   - block_visibility_groups
   - menu_block
+  - menu_condition
   - system
   - term_condition
   - user
