@@ -19,8 +19,8 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
  */
 
 // CI theme components
-@import "component/jumbotron";
-@import "component/left-navigation";
+@import "component/hero";
+//@import "component/left-navigation";
 // @import "component/main-footer";
 // @import "component/global-footer";
 
@@ -29,6 +29,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
  */
 @import "layout/blocks";
 @import "layout/header";
+@import "layout/jumbotron";
 @import "layout/top-nav";
 @import "layout/breadcrumbs";
 @import "layout/sidebar-nav";
