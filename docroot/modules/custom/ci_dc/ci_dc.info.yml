@@ -2,7 +2,7 @@ name: 'CI Default Content Generator'
 type: module
 hidden: FALSE
 description: 'Default content for Ci Starter Profile'
-package: Web services
+package: Colorado Interactive
 # core: 8.x
 dependencies:
   - default_content:default_content
