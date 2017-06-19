@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: row_block
+label: 'Row Block'
+revision: 0
+description: 'A Block type that uses rows.'

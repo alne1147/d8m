@@ -127,6 +127,7 @@ dependencies:
   - paragraphs_type_permissions
   - paragraphs_layouts
   - metatag
+  - simple_block
   - slick
   - slick_media
   - slick_paragraphs
