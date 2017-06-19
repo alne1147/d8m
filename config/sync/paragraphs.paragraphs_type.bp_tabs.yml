@@ -1,9 +1,0 @@
-uuid: e4375e6b-31ac-47b4-8d79-c2cfe8b3fc90
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 5zGQr2qE1NXKRMqerA2-hPOX5jBDw_-6nxVFjVBcw4w
-id: bp_tabs
-label: 'Card - Tabs'
-behavior_plugins: {  }
