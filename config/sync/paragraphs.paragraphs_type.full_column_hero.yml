@@ -1,9 +1,0 @@
-uuid: 0088c796-1922-4ce8-b0d8-20a962bd92a0
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: gdZ1oknqUPnhc9D0WKON-76Rx7KlC7Ayd5erd6B251k
-id: full_column_hero
-label: 'Row - Equal Column Hero'
-behavior_plugins: {  }
