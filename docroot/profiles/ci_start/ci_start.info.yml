@@ -110,6 +110,9 @@ dependencies:
   - config_update
   - contact_formatter
   - content_moderation
+  - default_content
+  - hal
+  - serialization
   - embed
   - entity
   - libraries

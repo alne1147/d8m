@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/26?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 26
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f042bb83-62e5-4757-84f6-8e909fe6582f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "structure-only"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497045406
+        }
+    ],
+    "changed": [
+        {
+            "value": 1497045406,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

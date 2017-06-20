@@ -1,0 +1,84 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/full-column-row\/o5ro3KB.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/21?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 56
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1b29866b-5f6a-4543-88dc-66c4b4d280df"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "o5ro3KB.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/full-column-row\/o5ro3KB.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 118180
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1496783603
+        }
+    ],
+    "changed": [
+        {
+            "value": 1496783622
+        }
+    ]
+}

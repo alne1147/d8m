@@ -1,0 +1,134 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 476
+        }
+    ],
+    "uuid": [
+        {
+            "value": "96f2add7-2de8-4265-99fd-0987a0933f9e"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2561
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497477714,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "471"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-black-light",
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<h2>Chimney Rock<\/h2>\r\n\r\n<p>In the northwest San Juans resides a lonely tower.&nbsp;Chimney Rock (also sometimes called Chimney Peak)&nbsp;sits among great peaks and formations such as&nbsp;<a href=\"http:\/\/www.summitpost.org\/courthouse-mountain\/788766\">Courthouse Mountain<\/a>,&nbsp;<a href=\"http:\/\/www.summitpost.org\/precipice-peak\/819572\">Precipice Peak<\/a>, and the spires of Cimarron Ridge. While driving up through the Cimarron Valley, Chimney Rock greets and entices the climber, yet warns of it\u2019s possibilities.&nbsp;<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}

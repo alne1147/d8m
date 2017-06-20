@@ -1,0 +1,144 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/news?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 56
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7445735c-dab4-44d6-bc38-a64b0d366e47"
+        }
+    ],
+    "vid": [
+        {
+            "value": 106
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "News",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494278223,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494278266,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1494278266
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<h3>News Overview<\/h3>\r\n\r\n<p>Aenean et penatibus dolor, dapibus habitasse purus scelerisque facilisis ac! Nascetur turpis, non nisi? Penatibus lacus, rhoncus sit. Lectus dis mid augue lundium ultrices mattis dignissim natoque cras tincidunt, ultrices? Tincidunt mid pid arcu. Elementum dis, mid risus ac scelerisque? Lacus risus arcu? Porttitor a, mauris, nunc nunc tristique arcu, a etiam? Dictumst tincidunt, integer, porta? Duis, mauris sed, quis velit mus! Rhoncus, auctor et, nisi nisi nec amet integer! Pulvinar, scelerisque montes porttitor dolor habitasse vel sit et auctor? Aliquet placerat tincidunt auctor. Dignissim, sit lorem nunc, aenean non. Penatibus elit mattis. Tristique nunc adipiscing dignissim turpis, tincidunt vel, proin nec ultricies ultricies eu elit magna nunc, tincidunt dapibus porttitor odio, aliquam augue? Mauris, a hac auctor mauris! Nec.<\/p>\r\n\r\n<p>Natoque platea mus lectus lorem integer massa rhoncus purus cursus augue! Odio aliquet. Ac velit quis sociis, est phasellus, dolor! Nisi tincidunt, tincidunt, tempor, porta odio. Vel magna sagittis tortor lacus est tortor, adipiscing nascetur elit, est urna porttitor magna elit tincidunt porttitor magna, cursus, lacus quis placerat, urna. Mattis, augue vel velit nunc placerat auctor et vel quis, et pid tortor nisi dis nec, sagittis tempor odio, tincidunt urna, ut lundium vut mattis? Nascetur. Elementum sit. Porta tristique nec tempor nisi pulvinar, tincidunt turpis magnis, dolor? Ut eu cursus ut proin dolor parturient, ut, pellentesque elementum pulvinar, tempor sed integer, nec sed nec! Purus elementum proin scelerisque in, dictumst dolor vel mid, et est diam porta, pid parturient.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/21?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 21
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "jwathen"
+        }
+    ],
+    "created": [
+        {
+            "value": 1495054117
+        }
+    ],
+    "changed": [
+        {
+            "value": 1495054117,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

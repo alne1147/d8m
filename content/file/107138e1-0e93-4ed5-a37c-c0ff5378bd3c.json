@@ -1,0 +1,84 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/application-pdf.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/41?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 171
+        }
+    ],
+    "uuid": [
+        {
+            "value": "107138e1-0e93-4ed5-a37c-c0ff5378bd3c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/41?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e00b1610-9612-4f96-ad31-b5edde82bd5f"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "application-pdf.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/application-pdf.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1732
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": 1497631056
+        }
+    ],
+    "changed": [
+        {
+            "value": 1497631056
+        }
+    ]
+}

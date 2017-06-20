@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/41?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 41
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e00b1610-9612-4f96-ad31-b5edde82bd5f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "contentadmin"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497045640
+        }
+    ],
+    "changed": [
+        {
+            "value": 1497045640,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

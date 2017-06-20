@@ -1,0 +1,150 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_accordion_section"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/uid": [
+            {
+                "href": "http:\/\/default\/user\/21?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/21?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/bp_accordion_section_body": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 461
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6aa04fe6-f6e0-4c7b-8c73-fc5fbebc8a6a"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2546
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_accordion_section"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/bp_accordion_section_body": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "06e19efb-afd1-44cb-9a9c-c8663984f1ba"
+                    }
+                ],
+                "target_revision_id": "2601"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497474182,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "466"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_accordion_section"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_accordion_section_title": [
+        {
+            "value": "Section 2"
+        }
+    ]
+}

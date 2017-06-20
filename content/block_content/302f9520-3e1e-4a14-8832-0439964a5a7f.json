@@ -1,0 +1,90 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/26?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/row_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/row_block\/field_row": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 26
+        }
+    ],
+    "uuid": [
+        {
+            "value": "302f9520-3e1e-4a14-8832-0439964a5a7f"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 26
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "row_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Block - Main Jumbotron",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1497890540,
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1497477566
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/row_block\/field_row": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/row_two_column_hero"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "84c97657-321f-4576-acd2-eac6df845d9c"
+                    }
+                ],
+                "target_revision_id": "2556"
+            }
+        ]
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/services?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 11
+        }
+    ],
+    "uuid": [
+        {
+            "value": "459b691a-8cbe-4ef1-b31d-479f62a4f2c3"
+        }
+    ],
+    "vid": [
+        {
+            "value": 146
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Services",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1494016294,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494278955,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1494278955
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<h2>Services Link paragraph header<\/h2>\r\n\r\n<p>Ut dictumst elit ultrices phasellus et dictumst? Turpis vel porttitor tincidunt eu mauris vel, nunc duis, non augue! Ut mauris nunc, sagittis pellentesque ac tincidunt augue magna mus, ac lorem mid lorem turpis lorem ac magnis, dictumst, nunc, placerat, montes, sagittis penatibus? Pulvinar ac. Eu vut? Pid purus mauris porta cum in habitasse adipiscing? Duis mid, dapibus duis? In enim. Penatibus? Vel et? Turpis, ac pid. Tincidunt nunc nascetur pulvinar, dis rhoncus, aliquam, vel nunc tempor, quis, eros mus cursus. A tempor ac non, pulvinar, et elementum, sagittis velit tempor, risus et, porttitor vel rhoncus. Tempor mauris sociis habitasse amet in ultricies nisi pid lacus pulvinar, enim dolor, aliquam nec integer auctor sit in et? Scelerisque natoque mus massa, mid.<\/p>\r\n",
+            "format": "full_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/16?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/pictures\/2017-05\/picture-16-1494541787.png",
+                "lang": "en"
+            }
+        ]
+    },
+    "uid": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "cc540ea9-d874-498c-a627-1368daba0355"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Alfredo nevarez jr"
+        }
+    ],
+    "created": [
+        {
+            "value": 1494541787
+        }
+    ],
+    "changed": [
+        {
+            "value": 1494541787,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/pictures\/2017-05\/picture-16-1494541787.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "44fff712-0c2d-45f0-9303-337fc250f728"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/pictures\/2017-05\/picture-16-1494541787.png"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    }
+}
