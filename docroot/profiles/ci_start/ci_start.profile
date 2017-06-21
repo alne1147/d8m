@@ -5,7 +5,7 @@
  *
  * Allows the profile to alter the site configuration form.
  */
-function Pci_start_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+function ci_start_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
 
   // Account information defaults
   $form['admin_account']['account']['name']['#default_value'] = 'd8m_admin';
