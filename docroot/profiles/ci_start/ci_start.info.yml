@@ -3,6 +3,7 @@ type: profile
 core: 8.x
 
 dependencies:
+  - ci_permissions
   - admin_toolbar
   - admin_toolbar_tools
   - filter_perms
