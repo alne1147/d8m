@@ -4,3 +4,24 @@
  * @file
  * Defines sample default content for test purposes.
  */
+/**
+ * Implements hook_install_tasks().
+ */
+function ci_permissions_install_tasks() {
+  $tasks['mymodule_setup_admin_account'] = array(
+    'display_name' => st('Setup admin account'),
+  );
+  return $tasks;
+}
+
+function ci_permissions_setup_admin_account() {
+  // Setup the user account array to programatically create a new user.
+  $account = array(
+    'name' => 'd8m_admin,'
+    'pass' => 'paddword1,'
+    'mail' => 'alne11@live.com',
+    'status' => 1,
+    'init' => 'ci_start', // Just an example
+  );
+  $account = user_save(null, $account);
+}
