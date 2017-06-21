@@ -8,7 +8,7 @@
  * Implements hook_install_tasks().
  */
 function ci_permissions_install_tasks() {
-  $tasks['mymodule_setup_admin_account'] = array(
+  $tasks['ci_permissions_setup_admin_account'] = array(
     'display_name' => st('Setup admin account'),
   );
   return $tasks;
