@@ -515,7 +515,7 @@ $settings['file_chmod_file'] = 0664;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
- $settings['file_public_path'] = '/files';
+ $settings['file_public_path'] = 'files';
 
 /**
  * Private file path:
@@ -530,7 +530,7 @@ $settings['file_chmod_file'] = 0664;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
- $settings['file_private_path'] = '/files';
+ $settings['file_private_path'] = 'files';
 
 /**
  * Session write interval:
