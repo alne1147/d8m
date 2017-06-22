@@ -21,16 +21,6 @@
             {
                 "href": "",
                 "lang": "en"
-            },
-            {
-                "href": "",
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/field_row_background_image": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/two-column-row\/iStock_76862325_XLARGE.jpg",
-                "lang": "en"
             }
         ]
     },
@@ -73,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ],
                 "lang": "en"
@@ -91,7 +81,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ]
             }
@@ -113,46 +103,6 @@
                 ],
                 "lang": "en",
                 "target_revision_id": "2561"
-            },
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "e25cfab6-1a3d-44b4-b536-31a25c7afb9a"
-                    }
-                ],
-                "lang": "en",
-                "target_revision_id": "2566"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/field_row_background_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/two-column-row\/iStock_76862325_XLARGE.jpg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "c7a84361-2e64-4ddf-b3e4-4ddb88d0fbe1"
-                    }
-                ],
-                "uri": [
-                    {
-                        "value": "http:\/\/default\/sites\/default\/files\/two-column-row\/iStock_76862325_XLARGE.jpg"
-                    }
-                ],
-                "lang": "en"
             }
         ]
     },

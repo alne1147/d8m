@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/26?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 26
+        }
+    ],
+    "uuid": [
+        {
+            "value": "653ab35c-fdd4-42b2-9e67-2b36b7aa051b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "ci-supportadmin"
+        }
+    ],
+    "created": [
+        {
+            "value": 1498076838
+        }
+    ],
+    "changed": [
+        {
+            "value": 1498076839,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}
