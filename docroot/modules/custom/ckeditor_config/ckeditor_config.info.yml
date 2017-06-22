@@ -10,5 +10,5 @@ dependencies:
   - filter
   - linkit
   - video_embed_wysiwyg
-package: Colorado Interactive
+package: 'Colorado Interactive'
 version: 8.x
