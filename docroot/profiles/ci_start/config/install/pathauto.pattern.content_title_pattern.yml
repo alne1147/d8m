@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_title_pattern
+label: 'Content Title Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  a89658a1-cd0c-4b60-ac3f-c7576f961fe2:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+      page: page
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a89658a1-cd0c-4b60-ac3f-c7576f961fe2
+selection_logic: and
+weight: -5
+relationships: {  }
