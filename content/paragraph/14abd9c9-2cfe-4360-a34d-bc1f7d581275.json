@@ -4,46 +4,38 @@
             "href": ""
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
         },
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
-            {
-                "href": ""
-            },
-            {
-                "href": ""
             }
         ]
     },
     "id": [
         {
-            "value": 612
+            "value": 646
         }
     ],
     "uuid": [
         {
-            "value": "81d986e2-0e5c-45b8-b3aa-3c00fe09cf51"
+            "value": "14abd9c9-2cfe-4360-a34d-bc1f7d581275"
         }
     ],
     "revision_id": [
         {
-            "value": 2962
+            "value": 3050
         }
     ],
     "type": [
         {
-            "target_id": "bp_columns"
+            "target_id": "card_basic"
         }
     ],
     "langcode": [
@@ -53,7 +45,7 @@
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
             {
                 "_links": {
                     "self": {
@@ -71,7 +63,7 @@
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
             {
                 "_links": {
                     "self": {
@@ -87,40 +79,6 @@
                     }
                 ]
             }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "14abd9c9-2cfe-4360-a34d-bc1f7d581275"
-                    }
-                ],
-                "target_revision_id": "3050"
-            },
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "6ca7259c-1ac6-403c-85cb-1ba2f1229401"
-                    }
-                ],
-                "target_revision_id": "3051"
-            }
         ]
     },
     "status": [
@@ -131,23 +89,23 @@
     ],
     "created": [
         {
-            "value": 1498145354,
+            "value": 1498165070,
             "lang": "en"
         }
     ],
     "parent_id": [
         {
-            "value": "1"
+            "value": "612"
         }
     ],
     "parent_type": [
         {
-            "value": "node"
+            "value": "paragraph"
         }
     ],
     "parent_field_name": [
         {
-            "value": "field_rows"
+            "value": "bp_column_content"
         }
     ],
     "behavior_settings": [
@@ -161,10 +119,15 @@
             "lang": "en"
         }
     ],
-    "field_row_title": [
+    "field_card_body": [
         {
-            "value": "Add some homepage content!",
-            "lang": "en"
+            "value": "<p>Cras mattis iudicium purus sit amet fermentum. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Hi omnes lingua, institutis, legibus inter se differunt. Praeterea iter est quasdam res quas ex communi. Non equidem invideo, miror magis posuere velit aliquet.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "At nos hinc"
         }
     ]
 }
