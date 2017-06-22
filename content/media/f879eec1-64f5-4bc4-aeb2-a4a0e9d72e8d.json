@@ -8,23 +8,7 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/media\/document\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/application-pdf.png"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/uid": [
-            {
-                "href": "http:\/\/default\/user\/41?_format=hal_json",
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/revision_uid": [
-            {
-                "href": "http:\/\/default\/user\/41?_format=hal_json"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/field_document": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/2017-06\/Testrun-51115-245pm.pdf"
+                "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/document.png"
             }
         ]
     },
@@ -65,7 +49,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/application-pdf.png"
+                        "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/document.png"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -73,69 +57,12 @@
                 },
                 "uuid": [
                     {
-                        "value": "107138e1-0e93-4ed5-a37c-c0ff5378bd3c"
+                        "value": "623a7116-123a-4a2c-9af2-921f49dc1768"
                     }
                 ],
                 "uri": [
                     {
-                        "value": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/application-pdf.png"
-                    }
-                ]
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/41?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "e00b1610-9612-4f96-ad31-b5edde82bd5f"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/revision_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/41?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "e00b1610-9612-4f96-ad31-b5edde82bd5f"
-                    }
-                ]
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/document\/field_document": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2017-06\/Testrun-51115-245pm.pdf"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "ed6b9b31-4d6e-4860-94d5-8ac26defafaa"
-                    }
-                ],
-                "uri": [
-                    {
-                        "value": "http:\/\/default\/sites\/default\/files\/2017-06\/Testrun-51115-245pm.pdf"
+                        "value": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/document.png"
                     }
                 ]
             }

@@ -8,13 +8,13 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
             {
-                "href": "http:\/\/default\/user\/21?_format=hal_json",
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/21?_format=hal_json"
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
         ]
     },
@@ -49,7 +49,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/21?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ],
                 "lang": "en"
@@ -67,7 +67,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/21?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "c2887459-cb2d-417b-8871-95a9c8200ba8"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ]
             }
@@ -121,13 +121,13 @@
     ],
     "field_card_body": [
         {
-            "value": "<p>Contact Us<\/p>\n\n<p>Agency Name<\/p>\n\n<p>123 Aspen St.<\/p>\n\n<p>Somewhere, CO 80202<\/p>\n\n<p>Phone: 303-333-4444<\/p>\n\n<p>&nbsp;<\/p>\n",
+            "value": "<p>Tu quoque, Brute, fili mi, nihil timor populi, nihil! Fictum, &nbsp;deserunt mollit anim laborum astutumque! Me non paenitet nullum festiviorem excogitasse ad hoc.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor"
         }
     ],
     "field_card_title": [
         {
-            "value": "Card Basic Title 1"
+            "value": "Lorem ipsum dolor sit"
         }
     ]
 }

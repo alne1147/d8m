@@ -23,9 +23,6 @@
             },
             {
                 "href": ""
-            },
-            {
-                "href": ""
             }
         ]
     },
@@ -68,7 +65,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ],
                 "lang": "en"
@@ -86,28 +83,12 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                        "value": "53cbf20b-d036-4bba-85da-c7b98ddcfcbb"
                     }
                 ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/bp_column_content_3": [
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_simple"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "360f7379-00ea-406f-8c86-936c03eb248d"
-                    }
-                ],
-                "target_revision_id": "9"
-            },
             {
                 "_links": {
                     "self": {

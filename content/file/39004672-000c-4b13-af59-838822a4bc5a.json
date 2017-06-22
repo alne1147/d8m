@@ -8,7 +8,7 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/user\/0?_format=hal_json"
             }
         ]
     },
@@ -32,7 +32,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/0?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -40,7 +40,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3d59076b-73af-4cf6-a64c-39a350f3d613"
+                        "value": "71f6e08f-246f-47d2-83c2-de7f70775a9e"
                     }
                 ]
             }
@@ -73,12 +73,12 @@
     ],
     "created": [
         {
-            "value": 1493743227
+            "value": 1498076361
         }
     ],
     "changed": [
         {
-            "value": 1493743227
+            "value": 1498076361
         }
     ]
 }

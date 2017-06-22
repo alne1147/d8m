@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/46?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 46
+        }
+    ],
+    "uuid": [
+        {
+            "value": "88cdfdc7-9e32-443a-ac3a-f3d43d199491"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "ci-jwathen"
+        }
+    ],
+    "created": [
+        {
+            "value": 1498076847
+        }
+    ],
+    "changed": [
+        {
+            "value": 1498076848,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

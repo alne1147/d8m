@@ -1,0 +1,48 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/16?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c387b959-5b17-4a5e-8e89-d0fc7a3c5814"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "ci-kharrison"
+        }
+    ],
+    "created": [
+        {
+            "value": 1498076834
+        }
+    ],
+    "changed": [
+        {
+            "value": 1498076835,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}
