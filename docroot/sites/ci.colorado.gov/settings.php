@@ -492,8 +492,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-// $settings['file_chmod_directory'] = 0775;
-// $settings['file_chmod_file'] = 0664;
+# $settings['file_chmod_directory'] = 0775;
+# $settings['file_chmod_file'] = 0664;
 
 /**
  * Public file base URL:
@@ -515,7 +515,7 @@ if ($settings['hash_salt']) {
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
- // $settings['file_public_path'] = '/files';
+# $settings['file_public_path'] = 'sites/default/files';
 
 /**
  * Private file path:
@@ -530,7 +530,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
- $settings['file_private_path'] = '/files';
+# $settings['file_private_path'] = '';
 
 /**
  * Session write interval:
@@ -761,6 +761,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/ci-settings.inc';
 }
-$config_directories['sync'] = '../config/sync';
 
+$config_directories['sync'] = '../config/sync';
 $settings['install_profile'] = 'ci_start';
+$config['content_directory'] = '../content';
