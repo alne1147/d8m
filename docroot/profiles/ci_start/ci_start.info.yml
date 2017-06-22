@@ -1,6 +1,12 @@
-name: Ci Start
+name: Colorado Interactive Starter
 type: profile
+description: 'The Colorado Interactive Flavor of Drupal 8.'
 core: 8.x
+
+distribution:
+  name: Colorado Interactive Distro
+  
+langcode: en
 
 dependencies:
   - ci_permissions
