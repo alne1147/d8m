@@ -492,8 +492,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-$settings['file_chmod_directory'] = 0775;
-$settings['file_chmod_file'] = 0664;
+# $settings['file_chmod_directory'] = 0775;
+# $settings['file_chmod_file'] = 0664;
 
 /**
  * Public file base URL:
@@ -530,7 +530,7 @@ $settings['file_chmod_file'] = 0664;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+ $settings['file_private_path'] = 'files/private';
 
 /**
  * Session write interval:
@@ -761,3 +761,8 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/revenue-settings.inc';
 }
+
+$config_directories['sync'] = '../config/sync';
+$settings['install_profile'] = 'ci_start';
+$config['content_directory'] = '../content';
+$conf['file_temporary_path'] = 'tmp';
