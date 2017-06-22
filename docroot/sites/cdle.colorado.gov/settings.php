@@ -515,7 +515,7 @@ if ($settings['hash_salt']) {
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-# $settings['file_public_path'] = 'sites/default/files';
+ $settings['file_public_path'] = '/files';
 
 /**
  * Private file path:
@@ -530,7 +530,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+ $settings['file_private_path'] = '/files';
 
 /**
  * Session write interval:
@@ -759,5 +759,10 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 // settings.php for development on your local workstation, set $db_url
 // (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
 if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/coloradod8m/hcpf-settings.inc';
+  require '/var/www/site-php/coloradod8m/cdle-settings.inc';
 }
+$config_directories['sync'] = '../config/sync';
+
+$settings['install_profile'] = 'ci_start';
+
+$conf['file_temporary_path'] = 'tmp';

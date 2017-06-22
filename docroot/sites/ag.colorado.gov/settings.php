@@ -144,11 +144,6 @@
  * @code
  *   'prefix' => 'main_',
  * @endcode
- *
- * Per-table prefixes are deprecated as of Drupal 8.2, and will be removed in
- * Drupal 9.0. After that, only a single prefix for all tables will be
- * supported.
- *
  * To provide prefixes for specific tables, set 'prefix' as an array.
  * The array's keys are the table names and the values are the prefixes.
  * The 'default' element is mandatory and holds the prefix for any tables
@@ -270,11 +265,6 @@ $config_directories = array();
  * by the user.
  *
  * @see install_select_profile()
- *
- * @deprecated in Drupal 8.3.0 and will be removed before Drupal 9.0.0. The
- *   install profile is written to the core.extension configuration. If a
- *   service requires the install profile use the 'install_profile' container
- *   parameter. Functional code can use \Drupal::installProfile().
  */
 # $settings['install_profile'] = '';
 
@@ -295,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'PeLNpn3khYftaTWiuajfRln_0wYqOtkc9U9WeZQu4EafwZLy21b9t3wnzNtUAm5vHAvojVgYSQ';
+$settings['hash_salt'] = 'NONE';
 
 /**
  * Deployment identifier.
@@ -318,7 +308,7 @@ $settings['hash_salt'] = 'PeLNpn3khYftaTWiuajfRln_0wYqOtkc9U9WeZQu4EafwZLy21b9t3
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = TRUE;
 
 /**
  * External access proxy settings:
@@ -525,7 +515,7 @@ if ($settings['hash_salt']) {
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-# $settings['file_public_path'] = 'sites/default/files';
+ $settings['file_public_path'] = '/files';
 
 /**
  * Private file path:
@@ -540,7 +530,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+ $settings['file_private_path'] = '/files';
 
 /**
  * Session write interval:
@@ -760,18 +750,19 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
- if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
- }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+ include $app_root . '/' . $site_path . '/settings.local.php';
+}
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
 // settings.php for development on your local workstation, set $db_url
 // (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
 if (file_exists('/var/www/site-php')) {
-  require('/var/www/site-php/coloradod8m/ag-settings.inc');
+  require '/var/www/site-php/coloradod8m/ag-settings.inc';
 }
-
 $config_directories['sync'] = '../config/sync';
 
 $settings['install_profile'] = 'ci_start';
+
+$conf['file_temporary_path'] = 'tmp';
