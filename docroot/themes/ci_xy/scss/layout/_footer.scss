@@ -4,7 +4,7 @@
     - These styles are set in the page.html.twig template.
     - The Global Footer is controlled in code by the drupal themer.
  3. Colorado.gov logo
- 4. Content Footer - These
+ 4. Content Footer
     - These styles are set in the page.html.twig template.
     - The Content Footer is controlled by the site authors.
  */
@@ -69,6 +69,10 @@ footer {
 // [4]
 .footer__content-footer {
   padding-bottom: 30px;
+  margin-top:30px;
+  @media (max-width: $screen-xs) {
+    margin-top:20px;
+  }
   .block-block-content {
     margin-bottom: 0;
     padding: 20px 0 0;
