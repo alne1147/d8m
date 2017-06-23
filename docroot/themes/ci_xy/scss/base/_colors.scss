@@ -1,0 +1,444 @@
+/* COLORS
+ * These colors are set for the backgrounds for rows and cards
+
+ * 1. Brand Colorado Primary
+ * 2. Brand Colorado Secondary
+ */
+
+// [1]
+// Brand Green
+.color__brand-green--strong {
+  background: rgba($color-brand-green, 1)
+}
+.color__brand-green--light {
+  background: rgba($color-brand-green, .5)
+}
+.color__brand-green--slight {
+  background: rgba($color-brand-green, .2)
+}
+// Brand Slate
+.color__brand-slate--strong {
+  background: rgba($color-brand-slate, 1)
+}
+.color__brand-slate--light {
+  background: rgba($color-brand-slate, .5)
+}
+.color__brand-slate--slight {
+  background: rgba($color-brand-slate, .2)
+}
+// Brand Silver
+.color__brand-silver--strong {
+  background: rgba($color-brand-silver, 1)
+}
+.color__brand-silver--light {
+  background: rgba($color-brand-silver, .5)
+}
+.color__brand-silver--slight {
+  background: rgba($color-brand-silver, .2)
+}
+// Brand Orange
+.color__brand-orange--strong {
+  background: rgba($color-brand-orange, 1)
+}
+.color__brand-orange--light {
+  background: rgba($color-brand-orange, .5)
+}
+.color__brand-orange--slight {
+  background: rgba($color-brand-orange, .2)
+}
+// Brand Brown
+.color__brand-brown--strong {
+  background: rgba($color-brand-brown, 1)
+}
+.color__brand-brown--light {
+  background: rgba($color-brand-brown, .5)
+}
+.color__brand-brown--slight {
+  background: rgba($color-brand-brown, .2)
+}
+// Brand Blue
+.color__brand-blue--strong {
+  background: rgba($color-brand-blue, 1)
+}
+.color__brand-blue--light {
+  background: rgba($color-brand-blue, .5)
+}
+.color__brand-blue--slight {
+  background: rgba($color-brand-blue, .2)
+}
+
+// Black, White
+// Black
+.color__black--strong {
+  background: rgba($color-black, 1)
+}
+.color__black--light {
+  background: rgba($color-black, .5)
+}
+.color__black--slight {
+  background: rgba($color-black, .2)
+}
+// White
+.color__white--strong {
+  background: rgba($color-white, 1)
+}
+.color__white--light {
+  background: rgba($color-white, .5)
+}
+.color__white--slight {
+  background: rgba($color-white, .2)
+}
+
+// [2]
+// Blacks, Browns and Greys
+
+// Evening
+.color__evening--strong {
+  background: rgba($color-evening, 1)
+}
+.color__evening--light {
+  background: rgba($color-evening, .5)
+}
+.color__evening--slight {
+  background: rgba($color-evening, .2)
+}
+// Charcoal
+.color__charcoal--strong {
+  background: rgba($color-charcoal, 1)
+}
+.color__charcoal--light {
+  background: rgba($color-charcoal, .5)
+}
+.color__charcoal--slight {
+  background: rgba($color-charcoal, .2)
+}
+// Blackboard
+.color__blackboard--strong {
+  background: rgba($color-charcoal, 1)
+}
+.color__blackboard--light {
+  background: rgba($color-charcoal, .5)
+}
+.color__blackboard--slight {
+  background: rgba($color-charcoal, .2)
+}
+// Blackboard
+.color__blackboard--strong {
+  background: rgba($color-charcoal, 1)
+}
+.color__blackboard--light {
+  background: rgba($color-charcoal, .5)
+}
+.color__blackboard--slight {
+  background: rgba($color-charcoal, .2)
+}
+// Grey Sand
+.color__grey-sand--strong {
+  background: rgba($color-grey-sand, 1)
+}
+.color__grey-sand--light {
+  background: rgba($color-grey-sand, .5)
+}
+.color__grey-sand--slight {
+  background: rgba($color-grey-sand, .2)
+}
+// Sleek Grey
+.color__sleek-grey--strong {
+  background: rgba($color-sleek-grey, 1)
+}
+.color__sleek-grey--light {
+  background: rgba($color-sleek-grey, .5)
+}
+.color__sleek-grey--slight {
+  background: rgba($color-sleek-grey, .2)
+}
+// Lemon Grass
+.color__lemon-grass--strong {
+  background: rgba($color-lemon-grass, 1)
+}
+.color__lemon-grass--light {
+  background: rgba($color-lemon-grass, .5)
+}
+.color__lemon-grass--slight {
+  background: rgba($color-lemon-grass, .2)
+}
+// Walnut
+.color__walnut--strong {
+  background: rgba($color-walnut, 1)
+}
+.color__walnut--light {
+  background: rgba($color-walnut, .5)
+}
+.color__walnut--slight {
+  background: rgba($color-walnut, .2)
+}
+// Walnut
+.color__beige--strong {
+  background: rgba($color-beige, 1)
+}
+.color__beige--light {
+  background: rgba($color-beige, .5)
+}
+.color__beige--slight {
+  background: rgba($color-beige, .2)
+}
+
+// Reds, Oranges, and Yellows
+// Spice
+.color__spice--strong {
+  background: rgba($color-spice, 1)
+}
+.color__spice--light {
+  background: rgba($color-spice, .5)
+}
+.color__spice--slight {
+  background: rgba($color-spice, .2)
+}
+// Brick Red
+.color__brick-red--strong {
+  background: rgba($color-brick-red, 1)
+}
+.color__brick-red--light {
+  background: rgba($color-brick-red, .5)
+}
+.color__brick-red--slight {
+  background: rgba($color-brick-red, .2)
+}
+// Scarlet
+.color__scarlet--strong {
+  background: rgba($color-scarlet, 1)
+}
+.color__scarlet--light {
+  background: rgba($color-scarlet, .5)
+}
+.color__scarlet--slight {
+  background: rgba($color-scarlet, .2)
+}
+// Scarlet
+.color__scarlet--strong {
+  background: rgba($color-scarlet, 1)
+}
+.color__scarlet--light {
+  background: rgba($color-scarlet, .5)
+}
+.color__scarlet--slight {
+  background: rgba($color-scarlet, .2)
+}
+// Cognac
+.color__cognac--strong {
+  background: rgba($color-cognac, 1)
+}
+.color__cognac--light {
+  background: rgba($color-cognac, .5)
+}
+.color__cognac--slight {
+  background: rgba($color-cognac, .2)
+}
+// Tiger Orange
+.color__tiger-orange--strong {
+  background: rgba($color-tiger-orange, 1)
+}
+.color__tiger-orange--light {
+  background: rgba($color-tiger-orange, .5)
+}
+.color__tiger-orange--slight {
+  background: rgba($color-tiger-orange, .2)
+}
+// Tiger Orange
+.color__wheat--strong {
+  background: rgba($color-wheat, 1)
+}
+.color__wheat--light {
+  background: rgba($color-wheat, .5)
+}
+.color__wheat--slight {
+  background: rgba($color-wheat, .2)
+}
+// Sunflower
+.color__sunflower--strong {
+  background: rgba($color-sunflower, 1)
+}
+.color__sunflower--light {
+  background: rgba($color-sunflower, .5)
+}
+.color__sunflower--slight {
+  background: rgba($color-sunflower, .2)
+}
+// Lemon
+.color__lemon--strong {
+  background: rgba($color-lemon, 1)
+}
+.color__lemon--light {
+  background: rgba($color-lemon, .5)
+}
+.color__lemon--slight {
+  background: rgba($color-lemon, .2)
+}
+
+// Purples and blues
+// Eggplant
+.color__eggplant--strong {
+  background: rgba($color-eggplant, 1)
+}
+.color__eggplant--light {
+  background: rgba($color-eggplant, .5)
+}
+.color__eggplant--slight {
+  background: rgba($color-eggplant, .2)
+}
+// Grape
+.color__grape--strong {
+  background: rgba($color-grape, 1)
+}
+.color__grape--light {
+  background: rgba($color-grape, .5)
+}
+.color__grape--slight {
+  background: rgba($color-grape, .2)
+}
+// Ink
+.color__ink--strong {
+  background: rgba($color-ink, 1)
+}
+.color__ink--light {
+  background: rgba($color-ink, .5)
+}
+.color__ink--slight {
+  background: rgba($color-ink, .2)
+}
+// Sky Blue
+.color__sky-blue--strong {
+  background: rgba($color-sky-blue, 1)
+}
+.color__sky-blue--light {
+  background: rgba($color-sky-blue, .5)
+}
+.color__sky-blue--slight {
+  background: rgba($color-sky-blue, .2)
+}
+// Pacific Blue
+.color__pacific-blue--strong {
+  background: rgba($color-pacific-blue, 1)
+}
+.color__pacific-blue--light {
+  background: rgba($color-pacific-blue, .5)
+}
+.color__pacific-blue--slight {
+  background: rgba($color-pacific-blue, .2)
+}
+// Aqua
+.color__aqua--strong {
+  background: rgba($color-aqua, 1)
+}
+.color__aqua--light {
+  background: rgba($color-aqua, .5)
+}
+.color__aqua--slight {
+  background: rgba($color-aqua, .2)
+}
+// Pastel Blue
+.color__pastel-blue--strong {
+  background: rgba($color-pastel-blue, 1)
+}
+.color__pastel-blue--light {
+  background: rgba($color-pastel-blue, .5)
+}
+.color__pastel-blue--slight {
+  background: rgba($color-pastel-blue, .2)
+}
+// Ice
+.color__ice--strong {
+  background: rgba($color-ice, 1)
+}
+.color__ice--light {
+  background: rgba($color-ice, .5)
+}
+.color__ice--slight {
+  background: rgba($color-ice, .2)
+}
+
+// Greens
+// Forest
+.color__forest--strong {
+  background: rgba($color-forest, 1)
+}
+.color__forest--light {
+  background: rgba($color-forest, .5)
+}
+.color__forest--slight {
+  background: rgba($color-forest, .2)
+}
+// Neon Green
+.color__neon-green--strong {
+  background: rgba($color-neon-green, 1)
+}
+.color__neon-green--light {
+  background: rgba($color-neon-green, .5)
+}
+.color__neon-green--slight {
+  background: rgba($color-neon-green, .2)
+}
+// Cucumber
+.color__cucumber--strong {
+  background: rgba($color-cucumber, 1)
+}
+.color__cucumber--light {
+  background: rgba($color-cucumber, .5)
+}
+.color__cucumber--slight {
+  background: rgba($color-cucumber, .2)
+}
+// Fern
+.color__fern--strong {
+  background: rgba($color-fern, 1)
+}
+.color__fern--light {
+  background: rgba($color-fern, .5)
+}
+.color__fern--slight {
+  background: rgba($color-fern, .2)
+}
+// Mineral Green
+.color__mineral-green--strong {
+  background: rgba($color-mineral-green, 1)
+}
+.color__mineral-green--light {
+  background: rgba($color-mineral-green, .5)
+}
+.color__mineral-green--slight {
+  background: rgba($color-mineral-green, .2)
+}
+// Pine Needle
+.color__pine-needle--strong {
+  background: rgba($color-pine-needle, 1)
+}
+.color__pine-needle--light {
+  background: rgba($color-pine-needle, .5)
+}
+.color__pine-needle--slight {
+  background: rgba($color-pine-needle, .2)
+}
+// corduroy
+.color__corduroy--strong {
+  background: rgba($color-corduroy, 1)
+}
+.color__corduroy--light {
+  background: rgba($color-corduroy, .5)
+}
+.color__corduroy--slight {
+  background: rgba($color-corduroy, .2)
+}
+// Sea Form
+.color__sea-foam--strong {
+  background: rgba($color-sea-foam, 1)
+}
+.color__sea-foam--light {
+  background: rgba($color-sea-foam, .5)
+}
+.color__sea-foam--slight {
+  background: rgba($color-sea-foam, .2)
+}
+// Clear
+.color__clear {
+  background: transparent;
+}
