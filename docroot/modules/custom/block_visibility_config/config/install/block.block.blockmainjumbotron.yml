@@ -1,11 +1,8 @@
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:row_block:302f9520-3e1e-4a14-8832-0439964a5a7f'
   module:
     - block_class
-    - block_content
     - block_visibility_groups
     - menu_condition
     - term_condition
