@@ -19,10 +19,10 @@ default_value_callback: ''
 settings:
   file_directory: cards
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
+  max_filesize: 16MB
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
+  alt_field: true
   alt_field_required: true
   title_field: false
   title_field_required: false
