@@ -17,6 +17,7 @@ settings:
             - Bold
             - Underline
             - Italic
+            - Strike
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
@@ -26,8 +27,8 @@ settings:
           name: Links
           items:
             - Anchor
-            - DrupalLink
-            - DrupalUnlink
+            - Link
+            - Unlink
             - Linkit
         -
           name: Lists
@@ -43,6 +44,8 @@ settings:
         -
           name: Tools
           items:
+            - Undo
+            - Redo
             - Source
             - A11ychecker
             - Accordion
@@ -82,7 +85,7 @@ settings:
     video_embed:
       defaults:
         children:
-          autoplay: true
+          autoplay: false
           responsive: true
           width: '854'
           height: '480'
