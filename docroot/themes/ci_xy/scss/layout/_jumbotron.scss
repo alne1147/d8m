@@ -8,7 +8,7 @@
     padding: 0;
   }
   [class^="paragraph--type--bp-columns__"] {
-    margin-top:100px;
+    margin-top:30px;
     @media (max-width: $screen-sm-min) {
       &:nth-of-type(n+2) {
       }
