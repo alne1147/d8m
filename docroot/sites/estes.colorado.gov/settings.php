@@ -762,7 +762,6 @@ if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/estes-settings.inc';
 }
 
-$config_directories['sync'] = '../config/sync';
-$settings['install_profile'] = 'ci_start';
-$config['content_directory'] = '../content';
-$conf['file_temporary_path'] = 'tmp';
+if (file_exists($app_root . '/' . $site_path . '/d8m.php')) {
+ include $app_root . '/' . $site_path . '/d8m.php';
+}
