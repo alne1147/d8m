@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a paragraph in Bootstrap Paragraphs.
+ * Bootstrap Paragraphs template for displaying a Two Columns Uneven layout.
  *
  * Available variables:
  * - paragraph: Full paragraph entity.
@@ -49,22 +49,6 @@
     'paragraph--width--medium' == layout_width ? 'paragraph--width--medium',
     'paragraph--width--wide' == layout_width ? 'paragraph--width--wide',
     'paragraph--width--full' == layout_width ? 'paragraph--width--full',
-  ]
-  %}
-{% endif %}
-
-
-{# Renders Column Style field. #}
-{# Sets class name from values in database. #}
-{% if content.bp_column_style_3|render %}
-  {% set column_style_3 = content.bp_column_style_3['#items'].getString() %}
-  {% set column_style_3_classes = [
-    'paragraph--style--25-50-25' == column_style_3 ? 'paragraph--style--25-50-25',
-    'paragraph--style--50-25-25' == column_style_3 ? 'paragraph--style--50-25-25',
-    'paragraph--style--25-25-50' == column_style_3 ? 'paragraph--style--25-25-50',
-    'paragraph--style--16-66-16' == column_style_3 ? 'paragraph--style--16-66-16',
-    'paragraph--style--66-16-16' == column_style_3 ? 'paragraph--style--66-16-16',
-    'paragraph--style--16-16-66' == column_style_3 ? 'paragraph--style--16-16-66',
   ]
   %}
 {% endif %}
@@ -261,6 +245,19 @@
   %}
 {% endif %}
 
+{# Renders Column Style field. #}
+{# Sets class name from values in database. #}
+{% if content.bp_column_style_2|render %}
+  {% set column_style_2 = content.bp_column_style_2['#items'].getString() %}
+  {% set column_style_2_classes = [
+    'paragraph--style--75-25' == column_style_2 ? 'paragraph--style--75-25',
+    'paragraph--style--66-33' == column_style_2 ? 'paragraph--style--66-33',
+    'paragraph--style--25-75' == column_style_2 ? 'paragraph--style--25-75',
+    'paragraph--style--33-66' == column_style_2 ? 'paragraph--style--33-66',
+  ]
+  %}
+{% endif %}
+
 {# The template default set classes. #}
 {%
 set classes = [
@@ -283,14 +280,15 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% endif %}
 
 {# Merges Column Style field with classes. #}
-{% set column_style_field = content.bp_column_style_3|render %}
+{% set column_style_field = content.bp_column_style_2|render %}
 {% if column_style_field %}
-  {% set classes = classes|merge(column_style_3_classes) %}
+  {% set classes = classes|merge(column_style_2_classes) %}
 {% endif %}
 
 {# Prints div with classes, and content without Width and Background. #}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    {{ content|without('bp_width', 'bp_background','bp_column_style_3') }}
+    {{ title_suffix }}
+    {{ content|without('bp_width', 'bp_background', 'bp_column_style_2') }}
   </div>
 </div>
