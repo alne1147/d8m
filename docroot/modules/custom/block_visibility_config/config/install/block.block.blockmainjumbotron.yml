@@ -1,9 +1,13 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:row_block:302f9520-3e1e-4a14-8832-0439964a5a7f'
   module:
     - block_class
+    - block_content
     - block_visibility_groups
+    - ctools
     - menu_condition
     - term_condition
   theme:
@@ -40,5 +44,12 @@ visibility:
     id: term
     negate: false
     tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
     context_mapping:
       node: '@node.node_route_context:node'
