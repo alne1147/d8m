@@ -2,16 +2,19 @@
   //&.paragraph--type--bp-columns {
     &.paragraph--color {
       > .paragraph__column {
-        padding-top:15px;
+        padding-top:0;
+        padding-bottom:0;
         .row__title {
           h2 {
-            margin-top:0;
+            margin-top:15px;
             margin-bottom:0;
           }
         }
       }
     }
-  //}
+  .paragraph.paragraph--color + .paragraph > .paragraph__column {
+    padding-top: 15px;
+  }
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
