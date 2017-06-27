@@ -1,5 +1,5 @@
 .main-container {
-  background-color:#ffffff;
+  background-color:$color-white;
   flex: 1;
   .content {
     > .field--name-body {
@@ -24,33 +24,8 @@
         }
       }
     }
-    .row__title {
-      text-align: center;
-    }
-    .paragraph__column--container-wrapper {
-      > .container {
-        display: flex;
-        flex-wrap: wrap;
-        >[class^="paragraph--type--bp-columns__"] {
-          display:flex
-        }
-      }
-    }
     .paragraph--type--bp-accordion {
       width: 100%;
-    }
-    .paragraph {
-      &.paragraph--color {
-        display:block;
-      }
-      .paragraph__card {
-        border: 1px solid #D0D2D3;
-        border-radius: $border-radius;
-        padding:9px;
-        > .paragraph__column {
-          padding-top:0;
-        }
-      }
     }
     .field--name-field-card-title {
       background-color: $color-pacific-blue;
