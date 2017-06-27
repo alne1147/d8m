@@ -17,6 +17,7 @@
     .navbar-collapse {
       @media (max-width: $screen-xs-min) {
         padding:0;
+       background-color: $color-brand-slate;
       }
       @media (min-width: $screen-sm-min) {
         margin-right: -$navbar-padding-horizontal * 3; // 45px
@@ -155,3 +156,8 @@
     }
   }
 }
+#navbar-collapse
+{
+  background-color: $color-brand-slate;
+}
+
