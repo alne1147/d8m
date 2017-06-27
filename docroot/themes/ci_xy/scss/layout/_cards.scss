@@ -1,17 +1,20 @@
 .paragraph {
-  &.paragraph--type--bp-columns {
+  //&.paragraph--type--bp-columns {
     &.paragraph--color {
-      .paragraph__column {
+      > .paragraph__column {
         padding-top:15px;
         .row__title {
           h2 {
             margin-top:0;
+            margin-bottom:0;
           }
         }
       }
     }
-  }
+  //}
   .paragraph__column--container-wrapper {
+    padding-top: 30px;
+    padding-bottom:30px;
     > .container {
       display: flex;
       flex-wrap: wrap;
