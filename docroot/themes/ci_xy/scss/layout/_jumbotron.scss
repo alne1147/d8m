@@ -26,6 +26,13 @@
       margin-top: 0;
       margin-bottom:18px;
     }
+    a {
+      border-bottom: 1px solid $link-color;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $link-hover-color;
+      }
+    }
   }
   [class^="paragraph--type--bp-columns__"] {
     @media (max-width: $screen-sm-min) {

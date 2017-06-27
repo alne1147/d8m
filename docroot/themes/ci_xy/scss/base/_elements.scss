@@ -6,10 +6,3 @@ body {
   min-height: 100vh!important;
   flex-direction: column;
 }
-a {
-  border-bottom: 1px solid $link-color;
-  &:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $link-hover-color;
-  }
-}
