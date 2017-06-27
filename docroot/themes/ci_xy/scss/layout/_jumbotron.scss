@@ -2,13 +2,32 @@
   padding-top:0!important;
   padding-bottom:0!important;
   margin-bottom:0!important;
-  //background-color: transparent!important;
+  p {
+    font-size: $font-size-base!important;
+    font-weight: $font-weight-300!important;
+  }
   .block-block-content {
     margin-bottom: 0;
     padding: 0;
   }
+  .field--name-field-card-title {
+    font-size: floor(($font-size-base * 1.5));
+    font-weight:$font-weight-500;
+    margin-bottom:15px;
+  }
+  .field--name-field-card-body {
+    > h1:nth-child(1),
+    > h2:nth-child(1),
+    > h3:nth-child(1),
+    > h4:nth-child(1),
+    > h5:nth-child(5),
+    > h6:nth-child(6) {
+      line-height:1.2;
+      margin-top: 0;
+      margin-bottom:18px;
+    }
+  }
   [class^="paragraph--type--bp-columns__"] {
-    margin-top:30px;
     @media (max-width: $screen-sm-min) {
       &:nth-of-type(n+2) {
       }
