@@ -79,7 +79,6 @@
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .paragraph.paragraph--width--tiny.paragraph--type--card-basic,
   .paragraph.paragraph--width--tiny > .paragraph__column,
   .paragraph.paragraph--width--tiny.paragraph--type--carousel > .carousel-inner {
     float: left;
