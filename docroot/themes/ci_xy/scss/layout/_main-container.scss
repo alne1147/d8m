@@ -38,11 +38,18 @@
     .paragraph--type--bp-accordion {
       width: 100%;
     }
-    .paragraph__card {
-      background-color: $color-white;
-      border: 1px solid #D0D2D3;
-      border-radius: $border-radius;
-      padding:9px;
+    .paragraph {
+      &.paragraph--color {
+        display:block;
+      }
+      .paragraph__card {
+        border: 1px solid #D0D2D3;
+        border-radius: $border-radius;
+        padding:9px;
+        > .paragraph__column {
+          padding-top:0;
+        }
+      }
     }
     .field--name-field-card-title {
       background-color: $color-pacific-blue;
