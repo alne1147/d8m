@@ -18,6 +18,12 @@
       }
       a {
         border-bottom: 1px solid $link-color;
+        &.btn {
+          border-bottom:none;
+        }
+        &:hover.btn {
+          border-bottom:none;
+        }
         &:hover {
           text-decoration: none;
           border-bottom: 1px solid $link-hover-color;
