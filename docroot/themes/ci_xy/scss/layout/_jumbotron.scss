@@ -10,11 +10,6 @@
     margin-bottom: 0;
     padding: 0;
   }
-  .field--name-field-card-title {
-    font-size: floor(($font-size-base * 1.5));
-    font-weight:$font-weight-500;
-    margin-bottom:15px;
-  }
   .field--name-field-card-body {
     > h1:nth-child(1),
     > h2:nth-child(1),
