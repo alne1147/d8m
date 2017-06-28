@@ -117,6 +117,9 @@ footer {
       a {
         color: #fff;
         border-bottom:1px solid #fff;
+        &.btn {
+          border-bottom:none;
+        }
         &:hover {
           text-decoration: none;
         }
