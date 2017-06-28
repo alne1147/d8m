@@ -27,5 +27,14 @@
     .paragraph--type--bp-accordion {
       width: 100%;
     }
+    .field--name-field-card-title {
+      background-color: $color-pacific-blue;
+      border-radius: $border-radius;
+      color: $color-white;
+      font-size: floor(($font-size-base * 1.3));
+      font-weight:$font-weight-500;
+      padding:8px 12px;
+      margin-bottom:15px;
+    }
   }
 }
