@@ -54,7 +54,8 @@
   .paragraph--type--row-two-column-hero,
   .paragraph--type--row-three-column-hero {
     .row__title {
-      margin-top:70px;
+      float: left;
+      width: 100%;
     }
   }
   [class^="hero__responsive_"] {
