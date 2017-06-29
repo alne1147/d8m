@@ -38,10 +38,10 @@ dependencies:
   - block
   - breakpoint
   - ckeditor
-  - color
   - config
   - contact
   - contextual
+  - exclude_node_title 
   - block_content
   - menu_link_content
   - dblog

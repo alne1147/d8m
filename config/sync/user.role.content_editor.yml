@@ -10,3 +10,4 @@ is_admin: null
 permissions:
   - 'edit any webform'
   - 'use editorial transition create_new_draft'
+  - 'use exclude node title'

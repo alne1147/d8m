@@ -16,6 +16,7 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use advanced search'
+  - 'use exclude node title'
   - 'use text format d8m_text_editor'
   - 'view media'
   - 'view paragraph content bp_accordion'

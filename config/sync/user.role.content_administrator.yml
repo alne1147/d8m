@@ -147,6 +147,7 @@ permissions:
   - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
+  - 'use exclude node title'
   - 'use text format d8m_text_editor'
   - 'view all revisions'
   - 'view any unpublished content'
