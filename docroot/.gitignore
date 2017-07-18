@@ -17,6 +17,7 @@ vendor
 # Ignore configuration files that may contain sensitive information.
 sites/settings.php
 sites/*/services*.yml
+sites/development.services.yml
 
 # Ignore paths that contain user-generated content.
 sites/*/files
@@ -41,5 +42,6 @@ sites/simpletest
 # Ignore core phpcs.xml and phpunit.xml.
 core/phpcs.xml
 core/phpunit.xml
+
 
 
