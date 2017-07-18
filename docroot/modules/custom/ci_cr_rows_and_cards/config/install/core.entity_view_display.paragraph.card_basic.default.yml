@@ -46,7 +46,7 @@ content:
     settings:
       image_style: max_1920
       background_image_output_type: inline
-      background_image_selector: ''
+      background_image_selector: hero__responsive
     third_party_settings: {  }
     type: background_image_formatter
     region: content

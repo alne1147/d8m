@@ -15,26 +15,37 @@
     padding-top: 30px;
     padding-bottom:30px;
     > .container {
-      display: flex;
-      flex-wrap: no-wrap;
+      //display: flex;
+      //flex-wrap: no-wrap;
       > [class^="paragraph--type--bp-columns__"] {
-        display: flex
+        //display: flex;
       }
       .paragraph {
         &.paragraph--color {
           display: block;
         }
         &.paragraph__card {
-          padding: 9px;
           > .paragraph__column {
             padding-top: 0;
+            .field--name-field-card-body {
+              float: left;
+              padding: 9px;
+            }
+            .field--name-field-card-background-image {
+              [class^="hero__responsive_"] {
+                -webkit-background-size:cover;
+                background-size:cover;
+                //min-height: 1px;
+              }
+            }
           }
         }
+        // Card Content Alignment field settings
         &.paragraph--alignment-top {
           position: relative;
           > .paragraph__column {
             position: absolute;
-            top: 9px
+            top: 0
           }
         }
         &.paragraph--alignment-right {
@@ -47,7 +58,7 @@
           position: relative;
           > .paragraph__column {
             position: absolute;
-            bottom: 9px
+            bottom: 0
           }
         }
       }

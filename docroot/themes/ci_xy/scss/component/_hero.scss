@@ -15,9 +15,9 @@
       }
     }
   }
-  [class^="hero__responsive_"] {
-    min-height: 1px;
-  }
+  //[class^="hero__responsive_"] {
+  //  min-height: 1px;
+  //}
 }
 .paragraph--type--full-column-hero,
 .paragraph--type--row-two-column-hero,
@@ -143,8 +143,8 @@
   padding-left: 15px;
   padding-right:15px;
 }
-[class^="hero__responsive_"] {
-  -webkit-background-size:cover;
-  background-size:cover;
-  min-height: 460px;
-}
+//[class^="hero__responsive_"] {
+//  -webkit-background-size:cover;
+//  background-size:cover;
+//  min-height: 460px;
+//}
