@@ -14,7 +14,7 @@ dependencies:
     - taxonomy
     - user
 id: article_summary_pages
-label: 'Article Summary Pages'
+label: 'Article Summary Blocks'
 module: views
 description: ''
 tag: ''
@@ -216,25 +216,6 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: 'Article Summary Blocks'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      block_description: 'Article Summary Block'
     cache_metadata:
       max-age: -1
       contexts:
