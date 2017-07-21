@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
+    - field.field.paragraph.bp_view.bp_view
     - field.field.paragraph.bp_view.bp_width
     - field.field.paragraph.bp_view.field_ci_views
     - paragraphs.paragraphs_type.bp_view
@@ -28,6 +29,7 @@ content:
     type: list_key
     region: content
 hidden:
+  bp_view: true
   created: true
   field_ci_views: true
   uid: true
