@@ -4,13 +4,34 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_article_categories
+    - field.field.node.article.field_article_layout_options
     - field.field.node.article.field_rows
     - node.type.article
   module:
     - content_moderation
+    - field_group
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_article_layout_tabs:
+      children:
+        - field_article_layout_options
+        - field_article_categories
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        label: 'Article Options'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'Article Options'
+      region: content
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -18,7 +39,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -27,18 +48,24 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_article_categories:
-    weight: 33
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_layout_options:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_rows:
-    weight: 32
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -51,7 +78,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -59,19 +86,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -79,7 +106,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
