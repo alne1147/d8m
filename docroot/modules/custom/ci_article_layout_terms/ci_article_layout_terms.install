@@ -8,7 +8,7 @@ use Drupal\taxonomy\Entity\Term;
 function ci_article_layout_terms_install() {
   // Machine name of the Taxonomy vocabulary.
   $categories_vocabulary = 'article_layout_options'; // Vocabulary machine name
-  $categories = ['Related Content Block']; // List of test terms
+  $categories = ['Related Content']; // List of test terms
   foreach ($categories as $category) {
     $term = Term::create(array(
       'parent' => array(),
