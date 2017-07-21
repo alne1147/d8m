@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_article_categories
     - field.field.node.article.field_article_layout_options
+    - field.field.node.article.field_block_options
     - field.field.node.article.field_rows
     - node.type.article
   module:
@@ -19,6 +20,7 @@ third_party_settings:
       children:
         - field_article_layout_options
         - field_article_categories
+        - field_block_options
       parent_name: ''
       weight: 1
       format_type: details
@@ -63,6 +65,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_block_options:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_rows:
     weight: 9

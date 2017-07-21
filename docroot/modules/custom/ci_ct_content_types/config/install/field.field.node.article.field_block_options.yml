@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_options
+    - node.type.article
+    - taxonomy.vocabulary.page_options
+id: node.article.field_block_options
+field_name: field_block_options
+entity_type: node
+bundle: article
+label: 'Block Options'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      page_options: page_options
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
