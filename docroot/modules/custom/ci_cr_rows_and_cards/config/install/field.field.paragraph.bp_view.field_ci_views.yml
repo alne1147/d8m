@@ -28,6 +28,7 @@ settings:
     feed: 0
     entity_browser: 0
   preselect_views:
+    article_list_blocks: article_list_blocks
     article_summary_pages: article_summary_pages
     content_recent: content_recent
     block_content: 0
