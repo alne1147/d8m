@@ -44,18 +44,18 @@
       }
     }
   }
-  [class^="paragraph--type--bp-columns__"] {
-    @media (max-width: $screen-sm-min) {
-      &:nth-of-type(n+2) {
-      }
-    }
-    &:first-child {
-      padding-left:0!important;
-    }
-    &:last-child {
-      padding-right:0!important;
-    }
-  }
+  //[class^="paragraph--type--bp-columns__"] {
+  //  @media (max-width: $screen-sm-min) {
+  //    &:nth-of-type(n+2) {
+  //    }
+  //  }
+  //  &:first-child {
+  //    padding-left:0!important;
+  //  }
+  //  &:last-child {
+  //    padding-right:0!important;
+  //  }
+  //}
   .paragraph--type--full-column-hero,
   .paragraph--type--row-two-column-hero,
   .paragraph--type--row-three-column-hero {

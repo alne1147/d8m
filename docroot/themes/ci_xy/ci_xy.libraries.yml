@@ -4,6 +4,10 @@ global-styling:
       css/style.css: {}
       css/colors.css: {}
 
+#bootstrap-paragraphs:
+#  css:
+#    theme:
+#      /core/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs.css: {}
 
 bootstrap-scripts:
   js:
