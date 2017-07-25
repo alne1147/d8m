@@ -67,22 +67,40 @@
         }
         &.paragraph--type--card-basic {
           &.paragraph--width--tiny,
-           &.paragraph--width--narrow,
-           &.paragraph--width--wide,
+          &.paragraph--width--narrow,
+          &.paragraph--width--medium,
+          &.paragraph--width--wide,
            &.paragraph--width--full {
-            padding-right:15px;
-            padding-left:15px;
+            padding-right:0;
+            padding-left:0;
           }
           &.paragraph--width--tiny.paragraph--alignment.paragraph--alignment-right {
             @media (min-width: $screen-sm) {
               margin-left:66.66666667%;
             }
           }
-          //&.paragraph--width--tiny.paragraph--alignment.paragraph--alignment-left {
-          //  @media (min-width: $screen-sm) {
-          //    margin-right:66.66666667%;
-          //  }
-          //}
+          &.paragraph--width--narrow.paragraph--alignment.paragraph--alignment-left,
+          &.paragraph--width--medium.paragraph--alignment.paragraph--alignment-left,
+          &.paragraph--width--wide.paragraph--alignment.paragraph--alignment-left {
+            @media (min-width: $screen-sm) {
+              margin-left:0;
+            }
+          }
+          &.paragraph--width--narrow.paragraph--alignment.paragraph--alignment-right {
+            @media (min-width: $screen-sm) {
+              margin-left:50%;
+            }
+          }
+          &.paragraph--width--medium.paragraph--alignment.paragraph--alignment-right {
+            @media (min-width: $screen-sm) {
+              margin-left: 33.33333333%;
+            }
+          }
+          &.paragraph--width--wide.paragraph--alignment.paragraph--alignment-right {
+            @media (min-width: $screen-sm) {
+              margin-left: 16.66666667%;
+            }
+          }
         }
         // Card Content Alignment field settings
         &.paragraph--alignment-top {
