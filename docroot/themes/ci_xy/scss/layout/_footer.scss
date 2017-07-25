@@ -69,10 +69,10 @@ footer {
 // [4]
 .footer__content-footer {
   padding-bottom: 30px;
-  margin-top:30px;
-  @media (max-width: $screen-xs) {
-    margin-top:20px;
-  }
+  //margin-top:30px;
+  //@media (max-width: $screen-xs) {
+  //  margin-top:20px;
+  //}
   .block-block-content {
     margin-bottom: 0;
     padding: 20px 0 0;
@@ -126,7 +126,6 @@ footer {
       }
     }
     &.paragraph--color {
-      border-radius: $border-radius;
       > .paragraph__column {
         padding-top: 0;
         padding-bottom: 0;
@@ -137,6 +136,7 @@ footer {
     color: $color-white;
     font-size: floor(($font-size-base * 1.2));
     font-weight:$font-weight-500;
-    margin-bottom:15px;
+    margin-bottom:5px;
+    padding:9px;
   }
 }

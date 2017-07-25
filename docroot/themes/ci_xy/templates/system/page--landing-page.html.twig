@@ -125,8 +125,9 @@
 {% endif %}
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
+  {#<div role="main" class="main-container {{ container }} js-quickedit-main-content">#}
+  <div role="main" class="main-container js-quickedit-main-content">
+    {#<div class="row">#}
       {# Breadcrumbs #}
       {% if breadcrumb %}
         {% block breadcrumb %}
@@ -148,7 +149,8 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
-      <section{{ content_attributes.addClass(content_classes) }}>
+      {#<section{{ content_attributes.addClass(content_classes) }}>#}
+      <section>
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
@@ -174,16 +176,14 @@
         {% endblock %}
       </section>
       
-    </div>
+    {#</div>#}
   </div>
 {% endblock %}
 {# footer #}
 {% if page.footer %}
   {% block footer %}
     <footer class="footer__content-footer" role="contentinfo">
-      <div class="container">
-          {{ page.footer }}
-      </div>
+      {{ page.footer }}
     </footer>
   {% endblock %}
 {% endif %}

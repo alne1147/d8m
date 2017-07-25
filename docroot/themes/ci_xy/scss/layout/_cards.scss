@@ -3,26 +3,46 @@
       > .paragraph__column {
         padding-top:0;
         padding-bottom:0;
-        .row__title {
-          h2 {
-            margin-top:15px;
-            margin-bottom:0;
-          }
-        }
       }
+    }
+  .container {
+    @media (max-width: $screen-sm-min) {
+      display: block;
     }
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
-    > .container {
-      display: flex;
-      flex-wrap: no-wrap;
-      > [class^="paragraph--type--bp-columns__"] {
+    display: flex;
+    flex-wrap: no-wrap;
+      @media (max-width: $screen-sm-min) {
+        display: block;
+        padding-bottom:15px;
+      }
+      [class^="paragraph--type--bp-columns__"] {
         display: flex;
+        @media (max-width: $screen-sm-min) {
+          margin-bottom:15px;
+          &:first-child {
+            padding-left:0;
+            padding-right:0;
+          }
+          &:last-child {
+            padding-left:0;
+            padding-right:0;
+            margin-bottom:0px;
+          }
+        }
+        &:first-child {
+          padding-left:0;
+        }
+        &:last-child {
+          padding-right:0;
+        }
       }
       .paragraph {
         &.paragraph--color {
           display: block;
+          border-radius: $border-radius;
         }
         &.paragraph__card {
           > .paragraph__column {
@@ -30,6 +50,11 @@
             .field--name-field-card-body {
               float: left;
               padding: 9px;
+              > h1,h2,h3,h4,h5,h6 {
+                &:first-child {
+                  margin-top:10px;
+                }
+              }
             }
             .field--name-field-card-background-image {
               [class^="hero__responsive_"] {
@@ -40,26 +65,31 @@
             }
           }
         }
+        &.paragraph--type--card-basic {
+          &.paragraph--width--tiny,
+           &.paragraph--width--narrow,
+           &.paragraph--width--wide,
+           &.paragraph--width--full {
+            padding-right:15px;
+            padding-left:15px;
+          }
+          &.paragraph--width--tiny.paragraph--alignment.paragraph--alignment-right {
+            @media (min-width: $screen-sm) {
+              margin-left:66.66666667%;
+            }
+          }
+          //&.paragraph--width--tiny.paragraph--alignment.paragraph--alignment-left {
+          //  @media (min-width: $screen-sm) {
+          //    margin-right:66.66666667%;
+          //  }
+          //}
+        }
         // Card Content Alignment field settings
         &.paragraph--alignment-top {
-          position: relative;
-          > .paragraph__column {
-            position: absolute;
-            top: 0
-          }
-        }
-        &.paragraph--alignment-right {
-          text-align: right;
-        }
-        &.paragraph--alignment-left {
-          text-align: left;
+          align-self: flex-start;
         }
         &.paragraph--alignment-bottom {
-          position: relative;
-          > .paragraph__column {
-            position: absolute;
-            bottom: 0
-          }
+          align-self: flex-end;
         }
       }
     }

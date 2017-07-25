@@ -27,5 +27,6 @@ regions:
 
 libraries:
   - 'ci_xy/global-styling'
+#  - 'ci_yx/bootstrap-paragraphs'
   - 'ci_xy/bootstrap-scripts'
   - 'ci_xy/font-awesome'
