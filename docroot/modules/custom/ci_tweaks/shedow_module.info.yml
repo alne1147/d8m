@@ -1,0 +1,6 @@
+name: ci_form_tweaks
+dependencies: {  }
+description: 'testing template finding'
+core: 8.x
+package: Custom
+type: module
