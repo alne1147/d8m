@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_ci_views
     - paragraphs.paragraphs_type.bp_view
+    - views.view.article_list_blocks
   module:
     - viewsreference
 id: paragraph.bp_view.field_ci_views
@@ -14,7 +15,16 @@ label: Views
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_2
+    argument: null
+    title: 0
+    data: null
+    target_uuid: 8c37a6f8-e688-4956-aa8b-5e99f05ca6e4
 default_value_callback: ''
 settings:
   handler: 'default:view'

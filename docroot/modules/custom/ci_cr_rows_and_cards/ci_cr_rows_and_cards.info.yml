@@ -5,6 +5,7 @@ core: 8.x
 dependencies:
   - background_image_formatter
   - block
+  - ci_ct_content_types
   - classy_paragraphs
   - contact
   - contact_formatter

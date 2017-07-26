@@ -6,9 +6,9 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.article_options
   content:
-    - 'taxonomy_term:article_options:29361abf-5bfe-4570-b905-fc9692b1f5b1'
-    - 'taxonomy_term:article_options:90c3b05b-4c85-49cf-9cce-73c971ba81d1'
-    - 'taxonomy_term:article_options:9416420f-e851-4d1a-a655-df77a1fe6e4f'
+    - 'taxonomy_term:article_options:11937c53-3742-417c-a70d-096e0ca4d2b3'
+    - 'taxonomy_term:article_options:5d9ac851-51d6-4bce-bf49-733f3ab2b150'
+    - 'taxonomy_term:article_options:d75437cf-d34e-49ff-a304-ed1e0efd38d0'
   module:
     - node
     - taxonomy
