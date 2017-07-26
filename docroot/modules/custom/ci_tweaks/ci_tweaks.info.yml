@@ -1,0 +1,6 @@
+name: ci_tweaks
+dependencies: {  }
+description: 'Tweaks of fields and things. Probably Javascript.'
+core: 8.x
+package: Custom
+type: module
