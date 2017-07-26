@@ -1,7 +1,0 @@
-ci_form_tweaks.start:
-    path: '/theming-page/{number}'
-    defaults:
-        _title: 'Shedow theming page'
-        _controller: '\Drupal\ci_form_tweaks\Controller\ShedowController::themingPage'
-    requirements:
-        _permission: 'access content'
