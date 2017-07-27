@@ -6,6 +6,7 @@ dependencies:
   - block_class
   - block_content
   - block_visibility_groups
+  - ci_ct_content_types
   - ctools
   - help
   - masquerade
@@ -15,4 +16,5 @@ dependencies:
   - system
   - term_condition
   - user
+  - views
 package: 'Colorado Interactive'

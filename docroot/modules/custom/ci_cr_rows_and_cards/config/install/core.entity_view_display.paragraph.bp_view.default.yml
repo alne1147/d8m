@@ -5,10 +5,10 @@ dependencies:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_view
     - field.field.paragraph.bp_view.bp_width
+    - field.field.paragraph.bp_view.field_ci_views
     - paragraphs.paragraphs_type.bp_view
   module:
     - options
-    - viewsreference
 id: paragraph.bp_view.default
 targetEntityType: paragraph
 bundle: bp_view
@@ -21,14 +21,6 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
-  bp_view:
-    weight: 2
-    label: hidden
-    settings:
-      render_view: '1'
-    third_party_settings: {  }
-    type: viewsreference_formatter
-    region: content
   bp_width:
     weight: 1
     label: hidden
@@ -37,5 +29,7 @@ content:
     type: list_key
     region: content
 hidden:
+  bp_view: true
   created: true
+  field_ci_views: true
   uid: true

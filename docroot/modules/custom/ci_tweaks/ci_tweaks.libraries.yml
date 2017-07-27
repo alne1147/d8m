@@ -1,0 +1,8 @@
+ci_tweaks:
+  css:
+    theme:
+      css/ci_tweaks.css: {}
+  js:
+    js/ci_tweaks.js: {}
+  dependencies:
+    - core/jquery

@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_view
     - field.field.paragraph.bp_view.bp_width
+    - field.field.paragraph.bp_view.field_ci_views
     - paragraphs.paragraphs_type.bp_view
   module:
     - content_moderation
@@ -20,22 +21,20 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  bp_view:
-    weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: '60'
-      placeholder: ''
-    third_party_settings: {  }
-    type: viewsreference_autocomplete
-    region: content
   bp_width:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_ci_views:
+    type: viewsreference_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  bp_view: true
   created: true
   status: true
   uid: true

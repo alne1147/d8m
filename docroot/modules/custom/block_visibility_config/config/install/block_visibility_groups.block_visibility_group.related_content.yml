@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: related_content
+label: 'Related Content'
+logic: and
+conditions:
+  893144b0-8c84-4953-a218-e7c799168f55:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      article_layout_options: article_layout_options
+    negate: false
+    context_mapping: {  }
+    uuid: 893144b0-8c84-4953-a218-e7c799168f55
+allow_other_conditions: false
