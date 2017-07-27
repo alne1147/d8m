@@ -1,3 +1,4 @@
+uuid: 281d8c87-9f3a-4eeb-b07e-8aa0766602cc
 langcode: en
 status: true
 dependencies:
@@ -6,13 +7,15 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.article_options
   content:
-    - 'taxonomy_term:article_options:11937c53-3742-417c-a70d-096e0ca4d2b3'
-    - 'taxonomy_term:article_options:5d9ac851-51d6-4bce-bf49-733f3ab2b150'
-    - 'taxonomy_term:article_options:d75437cf-d34e-49ff-a304-ed1e0efd38d0'
+    - 'taxonomy_term:article_layout_options:8ea3d8fc-586e-43ee-a2ea-19fc1a498430'
+    - 'taxonomy_term:article_options:4476de3c-4646-40e3-ae5d-90a88b73ae27'
+    - 'taxonomy_term:article_options:c034458f-b242-4619-85ba-413005bac8fa'
   module:
     - node
     - taxonomy
     - user
+_core:
+  default_config_hash: z9vjTWU1ptpeYfWKdDk-Xa_L5JxkD9k8x-La_QHXMNA
 id: article_summary_pages
 label: 'Article Summary Blocks'
 module: views
@@ -158,7 +161,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            24: 24
+            4: 4
           group: 1
           exposed: false
           expose:
@@ -286,7 +289,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            22: 22
+            2: 2
           group: 1
           exposed: false
           expose:
@@ -379,7 +382,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            23: 23
+            3: 3
           group: 1
           exposed: false
           expose:

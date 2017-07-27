@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ci_views.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ci_views_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ci_views module.
+    case 'help.page.ci_views':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Article related Views.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ci_views_theme() {
+  return [
+    'ci_views' => [
+      'render element' => 'children',
+    ],
+  ];
+}

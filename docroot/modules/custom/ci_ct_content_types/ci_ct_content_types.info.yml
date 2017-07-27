@@ -23,4 +23,5 @@ dependencies:
   - text
   - user
   - views
+  - viewsreference
 package: ci_ct
