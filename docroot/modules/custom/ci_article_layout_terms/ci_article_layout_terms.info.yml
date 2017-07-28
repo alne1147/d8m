@@ -1,6 +1,0 @@
-name: ci_article_layout_terms
-dependencies: {  }
-description: 'Taxonomy Terms for D8M'
-core: 8.x
-package: Custom
-type: module
