@@ -1,0 +1,166 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/cards\/iStock_86266791_XXXLARGE.jpg"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 671
+        }
+    ],
+    "uuid": [
+        {
+            "value": "773c50c1-0569-4921-9fa0-16b28a597d0a"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3076
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/cards\/iStock_86266791_XXXLARGE.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8fa6544e-b54f-4a1b-85f7-aaa1032e58f0"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/cards\/iStock_86266791_XXXLARGE.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1500317610,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "471"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color color__brand-blue--strong",
+            "lang": "en"
+        }
+    ],
+    "field_alignment": [
+        {
+            "value": "paragraph--alignment paragraph--alignment-bottom"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<h2>Card 2 Content Title<\/h2>\r\n\r\n<p>Rhoncus quis vel nunc cursus ac magna. A rhoncus adipiscing, facilisis, aliquam! Nisi dignissim sagittis in dis sed, integer placerat magna facilisis integer magna tristique mattis. A, quis habitasse ac in, eros tortor sociis pellentesque enim habitasse phasellus sociis scelerisque purus enim, sit magnis, pellentesque, vel porta mus. Adipiscing massa.<\/p>\r\n\r\n<p>Nunc, ac cras magnis cum tortor, tincidunt porttitor pid ut turpis augue turpis, auctor ultrices aenean egestas placerat tincidunt tristique sociis et urna cum adipiscing auctor proin elementum adipiscing, sagittis, tincidunt elementum habitasse? Cursus ut, ultricies elementum et aliquet, tincidunt, tincidunt mauris magnis aliquam, diam. Natoque mattis amet amet.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}

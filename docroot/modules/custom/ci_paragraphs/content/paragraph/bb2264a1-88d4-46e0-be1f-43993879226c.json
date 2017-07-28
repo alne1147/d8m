@@ -1,0 +1,163 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 361
+        }
+    ],
+    "uuid": [
+        {
+            "value": "bb2264a1-88d4-46e0-be1f-43993879226c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2426
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_accordion"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "958a09d4-dc2e-4cb5-b6e9-1e98f70be4b4"
+                    }
+                ],
+                "target_revision_id": "2421"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497317987,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "91"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_rows"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-black-strong",
+            "lang": "en"
+        }
+    ],
+    "bp_width": [
+        {
+            "value": "paragraph--width--full",
+            "lang": "en"
+        }
+    ],
+    "field_row_title": [
+        {
+            "value": "Title",
+            "lang": "en"
+        }
+    ]
+}

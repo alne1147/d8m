@@ -1,0 +1,200 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns_three_uneven"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/bp_column_content_3": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 551
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9cbc4089-2e83-4d25-a1fd-11689f00a736"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2636
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns_three_uneven"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns_three_uneven\/bp_column_content_3": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "650d38d7-ba3c-475a-86b4-3bb4c9676354"
+                    }
+                ],
+                "target_revision_id": "2621"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ac7c5db9-2a75-4b9b-bd4d-7d2d4e2c6930"
+                    }
+                ],
+                "target_revision_id": "2626"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bdfa4266-5ee2-4124-b574-9f3ffe93fe24"
+                    }
+                ],
+                "target_revision_id": "2631"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497497118,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "101"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_rows"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-green-slight",
+            "lang": "en"
+        }
+    ],
+    "bp_column_style_3": [
+        {
+            "value": "paragraph--style--25-50-25"
+        }
+    ],
+    "field_row_title": [
+        {
+            "value": "Row Title - Three Uneven - 1\/4 -1\/2-1\/4",
+            "lang": "en"
+        }
+    ]
+}

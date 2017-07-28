@@ -1,0 +1,169 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_accordion_section"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/bp_accordion_section_body": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 624
+        }
+    ],
+    "uuid": [
+        {
+            "value": "90205d6d-fa36-46f1-b748-f576b4084978"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3030
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_accordion_section"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_accordion_section\/bp_accordion_section_body": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "29c3a57c-7588-405a-b163-0ae35892df30"
+                    }
+                ],
+                "target_revision_id": "3028"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "49c707fd-3d5d-4178-8dd4-520224b35bbe"
+                    }
+                ],
+                "target_revision_id": "3029"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1498147231,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "627"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_accordion_section"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_accordion_section_title": [
+        {
+            "value": "Paullum deliqui"
+        }
+    ]
+}

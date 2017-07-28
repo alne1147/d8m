@@ -1,0 +1,8 @@
+name: ci_media
+dependencies:
+    - default_content
+    - default_content_deploy
+description: 'Default Media Content'
+core: 8.x
+package: Custom
+type: module

@@ -1,0 +1,155 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/cards\/iStock_84822313_XXXLARGE.jpg"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 676
+        }
+    ],
+    "uuid": [
+        {
+            "value": "19f34a22-f0e2-4019-a7d6-a1f66f14cf08"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3081
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4a0c51f-1db1-4254-980c-36ca7593e609"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/cards\/iStock_84822313_XXXLARGE.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ffc13c8e-5c45-4753-95b0-868c0855c8a9"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/cards\/iStock_84822313_XXXLARGE.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1501010810,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "686"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<h3>Service 1 Content title<\/h3>\r\n\r\n<ul>\r\n\t<li><a href=\"https:\/\/apps.colorado.gov\/apps\/dor\/dmv\/vehicle\/registration\/renewal\/welcome.jsf\" target=\"_blank\">Ultricies, est ac magna adipiscing<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apps.colorado.gov\/apps\/jboss\/cbe\/index.xhtml\">Aliquam, scelerisque nisi<\/a><\/li>\r\n<\/ul>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}

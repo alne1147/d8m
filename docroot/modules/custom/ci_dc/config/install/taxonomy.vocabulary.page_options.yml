@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Page Options'
-vid: page_options
-description: ''
-hierarchy: 0
-weight: 0

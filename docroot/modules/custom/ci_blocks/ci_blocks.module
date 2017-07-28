@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * ci_blocks.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function ci_blocks_menu() {
+  $items = array();
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ci_blocks_form_alter() {
+
+}

@@ -1,5 +1,0 @@
-name: ci_views
-type: module
-description: Article Views related to Taxonomy.
-core: 8.x
-package: Custom

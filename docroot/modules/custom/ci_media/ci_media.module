@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * ci_media.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function ci_media_menu() {
+  $items = array();
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ci_media_form_alter() {
+
+}

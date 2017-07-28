@@ -1,0 +1,10 @@
+name: ci_views_config
+description: 'Exported Views Configuration.'
+type: module
+core: 8.x
+dependencies:
+  - ci_ct_content_types
+  - node
+  - taxonomy
+  - user
+  - views
