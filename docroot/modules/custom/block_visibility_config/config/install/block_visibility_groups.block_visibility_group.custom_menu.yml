@@ -7,11 +7,11 @@ id: custom_menu
 label: 'Second Menu - Left'
 logic: and
 conditions:
-  4a21d817-f1ff-4162-81ff-1ff2d20813d9:
+  9e8762a9-8b0b-4516-ac5e-cba4e33af18a:
     id: term
     negate: 0
-    tid: '6'
+    tid: '100009'
     context_mapping:
       node: '@node.node_route_context:node'
-    uuid: 4a21d817-f1ff-4162-81ff-1ff2d20813d9
+    uuid: 9e8762a9-8b0b-4516-ac5e-cba4e33af18a
 allow_other_conditions: false

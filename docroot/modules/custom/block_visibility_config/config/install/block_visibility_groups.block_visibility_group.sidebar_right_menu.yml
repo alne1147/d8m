@@ -7,11 +7,11 @@ id: sidebar_right_menu
 label: 'Main Menu - Right'
 logic: and
 conditions:
-  887744c8-3cf5-42d2-8323-bc1f9c1bcc22:
+  97f5bcab-3304-4de3-b55a-2973be9825c3:
     id: term
     negate: 0
-    tid: '21'
+    tid: '100011'
     context_mapping:
       node: '@node.node_route_context:node'
-    uuid: 887744c8-3cf5-42d2-8323-bc1f9c1bcc22
+    uuid: 97f5bcab-3304-4de3-b55a-2973be9825c3
 allow_other_conditions: false
