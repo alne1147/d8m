@@ -69,6 +69,7 @@ permissions:
   - 'update paragraph content row_three_column_hero'
   - 'update paragraph content row_two_column_hero'
   - 'use advanced search'
+  - 'use exclude node title'
   - 'use text format d8m_text_editor'
   - 'view paragraph content bp_accordion'
   - 'view paragraph content bp_accordion_section'

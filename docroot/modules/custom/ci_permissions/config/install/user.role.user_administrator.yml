@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: iunFfPLvr60ZC31Kvb9W-4x0jlKFExktvySTiR7oSJg
 id: user_administrator
 label: 'User Administrator'
 weight: 4
@@ -14,4 +16,5 @@ permissions:
   - 'assign content_publisher role'
   - 'assign roles'
   - 'assign structure_administrator role'
+  - 'use exclude node title'
   - 'view the administration theme'

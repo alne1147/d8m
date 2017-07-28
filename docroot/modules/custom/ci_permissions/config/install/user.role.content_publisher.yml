@@ -53,6 +53,7 @@ permissions:
   - 'update paragraph content bp_image'
   - 'update paragraph content bp_modal'
   - 'update paragraph content bp_simple'
+  - 'use exclude node title'
   - 'use text format d8m_text_editor'
   - 'view media'
   - 'view own unpublished content'
