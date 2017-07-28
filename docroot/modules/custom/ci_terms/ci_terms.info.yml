@@ -1,6 +1,8 @@
-name: ci_terms
-dependencies: {  }
-description: 'Taxonomy Terms for D8M'
+name: CI Terms
+dependencies:
+  - default_content_deploy
+  - default_content
+description: 'Default Taxonomy Terms'
 core: 8.x
-package: Custom
+package: CI Taxonomy
 type: module
