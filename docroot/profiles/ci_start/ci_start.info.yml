@@ -9,7 +9,6 @@ distribution:
 langcode: en
 
 dependencies:
-  - ci_permissions
   - admin_toolbar
   - admin_toolbar_tools
   - filter_perms
