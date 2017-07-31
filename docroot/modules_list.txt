@@ -8,7 +8,6 @@ ckeditor_config
 ci_menu_link_content
 ci_media
 ci_nodes
-ci_permissions
 ci_views_config
 ci_blocks
 ci_feature_bundles
