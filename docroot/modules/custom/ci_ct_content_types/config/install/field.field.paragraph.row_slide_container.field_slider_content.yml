@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_image
     - paragraphs.paragraphs_type.card_basic
-    - paragraphs.paragraphs_type.card_slide
     - paragraphs.paragraphs_type.row_slide_container
   module:
     - entity_reference_revisions
