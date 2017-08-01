@@ -11,6 +11,7 @@ ci_nodes
 ci_views_config
 ci_blocks
 ci_feature_bundles
-
+yoast_seo
+simple_sitemap
 
 
