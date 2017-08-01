@@ -1,11 +1,11 @@
-name: 'Slick UI'
+name: Slick Test
+description: 'Testing Slick.'
 type: module
-description: 'Provides Slick carousel configuration UI.'
-# version: VERSION
+hidden: true
+package: Testing
 # core: 8.x
-package: Slick
-configure: entity.slick.collection
 dependencies:
+  - blazy:blazy_test
   - slick:slick
 
 # Information added by Drupal.org packaging script on 2017-05-25

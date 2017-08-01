@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row_slide_container.field_slider_content
+    - paragraphs.paragraphs_type.row_slide_container
+  module:
+    - content_moderation
+    - paragraphs
+id: paragraph.row_slide_container.default
+targetEntityType: paragraph
+bundle: row_slide_container
+mode: default
+content:
+  field_slider_content:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

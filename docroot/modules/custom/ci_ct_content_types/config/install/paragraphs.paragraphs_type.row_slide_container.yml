@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: row_slide_container
+label: 'Row - Slide Container'
+behavior_plugins: {  }
