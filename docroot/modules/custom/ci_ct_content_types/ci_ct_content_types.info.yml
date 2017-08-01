@@ -24,4 +24,5 @@ dependencies:
   - user
   - views
   - viewsreference
+  - yoast_seo
 package: ci_ct
