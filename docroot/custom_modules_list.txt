@@ -11,4 +11,5 @@ ci_nodes
 ci_views_config
 ci_blocks
 ci_feature_bundles
+test_feature
 
