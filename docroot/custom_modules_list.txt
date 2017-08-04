@@ -6,10 +6,8 @@ ci_blocks_block_types
 block_visibility_config
 ckeditor_config
 ci_menu_link_content
-ci_media
 ci_nodes
 ci_views_config
 ci_blocks
 ci_feature_bundles
-test_feature
 
