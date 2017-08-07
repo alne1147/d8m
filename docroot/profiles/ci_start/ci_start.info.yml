@@ -83,7 +83,6 @@ dependencies:
   - entity_reference_revisions
   - field_collection
   - file
-  - iframe
   - image
   - link
   - options
