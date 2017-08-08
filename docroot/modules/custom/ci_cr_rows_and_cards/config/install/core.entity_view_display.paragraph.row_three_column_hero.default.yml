@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.row_three_column_hero.bp_column_style_3
     - field.field.paragraph.row_three_column_hero.field_row_background_image
     - field.field.paragraph.row_three_column_hero.field_row_title
+    - field.field.paragraph.row_three_column_hero.field_title_color
     - image.style.max_1920
     - paragraphs.paragraphs_type.row_three_column_hero
   module:
@@ -58,5 +59,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_title_color:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
 hidden: {  }

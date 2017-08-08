@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.row_three_column_hero.bp_column_style_3
     - field.field.paragraph.row_three_column_hero.field_row_background_image
     - field.field.paragraph.row_three_column_hero.field_row_title
+    - field.field.paragraph.row_three_column_hero.field_title_color
     - image.style.crop_thumbnail
     - paragraphs.paragraphs_type.row_three_column_hero
   module:
@@ -19,13 +20,13 @@ bundle: row_three_column_hero
 mode: default
 content:
   bp_background:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   bp_column_content_3:
-    weight: 4
+    weight: 5
     settings:
       title: Card
       title_plural: Cards
@@ -37,13 +38,13 @@ content:
     type: entity_reference_paragraphs
     region: content
   bp_column_style_3:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_row_background_image:
-    weight: 2
+    weight: 3
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -63,6 +64,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_title_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

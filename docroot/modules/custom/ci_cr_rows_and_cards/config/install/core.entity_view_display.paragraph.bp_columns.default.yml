@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.bp_columns.bp_column_content
     - field.field.paragraph.bp_columns.bp_width
     - field.field.paragraph.bp_columns.field_row_title
+    - field.field.paragraph.bp_columns.field_title_color
     - paragraphs.paragraphs_type.bp_columns
   module:
     - entity_reference_revisions
@@ -45,6 +46,13 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  field_title_color:
+    type: list_key
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

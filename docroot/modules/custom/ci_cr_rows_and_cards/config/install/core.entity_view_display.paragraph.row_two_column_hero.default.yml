@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.row_two_column_hero.bp_column_style_2
     - field.field.paragraph.row_two_column_hero.field_row_background_image
     - field.field.paragraph.row_two_column_hero.field_row_title
+    - field.field.paragraph.row_two_column_hero.field_title_color
     - image.style.max_1920
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
@@ -59,4 +60,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_title_color: true
