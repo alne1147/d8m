@@ -1,0 +1,6 @@
+ci_theme_options.start:
+    path: /custom/start
+    defaults:
+        _controller: '\Drupal\ci_theme_options\Controller\Ci_theme_optionsStartController::startAction'
+    requirements:
+        _permission: 'access content'

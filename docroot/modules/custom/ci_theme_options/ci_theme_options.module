@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * ci_theme_options.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function ci_theme_options_menu() {
+  $items = array();
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ci_theme_options_form_alter() {
+
+}
