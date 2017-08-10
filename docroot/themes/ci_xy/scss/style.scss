@@ -18,6 +18,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 /* COMPONENT
  * Reusable, modular parts of our design
  */
+@import "component/accordion";
 
 // CI theme components
 @import "component/hero";
