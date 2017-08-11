@@ -28,12 +28,11 @@
                         var tabText = $tab.html().trim();
                         //var toggleClass = $tab.hasClass('active') ? ' active' : '';
                         var $accordionTabColor = $('.ckeditor-accordion-toggler');
-                        $accordionTabColor.has('span').css('padding', '0');
+                        $accordionTabColor.has('span').addClass('accordion__title--no-pad');
+                        $accordionTabColor.find('span').parent('span').addClass('accordion__title--color');
                         //$tab.html('<span class="ckeditor-accordion-toggle' + toggleClass + '"></span><a class="ckeditor-accordion-toggler" href="#">' + tabText + '</a>')
                         $tab.html('<span class="ckeditor-accordion-toggle"></span><a class="ckeditor-accordion-toggler" href="#">' + tabText + '</a>')
-
                     });
-
                     // Wrap the accordion in a div element so that quick edit function shows the source correctly.
                     $accordion.addClass('styled').removeClass('ckeditor-accordion').wrap('<div class="ckeditor-accordion-container"></div>');
                 });
