@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var watch = require('gulp-watch');
+//var watch = require('gulp-watch');
 var shell = require('gulp-shell');
 var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
@@ -38,12 +38,12 @@ gulp.task('sass', function () {
 
 // Compress / Concat JS
 gulp.task('compress', function() {
-  return gulp.src('js/**/*.js')
+  return gulp.src('./js/components/*.js')
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(concat('scripts.js'))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('./js'))
     .pipe(browserSync.reload({stream: true}))
     .pipe(notify({
       title: "JS Minified",
