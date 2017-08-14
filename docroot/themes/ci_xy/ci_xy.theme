@@ -18,5 +18,6 @@
  }
 
 function ci_xy_preprocess_page(&$variables) {
-  $variables['foo_example'] = theme_get_setting('foo_example');
+  $variables['type'] = theme_get_setting('type');
 }
+
