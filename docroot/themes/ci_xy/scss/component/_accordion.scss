@@ -1,0 +1,48 @@
+.ckeditor-accordion-container {
+  > dl {
+    border:0!important;
+    dt {  
+      margin-bottom: 1rem;
+       > a {  
+         background-color: #009add!important;  
+         border-bottom:0 !important;  
+         -webkit-border-radius: .3rem;  
+         -moz-border-radius: .3rem;  
+         border-radius: .3rem;  
+         font-size: 20px;  
+         font-weight: 300;
+         text-decoration: none;
+         &.accordion__title--no-pad {
+           padding:0;
+         }
+         > .accordion__title--color {
+          padding:0;
+           > span {
+            -webkit-border-radius: .3rem;
+            -moz-border-radius: .3rem;
+            border-radius: .3rem;
+            display: block;
+            padding: 10px 15px 10px 50px;
+           }
+         }
+         > span {
+          -webkit-border-radius: .3rem;
+          -moz-border-radius: .3rem;
+          border-radius: .3rem;
+          display: block;
+          padding: 10px 15px 10px 50px;
+          color: #fff;
+          cursor: pointer;
+          -webkit-transition: background-color 300ms;
+          transition: background-color 300ms;
+        }
+      }
+    }
+    dd {
+      padding: 0 15px 15px!important
+    }
+  }
+}
+.ckeditor-accordion-container > dl dd:first-of-type {
+  display: none;
+}
