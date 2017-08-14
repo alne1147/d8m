@@ -41,13 +41,14 @@ content:
   field_card_background_image:
     weight: 5
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
-      crop_list: null
+      crop_list:
+        - hero_cropping
+      progress_indicator: throbber
       show_crop_area: false
-      show_default_crop: true
-      warn_multiple_usages: true
+      warn_multiple_usages: false
     third_party_settings: {  }
     type: image_widget_crop
     region: content
