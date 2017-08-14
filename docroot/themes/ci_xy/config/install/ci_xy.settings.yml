@@ -13,3 +13,6 @@
 
 # Disable the CDN provider so compiled source files can be used.
 cdn_provider: ''
+
+SETTING_NAME: DEFAULT_VALUE
+foo_example: blue bikeshed

@@ -16,3 +16,7 @@
      $suggestions[] = 'page__'.$content_type;
    }
  }
+
+function ci_xy_preprocess_page(&$variables) {
+  $variables['foo_example'] = theme_get_setting('foo_example');
+}

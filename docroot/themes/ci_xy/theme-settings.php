@@ -6,11 +6,10 @@ function ci_xy_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormSt
         return;
     }
 
-
-    $form['nav_color'] = array(
-        '#title' => t('Navigation Color'),
-        '#type' => 'select',
-        '#description' => 'Select the desired color of the Main Navigation.',
-        '#options' => array(t('--- SELECT ---'), t('Red'), t('Blue'), t('Black')),
+    $form['foo_example'] = array(
+        '#type'          => 'textfield',
+        '#title'         => t('Widget'),
+        '#default_value' => theme_get_setting('foo_example'),
+        '#description'   => t("Place this text in the widget spot on your site."),
     );
 }
