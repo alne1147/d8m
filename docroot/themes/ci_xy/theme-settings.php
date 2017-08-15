@@ -28,4 +28,10 @@ function ci_xy_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormSt
         '#options' => $form['type_options']['#value'],
     );
 
+    $form['element'] = array(
+        '#type' => 'jquery_colorpicker',
+        '#title' => t('Color'),
+        '#default_value' => 'FFFFFF',
+    );
+
 }
