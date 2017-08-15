@@ -19,5 +19,6 @@
 
 function ci_xy_preprocess_page(&$variables) {
   $variables['type'] = theme_get_setting('type');
+    $variables['nav_color'] = theme_get_setting('nav_color');
 }
 

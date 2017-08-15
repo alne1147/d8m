@@ -125,7 +125,7 @@
 {% endif %}
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content" style="background-color:#{{ nav_color }}">
     <div class="row">
       {# Breadcrumbs #}
       {% if breadcrumb %}
@@ -205,7 +205,7 @@
   {% endblock %}
 {% endif %}
 {# global footer #}
-{% block global_footer %}{{ foo_example }}
+{% block global_footer %}{{ nav_color }}
   <a href="{{ social_url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
 <footer class="footer__global-footer" role="contentinfo">
   <div class="container">

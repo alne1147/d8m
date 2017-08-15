@@ -28,10 +28,10 @@ function ci_xy_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormSt
         '#options' => $form['type_options']['#value'],
     );
 
-    $form['element'] = array(
+    $form['nav_color'] = array(
         '#type' => 'jquery_colorpicker',
-        '#title' => t('Color'),
-        '#default_value' => 'FFFFFF',
+        '#title' => t('Nav Color'),
+        '#default_value' => theme_get_setting('nav_color'),
     );
 
 }

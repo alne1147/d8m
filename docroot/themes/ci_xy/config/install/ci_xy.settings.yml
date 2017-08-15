@@ -17,3 +17,4 @@ cdn_provider: ''
 SETTING_NAME: DEFAULT_VALUE
 
 type: Development
+nav_color: FFFFFF
