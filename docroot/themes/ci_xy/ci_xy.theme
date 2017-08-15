@@ -22,3 +22,11 @@ function ci_xy_preprocess_page(&$variables) {
     $variables['nav_color'] = theme_get_setting('nav_color');
 }
 
+function ci_xy_preprocess_menu(&$variables) {
+    $variables['type'] = theme_get_setting('type');
+    $variables['nav_color'] = theme_get_setting('nav_color');
+}
+
+function ci_xy_preprocess_block__mainnavigation(&$variables) {
+    $variables['nav_color'] = theme_get_setting('nav_color');
+}
