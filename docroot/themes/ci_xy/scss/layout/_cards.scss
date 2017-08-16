@@ -58,6 +58,7 @@
               }
             }
             .field--name-field-card-background-image {
+              line-height:0; // body line height override
               [class^="hero__responsive_"] {
                 -webkit-background-size:cover;
                 background-size:cover;
