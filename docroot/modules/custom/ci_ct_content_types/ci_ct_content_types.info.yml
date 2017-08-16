@@ -26,5 +26,4 @@ dependencies:
   - views
   - viewsreference
   - webform
-  - yoast_seo
 package: ci_ct

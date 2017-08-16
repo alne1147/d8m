@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_rows
-    - field.field.node.landing_page.field_yoast_seo
     - node.type.landing_page
   module:
     - content_moderation
@@ -80,4 +79,3 @@ content:
     third_party_settings: {  }
 hidden:
   field_meta_tags: true
-  field_yoast_seo: true
