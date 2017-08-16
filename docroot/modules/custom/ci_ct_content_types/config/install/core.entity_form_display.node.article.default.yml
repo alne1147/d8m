@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.article.field_block_options
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_rows
-    - field.field.node.article.field_yoast_seo
     - node.type.article
   module:
     - content_moderation
@@ -17,7 +16,6 @@ dependencies:
     - paragraphs
     - path
     - text
-    - yoast_seo
 third_party_settings:
   field_group:
     group_article_layout_tabs:
@@ -113,13 +111,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
-  field_yoast_seo:
-    type: yoast_seo_widget
-    weight: 0
-    region: content
-    settings:
-      body: body
-    third_party_settings: {  }
   path:
     type: path
     weight: 7
