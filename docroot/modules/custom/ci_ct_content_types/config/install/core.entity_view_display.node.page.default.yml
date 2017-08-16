@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.field_meta
     - field.field.node.page.field_meta_tags
     - field.field.node.page.field_rows
-    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
     - entity_reference_revisions
@@ -43,4 +42,3 @@ hidden:
   field_block_options: true
   field_meta: true
   field_meta_tags: true
-  field_yoast_seo: true

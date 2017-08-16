@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.article.field_block_options
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_rows
-    - field.field.node.article.field_yoast_seo
     - node.type.article
   module:
     - text
@@ -38,4 +37,3 @@ hidden:
   field_block_options: true
   field_meta_tags: true
   field_rows: true
-  field_yoast_seo: true
