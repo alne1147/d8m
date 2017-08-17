@@ -2,7 +2,10 @@
   > dl {
     border:0!important;
     margin-bottom:0; // type.scss override
-    dt {  
+    dt {
+      &:last-of-type {
+        margin-bottom:0;
+      }
       margin-bottom: 1rem;
        > a {  
          background-color: #009add!important;  
