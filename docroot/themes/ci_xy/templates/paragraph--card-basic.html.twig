@@ -296,6 +296,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
       {{ content.field_card_title }}
     </div>
       {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment') }}
+      {{ content.field_card_background_image }}
   </div>
 </div>
 {% else %}
@@ -305,6 +306,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
       {{ content.field_card_title }}
     </div>
       {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment') }}
+      {{ content.field_card_background_image }}
   </div>
 </div>
 {% endif %}

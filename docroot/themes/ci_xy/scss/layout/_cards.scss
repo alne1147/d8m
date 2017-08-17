@@ -5,10 +5,10 @@
         padding-bottom:0;
       }
     }
-  .container {
-    @media (max-width: $screen-sm-min) {
-      display: block;
-    }
+  //.container {
+  //  @media (max-width: $screen-sm-min) {
+  //    display: block;
+  //  }
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
@@ -17,6 +17,11 @@
       @media (max-width: $screen-sm-min) {
         display: block;
         padding-bottom:15px;
+      }
+      .container {
+          @media (max-width: $screen-sm-min) {
+            display: block;
+        }
       }
       [class^="paragraph--type--bp-columns__"] {
         display: flex;
@@ -58,6 +63,7 @@
               }
             }
             .field--name-field-card-background-image {
+              line-height:0; // body line height override
               [class^="hero__responsive_"] {
                 -webkit-background-size:cover;
                 background-size:cover;
@@ -112,7 +118,7 @@
         }
       }
     }
-  }
+  //}
 }
 .paragraph.paragraph--color + .paragraph > .paragraph__column {
   padding-top: 0;
