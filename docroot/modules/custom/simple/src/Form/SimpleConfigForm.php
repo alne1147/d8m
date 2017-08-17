@@ -74,6 +74,12 @@ class SimpleConfigForm extends ConfigFormBase {
 
         );
 
+        $form['navi_color'] = array(
+            '#type' => 'jquery_colorpicker',
+            '#title' => t('Nav Color'),
+            '#default_value' => $config->get('simple.navi_color'),
+        );
+
         return $form;
 
     }
@@ -91,6 +97,8 @@ class SimpleConfigForm extends ConfigFormBase {
         $config->set('simple.email', $form_state->getValue('email'));
 
         $config->set('simple.node_types', $form_state->getValue('node_types'));
+
+        $config->set('simple.navi_color', $form_state->getValue('navi_color'));
 
         $config->save();
 
