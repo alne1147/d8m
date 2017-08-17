@@ -290,7 +290,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column"> 
     {{ title_suffix }}
-      <div class="title-properties {{content.field_title_color[0] }}">
+      <div class="paragraph__title {{content.field_title_color[0] }}">
         {{ content.field_row_title }}
       </div>
      {{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}
@@ -299,7 +299,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {%else %}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column"> 
-      <div class="title-properties">
+      <div class="paragraph__title">
         {{ content.field_row_title }}
       </div>
      {{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}

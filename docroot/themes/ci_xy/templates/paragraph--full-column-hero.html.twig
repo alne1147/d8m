@@ -270,7 +270,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {# Prints div with classes, and content without Width and Background. #}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    <div class="title-properties {{content.field_title_color[0] }}">
+    <div class="paragraph__title {{content.field_title_color[0] }}">
       {{ content.field_card_title }}
     </div>
     {{ content|without('bp_width', 'bp_background') }}
@@ -279,7 +279,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% else %}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    <div class="title-properties">
+    <div class="paragraph__title">
       {{ content.field_card_title }}
     </div>
     {{ content|without('bp_width', 'bp_background') }}

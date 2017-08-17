@@ -52,6 +52,19 @@
         &.paragraph__card {
           > .paragraph__column {
             padding-top: 0;
+            > .paragraph__title {
+              background-color: $color-pacific-blue;
+              border-radius: $border-radius;
+            }
+            .field--name-field-card-title {
+              //background-color: $color-pacific-blue;
+              //border-radius: $border-radius;
+              color: $color-white;
+              font-size: floor(($font-size-base * 1.3));
+              font-weight:$font-weight-500;
+              padding:8px 12px;
+              //margin-bottom:15px;
+            }
             .field--name-field-card-body {
               float: left;
               padding: 9px;
@@ -63,7 +76,7 @@
               }
             }
             .field--name-field-card-background-image {
-              line-height:0; // body line height override
+              //line-height:0; // body line height override
               [class^="hero__responsive_"] {
                 -webkit-background-size:cover;
                 background-size:cover;
