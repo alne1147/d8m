@@ -12,13 +12,13 @@
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
-    display: flex;
-    flex-wrap: no-wrap;
       @media (max-width: $screen-sm-min) {
         display: block;
         padding-bottom:15px;
       }
       .container {
+        display: flex;
+        flex-wrap: no-wrap;
           @media (max-width: $screen-sm-min) {
             display: block;
         }
