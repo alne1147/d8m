@@ -1,6 +1,0 @@
-name: Simple
-dependencies: {  }
-description: 'Simple Theme Settings'
-core: 8.x
-package: Custom
-type: module
