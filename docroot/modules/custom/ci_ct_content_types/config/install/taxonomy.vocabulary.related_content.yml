@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Related Content'
+vid: related_content
+description: 'Control Related Content Block Placement'
+hierarchy: 0
+weight: 0
