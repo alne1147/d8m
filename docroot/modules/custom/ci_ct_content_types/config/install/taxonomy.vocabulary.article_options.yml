@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Article Options'
-vid: article_options
-description: 'This vocabulary sorts the Article Content Type into different categories.'
-hierarchy: 0
-weight: 0

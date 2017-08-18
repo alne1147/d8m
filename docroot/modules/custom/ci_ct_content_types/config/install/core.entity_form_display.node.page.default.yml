@@ -18,10 +18,9 @@ dependencies:
 third_party_settings:
   field_group:
     group_layout_options:
-      children:
-        - field_rows
+      children: {  }
       parent_name: ''
-      weight: 6
+      weight: 11
       format_type: tab
       format_settings:
         id: ''
@@ -30,6 +29,7 @@ third_party_settings:
         description: ''
         required_fields: false
       label: 'Layout Options'
+      region: hidden
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -46,12 +46,12 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_block_options:
-    weight: 5
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -63,7 +63,7 @@ content:
     type: metatag_firehose
     region: content
   field_rows:
-    weight: 33
+    weight: 2
     settings:
       title: Row
       title_plural: Rows
@@ -84,14 +84,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 5
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -104,7 +104,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS

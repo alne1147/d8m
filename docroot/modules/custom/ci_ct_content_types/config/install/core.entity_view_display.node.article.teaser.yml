@@ -4,8 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.field_article_categories
-    - field.field.node.article.field_article_layout_options
+    - field.field.node.article.field_article_type
     - field.field.node.article.field_block_options
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_rows
@@ -32,8 +31,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_article_categories: true
-  field_article_layout_options: true
+  field_article_type: true
   field_block_options: true
   field_meta_tags: true
   field_rows: true

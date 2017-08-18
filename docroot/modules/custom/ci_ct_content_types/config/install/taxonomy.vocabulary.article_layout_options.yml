@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Article Layout Options'
-vid: article_layout_options
-description: 'Adds ability to add sidebar blocks and more.'
-hierarchy: 0
-weight: 0
