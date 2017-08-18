@@ -95,7 +95,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <div class="top-nav">
+    <div class="top-nav" style="background-color:#{{ nav_color }}">
         <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
           {% if not navbar_attributes.hasClass('container') %}
             <div class="{{ container }}">
@@ -114,7 +114,7 @@
           </div>
           {# Navigation (collapsible) #}
           {% if page.navigation_collapsible %}
-            <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div id="navbar-collapse" class="navbar-collapse collapse" style="background-color:#{{ nav_color }}">
               {{ page.navigation_collapsible }}
             </div>
           {% endif %}
@@ -208,6 +208,7 @@
 {% endif %}
 {# global footer #}
 {% block global_footer %}
+  <a href="{{ social_url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
 <footer class="footer__global-footer" role="contentinfo">
   <div class="container">
     <div class="row">

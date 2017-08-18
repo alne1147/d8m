@@ -1,0 +1,13 @@
+simple.config:
+
+  path: '/admin/config/simple/config'
+
+  defaults:
+
+    _form: '\Drupal\simple\Form\SimpleConfigForm'
+
+    _title: 'Simple Configuration'
+
+  requirements:
+
+    _permission: 'administer site configuration'
