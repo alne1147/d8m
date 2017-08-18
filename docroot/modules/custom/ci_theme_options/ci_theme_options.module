@@ -2,15 +2,15 @@
 
 /**
  * @file
- * ci_theme_options.module
+ * simple.module
  */
 
 /**
  * Implements hook_menu().
  */
 function ci_theme_options_menu() {
-  $items = array();
-  return $items;
+    $items = array();
+    return $items;
 }
 
 /**
@@ -18,4 +18,8 @@ function ci_theme_options_menu() {
  */
 function ci_theme_options_form_alter() {
 
+}
+function ci_theme_options_preprocess_page(&$variables) {
+
+    $variables['nav_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.nav_color');
 }
