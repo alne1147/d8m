@@ -1,6 +1,6 @@
 ci_theme_options.config:
 
-  path: '/admin/config/theme-options/config'
+  path: '/admin/config/theme-options'
 
   defaults:
 
