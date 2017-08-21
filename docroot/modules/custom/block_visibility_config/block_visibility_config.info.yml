@@ -12,8 +12,10 @@ dependencies:
   - masquerade
   - menu_block
   - menu_condition
+  - node
   - search
   - system
+  - taxonomy
   - term_condition
   - user
   - views

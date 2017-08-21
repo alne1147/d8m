@@ -7,11 +7,11 @@ id: related_content
 label: 'Related Content'
 logic: and
 conditions:
-  893144b0-8c84-4953-a218-e7c799168f55:
+  d68c7b61-0761-42db-8680-5f5fe2677d61:
     id: 'entity_bundle:taxonomy_term'
     bundles:
-      article_layout_options: article_layout_options
+      related_content: related_content
     negate: false
     context_mapping: {  }
-    uuid: 893144b0-8c84-4953-a218-e7c799168f55
+    uuid: d68c7b61-0761-42db-8680-5f5fe2677d61
 allow_other_conditions: false
