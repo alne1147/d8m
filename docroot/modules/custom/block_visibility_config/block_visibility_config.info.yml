@@ -17,6 +17,7 @@ dependencies:
   - system
   - taxonomy
   - term_condition
+  - text
   - user
   - views
 package: 'Colorado Interactive'

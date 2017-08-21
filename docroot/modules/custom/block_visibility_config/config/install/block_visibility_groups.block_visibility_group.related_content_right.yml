@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: related_content_right
+label: 'Related Content - Right'
+logic: and
+conditions:
+  a3d7dca9-c4ed-4e4e-b104-7c492abe033c:
+    id: term
+    negate: 0
+    tid: '100017'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a3d7dca9-c4ed-4e4e-b104-7c492abe033c
+allow_other_conditions: false

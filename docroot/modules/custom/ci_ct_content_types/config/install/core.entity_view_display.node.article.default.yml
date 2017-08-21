@@ -4,8 +4,8 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_article_type
-    - field.field.node.article.field_block_options
     - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_page_options
     - field.field.node.article.field_related_content
     - field.field.node.article.field_rows
     - node.type.article
@@ -33,6 +33,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_page_options:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_rows:
     weight: 3
     label: hidden
@@ -48,6 +56,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_block_options: true
   field_meta_tags: true
   field_related_content: true

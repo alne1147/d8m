@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.related_content_right
+    - block_visibility_groups.block_visibility_group.related_content_left
     - views.view.related_content
   module:
     - block_class
@@ -13,9 +13,9 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__related_content_block_1_2
+id: views_block__related_content_block_1
 theme: ci_xy
-region: sidebar_second
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'views_block:related_content-block_1'
@@ -31,5 +31,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: related_content_right
+    block_visibility_group: related_content_left
     context_mapping: {  }

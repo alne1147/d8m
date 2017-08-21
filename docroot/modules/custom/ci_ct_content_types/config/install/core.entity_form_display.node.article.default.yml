@@ -4,8 +4,8 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_article_type
-    - field.field.node.article.field_block_options
     - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_page_options
     - field.field.node.article.field_related_content
     - field.field.node.article.field_rows
     - node.type.article
@@ -20,7 +20,6 @@ third_party_settings:
   field_group:
     group_article_layout_tabs:
       children:
-        - field_block_options
         - field_related_content
       parent_name: ''
       weight: 2
@@ -39,7 +38,7 @@ third_party_settings:
       children:
         - field_meta_tags
       parent_name: ''
-      weight: 11
+      weight: 12
       format_type: html_element
       format_settings:
         label: Seo
@@ -54,6 +53,26 @@ third_party_settings:
         required_fields: true
       label: Seo
       region: content
+    group_layout_options:
+      children:
+        - field_page_options
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+        element: div
+        show_label: false
+        label_element: h3
+        effect: none
+        speed: fast
+        attributes: ''
+        open: false
+      label: 'Layout Options'
+      region: content
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -61,7 +80,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 10
     settings:
       rows: 9
       summary_rows: 3
@@ -80,18 +99,18 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_block_options:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_meta_tags:
     type: metatag_firehose
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_page_options:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_related_content:
     weight: 4
     settings: {  }
@@ -99,7 +118,7 @@ content:
     type: options_buttons
     region: content
   field_rows:
-    weight: 10
+    weight: 11
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -112,7 +131,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -127,7 +146,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -140,7 +159,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
