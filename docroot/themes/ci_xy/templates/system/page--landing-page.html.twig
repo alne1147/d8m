@@ -55,7 +55,8 @@
  * @see template_preprocess_page()
  * @see html.html.twig
  */
-#}
+#}{{ attach_library('ci_article_setup/article_setup') }}
+
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Branding #}
 {% block global_header %}
