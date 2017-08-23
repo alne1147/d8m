@@ -86,6 +86,9 @@ class MenuPosition extends ConditionPluginBase implements ConditionInterface, Co
    * {@inheritdoc}
    */
   public function evaluate() {
+    if (empty($this->configuration['menu_parent'])) {
+      return TRUE;
+    }
     list($menu_name, $link_plugin_id) = explode(':', $this->configuration['menu_parent'], 2);
 
     $active_trail_ids = $this->menuActiveTrail->getActiveTrailIds($menu_name);
