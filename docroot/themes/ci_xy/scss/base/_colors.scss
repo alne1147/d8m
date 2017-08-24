@@ -106,8 +106,13 @@
 // Black
 .color__black--strong {
   background: rgba($color-black, 1)!important;
-  > .field--name-field-card-title {
+  .field--name-field-card-title {
     color: set-title-text-color($color-black);
+  }
+  .field--name-field-row-title {
+    h2 {
+      color: set-title-text-color($color-black);
+    }
   }
 }
 .color__black--light {
@@ -343,10 +348,28 @@
 
 // Purples and blues
 // Eggplant
+//.paragraph__title {
+//  &.color__eggplant--strong {
+//    position: relative;
+//    &:before {
+//      content: '';
+//      position: absolute;
+//      border-top: 1px dotted rgba($color-eggplant, 1);
+//      width:100%;
+//      top:50%;
+//    }
+//  }
+//}
+
 .color__eggplant--strong {
   background: rgba($color-eggplant, 1)!important;
   > .field--name-field-card-title {
     color: set-title-text-color($color-eggplant);
+  }
+  .field--name-field-row-title {
+    h2 {
+      color: set-title-text-color($color-black);
+    }
   }
 }
 .color__eggplant--light {

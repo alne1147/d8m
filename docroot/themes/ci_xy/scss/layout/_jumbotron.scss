@@ -10,6 +10,10 @@
     margin-bottom: 0;
     padding: 0;
   }
+  .paragraph__title {
+    float: left;
+    width: 100% ;
+  }
   .field--name-field-card-title {
     background-color: $color-pacific-blue;
     border-radius: $border-radius;
@@ -44,18 +48,6 @@
       }
     }
   }
-  //[class^="paragraph--type--bp-columns__"] {
-  //  @media (max-width: $screen-sm-min) {
-  //    &:nth-of-type(n+2) {
-  //    }
-  //  }
-  //  &:first-child {
-  //    padding-left:0!important;
-  //  }
-  //  &:last-child {
-  //    padding-right:0!important;
-  //  }
-  //}
   .paragraph--type--full-column-hero,
   .paragraph--type--row-two-column-hero,
   .paragraph--type--row-three-column-hero {

@@ -1,14 +1,20 @@
 .paragraph {
+  > .paragraph__column {
+    >.container {
+      padding-left:0;
+      padding-right:0;
+      >.paragraph__title {
+        border-radius: $border-radius;
+      }
+    }
+  }
     &.paragraph--color {
       > .paragraph__column {
         padding-top:0;
         padding-bottom:0;
       }
     }
-  //.container {
-  //  @media (max-width: $screen-sm-min) {
-  //    display: block;
-  //  }
+
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
@@ -53,6 +59,8 @@
           > .paragraph__column {
             padding-top: 0;
             > .paragraph__title {
+              float: left;
+              width:100%;
               background-color: $color-pacific-blue;
               border-radius: $border-radius;
             }
