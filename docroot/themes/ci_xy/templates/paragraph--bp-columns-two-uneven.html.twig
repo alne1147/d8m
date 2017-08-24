@@ -285,24 +285,32 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   {% set classes = classes|merge(column_style_2_classes) %}
 {% endif %}
 
-{% if content.field_title_color|render|striptags|trim %}
+{#{% if content.field_title_color|render|striptags|trim %}#}
 {# Prints div with classes, and content without Width and Background. #}
+{#<div{{ attributes.addClass(classes) }}>#}
+  {#<div class="paragraph__column"> #}
+    {#{{ title_suffix }}#}
+      {#<div class="paragraph__title {{content.field_title_color[0] }}">#}
+        {#{{ content.field_row_title }}#}
+      {#</div>#}
+     {#{{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}#}
+  {#</div>#}
+{#</div>#}
+{#{%else %}#}
+{#<div{{ attributes.addClass(classes) }}>#}
+  {#<div class="paragraph__column"> #}
+      {#<div class="paragraph__title">#}
+        {#{{ content.field_row_title }}#}
+      {#</div>#}
+     {#{{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}#}
+  {#</div>#}
+{#</div>#}
+{#{% endif %}#}
 <div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column"> 
-    {{ title_suffix }}
-      <div class="title-properties {{content.field_title_color[0] }}">
-        {{ content.field_row_title }}
-      </div>
-     {{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}
+  <div class="paragraph__column">
+    {#<div class="paragraph__title">#}
+      {#{{ content.field_row_title }}#}
+    {#</div>#}
+    {{ content|without('bp_width', 'bp_background','bp_column_style_2') }}
   </div>
 </div>
-{%else %}
-<div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column"> 
-      <div class="title-properties">
-        {{ content.field_row_title }}
-      </div>
-     {{ content.bp_column_content_2|without('bp_width', 'bp_background','bp_column_style_2') }}
-  </div>
-</div>
-{% endif %}

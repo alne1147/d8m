@@ -5,10 +5,30 @@
  * 2. Brand Colorado Secondary
  */
 
+// Function to change text color based on selected background color
+@function set-title-text-color35($color) {
+  @if (lightness($color) > 35) {
+    @return #000000!important; // Lighter background, return dark color
+  } @else {
+    @return #ffffff!important; // Darker background, return light color
+  }
+}
+@function set-title-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000!important; // Lighter background, return dark color
+  } @else {
+    @return #ffffff!important; // Darker background, return light color
+  }
+}
+
 // [1]
 // Brand Green
+.paragraph__title.color__brand-green--strong,
 .color__brand-green--strong {
-  background: rgba($color-brand-green, 1)
+  background: rgba($color-brand-green, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-green);
+  }
 }
 .color__brand-green--light {
   background: rgba($color-brand-green, .5)
@@ -18,7 +38,10 @@
 }
 // Brand Slate
 .color__brand-slate--strong {
-  background: rgba($color-brand-slate, 1)
+  background: rgba($color-brand-slate, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-slate);
+  }
 }
 .color__brand-slate--light {
   background: rgba($color-brand-slate, .5)
@@ -28,7 +51,10 @@
 }
 // Brand Silver
 .color__brand-silver--strong {
-  background: rgba($color-brand-silver, 1)
+  background: rgba($color-brand-silver, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-silver);
+  }
 }
 .color__brand-silver--light {
   background: rgba($color-brand-silver, .5)
@@ -38,7 +64,10 @@
 }
 // Brand Orange
 .color__brand-orange--strong {
-  background: rgba($color-brand-orange, 1)
+  background: rgba($color-brand-orange, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-orange);
+  }
 }
 .color__brand-orange--light {
   background: rgba($color-brand-orange, .5)
@@ -48,7 +77,10 @@
 }
 // Brand Brown
 .color__brand-brown--strong {
-  background: rgba($color-brand-brown, 1)
+  background: rgba($color-brand-brown, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-brown);
+  }
 }
 .color__brand-brown--light {
   background: rgba($color-brand-brown, .5)
@@ -58,7 +90,10 @@
 }
 // Brand Blue
 .color__brand-blue--strong {
-  background: rgba($color-brand-blue, 1)
+  background: rgba($color-brand-blue, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brand-blue);
+  }
 }
 .color__brand-blue--light {
   background: rgba($color-brand-blue, .5)
@@ -70,7 +105,15 @@
 // Black, White
 // Black
 .color__black--strong {
-  background: rgba($color-black, 1)
+  background: rgba($color-black, 1)!important;
+  .field--name-field-card-title {
+    color: set-title-text-color($color-black);
+  }
+  .field--name-field-row-title {
+    h2 {
+      color: set-title-text-color($color-black);
+    }
+  }
 }
 .color__black--light {
   background: rgba($color-black, .5)
@@ -94,7 +137,10 @@
 
 // Evening
 .color__evening--strong {
-  background: rgba($color-evening, 1)
+  background: rgba($color-evening, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-evening);
+  }
 }
 .color__evening--light {
   background: rgba($color-evening, .5)
@@ -104,7 +150,10 @@
 }
 // Charcoal
 .color__charcoal--strong {
-  background: rgba($color-charcoal, 1)
+  background: rgba($color-charcoal, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-charcoal);
+  }
 }
 .color__charcoal--light {
   background: rgba($color-charcoal, .5)
@@ -114,27 +163,23 @@
 }
 // Blackboard
 .color__blackboard--strong {
-  background: rgba($color-charcoal, 1)
+  background: rgba($color-blackboard, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-blackboard);
+  }
 }
 .color__blackboard--light {
-  background: rgba($color-charcoal, .5)
+  background: rgba($color-blackboard, .5)
 }
 .color__blackboard--slight {
-  background: rgba($color-charcoal, .2)
-}
-// Blackboard
-.color__blackboard--strong {
-  background: rgba($color-charcoal, 1)
-}
-.color__blackboard--light {
-  background: rgba($color-charcoal, .5)
-}
-.color__blackboard--slight {
-  background: rgba($color-charcoal, .2)
+  background: rgba($color-blackboard, .2)
 }
 // Grey Sand
 .color__grey-sand--strong {
-  background: rgba($color-grey-sand, 1)
+  background: rgba($color-grey-sand, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-grey-sand);
+  }
 }
 .color__grey-sand--light {
   background: rgba($color-grey-sand, .5)
@@ -144,7 +189,10 @@
 }
 // Sleek Grey
 .color__sleek-grey--strong {
-  background: rgba($color-sleek-grey, 1)
+  background: rgba($color-sleek-grey, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-sleek-grey);
+  }
 }
 .color__sleek-grey--light {
   background: rgba($color-sleek-grey, .5)
@@ -154,7 +202,10 @@
 }
 // Lemon Grass
 .color__lemon-grass--strong {
-  background: rgba($color-lemon-grass, 1)
+  background: rgba($color-lemon-grass, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-lemon-grass);
+  }
 }
 .color__lemon-grass--light {
   background: rgba($color-lemon-grass, .5)
@@ -164,7 +215,10 @@
 }
 // Walnut
 .color__walnut--strong {
-  background: rgba($color-walnut, 1)
+  background: rgba($color-walnut, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-walnut);
+  }
 }
 .color__walnut--light {
   background: rgba($color-walnut, .5)
@@ -174,7 +228,10 @@
 }
 // Walnut
 .color__beige--strong {
-  background: rgba($color-beige, 1)
+  background: rgba($color-beige, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-beige);
+  }
 }
 .color__beige--light {
   background: rgba($color-beige, .5)
@@ -186,7 +243,10 @@
 // Reds, Oranges, and Yellows
 // Spice
 .color__spice--strong {
-  background: rgba($color-spice, 1)
+  background: rgba($color-spice, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-spice);
+  }
 }
 .color__spice--light {
   background: rgba($color-spice, .5)
@@ -196,7 +256,10 @@
 }
 // Brick Red
 .color__brick-red--strong {
-  background: rgba($color-brick-red, 1)
+  background: rgba($color-brick-red, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-brick-red);
+  }
 }
 .color__brick-red--light {
   background: rgba($color-brick-red, .5)
@@ -206,17 +269,10 @@
 }
 // Scarlet
 .color__scarlet--strong {
-  background: rgba($color-scarlet, 1)
-}
-.color__scarlet--light {
-  background: rgba($color-scarlet, .5)
-}
-.color__scarlet--slight {
-  background: rgba($color-scarlet, .2)
-}
-// Scarlet
-.color__scarlet--strong {
-  background: rgba($color-scarlet, 1)
+  background: rgba($color-scarlet, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-scarlet);
+  }
 }
 .color__scarlet--light {
   background: rgba($color-scarlet, .5)
@@ -226,7 +282,10 @@
 }
 // Cognac
 .color__cognac--strong {
-  background: rgba($color-cognac, 1)
+  background: rgba($color-cognac, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-cognac);
+  }
 }
 .color__cognac--light {
   background: rgba($color-cognac, .5)
@@ -236,7 +295,10 @@
 }
 // Tiger Orange
 .color__tiger-orange--strong {
-  background: rgba($color-tiger-orange, 1)
+  background: rgba($color-tiger-orange, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-tiger-orange);
+  }
 }
 .color__tiger-orange--light {
   background: rgba($color-tiger-orange, .5)
@@ -244,9 +306,12 @@
 .color__tiger-orange--slight {
   background: rgba($color-tiger-orange, .2)
 }
-// Tiger Orange
+// Wheat
 .color__wheat--strong {
-  background: rgba($color-wheat, 1)
+  background: rgba($color-wheat, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color35($color-wheat);
+  }
 }
 .color__wheat--light {
   background: rgba($color-wheat, .5)
@@ -256,7 +321,10 @@
 }
 // Sunflower
 .color__sunflower--strong {
-  background: rgba($color-sunflower, 1)
+  background: rgba($color-sunflower, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-sunflower);
+  }
 }
 .color__sunflower--light {
   background: rgba($color-sunflower, .5)
@@ -266,7 +334,10 @@
 }
 // Lemon
 .color__lemon--strong {
-  background: rgba($color-lemon, 1)
+  background: rgba($color-lemon, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-lemon);
+  }
 }
 .color__lemon--light {
   background: rgba($color-lemon, .5)
@@ -277,8 +348,29 @@
 
 // Purples and blues
 // Eggplant
+//.paragraph__title {
+//  &.color__eggplant--strong {
+//    position: relative;
+//    &:before {
+//      content: '';
+//      position: absolute;
+//      border-top: 1px dotted rgba($color-eggplant, 1);
+//      width:100%;
+//      top:50%;
+//    }
+//  }
+//}
+
 .color__eggplant--strong {
-  background: rgba($color-eggplant, 1)
+  background: rgba($color-eggplant, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-eggplant);
+  }
+  .field--name-field-row-title {
+    h2 {
+      color: set-title-text-color($color-black);
+    }
+  }
 }
 .color__eggplant--light {
   background: rgba($color-eggplant, .5)
@@ -288,7 +380,10 @@
 }
 // Grape
 .color__grape--strong {
-  background: rgba($color-grape, 1)
+  background: rgba($color-grape, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-grape);
+  }
 }
 .color__grape--light {
   background: rgba($color-grape, .5)
@@ -298,7 +393,10 @@
 }
 // Ink
 .color__ink--strong {
-  background: rgba($color-ink, 1)
+  background: rgba($color-ink, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-ink);
+  }
 }
 .color__ink--light {
   background: rgba($color-ink, .5)
@@ -308,7 +406,10 @@
 }
 // Sky Blue
 .color__sky-blue--strong {
-  background: rgba($color-sky-blue, 1)
+  background: rgba($color-sky-blue, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-sky-blue);
+  }
 }
 .color__sky-blue--light {
   background: rgba($color-sky-blue, .5)
@@ -318,7 +419,10 @@
 }
 // Pacific Blue
 .color__pacific-blue--strong {
-  background: rgba($color-pacific-blue, 1)
+  background: rgba($color-pacific-blue, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-pacific-blue);
+  }
 }
 .color__pacific-blue--light {
   background: rgba($color-pacific-blue, .5)
@@ -328,7 +432,10 @@
 }
 // Aqua
 .color__aqua--strong {
-  background: rgba($color-aqua, 1)
+  background: rgba($color-aqua, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-aqua);
+  }
 }
 .color__aqua--light {
   background: rgba($color-aqua, .5)
@@ -338,7 +445,10 @@
 }
 // Pastel Blue
 .color__pastel-blue--strong {
-  background: rgba($color-pastel-blue, 1)
+  background: rgba($color-pastel-blue, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-pastel-blue);
+  }
 }
 .color__pastel-blue--light {
   background: rgba($color-pastel-blue, .5)
@@ -348,7 +458,10 @@
 }
 // Ice
 .color__ice--strong {
-  background: rgba($color-ice, 1)
+  background: rgba($color-ice, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-ice);
+  }
 }
 .color__ice--light {
   background: rgba($color-ice, .5)
@@ -360,7 +473,10 @@
 // Greens
 // Forest
 .color__forest--strong {
-  background: rgba($color-forest, 1)
+  background: rgba($color-forest, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-forest);
+  }
 }
 .color__forest--light {
   background: rgba($color-forest, .5)
@@ -370,7 +486,10 @@
 }
 // Neon Green
 .color__neon-green--strong {
-  background: rgba($color-neon-green, 1)
+  background: rgba($color-neon-green, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color35($color-neon-green);
+  }
 }
 .color__neon-green--light {
   background: rgba($color-neon-green, .5)
@@ -380,7 +499,10 @@
 }
 // Cucumber
 .color__cucumber--strong {
-  background: rgba($color-cucumber, 1)
+  background: rgba($color-cucumber, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color35($color-cucumber);
+  }
 }
 .color__cucumber--light {
   background: rgba($color-cucumber, .5)
@@ -390,7 +512,10 @@
 }
 // Fern
 .color__fern--strong {
-  background: rgba($color-fern, 1)
+  background: rgba($color-fern, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-fern);
+  }
 }
 .color__fern--light {
   background: rgba($color-fern, .5)
@@ -400,7 +525,10 @@
 }
 // Mineral Green
 .color__mineral-green--strong {
-  background: rgba($color-mineral-green, 1)
+  background: rgba($color-mineral-green, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-mineral-green);
+  }
 }
 .color__mineral-green--light {
   background: rgba($color-mineral-green, .5)
@@ -410,7 +538,10 @@
 }
 // Pine Needle
 .color__pine-needle--strong {
-  background: rgba($color-pine-needle, 1)
+  background: rgba($color-pine-needle, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-pine-needle);
+  }
 }
 .color__pine-needle--light {
   background: rgba($color-pine-needle, .5)
@@ -420,7 +551,10 @@
 }
 // corduroy
 .color__corduroy--strong {
-  background: rgba($color-corduroy, 1)
+  background: rgba($color-corduroy, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-corduroy);
+  }
 }
 .color__corduroy--light {
   background: rgba($color-corduroy, .5)
@@ -430,7 +564,10 @@
 }
 // Sea Form
 .color__sea-foam--strong {
-  background: rgba($color-sea-foam, 1)
+  background: rgba($color-sea-foam, 1)!important;
+  > .field--name-field-card-title {
+    color: set-title-text-color($color-sea-foam);
+  }
 }
 .color__sea-foam--light {
   background: rgba($color-sea-foam, .5)
