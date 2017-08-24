@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.bp_columns.bp_column_content
     - field.field.paragraph.bp_columns.bp_width
     - field.field.paragraph.bp_columns.field_row_title
-    - field.field.paragraph.bp_columns.field_title_color
     - paragraphs.paragraphs_type.bp_columns
   module:
     - content_moderation
@@ -47,12 +46,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_title_color:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true

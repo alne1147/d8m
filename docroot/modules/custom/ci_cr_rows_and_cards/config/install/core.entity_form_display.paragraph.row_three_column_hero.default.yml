@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.row_three_column_hero.bp_column_content_3
     - field.field.paragraph.row_three_column_hero.bp_column_style_3
     - field.field.paragraph.row_three_column_hero.field_row_background_image
-    - field.field.paragraph.row_three_column_hero.field_row_title
-    - field.field.paragraph.row_three_column_hero.field_title_color
     - image.style.crop_thumbnail
     - paragraphs.paragraphs_type.row_three_column_hero
   module:
@@ -56,20 +54,6 @@ content:
       warn_multiple_usages: false
     third_party_settings: {  }
     type: image_widget_crop
-    region: content
-  field_row_title:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_title_color:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true
