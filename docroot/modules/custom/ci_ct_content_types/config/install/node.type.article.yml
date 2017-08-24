@@ -15,4 +15,4 @@ description: 'Article content that can be displayed and searched in a variety of
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: false
+display_submitted: true
