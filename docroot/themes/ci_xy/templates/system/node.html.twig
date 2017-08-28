@@ -86,7 +86,8 @@
     <footer>
       {{ author_picture }}
       <div{{ author_attributes }}>
-        <div class ="author_name">{% trans %}Submitted by {{ author_name }}</div> <div class ="author_date"> | {{ date }}{% endtrans %}</div>
+          {% set createdDate = node.getCreatedTime|date('j, F Y') %}
+        <div class ="author_name hide">{% trans %}Submitted by {{ author_name }}</div> <div class ="author_date hide"> | {{ createdDate }}{% endtrans %}</div>
         {{ metadata }}
       </div>
     </footer>
