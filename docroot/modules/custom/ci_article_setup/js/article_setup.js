@@ -1,7 +1,20 @@
-Drupal.behaviors.myBehavior = {
-    attach: function (context, settings) {
-        // Using once() to apply the myCustomBehaviour effect when you want to do just run one function.
-        alert("Your book is overdue.");
-        // Using once() with more complexity.
-    }
-};
+(function ($) {
+    'use strict';
+
+    Drupal.behaviors.authorDisplay = {
+        attach: function(context, settings) {
+            $('div.display-options:contains("Show Author")').each(function () {
+                $('.author_name').addClass("show"); // matched td add NewClass
+            });
+        }
+    };
+
+    Drupal.behaviors.dateDisplay = {
+        attach: function(context, settings) {
+            $('div.display-options:contains("Show Post Date")').each(function () {
+                $('.author_date').addClass("show"); // matched td add NewClass
+            });
+        }
+    };
+
+}(jQuery));
