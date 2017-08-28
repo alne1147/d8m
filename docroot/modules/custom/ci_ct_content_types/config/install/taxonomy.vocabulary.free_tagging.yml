@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Free Tagging'
+vid: free_tagging
+description: ''
+hierarchy: 0
+weight: 0

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
     - field.field.node.article.field_author_information
     - field.field.node.article.field_display_options
@@ -28,6 +29,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_article_tags:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_article_type:
     weight: 2
     label: visually_hidden
@@ -48,7 +57,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_key
+    type: list_default
     region: content
   field_page_options:
     weight: 5
