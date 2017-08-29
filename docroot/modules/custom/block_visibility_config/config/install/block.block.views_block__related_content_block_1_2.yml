@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.related_content_right
     - views.view.related_content
   module:
     - block_class
@@ -31,5 +30,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: related_content_right
+    block_visibility_group: ''
     context_mapping: {  }

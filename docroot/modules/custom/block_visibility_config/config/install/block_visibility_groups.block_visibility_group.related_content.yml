@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: related_content
+label: 'Related Content'
+logic: and
+conditions:
+  315a70ea-0b2e-4697-a21b-630b8bcb1ebc:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      free_tagging: free_tagging
+    negate: false
+    context_mapping: {  }
+    uuid: 315a70ea-0b2e-4697-a21b-630b8bcb1ebc
+allow_other_conditions: true
