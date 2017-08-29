@@ -3,8 +3,15 @@ description: 'Exported Views Configuration.'
 type: module
 core: 8.x
 dependencies:
+  - block
+  - block_class
+  - block_visibility_config
+  - block_visibility_groups
   - ci_ct_content_types
+  - menu_condition
   - node
   - taxonomy
+  - term_condition
+  - text
   - user
   - views
