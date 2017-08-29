@@ -16,7 +16,7 @@ third_party_settings:
 id: mainnavigation_4
 theme: ci_xy
 region: sidebar_second
-weight: 0
+weight: -8
 provider: null
 plugin: 'menu_block:main'
 settings:

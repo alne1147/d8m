@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
+    - term_condition
 id: related_content
 label: 'Related Content'
 logic: and
 conditions:
-  315a70ea-0b2e-4697-a21b-630b8bcb1ebc:
-    id: 'entity_bundle:taxonomy_term'
-    bundles:
-      free_tagging: free_tagging
-    negate: false
-    context_mapping: {  }
-    uuid: 315a70ea-0b2e-4697-a21b-630b8bcb1ebc
+  0193d3c7-e9a7-49e5-9431-1c58bb6f9716:
+    id: term
+    negate: 0
+    tid: '100018'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 0193d3c7-e9a7-49e5-9431-1c58bb6f9716
 allow_other_conditions: true

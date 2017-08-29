@@ -18,7 +18,7 @@ third_party_settings:
 id: secondmenu
 theme: ci_xy
 region: sidebar_second
-weight: 0
+weight: -7
 provider: null
 plugin: 'menu_block:custom-menu'
 settings:
