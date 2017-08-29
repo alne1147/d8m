@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.recent_articles
     - views.view.recent_articles
   module:
     - block_class
