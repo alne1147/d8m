@@ -1,13 +1,10 @@
 ci_paragraphs
 ci_cr_rows_and_cards
 ci_ct_content_types
-ci_terms
 ci_blocks_block_types
-block_visibility_config
 ckeditor_config
 ci_menu_link_content
 ci_nodes
 ci_views_config
 ci_blocks
-ci_feature_bundles
 
