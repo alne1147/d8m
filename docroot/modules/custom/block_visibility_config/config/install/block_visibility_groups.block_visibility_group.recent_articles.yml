@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: recent_articles
+label: 'Recent Articles'
+logic: and
+conditions:
+  75a30396-0538-42f5-a553-581b0f630a74:
+    id: term
+    negate: 0
+    tid: '100020'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 75a30396-0538-42f5-a553-581b0f630a74
+allow_other_conditions: true
