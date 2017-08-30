@@ -29,14 +29,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_article_tags:
-    type: entity_reference_label
-    weight: 8
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_article_type:
     weight: 2
     label: visually_hidden
@@ -49,23 +41,15 @@ content:
     type: list_default
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_display_options:
-    weight: 6
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
-    region: content
-  field_page_options:
-    weight: 5
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_rows:
     weight: 4
@@ -82,5 +66,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_article_tags: true
   field_meta_tags: true
+  field_page_options: true
   field_related_content: true
