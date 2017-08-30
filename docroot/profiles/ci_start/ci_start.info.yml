@@ -156,6 +156,7 @@ dependencies:
   - webform_templates
   - webform_ui
   - simple_sitemap
+  - termcase
   
   
   # Adding these lines to our profilename.info.yml will only enable these themes.
