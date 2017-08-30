@@ -1,0 +1,11 @@
+name: Termcase
+type: module
+description: Enable text case settings per taxonomy (lowercase, uppercase, propercase or only the first character uppercase)
+# core: 8.x
+dependencies[]: taxonomy
+
+# Information added by Drupal.org packaging script on 2016-10-14
+version: '8.x-1.0'
+core: '8.x'
+project: 'termcase'
+datestamp: 1476474277
