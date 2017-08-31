@@ -44,7 +44,7 @@ $sites = [
     
     // State Internet Portal Authority
     'sipa.dev.colorado.gov' => 'sipa.colorado.gov',
-    'sipa.dev.colorado.gov' => 'sipa.colorado.gov',
+    'sipa.stg.colorado.gov' => 'sipa.colorado.gov',
     
     // State Land Board
     'slb.dev.colorado.gov' => 'slb.colorado.gov',
