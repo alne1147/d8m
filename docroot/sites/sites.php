@@ -55,4 +55,3 @@ $sites = [
     'ci.stg.colorado.gov' => 'ci.colorado.gov',
 
 ];
-

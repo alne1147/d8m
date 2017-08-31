@@ -1,0 +1,145 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 306
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f691fff9-1c50-49e4-b855-371ceb0207dd"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2361
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1496783118,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "311"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-blue-light",
+            "lang": "en"
+        }
+    ],
+    "bp_width": [
+        {
+            "value": "paragraph--width--full",
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>Cheesecake cheese and biscuits cauliflower cheese. The big cheese paneer bavarian bergkase cheese triangles pecorino cheese triangles cream cheese camembert de normandie. Who moved my cheese queso manchego manchego cheesy feet manchego taleggio smelly cheese. Airedale st. agur blue cheese feta fondue stinking bishop jarlsberg cheddar blue castello. Brie cheese strings cheese strings monterey jack.<\/p>\r\n\r\n<p>Pepper jack cheese triangles ricotta. Rubber cheese boursin who moved my cheese paneer fromage feta mascarpone cheese and biscuits. Fondue st. agur blue cheese cheese strings when the cheese comes out everybody's happy bocconcini danish fontina macaroni cheese cow. Pepper jack squirty cheese bocconcini cream cheese goat hard cheese jarlsberg port-salut. Croque monsieur parmesan babybel cheese and biscuits.<\/p>\r\n\r\n<p>Halloumi melted cheese port-salut. Ricotta mozzarella cheddar cheesy grin chalk and cheese fromage halloumi melted cheese. Cheese on toast stinking bishop stinking bishop melted cheese roquefort st. agur blue cheese cheese on toast stilton. Lancashire taleggio swiss edam croque monsieur cheesy grin.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "This is a card basic title"
+        }
+    ]
+}

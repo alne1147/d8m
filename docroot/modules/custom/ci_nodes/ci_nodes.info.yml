@@ -1,9 +1,0 @@
-name: ci_nodes
-dependencies:
-    - default_content
-    - default_content_deploy
-    - ci_paragraphs
-description: 'Default Node Content'
-core: 8.x
-package: Custom
-type: module

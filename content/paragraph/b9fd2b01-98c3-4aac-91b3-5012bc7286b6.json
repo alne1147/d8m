@@ -1,0 +1,133 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_simple"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 186
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b9fd2b01-98c3-4aac-91b3-5012bc7286b6"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 1586
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_simple"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1495481769,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "191"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-brown-strong"
+        }
+    ],
+    "bp_text": [
+        {
+            "value": "<p>Quo usque tandem abutere, Catilina, patientia nostra? Etiam habebis sem dicantur magna mollis euismod. Quam temere in vitiis, legem sancimus haerentia. Ambitioni dedisse scripsisse iudicaretur. Quae vero auctorem tractata ab fiducia dicuntur. Quam diu etiam furor iste tuus nos eludet?<br \/>\r\nCras mattis iudicium purus sit amet fermentum. At nos hinc posthac, sitientis piros Afros. Me non paenitet nullum festiviorem excogitasse ad hoc. Excepteur sint obcaecat cupiditat non proident culpa. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Donec sed odio operae, eu vulputate felis rhoncus.<br \/>\r\nContra legem facit qui id facit quod lex prohibet. Ut enim ad minim veniam, quis nostrud exercitation. Qui ipsorum lingua Celtae, nostra Galli appellantur. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Phasellus laoreet lorem vel dolor tempus vehicula.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}

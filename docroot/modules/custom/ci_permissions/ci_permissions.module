@@ -1,9 +1,0 @@
-<?php
-
-/**
- * @file
- * Defines sample default content for test purposes.
- */
-/**
- * Implements hook_install_tasks().
- */

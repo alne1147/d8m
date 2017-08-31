@@ -1,5 +1,4 @@
-ci_paragraphs
-ci_cr_rows_and_cards
+ci_ct_content_types
 ci_blocks_block_types
 ckeditor_config
 ci_menu_link_content

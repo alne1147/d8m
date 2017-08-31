@@ -1,8 +1,0 @@
-name: CI Terms
-dependencies:
-  - default_content_deploy
-  - default_content
-description: 'Default Taxonomy Terms'
-core: 8.x
-package: CI Taxonomy
-type: module

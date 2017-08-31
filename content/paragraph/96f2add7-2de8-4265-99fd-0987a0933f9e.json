@@ -1,0 +1,134 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 476
+        }
+    ],
+    "uuid": [
+        {
+            "value": "96f2add7-2de8-4265-99fd-0987a0933f9e"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2561
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": 1497477714,
+            "lang": "en"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "471"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-black-light",
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<h2>Paullum deliquit<\/h2>\r\n\r\n<p>Morbi fringilla convallis sapien, id pulvinar odio volutpat. Mercedem aut nummos unde unde extricat, amaras. Contra legem facit qui id facit quod lex prohibet. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Etiam habebis sem dicantur magna mollis euismod. Idque Caesaris facere voluntate liceret: sese habere.<\/p>\r\n\r\n<p>Magna pars studiorum, prodita quaerimus. Nihil hic munitissimus habendi senatus locus, nihil horum? Petierunt uti sibi concilium totius Galliae in diem certam indicere.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}
