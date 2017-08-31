@@ -1,10 +1,8 @@
 ci_paragraphs
-block_visibility_config
 ci_cr_rows_and_cards
 ci_blocks_block_types
 ckeditor_config
 ci_menu_link_content
-ci_nodes
 ci_blocks
 ci_user
 

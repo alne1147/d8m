@@ -1,1 +1,3 @@
+excluded:
+  - block.block.views_block__recent_articles_block_1
 required: true
