@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.bp_columns_three_uneven.bp_column_style_3
     - field.field.paragraph.bp_columns_three_uneven.bp_width
     - field.field.paragraph.bp_columns_three_uneven.field_row_title
-    - field.field.paragraph.bp_columns_three_uneven.field_title_color
     - paragraphs.paragraphs_type.bp_columns_three_uneven
   module:
     - content_moderation
@@ -54,12 +53,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_title_color:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true

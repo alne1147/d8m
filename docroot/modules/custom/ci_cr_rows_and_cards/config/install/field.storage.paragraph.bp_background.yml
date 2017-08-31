@@ -24,7 +24,7 @@ settings:
       label: 'Brand Colorado Slate strong'
     -
       value: 'paragraph--color color__brand-slate--light'
-      label: 'Brand Colorado Slate lights'
+      label: 'Brand Colorado Slate light'
     -
       value: 'paragraph--color color__brand-slate--slight'
       label: 'Brand Colorado Slate slight'
@@ -77,7 +77,7 @@ settings:
       value: 'paragraph--color color__black--strong'
       label: 'Brand Colorado Black strong'
     -
-      value: 'paragraph--color color__black-light'
+      value: 'paragraph--color color__black--light'
       label: 'Brand Colorado Black light'
     -
       value: 'paragraph--color color__black--slight'
