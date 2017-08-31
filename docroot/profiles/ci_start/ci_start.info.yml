@@ -108,7 +108,6 @@ dependencies:
   - media_entity_instagram
   - media_entity_slideshow
   - media_entity_twitter
-  - social_login
   - background_image_formatter
   - block_class
   - block_visibility_groups
