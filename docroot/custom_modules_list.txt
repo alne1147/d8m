@@ -1,5 +1,7 @@
 ci_ct_content_types
 ci_blocks_block_types
+ci_paragraphs
+ci_nodes
 ckeditor_config
 ci_menu_link_content
 ci_user
