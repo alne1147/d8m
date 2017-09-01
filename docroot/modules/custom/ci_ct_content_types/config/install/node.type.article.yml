@@ -9,7 +9,7 @@ third_party_settings:
       - main
       - custom-menu
     parent: 'main:'
-name: Articles
+name: Article
 type: article
 description: 'Article content that can be displayed and searched in a variety of ways'
 help: ''
