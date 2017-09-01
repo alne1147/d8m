@@ -27,7 +27,8 @@
 .color__brand-green--strong {
   background: rgba($color-brand-green, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-green);
   }
 }
@@ -41,7 +42,8 @@
 .color__brand-slate--strong {
   background: rgba($color-brand-slate, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-slate);
   }
 }
@@ -55,8 +57,8 @@
 .color__brand-silver--strong {
   background: rgba($color-brand-silver, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title
-  {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-silver);
   }
 }
@@ -70,7 +72,8 @@
 .color__brand-orange--strong {
   background: rgba($color-brand-orange, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-orange);
   }
 }
@@ -84,7 +87,8 @@
 .color__brand-brown--strong {
   background: rgba($color-brand-brown, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-brown);
   }
 }
@@ -98,7 +102,8 @@
 .color__brand-blue--strong {
   background: rgba($color-brand-blue, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-brand-blue);
   }
 }
@@ -114,7 +119,8 @@
 .color__black--strong {
   background: rgba($color-black, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-black);
   }
 }
@@ -142,7 +148,8 @@
 .color__evening--strong {
   background: rgba($color-evening, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-evening);
   }
 }
@@ -156,7 +163,8 @@
 .color__charcoal--strong {
   background: rgba($color-charcoal, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-charcoal);
   }
 }
@@ -170,7 +178,8 @@
 .color__blackboard--strong {
   background: rgba($color-blackboard, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-blackboard);
   }
 }
@@ -183,7 +192,8 @@
 // Grey Sand
 .color__grey-sand--strong {
   background: rgba($color-grey-sand, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .panel-title > a {
     color: set-title-text-color($color-grey-sand);
   }
 }
@@ -196,7 +206,8 @@
 // Sleek Grey
 .color__sleek-grey--strong {
   background: rgba($color-sleek-grey, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .panel-title > a {
     color: set-title-text-color($color-sleek-grey);
   }
 }
@@ -209,7 +220,8 @@
 // Lemon Grass
 .color__lemon-grass--strong {
   background: rgba($color-lemon-grass, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .panel-title > a {
     color: set-title-text-color($color-lemon-grass);
   }
 }
@@ -223,7 +235,8 @@
 .color__walnut--strong {
   background: rgba($color-walnut, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-walnut);
   }
 }
@@ -252,7 +265,8 @@
 .color__spice--strong {
   background: rgba($color-spice, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color35($color-spice);
   }
 }
@@ -266,7 +280,8 @@
 .color__brick-red--strong {
   background: rgba($color-brick-red, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color35($color-brick-red);
   }
 }
@@ -279,7 +294,8 @@
 // Scarlet
 .color__scarlet--strong {
   background: rgba($color-scarlet, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .panel-title > a {
     color: set-title-text-color($color-scarlet);
   }
 }
@@ -359,7 +375,8 @@
 .color__eggplant--strong {
   background: rgba($color-eggplant, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-eggplant);
   }
 }
@@ -386,7 +403,8 @@
 .color__ink--strong {
   background: rgba($color-ink, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-ink);
   }
 }
@@ -467,7 +485,8 @@
 .color__forest--strong {
   background: rgba($color-forest, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-forest);
   }
 }
@@ -507,7 +526,8 @@
 .color__fern--strong {
   background: rgba($color-fern, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-fern);
   }
 }
@@ -521,7 +541,8 @@
 .color__mineral-green--strong {
   background: rgba($color-mineral-green, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-row-title {
+  .field--name-field-row-title,
+  .panel-title > a {
     color: set-title-text-color($color-mineral-green);
   }
 }
