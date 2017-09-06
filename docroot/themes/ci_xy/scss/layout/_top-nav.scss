@@ -1,6 +1,14 @@
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
+  @media (max-width: $screen-xs-max) {
+    position: absolute;
+    background-color: transparent;
+    margin-bottom: 0;
+    top: 10px;
+    width: 100%;
+    z-index: 9999;
+  }
   @media (min-width: $screen-md-min) {
     text-align: center;
   }
@@ -16,8 +24,10 @@
     }
     .navbar-collapse {
       @media (max-width: $screen-xs-min) {
+        position: relative;
+        top:12px;
         padding:0;
-       background-color: $color-brand-slate;
+        background-color: $color-brand-slate;
       }
       @media (min-width: $screen-sm-min) {
         margin-right: -$navbar-padding-horizontal * 3; // 45px
@@ -32,7 +42,8 @@
       display: inline-block;
       float: none;
       @media (max-width: $screen-xs-min) {
-        margin: 6.5px 0px;
+        //margin: 6.5px 0px;
+        margin:0;
         width:100%;
       }
       li > a {
