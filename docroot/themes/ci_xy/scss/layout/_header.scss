@@ -12,6 +12,9 @@
   &__logo {
       display: block;
     &--image {
+      @media (max-width: $screen-xs-min) {
+        height: 30px;
+      }
       height:40px;
     }
   }
@@ -39,6 +42,12 @@
     }
   }
   .col-sm-4 {
+    @media (max-width: $screen-xs-max) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: static;
+    }
     @media (min-width: $screen-sm-min) {
       text-align: right;
     }
@@ -49,6 +58,11 @@
     > i {
       color: $color-brand-green;
       font-size: $font-size-base * 1.5;
+    }
+    @media (max-width: $screen-xs-max) {
+      position: absolute;
+      top: 20px;
+      right: 80px;
     }
   }
 }

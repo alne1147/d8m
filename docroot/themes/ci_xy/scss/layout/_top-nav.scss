@@ -5,7 +5,7 @@
     position: absolute;
     background-color: transparent;
     margin-bottom: 0;
-    top: 10px;
+    top: 8px;
     width: 100%;
     z-index: 9999;
   }
@@ -25,7 +25,7 @@
     .navbar-collapse {
       @media (max-width: $screen-xs-min) {
         position: relative;
-        top:12px;
+        top:1px;
         padding:0;
         background-color: $color-brand-slate;
       }
@@ -41,7 +41,7 @@
     .navbar-nav {
       display: inline-block;
       float: none;
-      @media (max-width: $screen-xs-min) {
+      @media (max-width: $screen-xs-max) {
         //margin: 6.5px 0px;
         margin:0;
         width:100%;
