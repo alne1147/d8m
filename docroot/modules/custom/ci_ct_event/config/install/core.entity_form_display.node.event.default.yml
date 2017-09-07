@@ -4,10 +4,13 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_date
+    - field.field.node.event.field_date_range
+    - field.field.node.event.field_location
     - node.type.event
   module:
     - content_moderation
     - datetime
+    - datetime_range
     - path
     - text
 id: node.event.default
@@ -17,7 +20,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 31
     settings:
       rows: 9
       summary_rows: 3
@@ -26,19 +29,33 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_date:
-    weight: 6
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_date_range:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_location:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
-    weight: 5
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -46,19 +63,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 15
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -66,7 +83,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
