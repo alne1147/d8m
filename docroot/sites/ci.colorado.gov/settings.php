@@ -761,16 +761,24 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists('/var/www/site-php')) {
     $conf['acquia_hosting_settings_autoconnect'] = FALSE;
   require '/var/www/site-php/coloradod8m/ci-settings.inc';
-}
+
 
 // Use the drupal_shared database for users, sessions, and profiles.
 $shared = $databases['coloradoddb135551']['default']['database'] . '.';
 $databases['default']['default']['prefix'] = array(
+  $databases['default']['default']['prefix'] = array(
     'default' => '',
+    'authmap' => $shared,
+    'profile_fields' => $shared,
+    'profile_values' => $shared,
+    'permission' => $shared,
+    'role' => $shared,
+    'sessions' => $shared,
     'users' => $shared,
     'users_roles' => $shared,
-    'users_field_data' => $shared,
-);
+  );
+  }
+
 
 $config_directories['sync'] = '../config/sync';
 $settings['install_profile'] = 'ci_start';
