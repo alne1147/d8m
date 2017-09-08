@@ -756,8 +756,9 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 
 // Use the mysite database as our default database, but delay connecting.
 $conf['acquia_hosting_settings_autoconnect'] = FALSE;
+if (file_exists('/var/www/site-php')) {
 require('/var/www/site-php/mysite/ci-settings-settings.inc');
-
+}
 // Use the drupal_shared database for users, sessions, and profiles.
 $shared = $databases['coloradoddb135547']['default']['database'] . '.';
 $databases['default']['default']['prefix'] = array(
