@@ -762,18 +762,17 @@ if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/ci-settings.inc';
 }
 // Use the drupal_shared database for users, sessions, and profiles.
-$shared = $databases['coloradoddb135547']['default']['database'] . '.';
-$databases['default']['default']['prefix'] = array(
-  'default' => '',
-  'authmap' => $shared,
-  'profile_fields' => $shared,
-  'profile_values' => $shared,
-  'permission' => $shared,
-  'role' => $shared,
-  'sessions' => $shared,
-  'users' => $shared,
-  'users_roles' => $shared,
-); 
+$db_url = 'mysqli://s30014:B6Gu2mCwxPB8gnp@staging-11200.prod.hosting.acquia.com /coloradoddb148585 ';
+$db_prefix = array(
+    'default' => '',
+    'authmap' => 'coloradoddb148585.',
+    'profile_fields' => 'coloradoddb148585.',
+    'profile_values' => 'coloradoddb148585.',
+    'role' => 'coloradoddb148585.',
+    'sessions' => 'drupal_shared_tables.',
+    'users' => 'coloradoddb148585.',
+);
+
 
 $config_directories['sync'] = '../config/sync';
 $settings['install_profile'] = 'ci_start';
