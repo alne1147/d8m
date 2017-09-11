@@ -1,0 +1,98 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rows
+    - node.type.event
+    - paragraphs.paragraphs_type.bp_columns
+    - paragraphs.paragraphs_type.bp_columns_three_uneven
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+    - paragraphs.paragraphs_type.full_column_hero
+    - paragraphs.paragraphs_type.row_slide_container
+    - paragraphs.paragraphs_type.row_three_column_hero
+    - paragraphs.paragraphs_type.row_two_column_hero
+  module:
+    - entity_reference_revisions
+id: node.event.field_rows
+field_name: field_rows
+entity_type: node
+bundle: event
+label: Rows
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bp_columns: bp_columns
+      bp_columns_three_uneven: bp_columns_three_uneven
+      bp_columns_two_uneven: bp_columns_two_uneven
+      full_column_hero: full_column_hero
+      row_slide_container: row_slide_container
+      row_three_column_hero: row_three_column_hero
+      row_two_column_hero: row_two_column_hero
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 21
+        enabled: false
+      bp_accordion_section:
+        weight: 22
+        enabled: false
+      bp_blank:
+        weight: 23
+        enabled: false
+      bp_block:
+        weight: 24
+        enabled: false
+      bp_carousel:
+        weight: 25
+        enabled: false
+      bp_columns:
+        enabled: true
+        weight: 26
+      bp_columns_three_uneven:
+        enabled: true
+        weight: 27
+      bp_columns_two_uneven:
+        enabled: true
+        weight: 28
+      bp_contact:
+        weight: 29
+        enabled: false
+      bp_image:
+        weight: 30
+        enabled: false
+      bp_modal:
+        weight: 31
+        enabled: false
+      bp_simple:
+        weight: 32
+        enabled: false
+      bp_tabs:
+        weight: 33
+        enabled: false
+      bp_tab_section:
+        weight: 34
+        enabled: false
+      bp_view:
+        weight: 35
+        enabled: false
+      card_basic:
+        weight: 36
+        enabled: false
+      full_column_hero:
+        enabled: true
+        weight: 37
+      row_slide_container:
+        enabled: true
+        weight: 38
+      row_three_column_hero:
+        enabled: true
+        weight: 39
+      row_two_column_hero:
+        enabled: true
+        weight: 40
+field_type: entity_reference_revisions
