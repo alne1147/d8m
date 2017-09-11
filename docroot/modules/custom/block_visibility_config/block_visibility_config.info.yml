@@ -7,6 +7,7 @@ dependencies:
   - block_content
   - block_visibility_groups
   - ci_ct_content_types
+  - ci_ct_event
   - ci_views_config
   - ctools
   - help
