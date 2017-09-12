@@ -1,0 +1,23 @@
+name: 'CI Event'
+description: 'Provides Event content type and related configuration. A date driven content type.'
+type: module
+core: 8.x
+dependencies:
+  - calendar
+  - ci_cr_rows_and_cards
+  - ci_ct_content_types
+  - content_moderation
+  - datetime
+  - datetime_range
+  - entity_reference_revisions
+  - field
+  - field_group
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - simple_gmap
+  - text
+  - user
+  - views
+package: ci_ct

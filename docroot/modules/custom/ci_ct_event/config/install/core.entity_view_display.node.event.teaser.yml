@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_article_tags
+    - field.field.node.event.field_date
+    - field.field.node.event.field_location
+    - field.field.node.event.field_page_options
+    - field.field.node.event.field_related_content
+    - field.field.node.event.field_rows
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_article_tags: true
+  field_date: true
+  field_location: true
+  field_page_options: true
+  field_related_content: true
+  field_rows: true
