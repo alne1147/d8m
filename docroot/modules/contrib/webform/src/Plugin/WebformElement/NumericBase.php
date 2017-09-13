@@ -3,7 +3,7 @@
 namespace Drupal\webform\Plugin\WebformElement;
 
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\webform\WebformElementBase;
+use Drupal\webform\Plugin\WebformElementBase;
 use Drupal\webform\WebformInterface;
 use Drupal\webform\WebformSubmissionInterface;
 
@@ -29,7 +29,7 @@ abstract class NumericBase extends WebformElementBase {
   /**
    * {@inheritdoc}
    */
-  public function prepare(array &$element, WebformSubmissionInterface $webform_submission) {
+  public function prepare(array &$element, WebformSubmissionInterface $webform_submission = NULL) {
     parent::prepare($element, $webform_submission);
     if ($this->hasProperty('step') && !isset($element['#step'])) {
       $element['#step'] = 'any';
@@ -75,7 +75,7 @@ abstract class NumericBase extends WebformElementBase {
     $form['number']['step'] = [
       '#type' => 'number',
       '#title' => $this->t('Steps'),
-      '#description' => $this->t('Specifies the legal number intervals. Leave blank to support any number interval.'),
+      '#description' => $this->t('Specifies the legal number intervals. Leave blank to support any number interval. Decimals are supported.'),
       '#step' => 'any',
       '#size' => 4,
     ];

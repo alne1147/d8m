@@ -8,8 +8,8 @@ libraries:
 dependencies:
   - ckeditor
 
-# Information added by Drupal.org packaging script on 2016-12-22
-version: '8.x-1.x-dev'
+# Information added by Drupal.org packaging script on 2017-09-01
+version: '8.x-1.0'
 core: '8.x'
 project: 'ckeditor_accordion'
-datestamp: 1482406686
+datestamp: 1504251546

@@ -3,6 +3,7 @@
 namespace Drupal\default_content_deploy;
 
 use Drupal\Component\Serialization\Json;
+use Drupal\Core\Entity\ContentEntityType;
 
 /**
  * A service for handling export of default content.
@@ -25,7 +26,10 @@ class Exporter extends DefaultContentDeployBase {
    *   Number of exported entities.
    */
   public function export($entityType, $entityBundle = '', $entityIds = '', $skipEntities = '') {
-    if (!$this->validateEntityType($entityType)) {
+    $contentEntityTypes = $this->getContentEntityTypes();
+    if (!$this->validateEntityType($entityType, $contentEntityTypes)) {
+      drush_print(t('List of available content entity types:'));
+      drush_print_r(array_keys($contentEntityTypes));
       throw new \InvalidArgumentException(sprintf('Entity type "%s" does not exist', $entityType));
     }
 
@@ -89,7 +93,7 @@ class Exporter extends DefaultContentDeployBase {
     $addEntityType = explode(parent::DELIMITER, $addEntityType);
     $skipEntityType = explode(parent::DELIMITER, $skipEntityType);
 
-    $defualtEntityTypes = [
+    $defaultEntityTypes = [
       'block_content',
       'comment',
       'file',
@@ -101,11 +105,11 @@ class Exporter extends DefaultContentDeployBase {
       'paragraph',
     ];
 
-    $defualtEntityTypes += array_unique(array_merge($defualtEntityTypes, $addEntityType));
-    $available_entity_types = array_keys($this->entityTypeManager->getDefinitions());
+    $defaultEntityTypes += array_unique(array_merge($defaultEntityTypes, $addEntityType));
+    $contentEntityTypes = $this->getContentEntityTypes();
 
-    foreach ($defualtEntityTypes as $entityType) {
-      if (!in_array($entityType, $skipEntityType) && in_array($entityType, $available_entity_types)) {
+    foreach ($defaultEntityTypes as $entityType) {
+      if (!in_array($entityType, $skipEntityType) && in_array($entityType, array_keys($contentEntityTypes))) {
         $exportedEntities = $this->export($entityType);
         $count[$entityType] = $exportedEntities;
       }
@@ -118,7 +122,8 @@ class Exporter extends DefaultContentDeployBase {
    * Export url aliases in single json file under alias folder.
    */
   public function exportUrlAliases() {
-    $query = $this->database->select('url_alias', 'aliases')->fields('aliases', []);
+    $query = $this->database->select('url_alias', 'aliases')
+      ->fields('aliases', []);
     $data = $query->execute();
     $results = $data->fetchAll(\PDO::FETCH_OBJ);
     $aliases = [];
@@ -137,7 +142,7 @@ class Exporter extends DefaultContentDeployBase {
   }
 
   /**
-   * Get entity ids.
+   * Get all entity IDs for export.
    *
    * @param string $entityType
    *   Entity Type.
@@ -149,15 +154,24 @@ class Exporter extends DefaultContentDeployBase {
    *   Entities to skip.
    *
    * @return array
-   *   Return array of entitiy ids.
+   *   Return array of entity ids.
    */
   protected function getEntityIdsForExport($entityType, $entityBundle, $entityIds, $skipEntities) {
     $exportedEntityIds = [];
-    if (!$this->validateEntityType($entityType)) {
+    $contentEntityTypes = $this->getContentEntityTypes();
+    if (!$this->validateEntityType($entityType, $contentEntityTypes)) {
+      drush_print(t('List of available content entity types:'));
+      drush_print_r(array_keys($contentEntityTypes));
       throw new \InvalidArgumentException(sprintf('Entity type "%s" does not exist', $entityType));
     }
 
-    // Export by bundle.
+    // At first, export entities by entity id from --entity_id parameter.
+    if (!empty($entityIds)) {
+      $entityIds = explode(parent::DELIMITER, $entityIds);
+      $exportedEntityIds += $entityIds;
+    }
+
+    // Add all entities by given bundle.
     if (!empty($entityBundle)) {
       $query = \Drupal::entityQuery($entityType);
       $bundles = explode(parent::DELIMITER, $entityBundle);
@@ -173,12 +187,7 @@ class Exporter extends DefaultContentDeployBase {
       $exportedEntityIds += $entityIds;
     }
 
-    // Export by entity id.
-    if (!empty($entityIds)) {
-      $entityIds = explode(parent::DELIMITER, $entityIds);
-      $exportedEntityIds += $entityIds;
-    }
-
+    // If still no entities to export, export all entities of given type.
     if (empty($exportedEntityIds)) {
       $query = \Drupal::entityQuery($entityType);
       $entityIds = $query->execute();
@@ -194,13 +203,38 @@ class Exporter extends DefaultContentDeployBase {
     return $exportedEntityIds;
   }
 
-  protected function validateEntityType($entityType) {
-    $validEntityTypes = $this->entityTypeManager->getDefinitions();
-    if (array_key_exists($entityType, $validEntityTypes)) {
+  /**
+   * @param string $entityType
+   *   Validated entity type.
+   * @param array $contentEntityTypes
+   *   Array of entity definitions keyed by type.
+   *
+   * @return bool
+   *   TRUE if entity type is valid.
+   */
+  protected function validateEntityType($entityType, array $contentEntityTypes) {
+    if (array_key_exists($entityType, $contentEntityTypes)) {
       return TRUE;
     }
-
     return FALSE;
+  }
+
+  /**
+   * Get Content Entity Types
+   *
+   * @return array
+   *   Array of available content entity definitions keyed by type ID.
+   */
+  protected function getContentEntityTypes() {
+    $contentEntityTypes = [];
+    $entityTypes = $this->entityTypeManager->getDefinitions();
+    /* @var $definition \Drupal\Core\Entity\EntityTypeInterface */
+    foreach ($entityTypes as $type => $definition) {
+      if ($definition instanceof ContentEntityType) {
+        $contentEntityTypes[$type] = $definition;
+      }
+    }
+    return $contentEntityTypes;
   }
 
 }

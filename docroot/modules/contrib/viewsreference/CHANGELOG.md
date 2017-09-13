@@ -52,5 +52,8 @@ Fixes to views plugin filter: https://www.drupal.org/node/2857697
 Add error message for when no plugin available in a view
 Add Empty validation on display_id value
 
-8.x-1.0-rc1
+8.x-1.0-rc2
 Fix incorrectly applied patch at https://www.drupal.org/node/2857697
+
+8.x-1.0-rc3
+Coding standards applied

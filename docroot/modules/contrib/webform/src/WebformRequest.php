@@ -53,6 +53,13 @@ class WebformRequest implements WebformRequestInterface {
   protected $request;
 
   /**
+   * Track if the current page is a webform admin route.
+   *
+   * @var bool
+   */
+  protected $isAdminRoute;
+
+  /**
    * Constructs a WebformRequest object.
    *
    * @param \Drupal\Core\Routing\RouteProviderInterface $route_provider
@@ -72,6 +79,30 @@ class WebformRequest implements WebformRequestInterface {
     $this->routeMatch = $route_match;
     $this->entityTypeManager = $entity_type_manager;
     $this->entityTypeRepository = $entity_type_repository;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isWebformAdminRoute() {
+    if (isset($this->isAdminRoute)) {
+      return $this->isAdminRoute;
+    }
+
+    // Make sure the current route is an admin route.
+    if (!\Drupal::service('router.admin_context')->isAdminRoute()) {
+      $this->isAdminRoute = FALSE;
+      return $this->isAdminRoute;
+    }
+
+    $route_name = $this->routeMatch->getRouteName();
+    if (in_array($route_name, ['entity.webform.canonical', 'entity.webform_submission.edit_form'])) {
+      $this->isAdminRoute = FALSE;
+    }
+    else {
+      $this->isAdminRoute = (preg_match('/^(webform\.|^entity\.([^.]+\.)?webform)/', $route_name)) ? TRUE : FALSE;
+    }
+    return $this->isAdminRoute;
   }
 
   /**
@@ -97,7 +128,7 @@ class WebformRequest implements WebformRequestInterface {
       }
     }
 
-    foreach ($parameters as $name => $value) {
+    foreach ($parameters as $value) {
       if ($value instanceof EntityInterface) {
         return $value;
       }
@@ -109,13 +140,17 @@ class WebformRequest implements WebformRequestInterface {
    * {@inheritdoc}
    */
   public function getCurrentWebform() {
-    $source_entity = self::getCurrentSourceEntity('webform');
+    $source_entity = static::getCurrentSourceEntity('webform');
     $webform_field_name = WebformEntityReferenceItem::getEntityWebformFieldName($source_entity);
     if ($source_entity && $webform_field_name && $source_entity->hasField($webform_field_name)) {
       return $source_entity->$webform_field_name->entity;
     }
     else {
-      return $this->routeMatch->getParameter('webform');
+      $webform = $this->routeMatch->getParameter('webform');
+      if (is_string($webform)) {
+        $webform = $this->entityTypeManager->getStorage('webform')->load($webform);
+      }
+      return $webform;
     }
   }
 
@@ -133,6 +168,9 @@ class WebformRequest implements WebformRequestInterface {
    */
   public function getWebformSubmissionEntities() {
     $webform_submission = $this->routeMatch->getParameter('webform_submission');
+    if (is_string($webform_submission)) {
+      $webform_submission = $this->entityTypeManager->getStorage('webform_submission')->load($webform_submission);
+    }
     $source_entity = $this->getCurrentSourceEntity('webform_submission');
     return [$webform_submission, $source_entity];
   }
@@ -176,7 +214,7 @@ class WebformRequest implements WebformRequestInterface {
       $source_entity = NULL;
     }
 
-    if (self::isValidSourceEntity($webform_entity, $source_entity)) {
+    if (static::isValidSourceEntity($webform_entity, $source_entity)) {
       if ($webform_entity instanceof WebformSubmissionInterface) {
         return [
           'webform_submission' => $webform_entity->id(),
@@ -212,7 +250,7 @@ class WebformRequest implements WebformRequestInterface {
       throw new \InvalidArgumentException('Webform entity');
     }
 
-    if (self::isValidSourceEntity($webform, $source_entity)) {
+    if (static::isValidSourceEntity($webform, $source_entity)) {
       return 'entity.' . $source_entity->getEntityTypeId();
     }
     else {

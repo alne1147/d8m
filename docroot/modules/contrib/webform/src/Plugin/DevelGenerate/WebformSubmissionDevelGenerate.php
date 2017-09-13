@@ -257,7 +257,7 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
    *   The element values from the settings webform.
    */
   protected function generateSubmissions(array $values) {
-    self::$generatingSubmissions = TRUE;
+    static::$generatingSubmissions = TRUE;
     if (!empty($values['kill'])) {
       $this->deleteWebformSubmissions($values['webform_ids'], $values['entity-type'], $values['entity-id']);
       $this->setMessage($this->t('Deleted existing submissions.'));
@@ -275,7 +275,7 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
       }
     }
     $this->setMessage($this->formatPlural($values['num'], '1 submissions created.', 'Finished creating @count submissions'));
-    self::$generatingSubmissions = FALSE;
+    static::$generatingSubmissions = FALSE;
   }
 
   /**
@@ -333,6 +333,15 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
     $entity_type = $results['entity-type'];
     $entity_id = $results['entity-id'];
 
+    // Get submission URL from source entity or webform.
+    $url = $webform->toUrl();
+    if ($entity_type && $entity_id) {
+      $source_entity = \Drupal::entityTypeManager()->getStorage($entity_type)->load($entity_id);
+      if ($source_entity->hasLinkTemplate('canonical')) {
+        $url = $source_entity->toUrl();
+      }
+    }
+
     $timestamp = rand($results['created_min'], $results['created_max']);
     $this->webformSubmissionStorage->create([
       'webform_id' => $webform_id,
@@ -340,7 +349,7 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
       'entity_id' => $entity_id,
       'uid' => $uid,
       'remote_addr' => mt_rand(0, 255) . '.' . mt_rand(0, 255) . '.' . mt_rand(0, 255) . '.' . mt_rand(0, 255),
-      'uri' => preg_replace('#^' . base_path() . '#', '/', $webform->toUrl()->toString()),
+      'uri' => preg_replace('#^' . base_path() . '#', '/', $url->toString()),
       'data' => Yaml::encode($this->webformSubmissionGenerate->getData($webform)),
       'created' => $timestamp,
       'changed' => $timestamp,
@@ -410,7 +419,7 @@ class WebformSubmissionDevelGenerate extends DevelGenerateBase implements Contai
    *   TRUE if webform submissions are being generated.
    */
   public static function isGeneratingSubmissions() {
-    return self::$generatingSubmissions;
+    return static::$generatingSubmissions;
   }
 
   /**

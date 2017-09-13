@@ -20,8 +20,8 @@ dependencies:
   - views
   - viewsreference
 
-# Information added by Drupal.org packaging script on 2017-05-29
-version: '8.x-2.0-alpha4'
+# Information added by Drupal.org packaging script on 2017-09-04
+version: '8.x-2.0-alpha7'
 core: '8.x'
 project: 'bootstrap_paragraphs'
-datestamp: 1496069886
+datestamp: 1504558446

@@ -13,13 +13,6 @@ use Drupal\webform\Entity\WebformSubmission;
 class WebformSubmissionLogTest extends WebformTestBase {
 
   /**
-   * Modules to enable.
-   *
-   * @var array
-   */
-  public static $modules = ['webform'];
-
-  /**
    * Webforms to load.
    *
    * @var array
@@ -34,6 +27,10 @@ class WebformSubmissionLogTest extends WebformTestBase {
 
     // Create users.
     $this->createUsers();
+
+    // Add view own submission to anonymous so the submissions can be be
+    // converted to authenticated.
+    $this->addViewWebformSubmissionOwnPermissionToAnonymous();
   }
 
   /**
