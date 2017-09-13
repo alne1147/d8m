@@ -755,23 +755,23 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 // Use the mysite database as our default database, but delay connecting.
-$conf['acquia_hosting_settings_autoconnect'] = FALSE;
+//$conf['acquia_hosting_settings_autoconnect'] = FALSE;
 
 
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/ci-settings.inc';
 }
 // Use the drupal_shared database for users, sessions, and profiles.
-$db_url = 'mysqli://s30014:B6Gu2mCwxPB8gnp@staging-11200.prod.hosting.acquia.com /coloradoddb148585 ';
-$db_prefix = array(
-    'default' => '',
-    'authmap' => 'coloradoddb148585.',
-    'profile_fields' => 'coloradoddb148585.',
-    'profile_values' => 'coloradoddb148585.',
-    'role' => 'coloradoddb148585.',
-    'sessions' => 'drupal_shared_tables.',
-    'users' => 'coloradoddb148585.',
-);
+//$db_url = 'mysqli://s30014:B6Gu2mCwxPB8gnp@staging-11200.prod.hosting.acquia.com /coloradoddb148585 ';
+//$db_prefix = array(
+//    'default' => '',
+//    'authmap' => 'coloradoddb148585.',
+//    'profile_fields' => 'coloradoddb148585.',
+//    'profile_values' => 'coloradoddb148585.',
+//    'role' => 'coloradoddb148585.',
+//    'sessions' => 'drupal_shared_tables.',
+//    'users' => 'coloradoddb148585.',
+//);
 
 
 $config_directories['sync'] = '../config/sync';
