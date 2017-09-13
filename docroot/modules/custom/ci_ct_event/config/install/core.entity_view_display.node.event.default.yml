@@ -3,13 +3,16 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
-    - field.field.node.event.field_date_range
     - field.field.node.event.field_location
+    - field.field.node.event.field_page_options
+    - field.field.node.event.field_related_content
+    - field.field.node.event.field_rows
     - node.type.event
   module:
     - datetime
-    - datetime_range
+    - entity_reference_revisions
     - simple_gmap
     - text
     - user
@@ -21,12 +24,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 103
+    weight: 3
     label: above
     settings:
       format_type: medium
@@ -34,18 +37,8 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_date_range:
-    weight: 102
-    label: above
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: daterange_default
-    region: content
   field_location:
-    weight: 104
+    weight: 4
     label: above
     settings:
       include_map: '1'
@@ -63,9 +56,21 @@ content:
     third_party_settings: {  }
     type: simple_gmap
     region: content
+  field_rows:
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_article_tags: true
+  field_page_options: true
+  field_related_content: true

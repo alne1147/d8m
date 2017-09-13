@@ -4,6 +4,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.field_article_tags
+    - field.field.node.event.field_date
+    - field.field.node.event.field_location
+    - field.field.node.event.field_page_options
+    - field.field.node.event.field_related_content
+    - field.field.node.event.field_rows
     - node.type.event
   module:
     - text
@@ -24,4 +30,10 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_article_tags: true
+  field_date: true
+  field_location: true
+  field_page_options: true
+  field_related_content: true
+  field_rows: true
