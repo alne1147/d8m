@@ -277,13 +277,16 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {{ content|without('bp_width', 'bp_background') }}
   </div>
 </div>
-{% elseif %}
-<div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column">
-    <div class="paragraph__title">
-      {{ content.field_row_title }}
+
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph__column">
+      <div class="paragraph__title">
+          {{ content.field_row_title }}
+      </div>
+        {{ content|without('bp_width', 'bp_background') }}
     </div>
-    {{ content|without('bp_width', 'bp_background') }}
   </div>
-</div>
+
+
 {% endif %}
