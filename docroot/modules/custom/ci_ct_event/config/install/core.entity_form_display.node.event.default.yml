@@ -12,10 +12,10 @@ dependencies:
     - node.type.event
   module:
     - content_moderation
-    - datetime
     - field_group
     - paragraphs
     - path
+    - single_datetime
     - text
 third_party_settings:
   field_group:
@@ -82,7 +82,7 @@ content:
     weight: 6
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: single_date_time_widget
     region: content
   field_location:
     weight: 7

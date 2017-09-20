@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_rows
     - node.type.page
+    - paragraphs.paragraphs_type.bp_carousel
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
@@ -27,6 +28,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      bp_carousel: bp_carousel
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_columns_three_uneven: bp_columns_three_uneven
@@ -48,8 +50,8 @@ settings:
         weight: -36
         enabled: false
       bp_carousel:
+        enabled: true
         weight: -35
-        enabled: false
       bp_columns:
         enabled: true
         weight: -34
@@ -92,6 +94,9 @@ settings:
       row_three_column_hero:
         enabled: true
         weight: -21
+      bp_column_wrapper:
+        weight: 30
+        enabled: false
       row_slide_container:
         enabled: true
         weight: 38

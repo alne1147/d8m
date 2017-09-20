@@ -17,6 +17,7 @@ dependencies:
   - paragraphs
   - path
   - simple_gmap
+  - single_datetime
   - text
   - user
   - views
