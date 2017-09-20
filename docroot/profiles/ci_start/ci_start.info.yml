@@ -136,6 +136,7 @@ dependencies:
   - paragraphs_layouts
   - metatag
   - simple_block
+  - single_datetime
   - slick
   - slick_media
   - slick_paragraphs
