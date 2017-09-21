@@ -2,5 +2,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: bp_carousel
-label: Carousel
+label: 'Card - Carousel'
 behavior_plugins: {  }

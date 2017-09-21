@@ -16,12 +16,12 @@ content:
     type: entity_reference_paragraphs
     weight: 6
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Row
+      title_plural: Rows
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
     third_party_settings: {  }
     region: content
 hidden:

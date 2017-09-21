@@ -25,11 +25,12 @@ content:
     type: entity_reference_paragraphs
     weight: 3
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Card
+      title_plural: Cards
       edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
+      default_paragraph_type: bp_image
     third_party_settings: {  }
     region: content
   bp_slide_interval:
