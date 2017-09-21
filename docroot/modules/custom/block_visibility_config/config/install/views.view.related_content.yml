@@ -332,7 +332,18 @@ display:
       title: Related
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'There is no related content yet!'
+          plugin_id: text_custom
       relationships:
         field_article_tags:
           id: field_article_tags
@@ -440,7 +451,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_hide_empty: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
