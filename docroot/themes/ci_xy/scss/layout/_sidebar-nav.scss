@@ -2,6 +2,12 @@
 .region-sidebar-first,
 .region-sidebar-second {
   background-color: $color-grey-sand;
+  padding: 15px;
+  border-radius: $border-radius;
+  h2.block-title {
+    font-size: floor(($font-size-base * 1.5));
+    margin-top:0;
+  }
   .navbar-nav {
     float: none;
   }
@@ -28,7 +34,6 @@
         &:hover {
           background-color: darken($color-grey-sand, 4.5%); // #eaeaea
           border-left: 4px solid $color-pacific-blue;
-          //font-weight: $font-weight-500;
           padding-left: 14px;
         }
       }
