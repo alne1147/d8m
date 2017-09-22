@@ -6,4 +6,4 @@ ckeditor_config
 ci_menu_link_content
 ci_user
 ci_ct_event
-
+ci_theme_options
