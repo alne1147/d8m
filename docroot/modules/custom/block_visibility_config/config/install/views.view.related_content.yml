@@ -59,11 +59,7 @@ display:
       style:
         type: default
         options:
-          grouping:
-            -
-              field: field_article_tags
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           row_class: ''
           default_row_class: true
       row:

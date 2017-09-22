@@ -14,11 +14,13 @@ dependencies:
   - entity_reference_revisions
   - field
   - file
+  - focal_point
   - image
   - image_widget_crop
   - link
   - options
   - paragraphs
+  - responsive_image
   - text
   - views
   - viewsreference

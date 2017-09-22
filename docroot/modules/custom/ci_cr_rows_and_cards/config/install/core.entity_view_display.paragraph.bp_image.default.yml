@@ -6,12 +6,12 @@ dependencies:
     - field.field.paragraph.bp_image.bp_image_field
     - field.field.paragraph.bp_image.bp_link
     - field.field.paragraph.bp_image.bp_width
-    - image.style.max_1920
     - paragraphs.paragraphs_type.bp_image
+    - responsive_image.styles.carousel_responsive
   module:
-    - image
     - link
     - options
+    - responsive_image
 id: paragraph.bp_image.default
 targetEntityType: paragraph
 bundle: bp_image
@@ -28,10 +28,10 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: max_1920
+      responsive_image_style: carousel_responsive
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   bp_link:
     weight: 3
