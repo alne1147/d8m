@@ -101,6 +101,7 @@ dependencies:
   - entity_browser
   - entity_browser_entity_form
   - image_widget_crop
+  - jquery_colorpicker
   - media_entity
   - crop_media_entity
   - media_entity_document
