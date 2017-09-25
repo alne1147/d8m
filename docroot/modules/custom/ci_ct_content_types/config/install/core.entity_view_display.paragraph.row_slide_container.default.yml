@@ -16,7 +16,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      optionset: default
+      optionset: ci_xy
       skin: fullwidth
       view_mode: default
       cache: 0
