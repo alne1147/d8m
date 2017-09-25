@@ -4,6 +4,11 @@
 
 .paragraph {
   > .paragraph__column {
+    .row__title {
+      text-align: center;
+      padding-left: 15px;
+      padding-right:15px;
+    }
     >.container {
       padding-left:0;
       padding-right:0;
