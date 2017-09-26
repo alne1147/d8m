@@ -9,3 +9,15 @@
 .node-preview-form-select {
   padding: ($grid-gutter-width / 2);
 }
+
+figure.embedded-entity.align-left img
+{
+  padding:5px 10px 0px 0px;
+  margin-left:0px;
+}
+
+figcaption
+{
+  font-size:15px;
+  color: #000000;
+}
