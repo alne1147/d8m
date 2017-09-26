@@ -153,3 +153,9 @@
 .paragraph.paragraph--color + .paragraph > .paragraph__column {
   padding-top: 0;
 }
+.views-col {
+  padding-right:15px;
+  //&:last-child {
+  //  padding-right:0;
+  //}
+}
