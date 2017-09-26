@@ -7,11 +7,11 @@ id: related_content
 label: 'Related Content'
 logic: and
 conditions:
-  0193d3c7-e9a7-49e5-9431-1c58bb6f9716:
+  a3ea1c28-6f44-4850-bf75-1868b4d21c3d:
     id: term
     negate: 0
     tid: '100018'
     context_mapping:
       node: '@node.node_route_context:node'
-    uuid: 0193d3c7-e9a7-49e5-9431-1c58bb6f9716
+    uuid: a3ea1c28-6f44-4850-bf75-1868b4d21c3d
 allow_other_conditions: true
