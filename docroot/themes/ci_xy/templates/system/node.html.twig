@@ -87,7 +87,7 @@
       {{ author_picture }}
       <div{{ author_attributes }}>
           {% set createdDate = node.getCreatedTime|date('F j, Y') %}
-        <div class ="author_date hide">{% trans %} {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ author_name }}{% endtrans %}</div>
+        <div class ="author_date hide">{% trans %} {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}{% endtrans %}</div>
         {{ metadata }}
       </div>
     {#</footer>#}
