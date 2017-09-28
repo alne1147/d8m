@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - term_condition
 id: recent_articles
 label: 'Recent Articles'
@@ -14,4 +15,12 @@ conditions:
     context_mapping:
       node: '@node.node_route_context:node'
     uuid: 7416925e-e7f2-44d6-ba5b-6b9506490406
+  930e209e-f636-409b-9828-73c2f95cd5f5:
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 930e209e-f636-409b-9828-73c2f95cd5f5
 allow_other_conditions: true

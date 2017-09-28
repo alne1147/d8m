@@ -7,6 +7,7 @@ dependencies:
   - block_class
   - block_visibility_groups
   - ci_ct_content_types
+  - ci_ct_event
   - menu_condition
   - node
   - taxonomy
