@@ -317,6 +317,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        footer: false
       filters:
         status:
           value: '1'
@@ -565,6 +566,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<a href="[site:url]/calendar-field_date/month" >View More Events</a>'
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
