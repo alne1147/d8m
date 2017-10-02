@@ -8,6 +8,7 @@ dependencies:
   - block_visibility_groups
   - ci_ct_content_types
   - ci_ct_event
+  - datetime
   - menu_condition
   - node
   - taxonomy
