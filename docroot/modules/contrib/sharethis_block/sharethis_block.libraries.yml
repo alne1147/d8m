@@ -1,0 +1,7 @@
+sharethis:
+  remote: //platform-api.sharethis.com/js/sharethis.js#property=PROPERTYID&product=PRODUCT_TYPE
+  license:
+    name: commercial
+    gpl-compatible: false
+  js:
+    //platform-api.sharethis.com/js/sharethis.js#property=PROPERTYID&product=PRODUCT_TYPE: { type: external, minified: true, async: true }
