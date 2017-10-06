@@ -46,6 +46,12 @@ class CiThemeConfigForm extends ConfigFormBase {
             '#description' => 'Choose a Color. The default value is #5c666f',
             '#default_value' => $config->get('ci_theme_options.nav_color'),
         );
+        $form['footer_color'] = array(
+            '#type' => 'jquery_colorpicker',
+            '#title' => t('Footer Color'),
+            '#description' => 'Choose a Color for the Footer. The default value is #5c666f',
+            '#default_value' => $config->get('ci_theme_options.footer_color'),
+        );
 
         return $form;
 
@@ -62,6 +68,7 @@ class CiThemeConfigForm extends ConfigFormBase {
         $config = $this->config('ci_theme_options.settings');
 
         $config->set('ci_theme_options.nav_color', $form_state->getValue('nav_color'));
+        $config->set('ci_theme_options.footer_color', $form_state->getValue('footer_color'));
 
         $config->save();
 
