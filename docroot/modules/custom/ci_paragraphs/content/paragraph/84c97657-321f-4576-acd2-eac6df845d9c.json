@@ -67,7 +67,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ],
                 "lang": "en"
@@ -85,7 +85,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ]
             }
@@ -165,6 +165,13 @@
             "lang": "en"
         }
     ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Site-Install"
+            }
+        }
+    ],
     "bp_background": [
         {
             "value": "paragraph--color color__brand-silver--light",
@@ -173,7 +180,7 @@
     ],
     "bp_column_style_2": [
         {
-            "value": "paragraph--style--25-75",
+            "value": "paragraph--style--75-25",
             "lang": "en"
         }
     ]

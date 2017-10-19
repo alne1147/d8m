@@ -1,0 +1,61 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100021?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        }
+    },
+    "tid": [
+        {
+            "value": 100021
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fa94d31b-04a7-4d9c-bb20-96fc7310f5d0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "name": [
+        {
+            "value": "State",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1508270288,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "State | Site-Install"
+            }
+        }
+    ]
+}

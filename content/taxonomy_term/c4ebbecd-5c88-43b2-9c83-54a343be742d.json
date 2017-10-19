@@ -1,0 +1,61 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100031?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        }
+    },
+    "tid": [
+        {
+            "value": 100031
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c4ebbecd-5c88-43b2-9c83-54a343be742d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "name": [
+        {
+            "value": "City",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1508270288,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "City | Site-Install"
+            }
+        }
+    ]
+}

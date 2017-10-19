@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ]
             }
@@ -119,15 +119,22 @@
             "lang": "en"
         }
     ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Site-Install"
+            }
+        }
+    ],
     "bp_background": [
         {
-            "value": "paragraph--color paragraph--color--rgba-black-light",
+            "value": "paragraph--color color__sea-foam--slight",
             "lang": "en"
         }
     ],
     "field_card_body": [
         {
-            "value": "<h2>Paullum deliquit<\/h2>\r\n\r\n<p>Morbi fringilla convallis sapien, id pulvinar odio volutpat. Mercedem aut nummos unde unde extricat, amaras. Contra legem facit qui id facit quod lex prohibet. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Etiam habebis sem dicantur magna mollis euismod. Idque Caesaris facere voluntate liceret: sese habere.<\/p>\r\n\r\n<p>Magna pars studiorum, prodita quaerimus. Nihil hic munitissimus habendi senatus locus, nihil horum? Petierunt uti sibi concilium totius Galliae in diem certam indicere.<\/p>\r\n",
+            "value": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\r\n\r\n<p>You can put any rows or cards here.&nbsp; It will show above all of the Landing Pages on your site.<\/p>\r\n\r\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\r\n\r\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\r\n",
             "format": "d8m_text_editor"
         }
     ]

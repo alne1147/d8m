@@ -1,8 +1,0 @@
-name: ci_menu_link_content
-dependencies:
-    - default_content
-    - default_content_deploy
-description: 'Default Menu Link Content'
-core: 8.x
-package: Custom
-type: module

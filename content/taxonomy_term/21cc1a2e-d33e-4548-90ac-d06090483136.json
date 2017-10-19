@@ -1,0 +1,61 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100036?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        }
+    },
+    "tid": [
+        {
+            "value": 100036
+        }
+    ],
+    "uuid": [
+        {
+            "value": "21cc1a2e-d33e-4548-90ac-d06090483136"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "name": [
+        {
+            "value": "County",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": 1508270288,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "County | Site-Install"
+            }
+        }
+    ]
+}

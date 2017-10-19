@@ -50,5 +50,12 @@
             "value": true,
             "lang": "en"
         }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Second Menu - Left | Site-Install"
+            }
+        }
     ]
 }

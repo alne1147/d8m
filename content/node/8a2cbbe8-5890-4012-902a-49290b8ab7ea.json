@@ -1,0 +1,211 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/home?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_rows": [
+            {
+                "href": "",
+                "lang": "en"
+            },
+            {
+                "href": "",
+                "lang": "en"
+            },
+            {
+                "href": "",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8a2cbbe8-5890-4012-902a-49290b8ab7ea"
+        }
+    ],
+    "vid": [
+        {
+            "value": 1
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "landing_page"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Home",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_rows": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3ec729ef-cc6a-421b-84a5-49322551fb91"
+                    }
+                ],
+                "lang": "en",
+                "target_revision_id": "3101"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b6218493-a14c-465c-90ac-05872302a69b"
+                    }
+                ],
+                "lang": "en",
+                "target_revision_id": "3116"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns_two_uneven"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6654ed8e-7f0f-46d4-891d-54bec8a0692c"
+                    }
+                ],
+                "lang": "en",
+                "target_revision_id": "3136"
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1498144265,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1508349350,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1498145354
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Home | Site-Install"
+            }
+        }
+    ]
+}

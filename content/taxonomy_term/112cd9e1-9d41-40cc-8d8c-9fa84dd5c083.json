@@ -50,5 +50,12 @@
             "value": true,
             "lang": "en"
         }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Show Related Tags | Site-Install"
+            }
+        }
     ]
 }

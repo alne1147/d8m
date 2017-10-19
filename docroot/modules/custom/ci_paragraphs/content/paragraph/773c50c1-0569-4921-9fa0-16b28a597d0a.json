@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ]
             }
@@ -119,20 +119,22 @@
             "lang": "en"
         }
     ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Site-Install"
+            }
+        }
+    ],
     "bp_background": [
         {
             "value": "paragraph--color color__brand-blue--strong",
             "lang": "en"
         }
     ],
-    "field_alignment": [
-        {
-            "value": "paragraph--alignment paragraph--alignment-bottom"
-        }
-    ],
     "field_card_body": [
         {
-            "value": "<h2>Card 2 Content Title<\/h2>\r\n\r\n<p>Rhoncus quis vel nunc cursus ac magna. A rhoncus adipiscing, facilisis, aliquam! Nisi dignissim sagittis in dis sed, integer placerat magna facilisis integer magna tristique mattis. A, quis habitasse ac in, eros tortor sociis pellentesque enim habitasse phasellus sociis scelerisque purus enim, sit magnis, pellentesque, vel porta mus. Adipiscing massa.<\/p>\r\n\r\n<p>Nunc, ac cras magnis cum tortor, tincidunt porttitor pid ut turpis augue turpis, auctor ultrices aenean egestas placerat tincidunt tristique sociis et urna cum adipiscing auctor proin elementum adipiscing, sagittis, tincidunt elementum habitasse? Cursus ut, ultricies elementum et aliquet, tincidunt, tincidunt mauris magnis aliquam, diam. Natoque mattis amet amet.<\/p>\r\n",
+            "value": "<p>- Example Call to Action -<\/p>\r\n\r\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\r\n\r\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\r\n\r\n<p><br \/>\r\n&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor"
         }
     ]

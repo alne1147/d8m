@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/article-press-release-1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+            {
+                "href": "http:\/\/default\/user\/16?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/16?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_tags": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100021?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100026?_format=hal_json"
+            },
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100031?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_type": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100013?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_related_content": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100018?_format=hal_json"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 31
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e2d64265-e1f9-4067-bc95-e38093a66761"
+        }
+    ],
+    "vid": [
+        {
+            "value": 116
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "article"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Article - Press Release 1",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100021?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fa94d31b-04a7-4d9c-bb20-96fc7310f5d0"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100026?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0942b61a-06be-4ab0-bf88-ab3297c3d33f"
+                    }
+                ]
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100031?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c4ebbecd-5c88-43b2-9c83-54a343be742d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_type": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100013?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c9886064-7c47-4ed4-a3a5-23e9b16dad4e"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_related_content": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100018?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/related_content"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "112cd9e1-9d41-40cc-8d8c-9fa84dd5c083"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1508350600,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1508351641,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1508351641
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Article - Press Release 1 | Site-Install",
+                "description": "This is a test Article.\n\u00a0\nIt uses the following Article Options:\n- Type: Press Release\n\u00a0\nDisplay\n- Show Author: No\n- Show Post Date: No\n\u00a0\nRelated Content\n- Show Recent Posts: No\n- Show Related Tags: Yes\n\u00a0\nTags Assigned: State, Local, City\n\u00a0\n###\n\u00a0\nNulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+            }
+        }
+    ],
+    "body": [
+        {
+            "value": "<h2>This is a test Article.<\/h2>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>It uses the following Article Options:<\/p>\r\n\r\n<p>- Type: Press Release<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Display<\/p>\r\n\r\n<p>- Show Author: No<\/p>\r\n\r\n<p>- Show Post Date: No<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Related Content<\/p>\r\n\r\n<p>- Show Recent Posts: No<\/p>\r\n\r\n<p>- Show Related Tags: Yes<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Tags Assigned: State, Local, City<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>###<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

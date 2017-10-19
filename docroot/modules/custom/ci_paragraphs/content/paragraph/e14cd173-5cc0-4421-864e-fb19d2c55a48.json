@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "03e16562-9fab-4fa4-b6f0-4a71d03ddd13"
+                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
                     }
                 ]
             }
@@ -119,15 +119,22 @@
             "lang": "en"
         }
     ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Site-Install"
+            }
+        }
+    ],
     "field_card_body": [
         {
-            "value": "<p>Tu quoque, Brute, fili mi, nihil timor populi, nihil! Fictum, &nbsp;deserunt mollit anim laborum astutumque! Me non paenitet nullum festiviorem excogitasse ad hoc.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "value": "<p>You can also put any rows or cards here.&nbsp; It will show under all of the pages on the site.<\/p>\r\n\r\n<p>This Footer Block can be edited by Structure Editor users.<\/p>\r\n\r\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Footer\"<\/p>\r\n",
             "format": "d8m_text_editor"
         }
     ],
     "field_card_title": [
         {
-            "value": "Lorem ipsum dolor sit"
+            "value": "This is a card in the Footer Block"
         }
     ]
 }

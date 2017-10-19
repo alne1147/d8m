@@ -50,5 +50,12 @@
             "value": true,
             "lang": "en"
         }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Blog Post | Site-Install"
+            }
+        }
     ]
 }
