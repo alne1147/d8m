@@ -69,7 +69,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ],
                 "lang": "en"
@@ -87,7 +87,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Quam diu etiam furor | Site-Install",
+                "title": "Quam diu etiam furor | CI Drupal 8",
                 "description": "Fictum, \u00a0deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.\nCurabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus."
             }
         }

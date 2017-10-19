@@ -8,13 +8,13 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
             {
-                "href": "http:\/\/default\/user\/16?_format=hal_json",
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/16?_format=hal_json"
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_tags": [
@@ -51,7 +51,7 @@
     ],
     "vid": [
         {
-            "value": 116
+            "value": 144
         }
     ],
     "langcode": [
@@ -82,7 +82,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -90,7 +90,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ],
                 "lang": "en"
@@ -100,7 +100,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -108,7 +108,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ]
             }
@@ -203,7 +203,7 @@
     ],
     "changed": [
         {
-            "value": 1508351641,
+            "value": 1508450715,
             "lang": "en"
         }
     ],
@@ -221,7 +221,13 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1508351641
+            "value": 1508450715
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
         }
     ],
     "default_langcode": [
@@ -233,7 +239,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Article - Press Release 1 | Site-Install",
+                "title": "Article - Press Release 1 | CI Drupal 8",
                 "description": "This is a test Article.\n\u00a0\nIt uses the following Article Options:\n- Type: Press Release\n\u00a0\nDisplay\n- Show Author: No\n- Show Post Date: No\n\u00a0\nRelated Content\n- Show Recent Posts: No\n- Show Related Tags: Yes\n\u00a0\nTags Assigned: State, Local, City\n\u00a0\n###\n\u00a0\nNulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
             }
         }
