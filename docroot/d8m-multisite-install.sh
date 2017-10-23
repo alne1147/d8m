@@ -12,11 +12,9 @@ drush @sites role-create user_administrator;
 
 drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
 
-#// Import a partial config for permission validation.
-drush @sites cim --partial -y
 drush @sites en -y $(cat custom_modules_list.txt)
 
-drush @sites dcdi -y
+drush @sites dcdi;
 drush @sites en ci_blocks -y
 
 
@@ -40,9 +38,12 @@ drush @sites php-eval 'node_access_rebuild()'
 #*For Bootstrap Module loading errors:* The following module is missing from the file system: webform_bootstrap_test_theme bootstrap.inc:250
 drush @sites sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name='webform_bootstrap_test_theme';"
 
-drush @sites uli
+echo "
 
+//////// FINAL STEP! ////////
 
-#d8m
-#drush @sites 
-#drupal
+MUST BE DONE FROM LOCAL - Drush Aliases must be up to date!
+
+- Import a partial config for permission validation.
+
+drush @ag.dev cim —partial; drush @cdle.dev cim —partial;drush @cdps.dev cim —partial;drush @ci.dev cim —partial;drush @dola.dev cim —partial;drush @dora.dev cim —partial;drush @dpa.dev cim —partial;drush @estes.dev cim —partial;drush @hcpf.dev cim —partial;drush @revenue.dev cim —partial;drush @sipa.dev cim —partial;drush @slb.dev cim —partial;drush @cdphe.dev cim —partial;"
