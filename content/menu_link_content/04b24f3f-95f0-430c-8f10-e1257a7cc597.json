@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/36\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/54\/edit?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
@@ -9,12 +9,12 @@
     },
     "id": [
         {
-            "value": 36
+            "value": 54
         }
     ],
     "uuid": [
         {
-            "value": "8ad40284-ba9c-4237-9853-4217b78b53d6"
+            "value": "04b24f3f-95f0-430c-8f10-e1257a7cc597"
         }
     ],
     "langcode": [
@@ -30,7 +30,7 @@
     ],
     "title": [
         {
-            "value": "Blog Post 1",
+            "value": "Press Release 1",
             "lang": "en"
         }
     ],
@@ -41,8 +41,8 @@
     ],
     "link": [
         {
-            "uri": "entity:node\/16",
-            "title": "",
+            "uri": "entity:node\/31",
+            "title": null,
             "options": []
         }
     ],
@@ -58,7 +58,7 @@
     ],
     "weight": [
         {
-            "value": 0
+            "value": -50
         }
     ],
     "expanded": [
@@ -73,12 +73,12 @@
     ],
     "parent": [
         {
-            "value": "menu_link_content:f74dcd27-1d27-4e4f-90cd-f4842ea5e736"
+            "value": "menu_link_content:a1446ad5-0982-4f5f-8510-19a89d88b77f"
         }
     ],
     "changed": [
         {
-            "value": 1508351573,
+            "value": 1508451331,
             "lang": "en"
         }
     ],
@@ -91,7 +91,7 @@
     "metatag": [
         {
             "value": {
-                "title": "| Site-Install"
+                "title": "| CI Drupal 8"
             }
         }
     ]

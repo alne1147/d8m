@@ -69,7 +69,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ],
                 "lang": "en"
@@ -87,7 +87,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Video Example | Site-Install",
+                "title": "Video Example | CI Drupal 8",
                 "description": ""
             }
         }

@@ -69,7 +69,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ],
                 "lang": "en"
@@ -87,7 +87,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "65a29316-d6d3-40b4-9476-7a0aed95aa0a"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Accordions WYSIWYG | Site-Install",
+                "title": "Accordions WYSIWYG | CI Drupal 8",
                 "description": "Accordion title 1\n\nMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
             }
         }
