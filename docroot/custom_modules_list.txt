@@ -3,5 +3,5 @@ ci_blocks_block_types
 ci_paragraphs
 ckeditor_config
 ci_user
-ci_ct_event
 ci_theme_options
+default_content_deploy
