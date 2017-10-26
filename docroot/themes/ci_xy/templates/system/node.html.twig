@@ -84,12 +84,11 @@
 
   {% if display_submitted %}
     {#<footer>#}
-      {{ author_picture }}
+
       <div{{ author_attributes }}>
-          {% set createdDate = node.getCreatedTime|date('F j, Y') %}
-        <div class ="author_date hide">{% trans %} {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}{% endtrans %}</div>
-        {{ metadata }}
-      </div>
+    <div class ="author_date hide"> {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
+      {{ metadata }}
+  </div>
     {#</footer>#}
   {% endif %}
 
