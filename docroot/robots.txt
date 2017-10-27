@@ -13,7 +13,6 @@
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
 
-
 User-agent: *
 # CSS, JS, Images
 Allow: /core/*.css$
@@ -37,65 +36,6 @@ Allow: /profiles/*.svg
 # Directories
 Disallow: /core/
 Disallow: /profiles/
-Disallow: /sites/
-
-# Sites
-Agent : *
-Disallow: / 
-
-// Dept. of Agriculture
-ag.dev.colorado.gov
-ag.stg.colorado.gov
-    
-// Dept. of Public Safety
-cdps.dev.colorado.gov
-cdps.stg.colorado.gov
-    
-// Dept. of Personnel and Administration
-dpa.dev.colorado.gov
-dpa.stg.colorado.gov
-    
-// Dept. of Revenue
-revenue.dev.colorado.gov
-revenue.stg.colorado.gov
-    
-// Dept. of Regulatory Agencies
-dora.dev.colorado.gov
-dora.stg.colorado.gov
-    
-// Dept. of Local Affairs
-dola.dev.colorado.gov
-dola.stg.colorado.gov
-    
-// Dept. of Healthcare Policy and Financing
-hcpf.dev.colorado.gov
-hcpf.stg.colorado.gov
-    
-// Dept. of Labor
-cdle.dev.colorado.gov
-cdle.stg.colorado.gov
-    
-// Dept. of Public Health and Environment
-cdphe.dev.colorado.gov
-cdphe.stg.colorado.gov
-    
-    // Town of Estes Park
-estes.dev.colorado.gov
-estes.stg.colorado.gov
-    
-// State Internet Portal Authority
-sipa.dev.colorado.gov
-sipa.dev.colorado.gov
-    
-// State Land Board
-slb.dev.colorado.gov
-slb.stg.colorado.gov
-// Colorado Interactive
-ci.dev.colorado.gov
-ci.stg.colorado.gov
-
-
-
 # Files
 Disallow: /README.txt
 Disallow: /web.config
