@@ -5,7 +5,7 @@
 drush @sites site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
 
 drush @sites role-create administrator &&
-drush @sites role-create support_administrator &&
+drush @sites role-create support_admlinistrator &&
 drush @sites role-create content_administrator &&
 drush @sites role-create structure_administrator &&
 drush @sites role-create user_administrator;
