@@ -74,6 +74,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_paragraphs
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 8
@@ -85,6 +91,13 @@ content:
     settings:
       display_label: true
     weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
