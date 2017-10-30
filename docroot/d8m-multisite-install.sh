@@ -14,7 +14,7 @@ drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush @sites en -y $(cat custom_modules_list.txt)
 
-drush @sites dcdi;
+drush @sites -y dcdi -1
 drush @sites en ci_blocks -y
 
 
@@ -37,6 +37,9 @@ drush @sites php-eval 'node_access_rebuild()'
 
 #*For Bootstrap Module loading errors:* The following module is missing from the file system: webform_bootstrap_test_theme bootstrap.inc:250
 drush @sites sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name='webform_bootstrap_test_theme';"
+
+drush @sites -y config-set system.performance css.preprocess 0
+drush @sites -y config-set system.performance js.preprocess 0
 
 echo "
 
