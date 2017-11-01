@@ -23,6 +23,7 @@ function ci_theme_options_preprocess_page(&$variables) {
 
     $variables['nav_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.nav_color');
     $variables['footer_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.footer_color');
+    $variables['global_bg_image'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_image');
 }
 
 

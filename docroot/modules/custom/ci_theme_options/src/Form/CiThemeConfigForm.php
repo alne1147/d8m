@@ -52,8 +52,16 @@ class CiThemeConfigForm extends ConfigFormBase {
             '#description' => 'Choose a Color for the Footer. The default value is #5c666f',
             '#default_value' => $config->get('ci_theme_options.footer_color'),
         );
+        $form['global_bg_image'] = array(
+            '#type' => 'managed_file',
+            '#title' => t('Global Background Image'),
+            '#description' => t('Set the site-wide default header image'),
+            '#upload_location' => 'public://files',
+        );
 
         return $form;
+        
+        
 
     }
 
