@@ -3,8 +3,8 @@
 
     Drupal.behaviors.dodatsss = {
         attach: function(context, settings) {
-            $('div.layout-container').click(function() {
-                alert("Your book is overdue.");
+            $("#edit-submit").click(function(){
+                $("#edit-bg-image-url").val($('.file--mime-image-jpeg a').attr('href'));
             });
 
         }
