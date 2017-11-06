@@ -38,6 +38,8 @@ class CiThemeConfigForm extends ConfigFormBase {
 
         $form = parent::buildForm($form, $form_state);
 
+        $form['#attached']['library'][] = 'ci_theme_options/ci_theme_options';
+
         $config = $this->config('ci_theme_options.settings');
 
         $form['nav_color'] = array(
@@ -52,6 +54,14 @@ class CiThemeConfigForm extends ConfigFormBase {
             '#description' => 'Choose a Color for the Footer. The default value is #5c666f',
             '#default_value' => $config->get('ci_theme_options.footer_color'),
         );
+
+        $form['global_bg_color'] = array(
+            '#type' => 'jquery_colorpicker',
+            '#title' => t('Global Background Color'),
+            '#description' => t('Set the site-wide default background color'),
+            '#default_value' => $config->get('ci_theme_options.global_bg_color'),
+        );
+
         $form['global_bg_image'] = array(
             '#type' => 'managed_file',
             '#title' => t('Global Background Image'),
@@ -59,6 +69,12 @@ class CiThemeConfigForm extends ConfigFormBase {
             '#upload_location' => 'public://files',
              '#default_value' => $config->get('ci_theme_options.global_bg_image'),
         );
+
+        $form['bg_image_url'] = [
+            '#type' => 'url',
+            '#title' => $this->t('Image URL'),
+            '#default_value' => $config->get('ci_theme_options.bg_image_url'),
+        ];
 
         return $form;
         
@@ -79,6 +95,8 @@ class CiThemeConfigForm extends ConfigFormBase {
         $config->set('ci_theme_options.nav_color', $form_state->getValue('nav_color'));
         $config->set('ci_theme_options.footer_color', $form_state->getValue('footer_color'));
         $config->set('ci_theme_options.global_bg_image', $form_state->getValue('global_bg_image'));
+        $config->set('ci_theme_options.global_bg_color', $form_state->getValue('global_bg_color'));
+        $config->set('ci_theme_options.bg_image_url', $form_state->getValue('bg_image_url'));
 
         $config->save();
 

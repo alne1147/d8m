@@ -1,11 +1,6 @@
 <?php
 
 /**
- * @file
- * simple.module
- */
-
-/**
  * Implements hook_menu().
  */
 function ci_theme_options_menu() {
@@ -13,20 +8,17 @@ function ci_theme_options_menu() {
     return $items;
 }
 
-/**
- * Implements hook_form_alter().
- */
-function ci_theme_options_form_alter() {
-
-}
 function ci_theme_options_preprocess_page(&$variables) {
 
     $variables['nav_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.nav_color');
     $variables['footer_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.footer_color');
-    $variables['global_bg_image'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_image');
+    $variables['global_bg_image'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_image.url');
+    $variables['bg_image_url'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.bg_image_url');
+
 }
 
+function ci_theme_options_preprocess_region(&$variables) {
 
-//function ci_xy_preprocess_block__mainnavigation(&$variables) {
-//    $variables['nav_color'] = theme_get_setting('nav_color');
-//}
+    $variables['global_bg_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_color');
+
+}
