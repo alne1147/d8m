@@ -128,7 +128,9 @@
 {% endif %}
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+<div style="background-image: url('{{ bg_image_url }}');background-color: #{{ global_bg_color }}" >
+
+<div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
       {# Breadcrumbs #}
       {% if breadcrumb %}
@@ -196,7 +198,9 @@
       {% endif %}
     </div>
   </div>
+</div>
 {% endblock %}
+
 {# footer #}
 {% if page.footer %}
   {% block footer %}
