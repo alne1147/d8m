@@ -128,7 +128,14 @@
 {% endif %}
 {# Main #}
 {% block main %}
-  <div style="background-image: url('{{ bg_image_url }}');background-color: #{{ global_bg_color }}" >
+     {% if bg_image_url|length %}
+<div id="xyBackground" style="background-image: url('{{ bg_image_url }}');" >
+    {% elseif  global_bg_color|length  %}
+  <div id="xyBackground" style="background-color:#{{ global_bg_color }};">
+      {% else %}
+    <div id="xyBackground">
+        {% endif %}
+
   <div role="main" class="main-container {{ container }} js-quickedit-main-content" >
     <div class="row">
       {# Breadcrumbs #}
