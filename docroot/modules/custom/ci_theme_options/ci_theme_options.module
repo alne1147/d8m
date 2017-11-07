@@ -26,3 +26,12 @@ function ci_theme_options_page_attachments(array &$attachments) {
         $attachments['#attached']['library'][] = 'ci_theme_options/ci_theme_style';
     }
 }
+
+function ci_theme_options_theme($existing, $type, $theme, $path) {
+    return [
+        'page__admin__config__theme_options' => [
+            'template' => 'page--admin--config--theme-options',
+            'base hook' => 'node',
+        ],
+    ];
+}
