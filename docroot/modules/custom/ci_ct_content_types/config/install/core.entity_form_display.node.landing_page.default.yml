@@ -2,12 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_background_color
+    - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_rows
+    - image.style.thumbnail
     - node.type.landing_page
   module:
     - content_moderation
+    - image
+    - jquery_colorpicker
     - metatag
     - paragraphs
     - path
@@ -22,6 +28,27 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_background_color:
+    weight: 122
+    settings:
+      color: FFFFFF
+    third_party_settings: {  }
+    type: jquery_colorpicker
+    region: content
+  field_background_image:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_landing_page_options:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_meta:
     weight: 27
     settings: {  }
