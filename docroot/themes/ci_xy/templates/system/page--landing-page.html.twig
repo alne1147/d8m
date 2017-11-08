@@ -132,7 +132,7 @@
   <div id="xyBackground" style ="background-color:#{{ global_bg_color  }};">
     {# <div>Site BG Color</div> #}
   {% elseif node.field_landing_page_options.value == 'Show Custom Background Image' %}
-  <div id="xyBackground" style="background-image: url('{{ node.field_background_image.0.entity.uri.value }}');">
+  <div id="xyBackground" style="background-image: url('{{ file_url(node.field_background_image.entity.fileuri) }}');">
     {# <div>Custom BG Image</div> #}
   {% elseif node.field_landing_page_options.value == 'Show Custom Background Color' %}
   <div id="xyBackground" style ="background-color:#{{ node.field_background_color.value }};">
