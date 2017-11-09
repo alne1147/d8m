@@ -1,0 +1,7 @@
+admin-tweaks:
+  version: 1.x
+  css:
+    layout:
+      css/ci_at_style.css: {}
+  js:
+    js/ci_at_actions.js: {}

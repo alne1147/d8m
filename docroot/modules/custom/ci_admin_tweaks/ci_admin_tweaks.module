@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ci_admin_tweaks_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'ci_admin_tweaks/admin-tweaks';
+}
+
+function ci_admin_tweaks_theme($existing, $type, $theme, $path) {
+    return [
+        'page__node__edit' => [
+            'templates' => 'page--node--edit',
+            'base hook' => 'node',
+        ],
+    ];
+}
