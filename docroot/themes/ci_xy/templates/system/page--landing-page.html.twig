@@ -93,7 +93,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <div class="top-nav" style="background-color:#{{ nav_color }}">
+    <div class="top-nav" {% if nav_color is not empty %} style="background-color:#{{ nav_color }}" {% endif %}>
         <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
           {% if not navbar_attributes.hasClass('container') %}
             <div class="{{ container }}">
@@ -112,7 +112,7 @@
           </div>
           {# Navigation (collapsible) #}
           {% if page.navigation_collapsible %}
-            <div id="navbar-collapse" class="navbar-collapse collapse" style="background-color:#{{ nav_color }}">
+            <div id="navbar-collapse" class="navbar-collapse collapse">
               {{ page.navigation_collapsible }}
             </div>
           {% endif %}
@@ -125,7 +125,20 @@
 {% endif %}
 {# Main #}
 {% block main %}
-  {#<div role="main" class="main-container {{ container }} js-quickedit-main-content">#}
+  {% if node.field_landing_page_options.value == 'Show Site Background Image' %}
+  <div id="xyBackground" style="background-image: url('{{ bg_image_url }}');">
+    {# <div>Site BG Image</div> #}
+  {% elseif node.field_landing_page_options.value == 'Show Site Background Color' %}
+  <div id="xyBackground" style ="background-color:#{{ global_bg_color  }};">
+    {# <div>Site BG Color</div> #}
+  {% elseif node.field_landing_page_options.value == 'Show Custom Background Image' %}
+  <div id="xyBackground" style="background-image: url('{{ file_url(node.field_background_image.entity.fileuri) }}');">
+    {# <div>Custom BG Image</div> #}
+  {% elseif node.field_landing_page_options.value == 'Show Custom Background Color' %}
+  <div id="xyBackground" style ="background-color:#{{ node.field_background_color.value }};">
+    {# <div>Custom BG Color</div> #}
+    {% endif %}
+
   <div role="main" class="main-container js-quickedit-main-content">
     {#<div class="row">#}
       {# Breadcrumbs #}
@@ -178,11 +191,12 @@
       
     {#</div>#}
   </div>
+</div>
 {% endblock %}
 {# footer #}
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer__content-footer" role="contentinfo" style="background-color:#{{ footer_color }}">
+    <footer class="footer__content-footer" role="contentinfo" {% if footer_color is not empty %} style="background-color:#{{ footer_color }}" {% endif %}>
       {{ page.footer }}
     </footer>
   {% endblock %}

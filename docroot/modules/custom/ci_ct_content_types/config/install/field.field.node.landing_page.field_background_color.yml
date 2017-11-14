@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_color
+    - node.type.landing_page
+  module:
+    - jquery_colorpicker
+id: node.landing_page.field_background_color
+field_name: field_background_color
+entity_type: node
+bundle: landing_page
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: FFFFFF
+default_value_callback: ''
+settings: {  }
+field_type: jquery_colorpicker

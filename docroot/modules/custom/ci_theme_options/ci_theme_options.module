@@ -16,3 +16,22 @@ function ci_theme_options_preprocess_page(&$variables) {
     $variables['bg_image_url'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.bg_image_url');
     $variables['global_bg_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_color');
 }
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ci_theme_options_page_attachments(array &$attachments) {
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+    if ($theme == 'seven') {
+        $attachments['#attached']['library'][] = 'ci_theme_options/ci_theme_style';
+    }
+}
+
+function ci_theme_options_theme($existing, $type, $theme, $path) {
+    return [
+        'page__admin__config__theme_options' => [
+            'template' => 'page--admin--config--theme-options',
+            'base hook' => 'node',
+        ],
+    ];
+}

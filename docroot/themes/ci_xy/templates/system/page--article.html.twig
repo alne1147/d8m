@@ -96,7 +96,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <div class="top-nav" style="background-color:#{{ nav_color }}">
+    <div class="top-nav" {% if nav_color is not empty %} style="background-color:#{{ nav_color }}" {% endif %}>
         <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
           {% if not navbar_attributes.hasClass('container') %}
             <div class="{{ container }}">
@@ -128,7 +128,14 @@
 {% endif %}
 {# Main #}
 {% block main %}
-<div style="background-image: url('{{ bg_image_url }}');background-color: #{{ global_bg_color }}" >
+
+    {% if bg_image_url|length %}
+<div id="xyBackground" style="background-image: url('{{ bg_image_url }}');" >
+    {% elseif  global_bg_color|length  %}
+<div id="xyBackground" style="background-color:#{{ global_bg_color }};">
+    {% else %}
+    <div id="xyBackground">
+    {% endif %}
 
 <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
@@ -204,7 +211,7 @@
 {# footer #}
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer__content-footer" role="contentinfo" style="background-color:#{{ footer_color }}">
+    <footer class="footer__content-footer" role="contentinfo" {% if footer_color is not empty %} style="background-color:#{{ footer_color }}" {% endif %}>
       {{ page.footer }}
     </footer>
   {% endblock %}
