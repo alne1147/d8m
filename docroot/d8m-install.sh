@@ -2,43 +2,43 @@
 
 # D8M Install Local
 
-drush @sites site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
+drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
 
-drush @sites role-create administrator &&
-drush @sites role-create support_administrator &&
-drush @sites role-create content_administrator &&
-drush @sites role-create structure_administrator &&
-drush @sites role-create user_administrator;
+drush role-create administrator &&
+drush role-create support_administrator &&
+drush role-create content_administrator &&
+drush role-create structure_administrator &&
+drush role-create user_administrator;
 
-drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
+drush  config-set system.site mail "no-reply@www.colorado.gov" -y
 
-drush @sites en -y $(cat custom_modules_list.txt)
+drush en -y $(cat custom_modules_list.txt)
 
-drush @sites -y dcdi -1
-drush @sites en ci_blocks -y
+drush -y dcdi -1
+drush en ci_blocks -y
 
 
 #// User additions and role assignments.
 
-drush @sites ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" && drush @sites  user-add-role administrator ci-nevarez &&drush @sites ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" && drush @sites user-add-role administrator ci-jwathen &&drush @sites    ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" && drush @sites user-add-role administrator ci-blawson &&drush @sites ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" && drush @sites user-add-role support_administrator ci-kharrison && drush @sites ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" && drush @sites user-add-role support_administrator ci-twhatley &&drush @sites ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" && drush @sites user-add-role support_administrator ci-supportadmin &&drush @sites ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" && drush @sites user-add-role content_administrator ci-contentadmin &&drush @sites ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" && drush @sites user-add-role user_administrator ci-useradmin &&drush @sites ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" && drush @sites user-add-role structure_administrator;
+drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" && drush  user-add-role administrator ci-nevarez &&drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-jwathen &&drush    ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-blawson &&drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role support_administrator ci-kharrison && drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role support_administrator ci-twhatley &&drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" && drush user-add-role support_administrator ci-supportadmin &&drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" && drush user-add-role content_administrator ci-contentadmin &&drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" && drush user-add-role user_administrator ci-useradmin &&drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" && drush user-add-role structure_administrator;
 
 
-drush @sites user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez;
+drush user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez;
 
-drush @sites cr -y
+drush cr -y
 
 #// Revert Features
-drush @sites features-import-all -y
+drush features-import-all -y
 
-drush @sites en ci_article_setup -y
+drush en ci_article_setup -y
 
 
-drush @sites php-eval 'node_access_rebuild()'
+drush php-eval 'node_access_rebuild()'
 
 #*For Bootstrap Module loading errors:* The following module is missing from the file system: webform_bootstrap_test_theme bootstrap.inc:250
-drush @sites sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name='webform_bootstrap_test_theme';"
+drush sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name='webform_bootstrap_test_theme';"
 
-drush @sites -y config-set system.performance css.preprocess 0
-drush @sites -y config-set system.performance js.preprocess 0
+drush -y config-set system.performance css.preprocess 0
+drush -y config-set system.performance js.preprocess 0
 
 drush cim --partial
