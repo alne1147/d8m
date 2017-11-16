@@ -26,6 +26,7 @@ dependencies:
   - ckeditor_font
   - ckeditor_templates
   - colorbutton
+  - conditional_fields
   - exclude_node_title
   - notification
   - panelbutton
