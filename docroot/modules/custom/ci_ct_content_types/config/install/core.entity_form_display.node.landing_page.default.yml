@@ -11,6 +11,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.landing_page
   module:
+    - conditional_fields
     - content_moderation
     - image
     - jquery_colorpicker
@@ -32,7 +33,29 @@ content:
     weight: 122
     settings:
       color: FFFFFF
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        41a21126-1513-479a-9e11-dbbe3d627490:
+          dependee: field_landing_page_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Show Custom Background Color'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
     type: jquery_colorpicker
     region: content
   field_background_image:
@@ -40,7 +63,29 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        71669b1c-8e59-49c9-96f8-0ff6851e0ef2:
+          dependee: field_landing_page_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Show Custom Background Image'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
     type: image_image
     region: content
   field_landing_page_options:

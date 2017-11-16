@@ -8,6 +8,7 @@ dependencies:
   - block_visibility_config
   - block_visibility_groups
   - ci_cr_rows_and_cards
+  - conditional_fields
   - content_moderation
   - datetime
   - entity_reference_revisions
