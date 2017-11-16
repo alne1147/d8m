@@ -14,7 +14,6 @@ drush  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush en -y $(cat custom_modules_list.txt)
 
-drush -y dcdi -1
 drush en ci_blocks -y
 
 
@@ -41,4 +40,5 @@ drush sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name
 drush -y config-set system.performance css.preprocess 0
 drush -y config-set system.performance js.preprocess 0
 
-drush cim --partial
+drush cim --partial -y
+drush dcdiy -y
