@@ -9,7 +9,17 @@ field_name: field_landing_page_options
 entity_type: node
 type: list_string
 settings:
-  allowed_values_function: 'ci_admin_tweaks_allowed_values_function'
+  allowed_values:
+    -
+      value: 'Show Site Background Image'
+      label: 'Show Site Background Image'
+    -
+      value: 'Show Site Background Color'
+      label: 'Show Site Background Color'
+    -
+      value: 'Show Custom Background Color'
+      label: 'Show Custom Background Color'
+  allowed_values_function: ci_admin_tweaks_allowed_values_function
 module: options
 locked: false
 cardinality: 1
