@@ -5,3 +5,4 @@ ckeditor_config
 ci_user
 ci_theme_options
 default_content_deploy
+ci_admin_tweaks
