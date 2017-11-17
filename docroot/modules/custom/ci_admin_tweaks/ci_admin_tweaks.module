@@ -47,6 +47,7 @@ function ci_admin_tweaks_allowed_values_function(FieldStorageConfig $definition,
   }
 
   if ($entity->bundle() == 'landing_page') {
+
     $options['Show Custom Background Color'] = 'Show Custom Background Color';
   }
 
