@@ -14,7 +14,9 @@ label: 'Page Options'
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    value: 'Show Site Background Image'
 default_value_callback: ''
 settings: {  }
 field_type: list_string
