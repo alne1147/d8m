@@ -3,10 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_article_tags
     - field.field.node.page.field_block_options
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_meta
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_related_content
     - field.field.node.page.field_rows
     - node.type.page
   module:
@@ -35,6 +37,8 @@ third_party_settings:
       children:
         - field_block_options
         - field_landing_page_options
+        - field_related_content
+        - field_article_tags
       parent_name: ''
       weight: 1
       format_type: details
@@ -65,6 +69,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_article_tags:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_block_options:
     weight: 2
     settings: {  }
@@ -82,6 +95,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_related_content:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_rows:
     weight: 3
