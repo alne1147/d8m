@@ -10,7 +10,7 @@ id: node.page.field_landing_page_options
 field_name: field_landing_page_options
 entity_type: node
 bundle: page
-label: 'Page Options'
+label: Background
 description: ''
 required: false
 translatable: true
