@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-name: 'Free Tagging'
+name: 'Related Tags'
 vid: free_tagging
 description: ''
 hierarchy: 0
