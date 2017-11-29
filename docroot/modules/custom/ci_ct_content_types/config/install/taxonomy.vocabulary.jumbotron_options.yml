@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Jumbotron Options'
+vid: jumbotron_options
+description: ''
+hierarchy: 0
+weight: 0

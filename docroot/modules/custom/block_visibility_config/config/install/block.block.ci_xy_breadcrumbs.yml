@@ -8,7 +8,7 @@ dependencies:
 id: ci_xy_breadcrumbs
 theme: ci_xy
 region: header
-weight: -7
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

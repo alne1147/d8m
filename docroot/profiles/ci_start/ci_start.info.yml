@@ -156,8 +156,6 @@ dependencies:
   - views_templates
   - webform
   - webform_node
-  - webform_templates
-  - webform_ui
   - simple_sitemap
   - termcase
   

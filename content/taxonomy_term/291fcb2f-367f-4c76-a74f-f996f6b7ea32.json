@@ -1,0 +1,62 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100037?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
+        }
+    },
+    "tid": [
+        {
+            "value": 100037
+        }
+    ],
+    "uuid": [
+        {
+            "value": "291fcb2f-367f-4c76-a74f-f996f6b7ea32"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "jumbotron_options"
+        }
+    ],
+    "name": [
+        {
+            "value": "Site Default",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-11-29T15:31:23+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Site Default | CI Drupal 8"
+            }
+        }
+    ]
+}

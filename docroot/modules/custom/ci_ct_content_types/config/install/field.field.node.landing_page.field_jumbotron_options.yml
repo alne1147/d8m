@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jumbotron_options
+    - node.type.landing_page
+    - taxonomy.vocabulary.jumbotron_options
+id: node.landing_page.field_jumbotron_options
+field_name: field_jumbotron_options
+entity_type: node
+bundle: landing_page
+label: 'Jumbotron Options'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 291fcb2f-367f-4c76-a74f-f996f6b7ea32
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      jumbotron_options: jumbotron_options
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

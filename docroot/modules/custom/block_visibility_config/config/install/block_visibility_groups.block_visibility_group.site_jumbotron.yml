@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: site_jumbotron
+label: 'Site Jumbotron'
+logic: and
+conditions:
+  2df472f3-1280-490d-b516-145491c08f04:
+    id: term
+    negate: 0
+    tid: '100037'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 2df472f3-1280-490d-b516-145491c08f04
+allow_other_conditions: true
