@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_visibility_groups.block_visibility_group.custom_jumbotron
     - views.view.jumbotrons
   module:
     - block_class
@@ -24,14 +25,15 @@ settings:
   id: 'views_block:jumbotrons-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: ''
+    block_visibility_group: custom_jumbotron
     context_mapping: {  }
   menu_position:
     id: menu_position

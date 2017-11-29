@@ -6,7 +6,7 @@ dependencies:
 id: ci_xy_local_tasks
 theme: ci_xy
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

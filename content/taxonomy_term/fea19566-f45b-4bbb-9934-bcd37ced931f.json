@@ -41,8 +41,9 @@
     ],
     "changed": [
         {
-            "value": 1503957832,
-            "lang": "en"
+            "value": "2017-08-28T22:03:52+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "default_langcode": [

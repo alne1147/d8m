@@ -1,20 +1,20 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100021?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
         }
     },
     "tid": [
         {
-            "value": 100021
+            "value": 100038
         }
     ],
     "uuid": [
         {
-            "value": "fa94d31b-04a7-4d9c-bb20-96fc7310f5d0"
+            "value": "0d5b0d4e-766d-44c4-9324-f0618b0c733c"
         }
     ],
     "langcode": [
@@ -25,12 +25,12 @@
     ],
     "vid": [
         {
-            "target_id": "free_tagging"
+            "target_id": "jumbotron_options"
         }
     ],
     "name": [
         {
-            "value": "State",
+            "value": "Custom Jumbotron",
             "lang": "en"
         }
     ],
@@ -41,7 +41,7 @@
     ],
     "changed": [
         {
-            "value": "2017-10-17T19:58:08+00:00",
+            "value": "2017-11-29T15:31:34+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "State | CI Drupal 8"
+                "title": "Custom Jumbotron | CI Drupal 8"
             }
         }
     ]

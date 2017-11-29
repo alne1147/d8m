@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: custom_jumbotron
+label: 'Custom Jumbotron'
+logic: and
+conditions: {  }
+allow_other_conditions: true

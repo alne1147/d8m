@@ -8,7 +8,7 @@ dependencies:
 id: ci_xy_help
 theme: ci_xy
 region: help
-weight: -7
+weight: -6
 provider: null
 plugin: help_block
 settings:
