@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.row_block
+    - block_content.type.simple_maps
+    - field.storage.node.field_jumbotron
+    - node.type.landing_page
+id: node.landing_page.field_jumbotron
+field_name: field_jumbotron
+entity_type: node
+bundle: landing_page
+label: 'Jumbotron Selection'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      row_block: row_block
+      simple_maps: simple_maps
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: row_block
+field_type: entity_reference

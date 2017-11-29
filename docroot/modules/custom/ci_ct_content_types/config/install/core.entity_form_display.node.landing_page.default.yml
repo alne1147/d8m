@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
@@ -87,6 +88,12 @@ content:
           entity_type: node
           bundle: landing_page
     type: image_image
+    region: content
+  field_jumbotron:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_landing_page_options:
     weight: 121
