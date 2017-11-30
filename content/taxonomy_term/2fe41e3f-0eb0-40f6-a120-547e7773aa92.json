@@ -1,0 +1,62 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
+        }
+    },
+    "tid": [
+        {
+            "value": 100039
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2fe41e3f-0eb0-40f6-a120-547e7773aa92"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "footer_options"
+        }
+    ],
+    "name": [
+        {
+            "value": "Show Site Footer",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-11-30T21:08:25+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Show Site Footer | CI Drupal 8"
+            }
+        }
+    ]
+}

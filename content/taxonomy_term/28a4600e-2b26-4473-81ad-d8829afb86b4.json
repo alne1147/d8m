@@ -1,0 +1,62 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100040?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
+        }
+    },
+    "tid": [
+        {
+            "value": 100040
+        }
+    ],
+    "uuid": [
+        {
+            "value": "28a4600e-2b26-4473-81ad-d8829afb86b4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "footer_options"
+        }
+    ],
+    "name": [
+        {
+            "value": "Hide Site Footer",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 1
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-11-30T21:15:00+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Hide Site Footer | CI Drupal 8"
+            }
+        }
+    ]
+}
