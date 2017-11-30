@@ -32,7 +32,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_background_color:
-    weight: 122
+    weight: 11
     settings:
       color: FFFFFF
     third_party_settings:
@@ -61,7 +61,7 @@ content:
     type: jquery_colorpicker
     region: content
   field_background_image:
-    weight: 123
+    weight: 12
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -91,31 +91,53 @@ content:
     type: image_image
     region: content
   field_jumbotron:
-    weight: 124
+    weight: 14
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        6f0dec73-3d2e-4f8d-bf6e-2ab6c1245b61:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100038'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
     type: options_select
     region: content
   field_jumbotron_options:
-    weight: 125
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_landing_page_options:
-    weight: 121
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_meta:
-    weight: 27
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_rows:
-    weight: 26
+    weight: 6
     settings:
       title: Row
       title_plural: Rows
@@ -128,7 +150,7 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 8
     settings: {  }
     region: content
     third_party_settings: {  }
@@ -149,7 +171,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
