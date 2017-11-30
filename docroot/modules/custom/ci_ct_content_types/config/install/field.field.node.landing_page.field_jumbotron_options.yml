@@ -5,12 +5,14 @@ dependencies:
     - field.storage.node.field_jumbotron_options
     - node.type.landing_page
     - taxonomy.vocabulary.jumbotron_options
+  content:
+    - 'taxonomy_term:jumbotron_options:291fcb2f-367f-4c76-a74f-f996f6b7ea32'
 id: node.landing_page.field_jumbotron_options
 field_name: field_jumbotron_options
 entity_type: node
 bundle: landing_page
 label: 'Jumbotron Options'
-description: ''
+description: 'Show Site Jumbotron?'
 required: false
 translatable: false
 default_value:

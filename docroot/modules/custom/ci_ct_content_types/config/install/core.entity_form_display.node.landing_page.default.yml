@@ -129,7 +129,7 @@ content:
     weight: 6
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_landing_page_options:
     weight: 12
