@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Footer Options'
+vid: footer_options
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_options
+    - node.type.landing_page
+    - taxonomy.vocabulary.footer_options
+  content:
+    - 'taxonomy_term:footer_options:2fe41e3f-0eb0-40f6-a120-547e7773aa92'
+id: node.landing_page.field_footer_options
+field_name: field_footer_options
+entity_type: node
+bundle: landing_page
+label: 'Footer Options'
+description: 'Show Site Footer Area?'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 2fe41e3f-0eb0-40f6-a120-547e7773aa92
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      footer_options: footer_options
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
