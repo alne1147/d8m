@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: site_footer
+label: 'Site Footer'
+logic: and
+conditions:
+  58d08248-2cc6-479f-955e-9022dcef0c4d:
+    id: term
+    negate: 0
+    tid: '100039'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 58d08248-2cc6-479f-955e-9022dcef0c4d
+allow_other_conditions: true

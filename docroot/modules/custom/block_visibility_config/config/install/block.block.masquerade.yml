@@ -17,7 +17,7 @@ third_party_settings:
 id: masquerade
 theme: ci_xy
 region: footer
-weight: -6
+weight: -4
 provider: null
 plugin: masquerade
 settings:
