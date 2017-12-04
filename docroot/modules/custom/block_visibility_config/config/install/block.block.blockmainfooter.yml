@@ -19,7 +19,7 @@ third_party_settings:
 id: blockmainfooter
 theme: ci_xy
 region: footer
-weight: -5
+weight: 0
 provider: null
 plugin: 'block_content:8e0f4fc5-1848-4e37-892d-08efb5472307'
 settings:

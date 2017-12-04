@@ -14,4 +14,4 @@ conditions:
     context_mapping:
       node: '@node.node_route_context:node'
     uuid: 58d08248-2cc6-479f-955e-9022dcef0c4d
-allow_other_conditions: true
+allow_other_conditions: false
