@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_footer_options
+    - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
@@ -38,6 +39,7 @@ hidden:
   field_background_color: true
   field_background_image: true
   field_footer_options: true
+  field_footer_selection: true
   field_jumbotron: true
   field_jumbotron_options: true
   field_landing_page_options: true
