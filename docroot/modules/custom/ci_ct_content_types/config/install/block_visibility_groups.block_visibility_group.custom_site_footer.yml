@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: custom_site_footer
+label: 'Custom Site Footer'
+logic: and
+conditions:
+  d786a14d-295c-4e4b-948a-15743a7b3206:
+    id: term
+    negate: 0
+    tid: '100042'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: d786a14d-295c-4e4b-948a-15743a7b3206
+allow_other_conditions: false
