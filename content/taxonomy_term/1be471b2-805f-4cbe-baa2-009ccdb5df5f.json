@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100042?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
@@ -9,12 +9,12 @@
     },
     "tid": [
         {
-            "value": 100039
+            "value": 100042
         }
     ],
     "uuid": [
         {
-            "value": "2fe41e3f-0eb0-40f6-a120-547e7773aa92"
+            "value": "1be471b2-805f-4cbe-baa2-009ccdb5df5f"
         }
     ],
     "langcode": [
@@ -30,18 +30,18 @@
     ],
     "name": [
         {
-            "value": "Show Site Footer",
+            "value": "Show Alternative Footer",
             "lang": "en"
         }
     ],
     "weight": [
         {
-            "value": 1
+            "value": 0
         }
     ],
     "changed": [
         {
-            "value": "2017-12-04T17:18:31+00:00",
+            "value": "2017-12-04T17:57:27+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Show Site Footer | CI Drupal 8"
+                "title": "Show Alternative Footer | CI Drupal 8"
             }
         }
     ]

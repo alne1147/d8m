@@ -30,18 +30,18 @@
     ],
     "name": [
         {
-            "value": "Hide Site Footer",
+            "value": "No Footer",
             "lang": "en"
         }
     ],
     "weight": [
         {
-            "value": 1
+            "value": 0
         }
     ],
     "changed": [
         {
-            "value": "2017-11-30T21:15:00+00:00",
+            "value": "2017-12-04T17:18:31+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Hide Site Footer | CI Drupal 8"
+                "title": "No Footer | CI Drupal 8"
             }
         }
     ]
