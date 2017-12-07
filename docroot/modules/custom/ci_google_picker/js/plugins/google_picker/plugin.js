@@ -46,7 +46,13 @@
     function createPicker() {
         if (pickerApiLoaded && oauthToken) {
             var picker = new google.picker.PickerBuilder().
-            addView(google.picker.ViewId.DOCS).
+            addView(google.picker.ViewId.PHOTOS).
+            addView(new google.picker.DocsView().setIncludeFolders(true).setSelectFolderEnabled(true).setOwnedByMe(true)).
+            addView(new google.picker.DocsView().setIncludeFolders(true).setSelectFolderEnabled(true).setOwnedByMe(false)).
+            addView(new google.picker.DocsUploadView().setIncludeFolders(true)).
+            enableFeature(google.picker.Feature.SIMPLE_UPLOAD_ENABLED).
+            enableFeature(google.picker.Feature.MULTISELECT_ENABLED).
+            enableFeature(google.picker.Feature.SUPPORT_TEAM_DRIVES).
             setOAuthToken(oauthToken).
             setOrigin(window.location.protocol + '//' + window.location.host).
             setCallback(pickerCallback).
@@ -67,24 +73,25 @@
         var url = 'nothing';
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
             var doc = data[google.picker.Response.DOCUMENTS][0];
-            console.log(doc);
-            var icon = doc.iconUrl;
-            var name = doc.name;
+            var icon = "";
+            var name = "";
+            if(doc.mimeType === "application/vnd.google-apps.photo"){
+                //console.log(doc)
+                icon = doc.thumbnails[4].url;
+                name = "";
+            }
+            else {
+                icon = doc.iconUrl;
+                name = doc.name;
+            }
             url = doc[google.picker.Document.URL];
         }
         if(url != 'nothing'){
+
             CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
         }
 
     }
-
-    /**
-     *  Sign out the user upon button click.
-     */
-    function handleSignoutClick(event) {
-        gapi.auth2.getAuthInstance().signOut();
-    }
-
 
     // Register plugin.
     CKEDITOR.plugins.add('google_picker', {
@@ -99,7 +106,7 @@
                 icon: this.path + 'icons/accordion.png',
                 label: Drupal.t('Insert google_picker')
             });
-            
+
             // Command to insert initial structure.
             editor.addCommand('addgoogle_pickerCmd', new CKEDITOR.dialogCommand('simpleLinkDialog'));
 
@@ -107,31 +114,27 @@
             {
                 return {
                     title : 'Login to Google',
-                    minWidth : 400,
-                    minHeight : 200,
+                    minWidth : 200,
+                    minHeight : 100,
                     contents :
                         [
                             {
                                 id : 'general',
-                                label : 'Settings',
+                                label : 'Google Drive Login',
                                 elements :
                                     [
                                         {
+                                          type: 'html',
+                                          html: 'Click the button below to authenticate with Google.'
+                                        },
+                                        {
                                             id : 'authorize-button',
                                             type: 'button',
-                                            label: 'Authorize',
+                                            label: 'Show my Google Drive',
                                             onClick: function() {
                                                 handleClientLoad();
                                             }
                                         },
-                                        {
-                                            id: 'signout-button',
-                                            type: 'button',
-                                            label: 'Signout',
-                                            onClick: function() {
-                                                handleSignoutClick();
-                                            }
-                                        }
                                     ]
                             }
                         ]
