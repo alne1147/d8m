@@ -52,6 +52,19 @@ third_party_settings:
         open: false
       label: 'Landing Page Options'
       region: content
+    group_layout_options:
+      children:
+        - field_rows
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Layout Options'
+      region: content
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -197,13 +210,13 @@ content:
     type: options_select
     region: content
   field_meta:
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_rows:
-    weight: 9
+    weight: 8
     settings:
       title: Row
       title_plural: Rows
@@ -216,7 +229,7 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 11
+    weight: 10
     settings: {  }
     region: content
     third_party_settings: {  }
@@ -237,7 +250,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
