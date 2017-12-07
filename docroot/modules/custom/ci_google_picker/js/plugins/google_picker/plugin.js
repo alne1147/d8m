@@ -15,7 +15,7 @@
     var CLIENT_ID = '332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com';
 
     // Scope to use to access user's photos.
-    var scope = ['https://www.googleapis.com/auth/drive'];
+    var scope = ['https://www.googleapis.com/auth/drive.readonly'];
     var pickerApiLoaded = false;
     var oauthToken;
     /**
@@ -46,13 +46,11 @@
     function createPicker() {
         if (pickerApiLoaded && oauthToken) {
             var picker = new google.picker.PickerBuilder().
-            addView(google.picker.ViewId.PHOTOS).
+            addView(google.picker.ViewId.DOCS).
             setOAuthToken(oauthToken).
             setOrigin(window.location.protocol + '//' + window.location.host).
             setCallback(pickerCallback).
-
-                setAppId('332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com').
-                //.setDeveloperKey(developerKey).
+            setAppId('332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com').
             build();
             picker.setVisible(true);
         }
@@ -68,10 +66,12 @@
         var url = 'nothing';
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
             var doc = data[google.picker.Response.DOCUMENTS][0];
+            console.log(doc);
+            var icon = doc.iconUrl;
+            var name = doc.name;
             url = doc[google.picker.Document.URL];
         }
-        var message = 'You picked: ' + url;
-        document.getElementById('cke_dialog_contents_89').innerHTML = message;
+        CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
     }
 
     /**
