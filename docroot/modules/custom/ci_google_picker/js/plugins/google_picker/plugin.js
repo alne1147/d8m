@@ -59,6 +59,7 @@
         if (authResult && !authResult.error) {
             oauthToken = authResult.access_token;
             createPicker();
+            CKEDITOR.dialog.getCurrent().hide();
         }
     }
     // A simple callback implementation.
@@ -71,7 +72,10 @@
             var name = doc.name;
             url = doc[google.picker.Document.URL];
         }
-        CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
+        if(url != 'nothing'){
+            CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
+        }
+
     }
 
     /**
@@ -82,18 +86,11 @@
     }
 
 
-
-
-
-
     // Register plugin.
     CKEDITOR.plugins.add('google_picker', {
         hidpi: true,
         icons: 'accordion',
         init: function (editor) {
-
-
-
 
 
             // Add single button.
@@ -102,12 +99,9 @@
                 icon: this.path + 'icons/accordion.png',
                 label: Drupal.t('Insert google_picker')
             });
-
-
+            
             // Command to insert initial structure.
             editor.addCommand('addgoogle_pickerCmd', new CKEDITOR.dialogCommand('simpleLinkDialog'));
-
-
 
             CKEDITOR.dialog.add( 'simpleLinkDialog', function( editor )
             {
