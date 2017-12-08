@@ -8,8 +8,8 @@
 
     var script = document.createElement("script"); // Make a script DOM node
     script.src = 'https://apis.google.com/js/api.js'; // Set it's src to the provided URL
-    script.async = 'async';
-    document.head.appendChild(script);
+    script.async = 'async'; //set script load async
+    document.head.appendChild(script); //attach script to head
 
     // Client ID and API key from the Developer Console
     var CLIENT_ID = '332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com';
@@ -56,7 +56,7 @@
             setOAuthToken(oauthToken).
             setOrigin(window.location.protocol + '//' + window.location.host).
             setCallback(pickerCallback).
-            setAppId('332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com').
+            setAppId(CLIENT_ID).
             build();
             picker.setVisible(true);
         }
@@ -75,14 +75,14 @@
             var doc = data[google.picker.Response.DOCUMENTS][0];
             var icon = "";
             var name = "";
-            if(doc.mimeType === "application/vnd.google-apps.photo"){
-                //console.log(doc)
-                icon = doc.thumbnails[4].url;
-                name = "";
+            console.log(doc);
+            if(doc.mimeType === "application/vnd.google-apps.photo" || doc.mimeType === 'image/png' || doc.mimeType === 'image/gif'){
+              icon = doc.thumbnails[4].url;
+              name = "";
             }
             else {
-                icon = doc.iconUrl;
-                name = doc.name;
+              icon = doc.iconUrl;
+              name = doc.name;
             }
             url = doc[google.picker.Document.URL];
         }
@@ -96,14 +96,13 @@
     // Register plugin.
     CKEDITOR.plugins.add('google_picker', {
         hidpi: true,
-        icons: 'accordion',
+        icons: 'google_picker',
         init: function (editor) {
-
 
             // Add single button.
             editor.ui.addButton('google_picker', {
                 command: 'addgoogle_pickerCmd',
-                icon: this.path + 'icons/accordion.png',
+                icon: this.path + '../../../images/google-icon.svg',
                 label: Drupal.t('Insert google_picker')
             });
 
@@ -125,7 +124,7 @@
                                     [
                                         {
                                           type: 'html',
-                                          html: 'Click the button below to authenticate with Google.'
+                                          html: 'Click the button below to view your Drive.'
                                         },
                                         {
                                             id : 'authorize-button',
