@@ -2,10 +2,11 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - term_condition
 id: site_footer
 label: 'Site Footer'
-logic: and
+logic: or
 conditions:
   58d08248-2cc6-479f-955e-9022dcef0c4d:
     id: term
@@ -14,4 +15,14 @@ conditions:
     context_mapping:
       node: '@node.node_route_context:node'
     uuid: 58d08248-2cc6-479f-955e-9022dcef0c4d
+  a42d1f85-1f0d-4663-94fa-64d7e5fe2332:
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      event: event
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a42d1f85-1f0d-4663-94fa-64d7e5fe2332
 allow_other_conditions: false
