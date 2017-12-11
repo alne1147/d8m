@@ -33,7 +33,7 @@ class GooglePickerButton extends CKEditorPluginBase {
     return [
       'google_picker' => [
         'label' => t('Google Picker'),
-        'image' => base_path() . 'libraries/div/icons/creatediv.png',
+        'image' => drupal_get_path('module', 'ci_google_picker')  . '/images/google-icon.svg',
       ],
     ];
   }
