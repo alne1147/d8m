@@ -12,16 +12,6 @@
     document.head.appendChild(script); //attach script to head
 
 
-
-      jQuery(document).ajaxStop(function() {
-				var currentEditor = "";
-				for(var i in CKEDITOR.instances){
-					CKEDITOR.instances[i].on('focus', function(e){
-						currentEditor = e.editor.name;
-					});
-				}
-      });
-
     // Client ID and API key from the Developer Console
     var CLIENT_ID = '332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com';
 
@@ -99,7 +89,7 @@
             url = doc[google.picker.Document.URL];
         }
         if(url != 'nothing') {
-            CKEDITOR.instances[currentEditor].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
+            CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
 				}
 
     }
