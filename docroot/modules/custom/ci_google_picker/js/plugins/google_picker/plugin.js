@@ -11,6 +11,17 @@
     script.async = 'async'; //set script load async
     document.head.appendChild(script); //attach script to head
 
+
+
+      jQuery(document).ajaxStop(function() {
+				var currentEditor = "";
+				for(var i in CKEDITOR.instances){
+					CKEDITOR.instances[i].on('focus', function(e){
+						currentEditor = e.editor.name;
+					});
+				}
+      });
+
     // Client ID and API key from the Developer Console
     var CLIENT_ID = '332349125167-cqat5skhit02hsteudeqtsigomtcevmh.apps.googleusercontent.com';
 
@@ -70,12 +81,13 @@
     }
     // A simple callback implementation.
     function pickerCallback(data) {
+        console.log(JSON.stringify(data));
         var url = 'nothing';
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
             var doc = data[google.picker.Response.DOCUMENTS][0];
             var icon = "";
             var name = "";
-            console.log(doc);
+            //console.log(doc);
             if(doc.mimeType === "application/vnd.google-apps.photo" || doc.mimeType === 'image/png' || doc.mimeType === 'image/gif'){
               icon = doc.thumbnails[4].url;
               name = "";
@@ -86,12 +98,14 @@
             }
             url = doc[google.picker.Document.URL];
         }
-        if(url != 'nothing'){
-
-            CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
-        }
+        if(url != 'nothing') {
+            CKEDITOR.instances[currentEditor].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
+				}
 
     }
+
+
+
 
     // Register plugin.
     CKEDITOR.plugins.add('google_picker', {
