@@ -13,7 +13,7 @@ selection_criteria:
     bundles:
       landing_page: landing_page
       page: page
-      webform: webform
+    
     negate: false
     context_mapping:
       node: node

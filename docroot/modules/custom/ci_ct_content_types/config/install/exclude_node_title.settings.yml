@@ -4,7 +4,6 @@ search: false
 content_types:
   landing_page: all
   page: none
-  webform: none
 content_type_modes:
   landing_page:
     - full

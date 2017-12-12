@@ -34,9 +34,6 @@ drush en ci_article_setup -y
 
 drush php-eval 'node_access_rebuild()'
 
-#*For Bootstrap Module loading errors:* The following module is missing from the file system: webform_bootstrap_test_theme bootstrap.inc:250
-drush sql-query "DELETE FROM key_value WHERE collection='system.schema' AND name='webform_bootstrap_test_theme';"
-
 drush -y config-set system.performance css.preprocess 0
 drush -y config-set system.performance js.preprocess 0
 

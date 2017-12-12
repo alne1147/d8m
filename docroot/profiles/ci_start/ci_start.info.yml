@@ -146,6 +146,7 @@ dependencies:
   - slick_ui
   - block_styles
   - styles_api
+  - twig_blocks
   - chosen
   - chosen_field
   - chosen_lib
@@ -154,8 +155,6 @@ dependencies:
   - video_embed_wysiwyg
   - viewsreference
   - views_templates
-  - webform
-  - webform_node
   - simple_sitemap
   - termcase
   
