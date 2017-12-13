@@ -12,7 +12,7 @@ field_name: field_jumbotron_options
 entity_type: node
 bundle: landing_page
 label: 'Jumbotron Options'
-description: 'Show Site Jumbotron?'
+description: ''
 required: true
 translatable: false
 default_value:

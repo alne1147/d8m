@@ -12,7 +12,7 @@ field_name: field_footer_options
 entity_type: node
 bundle: landing_page
 label: 'Footer Options'
-description: 'Show Site Footer Area?'
+description: ''
 required: true
 translatable: false
 default_value:

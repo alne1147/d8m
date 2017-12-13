@@ -144,6 +144,7 @@ dependencies:
   - slick_media
   - slick_paragraphs
   - slick_ui
+  - sharethis_block
   - block_styles
   - styles_api
   - twig_blocks
