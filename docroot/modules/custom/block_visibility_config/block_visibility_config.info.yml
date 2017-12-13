@@ -16,6 +16,7 @@ dependencies:
   - menu_condition
   - node
   - search
+  - sharethis_block
   - system
   - taxonomy
   - term_condition
