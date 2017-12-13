@@ -3,6 +3,39 @@
 }
 
 .paragraph {
+    //&.paragraph--width--wide,
+    //&.paragraph--width--medium {
+    //  .paragraph__column--container-wrapper {
+    //    .container {
+    //      @media (max-width: $screen-xs) {
+    //        width: 100%;
+    //      }
+    //      @media (min-width: $screen-sm) {
+    //        width: 600px;
+    //      }
+    //      @media (min-width: $screen-md) {
+    //        width: 800px ;
+    //      }
+    //      @media (min-width: $screen-lg) {
+    //        width: 100%;
+    //      }
+    //      @media (min-width: $screen-lg-2) {
+    //        width: 100%;
+    //      }
+    //    }
+    //  }
+    //}
+    &.paragraph--width--tiny,
+    &.paragraph--width--narrow,
+    &.paragraph--width--medium,
+    &.paragraph--width--wide,
+    &.paragraph--width--full {
+      .paragraph__column--container-wrapper {
+        .container {
+          width: 100%;
+        }
+      }
+    }
   > .paragraph__column {
     .row__title {
       text-align: center;
@@ -40,7 +73,7 @@
       }
       [class^="paragraph--type--bp-columns__"] {
         display: flex;
-        @media (max-width: $screen-sm-min) {
+        @media (max-width: $screen-xs-max) {
           margin-bottom:15px;
           &:first-child {
             padding-left:0;
@@ -116,6 +149,7 @@
               margin-left:66.66666667%;
             }
           }
+          &.paragraph--width--tiny.paragraph--alignment.paragraph--alignment-left,
           &.paragraph--width--narrow.paragraph--alignment.paragraph--alignment-left,
           &.paragraph--width--medium.paragraph--alignment.paragraph--alignment-left,
           &.paragraph--width--wide.paragraph--alignment.paragraph--alignment-left {
