@@ -28,7 +28,7 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
-  expand: 0
+  expand: 1
   parent: 'custom-menu:'
   suggestion: custom_menu
 visibility:
