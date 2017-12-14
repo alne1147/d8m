@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_date
     - node.type.article
     - node.type.event
-    - node.type.page
   module:
     - datetime
     - node
@@ -219,7 +218,6 @@ display:
           operator: in
           value:
             article: article
-            page: page
           group: 1
           exposed: false
           expose:
