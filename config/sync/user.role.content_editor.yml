@@ -22,3 +22,4 @@ permissions:
   - 'update paragraph content full_column_hero'
   - 'use editorial transition create_new_draft'
   - 'use exclude node title'
+  - 'use text format open_embed'
