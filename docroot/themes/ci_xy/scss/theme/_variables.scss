@@ -78,7 +78,7 @@ $container-large-desktop:   (1340px + $grid-gutter-width) !default;
  */
 //** Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width:         30px !default;
-$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint:     $screen-md-min !default;
 
 /* NAVBAR
  */

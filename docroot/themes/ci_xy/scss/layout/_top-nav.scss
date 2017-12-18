@@ -1,7 +1,7 @@
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-md) {
     position: absolute;
     background-color: transparent;
     margin-bottom: 0;
@@ -21,6 +21,11 @@
     }
     &.navbar-default {
       background-color: transparent;
+    }
+    .navbar-toggle {
+      @media (min-width: $screen-xs-max) {
+        margin-right: 0;
+      }
     }
     .navbar-collapse {
       @media (max-width: $screen-xs-min) {
@@ -138,6 +143,7 @@
         background-color: darken($color-brand-slate, 6%);
         color: #fff!important;
         padding: 10px 15px 10px 25px!important;
+        white-space: normal; // overrites boostrap nowrap white-
         &:hover {
           background-color: darken($color-brand-slate, 10%)!important; // #eaeaea
         }
