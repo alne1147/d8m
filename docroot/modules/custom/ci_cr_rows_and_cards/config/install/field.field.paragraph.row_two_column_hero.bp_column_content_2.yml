@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.card_open_embed
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
     - entity_reference_revisions
@@ -30,64 +31,74 @@ settings:
       bp_accordion: bp_accordion
       bp_block: bp_block
       bp_modal: bp_modal
+      card_open_embed: card_open_embed
       bp_tabs: bp_tabs
       bp_view: bp_view
     target_bundles_drag_drop:
       card_basic:
         enabled: true
-        weight: -39
+        weight: -45
       bp_accordion:
         enabled: true
-        weight: -38
+        weight: -44
       bp_accordion_section:
-        weight: -37
+        weight: -43
         enabled: false
       bp_blank:
-        weight: -36
+        weight: -42
         enabled: false
       bp_block:
         enabled: true
-        weight: -35
+        weight: -41
       bp_carousel:
-        weight: -34
+        weight: -40
         enabled: false
       bp_columns:
-        weight: -33
+        weight: -39
         enabled: false
       bp_columns_three_uneven:
-        weight: -32
+        weight: -38
         enabled: false
       bp_columns_two_uneven:
-        weight: -31
+        weight: -37
         enabled: false
       bp_contact:
-        weight: -30
+        weight: -36
         enabled: false
       bp_image:
-        weight: -29
+        weight: -35
         enabled: false
       bp_modal:
         enabled: true
-        weight: -28
+        weight: -34
       bp_simple:
-        weight: -27
+        weight: -33
         enabled: false
       bp_tab_section:
-        weight: -26
+        weight: -32
         enabled: false
+      card_open_embed:
+        enabled: true
+        weight: -31
       bp_tabs:
         enabled: true
-        weight: -25
+        weight: -30
       bp_view:
         enabled: true
-        weight: -24
+        weight: -29
       full_column_hero:
-        weight: -23
+        weight: -28
         enabled: false
       row_two_column_hero:
-        weight: -22
+        weight: -27
         enabled: false
       row_three_column_hero:
-        weight: -21
+        weight: -26
+        enabled: false
+      bp_column_wrapper:
+        weight: -25
+        enabled: false
+      row_slide_container:
+        weight: -24
         enabled: false
 field_type: entity_reference_revisions

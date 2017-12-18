@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card_open_embed
+label: 'Card - Open Embed'
+behavior_plugins: {  }
