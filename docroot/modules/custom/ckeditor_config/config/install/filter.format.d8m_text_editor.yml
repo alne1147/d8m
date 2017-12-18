@@ -25,7 +25,7 @@ filters:
     id: filter_html
     provider: filter
     status: false
-    weight: -43
+    weight: -41
     settings:
       allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <a href hreflang name !href accesskey id rel target title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <p> <pre> <span> <l class="fancy title"> <i class="fancy title fa fa-ban fa-arrow-down"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr><i>'
       filter_html_help: true
@@ -40,13 +40,13 @@ filters:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: -44
+    weight: -42
     settings: {  }
   filter_url:
     id: filter_url
     provider: filter
     status: true
-    weight: -45
+    weight: -43
     settings:
       filter_url_length: 72
   filter_autop:
@@ -65,17 +65,17 @@ filters:
     id: editor_file_reference
     provider: editor
     status: false
-    weight: -41
+    weight: -39
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -42
+    weight: -40
     settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -40
+    weight: -38
     settings: {  }
