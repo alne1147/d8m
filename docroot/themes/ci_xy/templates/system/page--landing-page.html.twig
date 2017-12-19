@@ -83,53 +83,14 @@
     {{ page.jumbotron }}
   </div>
 {% endif %}
-{# Navbar #}
-{% if page.navigation or page.navigation_collapsible %}
-  {% block navbar %}
-    {%
-      set navbar_classes = [
-        'navbar',
-        theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-      ]
-    %}
-    <div class="top-nav" {% if nav_color is not empty %} style="background-color:#{{ nav_color }}" {% endif %}>
-        <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-          {% if not navbar_attributes.hasClass('container') %}
-            <div class="{{ container }}">
-          {% endif %}
-          <div class="navbar-header">
-            {{ page.navigation }}
-            {# .btn-navbar is used as the toggle for collapsed navbar content #}
-            {% if page.navigation_collapsible %}
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            {% endif %}
-          </div>
-          {# Navigation (collapsible) #}
-          {% if page.navigation_collapsible %}
-            <div id="navbar-collapse" class="navbar-collapse collapse">
-              {{ page.navigation_collapsible }}
-            </div>
-          {% endif %}
-          {% if not navbar_attributes.hasClass('container') %}
-            </div>
-          {% endif %}
-        </header>
-    </div>
-  {% endblock %}
-{% endif %}
+ {% include directory ~ '/templates/includes/navbar.html.twig' %}
 {# Main #}
 {% block main %}
   {% if node.field_landing_page_options.value == 'Show Site Background Image' %}
   <div id="xyBackground" style="background-image: url('{{ bg_image_url }}');">
     {# <div>Site BG Image</div> #}
   {% elseif node.field_landing_page_options.value == 'Show Site Background Color' %}
-  <div id="xyBackground" style ="background-color:#{{ global_bg_color  }};">
+  <div id="xyBackground" class ="{{ global_bg_color  }}">
     {# <div>Site BG Color</div> #}
   {% elseif node.field_landing_page_options.value == 'Show Custom Background Image' %}
   <div id="xyBackground" style="background-image: url('{{ file_url(node.field_background_image.entity.fileuri) }}');">
@@ -193,34 +154,5 @@
   </div>
 </div>
 {% endblock %}
-{# footer #}
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer__content-footer" role="contentinfo" {% if footer_color is not empty %} style="background-color:#{{ footer_color }}" {% endif %}>
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
-{# global footer #}
-{% block global_footer %}
-<footer class="footer__global-footer" role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-        <ul class="footer__global-footer--links">
-          <li>&#169; {{ node.createdtime | date("Y") }} State of Colorado</li>
-          <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
-          <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
-          <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
-          <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <div class="footer__logo">
-          <a class="logo--cogov" href="https://www.colorado.gov"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-{% endblock %}
+
+      {% include directory ~ '/templates/includes/footer.html.twig' %}
