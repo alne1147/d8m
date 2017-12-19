@@ -58,7 +58,7 @@ content:
     region: content
   field_rows:
     weight: 5
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
