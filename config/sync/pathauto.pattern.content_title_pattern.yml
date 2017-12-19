@@ -1,4 +1,3 @@
-uuid: 34f43fbc-0856-4e1d-9187-3b4edfa6130d
 langcode: en
 status: true
 dependencies:
@@ -11,17 +10,17 @@ label: 'Content Title Pattern'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  dfe32de4-0aa8-4d3d-878e-a5c030658a47:
+  52e96856-f823-41e4-90e6-1c5745d52ee4:
     id: node_type
     bundles:
       article: article
+      event: event
       landing_page: landing_page
       page: page
-      webform: webform
     negate: false
     context_mapping:
       node: node
-    uuid: dfe32de4-0aa8-4d3d-878e-a5c030658a47
+    uuid: 52e96856-f823-41e4-90e6-1c5745d52ee4
 selection_logic: and
 weight: -5
 relationships: {  }
