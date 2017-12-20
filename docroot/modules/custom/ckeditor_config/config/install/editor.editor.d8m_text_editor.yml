@@ -38,9 +38,9 @@ settings:
         -
           name: Media
           items:
-            - file_browser
             - Blockquote
             - video_embed
+            - google_picker
         -
           name: Tools
           items:

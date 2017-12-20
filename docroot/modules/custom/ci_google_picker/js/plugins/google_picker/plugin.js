@@ -71,7 +71,7 @@
     }
     // A simple callback implementation.
     function pickerCallback(data) {
-        console.log(JSON.stringify(data));
+        //console.log(JSON.stringify(data));
         var url = 'nothing';
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
             var doc = data[google.picker.Response.DOCUMENTS][0];
@@ -91,7 +91,6 @@
         if(url != 'nothing') {
             CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
 				}
-
     }
 
 
