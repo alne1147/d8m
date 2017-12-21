@@ -19,3 +19,13 @@ matchers:
         page: page
       group_by_bundle: true
       include_unpublished: true
+  b7953468-83ed-4904-8d21-8fb963662123:
+    uuid: b7953468-83ed-4904-8d21-8fb963662123
+    id: 'entity:media'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        document: document
+        image: image
+      group_by_bundle: false
