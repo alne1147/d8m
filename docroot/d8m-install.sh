@@ -39,4 +39,5 @@ drush -y config-set system.performance js.preprocess 0
 
 drush cim --partial -y
 drush dcdi -y
+drush features-import-all -y
 drush cr

@@ -2,5 +2,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: bp_accordion
-label: 'Card - Accordion'
+label: 'Row - Accordion'
 behavior_plugins: {  }

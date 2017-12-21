@@ -3,11 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_date
     - node.type.article
-    - node.type.event
   module:
-    - datetime
     - node
     - text
     - user
