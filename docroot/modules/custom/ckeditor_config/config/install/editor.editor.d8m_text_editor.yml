@@ -5,6 +5,13 @@ dependencies:
     - filter.format.d8m_text_editor
   module:
     - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: txt
 format: d8m_text_editor
 editor: ckeditor
 settings:
@@ -30,6 +37,8 @@ settings:
             - Link
             - Unlink
             - Linkit
+            - DrupalFile
+            - file_browser
         -
           name: Lists
           items:
@@ -40,7 +49,6 @@ settings:
           items:
             - Blockquote
             - video_embed
-            - google_picker
         -
           name: Tools
           items:
