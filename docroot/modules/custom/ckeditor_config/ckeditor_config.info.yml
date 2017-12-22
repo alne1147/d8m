@@ -7,7 +7,9 @@ dependencies:
   - crop
   - editor
   - entity_embed
+  - file
   - filter
+  - image
   - linkit
   - node
   - video_embed_wysiwyg
