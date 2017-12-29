@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:db2cad05-1e3b-4b35-b163-99d7d036130c'
   module:
     - entity_embed
     - file
