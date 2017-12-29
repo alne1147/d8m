@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.document_display.field_file
+    - media_entity.bundle.document_display
+  module:
+    - pdf
+id: media.document_display.default
+targetEntityType: media
+bundle: document_display
+mode: default
+content:
+  field_file:
+    weight: 1
+    label: above
+    settings:
+      keep_pdfjs: '1'
+      width: 100%
+      height: 800px
+    third_party_settings: {  }
+    type: pdf_default
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

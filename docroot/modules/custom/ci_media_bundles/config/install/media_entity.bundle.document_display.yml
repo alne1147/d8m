@@ -6,13 +6,13 @@ dependencies:
     - media_entity_document
 third_party_settings:
   crop:
-    image_field: null
-id: document
-label: Document
-description: 'Select or upload a document to be used throughout the site.'
+    image_field: field_file
+id: document_display
+label: 'Document Display'
+description: 'Display of the uploaded Document.'
 type: document
 queue_thumbnail_downloads: false
 new_revision: false
 type_configuration:
-  source_field: ''
+  source_field: field_file
 field_map: {  }
