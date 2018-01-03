@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.document_list.field_files
+    - media_entity.bundle.document_list
+  module:
+    - file
+id: media.document_list.default
+targetEntityType: media
+bundle: document_list
+mode: default
+content:
+  field_files:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_table
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  thumbnail: true
+  uid: true
