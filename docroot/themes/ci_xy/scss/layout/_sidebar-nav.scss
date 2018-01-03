@@ -4,7 +4,7 @@
   background-color: $color-grey-sand;
   @media (min-width: $screen-md-2-min) {
     padding:0;
-  }g
+  }
   border-radius: $border-radius;
   h2.block-title {
     font-size: floor(($font-size-base * 1.5));
@@ -61,7 +61,6 @@
           }
         }
       }
-
       .dropdown-menu {
         padding-top: 0;
         padding-bottom: 0;
