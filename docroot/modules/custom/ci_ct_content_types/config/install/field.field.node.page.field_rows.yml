@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_rows
     - node.type.page
+    - paragraphs.paragraphs_type.bp_accordion
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
@@ -27,6 +28,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      bp_accordion: bp_accordion
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_columns_three_uneven: bp_columns_three_uneven
@@ -36,8 +38,8 @@ settings:
       row_slide_container: row_slide_container
     target_bundles_drag_drop:
       bp_accordion:
+        enabled: true
         weight: -39
-        enabled: false
       bp_accordion_section:
         weight: -38
         enabled: false
@@ -98,4 +100,7 @@ settings:
       row_slide_container:
         enabled: true
         weight: 38
+      card_open_embed:
+        weight: 40
+        enabled: false
 field_type: entity_reference_revisions

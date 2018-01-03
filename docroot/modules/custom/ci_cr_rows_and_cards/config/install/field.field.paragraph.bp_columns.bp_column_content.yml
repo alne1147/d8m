@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_column_content
-    - paragraphs.paragraphs_type.bp_accordion
     - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_carousel
     - paragraphs.paragraphs_type.bp_columns
@@ -12,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.card_open_embed
   module:
     - entity_reference_revisions
 id: paragraph.bp_columns.bp_column_content
@@ -29,75 +29,78 @@ settings:
   handler_settings:
     target_bundles:
       card_basic: card_basic
-      bp_accordion: bp_accordion
       bp_block: bp_block
       bp_carousel: bp_carousel
       bp_modal: bp_modal
+      card_open_embed: card_open_embed
       bp_tabs: bp_tabs
       bp_view: bp_view
       bp_image: bp_image
     target_bundles_drag_drop:
       bp_simple:
-        weight: -43
+        weight: -45
         enabled: false
       bp_blank:
-        weight: -42
+        weight: -44
         enabled: false
       card_basic:
         enabled: true
-        weight: -41
+        weight: -43
       bp_accordion:
-        enabled: true
-        weight: -40
+        weight: -42
+        enabled: false
       bp_block:
         enabled: true
-        weight: -39
+        weight: -41
       bp_carousel:
         enabled: true
-        weight: -38
+        weight: -40
       bp_columns:
-        weight: -37
+        weight: -39
         enabled: false
       bp_columns_three_uneven:
-        weight: -36
+        weight: -38
         enabled: false
       bp_columns_two_uneven:
-        weight: -35
+        weight: -37
         enabled: false
       bp_contact:
-        weight: -34
+        weight: -36
         enabled: false
       bp_modal:
         enabled: true
-        weight: -33
+        weight: -35
+      card_open_embed:
+        enabled: true
+        weight: -34
       bp_tabs:
         enabled: true
-        weight: -32
+        weight: -33
       bp_view:
         enabled: true
-        weight: -31
+        weight: -32
       bp_image:
         enabled: true
-        weight: -30
+        weight: -31
       bp_accordion_section:
-        weight: -29
+        weight: -30
         enabled: false
       bp_tab_section:
-        weight: -28
+        weight: -29
         enabled: false
       full_column_hero:
-        weight: -27
+        weight: -28
         enabled: false
       row_three_column_hero:
-        weight: -26
+        weight: -27
         enabled: false
       row_two_column_hero:
-        weight: -25
+        weight: -26
         enabled: false
       bp_column_wrapper:
-        weight: -24
+        weight: -25
         enabled: false
       row_slide_container:
-        weight: -23
+        weight: -24
         enabled: false
 field_type: entity_reference_revisions

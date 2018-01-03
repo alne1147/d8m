@@ -33,6 +33,7 @@ permissions:
   - 'view paragraph content bp_tabs'
   - 'view paragraph content bp_view'
   - 'view paragraph content card_basic'
+  - 'view paragraph content card_open_embed'
   - 'view paragraph content full_column_hero'
   - 'view paragraph content row_three_column_hero'
   - 'view paragraph content row_two_column_hero'

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_open_embed
+    - paragraphs.paragraphs_type.card_open_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    open_embed: open_embed
+    d8m_text_editor: '0'
+    plain_text: '0'
+id: paragraph.card_open_embed.field_open_embed
+field_name: field_open_embed
+entity_type: paragraph
+bundle: card_open_embed
+label: 'Open Embed'
+description: 'CAUTION - The Open Embed Card allows you to place embed code that is Javascript dependent. Only use embed code from trusted sources as malicious code could compromise your site. The State of Colorado and Colorado Interactive are not responsible or liable for external code added here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

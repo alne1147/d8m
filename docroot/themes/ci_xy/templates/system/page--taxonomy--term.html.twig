@@ -60,24 +60,24 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Branding #}
 {% block global_header %}
-<header role="banner" class="header">
-  <div class="{{ container }}">
-    <div class="row">
-      <div class="col-sm-8">
-        {{ page.global_header }}
-      </div>
-      <div class="col-sm-4">
-        <div class="header__translation">
-          <div id="google_translate_element">
-
-          </div>
+  <header role="banner" class="header">
+    <div class="{{ container }}">
+      <div class="row">
+        <div class="col-sm-8">
+          {{ page.global_header }}
         </div>
-        <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i>
+        <div class="col-sm-4">
+          <div class="header__translation">
+            <div id="google_translate_element">
+
+            </div>
+          </div>
+          <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 {% endblock %}
 {{ page.search }}
 {# Jumbotron #}
@@ -86,135 +86,90 @@
     {{ page.jumbotron }}
   </div>
 {% endif %}
+ {% include directory ~ '/templates/includes/navbar.html.twig' %}
 {# Main #}
 {% block main %}
-     {% if bg_image_url|length %}
-<div id="xyBackground" style="background-image: url('{{ bg_image_url }}');" >
-    {% elseif  global_bg_color|length  %}
-  <div id="xyBackground" style="background-color:#{{ global_bg_color }};">
-      {% else %}
+ {% if bg_image_url|length %}
+<div id="xyBackground" style="background-image: url('{{ bg_image_url }}');">
+  {% elseif  global_bg_color|length %}
+  <div id="xyBackground" class="{{ global_bg_color }}">
+    {% else %}
     <div id="xyBackground">
-        {% endif %}
-      {# Navbar #}
-      <div class="top-nav">
-        <header class="navbar navbar-default container" id="navbar" role="banner">
-          <div class="navbar-header">
-            {# .btn-navbar is used as the toggle for collapsed navbar content #}
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-          </div>
-          <div id="navbar-collapse" class="navbar-collapse collapse" style="background-color:#{{ nav_color }}">
-           {{ render_block('mainnavigation') }}
-          </div>
-        </header>
-      </div>
-
-    <div role="main" class="main-container {{ container }} js-quickedit-main-content" >
-    <div class="row">
-      {# Breadcrumbs #}
-      {% if breadcrumb %}
-        {% block breadcrumb %}
-          {{ breadcrumb }}
-        {% endblock %}
       {% endif %}
-      {# Header #}
-      {% if page.header %}
-          {% block header %}
+      <div id="navbar-collapse" class="navbar-collapse collapse" style="background-color:#{{ nav_color }}">
+
+        {{ render_block('mainnavigation') }}
+      </div>
+      <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+        <div class="row">
+          {# Breadcrumbs #}
+          {% if breadcrumb %}
+            {% block breadcrumb %}
+              {{ breadcrumb }}
+            {% endblock %}
+          {% endif %}
+          {# Header #}
+          {% if page.header %}
+            {% block header %}
               <div class="col-sm-12" role="heading">
-                  {{ page.header }}
+                {{ page.header }}
               </div>
-          {% endblock %}
-      {% endif %}
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-      {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
+            {% endblock %}
+          {% endif %}
+          {# Sidebar First #}
+          {% if page.sidebar_first %}
+            {% block sidebar_first %}
+              <aside class="col-sm-3" role="complementary">
+                {{ page.sidebar_first }}
+              </aside>
+            {% endblock %}
+          {% endif %}
+          {# Content #}
+          {% set content_classes = [
+            page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+            page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+            page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+            page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          ] %}
+          <section{{ content_attributes.addClass(content_classes) }}>
+            {# Highlighted #}
+            {% if page.highlighted %}
+              {% block highlighted %}
+                <div class="highlighted">{{ page.highlighted }}</div>
+              {% endblock %}
+            {% endif %}
+            {# Action Links #}
+            {% if action_links %}
+              {% block action_links %}
+                <ul class="action-links">{{ action_links }}</ul>
+              {% endblock %}
+            {% endif %}
+            {# Help #}
+            {% if page.help %}
+              {% block help %}
+                {{ page.help }}
+              {% endblock %}
+            {% endif %}
+            {# Content #}
+            {% block content %}
+              <a id="main-content"></a>
 
-          {{ page.content }}
-        {% endblock %}
-      </section>
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-    </div>
-  </div>
-    </div>
-{% endblock %}
-
-{# footer #}
-
-  {% block footer %}
-    <footer class="footer__content-footer" role="contentinfo" {% if footer_color is not empty %} style="background-color:#{{ footer_color }}" {% endif %}>
-      <div class="container">
-          {{ render_block('blockmainfooter') }}
-      </div>
-    </footer>
-  {% endblock %}
-
-{# global footer #}
-{% block global_footer %}
-<footer class="footer__global-footer" role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-        <ul class="footer__global-footer--links">
-          <li>&#169; {{ node.createdtime | date("Y") }} State of Colorado</li>
-          <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
-          <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
-          <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
-          <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <div class="footer__logo">
-          <a class="logo--cogov" href="https://www.colorado.gov"></a>
+              {{ page.content }}
+            {% endblock %}
+          </section>
+          {# Sidebar Second #}
+          {% if page.sidebar_second %}
+            {% block sidebar_second %}
+              <aside class="col-sm-3" role="complementary">
+                {{ page.sidebar_second }}
+              </aside>
+            {% endblock %}
+          {% endif %}
         </div>
       </div>
     </div>
-  </div>
-</footer>
-{% endblock %}
+    {% endblock %}
+
+    {# footer #}
+
+    {% include directory ~ '/templates/includes/footer.html.twig' %}

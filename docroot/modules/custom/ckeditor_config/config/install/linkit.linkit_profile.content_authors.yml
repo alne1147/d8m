@@ -1,12 +1,29 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - image.style.linkit_result_thumbnail
   module:
+    - file
+    - image
     - node
 id: content_authors
 label: 'Content Authors'
 description: ''
-attributes: {  }
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: simple_checkbox
+  id:
+    id: id
+    weight: 0
+    settings: {  }
+  relationship:
+    id: relationship
+    weight: 0
+    settings: {  }
 matchers:
   ca3ac261-e00c-4ff1-98b6-f32176a1e782:
     uuid: ca3ac261-e00c-4ff1-98b6-f32176a1e782
@@ -19,3 +36,25 @@ matchers:
         page: page
       group_by_bundle: true
       include_unpublished: true
+  b7953468-83ed-4904-8d21-8fb963662123:
+    uuid: b7953468-83ed-4904-8d21-8fb963662123
+    id: 'entity:media'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        document: document
+        image: image
+      group_by_bundle: false
+  95d1fd5e-42d8-4c33-a734-a41a9366f74f:
+    uuid: 95d1fd5e-42d8-4c33-a734-a41a9366f74f
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: Files
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: true
+        show_thumbnail: true
+        thumbnail_image_style: linkit_result_thumbnail

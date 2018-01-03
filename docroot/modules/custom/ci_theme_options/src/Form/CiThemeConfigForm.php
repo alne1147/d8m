@@ -42,24 +42,32 @@ class CiThemeConfigForm extends ConfigFormBase {
 
         $config = $this->config('ci_theme_options.settings');
 
+        include 'theme_colors.php';
+
         $form['nav_color'] = array(
-            '#type' => 'jquery_colorpicker',
             '#title' => t('Nav Color'),
-            '#description' => 'Choose a Color. The default value is #5c666f',
+            '#type' => 'select',
+//            '#description' => "Navigation Color.",
             '#default_value' => $config->get('ci_theme_options.nav_color'),
+            '#options' => $form['type_options']['#value'],
         );
+
+
+
         $form['footer_color'] = array(
-            '#type' => 'jquery_colorpicker',
             '#title' => t('Footer Color'),
-            '#description' => 'Choose a Color for the Footer. The default value is #5c666f',
+            '#type' => 'select',
+//            '#description' => "Footer Color.",
             '#default_value' => $config->get('ci_theme_options.footer_color'),
+            '#options' => $form['type_options']['#value'],
         );
 
         $form['global_bg_color'] = array(
-            '#type' => 'jquery_colorpicker',
             '#title' => t('Global Background Color'),
-            '#description' => t('Set the site-wide default background color'),
+            '#type' => 'select',
+//            '#description' => "Global Background Color",
             '#default_value' => $config->get('ci_theme_options.global_bg_color'),
+            '#options' => $form['type_options']['#value'],
         );
 
         $form['global_bg_image'] = array(
