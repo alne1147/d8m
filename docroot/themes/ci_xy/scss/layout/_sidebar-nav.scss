@@ -2,16 +2,17 @@
 .region-sidebar-first,
 .region-sidebar-second {
   background-color: $color-grey-sand;
-  padding: 15px;
+  @media (min-width: $screen-md-2-min) {
+    padding:0;
+  }
   border-radius: $border-radius;
   h2.block-title {
     font-size: floor(($font-size-base * 1.5));
     margin-top:0;
   }
-  .navbar-nav {
-    float: none;
-  }
   .nav {
+    float: none;
+    margin: 0;
     li {
       width: 100%;
       a {
@@ -19,17 +20,13 @@
         padding-left: 18px;
         font-size: ceil(($font-size-base * 1.05));
         transition: background-color 0.3s ease-out;
-        @media (max-width: $screen-xs-min) {
-          padding-left: 32px;
-        }
+        padding-top: 13px;
+        padding-bottom: 13px;
         &.is-active {
           background-color: darken($color-grey-sand, 4.5%); // #eaeaea
           border-left: 4px solid $color-pacific-blue;
           font-weight: $font-weight-500;
           padding-left: 14px;
-          @media (max-width: $screen-xs-min) {
-            margin:0 15px;
-          }
         }
         &:hover {
           background-color: darken($color-grey-sand, 4.5%); // #eaeaea
@@ -37,6 +34,55 @@
           padding-left: 14px;
         }
       }
+      .caret {
+        border: 0; //Bootstrap override
+        &:before {
+          color: $color-pacific-blue;
+          position: absolute;
+          right: 0;
+          top: 12px;
+          padding-right: 8px;
+          content: '+';
+          font-size: 18px;
+        }
+      }
+      &.open {
+        .dropdown-toggle {
+          border-left: 4px solid $color-ice;
+          padding-left: 14px;
+          &:hover {
+            border-left: 4px solid $color-pacific-blue;
+          }
+        }
+        .caret {
+          &:before {
+            content: '-';
+            padding-right: 10px;
+          }
+        }
+      }
+      .dropdown-menu {
+        padding-top: 0;
+        padding-bottom: 0;
+        li {
+          a {
+            font-weight: $font-weight-300;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 28px;
+            &:hover {
+              padding-left: 24px;
+            }
+          }
+        }
+      }
+    }
+    .open .dropdown-menu {
+      background-color: transparent;
+      border: 0;
+      box-shadow:none;
+      position: static;
+      width: 100%;
     }
   }
 }

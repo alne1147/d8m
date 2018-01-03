@@ -28,6 +28,14 @@
       display: inline-block;
       font-family: $font-family-sans-serif;
       font-size: ceil(($font-size-base * 1.05));
+      @media (min-width: $screen-xs-max) {
+        position: relative;
+        right: 112px;
+        z-index: 200;
+      }
+      @media (min-width: $screen-md) {
+        position: static;
+      }
     }
     // Google brand icon
     .goog-te-gadget-icon {
@@ -63,6 +71,15 @@
       position: absolute;
       top: 20px;
       right: 80px;
+    }
+    @media (min-width: $screen-xs-max) {
+      position: absolute;
+      top: 8px;
+      right: 90px;
+      z-index: 200;
+    }
+    @media (min-width: $screen-md) {
+      position: static;
     }
   }
 }

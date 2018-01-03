@@ -1,7 +1,7 @@
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-md) {
     position: absolute;
     background-color: transparent;
     margin-bottom: 0;
@@ -22,12 +22,17 @@
     &.navbar-default {
       background-color: transparent;
     }
+    .navbar-toggle {
+      @media (min-width: $screen-xs-max) {
+        margin-right: 0;
+      }
+    }
     .navbar-collapse {
       @media (max-width: $screen-xs-min) {
         position: relative;
         top:1px;
         padding:0;
-        background-color: $color-brand-slate;
+        //background-color: $color-brand-slate;
       }
       @media (min-width: $screen-sm-min) {
         margin-right: -$navbar-padding-horizontal * 3; // 45px
@@ -48,7 +53,7 @@
       }
       li > a {
         color: #ffffff;
-        background-color: $color-brand-slate;
+        //background-color: $color-brand-slate;
         transition: background-color 0.3s ease-out;
         position: relative;
         overflow: hidden;
@@ -81,7 +86,8 @@
           transform: translate(-50%, calc(-100% - 14px));
         }
         &:hover {
-          background-color: darken($color-brand-slate, 6%);
+          //background-color: darken($color-brand-slate, 6%);
+          background-color: rgba(0,0,0, 0.25);
           color: #ffffff;
         }
         @media (min-width: $screen-md-min) {
@@ -91,14 +97,17 @@
       }
       > .active {
         > a {
-          background-color: darken($color-brand-slate, 10%); // #eaeaea
+          //background-color: darken($color-brand-slate, 10%); // #eaeaea
+          background-color: rgba(0,0,0, 0.25);
           &:hover {
-            background-color: darken($color-brand-slate, 10%);
+            //background-color: darken($color-brand-slate, 10%);
+            background-color: rgba(0,0,0, 0.25);
           }
         }
         &.open {
           > a, &:hover {
-            background-color: darken($color-brand-slate, 10%);
+            //background-color: darken($color-brand-slate, 10%);
+            background-color: rgba(0,0,0, 0.25);
           }
         }
       }
@@ -128,12 +137,13 @@
       border-radius: 0px;
       border: none;
       padding:0;
-      width: 100%;
+      //width: 100%;
       > li > a {
         font-weight: $font-weight-300;
         background-color: darken($color-brand-slate, 6%);
         color: #fff!important;
         padding: 10px 15px 10px 25px!important;
+        white-space: normal; // overrites boostrap nowrap white-
         &:hover {
           background-color: darken($color-brand-slate, 10%)!important; // #eaeaea
         }
@@ -167,8 +177,7 @@
     }
   }
 }
-#navbar-collapse
-{
-  background-color: $color-brand-slate;
-}
-
+//#navbar-collapse
+//{
+//  background-color: $color-brand-slate;
+//}
