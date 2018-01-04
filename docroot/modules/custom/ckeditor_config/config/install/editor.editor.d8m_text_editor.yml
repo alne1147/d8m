@@ -37,7 +37,6 @@ settings:
             - Link
             - Unlink
             - Linkit
-            - DrupalFile
             - file_browser
         -
           name: Lists
@@ -49,6 +48,7 @@ settings:
           items:
             - Blockquote
             - video_embed
+            - google_picker
         -
           name: Tools
           items:
