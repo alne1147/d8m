@@ -1,14 +1,11 @@
 langcode: und
 status: true
 dependencies:
-  config:
-    - views.view.file_entity_browser
   enforced:
     module:
       - file_browser
   module:
     - dropzonejs_eb_widget
-    - views
 name: browse_files_modal
 label: 'Browser for files (modal)'
 display: modal
@@ -28,16 +25,6 @@ selection_display_configuration:
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  a4ad947c-9669-497c-9988-24351955a02f:
-    settings:
-      view: file_entity_browser
-      view_display: entity_browser_1
-      submit_text: 'Select entities'
-      auto_select: true
-    uuid: a4ad947c-9669-497c-9988-24351955a02f
-    weight: 1
-    label: 'Files listing'
-    id: view
   735d146c-a4b2-4327-a057-d109e0905e05:
     settings:
       upload_location: 'public://'

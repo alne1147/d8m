@@ -3,15 +3,20 @@ description: 'Views and other new config for custom file solutions.'
 type: module
 core: 8.x
 dependencies:
+  - content_moderation
+  - crop
   - dropzonejs_eb_widget
   - embed
   - entity_browser
   - entity_embed
+  - field
   - file
   - file_browser
   - image
   - media_entity
+  - media_entity_document
   - node
+  - path
   - user
   - views
   - views_bulk_operations

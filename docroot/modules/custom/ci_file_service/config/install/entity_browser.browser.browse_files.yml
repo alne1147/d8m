@@ -28,16 +28,6 @@ selection_display_configuration:
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  a4ad947c-9669-497c-9988-24351955a02f:
-    settings:
-      view: file_entity_browser
-      view_display: entity_browser_1
-      submit_text: 'Select entities'
-      auto_select: true
-    uuid: a4ad947c-9669-497c-9988-24351955a02f
-    weight: 1
-    label: 'Files listing'
-    id: view
   735d146c-a4b2-4327-a057-d109e0905e05:
     settings:
       upload_location: 'public://'
@@ -50,3 +40,13 @@ widgets:
     weight: 0
     label: 'Upload files'
     id: dropzonejs
+  57830e1d-3df6-4da8-a0a5-4fc52b99d344:
+    settings:
+      view: file_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 57830e1d-3df6-4da8-a0a5-4fc52b99d344
+    weight: 2
+    label: View
+    id: view

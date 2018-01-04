@@ -72,25 +72,42 @@
     // A simple callback implementation.
     function pickerCallback(data) {
         //console.log(JSON.stringify(data));
-        var url = 'nothing';
+        var url = [];
+        var i = 0;
+        var update_doc = [];
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
-            var doc = data[google.picker.Response.DOCUMENTS][0];
-            var icon = "";
-            var name = "";
-            //console.log(doc);
-            if(doc.mimeType === "application/vnd.google-apps.photo" || doc.mimeType === 'image/png' || doc.mimeType === 'image/gif'){
-              icon = doc.thumbnails[4].url;
-              name = "";
-            }
-            else {
-              icon = doc.iconUrl;
-              name = doc.name;
-            }
-            url = doc[google.picker.Document.URL];
+            var doc = data[google.picker.Response.DOCUMENTS];
+            var icon = [];
+            var name = [];
+            var html = [];
+            var new_element = [];
+            var oEditor = CKEDITOR.instances['edit-body-0-value'];
+              for(i=0;i<doc.length;i++){
+
+                if(doc[i].mimeType === "application/vnd.google-apps.photo" || doc[i].mimeType === 'image/png' || doc[i].mimeType === 'image/gif'){
+                  icon[i] = doc[i].thumbnails[4].url;
+                  //set no name because this is a renderable image
+                  name[i] = "";
+                }
+                else if (doc[i].mimeType === 'image/jpeg' || doc[i].mimeType === 'application/vnd.google-apps.document' || doc[i].mimeType === 'application/vnd.google-apps.drawing' || doc[i].mimeType === 'application/vnd.google-apps.spreadsheet') {
+                  icon[i] = doc[i].iconUrl;
+                  //set name because these file types are not renderable
+                  name[i] = doc[i].name;
+                }
+                url[i] = doc[i][google.picker.Document.URL];
+
+                html = '<a href=' + url[i] + '><img src=' + icon[i] + '><span>' + name[i] + '</span></a>';
+                var newElement = CKEDITOR.dom.element.createFromHtml( html, oEditor.document);
+                oEditor.insertElement(newElement);
+
+
+
+              }
+
+                console.log(doc.length);
+
         }
-        if(url != 'nothing') {
-            CKEDITOR.instances['edit-body-0-value'].insertHtml('<a href=' + url + '><img src=' + icon + '><span>' + name + '</span></a>');
-				}
+
     }
 
 
