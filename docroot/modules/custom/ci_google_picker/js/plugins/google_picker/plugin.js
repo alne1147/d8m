@@ -47,8 +47,8 @@
     function createPicker() {
         if (pickerApiLoaded && oauthToken) {
             var picker = new google.picker.PickerBuilder().
-            addView(google.picker.ViewId.PHOTOS).
             addView(new google.picker.DocsView().setIncludeFolders(true).setSelectFolderEnabled(true).setOwnedByMe(true)).
+            addView(google.picker.ViewId.PHOTOS).
             addView(new google.picker.DocsView().setIncludeFolders(true).setSelectFolderEnabled(true).setOwnedByMe(false)).
             addView(new google.picker.DocsUploadView().setIncludeFolders(true)).
             enableFeature(google.picker.Feature.SIMPLE_UPLOAD_ENABLED).
@@ -89,7 +89,7 @@
                   icon[i] = doc[i].thumbnails[4].url;
                   //set no name because this is a renderable image
                   name[i] = "";
-                  alt[i] = "";
+                  alt[i] = 'alt="picker-image"';
 
                 }
                 else if (doc[i].mimeType === 'image/jpeg' || doc[i].mimeType === 'application/vnd.google-apps.document' || doc[i].mimeType === 'application/vnd.google-apps.drawing' || doc[i].mimeType === 'application/vnd.google-apps.spreadsheet') {
