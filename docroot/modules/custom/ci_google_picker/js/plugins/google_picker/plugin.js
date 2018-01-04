@@ -131,33 +131,7 @@
 
             CKEDITOR.dialog.add( 'simpleLinkDialog', function( editor )
             {
-                return {
-                    title : 'Login to Google',
-                    minWidth : 200,
-                    minHeight : 100,
-                    contents :
-                        [
-                            {
-                                id : 'general',
-                                label : 'Google Drive Login',
-                                elements :
-                                    [
-                                        {
-                                          type: 'html',
-                                          html: 'Click the button below to view your Drive.'
-                                        },
-                                        {
-                                            id : 'authorize-button',
-                                            type: 'button',
-                                            label: 'Show my Google Drive',
-                                            onClick: function() {
-                                                handleClientLoad();
-                                            }
-                                        },
-                                    ]
-                            }
-                        ]
-                };
+                handleClientLoad();
             });
 
 
