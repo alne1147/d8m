@@ -81,6 +81,7 @@
             var name = [];
             var html = [];
             var new_element = [];
+            var alt = [];
             var oEditor = CKEDITOR.instances['edit-body-0-value'];
               for(i=0;i<doc.length;i++){
 
@@ -88,23 +89,22 @@
                   icon[i] = doc[i].thumbnails[4].url;
                   //set no name because this is a renderable image
                   name[i] = "";
+                  alt[i] = "";
+
                 }
                 else if (doc[i].mimeType === 'image/jpeg' || doc[i].mimeType === 'application/vnd.google-apps.document' || doc[i].mimeType === 'application/vnd.google-apps.drawing' || doc[i].mimeType === 'application/vnd.google-apps.spreadsheet') {
                   icon[i] = doc[i].iconUrl;
                   //set name because these file types are not renderable
+                  alt[i] = 'alt="file-icon"';
                   name[i] = doc[i].name;
                 }
                 url[i] = doc[i][google.picker.Document.URL];
 
-                html = '<a href=' + url[i] + '><img src=' + icon[i] + '><span>' + name[i] + '</span></a>';
+                html = '<a href=' + url[i] + '><img '+alt[i]+' src=' + icon[i] + '><span>' + name[i] + '</span></a>';
                 var newElement = CKEDITOR.dom.element.createFromHtml( html, oEditor.document);
                 oEditor.insertElement(newElement);
 
-
-
               }
-
-                console.log(doc.length);
 
         }
 
