@@ -92,7 +92,7 @@
                   alt[i] = 'alt="picker-image"';
 
                 }
-                else if (doc[i].mimeType === 'image/jpeg' || doc[i].mimeType === 'application/vnd.google-apps.document' || doc[i].mimeType === 'application/vnd.google-apps.drawing' || doc[i].mimeType === 'application/vnd.google-apps.spreadsheet') {
+                else {
                   icon[i] = doc[i].iconUrl;
                   //set name because these file types are not renderable
                   alt[i] = 'alt="file-icon"';
