@@ -1,0 +1,6 @@
+ci_article_setup.start:
+    path: /custom/start
+    defaults:
+        _controller: '\Drupal\ci_article_setup\Controller\Ci_article_setupStartController::startAction'
+    requirements:
+        _permission: 'access content'

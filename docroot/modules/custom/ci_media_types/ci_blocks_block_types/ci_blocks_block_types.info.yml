@@ -1,0 +1,14 @@
+name: 'Block Types'
+description: 'Block Type Configuration here.'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - ci_cr_rows_and_cards
+  - content_moderation
+  - entity_reference_revisions
+  - field
+  - paragraphs
+  - simple_gmap
+  - text
+package: ci_blocks

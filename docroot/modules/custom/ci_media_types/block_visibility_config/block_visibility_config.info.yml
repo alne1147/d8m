@@ -1,0 +1,26 @@
+name: 'Block Visibility Config'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_class
+  - block_content
+  - block_visibility_groups
+  - ci_ct_content_types
+  - ci_ct_event
+  - ci_views_config
+  - ctools
+  - help
+  - masquerade
+  - menu_block
+  - menu_condition
+  - node
+  - search
+  - sharethis_block
+  - system
+  - taxonomy
+  - term_condition
+  - text
+  - user
+  - views
+package: 'Colorado Interactive'

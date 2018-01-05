@@ -1,0 +1,18 @@
+name: ci_views_config
+description: 'Exported Views Configuration.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_class
+  - block_visibility_groups
+  - ci_ct_content_types
+  - ci_ct_event
+  - datetime
+  - menu_condition
+  - node
+  - taxonomy
+  - term_condition
+  - text
+  - user
+  - views

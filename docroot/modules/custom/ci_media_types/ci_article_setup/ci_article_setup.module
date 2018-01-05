@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ci_article_setup_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'ci_article_setup/article_setup';
+}
+

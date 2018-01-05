@@ -1,0 +1,6 @@
+name: ci_theme_options
+dependencies: {  }
+description: 'CI Module that allows users to adjust colors for certain elements.'
+core: 8.x
+package: Custom
+type: module

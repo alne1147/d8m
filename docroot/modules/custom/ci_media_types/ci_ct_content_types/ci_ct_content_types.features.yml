@@ -1,0 +1,5 @@
+bundle: ci_ct
+excluded:
+  - views.view.recent_articles
+  - block_visibility_groups.block_visibility_group.recent_articles
+required: true

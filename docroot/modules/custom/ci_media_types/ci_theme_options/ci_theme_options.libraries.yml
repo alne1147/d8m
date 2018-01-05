@@ -1,0 +1,12 @@
+ci_theme_options:
+  version: 1.x
+  css:
+    layout:
+      css/ci_theme_style.css: {}
+  js:
+    js/ci_theme_options.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

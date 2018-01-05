@@ -1,0 +1,13 @@
+ci_theme_options.config:
+
+  path: '/admin/config/theme-options'
+
+  defaults:
+
+    _form: '\Drupal\ci_theme_options\Form\CiThemeConfigForm'
+
+    _title: 'Theme Configuration'
+
+  requirements:
+
+    _permission: 'administer site configuration'
