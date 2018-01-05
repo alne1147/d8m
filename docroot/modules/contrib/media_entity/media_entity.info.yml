@@ -1,4 +1,4 @@
-name: Media entity
+name: Media entity (2.x)
 description: 'Media entity API.'
 type: module
 package: Media
@@ -7,14 +7,11 @@ dependencies:
   - drupal:image
   - drupal:user
   - drupal:views
-  - entity:entity (>=8.x-1.0-alpha3)
-  - drupal:system (>=8.1.0)
-test_dependencies:
   - entity:entity
-  - inline_entity_form:inline_entity_form
+  - drupal:system
 
-# Information added by Drupal.org packaging script on 2016-11-28
-version: '8.x-1.6'
+# Information added by Drupal.org packaging script on 2017-12-14
+version: '8.x-2.0-alpha2'
 core: '8.x'
 project: 'media_entity'
-datestamp: 1480363985
+datestamp: 1513267387
