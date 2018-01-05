@@ -1,7 +1,0 @@
-excluded:
-  - core.entity_form_display.media.document_list.default
-  - core.entity_view_display.media.document_list.default
-  - field.field.media.document_list.field_files
-  - field.storage.media.field_files
-  - media_entity.bundle.document_list
-required: true

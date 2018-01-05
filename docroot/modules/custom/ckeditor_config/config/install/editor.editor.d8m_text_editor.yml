@@ -37,7 +37,6 @@ settings:
             - Link
             - Unlink
             - Linkit
-            - file_browser
         -
           name: Lists
           items:
@@ -48,6 +47,7 @@ settings:
           items:
             - Blockquote
             - video_embed
+            - document_media_browser
             - google_picker
         -
           name: Tools

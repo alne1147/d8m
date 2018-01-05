@@ -1,0 +1,3 @@
+excluded:
+  - media.type.file
+required: true
