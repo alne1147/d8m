@@ -1,6 +1,0 @@
-name: ci_article_setup
-dependencies: {  }
-description: 'Custom Article Tweaks not in features. Includes custom js work for field display.'
-core: 8.x
-package: Custom
-type: module

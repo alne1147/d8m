@@ -1,9 +1,0 @@
-article_setup:
-  version: 1.x
-  js:
-    js/article_setup.js: {}
-  dependencies:
-    - core/jquery
-    - core/jquery.once
-    - core/drupal
-    - core/drupalSettings

@@ -1,4 +1,0 @@
-name: 'CI Google Picker'
-description: 'Provides Google Picker functionality to CKEditor.'
-type: module
-core: 8.x
