@@ -3,7 +3,7 @@
 # Theme Color Options
 $form['type_options'] = array(
     '#type' => 'value',
-    '#value' => array('color__clear' => t('None'),
+    '#value' => array('' => t('Default'),
         'color__brand-green--strong' => t('Brand Colorado Green'),
         'color__brand-slate--strong' => t('Brand Colorado Slate'),
         'color__brand-silver--strong' => t('Brand Colorado Silver'),
@@ -35,7 +35,6 @@ $form['type_options'] = array(
         'color__aqua--strong' => t('Aqua'),
         'color__pastel-blue--strong' => t('Pastel Blue'),
         'color__ice--strong' => t('Ice'),
-        'color__forest--strong' => t('Forest'),
         'color__forest--strong' => t('Forest'),
         'color__neon-green--strong' => t('Neon Green'),
         'color__cucumber--strong' => t('Cucumber'),
