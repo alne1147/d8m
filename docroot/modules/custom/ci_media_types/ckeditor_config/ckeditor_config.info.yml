@@ -6,7 +6,6 @@ dependencies:
   - ckeditor
   - crop
   - editor
-  - editor_file
   - entity_embed
   - file
   - filter
