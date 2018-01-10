@@ -9,6 +9,7 @@ distribution:
 langcode: en
 
 dependencies:
+  - file_browser
   - admin_toolbar
   - admin_toolbar_tools
   - filter_perms
@@ -103,13 +104,6 @@ dependencies:
   - entity_browser_entity_form
   - image_widget_crop
   - jquery_colorpicker
-  - media_entity
-  - crop_media_entity
-  - media_entity_document
-  - media_entity_image
-  - media_entity_instagram
-  - media_entity_slideshow
-  - media_entity_twitter
   - background_image_formatter
   - block_class
   - block_visibility_groups
@@ -141,7 +135,6 @@ dependencies:
   - simple_block
   - single_datetime
   - slick
-  - slick_media
   - slick_paragraphs
   - slick_ui
   - sharethis_block
@@ -151,9 +144,6 @@ dependencies:
   - chosen
   - chosen_field
   - chosen_lib
-  - video_embed_field
-  - video_embed_media
-  - video_embed_wysiwyg
   - viewsreference
   - views_templates
   - simple_sitemap
