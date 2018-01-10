@@ -1,0 +1,147 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_simple"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 261
+        }
+    ],
+    "uuid": [
+        {
+            "value": "93a90087-cb16-4da7-86dc-5b515ab6daa7"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2091
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_simple"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_simple\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-05T03:52:23+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "256"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| CI Drupal 8"
+            }
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-orange-light"
+        }
+    ],
+    "bp_text": [
+        {
+            "value": "<section class=\"section--center mdl-grid\" style=\"box-sizing: inherit; display: flex; flex-flow: row wrap; margin: 0px auto 48px; align-items: stretch; padding: 8px; max-width: 860px; position: relative; color: rgb(97, 97, 97); font-family: &quot;Work Sans&quot;, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">\r\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); display: flex; flex-direction: column; font-size: 16px; font-weight: 400; min-height: 200px; overflow: hidden; width: calc(66.6667% - 16px); z-index: 1; position: relative; background: rgb(255, 255, 255); border-radius: 2px; margin: 8px 8px 8px calc(16.6667% + 8px);\">Busey ipsum dolor sit amet. It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.Sometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because a horses butt muscle is thick.The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.<span>&nbsp;<\/span><br style=\"box-sizing: inherit;\" \/>\r\n<br style=\"box-sizing: inherit;\" \/>\r\nYou ever roasted doughnuts?Did you feel that? Look at me - I'm not out of breath anymore!You gotta go through it to see there ain't nothing to it.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.<span>&nbsp;<\/span><br style=\"box-sizing: inherit;\" \/>\r\n<br style=\"box-sizing: inherit;\" \/>\r\nI wrestled a bear once. A 750lbs black bear.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.Sometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because a horses butt muscle is thick.<span>&nbsp;<\/span><br style=\"box-sizing: inherit;\" \/>\r\n<br style=\"box-sizing: inherit;\" \/>\r\nYou ever roasted doughnuts?Did you feel that? Look at me - I'm not out of breath anymore!Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<span>&nbsp;<\/span><br style=\"box-sizing: inherit;\" \/>\r\n<br style=\"box-sizing: inherit;\" \/>\r\nThe magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.<span>&nbsp;<\/span><br style=\"box-sizing: inherit;\" \/>\r\n&nbsp;<\/div>\r\n<\/section>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ]
+}

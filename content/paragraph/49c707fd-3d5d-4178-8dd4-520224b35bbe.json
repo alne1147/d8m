@@ -1,0 +1,147 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 623
+        }
+    ],
+    "uuid": [
+        {
+            "value": "49c707fd-3d5d-4178-8dd4-520224b35bbe"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3029
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-22T16:02:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "624"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_accordion_section_body"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| CI Drupal 8"
+            }
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>Non equidem invideo, miror magis posuere velit aliquet. Donec sed odio operae, eu vulputate felis rhoncus. Paullum deliquit, ponderibus modulisque suis ratio utitur. Fabio vel iudice vincam, sunt in culpa qui officia. Nec dubitamus multa iter quae et nos invenerat. Excepteur sint obcaecat cupiditat non proident culpa.<\/p>\r\n",
+            "format": "d8m_text_editor"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "Paullum deliqui"
+        }
+    ]
+}
