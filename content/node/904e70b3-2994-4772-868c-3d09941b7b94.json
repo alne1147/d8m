@@ -1,36 +1,36 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/accordions-wysiwyg?_format=hal_json"
+            "href": "http:\/\/default\/files-and-media?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/user\/41?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/user\/16?_format=hal_json",
                 "lang": "en"
             }
         ]
     },
     "nid": [
         {
-            "value": 8
+            "value": 41
         }
     ],
     "uuid": [
         {
-            "value": "e66203e8-7283-4052-a438-59c52258778f"
+            "value": "904e70b3-2994-4772-868c-3d09941b7b94"
         }
     ],
     "vid": [
         {
-            "value": 20
+            "value": 156
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-08T23:09:49+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -55,7 +55,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/41?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "d05e1dd0-9722-46ee-ba43-c9c146d2dc1a"
                     }
                 ]
             }
@@ -72,7 +72,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/16?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "605c89eb-f924-4168-859b-b1040e4e4159"
                     }
                 ],
                 "lang": "en"
@@ -95,20 +95,20 @@
     ],
     "title": [
         {
-            "value": "Accordions WYSIWYG",
+            "value": "Files And Media",
             "lang": "en"
         }
     ],
     "created": [
         {
-            "value": "2017-06-22T17:06:31+00:00",
+            "value": "2018-01-08T23:07:59+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-08T23:09:49+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -138,8 +138,8 @@
     ],
     "path": [
         {
-            "alias": "\/accordions-wysiwyg",
-            "pid": 21,
+            "alias": "\/files-and-media",
+            "pid": 91,
             "langcode": "en",
             "lang": "en"
         }
@@ -147,14 +147,14 @@
     "metatag": [
         {
             "value": {
-                "title": "Accordions WYSIWYG | CI Drupal 8",
-                "description": "Accordion title 1\n\nMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
+                "title": "Files And Media | CI Drupal 8",
+                "description": "Some Embed Testing:\nGeorgia_Gov_Agile"
             }
         }
     ],
     "body": [
         {
-            "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Me non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Quo usque tandem abutere, Catilina, patientia nostra? Hi omnes lingua, institutis, legibus inter se differunt. Excepteur sint obcaecat cupiditat non proident culpa. Salutantibus vitae elit libero, a pharetra augue. Quisque ut dolor gravida, placerat libero vel, euismod. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Idque Caesaris facere voluntate liceret: sese habere. Plura mihi bona sunt, inclinet, amari petere vellent. Qui ipsorum lingua Celtae, nostra Galli appellantur. Ab illo tempore, ab est sed immemorabili. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "value": "<p>Some Embed Testing:<\/p>\r\n\r\n<p><a href=\"https:\/\/drive.google.com\/drive\/folders\/0B5jHL_v4bcDkcjlkQUoyR0RCNTA\"><img alt=\"file-icon\" src=\"https:\/\/drive-thirdparty.googleusercontent.com\/16\/type\/application\/vnd.google-apps.folder+shared\" \/><span>Georgia_Gov_Agile<\/span><\/a><\/p>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
             "lang": "en"

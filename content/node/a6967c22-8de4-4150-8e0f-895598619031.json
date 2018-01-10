@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/accordions-wysiwyg?_format=hal_json"
+            "href": "http:\/\/default\/test?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
@@ -20,17 +20,17 @@
     },
     "nid": [
         {
-            "value": 8
+            "value": 56
         }
     ],
     "uuid": [
         {
-            "value": "e66203e8-7283-4052-a438-59c52258778f"
+            "value": "a6967c22-8de4-4150-8e0f-895598619031"
         }
     ],
     "vid": [
         {
-            "value": 20
+            "value": 206
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-09T17:00:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -95,20 +95,20 @@
     ],
     "title": [
         {
-            "value": "Accordions WYSIWYG",
+            "value": "Test",
             "lang": "en"
         }
     ],
     "created": [
         {
-            "value": "2017-06-22T17:06:31+00:00",
+            "value": "2018-01-09T16:59:39+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-09T17:00:00+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -138,8 +138,8 @@
     ],
     "path": [
         {
-            "alias": "\/accordions-wysiwyg",
-            "pid": 21,
+            "alias": "\/test",
+            "pid": 106,
             "langcode": "en",
             "lang": "en"
         }
@@ -147,14 +147,13 @@
     "metatag": [
         {
             "value": {
-                "title": "Accordions WYSIWYG | CI Drupal 8",
-                "description": "Accordion title 1\n\nMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
+                "title": "Test | CI Drupal 8"
             }
         }
     ],
     "body": [
         {
-            "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Me non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Quo usque tandem abutere, Catilina, patientia nostra? Hi omnes lingua, institutis, legibus inter se differunt. Excepteur sint obcaecat cupiditat non proident culpa. Salutantibus vitae elit libero, a pharetra augue. Quisque ut dolor gravida, placerat libero vel, euismod. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Idque Caesaris facere voluntate liceret: sese habere. Plura mihi bona sunt, inclinet, amari petere vellent. Qui ipsorum lingua Celtae, nostra Galli appellantur. Ab illo tempore, ab est sed immemorabili. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "value": "<drupal-entity data-embed-button=\"document_media_browser\" data-entity-embed-display=\"view_mode:media.embedded\" data-entity-type=\"media\" data-entity-uuid=\"17607400-1c1b-48f6-99ca-bdb20225afca\"><\/drupal-entity>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
             "lang": "en"

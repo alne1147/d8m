@@ -1,36 +1,36 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/accordions-wysiwyg?_format=hal_json"
+            "href": "http:\/\/default\/page-content-options?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/user\/36?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/user\/36?_format=hal_json",
                 "lang": "en"
             }
         ]
     },
     "nid": [
         {
-            "value": 8
+            "value": 51
         }
     ],
     "uuid": [
         {
-            "value": "e66203e8-7283-4052-a438-59c52258778f"
+            "value": "d7ea113c-91c0-4189-8270-11d82deb17af"
         }
     ],
     "vid": [
         {
-            "value": 20
+            "value": 201
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-09T15:32:18+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -55,7 +55,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/36?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
                     }
                 ]
             }
@@ -72,7 +72,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/36?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
                     }
                 ],
                 "lang": "en"
@@ -95,20 +95,20 @@
     ],
     "title": [
         {
-            "value": "Accordions WYSIWYG",
+            "value": "Page Content Options",
             "lang": "en"
         }
     ],
     "created": [
         {
-            "value": "2017-06-22T17:06:31+00:00",
+            "value": "2018-01-09T15:31:42+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2017-06-22T17:16:58+00:00",
+            "value": "2018-01-09T15:32:18+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -130,16 +130,10 @@
             "lang": "en"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
     "path": [
         {
-            "alias": "\/accordions-wysiwyg",
-            "pid": 21,
+            "alias": "\/page-content-options",
+            "pid": 101,
             "langcode": "en",
             "lang": "en"
         }
@@ -147,14 +141,14 @@
     "metatag": [
         {
             "value": {
-                "title": "Accordions WYSIWYG | CI Drupal 8",
-                "description": "Accordion title 1\n\nMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
+                "title": "Page Content Options | CI Drupal 8",
+                "description": "Page Content Options"
             }
         }
     ],
     "body": [
         {
-            "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Me non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Quo usque tandem abutere, Catilina, patientia nostra? Hi omnes lingua, institutis, legibus inter se differunt. Excepteur sint obcaecat cupiditat non proident culpa. Salutantibus vitae elit libero, a pharetra augue. Quisque ut dolor gravida, placerat libero vel, euismod. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Idque Caesaris facere voluntate liceret: sese habere. Plura mihi bona sunt, inclinet, amari petere vellent. Qui ipsorum lingua Celtae, nostra Galli appellantur. Ab illo tempore, ab est sed immemorabili. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "value": "<p>Page Content Options<\/p>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
             "lang": "en"
