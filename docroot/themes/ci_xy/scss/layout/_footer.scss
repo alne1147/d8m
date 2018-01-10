@@ -16,10 +16,9 @@ footer {
 
 //[2]
 .footer__global-footer {
-  background-color: lighten($color-brand-slate, 4%);
+  background-color: rgba(0,0,0,0.1);
   padding: 18px 0;
-  &--links {
-    // margin-bottom: 0;
+  &--links {;
     padding-left: 0;
     opacity: .64;
     margin: 0 auto 20px auto;
@@ -68,11 +67,6 @@ footer {
 
 // [4]
 .footer__content-footer {
-  padding-bottom: 30px;
-  //margin-top:30px;
-  //@media (max-width: $screen-xs) {
-  //  margin-top:20px;
-  //}
   .block-block-content {
     margin-bottom: 0;
     padding: 20px 0 0;
