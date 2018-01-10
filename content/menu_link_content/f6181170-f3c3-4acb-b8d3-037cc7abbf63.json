@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/5\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/56\/edit?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
@@ -9,12 +9,12 @@
     },
     "id": [
         {
-            "value": 5
+            "value": 56
         }
     ],
     "uuid": [
         {
-            "value": "41368692-534b-457b-a853-052247ea670c"
+            "value": "f6181170-f3c3-4acb-b8d3-037cc7abbf63"
         }
     ],
     "langcode": [
@@ -30,18 +30,18 @@
     ],
     "title": [
         {
-            "value": "Video Example",
+            "value": "Files And Media",
             "lang": "en"
         }
     ],
     "menu_name": [
         {
-            "value": "custom-menu"
+            "value": "main"
         }
     ],
     "link": [
         {
-            "uri": "entity:node\/7",
+            "uri": "entity:node\/41",
             "title": null,
             "options": []
         }
@@ -58,7 +58,7 @@
     ],
     "weight": [
         {
-            "value": 0
+            "value": -43
         }
     ],
     "expanded": [
@@ -73,7 +73,7 @@
     ],
     "changed": [
         {
-            "value": "2017-06-22T16:35:46+00:00",
+            "value": "2018-01-09T15:33:08+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
