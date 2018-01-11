@@ -2,8 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.document
     - views.view.media
   module:
+    - dropzonejs_eb_widget
+    - media
     - views
 name: document_media_browser
 label: 'Document Media Browser'
@@ -34,13 +37,22 @@ widgets:
     weight: 1
     label: 'Media Browser'
     id: view
-  8a239f07-a06b-4003-b36c-08d0faf35314:
+  d33cd08c-6874-4cb3-86fa-d58df113874f:
     settings:
-      upload_location: 'public://'
-      multiple: true
-      submit_text: 'Select files'
-      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
-    uuid: 8a239f07-a06b-4003-b36c-08d0faf35314
-    weight: 2
-    label: Upload
-    id: upload
+      form_mode: default
+      media_type: document
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop a file here to upload'
+      max_filesize: 32M
+      extensions: 'txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select entities'
+    uuid: d33cd08c-6874-4cb3-86fa-d58df113874f
+    weight: 3
+    label: 'Upload a Document'
+    id: dropzonejs_media_entity_inline_entity_form
