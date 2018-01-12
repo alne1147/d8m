@@ -46,7 +46,8 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1498151839
+            "value": "2017-06-22T17:17:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -62,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -79,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -100,14 +101,16 @@
     ],
     "created": [
         {
-            "value": 1498147965,
-            "lang": "en"
+            "value": "2017-06-22T16:12:45+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": 1498151839,
-            "lang": "en"
+            "value": "2017-06-22T17:17:19+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "promote": [
@@ -136,7 +139,7 @@
     "path": [
         {
             "alias": "\/excepteur-sint-obcaecat",
-            "pid": 100,
+            "pid": 56,
             "langcode": "en",
             "lang": "en"
         }
@@ -154,6 +157,12 @@
             "value": "<p>Fabio vel iudice vincam, sunt in culpa qui officia. Donec sed odio operae, eu vulputate felis rhoncus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Qui ipsorum lingua Celtae, nostra Galli appellantur. Inmensae subtilitatis, obscuris et malesuada fames.<\/p>\r\n\r\n<p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Fictum, &nbsp;deserunt mollit anim laborum astutumque! Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Inmensae subtilitatis, obscuris et malesuada fames.<\/p>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_landing_page_options": [
+        {
+            "value": "Show Site Background Image",
             "lang": "en"
         }
     ]

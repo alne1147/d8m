@@ -46,7 +46,8 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1498151525
+            "value": "2017-06-22T17:12:05+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -62,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -79,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -100,14 +101,16 @@
     ],
     "created": [
         {
-            "value": 1498151408,
-            "lang": "en"
+            "value": "2017-06-22T17:10:08+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": 1498151525,
-            "lang": "en"
+            "value": "2017-06-22T17:12:05+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "promote": [
@@ -136,7 +139,7 @@
     "path": [
         {
             "alias": "\/integer-legentibus-erat",
-            "pid": 98,
+            "pid": 36,
             "langcode": "en",
             "lang": "en"
         }
@@ -146,6 +149,12 @@
             "value": {
                 "title": "Integer legentibus erat | CI Drupal 8"
             }
+        }
+    ],
+    "field_landing_page_options": [
+        {
+            "value": "Show Site Background Image",
+            "lang": "en"
         }
     ]
 }

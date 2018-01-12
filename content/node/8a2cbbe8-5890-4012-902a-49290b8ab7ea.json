@@ -22,9 +22,14 @@
                 "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron": [
+            {
+                "href": "http:\/\/default\/block\/26?_format=hal_json"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron_options": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/100037?_format=hal_json"
+                "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_rows": [
@@ -87,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "b7c5f5ce-d9cf-405c-9135-c906e60544cb"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -104,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "b7c5f5ce-d9cf-405c-9135-c906e60544cb"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -127,11 +132,28 @@
                 ]
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/block\/26?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/block_content\/row_block"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "302f9520-3e1e-4a14-8832-0439964a5a7f"
+                    }
+                ]
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron_options": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100037?_format=hal_json"
+                        "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
@@ -139,7 +161,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "291fcb2f-367f-4c76-a74f-f996f6b7ea32"
+                        "value": "0d5b0d4e-766d-44c4-9324-f0618b0c733c"
                     }
                 ]
             }
@@ -219,7 +241,7 @@
     ],
     "changed": [
         {
-            "value": "2017-11-30T21:21:43+00:00",
+            "value": "2018-01-09T17:19:43+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -251,7 +273,7 @@
     "path": [
         {
             "alias": "\/home",
-            "pid": 21,
+            "pid": 61,
             "langcode": "en",
             "lang": "en"
         }

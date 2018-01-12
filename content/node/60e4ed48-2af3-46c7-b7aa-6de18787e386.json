@@ -61,7 +61,8 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1508450504
+            "value": "2017-10-19T22:01:44+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -77,7 +78,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -94,7 +95,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -166,14 +167,16 @@
     ],
     "created": [
         {
-            "value": 1508341035,
-            "lang": "en"
+            "value": "2017-10-18T15:37:15+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": 1508450504,
-            "lang": "en"
+            "value": "2017-10-19T22:01:44+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "promote": [
@@ -203,7 +206,7 @@
     "path": [
         {
             "alias": "\/article-blog-post-2",
-            "pid": 110,
+            "pid": 81,
             "langcode": "en",
             "lang": "en"
         }

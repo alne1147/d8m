@@ -1,0 +1,93 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/AYJVyBH.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/36?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 96
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8bf730e2-55f9-4692-af0d-b0f7de59eef3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/36?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "AYJVyBH.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/AYJVyBH.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 65516
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-01-09T18:14:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-01-09T18:14:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| CI Drupal 8"
+            }
+        }
+    ]
+}

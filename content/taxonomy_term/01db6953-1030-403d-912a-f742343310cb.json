@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/category\/blog-post?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100015?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -49,14 +49,6 @@
     "default_langcode": [
         {
             "value": true,
-            "lang": "en"
-        }
-    ],
-    "path": [
-        {
-            "alias": "\/category\/blog-post",
-            "pid": 14,
-            "langcode": "en",
             "lang": "en"
         }
     ],

@@ -16,6 +16,11 @@
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_footer_options": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+            }
         ]
     },
     "nid": [
@@ -46,7 +51,8 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1498146283
+            "value": "2017-06-22T15:44:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -62,7 +68,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -79,10 +85,27 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_footer_options": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2fe41e3f-0eb0-40f6-a120-547e7773aa92"
+                    }
+                ]
             }
         ]
     },
@@ -100,14 +123,16 @@
     ],
     "created": [
         {
-            "value": 1498146270,
-            "lang": "en"
+            "value": "2017-06-22T15:44:30+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": 1498147053,
-            "lang": "en"
+            "value": "2017-06-22T15:57:33+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "promote": [
@@ -137,7 +162,7 @@
     "path": [
         {
             "alias": "\/example-landing-page",
-            "pid": 97,
+            "pid": 31,
             "langcode": "en",
             "lang": "en"
         }
@@ -147,6 +172,11 @@
             "value": {
                 "title": "Example Landing Page | CI Drupal 8"
             }
+        }
+    ],
+    "field_background_color": [
+        {
+            "value": "FFFFFF"
         }
     ]
 }

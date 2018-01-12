@@ -1,0 +1,93 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/full-column-row\/dead_orbit_wallpaper_by_chadtalbot-d6bc9g1.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/36?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 91
+        }
+    ],
+    "uuid": [
+        {
+            "value": "21efa17f-ef06-451e-8cc5-cc56eddf9a61"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/36?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "dead_orbit_wallpaper_by_chadtalbot-d6bc9g1.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/full-column-row\/dead_orbit_wallpaper_by_chadtalbot-d6bc9g1.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1537577
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-01-09T17:43:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-01-09T17:43:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| CI Drupal 8"
+            }
+        }
+    ]
+}

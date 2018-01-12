@@ -29,7 +29,11 @@ $sites = [
     // Dept. of Healthcare Policy and Financing
     'hcpf.dev.colorado.gov' => 'hcpf.colorado.gov',
     'hcpf.stg.colorado.gov' => 'hcpf.colorado.gov',
-    
+
+    // Department of Homeland Security & Emergency Management
+    'dhsem.dev.colorado.gov' => 'dhsem.colorado.gov',
+    'dhsem.stg.colorado.gov' => 'dhsem.colorado.gov',
+
     // Dept. of Labor
     'cdle.dev.colorado.gov' => 'cdle.colorado.gov',
     'cdle.stg.colorado.gov' => 'cdle.colorado.gov',

@@ -1,0 +1,142 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "47c8993a-6e4a-479f-8dbb-61bced493da2"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 1
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-19T22:57:04+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "1"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "block_content"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_row"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| CI Drupal 8"
+            }
+        }
+    ],
+    "field_row_title": [
+        {
+            "value": "asdasdasdas",
+            "lang": "en"
+        }
+    ]
+}

@@ -30,7 +30,7 @@
     ],
     "title": [
         {
-            "value": "Press Releases",
+            "value": "Press Release Articles",
             "lang": "en"
         }
     ],
@@ -58,7 +58,7 @@
     ],
     "weight": [
         {
-            "value": -48
+            "value": -49
         }
     ],
     "expanded": [
@@ -73,8 +73,9 @@
     ],
     "changed": [
         {
-            "value": 1508351444,
-            "lang": "en"
+            "value": "2018-01-09T15:33:08+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "default_langcode": [
