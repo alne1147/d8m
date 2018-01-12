@@ -14,7 +14,7 @@ drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush @sites en -y $(cat custom_modules_list.txt)
 
-drush @sites en ci_blocks -y
+#drush @sites en ci_blocks -y
 
 
 #// User additions and role assignments.
@@ -30,7 +30,8 @@ drush @sites cr -y
 drush @sites features-import-all -y
 
 drush @sites en ci_article_setup -y
-
+drush @sites en ckeditor_config -y
+drush @sites en ci_google_picker -y
 
 drush @sites php-eval 'node_access_rebuild()'
 
@@ -42,7 +43,7 @@ drush @sites -y config-set system.performance js.preprocess 0
 
 echo "
 
-//////// FINAL STEP! ////////
+//////// FINAL STEPS! ////////
 
 MUST BE DONE FROM LOCAL - Drush Aliases must be up to date!
 
@@ -50,4 +51,6 @@ MUST BE DONE FROM LOCAL - Drush Aliases must be up to date!
 
 drush @ag.dev cim  --partial; drush @cdle.dev cim --partial;drush @cdps.dev cim --partial;drush @ci.dev cim --partial;drush @dola.dev cim --partial;drush @dora.dev cim --partial;drush @dpa.dev cim --partial;drush @estes.dev cim --partial;drush @hcpf.dev cim --partial;drush @revenue.dev cim --partial;drush @sipa.dev cim --partial;drush @slb.dev cim --partial;drush @cdphe.dev cim --partial;
 
+Run these on Acquia SSH
 drush @sites -y dcdi -1
+drush @sites features-import-all -y
