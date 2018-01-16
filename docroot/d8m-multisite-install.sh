@@ -14,7 +14,7 @@ drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush @sites en -y $(cat custom_modules_list.txt)
 
-#drush @sites en ci_blocks -y
+drush @sites en ci_blocks -y
 
 
 #// User additions and role assignments.
@@ -30,8 +30,7 @@ drush @sites cr -y
 drush @sites features-import-all -y
 
 drush @sites en ci_article_setup -y
-drush @sites en ckeditor_config -y
-drush @sites en ci_google_picker -y
+
 
 drush @sites php-eval 'node_access_rebuild()'
 

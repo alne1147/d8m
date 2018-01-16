@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "27447e34-339e-49ef-8acc-0c8eb61e041b"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -89,8 +89,9 @@
     ],
     "created": [
         {
-            "value": 1498586200,
-            "lang": "en"
+            "value": "2017-06-27T17:56:40+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
@@ -119,10 +120,16 @@
             "lang": "en"
         }
     ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "metatag": [
         {
             "value": {
-                "title": "| Site-Install"
+                "title": "| CI Drupal 8"
             }
         }
     ],

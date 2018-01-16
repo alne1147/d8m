@@ -13,9 +13,8 @@ drush role-create user_administrator;
 drush  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush en -y $(cat custom_modules_list.txt)
-druch cr -y
 
-#drush en ci_blocks -y
+drush en ci_blocks -y
 
 
 #// User additions and role assignments.
@@ -25,7 +24,6 @@ drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzf
 
 drush user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez;
 
-drush cr -y
 
 #// Revert Features
 
@@ -33,8 +31,6 @@ drush features-import-all -y
 
 
 drush en ci_article_setup -y
-drush en ckeditor_config -y
-drush en ci_google_picker -y
 
 
 drush php-eval 'node_access_rebuild()'

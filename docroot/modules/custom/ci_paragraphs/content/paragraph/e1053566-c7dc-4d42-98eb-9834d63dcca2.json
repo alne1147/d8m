@@ -8,13 +8,13 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
             {
-                "href": "http:\/\/default\/user\/16?_format=hal_json",
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/16?_format=hal_json"
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
         ]
     },
@@ -49,7 +49,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ],
                 "lang": "en"
@@ -67,7 +67,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/16?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7be96bba-27bb-4be5-873e-602baf2f4686"
+                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
                     }
                 ]
             }
@@ -89,8 +89,9 @@
     ],
     "created": [
         {
-            "value": 1508350829,
-            "lang": "en"
+            "value": "2017-10-18T18:20:29+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
@@ -119,10 +120,16 @@
             "lang": "en"
         }
     ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "metatag": [
         {
             "value": {
-                "title": "| Site-Install"
+                "title": "| CI Drupal 8"
             }
         }
     ],
