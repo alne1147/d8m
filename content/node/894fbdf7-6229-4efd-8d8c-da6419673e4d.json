@@ -33,7 +33,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_type": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/100013?_format=hal_json"
+                "href": "http:\/\/default\/category\/press-release?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_related_content": [
@@ -90,7 +90,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ]
             }
@@ -107,7 +107,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "af5835a0-2273-40dd-804f-b817fdf69b55"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ],
                 "lang": "en"
@@ -179,7 +179,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100013?_format=hal_json"
+                        "href": "http:\/\/default\/category\/press-release?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -278,7 +278,7 @@
     "path": [
         {
             "alias": "\/article-press-release-2",
-            "pid": 76,
+            "pid": 22,
             "langcode": "en",
             "lang": "en"
         }

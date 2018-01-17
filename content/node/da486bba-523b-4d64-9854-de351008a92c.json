@@ -8,12 +8,12 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/36?_format=hal_json"
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
             {
-                "href": "http:\/\/default\/user\/36?_format=hal_json",
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
@@ -72,7 +72,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/36?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ]
             }
@@ -89,7 +89,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/36?_format=hal_json"
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -97,7 +97,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "56af9fbc-bb1f-4765-b1ab-d362175c251c"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ],
                 "lang": "en"
@@ -209,7 +209,7 @@
     "path": [
         {
             "alias": "\/basic-page-options-1",
-            "pid": 96,
+            "pid": 24,
             "langcode": "en",
             "lang": "en"
         }
@@ -227,6 +227,12 @@
             "value": "<p>Page showing some of the new Basic Page Options.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_landing_page_options": [
+        {
+            "value": "Show Site Background Image",
             "lang": "en"
         }
     ]

@@ -46,7 +46,8 @@
     ],
     "revision_timestamp": [
         {
-            "value": 1498152976
+            "value": "2017-06-22T17:36:16+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "_embedded": {
@@ -62,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ]
             }
@@ -79,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "0a09ff68-ceea-4251-ad2e-556a8842332a"
+                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
                     }
                 ],
                 "lang": "en"
@@ -100,14 +101,16 @@
     ],
     "created": [
         {
-            "value": 1498152946,
-            "lang": "en"
+            "value": "2017-06-22T17:35:46+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": 1498152976,
-            "lang": "en"
+            "value": "2017-06-22T17:36:16+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "promote": [
@@ -136,7 +139,7 @@
     "path": [
         {
             "alias": "\/quam-diu-etiam-furor",
-            "pid": 107,
+            "pid": 15,
             "langcode": "en",
             "lang": "en"
         }
@@ -154,6 +157,12 @@
             "value": "<p>Fictum, &nbsp;deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.<\/p>\r\n\r\n<p>Curabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n",
             "format": "d8m_text_editor",
             "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_landing_page_options": [
+        {
+            "value": "Show Site Background Image",
             "lang": "en"
         }
     ]

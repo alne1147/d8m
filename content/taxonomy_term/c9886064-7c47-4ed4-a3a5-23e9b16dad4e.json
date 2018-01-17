@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100013?_format=hal_json"
+            "href": "http:\/\/default\/category\/press-release?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -49,6 +49,14 @@
     "default_langcode": [
         {
             "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/category\/press-release",
+            "pid": 21,
+            "langcode": "en",
             "lang": "en"
         }
     ],
