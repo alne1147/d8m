@@ -30,18 +30,18 @@
     ],
     "name": [
         {
-            "value": "Show Alternative Footer",
+            "value": "Show Alternate Footer",
             "lang": "en"
         }
     ],
     "weight": [
         {
-            "value": 0
+            "value": 2
         }
     ],
     "changed": [
         {
-            "value": "2017-12-04T17:57:27+00:00",
+            "value": "2018-01-19T21:58:37+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Show Alternative Footer | CI Drupal 8"
+                "title": "Show Alternate Footer | CI Drupal 8"
             }
         }
     ]
