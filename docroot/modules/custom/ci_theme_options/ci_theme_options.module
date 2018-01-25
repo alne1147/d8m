@@ -17,6 +17,10 @@ function ci_theme_options_preprocess_page(&$variables) {
     $variables['global_bg_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.global_bg_color');
 }
 
+function ci_theme_options_preprocess_superfish_menu_items(&$variables) {
+    $variables['nav_color'] = \Drupal::config('ci_theme_options.settings')->get('ci_theme_options.nav_color');
+}
+
 /**
  * Implements hook_page_attachments().
  */
