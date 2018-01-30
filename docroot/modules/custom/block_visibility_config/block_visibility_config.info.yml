@@ -15,7 +15,6 @@ dependencies:
   - menu_block
   - menu_condition
   - node
-  - search
   - sharethis_block
   - system
   - taxonomy
