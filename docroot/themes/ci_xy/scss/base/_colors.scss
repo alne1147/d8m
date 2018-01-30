@@ -334,7 +334,8 @@
 // Wheat
 .color__wheat--strong {
   background: rgba($color-wheat, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .sf-menu.menu > li a {
     color: set-title-text-color35($color-wheat);
   }
 }
@@ -347,7 +348,8 @@
 // Sunflower
 .color__sunflower--strong {
   background: rgba($color-sunflower, 1)!important;
-  .field--name-field-card-title {
+  .field--name-field-card-title,
+  .sf-menu.menu > li a {
     color: set-title-text-color($color-sunflower);
   }
 }
@@ -376,7 +378,8 @@
   background: rgba($color-eggplant, 1)!important;
   .field--name-field-card-title,
   .field--name-field-row-title,
-  .panel-title > a {
+  .panel-title > a,
+  .sf-menu.menu > li a {
     color: set-title-text-color($color-eggplant);
   }
 }
