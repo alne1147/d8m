@@ -1,19 +1,48 @@
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-md-2-min) {
     position: absolute;
-    background-color: transparent;
+    background-color: transparent!important;
     margin-bottom: 0;
-    top: 8px;
+    top: 20px;
     width: 100%;
     z-index: 9999;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      width: auto;
+    }
+  }
+  .sf-accordion-toggle {
+    a {
+      color: $color-brand-green;
+      float: right;
+      margin-right: 1em;
+      @media (min-width: $screen-md) {
+        margin-right: 2.5em;
+      }
+    }
   }
   // Superfish overrides
   .sf-menu {
+    background-color: $color-brand-slate;
     // Centers top navigation
     //display: table;
     //margin: 0 auto!important;
+
+    @media (max-width: $screen-md) {
+      &.sf-accordion.sf-expanded {
+        position: relative;
+        top: 22px!important;
+      }
+    }
+    @media (max-width: $screen-md-2) {
+      &.sf-accordion.sf-expanded {
+        position: relative;
+        top: 26px!important;
+      }
+    }
     li {
       a {
         text-decoration: none;
@@ -30,6 +59,9 @@
     ul {
       li {
         background-color: $color-brand-slate;
+        &.sf-clone-parent {
+          background-color: transparent;
+        }
         a {
           &:hover:before {
             content: "";
@@ -56,7 +88,6 @@
       }
     }
     .sf-sub-indicator {
-      overflow: visible;
       opacity: 1;
       width: 100%;
       top: 73%;
