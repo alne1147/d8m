@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: sitewide
+label: SiteWide
+logic: or
+conditions:
+  1d4e41be-c868-48d4-b55f-beb8c9129c26:
+    id: current_theme
+    theme: ci_xy
+    negate: 0
+    context_mapping: {  }
+    uuid: 1d4e41be-c868-48d4-b55f-beb8c9129c26
+allow_other_conditions: true
