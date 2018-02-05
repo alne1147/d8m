@@ -6,8 +6,10 @@ dependencies:
   - block_class
   - block_content
   - block_visibility_groups
+  - calendar
   - ci_ct_content_types
   - ci_ct_event
+  - ci_search
   - ci_views_config
   - ctools
   - help
@@ -15,6 +17,8 @@ dependencies:
   - menu_block
   - menu_condition
   - node
+  - search_api
+  - search_api_db
   - sharethis_block
   - system
   - taxonomy
