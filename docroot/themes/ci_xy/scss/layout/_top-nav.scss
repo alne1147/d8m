@@ -24,7 +24,6 @@
       }
     }
   }
-  // Superfish overrides
   .sf-menu {
     background-color: $color-brand-slate;
     // Centers top navigation
@@ -58,7 +57,6 @@
         }
         &.sf-with-ul {
           padding-right: 1.5em;
-          //border-bottom: 1px solid rgba(0,0,0,0.2);
         }
         @media (max-width: $screen-md-2) {
           border-bottom: 1px solid rgba(0,0,0,0.2);
