@@ -10,8 +10,33 @@
     font-size: floor(($font-size-base * 1.5));
     margin-top:0;
   }
+  .sf-accordion-toggle {
+    padding: .75em;
+    float: right;
+    width: 100%;
+    a {
+      color: $color-brand-green;
+      float: right;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+      span:after {
+        content: '\f0c9';
+        font-family: FontAwesome;
+        margin-left: 10px;
+      }
+      &.sf-expanded {
+        span:after {
+          content: '\f00d';
+          margin-left: 11px;
+        }
+      }
+    }
+  }
   .sf-menu {
-    &.sf-vertical {
+    &.sf-vertical,
+    &.sf-accordion {
       width: 100%;
       li {
         background: $color-grey-sand!important;
@@ -37,10 +62,6 @@
 
         }
         &.sfHover {
-          //&:first-child {
-          //  border-top-left-radius: 3px;
-          //  border-top-right-radius: 3px;
-          //}
           a {
             border-left: 4px solid $color-ice;
             padding-left: 14px;
@@ -59,6 +80,8 @@
           }
         }
       }
+    }
+    &.sf-vertical {
       .sf-sub-indicator {
         color: $color-pacific-blue;
         opacity: 1;
@@ -70,6 +93,20 @@
           content: '\f054';
           position: absolute;
           top: 42%;
+        }
+      }
+    }
+    &.sf-accordion {
+      .sf-sub-indicator {
+        color: $color-pacific-blue;
+        opacity: 1;
+        height: 100%;
+        right: 12px;
+        &:after {
+          font-family: FontAwesome;
+          content: '\f107';
+          position: absolute;
+          top: 35%;
         }
       }
     }
