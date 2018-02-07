@@ -2,87 +2,117 @@
 .region-sidebar-first,
 .region-sidebar-second {
   background-color: $color-grey-sand;
+  margin-bottom: 2em;
   @media (min-width: $screen-md-2-min) {
     padding:0;
   }
-  border-radius: $border-radius;
   h2.block-title {
     font-size: floor(($font-size-base * 1.5));
     margin-top:0;
   }
-  .nav {
-    float: none;
-    margin: 0;
-    li {
+  .sf-accordion-toggle {
+    padding: .75em;
+    @media (max-width: $screen-sm) {
+      float: right;
       width: 100%;
-      a {
-        color: $color-black;
-        padding-left: 18px;
-        font-size: ceil(($font-size-base * 1.05));
-        transition: background-color 0.3s ease-out;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        &.is-active {
-          background-color: darken($color-grey-sand, 4.5%); // #eaeaea
-          border-left: 4px solid $color-pacific-blue;
-          font-weight: $font-weight-500;
-          padding-left: 14px;
-        }
-        &:hover {
-          background-color: darken($color-grey-sand, 4.5%); // #eaeaea
-          border-left: 4px solid $color-pacific-blue;
-          padding-left: 14px;
+    }
+    a {
+      color: $color-brand-green;
+      @media (max-width: $screen-sm) {
+        float: right;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+      span:after {
+        content: '\f0c9';
+        font-family: FontAwesome;
+        margin-left: 10px;
+      }
+      &.sf-expanded {
+        span:after {
+          content: '\f00d';
+          margin-left: 11px;
         }
       }
-      .caret {
-        border: 0; //Bootstrap override
-        &:before {
-          color: $color-pacific-blue;
-          position: absolute;
-          right: 0;
-          top: 12px;
-          padding-right: 8px;
-          content: '+';
-          font-size: 18px;
-        }
-      }
-      &.open {
-        .dropdown-toggle {
-          border-left: 4px solid $color-ice;
-          padding-left: 14px;
-          &:hover {
-            border-left: 4px solid $color-pacific-blue;
-          }
-        }
-        .caret {
-          &:before {
-            content: '-';
-            padding-right: 10px;
-          }
-        }
-      }
-      .dropdown-menu {
-        padding-top: 0;
-        padding-bottom: 0;
-        li {
-          a {
-            font-weight: $font-weight-300;
-            padding-top: 13px;
-            padding-bottom: 13px;
-            padding-left: 28px;
-            &:hover {
-              padding-left: 24px;
+    }
+  }
+  .sf-menu {
+    &.sf-vertical,
+    &.sf-accordion {
+      width: 100%;
+      li {
+        background: $color-grey-sand!important;
+        &:hover,
+        &.sfHover {
+          background: darken($color-grey-sand, 4.5%)!important;
+          @media (max-width: $screen-md-lg) {
+            ul {
+              left: 12.5em;
+              ul {
+                left: 11.75em;
+              }
             }
+          }
+          @media (min-width: $screen-lg) {
+            ul {
+              left: 18.4em;
+              ul {
+                left: 11.75em;
+              }
+            }
+          }
+
+        }
+        &.sfHover {
+          a {
+            border-left: 4px solid $color-ice;
+            padding-left: 14px;
+          }
+        }
+        a {
+          color: $color-black;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          padding-left: 18px;
+          &:hover {
+            background-color: darken($color-grey-sand, 4.5%); // #eaeaea
+            border-left: 4px solid $color-pacific-blue;
+            padding-left: 14px;
+            text-decoration: none;
           }
         }
       }
     }
-    .open .dropdown-menu {
-      background-color: transparent;
-      border: 0;
-      box-shadow:none;
-      position: static;
-      width: 100%;
+    &.sf-vertical {
+      .sf-sub-indicator {
+        color: $color-pacific-blue;
+        opacity: 1;
+        height: 100%;
+        right: 12px;
+        font-size: 11px;
+        &:after {
+          font-family: FontAwesome;
+          content: '\f054';
+          position: absolute;
+          top: 42%;
+        }
+      }
+    }
+    &.sf-accordion {
+      .sf-sub-indicator {
+        color: $color-pacific-blue;
+        opacity: 1;
+        height: 100%;
+        right: 12px;
+        &:after {
+          font-family: FontAwesome;
+          content: '\f107';
+          position: absolute;
+          top: 35%;
+        }
+      }
     }
   }
 }
