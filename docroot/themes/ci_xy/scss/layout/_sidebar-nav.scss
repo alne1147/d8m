@@ -12,11 +12,15 @@
   }
   .sf-accordion-toggle {
     padding: .75em;
-    float: right;
-    width: 100%;
+    @media (max-width: $screen-sm) {
+      float: right;
+      width: 100%;
+    }
     a {
       color: $color-brand-green;
-      float: right;
+      @media (max-width: $screen-sm) {
+        float: right;
+      }
       &:hover,
       &:focus {
         text-decoration: none;

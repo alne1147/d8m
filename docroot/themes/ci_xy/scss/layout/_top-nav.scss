@@ -18,18 +18,29 @@
     a {
       color: $color-brand-green;
       float: right;
-      margin-right: 1em;
+      margin-right: 1.3em;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
       @media (min-width: $screen-md) {
-        margin-right: 2.5em;
+        margin-right: 2.7em;
+      }
+      span:after {
+        content: '\f0c9';
+        font-family: FontAwesome;
+        margin-left: 10px;
+      }
+      &.sf-expanded {
+        span:after {
+          content: '\f00d';
+          margin-left: 11px;
+        }
       }
     }
   }
   .sf-menu {
     background-color: $color-brand-slate;
-    // Centers top navigation
-    //display: table;
-    //margin: 0 auto!important;
-
     @media (max-width: $screen-md) {
       &.sf-accordion.sf-expanded {
         position: relative;
