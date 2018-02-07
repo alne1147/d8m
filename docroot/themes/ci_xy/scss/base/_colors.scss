@@ -27,9 +27,12 @@
 .color__brand-green--strong {
   background: rgba($color-brand-green, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-green);
   }
 }
@@ -59,9 +62,12 @@
 .color__brand-silver--strong {
   background: rgba($color-brand-silver, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-silver);
   }
 }
@@ -75,9 +81,12 @@
 .color__brand-orange--strong {
   background: rgba($color-brand-orange, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-orange);
   }
 }
@@ -91,9 +100,12 @@
 .color__brand-brown--strong {
   background: rgba($color-brand-brown, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-brown);
   }
 }
@@ -107,9 +119,12 @@
 .color__brand-blue--strong {
   background: rgba($color-brand-blue, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-blue);
   }
 }
@@ -125,9 +140,12 @@
 .color__black--strong {
   background: rgba($color-black, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-black);
   }
 }
@@ -155,9 +173,12 @@
 .color__evening--strong {
   background: rgba($color-evening, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-evening);
   }
 }
@@ -171,9 +192,12 @@
 .color__charcoal--strong {
   background: rgba($color-charcoal, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-charcoal);
   }
 }
@@ -187,9 +211,12 @@
 .color__blackboard--strong {
   background: rgba($color-blackboard, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-blackboard);
   }
 }
@@ -203,8 +230,11 @@
 .color__grey-sand--strong {
   background: rgba($color-grey-sand, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-grey-sand);
   }
 }
@@ -218,8 +248,11 @@
 .color__sleek-grey--strong {
   background: rgba($color-sleek-grey, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-sleek-grey);
   }
 }
@@ -233,8 +266,11 @@
 .color__lemon-grass--strong {
   background: rgba($color-lemon-grass, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon-grass);
   }
 }
@@ -248,9 +284,12 @@
 .color__walnut--strong {
   background: rgba($color-walnut, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-walnut);
   }
 }
@@ -264,7 +303,10 @@
 .color__beige--strong {
   background: rgba($color-beige, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-beige);
   }
 }
@@ -280,9 +322,12 @@
 .color__spice--strong {
   background: rgba($color-spice, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-spice);
   }
 }
@@ -296,9 +341,12 @@
 .color__brick-red--strong {
   background: rgba($color-brick-red, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-brick-red);
   }
 }
@@ -312,8 +360,11 @@
 .color__scarlet--strong {
   background: rgba($color-scarlet, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-scarlet);
   }
 }
@@ -327,7 +378,10 @@
 .color__cognac--strong {
   background: rgba($color-cognac, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-cognac);
   }
 }
@@ -341,7 +395,10 @@
 .color__tiger-orange--strong {
   background: rgba($color-tiger-orange, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-tiger-orange);
   }
 }
@@ -355,7 +412,10 @@
 .color__wheat--strong {
   background: rgba($color-wheat, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-title,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-wheat);
   }
 }
@@ -369,7 +429,10 @@
 .color__sunflower--strong {
   background: rgba($color-sunflower, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-sunflower);
   }
 }
@@ -383,7 +446,10 @@
 .color__lemon--strong {
   background: rgba($color-lemon, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon);
   }
 }
@@ -398,9 +464,12 @@
 .color__eggplant--strong {
   background: rgba($color-eggplant, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-eggplant);
   }
 }
@@ -414,7 +483,10 @@
 .color__grape--strong {
   background: rgba($color-grape, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-grape);
   }
 }
@@ -428,9 +500,12 @@
 .color__ink--strong {
   background: rgba($color-ink, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-ink);
   }
 }
@@ -444,7 +519,10 @@
 .color__sky-blue--strong {
   background: rgba($color-sky-blue, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-sky-blue);
   }
 }
@@ -458,7 +536,10 @@
 .color__pacific-blue--strong {
   background: rgba($color-pacific-blue, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-pacific-blue);
   }
 }
@@ -472,7 +553,10 @@
 .color__aqua--strong {
   background: rgba($color-aqua, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-aqua);
   }
 }
@@ -486,7 +570,10 @@
 .color__pastel-blue--strong {
   background: rgba($color-pastel-blue, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-pastel-blue);
   }
 }
@@ -500,7 +587,10 @@
 .color__ice--strong {
   background: rgba($color-ice, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-ice);
   }
 }
@@ -516,9 +606,12 @@
 .color__forest--strong {
   background: rgba($color-forest, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-forest);
   }
 }
@@ -532,7 +625,10 @@
 .color__neon-green--strong {
   background: rgba($color-neon-green, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-neon-green);
   }
 }
@@ -546,7 +642,10 @@
 .color__cucumber--strong {
   background: rgba($color-cucumber, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color35($color-cucumber);
   }
 }
@@ -560,9 +659,12 @@
 .color__fern--strong {
   background: rgba($color-fern, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-fern);
   }
 }
@@ -576,9 +678,12 @@
 .color__mineral-green--strong {
   background: rgba($color-mineral-green, 1)!important;
   .field--name-field-card-title,
+  .field--name-field-card-body,
   .field--name-field-row-title,
   .panel-title > a,
-  .sf-menu a {
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-mineral-green);
   }
 }
@@ -592,7 +697,10 @@
 .color__pine-needle--strong {
   background: rgba($color-pine-needle, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-pine-needle);
   }
 }
@@ -606,7 +714,10 @@
 .color__corduroy--strong {
   background: rgba($color-corduroy, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-corduroy);
   }
 }
@@ -620,7 +731,10 @@
 .color__sea-foam--strong {
   background: rgba($color-sea-foam, 1)!important;
   .field--name-field-card-title,
-  .sf-menu a {
+  .field--name-field-card-body,
+  .sf-menu a,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-sea-foam);
   }
 }
