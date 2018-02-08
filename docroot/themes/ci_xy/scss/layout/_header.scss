@@ -30,10 +30,14 @@
       font-size: ceil(($font-size-base * 1.05));
       @media (min-width: $screen-xs-max) {
         position: relative;
-        right: 112px;
+        //right: 112px;
+        right: 105px;
         z-index: 200;
       }
       @media (min-width: $screen-md) {
+        right: 120px;
+      }
+      @media (min-width: $screen-md-lg) {
         position: static;
       }
     }
@@ -70,15 +74,18 @@
     @media (max-width: $screen-xs-max) {
       position: absolute;
       top: 20px;
-      right: 80px;
+      right: 105px;
     }
     @media (min-width: $screen-xs-max) {
       position: absolute;
       top: 8px;
-      right: 90px;
+      right: 95px;
       z-index: 200;
     }
     @media (min-width: $screen-md) {
+      right: 105px;
+    }
+    @media (min-width: $screen-md-lg) {
       position: static;
     }
   }
