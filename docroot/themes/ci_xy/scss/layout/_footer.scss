@@ -20,7 +20,7 @@ footer {
   padding: 18px 0;
   &--links {
     padding-left: 0;
-    opacity: .64;
+    //opacity: .64;
     margin: 0 auto 20px auto;
     text-align: center;
     @media (min-width: $screen-md) {
@@ -56,7 +56,7 @@ footer {
   display:block;
   width: 164px;
   height: 28px;
-  opacity: .64;
+  //opacity: .64;
 }
 @media (min-width: $screen-sm) {}
 @media (min-width: $screen-md) {

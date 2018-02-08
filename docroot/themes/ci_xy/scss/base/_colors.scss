@@ -70,6 +70,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-silver);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__brand-silver--light {
   background: rgba($color-brand-silver, .5)
@@ -88,6 +91,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-orange);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__brand-orange--light {
@@ -126,6 +132,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__brand-blue--light {
@@ -237,6 +246,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grey-sand);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__grey-sand--light {
   background: rgba($color-grey-sand, .5)
@@ -255,6 +267,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sleek-grey);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__sleek-grey--light {
   background: rgba($color-sleek-grey, .5)
@@ -272,6 +287,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon-grass);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__lemon-grass--light {
@@ -308,6 +326,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-beige);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__beige--light {
@@ -367,6 +388,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-scarlet);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__scarlet--light {
   background: rgba($color-scarlet, .5)
@@ -399,7 +423,10 @@
   .sf-menu a,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
-    color: set-title-text-color($color-tiger-orange);
+    color: set-title-text-color35($color-tiger-orange);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__tiger-orange--light {
@@ -412,11 +439,14 @@
 .color__wheat--strong {
   background: rgba($color-wheat, 1)!important;
   .field--name-field-card-title,
-  .field--name-field-card-title,
+  .field--name-field-card-body,
   .sf-menu a,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-wheat);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__wheat--light {
@@ -435,6 +465,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sunflower);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__sunflower--light {
   background: rgba($color-sunflower, .5)
@@ -451,6 +484,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__lemon--light {
@@ -523,7 +559,10 @@
   .sf-menu a,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
-    color: set-title-text-color($color-sky-blue);
+    color: set-title-text-color35($color-sky-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__sky-blue--light {
@@ -540,7 +579,10 @@
   .sf-menu a,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
-    color: set-title-text-color($color-pacific-blue);
+    color: set-title-text-color35($color-pacific-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__pacific-blue--light {
@@ -557,7 +599,10 @@
   .sf-menu a,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
-    color: set-title-text-color($color-aqua);
+    color: set-title-text-color35($color-aqua);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__aqua--light {
@@ -576,6 +621,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pastel-blue);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__pastel-blue--light {
   background: rgba($color-pastel-blue, .5)
@@ -592,6 +640,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ice);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__ice--light {
@@ -631,6 +682,9 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-neon-green);
   }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
+  }
 }
 .color__neon-green--light {
   background: rgba($color-neon-green, .5)
@@ -647,6 +701,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-cucumber);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__cucumber--light {
@@ -736,6 +793,9 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sea-foam);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_logo-black.svg)!important;
   }
 }
 .color__sea-foam--light {
