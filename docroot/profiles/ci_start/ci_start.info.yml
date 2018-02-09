@@ -9,6 +9,7 @@ distribution:
 langcode: en
 
 dependencies:
+  - superfish
   - file_browser
   - admin_toolbar
   - admin_toolbar_tools
