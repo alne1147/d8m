@@ -17,6 +17,7 @@ dependencies:
   - node
   - search
   - sharethis_block
+  - superfish
   - system
   - taxonomy
   - term_condition
