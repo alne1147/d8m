@@ -12,11 +12,13 @@ dependencies:
   - ci_search
   - ci_views_config
   - ctools
+  - entity_reference_revisions
   - help
   - masquerade
   - menu_block
   - menu_condition
   - node
+  - paragraphs
   - search_api
   - search_api_db
   - sharethis_block
