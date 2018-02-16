@@ -61,7 +61,6 @@ dependencies:
   - quickedit
   - rdf
   - responsive_image
-  - search
   - shortcut
   - system
   - taxonomy

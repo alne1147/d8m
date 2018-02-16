@@ -9,3 +9,4 @@ ci_admin_tweaks
 ci_media_types
 ckeditor_config
 ci_google_picker
+ci_d8m_search
