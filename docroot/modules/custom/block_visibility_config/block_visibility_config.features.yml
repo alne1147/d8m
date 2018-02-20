@@ -1,3 +1,1 @@
-excluded:
-  - block_visibility_groups.block_visibility_group.sitewide
 required: true
