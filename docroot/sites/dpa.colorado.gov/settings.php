@@ -781,6 +781,6 @@ $config['acquia_search.settings']['connection_override'] = [
     'scheme' => 'https',
     'port' => 443,
     'host' => 'us-east-1-c1.acquia-search.com',
-    'index_id' => 'CDIY-145117.dev.default',
+    'index_id' => 'CDIY-145117.dev.dpacoloradogov',
     'derived_key' => '8e4e9b45b93ad5e8ddb0f3f68e680a5b8830bad2',
 ];
