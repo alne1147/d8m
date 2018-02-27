@@ -1,0 +1,7 @@
+name: 'CI Search'
+type: module
+core: 8.x
+dependencies:
+  - search_api
+  - user
+  - views
