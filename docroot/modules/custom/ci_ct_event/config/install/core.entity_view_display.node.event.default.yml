@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_page_options
+    - field.field.node.event.field_promote_options
     - field.field.node.event.field_related_content
     - field.field.node.event.field_rows
     - node.type.event
@@ -29,7 +30,7 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 3
+    weight: 2
     label: above
     settings:
       format_type: medium
@@ -38,7 +39,7 @@ content:
     type: datetime_default
     region: content
   field_location:
-    weight: 4
+    weight: 3
     label: above
     settings:
       include_map: true
@@ -57,7 +58,7 @@ content:
     type: simple_gmap
     region: content
   field_rows:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -73,4 +74,5 @@ content:
 hidden:
   field_article_tags: true
   field_page_options: true
+  field_promote_options: true
   field_related_content: true

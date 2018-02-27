@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_meta
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_promote_options
     - field.field.node.page.field_related_content
     - field.field.node.page.field_rows
     - node.type.page
@@ -39,6 +40,7 @@ third_party_settings:
         - field_landing_page_options
         - field_related_content
         - field_article_tags
+        - field_promote_options
       parent_name: ''
       weight: 1
       format_type: details
@@ -95,6 +97,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_promote_options:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_related_content:
     weight: 4
