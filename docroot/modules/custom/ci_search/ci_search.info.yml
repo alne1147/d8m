@@ -2,6 +2,11 @@ name: 'CI Search'
 type: module
 core: 8.x
 dependencies:
+  - block
+  - block_class
+  - block_visibility_groups
+  - menu_condition
   - search_api
+  - term_condition
   - user
   - views
