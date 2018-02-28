@@ -73,8 +73,10 @@ display:
         options:
           view_modes:
             'entity:node':
-              article: teaser
-              page: teaser
+              article: search_index
+              event: search_index
+              landing_page: search_index
+              page: search_index
       fields:
         search_api_language:
           table: search_api_index_acquia_search_index
