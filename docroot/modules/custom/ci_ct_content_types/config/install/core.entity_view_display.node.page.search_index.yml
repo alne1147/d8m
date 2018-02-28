@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_meta
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_promote_options
     - field.field.node.page.field_related_content
     - field.field.node.page.field_rows
     - node.type.page
@@ -28,6 +29,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_article_tags:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_rows:
     type: entity_reference_revisions_entity_view
     weight: 2
@@ -43,9 +52,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_article_tags: true
   field_block_options: true
   field_landing_page_options: true
   field_meta: true
   field_meta_tags: true
+  field_promote_options: true
   field_related_content: true
