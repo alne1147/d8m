@@ -311,8 +311,16 @@ display:
         groups:
           1: AND
       style:
-        type: default
-        options: {  }
+        type: grid
+        options:
+          uses_fields: false
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: search_api
         options:
