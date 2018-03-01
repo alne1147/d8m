@@ -72,13 +72,14 @@
  * @ingroup themeable
  */
 #}
+<div class="col-6">
 <article{{ attributes }}>
 
   {{ title_prefix }}
   {% if not page %}
-    <h2{{ title_attributes }}>
+    <h3{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+    </h3>
   {% endif %}
   {{ title_suffix }}
 
@@ -93,7 +94,9 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+      {% set summary = content.body|render|striptags %}
+      {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
   </div>
-
+    {{ node.field_article_tags.value }}
 </article>
+</div>
