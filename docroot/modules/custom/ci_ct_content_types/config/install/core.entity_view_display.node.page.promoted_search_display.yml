@@ -24,10 +24,11 @@ mode: promoted_search_display
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 0
     region: content
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
   field_article_tags:
     type: entity_reference_label
