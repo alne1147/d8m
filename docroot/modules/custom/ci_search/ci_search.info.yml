@@ -2,11 +2,17 @@ name: 'CI Search'
 type: module
 core: 8.x
 dependencies:
+  - acquia_search
   - block
   - block_class
   - block_visibility_groups
+  - ci_ct_content_types
+  - media
   - menu_condition
+  - node
+  - paragraphs
   - search_api
+  - search_api_solr
   - term_condition
   - user
   - views
