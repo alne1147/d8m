@@ -9,6 +9,7 @@ distribution:
 langcode: en
 
 dependencies:
+  - acquia_connector
   - superfish
   - file_browser
   - admin_toolbar

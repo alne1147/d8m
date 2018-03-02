@@ -3,6 +3,7 @@ ci_blocks_block_types
 ci_paragraphs
 ckeditor_config
 ci_user
+ci_search
 ci_theme_options
 default_content_deploy
 ci_admin_tweaks

@@ -38,6 +38,8 @@ drush php-eval 'node_access_rebuild()'
 drush -y config-set system.performance css.preprocess 0
 drush -y config-set system.performance js.preprocess 0
 
+drush pm-uninstall search --y
+
 drush cim --partial -y
 drush dcdi -y
 drush features-import-all -y
