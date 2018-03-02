@@ -7,12 +7,17 @@ dependencies:
   - block_class
   - block_visibility_groups
   - ci_ct_content_types
+  - ci_ct_event
+  - datetime
+  - entity_reference_revisions
   - media
   - menu_condition
   - node
   - paragraphs
   - search_api
   - search_api_solr
+  - simple_gmap
   - term_condition
+  - text
   - user
   - views
