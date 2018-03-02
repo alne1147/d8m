@@ -10,6 +10,7 @@ dependencies:
   - block_visibility_groups
   - ci_blocks_block_types
   - ci_cr_rows_and_cards
+  - ci_search
   - conditional_fields
   - content_moderation
   - datetime
@@ -19,6 +20,7 @@ dependencies:
   - file
   - image
   - jquery_colorpicker
+  - media
   - menu_condition
   - menu_ui
   - metatag
