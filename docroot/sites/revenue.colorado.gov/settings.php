@@ -815,3 +815,13 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
       'derived_key' => '8e4e9b45b93ad5e8ddb0f3f68e680a5b8830bad2',
   ];
 }
+
+// Local or other non-acquia-hosted Drupal environment
+$config['acquia_search.settings']['connection_override'] = [
+    'scheme' => 'https',
+    'port' => 443,
+    'host' => 'useast1-c26.acquia-search.com',
+    'index_id' => 'CDIY-145117.dev.dpacoloradogov',
+    'derived_key' => '8e4e9b45b93ad5e8ddb0f3f68e680a5b8830bad2',
+];
+
