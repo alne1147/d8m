@@ -10,6 +10,7 @@ dependencies:
   - ci_ct_event
   - datetime
   - entity_reference_revisions
+  - facets
   - media
   - menu_condition
   - node
@@ -17,6 +18,7 @@ dependencies:
   - search_api
   - search_api_solr
   - simple_gmap
+  - taxonomy
   - term_condition
   - text
   - user

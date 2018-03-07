@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__acquia_search_block_1
 theme: ci_xy
 region: highlighted
-weight: 0
+weight: -9
 provider: null
 plugin: 'views_block:acquia_search-block_1'
 settings:

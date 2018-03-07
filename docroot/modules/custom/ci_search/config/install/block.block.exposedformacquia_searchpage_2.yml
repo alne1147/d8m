@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.acquia_search
@@ -17,7 +17,7 @@ third_party_settings:
 id: exposedformacquia_searchpage_2
 theme: ci_xy
 region: highlighted
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_exposed_filter_block:acquia_search-page'
 settings:

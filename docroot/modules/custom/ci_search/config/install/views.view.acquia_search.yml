@@ -4,6 +4,7 @@ dependencies:
   config:
     - search_api.index.acquia_search_index
     - system.menu.main
+    - taxonomy.vocabulary.free_tagging
   module:
     - search_api
     - user
@@ -36,7 +37,7 @@ display:
           skip_access: false
           parse_mode: terms
       exposed_form:
-        type: basic
+        type: input_required
         options:
           submit_button: Search
           reset_button: true
@@ -45,6 +46,8 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: d8m_text_editor
       pager:
         type: full
         options:
@@ -158,6 +161,12 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -170,9 +179,61 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          parse_mode: terms
           min_length: null
           fields: {  }
           plugin_id: search_api_fulltext
+        field_article_tags:
+          id: field_article_tags
+          table: search_api_index_acquia_search_index
+          field: field_article_tags
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_article_tags_op
+            label: 'Related Tags'
+            description: ''
+            use_operator: false
+            operator: field_article_tags_op
+            identifier: field_article_tags
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: free_tagging
+          hierarchy: false
+          error_message: true
+          plugin_id: search_api_term
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -206,12 +267,14 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - user.permissions
       tags: {  }
   block_1:
@@ -306,6 +369,7 @@ display:
         filter_groups: false
         style: false
         row: false
+        cache: false
       filter_groups:
         operator: AND
         groups:
@@ -330,12 +394,47 @@ display:
               event: promoted_search_display
               landing_page: promoted_search_display
               page: promoted_search_display
+      cache:
+        type: none
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user.permissions
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Block 2'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      exposed_form:
+        type: input_required
+        options:
+          submit_button: Search
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: d8m_text_editor
+      defaults:
+        exposed_form: false
+        cache: false
+      cache:
+        type: none
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
         - user.permissions
       tags: {  }
   page:
@@ -357,11 +456,196 @@ display:
         context: '0'
         menu_name: main
       display_description: ''
+      cache:
+        type: none
+      defaults:
+        cache: false
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
+        - user.permissions
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Acquia Search Page'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: new-search
+      exposed_block: false
+      menu:
+        type: normal
+        title: Search
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
+      display_description: ''
+      cache:
+        type: none
+      defaults:
+        cache: false
+        filters: false
+        filter_groups: false
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_acquia_search_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: Search
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            identifier: search
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          min_length: null
+          fields: {  }
+          plugin_id: search_api_fulltext
+        field_promote_options:
+          id: field_promote_options
+          table: search_api_index_acquia_search_index
+          field: field_promote_options
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_promote_options_op
+            label: 'Promote Options'
+            description: ''
+            use_operator: false
+            operator: field_promote_options_op
+            identifier: field_promote_options
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: 'Promote Options'
+            description: null
+            identifier: field_promote_options
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          reduce_duplicates: false
+          plugin_id: search_api_options
+        field_article_tags:
+          id: field_article_tags
+          table: search_api_index_acquia_search_index
+          field: field_article_tags
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_article_tags_op
+            label: 'Related Tags'
+            description: ''
+            use_operator: false
+            operator: field_article_tags_op
+            identifier: field_article_tags
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          type: textfield
+          limit: true
+          vid: free_tagging
+          hierarchy: false
+          error_message: true
+          plugin_id: search_api_term
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
         - user.permissions
       tags: {  }
