@@ -2,29 +2,31 @@ langcode: en
 status: false
 dependencies:
   config:
-    - facets.facet.faceted_related_tags
+    - views.view.acquia_search
   module:
     - block_class
     - block_visibility_groups
-    - facets
     - menu_condition
     - term_condition
+    - views
   theme:
     - ci_xy
 third_party_settings:
   block_class:
     classes: ''
-id: facetedrelatedtags
+id: views_block__acquia_search_block_1
 theme: ci_xy
 region: highlighted
-weight: -10
+weight: -11
 provider: null
-plugin: 'facet_block:faceted_related_tags'
+plugin: 'views_block:acquia_search-block_1'
 settings:
-  id: 'facet_block:faceted_related_tags'
-  label: 'Faceted Related Tags'
-  provider: facets
-  label_display: '0'
+  id: 'views_block:acquia_search-block_1'
+  label: 'Promoted Search'
+  provider: views
+  label_display: visible
+  views_label: 'Promoted Search'
+  items_per_page: none
 visibility:
   condition_group:
     id: condition_group

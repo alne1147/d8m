@@ -494,7 +494,7 @@ display:
     display_options:
       display_extenders: {  }
       path: search
-      exposed_block: false
+      exposed_block: true
       menu:
         type: normal
         title: Search
