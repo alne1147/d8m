@@ -301,7 +301,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Published After'
+            label: 'Start Date'
             description: ''
             use_operator: false
             operator: created_op
@@ -349,7 +349,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: 'Published Before'
+            label: 'End Date'
             description: ''
             use_operator: false
             operator: created_1_op
