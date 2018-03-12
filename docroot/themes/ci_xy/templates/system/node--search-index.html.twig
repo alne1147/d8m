@@ -72,8 +72,8 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
 
+<article{{ attributes }}>
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -94,7 +94,13 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+      {% set summary = content.body|render|striptags %}
+      {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
   </div>
+  <div class="{{ content.field_promote_options[0] }}">Test</div>
+    {{ content.field_article_tags }}
 
 </article>
+
+
+
