@@ -72,8 +72,11 @@
  * @ingroup themeable
  */
 #}
-
+    {% if node.field_promote_options[0] is empty %}
 <article{{ attributes }}>
+  {% else %}
+  <article{{ attributes.addClass('promoted-search') }}>
+  {% endif %}
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -93,11 +96,20 @@
     {#</footer>#}
   {% endif %}
 
-  <div{{ content_attributes }}>
-      {% set summary = content.body|render|striptags %}
-      {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
-  </div>
-  <div class="{{ content.field_promote_options[0] }}">Test</div>
+    {% if node.field_promote_options[0] is empty %}
+        <div{{ content_attributes }}>
+            {% set summary = content.body|render|striptags %}
+            {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
+        </div>
+{% else %}
+
+    <div{{ content_attributes.addClass('promoted-body') }}>
+        {% set summary = content.body|render|striptags %}
+        {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
+    </div>
+
+    {% endif %}
+
     {{ content.field_article_tags }}
 
 </article>
