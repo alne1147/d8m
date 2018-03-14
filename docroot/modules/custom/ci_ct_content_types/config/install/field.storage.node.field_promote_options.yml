@@ -11,8 +11,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: Promote
+      value: promote
       label: Promote
+    -
+      value: omit
+      label: Omit
   allowed_values_function: ''
 module: options
 locked: false
