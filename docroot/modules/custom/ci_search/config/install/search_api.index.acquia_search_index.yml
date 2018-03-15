@@ -6,9 +6,10 @@ dependencies:
     - field.storage.node.field_promote_options
     - field.storage.node.field_article_tags
     - field.storage.node.field_rows
-    - field.storage.paragraph.field_card_body
     - field.storage.paragraph.bp_column_content
     - field.storage.paragraph.field_card_title
+    - field.storage.paragraph.field_row_title
+    - field.storage.paragraph.field_card_body
     - search_api.server.acquia_search_server
   module:
     - search_api
@@ -67,14 +68,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_rows
-  field_card_body:
-    label: 'Card Body'
-    datasource_id: 'entity:paragraph'
-    property_path: field_card_body
-    type: text
-    dependencies:
-      config:
-        - field.storage.paragraph.field_card_body
   bp_column_content:
     label: 'Cards Content'
     datasource_id: 'entity:paragraph'
@@ -91,6 +84,30 @@ field_settings:
     dependencies:
       config:
         - field.storage.paragraph.field_card_title
+  field_row_title:
+    label: 'Row Title'
+    datasource_id: 'entity:paragraph'
+    property_path: field_row_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_row_title
+  field_card_body:
+    label: 'Card Body'
+    datasource_id: 'entity:paragraph'
+    property_path: field_card_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_card_body
+  processed:
+    label: 'Card Body » Processed text'
+    datasource_id: 'entity:paragraph'
+    property_path: 'field_card_body:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.paragraph.field_card_body
 datasource_settings:
   'entity:node':
     bundles:
@@ -141,7 +158,6 @@ processor_settings:
       - field_article_tags
       - type
       - field_rows
-      - field_card_body
     title: true
     alt: true
     tags:

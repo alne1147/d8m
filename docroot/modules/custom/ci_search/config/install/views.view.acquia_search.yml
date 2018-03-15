@@ -374,45 +374,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_date
-        field_promote_options:
-          id: field_promote_options
-          table: search_api_index_acquia_search_index
-          field: field_promote_options
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            Promote: Promote
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: search_api_options
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -547,7 +508,7 @@ display:
           exposed: true
           expose:
             operator_id: field_article_tags_op
-            label: 'Related:'
+            label: 'Related Tags'
             description: ''
             use_operator: false
             operator: field_article_tags_op
@@ -603,7 +564,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Type
             description: ''
             use_operator: false
             operator: type_op
@@ -735,54 +696,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_date
-        field_promote_options:
-          id: field_promote_options
-          table: search_api_index_acquia_search_index
-          field: field_promote_options
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            all: all
-            Promote: Promote
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_promote_options_op
-            label: 'Promote Options'
-            description: ''
-            use_operator: false
-            operator: field_promote_options_op
-            identifier: field_promote_options
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              support_administrator: '0'
-              user_administrator: '0'
-              content_administrator: '0'
-              content_publisher: '0'
-              content_editor: '0'
-              structure_administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: search_api_options
       filter_groups:
         operator: AND
         groups:
@@ -1104,54 +1017,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_date
-        field_promote_options:
-          id: field_promote_options
-          table: search_api_index_acquia_search_index
-          field: field_promote_options
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            all: all
-            Promote: Promote
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_promote_options_op
-            label: 'Promote Options'
-            description: ''
-            use_operator: false
-            operator: field_promote_options_op
-            identifier: field_promote_options
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              support_administrator: '0'
-              user_administrator: '0'
-              content_administrator: '0'
-              content_publisher: '0'
-              content_editor: '0'
-              structure_administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: search_api_options
       filter_groups:
         operator: AND
         groups:
@@ -1229,7 +1094,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h2
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1255,10 +1120,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api
           fallback_options:
-            link_to_item: false
+            link_to_item: true
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
@@ -1325,7 +1190,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
@@ -1384,7 +1249,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1395,7 +1260,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
@@ -1410,7 +1275,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: 'Paragraph Body:'
           exclude: true
           alter:
             alter_text: false
@@ -1635,7 +1500,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"{{ field_promote_options }}\">\n{{ title }}\n{{ body }}\n{{ field_card_title }}\n{{ field_card_body }}\n{{ field_article_tags }}\n</div>"
+            text: "<div class=\"{{ field_promote_options }}\">\n<h2>{{ title }}</h2>\n{{ body }}\n<h3>{{ field_card_title }}</h3>\n{{ field_card_body }}\n{{ field_article_tags }}\n</div>"
             make_link: false
             path: ''
             absolute: false
