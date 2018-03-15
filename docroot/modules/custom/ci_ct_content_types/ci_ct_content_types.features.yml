@@ -3,4 +3,6 @@ excluded:
   - views.view.recent_articles
   - block_visibility_groups.block_visibility_group.recent_articles
   - block.block.exposedformacquia_searchpage_2
+  - block.block.views_block__acquia_search_block_1
+  - block.block.exposedformacquia_searchpage
 required: true
