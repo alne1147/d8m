@@ -73,7 +73,7 @@
  */
 #}
     {% if node.field_promote_options[0] is empty %}
-<article{{ attributes }}>
+<article{{ attributes.addClass('omitted-search') }}>
     <h2> <a href="{{ url }}">{{ label }}</a></h2>
 
     {% endif %}
@@ -81,7 +81,7 @@
   <article{{ attributes.addClass('promoted-search') }}>
 
 
-      <h2> <a href="{{ url }}">Promoted Result Page: {{ label }}</a></h2>
+      <h2> <a href="{{ url }}">{{ label }}</a></h2>
       {% endif %}
 
       {{ title_suffix }}
@@ -115,6 +115,3 @@
    <div class="related-tags"> {{ content.field_article_tags }}</div>
     {% endif %}
 </article>
-
-
-
