@@ -1,10 +1,7 @@
-
-
 .promoted-search
 {
 background-color: #f4fffe;
   padding:10px;
-  border: 1px solid gray;
 
     article
     {
@@ -33,3 +30,6 @@ article.omitted-search
   {
     padding:10px 20px;
   }
+.related-tags .field--item {
+  display: inline;
+}
