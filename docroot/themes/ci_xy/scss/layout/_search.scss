@@ -1,0 +1,35 @@
+
+
+.promoted-search
+{
+background-color: #f4fffe;
+  padding:10px;
+  border: 1px solid gray;
+
+    article
+    {
+      padding:30px;
+    }
+}
+.view-acquia-search
+{
+  h2 {
+    font-family: "museo-sans",sans-serif;
+    margin:0px;
+    font-size: 24px;
+  }
+
+
+    a {
+      text-decoration:underline;
+    }
+  .views-row
+  {
+    margin-bottom:10px;
+  }
+}
+
+article.omitted-search
+  {
+    padding:10px 20px;
+  }
