@@ -7,6 +7,15 @@ background-color: #f4fffe;
     {
       padding:30px;
     }
+
+  .promotedLabel
+  {
+    background-color: #C70039;
+    font-weight:bold;
+    color:white;
+    padding:5px;
+    margin-bottom:10px;
+  }
 }
 .view-acquia-search
 {
@@ -32,4 +41,9 @@ article.omitted-search
   }
 .related-tags .field--item {
   display: inline;
+}
+.tagsLabel
+{
+  display: inline;
+  margin-right:10px;
 }
