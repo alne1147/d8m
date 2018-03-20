@@ -1,12 +1,8 @@
-.promoted-search
+article.promoted-search
 {
 background-color: #f4fffe;
   padding:10px;
 
-    article
-    {
-      padding:30px;
-    }
 
   .promotedLabel
   {
@@ -21,8 +17,8 @@ background-color: #f4fffe;
 {
   h2 {
     font-family: "museo-sans",sans-serif;
-    margin:0px;
-    font-size: 24px;
+    margin: 0;
+    font-size: 18px;
   }
 
 
@@ -37,13 +33,26 @@ background-color: #f4fffe;
 
 article.omitted-search
   {
-    padding:10px 20px;
-  }
+  margin:10px 20px;
+  padding:0 0 10px 0;
+  border-bottom:1px solid  #e7e7e7;
+}
 .related-tags .field--item {
   display: inline;
 }
-.tagsLabel
+
+.form-control
 {
-  display: inline;
-  margin-right:10px;
+  padding:20px;
+  margin:10px 5px;
+}
+
+.block-views-exposed-filter-blockacquia-search-search-block .control-label
+{
+  color:#494949;
+  font-weight: normal;
+}
+#views-exposed-form-acquia-search-search-block
+{
+  padding-bottom:30px;
 }

@@ -137,6 +137,9 @@
                             {% block highlighted %}
                                 <div class="highlighted">{{ page.highlighted }}</div>
 
+                                {{ render_block('acquia_searchsearch_block') }}
+
+
                             {% endblock %}
 
                         {# Action Links #}
@@ -203,4 +206,3 @@
                 {% endblock %}
             </footer>
         {% endblock %}
-
