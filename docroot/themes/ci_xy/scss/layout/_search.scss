@@ -30,7 +30,13 @@ background-color: #f4fffe;
     margin-bottom:10px;
   }
 }
-
+ h2.search-results
+ {
+   font-size:24px;
+   color: #393939;
+   font-weight: normal;
+   margin:10px 0px 10px 0px;
+ }
 article.omitted-search
   {
   margin:10px 20px;
@@ -55,4 +61,8 @@ article.omitted-search
 #views-exposed-form-acquia-search-search-block
 {
   padding-bottom:30px;
+}
+#advancedSearch
+{
+  display:none;
 }
