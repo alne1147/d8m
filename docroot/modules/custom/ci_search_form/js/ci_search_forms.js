@@ -5,7 +5,7 @@
         attach: function(context, settings) {
             $(document).ready(function(){
                 $(".advancedSearchTog").click(function(){
-                    $("#advancedSearch").slideToggle();
+                    $("#advancedSearch").toggle("slow");
                 });
             });
         }
