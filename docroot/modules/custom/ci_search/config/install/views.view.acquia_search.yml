@@ -386,7 +386,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -474,57 +474,6 @@ display:
           min_length: null
           fields: {  }
           plugin_id: search_api_fulltext
-        field_article_tags:
-          id: field_article_tags
-          table: search_api_index_acquia_search_index
-          field: field_article_tags
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_article_tags_op
-            label: 'Related Tags'
-            description: ''
-            use_operator: false
-            operator: field_article_tags_op
-            identifier: field_article_tags
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              support_administrator: '0'
-              user_administrator: '0'
-              content_administrator: '0'
-              content_publisher: '0'
-              content_editor: '0'
-              structure_administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: free_tagging
-          hierarchy: false
-          error_message: true
-          plugin_id: search_api_term
         type:
           id: type
           table: search_api_index_acquia_search_index
@@ -675,16 +624,67 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_date
+        field_article_tags:
+          id: field_article_tags
+          table: search_api_index_acquia_search_index
+          field: field_article_tags
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_article_tags_op
+            label: 'Related Tags'
+            description: ''
+            use_operator: false
+            operator: field_article_tags_op
+            identifier: field_article_tags
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: free_tagging
+          hierarchy: false
+          error_message: true
+          plugin_id: search_api_term
       filter_groups:
         operator: AND
         groups:
           1: AND
-      title: 'Acquia Search Page'
+      title: Search
       sorts:
-        search_api_relevance:
-          id: search_api_relevance
+        field_promote_options:
+          id: field_promote_options
           table: search_api_index_acquia_search_index
-          field: search_api_relevance
+          field: field_promote_options
           relationship: none
           group_type: group
           admin_label: ''
@@ -693,10 +693,10 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-        field_promote_options:
-          id: field_promote_options
+        search_api_relevance:
+          id: search_api_relevance
           table: search_api_index_acquia_search_index
-          field: field_promote_options
+          field: search_api_relevance
           relationship: none
           group_type: group
           admin_label: ''
