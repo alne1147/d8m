@@ -34,12 +34,12 @@
 
                 $("input#edit-created-lt").attr({
                     "size" : 10,
-                    "value" : "End Date"
+                    "placeholder" : "End Date"
                 });
 
                 $("input#edit-created").attr({
                     "size" : 10,
-                    "value" : "Start Date"
+                    "placeholder" : "Start Date"
                 });
 
             });
