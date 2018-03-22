@@ -7,3 +7,5 @@ ci_search_forms:
     - core/jquery.once
     - core/drupal
     - core/drupalSettings
+     - core/jquery.ui
+    - core/jquery.ui.datepicker
