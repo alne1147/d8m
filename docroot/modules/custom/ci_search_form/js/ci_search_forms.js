@@ -13,17 +13,39 @@
         }
     };
 
-    Drupal.behaviors.SearchCalendar = {
+    Drupal.behaviors.SearchCalendarStyles = {
         attach: function(context, settings) {
             $(document).ready(function(){
 
-                $("#edit-created").datepicker();
-                $("#edit-created-lt").datepicker();
+                $("#edit-created").datepicker().addClass( "col-md-1" );
+                $("#edit-created-lt").datepicker().addClass( "col-md-1" );
+
 
 
             });
 
         }
+
+    };
+
+    Drupal.behaviors.SearchCalendarSizes = {
+        attach: function(context, settings) {
+            $(document).ready(function(){
+
+                $("input#edit-created-lt").attr({
+                    "size" : 10,
+                    "value" : "End Date"
+                });
+
+                $("input#edit-created").attr({
+                    "size" : 10,
+                    "value" : "Start Date"
+                });
+
+            });
+
+        }
+
     };
 
 }(jQuery));
