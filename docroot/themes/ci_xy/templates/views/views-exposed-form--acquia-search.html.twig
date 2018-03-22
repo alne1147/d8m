@@ -19,14 +19,13 @@
   {{ q }}
 {% endif %}
 <div class="form--inline form-inline clearfix">
-   <div id="searchForm">{{ form.search}}</div>
-    <p><a href="#" class="advancedSearchTog">Advanced</a></p>
+   <div id="searchForm">{{ form.search}}{{  form.actions }}
+    <a class="advancedSearchTog button js-form-submit btn-primary btn icon-before">Advanced</a>
+   </div>
     <div id="advancedSearch">
     {{ form.field_article_tags }}
     {{ form.type }}
     {{ form.created }}
     {{ form.created_lt }}
-  {{  form.actions }}
-
     </div>
 </div>
