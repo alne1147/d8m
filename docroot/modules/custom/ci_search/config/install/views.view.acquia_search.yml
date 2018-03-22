@@ -545,7 +545,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Start Date'
+            label: ''
             description: ''
             use_operator: false
             operator: created_op
@@ -593,7 +593,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: 'End Date'
+            label: ''
             description: ''
             use_operator: false
             operator: created_1_op
