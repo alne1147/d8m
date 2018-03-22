@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.page.field_rows
     - node.type.page
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.page.default
@@ -29,11 +30,20 @@ content:
     third_party_settings: {  }
   field_article_tags:
     type: entity_reference_label
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings:
       link: true
+    third_party_settings: {  }
+  field_rows:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
   links:
     weight: 1
@@ -47,4 +57,3 @@ hidden:
   field_meta_tags: true
   field_promote_options: true
   field_related_content: true
-  field_rows: true
