@@ -69,7 +69,6 @@ datasource_settings:
       selected:
         - article
         - event
-        - landing_page
         - page
     languages:
       default: true
