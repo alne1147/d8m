@@ -98,8 +98,18 @@
             &:hover:before {
               content: none;
             }
+            @media (min-width: $screen-md-2 + 1) {
+              .sf-sub-indicator {
+                top: 50%;
+                &:after {
+                  position: absolute;
+                  left: 90%;
+                  height: 14px;
+                  transform: rotate(-90deg);
+                }
+              }
+            }
           }
-
         }
         @media (max-width: $screen-md-2) {
           a {
