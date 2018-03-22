@@ -18,9 +18,9 @@ footer {
 .footer__global-footer {
   background-color: rgba(0,0,0,0.1);
   padding: 18px 0;
-  &--links {;
+  &--links {
     padding-left: 0;
-    opacity: .64;
+    //opacity: .64;
     margin: 0 auto 20px auto;
     text-align: center;
     @media (min-width: $screen-md) {
@@ -56,7 +56,7 @@ footer {
   display:block;
   width: 164px;
   height: 28px;
-  opacity: .64;
+  //opacity: .64;
 }
 @media (min-width: $screen-sm) {}
 @media (min-width: $screen-md) {
@@ -69,7 +69,7 @@ footer {
 .footer__content-footer {
   .block-block-content {
     margin-bottom: 0;
-    padding: 20px 0 0;
+    padding: 0;
   }
   .paragraph {
     &.paragraph--type--bp-columns {
@@ -95,12 +95,12 @@ footer {
       }
     }
     > .paragraph__column {
+      color: #fff;
       h1,h2,h3,h4,h5,h6 {
         font-family: $font-family-sans-serif;
         margin-bottom: 26px;
         text-transform: uppercase;
       }
-      color: #fff;
       ul {
         list-style-type: none;
         padding:0;
@@ -125,6 +125,9 @@ footer {
         padding-bottom: 0;
       }
     }
+  }
+  .paragraph .paragraph__column--container-wrapper .paragraph.paragraph__card>.paragraph__column>.paragraph__title {
+    background-color: transparent;
   }
   .field--name-field-card-title {
     color: $color-white;

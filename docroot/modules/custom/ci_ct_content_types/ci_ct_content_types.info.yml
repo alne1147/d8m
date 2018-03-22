@@ -27,6 +27,7 @@ dependencies:
   - paragraphs
   - path
   - rdf
+  - search_api
   - slick_paragraphs
   - taxonomy
   - term_condition

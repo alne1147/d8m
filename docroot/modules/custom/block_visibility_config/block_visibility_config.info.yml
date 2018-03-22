@@ -6,17 +6,22 @@ dependencies:
   - block_class
   - block_content
   - block_visibility_groups
+  - calendar
   - ci_ct_content_types
   - ci_ct_event
   - ci_views_config
   - ctools
+  - entity_reference_revisions
   - help
   - masquerade
   - menu_block
   - menu_condition
   - node
-  - search
+  - paragraphs
+  - search_api
+  - search_api_db
   - sharethis_block
+  - superfish
   - system
   - taxonomy
   - term_condition
