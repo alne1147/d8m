@@ -19,6 +19,8 @@
 
                 $("#edit-created").datepicker().addClass( "col-md-1" );
                 $("#edit-created-lt").datepicker().addClass( "col-md-1" );
+                $("#edit-search").addClass( "col-md-10" );
+                $(".form-item-search js-form-item-search form-group").addClass( "row" );
 
 
 
@@ -28,7 +30,7 @@
 
     };
 
-    Drupal.behaviors.SearchCalendarSizes = {
+    Drupal.behaviors.SearchFieldProperties = {
         attach: function(context, settings) {
             $(document).ready(function(){
 
@@ -40,6 +42,11 @@
                 $("input#edit-created").attr({
                     "size" : 10,
                     "placeholder" : "Start Date"
+                });
+
+                $("input#edit-search").attr({
+                    // "size" : 10,
+                    "placeholder" : "Search The Government"
                 });
 
             });
