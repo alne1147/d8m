@@ -110,7 +110,7 @@
               }
             }
             + ul {
-              top: 0!important;
+              top: 0;
             }
           }
         }
@@ -156,6 +156,6 @@
   ul.sf-menu li:hover > ul,
   ul.sf-menu li.sfHover > ul {
     left: 0;
-    top: 3.5em!important;
+    top: 3.5em;
   }
 }
