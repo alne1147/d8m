@@ -109,6 +109,9 @@
                 }
               }
             }
+            + ul {
+              top: 0;
+            }
           }
         }
         @media (max-width: $screen-md-2) {
