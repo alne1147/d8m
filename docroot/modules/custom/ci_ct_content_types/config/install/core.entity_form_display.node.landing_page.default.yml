@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
-    - field.field.node.landing_page.field_promote_options
+    - field.field.node.landing_page.field_promote
     - field.field.node.landing_page.field_rows
     - image.style.thumbnail
     - node.type.landing_page
@@ -217,11 +217,12 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_promote_options:
-    weight: 14
-    settings: {  }
+  field_promote:
+    weight: 26
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_rows:
     weight: 8

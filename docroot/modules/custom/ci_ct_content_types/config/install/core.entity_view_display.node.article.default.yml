@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.article.field_display_options
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_page_options
-    - field.field.node.article.field_promote_options
+    - field.field.node.article.field_promote
     - field.field.node.article.field_related_content
     - field.field.node.article.field_rows
     - node.type.article
@@ -62,5 +62,5 @@ hidden:
   field_article_tags: true
   field_meta_tags: true
   field_page_options: true
-  field_promote_options: true
+  field_promote: true
   field_related_content: true
