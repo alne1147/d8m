@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_promote_options
     - field.storage.node.field_article_tags
     - field.storage.node.field_rows
+    - field.storage.node.field_promote
     - search_api.server.acquia_search_server
   module:
     - search_api
@@ -28,14 +28,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: title
     type: text
-  field_promote_options:
-    label: 'Promote Options'
-    datasource_id: 'entity:node'
-    property_path: field_promote_options
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_promote_options
   field_article_tags:
     label: 'Related Tags'
     datasource_id: 'entity:node'
@@ -62,6 +54,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_rows
+  field_promote:
+    label: Promote
+    datasource_id: 'entity:node'
+    property_path: field_promote
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_promote
 datasource_settings:
   'entity:node':
     bundles:
@@ -93,7 +93,6 @@ processor_settings:
     fields:
       - body
       - title
-      - field_promote_options
       - field_article_tags
       - type
       - field_rows

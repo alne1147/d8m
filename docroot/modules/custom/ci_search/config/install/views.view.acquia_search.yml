@@ -440,7 +440,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Search
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -681,10 +681,10 @@ display:
           1: AND
       title: Search
       sorts:
-        field_promote_options:
-          id: field_promote_options
+        field_promote:
+          id: field_promote
           table: search_api_index_acquia_search_index
-          field: field_promote_options
+          field: field_promote
           relationship: none
           group_type: group
           admin_label: ''
