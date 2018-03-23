@@ -1,3 +1,13 @@
+/* Extend/Inheritance {
+ */
+%sidebar-nav-active {
+  background-color: darken($color-grey-sand, 4.5%); // #eaeaea
+  border-left: 4px solid $color-pacific-blue;
+  padding-left: 14px;
+  text-decoration: none;
+}
+
+
 .sidebar-nav,
 .region-sidebar-first,
 .region-sidebar-second {
@@ -77,10 +87,13 @@
           padding-bottom: 16px;
           padding-left: 18px;
           &:hover {
-            background-color: darken($color-grey-sand, 4.5%); // #eaeaea
-            border-left: 4px solid $color-pacific-blue;
-            padding-left: 14px;
-            text-decoration: none;
+            @extend %sidebar-nav-active;
+          }
+        }
+        &.active-trail {
+          > .sf-with-ul,
+          .is-active {
+            @extend %sidebar-nav-active;
           }
         }
       }
