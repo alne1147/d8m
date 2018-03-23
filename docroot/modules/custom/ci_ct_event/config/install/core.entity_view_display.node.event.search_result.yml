@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_page_options
-    - field.field.node.event.field_promote_options
     - field.field.node.event.field_related_content
     - field.field.node.event.field_rows
     - node.type.event
@@ -75,5 +74,4 @@ content:
 hidden:
   field_article_tags: true
   field_page_options: true
-  field_promote_options: true
   field_related_content: true
