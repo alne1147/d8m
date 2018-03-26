@@ -1,12 +1,26 @@
 (function ($) {
     'use strict';
 
+    Drupal.behaviors.AdvancedOpen = {
+        attach: function(context, settings) {
+
+                if(window.location.href.indexOf("search?") > -1) {
+                        $('#advancedSearch').show();
+                    }
+        }
+    };
+
+
     Drupal.behaviors.SearchSizes = {
         attach: function(context, settings) {
 
-            $( ".advancedSearchTog" ).on("click", function() {
-                $( "#advancedSearch" ).slideToggle(500);
-            });
+
+
+                $('.advancedSearchTog').click(function() {
+                    $('#advancedSearch').toggle();
+                });
+
+
         }
     };
 
@@ -45,11 +59,13 @@
                     "placeholder" : "Search The Government"
                 });
 
+
             });
 
         }
 
     };
 
-}(jQuery));
 
+
+}(jQuery));
