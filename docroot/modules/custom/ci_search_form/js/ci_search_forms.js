@@ -3,13 +3,10 @@
 
     Drupal.behaviors.SearchSizes = {
         attach: function(context, settings) {
-            $(document).ready(function(){
-                $(".advancedSearchTog").click(function(){
-                    $("#advancedSearch").toggle("slow");
-                });
 
+            $( ".advancedSearchTog" ).on("click", function() {
+                $( "#advancedSearch" ).slideToggle(500);
             });
-
         }
     };
 
