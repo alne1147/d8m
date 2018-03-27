@@ -96,19 +96,11 @@
     {#</footer>#}
   {% endif %}
 
-    {% if node.field_promote_options[0] is empty %}
         <div{{ content_attributes }}>
             {% set summary = content.body|render|striptags %}
-            {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
+            {{ summary|length > 600 ? summary|slice(0, 600) ~ '...' : summary }}
         </div>
-{% else %}
 
-    <div{{ content_attributes.addClass('promoted-body') }}>
-        {% set summary = content.body|render|striptags %}
-        {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
-    </div>
-
-    {% endif %}
       {{ content.field_rows }}
       {% if node.field_article_tags[0] is not empty %}
    <div class="related-tags"> {{ content.field_article_tags }}</div>
