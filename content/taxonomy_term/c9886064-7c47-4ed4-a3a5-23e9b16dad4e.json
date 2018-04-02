@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/category\/press-release?_format=hal_json"
+            "href": "http:\/\/revenue.colorado.gov\/category\/press-release?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -55,7 +55,7 @@
     "path": [
         {
             "alias": "\/category\/press-release",
-            "pid": 18,
+            "pid": 91,
             "langcode": "en",
             "lang": "en"
         }
@@ -63,7 +63,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Press Release | CI Drupal 8"
+                "title": "Press Release | Department of Revenue"
             }
         }
     ]

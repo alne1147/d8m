@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100041?_format=hal_json"
+            "href": "http:\/\/revenue.colorado.gov\/taxonomy\/term\/100041?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "No Jumbotron | CI Drupal 8"
+                "title": "No Jumbotron | Department of Revenue"
             }
         }
     ]
