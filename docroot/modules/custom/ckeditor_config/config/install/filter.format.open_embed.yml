@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Open Embed'
-format: open_embed
-weight: 0
-filters: {  }

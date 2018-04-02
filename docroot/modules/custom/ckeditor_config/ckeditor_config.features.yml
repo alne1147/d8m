@@ -1,6 +1,0 @@
-required:
-  - crop.type.hero_cropping
-  - editor.editor.d8m_text_editor
-  - filter.format.d8m_text_editor
-  - filter.format.open_embed
-g
