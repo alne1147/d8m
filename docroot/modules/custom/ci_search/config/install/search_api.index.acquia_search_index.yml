@@ -67,9 +67,9 @@ datasource_settings:
     bundles:
       default: false
       selected:
+        - page
         - article
         - event
-        - page
     languages:
       default: true
       selected: {  }
