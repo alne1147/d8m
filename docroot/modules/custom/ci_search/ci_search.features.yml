@@ -1,3 +1,13 @@
 excluded:
   - block.block.exposedformacquia_searchpage
-required: true
+required:
+  - block.block.acquia_searchsearch_block
+  - core.entity_view_display.node.article.promoted_search_display
+  - core.entity_view_display.node.event.promoted_search_display
+  - core.entity_view_display.node.landing_page.promoted_search_display
+  - core.entity_view_display.node.page.promoted_search_display
+  - core.entity_view_mode.node.promoted_search_display
+  - core.entity_view_mode.node.search_index
+  - search_api.index.acquia_search_index
+  - search_api.server.acquia_search_server
+  - views.view.acquia_search
