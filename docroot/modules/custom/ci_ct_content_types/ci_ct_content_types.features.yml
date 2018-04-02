@@ -1,8 +1,8 @@
 bundle: ci_ct
 excluded:
   - views.view.recent_articles
+  - views.view.acquia_search_fields
   - block_visibility_groups.block_visibility_group.recent_articles
-  - block.block.exposedformacquia_searchpage
 required:
   - block.block.views_block__jumbotrons_block_1
   - block.block.views_block__site_footer_block_1_2
@@ -15,18 +15,16 @@ required:
   - core.entity_form_display.node.page.default
   - core.entity_form_display.paragraph.row_slide_container.default
   - core.entity_view_display.node.article.default
-  - core.entity_view_display.node.article.search_index
-  - core.entity_view_display.node.article.search_result
   - core.entity_view_display.node.article.teaser
   - core.entity_view_display.node.landing_page.default
-  - core.entity_view_display.node.landing_page.search_index
-  - core.entity_view_display.node.landing_page.search_result
   - core.entity_view_display.node.landing_page.teaser
   - core.entity_view_display.node.page.default
-  - core.entity_view_display.node.page.search_index
-  - core.entity_view_display.node.page.search_result
   - core.entity_view_display.node.page.teaser
   - core.entity_view_display.paragraph.row_slide_container.default
+  - core.entity_view_display.node.article.search_index
+  - core.entity_view_display.node.article.search_result
+  - core.entity_view_display.node.page.search_index
+  - core.entity_view_display.node.page.search_result
   - exclude_node_title.settings
   - field.field.node.article.body
   - field.field.node.article.field_article_tags
@@ -89,6 +87,5 @@ required:
   - taxonomy.vocabulary.jumbotron_options
   - taxonomy.vocabulary.page_options
   - taxonomy.vocabulary.related_content
-  - views.view.acquia_search_fields
   - views.view.jumbotrons
   - views.view.site_footer
