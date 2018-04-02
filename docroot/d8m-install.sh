@@ -14,8 +14,6 @@ drush  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush en -y $(cat custom_modules_list.txt)
 
-drush en ci_blocks -y
-
 
 #// User additions and role assignments.
 
@@ -42,5 +40,6 @@ drush pm-uninstall search --y
 
 drush cim --partial -y
 drush dcdi -y
+drush en ci_blocks -y
 drush features-import-all -y
 drush cr
