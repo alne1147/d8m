@@ -23,11 +23,10 @@ mode: search_index
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
+    type: text_default
     weight: 0
     region: content
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
   field_article_tags:
     type: entity_reference_label
