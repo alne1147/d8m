@@ -57,10 +57,10 @@ display:
             previous: ‹‹
             next: ››
           expose:
-            items_per_page: false
+            items_per_page: true
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
+            items_per_page_options_all: true
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
@@ -544,7 +544,7 @@ display:
     display_options:
       display_extenders: {  }
       path: search-fields
-      exposed_block: true
+      exposed_block: false
       menu:
         type: none
         title: Search
@@ -809,7 +809,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
+          type: textfield
           limit: true
           vid: free_tagging
           hierarchy: false
