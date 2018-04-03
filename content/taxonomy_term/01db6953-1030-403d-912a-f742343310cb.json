@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/category\/blog-post?_format=hal_json"
+            "href": "http:\/\/revenue.colorado.gov\/category\/blog-post?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -55,7 +55,7 @@
     "path": [
         {
             "alias": "\/category\/blog-post",
-            "pid": 14,
+            "pid": 76,
             "langcode": "en",
             "lang": "en"
         }
@@ -63,7 +63,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Blog Post | CI Drupal 8"
+                "title": "Blog Post | Department of Revenue"
             }
         }
     ]

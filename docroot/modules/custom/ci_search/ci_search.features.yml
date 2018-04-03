@@ -1,0 +1,3 @@
+excluded:
+  - block.block.exposedformacquia_searchpage
+required: true

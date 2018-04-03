@@ -1,0 +1,123 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_article_tags
+    - field.storage.node.field_rows
+    - field.storage.node.field_promote
+    - search_api.server.acquia_search_server
+  module:
+    - search_api
+    - node
+id: acquia_search_index
+name: 'Acquia Search Solr Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_article_tags:
+    label: 'Related Tags'
+    datasource_id: 'entity:node'
+    property_path: field_article_tags
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_article_tags
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  field_rows:
+    label: Rows
+    datasource_id: 'entity:node'
+    property_path: field_rows
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_rows
+  field_promote:
+    label: Promote
+    datasource_id: 'entity:node'
+    property_path: field_promote
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_promote
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - page
+        - article
+        - event
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url:
+    plugin_id: add_url
+    settings: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - body
+      - title
+      - field_article_tags
+      - type
+      - field_rows
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: -1
+  processors:
+    language:
+      status: '1'
+      weight: -50
+      settings: {  }
+      processorPluginId: language
+server: acquia_search_server

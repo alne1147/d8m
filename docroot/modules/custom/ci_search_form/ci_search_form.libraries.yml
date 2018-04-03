@@ -1,0 +1,11 @@
+ci_search_forms:
+  version: 1.x
+  js:
+    js/ci_search_forms.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+     - core/jquery.ui
+    - core/jquery.ui.datepicker

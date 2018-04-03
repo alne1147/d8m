@@ -767,3 +767,6 @@ $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
 $config['system.site']['name'] = 'Department of Labor & Employment';
+$config['acquia_connector.settings']['site_name'] = 'cdle';
+$config['acquia_connector.settings']['update_service'] = '1';
+$config['acquia_connector.settings']['search_service_enabled'] = 1;

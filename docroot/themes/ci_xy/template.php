@@ -18,4 +18,3 @@ function ci_xy_process_html(&$variables) {
     _color_html_alter($variables);
   }
 }
-?>

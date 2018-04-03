@@ -14,11 +14,13 @@ dependencies:
   - content_moderation
   - datetime
   - entity_reference_revisions
+  - facets
   - field
   - field_group
   - file
   - image
   - jquery_colorpicker
+  - media
   - menu_condition
   - menu_ui
   - metatag
@@ -29,6 +31,7 @@ dependencies:
   - rdf
   - search_api
   - slick_paragraphs
+  - system
   - taxonomy
   - term_condition
   - text

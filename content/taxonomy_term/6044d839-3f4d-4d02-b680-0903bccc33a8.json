@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100011?_format=hal_json"
+            "href": "http:\/\/revenue.colorado.gov\/taxonomy\/term\/100011?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/page_options"
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Main Menu - Right | CI Drupal 8"
+                "title": "Main Menu - Right | Department of Revenue"
             }
         }
     ]

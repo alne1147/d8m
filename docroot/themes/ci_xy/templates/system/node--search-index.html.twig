@@ -72,15 +72,19 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+    {% if node.field_promote.value %}
+<article{{ attributes.addClass('promoted-search') }}>
+    <div class="promotedLabel">Promoted</div>
+    <h2> <a href="{{ url }}">{{ label }}</a></h2>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {% else %}
+
+  <article{{ attributes.addClass('omitted-search') }}>
+      <h2> <a href="{{ url }}">{{ label }}</a></h2>
+      {% endif %}
+
+      {{ title_suffix }}
+
 
   {% if display_submitted %}
     {#<footer>#}
@@ -92,8 +96,13 @@
     {#</footer>#}
   {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
+        <div{{ content_attributes }}>
+            {% set summary = content.body|render|striptags %}
+            {{ summary|length > 600 ? summary|slice(0, 600) ~ '...' : summary }}
+        </div>
 
+      {{ content.field_rows }}
+      {% if node.field_article_tags[0] is not empty %}
+   <div class="related-tags"> {{ content.field_article_tags }}</div>
+    {% endif %}
 </article>

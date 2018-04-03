@@ -1,0 +1,6 @@
+name: CI Search Form
+dependencies: {  }
+description: 'Allows for more theme control for the search form.'
+core: 8.x
+package: Custom
+type: module

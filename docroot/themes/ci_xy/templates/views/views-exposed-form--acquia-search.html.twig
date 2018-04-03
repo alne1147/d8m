@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+  {{ q }}
+{% endif %}
+
+<div class="form--inline form-inline clearfix">
+   <div id="searchForm">{{ form.search}}{{  form.actions.submit}}
+    <a class="advancedSearchTog button js-form-submit btn-primary btn icon-before">Advanced</a>
+       {{  form.actions.reset}}
+   </div>
+
+    <div id="advancedSearch">
+    {{ form.field_article_tags }}
+    {{ form.type }}
+   {{ form.created }}{{ form.created_lt }}
+    </div>
+</div>

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.field_display_options
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_page_options
+    - field.field.node.article.field_promote
     - field.field.node.article.field_related_content
     - field.field.node.article.field_rows
     - node.type.article
@@ -24,6 +25,7 @@ third_party_settings:
       children:
         - field_display_options
         - field_related_content
+        - field_promote
         - field_article_tags
       parent_name: ''
       weight: 2
@@ -42,7 +44,7 @@ third_party_settings:
       children:
         - field_meta_tags
       parent_name: ''
-      weight: 10
+      weight: 11
       format_type: html_element
       format_settings:
         label: Seo
@@ -61,7 +63,7 @@ third_party_settings:
       children:
         - field_rows
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       format_settings:
         id: ''
@@ -84,7 +86,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 10
     settings:
       rows: 9
       summary_rows: 3
@@ -93,7 +95,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -124,8 +126,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_related_content:
+  field_promote:
     weight: 28
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_related_content:
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -144,13 +153,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 12
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -158,21 +167,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -185,7 +194,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
