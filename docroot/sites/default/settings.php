@@ -1091,8 +1091,8 @@ $acquia_search_available_cores = [
 
   // Entry for CDIY-145117.test.revenuecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.revenuecoloradogov/admin/ping
   "CDIY-145117.test.revenuecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.revenuecoloradogov",
+	  "host" => "useast1-c26.acquia-search.com",
+	  "path" => "/solr/CDIY-145117.dev.cicoloradogov",
     "derived_key" => "e07c78ccdb9be494b4dd59225da9cbfc8b800817",
   ],
 
