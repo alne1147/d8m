@@ -9,3 +9,4 @@ ci_admin_tweaks
 ci_media_types
 ci_wysiwyg
 ci_google_picker
+ci_search_form
