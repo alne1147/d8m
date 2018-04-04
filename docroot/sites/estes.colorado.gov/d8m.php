@@ -1,1 +1,0 @@
-../all/settings.d8m.php
