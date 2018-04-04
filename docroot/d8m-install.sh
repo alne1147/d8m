@@ -14,7 +14,6 @@ drush  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush en -y $(cat custom_modules_list.txt)
 
-
 #// User additions and role assignments.
 
 drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-nevarez &&drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-jwathen &&drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-blawson &&drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role support_administrator ci-kharrison && drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role support_administrator ci-twhatley &&drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" && drush user-add-role support_administrator ci-supportadmin &&drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" && drush user-add-role content_administrator ci-contentadmin &&drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" && drush user-add-role user_administrator ci-useradmin &&drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" && drush user-add-role structure_administrator ci-structureadmin &&drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" && drush user-add-role administrator ci-amarshall;
@@ -36,10 +35,11 @@ drush php-eval 'node_access_rebuild()'
 drush -y config-set system.performance css.preprocess 0
 drush -y config-set system.performance js.preprocess 0
 
+
 drush pm-uninstall search --y
 
 drush cim --partial -y
-drush dcdi -y
 drush en ci_blocks -y
+drush dcdi -y
 drush features-import-all -y
 drush cr

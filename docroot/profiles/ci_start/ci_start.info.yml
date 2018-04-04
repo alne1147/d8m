@@ -112,6 +112,7 @@ dependencies:
   - contact_formatter
   - content_moderation
   - default_content
+  - default_content_deploy
   - hal
   - serialization
   - embed
