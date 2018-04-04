@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_page_options
+    - field.field.node.event.field_promote
     - field.field.node.event.field_related_content
     - field.field.node.event.field_rows
     - node.type.event
@@ -35,5 +36,6 @@ hidden:
   field_date: true
   field_location: true
   field_page_options: true
+  field_promote: true
   field_related_content: true
   field_rows: true

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_promote
     - field.field.node.landing_page.field_rows
     - node.type.landing_page
   module:
@@ -46,3 +47,4 @@ hidden:
   field_landing_page_options: true
   field_meta: true
   field_meta_tags: true
+  field_promote: true
