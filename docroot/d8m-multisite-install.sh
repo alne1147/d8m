@@ -14,8 +14,6 @@ drush @sites  config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush @sites en -y $(cat custom_modules_list.txt)
 
-drush @sites en ci_blocks -y
-
 drush en default_content --y
 #// User additions and role assignments.
 
@@ -51,6 +49,7 @@ MUST BE DONE FROM LOCAL - Drush Aliases must be up to date!
 drush @ag.dev cim  --partial; drush @dhsem.dev cim  --partial; drush @cdle.dev cim --partial;drush @cdps.dev cim --partial;drush @ci.dev cim --partial;drush @dola.dev cim --partial;drush @dora.dev cim --partial;drush @dpa.dev cim --partial;drush @estes.dev cim --partial;drush @hcpf.dev cim --partial;drush @revenue.dev cim --partial;drush @sipa.dev cim --partial;drush @slb.dev cim --partial;drush @cdphe.dev cim --partial;
 
 Run these on Acquia SSH
+drush @sites en ci_blocks -y
 drush @sites -y dcdi -1
 drush @sites features-import-all -y "
 
