@@ -1099,21 +1099,21 @@ $acquia_search_available_cores = [
   // Entry for CDIY-145117.dev.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.sipacoloradogov/admin/ping
   "CDIY-145117.dev.sipacoloradogov" => [
     "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.cicoloradogov",
+    "path" => "/solr/CDIY-145117.dev.sipacoloradogov",
     "derived_key" => "acb35a52001a6866bc6416eae14cb4da6c54719f",
   ],
 
   // Entry for CDIY-145117.prod.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.sipacoloradogov/admin/ping
   "CDIY-145117.prod.sipacoloradogov" => [
     "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.cicoloradogov",
+    "path" => "/solr/CDIY-145117.prod.sipacoloradogov",
     "derived_key" => "a7de9869dcca0250040592377deb72918d8c3fc8",
   ],
 
   // Entry for CDIY-145117.test.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.sipacoloradogov/admin/ping
   "CDIY-145117.test.sipacoloradogov" => [
     "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.cicoloradogov",
+    "path" => "/solr/CDIY-145117.test.sipacoloradogov",
     "derived_key" => "be0e13e60be9efcbd1449855c842fca077837410",
   ],
 
