@@ -767,3 +767,12 @@ $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
 $config['system.site']['name'] = 'Statewide Internet Portal Authority';
+
+// Local or other non-acquia-hosted Drupal environment
+$config['acquia_search.settings']['connection_override'] = [
+    'scheme' => 'https',
+    'port' => 443,
+    'host' => 'useast1-c26.acquia-search.com',
+    'index_id' => 'CDIY-145117.dev.cicoloradogov',
+    'derived_key' => '4793e027a7f176fc49cf97c6bf7e68c6e53726cc',
+];
