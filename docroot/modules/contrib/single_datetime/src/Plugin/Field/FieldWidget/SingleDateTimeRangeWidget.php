@@ -29,6 +29,110 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
   /**
    * {@inheritdoc}
    */
+  public static function defaultSettings() {
+    return array(
+      'hour_format' => '24h',
+      'allow_times' => '15',
+      'disable_days' => [],
+      'exclude_date' => '',
+    );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function settingsForm(array $form, FormStateInterface $form_state) {
+
+    $elements = array();
+    $elements['hour_format'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Hours Format'),
+      '#description' => $this->t('Select the hours format'),
+      '#options' => array(
+        '12h' => $this->t('12 Hours'),
+        '24h' => $this->t('24 Hours'),
+      ),
+      '#default_value' => $this->getSetting('hour_format'),
+      '#required' => TRUE,
+    );
+    $elements['allow_times'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Minutes granularity'),
+      '#description' => $this->t('Select granularity for minutes in calendar'),
+      '#options' => array(
+        '5' => $this->t('5 minutes'),
+        '10' => $this->t('10 minutes'),
+        '15' => $this->t('15 minutes'),
+        '30' => $this->t('30 minutes'),
+        '60' => $this->t('60 minutes'),
+      ),
+      '#default_value' => $this->getSetting('allow_times'),
+      '#required' => TRUE,
+    );
+    $elements['disable_days'] = array(
+      '#type' => 'checkboxes',
+      '#title' => $this->t('Disable specific days in week'),
+      '#description' => $this->t('Select days which are disabled in calendar, etc. weekends or just Friday'),
+      '#options' => array(
+        '1' => $this->t('Monday'),
+        '2' => $this->t('Tuesday'),
+        '3' => $this->t('Wednesday'),
+        '4' => $this->t('Thursday'),
+        '5' => $this->t('Friday'),
+        '6' => $this->t('Saturday'),
+        '7' => $this->t('Sunday'),
+      ),
+      '#default_value' => $this->getSetting('disable_days'),
+      '#required' => FALSE,
+    );
+    $elements['exclude_date'] = array(
+      '#type' => 'textarea',
+      '#title' => $this->t('Disable specific dates from calendar'),
+      '#description' => $this->t('Enter days in following format d.m.Y etc. 31.12.2018. Each date in new line. This is used for specific dates, if you want to disable all weekends use settings above, not this field.'),
+      '#default_value' => $this->getSetting('exclude_date'),
+      '#required' => FALSE,
+    );
+    return $elements;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function settingsSummary() {
+    $summary = [];
+
+    $summary[] = t('Hours Format: @hour_format', ['@hour_format' => $this->getSetting('hour_format')]);
+    $summary[] = t('Minutes Granularity: @allow_times', ['@allow_times' => $this->getSetting('allow_times')]);
+
+    $options = [
+      '1' => $this->t('Monday'),
+      '2' => $this->t('Tuesday'),
+      '3' => $this->t('Wednesday'),
+      '4' => $this->t('Thursday'),
+      '5' => $this->t('Friday'),
+      '6' => $this->t('Saturday'),
+      '7' => $this->t('Sunday'),
+    ];
+
+    $disabled_days = [];
+    foreach ($this->getSetting('disable_days') as $key => $value) {
+      if (!empty($value)) {
+        $disabled_days[] = $options[$value];
+      }
+    }
+
+    $disabled_days = implode(',', $disabled_days);
+
+    $summary[] = t('Disabled days: @disabled_days', ['@disabled_days' => !empty($disabled_days) ? $disabled_days : t('None')]);
+
+    $summary[] = t('Disabled dates: @disabled_dates', ['@disabled_dates' => !empty($this->getSetting('exclude_date')) ? $this->getSetting('exclude_date') : t('None')]);
+
+    return $summary;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function massageFormValues(array $values, array $form, FormStateInterface $form_state) {
     // The widget form element type has transformed the value to a
     // DrupalDateTime object at this point. We need to convert it back to the
@@ -143,16 +247,20 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
 
     // Start value.
     $element['value'] = [
+      '#title' => $this->t('Start date'),
       '#type' => 'single_date_time',
       '#date_timezone' => drupal_get_user_timezone(),
       '#default_value' => NULL,
+      '#required' => $element['#required'],
     ];
 
     // End value.
     $element['end_value'] = [
+      '#title' => $this->t('End date'),
       '#type' => 'single_date_time',
       '#date_timezone' => drupal_get_user_timezone(),
       '#default_value' => NULL,
+      '#required' => $element['#required'],
     ];
 
     // Identify the type of date and time elements to use.
@@ -170,6 +278,11 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
         $time_type = 'time';
         $date_format = $this->dateStorage->load('html_date')->getPattern();
         $time_format = $this->dateStorage->load('html_time')->getPattern();
+
+        if ($this->getSetting('hour_format') === '12h') {
+          $time_format = 'h:i:s A';
+        }
+
         break;
     }
 
@@ -180,6 +293,10 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
       '#date_time_format' => $time_format,
       '#date_time_element' => $time_type,
       '#date_time_callbacks' => [],
+      '#hour_format' => $this->getSetting('hour_format'),
+      '#allow_times' => $this->getSetting('allow_times'),
+      '#disable_days' => $this->getSetting('disable_days'),
+      '#exclude_date' => $this->getSetting('exclude_date'),
     ];
 
     $element['end_value'] += [
@@ -189,6 +306,10 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
       '#date_time_format' => $time_format,
       '#date_time_element' => $time_type,
       '#date_time_callbacks' => [],
+      '#hour_format' => $this->getSetting('hour_format'),
+      '#allow_times' => $this->getSetting('allow_times'),
+      '#disable_days' => $this->getSetting('disable_days'),
+      '#exclude_date' => $this->getSetting('exclude_date'),
     ];
 
     // Make single date format from date / time parts.

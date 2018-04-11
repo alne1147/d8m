@@ -5,6 +5,7 @@ namespace Drupal\single_datetime\Element;
 use Drupal\Core\Render\Element\FormElement;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Serialization\Json;
 
 /**
  * Provides a SingleDateTime form element.
@@ -44,7 +45,7 @@ class SingleDateTime extends FormElement {
    */
   public static function preRenderSingleDateTime(array $element) {
     Element::setAttributes($element, ['id', 'name', 'value', 'size']);
-    static::setAttributes($element, ['form-text']);
+    static::setAttributes($element, ['form-date']);
     return $element;
   }
 
@@ -52,19 +53,54 @@ class SingleDateTime extends FormElement {
    * {@inheritdoc}
    */
   public static function processSingleDateTime(&$element, FormStateInterface $form_state, &$complete_form) {
+    // Get system regional settings.
+    $first_day = \Drupal::config('system.date')->get('first_day');
+
+    // Get disabled days.
+    $disabled_days = [];
+
+    // Get active days.
+    foreach ($element['#disable_days'] as $key => $value) {
+      if (!empty($value)) {
+        // Exception for Sunday - should be 0 (on widget options need to be 7).
+        $disabled_days[] = (int) $value < 7 ? (int) $value : 0;
+      }
+    }
+
+    // Get excluded dates.
+    $exclude_date = [];
+
+    if (!empty($element['#exclude_date'])) {
+      $exclude_date = explode("\n", $element['#exclude_date']);
+    }
+
+    // Default settings.
+    $settings = [
+      'data-hour-format' => $element['#hour_format'],
+      'data-allow-times' => intval($element['#allow_times']),
+      'data-first-day' => $first_day,
+      'data-disable-days' => Json::encode($disabled_days),
+      'data-exclude-date' => $exclude_date,
+    ];
+
     // Push field type to JS for changing between date only and time fields.
     // Difference between date and date range fields.
     if (isset($element['#date_type'])) {
-      $complete_form['#attached']['drupalSettings']['single_datetime'][$element['#id']] = json_encode($element['#date_type']);
+      $settings['data-single-date-time'] = $element['#date_type'];
     }
 
     else {
       // Combine date range formats.
       $range_date_type = $element['#date_date_element'] . $element['#date_time_element'];
-      $complete_form['#attached']['drupalSettings']['single_datetime'][$element['#id']] = json_encode($range_date_type);
+      $settings['data-single-date-time'] = $range_date_type;
     }
 
+    // Append our attributes to element.
+    $element['#attributes'] += $settings;
+
+    // Attach library.
     $complete_form['#attached']['library'][] = 'single_datetime/datetimepicker';
+
     return $element;
   }
 
