@@ -3,4 +3,4 @@ quick_clone:
   defaults:
     _controller: '\Drupal\quick_clone\Controller\CloneController::quickClone'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer nodes'
