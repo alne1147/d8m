@@ -6,6 +6,9 @@ use Drupal\Component\Serialization\Json;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\Entity;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+use Drupal\Core\Path\AliasStorageInterface;
 use Drupal\Core\Session\AccountSwitcherInterface;
 use Drupal\default_content\Importer as DCImporter;
 use Drupal\default_content\ScannerInterface;
@@ -24,19 +27,46 @@ use Symfony\Component\Serializer\Serializer;
 class Importer extends DCImporter {
 
   /**
+   * Flag for enable/disable writing operations.
+   *
    * @var bool
    */
   protected $writeEnable;
 
   /**
+   * Flag if some known file normalizer is installed.
+   *
    * @var bool
    */
   protected $fileEntityEnabled;
 
   /**
+   * DefaultContentDeployBase.
+   *
    * @var \Drupal\default_content_deploy\DefaultContentDeployBase
    */
   private $dcdBase;
+
+  /**
+   * The module handler service.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+   */
+  private $moduleHandler;
+
+  /**
+   * The default_content_deploy logger channel.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+   */
+  private $logger;
+
+  /**
+   * The path alias storage service.
+   *
+   * @var \Drupal\Core\Path\AliasStorageInterface
+   */
+  private $pathAliasStorage;
 
   /**
    * Constructs the default content deploy manager.
@@ -57,13 +87,32 @@ class Importer extends DCImporter {
    *   The account switcher.
    * @param \Drupal\default_content_deploy\DefaultContentDeployBase $dcdBase
    *   DefaultContentDeployBase.
+   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
+   *   The module handler service.
+   * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $logger_factory
+   *   The logger factory service.
+   * @param \Drupal\Core\Path\AliasStorageInterface $path_alias_storage
+   *   The path alias storage service.
    */
-  public function __construct(Serializer $serializer, EntityTypeManagerInterface $entity_type_manager, LinkManagerInterface $link_manager, EventDispatcherInterface $event_dispatcher, ScannerInterface $scanner, $link_domain, AccountSwitcherInterface $account_switcher, DefaultContentDeployBase $dcdBase) {
+  public function __construct(Serializer $serializer,
+                              EntityTypeManagerInterface $entity_type_manager,
+                              LinkManagerInterface $link_manager,
+                              EventDispatcherInterface $event_dispatcher,
+                              ScannerInterface $scanner,
+                              $link_domain,
+                              AccountSwitcherInterface $account_switcher,
+                              DefaultContentDeployBase $dcdBase,
+                              ModuleHandlerInterface $module_handler,
+                              LoggerChannelFactoryInterface $logger_factory,
+                              AliasStorageInterface $path_alias_storage) {
     parent::__construct($serializer, $entity_type_manager, $link_manager, $event_dispatcher, $scanner, $link_domain, $account_switcher);
     $this->dcdBase = $dcdBase;
+    $this->moduleHandler = $module_handler;
+    $this->logger = $logger_factory->get('default_content_deploy');
+    $this->pathAliasStorage = $path_alias_storage;
     $this->fileEntityEnabled = (
-      \Drupal::moduleHandler()->moduleExists('file_entity') ||
-      \Drupal::moduleHandler()->moduleExists('better_normalizers')
+      $this->moduleHandler->moduleExists('file_entity') ||
+      $this->moduleHandler->moduleExists('better_normalizers')
     );
   }
 
@@ -97,6 +146,7 @@ class Importer extends DCImporter {
     $folder = $this->dcdBase->getContentFolder();
 
     if (file_exists($folder)) {
+      /** @var \Drupal\user\Entity\User $root_user */
       $root_user = $this->entityTypeManager->getStorage('user')->load(1);
       $this->accountSwitcher->switchTo($root_user);
       $file_map = [];
@@ -165,15 +215,21 @@ class Importer extends DCImporter {
 
           // Here is start of injected code.
           // ------------------------------
+          // In case of error, is useful to know which file causes the problem.
+          if (function_exists('drush_get_context') && drush_get_context('DRUSH_VERBOSE')) {
+            $message = t("@count. Loading file: @fileuri, entity type: @entity_type_id \t", [
+              '@count' => $result_info['processed'],
+              '@entity_type_id' => $entity_type_id,
+              '@fileuri' => $file->uri,
+            ]);
+            print "\n" . $message . "\n";
+          }
           if ($entity_type_id == 'file') {
             // Skip entity if file_entity module is not enabled.
             if (!$this->fileEntityEnabled) {
               if (function_exists('drush_get_context') && drush_get_context('DRUSH_VERBOSE')) {
-                $message = t("@count.", [
-                  '@count' => $result_info['processed'],
-                ]);
-                $message2 = t("File entity skipped. If you need to import files, enable the file_entity module.");
-                print "\n" . $message . ' ' . $message2;
+                $message = t("File entity skipped. If you need to import files, enable the file_entity or better_normalizers module.");
+                print $message;
               }
               $result_info['skipped']++;
               continue;
@@ -202,13 +258,12 @@ class Importer extends DCImporter {
             $entity = $this->loadEntityFromJson($entity_type_id, $jsonContents);
           }
           if (function_exists('drush_get_context') && drush_get_context('DRUSH_VERBOSE')) {
-            $message = t("@count. @entity_type_id/id @id",
+            $message = t("@entity_type_id/id @id",
               [
-                '@count' => $result_info['processed'],
                 '@entity_type_id' => $entity_type_id,
                 '@id' => $entity->id(),
               ]);
-            print "\n" . $message . "\t";
+            print "\t" . $message . "\t\t";
           }
 
           // Test if entity (defined by UUID) already exists.
@@ -328,11 +383,7 @@ class Importer extends DCImporter {
               '@method' => $saving_method,
               '@file' => $file->name,
             ];
-            \Drupal::logger('default_content_deploy')
-              ->info(
-                'Entity (type: @type/@bundle, ID: @id) @method successfully from @file',
-                $saved_entity_log_info
-              );
+            $this->logger->info('Entity @type/@bundle, ID: @id @method successfully', $saved_entity_log_info);
           }
           $created[$entity->uuid()] = $entity;
           $result_info[$saving_method]++;
@@ -358,8 +409,6 @@ class Importer extends DCImporter {
    *   Return number of imported or skipped aliases.
    */
   public function importUrlAliases() {
-    $pathAliasStorage = \Drupal::service('path.alias_storage');
-    $path_alias_storage = $pathAliasStorage;
     $count = 0;
     $skipped = 0;
     $file = $this->dcdBase->getContentFolder() . '/'
@@ -369,12 +418,12 @@ class Importer extends DCImporter {
       $aliases = file_get_contents($file, TRUE);
       $path_aliases = Json::decode($aliases);
 
-      foreach ($path_aliases as $url => $alias) {
-        if (!$path_alias_storage->aliasExists($alias['alias'], $alias['langcode'])) {
-          if ($this->writeEnable) {
-            $path_alias_storage->save($alias['source'], $alias['alias'], $alias['langcode']);
+      foreach ($path_aliases as $alias) {
+        if (!$this->pathAliasStorage->aliasExists($alias['alias'], $alias['langcode'])) {
+          if ($this->writeEnable !== FALSE) {
+            $this->pathAliasStorage->save($alias['source'], $alias['alias'], $alias['langcode']);
+            $count++;
           }
-          $count++;
         }
         else {
           $skipped++;
@@ -386,7 +435,7 @@ class Importer extends DCImporter {
   }
 
   /**
-   * Get entity info
+   * Get entity info.
    *
    * @param \Drupal\Core\Entity\Entity $entity
    *   Entity object.
