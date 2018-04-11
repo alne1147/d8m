@@ -4,7 +4,6 @@ namespace Drupal\sharethis_block\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\system\Entity\Menu;
 
 /**
  * Configure sharethis for this site.

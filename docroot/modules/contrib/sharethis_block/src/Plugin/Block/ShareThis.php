@@ -3,7 +3,6 @@
 namespace Drupal\sharethis_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Cache\Cache;
 
 /**
  * Provides a 'ShareThis' block which just loads javascript for the widget.
@@ -25,7 +24,7 @@ class ShareThis extends BlockBase {
         '#markup' => '<div class="sharethis-inline-share-buttons"></div>',
       ];
     }
-    $build['#attached']['library'][] = 'sharethis_block/sharethis';
+    $build['#attached']['library'][] = 'sharethis_block/sharethis.core';
     $build['#theme'] = 'sharethis';
     return $build;
   }

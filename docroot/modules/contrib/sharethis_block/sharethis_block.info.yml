@@ -5,8 +5,8 @@ description: Adds the sharethis javascript
 package: Custom
 configure: sharethis_block.configuration
 
-# Information added by Drupal.org packaging script on 2017-09-07
-version: '8.x-1.0-beta1'
+# Information added by Drupal.org packaging script on 2018-03-29
+version: '8.x-1.1'
 core: '8.x'
 project: 'sharethis_block'
-datestamp: 1504791247
+datestamp: 1522316284
