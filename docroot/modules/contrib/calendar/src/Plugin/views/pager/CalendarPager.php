@@ -39,6 +39,7 @@ class CalendarPager extends PagerPluginBase {
   public function init(ViewExecutable $view, DisplayPluginBase $display, array &$options = NULL) {
     parent::init($view, $display, $options);
     $this->argument = CalendarHelper::getDateArgumentHandler($this->view);
+    $this->setItemsPerPage(0);
   }
 
   /**
@@ -54,11 +55,11 @@ class CalendarPager extends PagerPluginBase {
     $items['next'] = [
       'url' => $this->getPagerURL(self::NEXT, $input),
     ];
-    return array(
+    return [
       '#theme' => $this->themeFunctions(),
       '#items' => $items,
       '#exclude' => $this->options['exclude_display'],
-    );
+    ];
   }
 
   /**
@@ -126,7 +127,7 @@ class CalendarPager extends PagerPluginBase {
    */
   protected function defineOptions() {
     $options = parent::defineOptions();
-    $options['exclude_display'] = array('default' => FALSE);
+    $options['exclude_display'] = ['default' => FALSE];
 
     return $options;
   }
