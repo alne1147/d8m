@@ -36,7 +36,8 @@
         "drupal/masquerade": "^2.0",
         "drupal/field_slideshow": "2.x-dev",
         "drupal/focal_point": "^1.0",
-        "drupal/libraries": "^3.0"
+        "drupal/libraries": "^3.0",
+        "drupal/search_api_solr": "^1.2"
     },
     "replace": {
         "drupal/core": "^8.5"
