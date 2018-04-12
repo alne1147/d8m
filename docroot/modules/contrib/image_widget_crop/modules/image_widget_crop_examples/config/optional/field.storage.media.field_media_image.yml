@@ -1,20 +1,23 @@
+uuid: 31710af7-0536-42b7-9bc6-4e71a15c4efa
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - media
   module:
     - file
     - image
-    - node
+    - media
 _core:
-  default_config_hash: djKX4IzbRtrA_mSirr6Fe_amcOLVEumcpbo8-xEO5fo
-id: node.field_image_crop_file_entity
-field_name: field_image_crop_file_entity
-entity_type: node
+  default_config_hash: 7ZBrcl87ZXaw42v952wwcw_9cQgTBq5_5tgyUkE-VV0
+id: media.field_media_image
+field_name: field_media_image
+entity_type: media
 type: image
 settings:
-  uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null
@@ -22,6 +25,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
+  uri_scheme: public
 module: image
 locked: false
 cardinality: 1
