@@ -96,7 +96,7 @@ class AccessControlHandler implements ContainerInjectionInterface {
   /**
    * Access check for the block content type administer pages and forms.
    *
-   * @return Drupal\Core\Access\AccessResult
+   * @return \Drupal\Core\Access\AccessResult
    *   An access result.
    */
   public function blockContentTypeAdministerAccess() {
@@ -107,69 +107,29 @@ class AccessControlHandler implements ContainerInjectionInterface {
   /**
    * Access check for the block content add page.
    *
-   * @return Drupal\Core\Access\AccessResult
+   * @return \Drupal\Core\Access\AccessResult
    *   An access result.
    */
   public function blockContentAddPageAccess() {
-    $orPermissions = array();
+    $orPermissions = [];
     foreach ($this->blockContentTypes() as $bundle_type) {
       $orPermissions[] = "create $bundle_type block content";
     }
     $account = $this->currentUser();
-    return AccessResult::allowedIfHasPermission($account, 'administer block content')
-      ->andIf(AccessResult::allowedIfHasPermissions($account, $orPermissions, 'OR'));
+    return AccessResult::allowedIfHasPermissions($account, $orPermissions, 'OR');
   }
 
   /**
    * Access check for the block content add forms.
    *
-   * @return Drupal\Core\Access\AccessResult
+   * @return \Drupal\Core\Access\AccessResult
    *   An access result.
    */
   public function blockContentAddFormAccess() {
     if ($block_content_type = $this->currentRouteMatch->getParameter('block_content_type')) {
       $bundle_type = $block_content_type->get('id');
       $account = $this->currentUser();
-      return AccessResult::allowedIfHasPermissions($account, array(
-        'administer block content',
-        "create $bundle_type block content",
-      ));
-    }
-    return AccessResult::neutral();
-  }
-
-  /**
-   * Access check for the block content edit forms.
-   *
-   * @return Drupal\Core\Access\AccessResult
-   *   An access result.
-   */
-  public function blockContentEditFormAccess() {
-    if ($block_content = $this->currentRouteMatch->getParameter('block_content')) {
-      $bundle_type = $block_content->bundle();
-      $account = $this->currentUser();
-      return AccessResult::allowedIfHasPermissions($account, array(
-        'administer block content',
-        "update any $bundle_type block content",
-      ));
-    }
-    return AccessResult::neutral();
-  }
-
-  /**
-   * Access check for the block content delete forms.
-   *
-   * @return Drupal\Core\Access\AccessResult
-   *   An access result.
-   */
-  public function blockContentDeleteFormAccess() {
-    if ($block_content = $this->currentRouteMatch->getParameter('block_content')) {
-      $bundle_type = $block_content->bundle();
-      $account = $this->currentUser();
-      return AccessResult::allowedIfHasPermissions($account, array(
-        'administer block content',
-        "delete any $bundle_type block content",
-      ));
+      return AccessResult::allowedIfHasPermission($account, "create $bundle_type block content");
     }
     return AccessResult::neutral();
   }

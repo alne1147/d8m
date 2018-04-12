@@ -16,9 +16,6 @@ The following permissions are added:
 - Administer block content types.
   This enables granting a user permission to manage block content types.
 
-- Administer block content.
-  This enables granting a user permission to manage block content.
-
 - View restricted block content.
   This enables granting a user permission to view restricted block content that
   the user cannot manage on the "Custom block library" page.
