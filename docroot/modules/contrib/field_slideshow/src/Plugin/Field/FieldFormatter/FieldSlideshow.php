@@ -399,7 +399,7 @@ class FieldSlideshow extends ImageFormatter {
     }
     else {
       $url = Url::fromUri('http://drupal.org/project/libraries');
-      drupal_set_message(t('Please install the !module module in order to use Field Slideshow.', array('!module' => \Drupal::l('Libraries API', $url))), 'warning', FALSE);
+      drupal_set_message(t('Please install the %module module in order to use Field Slideshow.', array('%module' => \Drupal::l('Libraries API', $url))), 'warning', FALSE);
     }
     $elements = array();
     $entity = array();

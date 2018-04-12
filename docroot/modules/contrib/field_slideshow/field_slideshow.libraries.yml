@@ -26,12 +26,14 @@ field_slideshow.jquery.carousel:
 field_slideshow.jquery.carousel.skin.tango:
   version: VERSION
   css:
-    /libraries/jquery.jcarousel/skins/tango/skins.css: {}
+    theme:
+      /libraries/jquery.jcarousel/skins/tango/skins.css: {}
 
 field_slideshow.jquery.carousel.skin.ie7:
   version: VERSION
   css:
-    /libraries/jquery.jcarousel/skins/ie7/skins.css: {}
+    theme:
+      /libraries/jquery.jcarousel/skins/ie7/skins.css: {}
 
 
 field_slideshow.view:
