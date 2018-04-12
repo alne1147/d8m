@@ -3,7 +3,7 @@
  * CKEditor Accordion functionality.
  */
 
-(function ($) {
+(function ($, Drupal, drupalSettings) {
   'use strict';
   Drupal.behaviors.ckeditorAccordion = {
     attach: function (context, settings) {
@@ -19,8 +19,11 @@
           }
 
           // The first one is the correct one.
-          $accordion.children('dt:first').addClass('active');
-          $accordion.children('dd:first').addClass('active');
+          if (!drupalSettings.ckeditorAccordion.accordionStyle.collapseAll) {
+            $accordion.children('dt:first').addClass('active');
+            $accordion.children('dd:first').addClass('active');
+            $accordion.children('dd:first').css('display', 'block');
+          }
 
           // Turn the accordion tabs to links so that the content is accessible & can be traversed using keyboard.
           $accordion.children('dt').each(function () {
@@ -32,6 +35,9 @@
 
           // Wrap the accordion in a div element so that quick edit function shows the source correctly.
           $accordion.addClass('styled').removeClass('ckeditor-accordion').wrap('<div class="ckeditor-accordion-container"></div>');
+
+          // Trigger an ckeditorAccordionAttached event to let other frameworks know that the accordion has been attached.
+          $accordion.trigger('ckeditorAccordionAttached');
         });
 
         // Add click event to body once because quick edits & ajax calls might reset the HTML.
@@ -62,4 +68,4 @@
       }
     }
   };
-})(jQuery);
+})(jQuery, Drupal, drupalSettings);
