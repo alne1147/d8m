@@ -4,8 +4,8 @@ package: Block
 type: module
 # core: 8.x
 
-# Information added by Drupal.org packaging script on 2017-04-05
-version: '8.x-1.0'
+# Information added by Drupal.org packaging script on 2017-10-12
+version: '8.x-1.2'
 core: '8.x'
 project: 'block_region_permissions'
-datestamp: 1491409686
+datestamp: 1507771447

@@ -14,8 +14,8 @@ This module provides permissions for managing regions.
 The following permissions are added:
 
 - Administer permissions for each theme's region.
-  This enables granting a user permission to manage certain regions in
-  the following ways:
+  This enables granting a user permission to manage certain regions under each
+  theme in the following ways:
   - Can see region's header, message, and blocks on block layout page
   - Can see region in region selector fields on block layout page
   - Can see region in region selector field on configure and place block pages

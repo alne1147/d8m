@@ -28,8 +28,8 @@ function block_region_permissions_form_block_admin_display_form_alter(&$form, Fo
 
   // Get block keys for each region.
   // Also get a master list of region select field options.
-  $region_block_keys = array();
-  $region_options = array();
+  $region_block_keys = [];
+  $region_options = [];
   $block_elements = Element::children($form['blocks']);
   foreach ($block_elements as $block_key) {
     // Get region name.
@@ -38,7 +38,7 @@ function block_region_permissions_form_block_admin_display_form_alter(&$form, Fo
       // Region label or message.
       list(, $region_key,) = explode('-', $block_key);
     }
-    elseif (substr($block_key, 0, 7) != 'region-' && $block = Block::load($block_key)) {
+    elseif ($block = Block::load($block_key)) {
       // Region block.
       $region_key = $block->getRegion();
       // Save master list of options one time.
@@ -69,8 +69,7 @@ function block_region_permissions_form_block_admin_display_form_alter(&$form, Fo
     }
   }
 
-  // Remove region select field options for regions the user cannot
-  // administer.
+  // Remove region select field options for regions the user cannot administer.
   if (!empty($region_block_keys)) {
     // Remove options from master list.
     foreach ($region_options as $region_key => $options) {
@@ -96,8 +95,7 @@ function block_region_permissions_form_block_form_alter(&$form, FormStateInterfa
   // Get theme name.
   $theme_key = $form['theme']['#value'];
 
-  // Remove region select field options for regions the user cannot
-  // administer.
+  // Remove region select field options for regions the user cannot administer.
   $region_options = $form['region']['#options'];
   foreach ($region_options as $region_key => $options) {
     if (!\Drupal::currentUser()->hasPermission("administer $theme_key $region_key")) {

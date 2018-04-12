@@ -15,15 +15,15 @@ class RouteSubscriber extends RouteSubscriberBase {
    */
   public function alterRoutes(RouteCollection $collection) {
     // Change access callback for the block edit and delete forms.
-    $routeNames = array(
+    $routeNames = [
       'entity.block.edit_form',
       'entity.block.delete_form',
-    );
+    ];
     foreach ($routeNames as $name) {
       if ($route = $collection->get($name)) {
-        $route->addRequirements(array(
+        $route->addRequirements([
           '_custom_access' => 'Drupal\block_region_permissions\AccessControlHandler::blockFormAccess',
-        ));
+        ]);
       }
     }
   }
