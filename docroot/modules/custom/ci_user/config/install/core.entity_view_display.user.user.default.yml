@@ -17,4 +17,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_display_name: true
+  langcode: true
   member_for: true
