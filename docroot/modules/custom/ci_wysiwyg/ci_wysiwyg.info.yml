@@ -9,4 +9,5 @@ dependencies:
   - editor_file
   - entity_embed
   - filter
+  - video_embed_wysiwyg
 version: 8.x
