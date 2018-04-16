@@ -84,3 +84,4 @@ hidden:
   field_page_options: true
   field_promote: true
   field_related_content: true
+  langcode: true

@@ -3,9 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.paragraph.bp_column_content
+    - field.storage.paragraph.bp_column_content_2
+    - field.storage.paragraph.bp_column_content_3
     - search_api.index.acquia_search_index
     - taxonomy.vocabulary.free_tagging
   module:
+    - entity_reference_revisions
     - search_api
     - text
     - user
@@ -74,13 +78,10 @@ display:
           separator: ''
           hide_empty: false
       fields:
-        search_api_language:
-          table: search_api_index_acquia_search_index
-          field: search_api_language
-          id: search_api_language
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api
+        title:
+          id: title
+          table: search_api_datasource_acquia_search_index_entity_node
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
@@ -113,11 +114,82 @@ display:
             trim: false
             preserve_tags: ''
             html: false
+          element_type: h1
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
+        search_api_excerpt:
+          id: search_api_excerpt
+          table: search_api_index_acquia_search_index
+          field: search_api_excerpt
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Excerpt
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -126,16 +198,82 @@ display:
           empty_zero: false
           hide_alter_empty: true
           link_to_item: false
+          use_highlighting: true
           multi_type: separator
           multi_separator: ', '
-        title:
-          id: title
+          plugin_id: search_api
+        body:
+          id: body
           table: search_api_datasource_acquia_search_index_entity_node
-          field: title
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Da Body'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
           entity_type: node
           plugin_id: search_api_field
-        search_api_excerpt:
-          id: search_api_excerpt
+        search_api_excerpt_1:
+          id: search_api_excerpt_1
           table: search_api_index_acquia_search_index
           field: search_api_excerpt
           relationship: none
@@ -187,10 +325,81 @@ display:
           multi_type: separator
           multi_separator: ', '
           plugin_id: search_api
-        body:
-          id: body
+        bp_column_content:
+          id: bp_column_content
+          table: search_api_datasource_acquia_search_index_entity_paragraph
+          field: bp_column_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Card
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_revisions_entity_view
+          settings:
+            view_mode: default
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 6
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: paragraph
+          plugin_id: search_api_field
+        field_card_body_2:
+          id: field_card_body_2
           table: search_api_index_acquia_search_index
-          field: body
+          field: field_card_body_2
           relationship: none
           group_type: group
           admin_label: ''
@@ -255,6 +464,148 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+          plugin_id: search_api_field
+        bp_column_content_2:
+          id: bp_column_content_2
+          table: search_api_datasource_acquia_search_index_entity_paragraph
+          field: bp_column_content_2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Content Top'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_revisions_entity_view
+          settings:
+            view_mode: default
+          group_column: ''
+          group_columns: {  }
+          group_rows: false
+          delta_limit: 2
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: true
+            use_highlighting: true
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: paragraph
+          plugin_id: search_api_field
+        bp_column_content_3:
+          id: bp_column_content_3
+          table: search_api_datasource_acquia_search_index_entity_paragraph
+          field: bp_column_content_3
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Content Bottom'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_revisions_entity_view
+          settings:
+            view_mode: default
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 3
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: paragraph
           plugin_id: search_api_field
       filters:
         search_api_fulltext:
@@ -536,6 +887,74 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.paragraph.bp_column_content'
+        - 'config:field.storage.paragraph.bp_column_content_2'
+        - 'config:field.storage.paragraph.bp_column_content_3'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: search-html
+      style:
+        type: default
+        options: {  }
+      defaults:
+        style: false
+        row: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:paragraph':
+              bp_accordion: default
+              bp_accordion_section: default
+              bp_blank: default
+              bp_block: default
+              bp_carousel: default
+              bp_columns: default
+              bp_columns_three_uneven: default
+              bp_columns_two_uneven: default
+              bp_column_wrapper: default
+              bp_contact: default
+              bp_image: default
+              bp_modal: default
+              bp_simple: default
+              bp_tabs: default
+              bp_tab_section: default
+              bp_view: default
+              card_open_embed: default
+              full_column_hero: default
+              images: default
+              image_text: default
+              nested_paragraph: default
+              row_slide_container: default
+              row_three_column_hero: default
+              row_two_column_hero: default
+              text: default
+              text_image: default
+              user: default
+            'entity:node':
+              article: search_index
+              event: search_index
+              landing_page: search_index
+              page: search_index
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.paragraph.bp_column_content'
+        - 'config:field.storage.paragraph.bp_column_content_2'
+        - 'config:field.storage.paragraph.bp_column_content_3'
   search_block:
     display_plugin: page
     id: search_block
@@ -612,7 +1031,18 @@ display:
             group_items: {  }
           parse_mode: terms
           min_length: null
-          fields: {  }
+          fields:
+            field_card_body_2: field_card_body_2
+            processed_2: processed_2
+            body: body
+            title: title
+            field_article_tags: field_article_tags
+            type: type
+            field_rows: field_rows
+            field_rows_1: field_rows_1
+            field_card_body: field_card_body
+            field_card_body_1: field_card_body_1
+            bp_column_content: bp_column_content
           plugin_id: search_api_fulltext
         type:
           id: type
@@ -784,7 +1214,7 @@ display:
             identifier: field_article_tags
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -808,7 +1238,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: textfield
           limit: true
           vid: free_tagging
@@ -856,3 +1286,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.paragraph.bp_column_content'
+        - 'config:field.storage.paragraph.bp_column_content_2'
+        - 'config:field.storage.paragraph.bp_column_content_3'
