@@ -20,8 +20,8 @@ backend_config:
     http_method: AUTO
   retrieve_data: true
   highlight_data: true
-  excerpt: false
-  skip_schema_check: false
+  excerpt: true
+  skip_schema_check: true
   site_hash: true
   suggest_suffix: true
   suggest_corrections: true

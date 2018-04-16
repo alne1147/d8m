@@ -10,7 +10,6 @@ dependencies:
     - core.entity_view_mode.node.search_index
   module:
     - search_api
-    - paragraphs
     - node
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
@@ -114,14 +113,6 @@ field_settings:
       config:
         - field.storage.node.body
 datasource_settings:
-  'entity:paragraph':
-    bundles:
-      default: true
-      selected:
-        - card_basic
-    languages:
-      default: true
-      selected: {  }
   'entity:node':
     bundles:
       default: false
