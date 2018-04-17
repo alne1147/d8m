@@ -417,7 +417,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
+          type: textfield
           limit: true
           vid: free_tagging
           hierarchy: false
@@ -490,7 +490,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Start Date'
+            label: ''
             description: ''
             use_operator: false
             operator: created_op
@@ -508,6 +508,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -538,7 +541,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: 'End Date'
+            label: ''
             description: ''
             use_operator: false
             operator: created_1_op
@@ -556,6 +559,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -582,7 +588,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'Search Promoted Block!'
+      title: Search
       header:
         result:
           id: result
