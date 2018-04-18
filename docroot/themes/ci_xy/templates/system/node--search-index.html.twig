@@ -96,9 +96,9 @@
     {#</footer>#}
   {% endif %}
 
-        <div{{ content_attributes }}>
+        <div class="bodyContent" {{ content_attributes }}>
             {% set summary = content.body|render|striptags %}
-            {{ summary|length > 600 ? summary|slice(0, 600) ~ '...' : summary }}
+            {{ summary|length > 6600 ? summary|slice(0, 6600) ~ '...' : summary }}
         </div>
 
       {{ content.field_rows|render|striptags }}
