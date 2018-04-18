@@ -1,5 +1,5 @@
 (function ($) {
-    'use strict';
+        'use strict';
 
     Drupal.behaviors.AdvancedOpen = {
         attach: function(context, settings) {
