@@ -144,6 +144,17 @@ processor_settings:
   add_url:
     plugin_id: add_url
     settings: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
   tokenizer:
     all_fields: false
     fields:
@@ -159,17 +170,6 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
-  aggregated_field: {  }
   type_boost:
     boosts:
       'entity:paragraph':
