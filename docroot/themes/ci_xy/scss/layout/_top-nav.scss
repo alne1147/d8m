@@ -1,10 +1,12 @@
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
+  text-align: center;
   @media (max-width: $screen-md-2-min) {
     position: absolute;
     background-color: transparent!important;
     margin-bottom: 0;
+    text-align: left;
     top: 20px;
     width: 100%;
     z-index: 9999;
@@ -41,6 +43,8 @@
   }
   .sf-menu {
     background-color: $color-brand-slate;
+    display: inline-block;
+    vertical-align: top;
     @media (max-width: $screen-md) {
       &.sf-accordion.sf-expanded {
         position: relative;
