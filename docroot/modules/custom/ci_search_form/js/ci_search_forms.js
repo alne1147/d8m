@@ -68,4 +68,22 @@
 
 
 
+    Drupal.behaviors.SearchColumns = {
+        attach: function(context, settings) {
+            $(document).ready(function(){
+                $('.promoted-search .related-tags').each(function(){
+                    if($(this).hasClass('col-sm-3')) {
+                        $(this).prev().addClass("col-sm-9");
+                        // alert("The paragraph was clicked.");
+                    }
+                });
+
+            });
+
+        }
+
+    };
+
+
+
 }(jQuery));
