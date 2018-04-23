@@ -69,3 +69,24 @@ article.omitted-search
 {
   display:none;
 }
+
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0a6eb4;
+}
+
+.promoted-search .field--name-field-article-tags .field--item a {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  background: #22c7bf;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display:block;
+  margin:10px 0;
+}
