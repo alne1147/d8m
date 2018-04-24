@@ -25,12 +25,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 2
+    weight: 1
     label: above
     settings:
       format_type: medium
@@ -39,7 +39,7 @@ content:
     type: datetime_default
     region: content
   field_location:
-    weight: 3
+    weight: 4
     label: above
     settings:
       include_map: true
@@ -58,7 +58,7 @@ content:
     type: simple_gmap
     region: content
   field_rows:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: default
