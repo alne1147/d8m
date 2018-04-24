@@ -3,25 +3,41 @@
  */
 
 // [1]
+.slick__slider {
+  .paragraph__column--container-wrapper {
+    .container {
+      //padding-left: 0;
+      //padding-right: 0;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
 .slick-arrow {
   @media (max-width: $screen-xs-min) {
     width: 18px
   }
   &:before {
     font-family: FontAwesome;
-    font-size: 48px;
+    font-size: 36px;
     color: $color-brand-slate;
     @media (max-width: $screen-xs-min) {
-      font-size: 36px;
+      font-size: 28px;
     }
   }
   &.slick-next {
     &:before {
+      position: absolute;
+      right: 5px;
       content: '\f105';
     }
   }
   &.slick-prev {
     &:before {
+      position: absolute;
+      left: 5px;
       content: '\f104';
     }
   }
