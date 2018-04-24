@@ -57,7 +57,7 @@ settings:
   smallicm: ''
   smallich: ''
   smallamt: Menu
-  smallabt: '1'
+  smallabt: '0'
   supersubs: 1
   minwidth: '12'
   maxwidth: '27'
