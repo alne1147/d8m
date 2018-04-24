@@ -11,6 +11,7 @@ dependencies:
   module:
     - search_api
     - node
+    - paragraphs
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -121,6 +122,14 @@ datasource_settings:
         - event
         - landing_page
         - page
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: false
+      selected:
+        - card_basic
     languages:
       default: true
       selected: {  }
