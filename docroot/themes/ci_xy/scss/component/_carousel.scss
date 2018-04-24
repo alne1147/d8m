@@ -6,15 +6,12 @@
 .slick__slider {
   .paragraph__column--container-wrapper {
     .container {
-      //padding-left: 0;
-      //padding-right: 0;
       width: 100%;
       padding-left: 25px;
       padding-right: 25px;
     }
   }
 }
-
 .slick-arrow {
   @media (max-width: $screen-xs-min) {
     width: 18px
