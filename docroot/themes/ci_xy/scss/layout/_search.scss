@@ -1,9 +1,26 @@
+.view-acquia-search-fields .On,
 article.promoted-search
 {
-background-color: #f4fffe;
+  background-color: #f4fffe;
   padding:10px;
 
 
+
+  h2.On
+  {
+    background-color: #C70039;
+    padding:5px;
+    margin-bottom:10px;
+    font-family: "museo-sans",sans-serif;
+    margin: 0;
+    font-size: 21px;
+
+    a {
+      text-decoration: underline;
+      color:white;
+    }
+  }
+  .On .promotedLabel,
   .promotedLabel
   {
     background-color: #C70039;
@@ -13,6 +30,7 @@ background-color: #f4fffe;
     margin-bottom:10px;
   }
 }
+.view-acquia-search-fields,
 .view-acquia-search
 {
   h2 {
@@ -21,23 +39,23 @@ background-color: #f4fffe;
     font-size: 21px;
   }
 
-    a {
-      text-decoration:underline;
-    }
+  a {
+    text-decoration:underline;
+  }
   .views-row
   {
     margin-bottom:10px;
   }
 }
- h2.search-results
- {
-   font-size:24px;
-   color: #393939;
-   font-weight: normal;
-   margin:10px 0px 10px 0px;
- }
+h2.search-results
+{
+  font-size:24px;
+  color: #393939;
+  font-weight: normal;
+  margin:10px 0px 10px 0px;
+}
 article.omitted-search
-  {
+{
   margin:10px 10px;
   padding:0 0 10px 0;
   border-bottom:1px solid  #e7e7e7;
@@ -70,7 +88,6 @@ article.omitted-search
   display:none;
 }
 
-
 .highlight {
   font-weight: bold;
   text-decoration: underline;
@@ -89,4 +106,31 @@ article.omitted-search
   text-decoration: none;
   display:block;
   margin:10px 0;
+}
+.view-acquia-search-fields
+
+h2 {
+
+  margin:0px;
+
+  a {
+    font-family: "museo-sans", sans-serif;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+}
+
+.highlight:before {
+  color: red;
+  content: "";
+}
+.view-acquia-search-fields
+
+ul{
+  list-style-type: none;
+  padding:0px;
+}
+
+.view-acquia-search-fields h2.On a:before {
+  content: "Promoted: ";
 }
