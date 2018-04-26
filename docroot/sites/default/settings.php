@@ -1194,3 +1194,5 @@ if (isset($settings['memcache']['servers'])) {
     // Use memcache as the default bin
     $settings['cache']['default'] = 'cache.backend.memcache';
 }
+$conf['acquia_purge_http'] = FALSE;
+$conf['acquia_purge_https'] = TRUE;
