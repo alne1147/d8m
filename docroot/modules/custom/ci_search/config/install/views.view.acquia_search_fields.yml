@@ -1547,7 +1547,7 @@ display:
           exposed: true
           expose:
             operator_id: field_article_tags_op
-            label: 'Related Tags'
+            label: Tags
             description: ''
             use_operator: false
             operator: field_article_tags_op
@@ -1892,7 +1892,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Related Tags'
+          label: Tags
           exclude: true
           alter:
             alter_text: false
