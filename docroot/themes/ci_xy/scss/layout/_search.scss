@@ -1,4 +1,4 @@
-.view-acquia-search-fields .On,
+.promoted-search,
 article.promoted-search
 {
   background-color: #f4fffe;
@@ -6,7 +6,7 @@ article.promoted-search
 
 
 
-  h2.On
+  h2
   {
     background-color: #C70039;
     padding:5px;
@@ -20,7 +20,7 @@ article.promoted-search
       color:white;
     }
   }
-  .On .promotedLabel,
+  .promoted-search h2,
   .promotedLabel
   {
     background-color: #C70039;
@@ -40,11 +40,11 @@ article.promoted-search
   }
 
   a {
-    text-decoration:underline;
+    text-decoration:none;
   }
   .views-row
   {
-    margin-bottom:10px;
+    margin-bottom:20px;
   }
 }
 h2.search-results
@@ -91,9 +91,9 @@ article.omitted-search
 .highlight {
   font-weight: bold;
   text-decoration: underline;
-  color: #0a6eb4;
 }
 
+.promoted-search .related-tags a,
 .promoted-search .field--name-field-article-tags .field--item a {
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
@@ -107,11 +107,11 @@ article.omitted-search
   display:block;
   margin:10px 0;
 }
-.view-acquia-search-fields
+.view-acquia-search-fields .promoted-search
 
 h2 {
 
-  margin:0px;
+  margin:0px 0px 10px 0px;
 
   a {
     font-family: "museo-sans", sans-serif;
@@ -132,6 +132,23 @@ ul{
   padding:0px;
 }
 
-.view-acquia-search-fields h2.On a:before {
+.promoted-search h2 a:before {
   content: "Promoted: ";
+}
+
+.ommited .field--name-field-article-tags
+{
+  border-top:1px solid #d1d1d1;
+  border-bottom:1px solid #d1d1d1;
+  margin-top:10px;
+  margin-bottom:15px;
+  padding:5px;
+
+li{
+  float:left;
+  display:block;
+  margin-left:5px;
+}
+
+
 }
