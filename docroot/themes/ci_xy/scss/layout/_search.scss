@@ -40,7 +40,7 @@ article.promoted-search
   }
 
   a {
-    text-decoration:none;
+    text-decoration:underline;
   }
   .views-row
   {
@@ -144,11 +144,11 @@ ul{
   margin-bottom:15px;
   padding:5px;
 
-li{
-  float:left;
-  display:block;
-  margin-left:5px;
-}
+  li{
+    float:left;
+    display:block;
+    margin-left:5px;
+  }
 
 
 }
