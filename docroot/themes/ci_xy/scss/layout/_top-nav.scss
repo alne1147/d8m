@@ -98,6 +98,9 @@
             &:not(.sf-with-ul) {
               content: none;
             }
+            @media (max-width: $screen-md-2) {
+              display: none;
+            }
           }
           &.sf-with-ul {
             &:hover:before {
@@ -121,13 +124,56 @@
         }
         @media (max-width: $screen-md-2) {
           a {
-            padding-left: 2em;
+            padding-left: 2.5em;
+            &.sf-accordion-button {
+              padding-left: 1.5em;
+            }
           }
         }
       }
     }
     &.sf-accordion {
       .menuparent {
+        position: relative;
+        &.sf-expanded {
+          .sf-accordion-button {
+            &:after {
+              font-family: FontAwesome;
+              content: '\f068';
+            }
+          }
+          ul  {
+            .sf-accordion-button {
+              &:after {
+                font-family: FontAwesome;
+                content: '\f067';
+              }
+            }
+            .sf-expanded {
+              .sf-accordion-button {
+                &:after {
+                  font-family: FontAwesome;
+                  content: '\f068';
+                }
+              }
+            }
+          }
+        }
+        .sf-accordion-button {
+          //border-bottom: 0;
+          border-bottom: 1px solid rgba(0,0,0,0.1);
+          border-left: 1px solid rgba(0,0,0,0.2);
+          background-color: rgba(0,0,0,0.1);
+          position: absolute;
+          right: 0;
+          z-index: 2;
+          &:after {
+            margin: 0;
+            font-family: FontAwesome;
+            font-size: 13px;
+            content: '\f067';
+          }
+        }
         .sf-sub-indicator {
           width: inherit;
           top: 50%;

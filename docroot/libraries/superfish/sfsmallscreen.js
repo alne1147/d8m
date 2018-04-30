@@ -29,8 +29,8 @@
       includeClass_menu: '',
       includeClass_hyperlink: '',
       accordionButton: 1,
-      expandText: 'Expand',
-      collapseText: 'Collapse'
+      expandText: '',
+      collapseText: ''
     }, options);
 
     // We need to clean up the menu from anything unnecessary.
