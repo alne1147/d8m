@@ -3,6 +3,7 @@ description: 'Provides Event content type and related configuration. A date driv
 type: module
 core: 8.x
 dependencies:
+  - addtocalendar
   - calendar
   - ci_cr_rows_and_cards
   - ci_ct_content_types

@@ -281,6 +281,11 @@ display:
           expose:
             operator: ''
           group: 1
+        field_date_value:
+          id: field_date_value
+          table: node__field_date
+          field: field_date_value
+          plugin_id: datetime
       sorts:
         field_date_value:
           id: field_date_value
@@ -330,7 +335,7 @@ display:
           max_items_behavior: more
           groupby_times: half
           groupby_times_custom: null
-          theme_style: '1'
+          theme_style: '0'
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
@@ -342,6 +347,8 @@ display:
         row: false
         arguments: false
         header: false
+        filters: false
+        filter_groups: false
       row:
         type: calendar_row
         options:
@@ -421,6 +428,22 @@ display:
           content: ''
           pager_embed: 1
           plugin_id: calendar_header
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: 0
       contexts:
@@ -547,10 +570,13 @@ display:
           max_items_behavior: more
           groupby_times: hour
           groupby_times_custom: null
-          theme_style: '1'
+          theme_style: '0'
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
+          granularity_links:
+            day: ''
+            week: ''
       defaults:
         style: false
         row: false
