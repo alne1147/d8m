@@ -74,9 +74,28 @@
                 $('.promoted-search .related-tags').each(function(){
                     if($(this).hasClass('col-sm-3')) {
                         $(this).prev().addClass("col-sm-9");
-                        // alert("The paragraph was clicked.");
+
                     }
                 });
+
+            });
+
+        }
+
+    };
+
+    Drupal.behaviors.SearchFields = {
+        attach: function(context, settings) {
+            $(document).ready(function() {
+                var $myDiv = $('.promoted-search .related-tags');
+
+                if ( $myDiv.length){
+
+                    $($myDiv).addClass("col-sm-3");
+                    $($myDiv).prev().addClass("col-sm-9");
+
+                }
+
 
             });
 

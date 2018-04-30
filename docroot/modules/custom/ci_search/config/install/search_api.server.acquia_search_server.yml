@@ -20,9 +20,10 @@ backend_config:
     http_method: AUTO
   retrieve_data: true
   highlight_data: true
-  excerpt: true
-  skip_schema_check: true
+  excerpt: false
+  skip_schema_check: false
   site_hash: true
   suggest_suffix: true
   suggest_corrections: true
   suggest_words: false
+  acquia_search_possible_cores: {  }

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_article_tags
     - field.storage.node.field_promote
     - search_api.index.acquia_search_index
+    - system.menu.main
     - taxonomy.vocabulary.free_tagging
   module:
     - search_api
@@ -71,13 +72,17 @@ display:
           quantity: 9
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: '{{ field_promote }}'
+          default_row_class: true
       row:
         type: fields
         options:
           default_field_elements: true
           inline: {  }
           separator: ''
-          hide_empty: false
+          hide_empty: true
       fields:
         title:
           id: title
@@ -1301,10 +1306,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search-fields
-      exposed_block: false
+      path: search
+      exposed_block: true
       menu:
-        type: none
+        type: normal
         title: Search
         description: ''
         expanded: false
@@ -1542,7 +1547,7 @@ display:
           exposed: true
           expose:
             operator_id: field_article_tags_op
-            label: 'Related Tags'
+            label: Tags
             description: ''
             use_operator: false
             operator: field_article_tags_op
@@ -1622,7 +1627,7 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: promoted-search
             make_link: false
             path: ''
             absolute: false
@@ -1662,9 +1667,9 @@ display:
           click_sort_column: value
           type: boolean
           settings:
-            format: default
-            format_custom_true: ''
-            format_custom_false: ''
+            format: custom
+            format_custom_true: promoted-search
+            format_custom_false: ommited
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1887,11 +1892,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Tags
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: '<div class="related-tags">{{ field_article_tags }}</div>'
             make_link: false
             path: ''
             absolute: false
@@ -1920,7 +1925,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -1940,8 +1945,8 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
-          field_api_classes: false
+          separator: ''
+          field_api_classes: true
           field_rendering: true
           fallback_handler: search_api_entity
           fallback_options:
@@ -1974,7 +1979,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"{{ field_promote }}\">\n<h2 class=\"{{ field_promote }}\">{{ title }}</h2>\n<div class=\"bodyContent\">{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"related-tags\"> {{ field_article_tags }}</div>\n</div>"
+            text: "<h2>{{ title }}</h2>\n<div class=\"bodyContent\">{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"related-tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false

@@ -2,16 +2,14 @@
   <h3>{{ title }}</h3>
 {% endif %}
 
-<ul>
+
     {% for row in rows %}
         {%
         set row_classes = [
-        default_row_class ? 'views-row searchSolr promoted-search',
+        default_row_class ? 'views-row row',
         ]
         %}
-      <li{{ row.attributes.addClass(row_classes) }}>
+      <div{{ row.attributes.addClass(row_classes) }}>
           {{ row.content }}
-      </li>
+      </div>
     {% endfor %}
-</ul>
-
