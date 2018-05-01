@@ -3,8 +3,12 @@ ci_search_forms:
   js:
     js/ci_search_forms.js: {}
     js/highlite.js: {}
+    js/searchToggle.js: {}
     /libraries/highlight/jquery.highlight.js: {}
 
+  css:
+    layout:
+      css/searchToggle_style.css: {}
 
   dependencies:
     - core/jquery

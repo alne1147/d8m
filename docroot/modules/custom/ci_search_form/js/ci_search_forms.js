@@ -32,8 +32,6 @@
                 $("#edit-created-lt").datepicker().addClass( "col-md-1" );
                 $("#edit-search").addClass( "input-lg" );
 
-
-
             });
 
         }
