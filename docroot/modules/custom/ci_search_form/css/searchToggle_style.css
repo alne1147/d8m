@@ -28,7 +28,7 @@ form.s input{
     border:none;
     padding:10px 0;
     background:none;
-    color:white;
+    color:#000;
     outline:none;
 
     width:80%;
@@ -44,7 +44,7 @@ form.s button{
 
 .sbtn{
     font-size:36px;
-    color:#DADBDC;
+    color:#000;
 }
 
 form.s input::-webkit-input-placeholder {

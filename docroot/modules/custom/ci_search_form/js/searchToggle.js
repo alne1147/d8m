@@ -6,11 +6,11 @@
 
             $( document ).ready(function() {
                 $(".header__search").click(function(){
-                    $("form").toggle();
+                    $("form.s").toggle();
                     $("input.sb").focus();
                 });
 
-                $('form').hover(
+                $('form.s').hover(
                     function () {
                         $(this).css({"background-color":"#EBEAEB"});
                     },
