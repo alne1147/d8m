@@ -6,7 +6,7 @@
 
             $( document ).ready(function() {
                 $(".header__search").click(function(){
-                    $("form.s").toggle();
+                    $("form.s").slideToggle();
                     $("input.sb").focus();
                 });
 
