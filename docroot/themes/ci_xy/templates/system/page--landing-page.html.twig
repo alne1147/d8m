@@ -70,10 +70,24 @@
                     <div class="header__translation">
                         <div id="google_translate_element"></div>
                     </div>
-                    <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i></div>
+                    <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
+        <form class="s" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8">
+
+
+            <input data-drupal-selector="edit-search" class="sb" type="text" id="edit-search" name="search" />
+
+
+
+            <button data-drupal-selector="edit-submit-acquia-search-fields" class="button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+
+
+        </form>
+
     </header>
 {% endblock %}
 {{ page.search }}

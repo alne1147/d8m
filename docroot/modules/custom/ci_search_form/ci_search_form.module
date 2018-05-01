@@ -4,7 +4,7 @@
  * Implements hook_page_attachments().
  */
 function ci_search_form_page_attachments(array &$attachments) {
-    $attachments['#attached']['library'][] = 'ci_search_form/ci_search_forms';
-    $attachments['#attached']['library'][] = 'ci_search_form/highlite';
-    $attachments['#attached']['library'][] = 'ci_search_form/searchToggle';
+$attachments['#attached']['library'][] = 'ci_search_form/ci_search_forms';
+$attachments['#attached']['library'][] = 'ci_search_form/highlite';
+$attachments['#attached']['library'][] = 'ci_search_form/searchToggle';
 }

@@ -15,7 +15,7 @@
                         $(this).css({"background-color":"#EBEAEB"});
                     },
                     function () {
-                        $(this).css({"background-color":"#FFF"});
+                        $(this).css({"background-color":"#F6F6F6"});
                     }
                 );
             });

@@ -4,7 +4,7 @@ ci_search_forms:
     js/ci_search_forms.js: {}
     js/highlite.js: {}
     js/searchToggle.js: {}
-    /libraries/highlight/jquery.highlight.js: {}
+
 
   css:
     layout:
@@ -17,4 +17,3 @@ ci_search_forms:
     - core/drupalSettings
     - core/jquery.ui
     - core/jquery.ui.datepicker
-    - highlight/jquery.highlight
