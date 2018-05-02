@@ -72,6 +72,10 @@ article.omitted-search
   display: inline;
 }
 
+.related-tags.col-sm-3 .field--label
+{
+  display:none;
+}
 .form-control
 {
   padding:20px;
