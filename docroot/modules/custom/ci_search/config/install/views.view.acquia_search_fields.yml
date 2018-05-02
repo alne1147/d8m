@@ -1589,7 +1589,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: Search
+      title: ''
       sorts:
         field_promote:
           id: field_promote
