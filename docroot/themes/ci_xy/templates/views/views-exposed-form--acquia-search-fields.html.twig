@@ -27,7 +27,9 @@
 
     <div id="advancedSearch">
     {{ form.field_article_tags }}
-    {{ form.type }}
-   {{ form.created }}{{ form.created_lt }}
+    {{ form.type }}{{ form.items_per_page }}
+        <div id="dateRange">{{ form.created }}{{ form.created_lt }}</div>
+
+
     </div>
 </div>
