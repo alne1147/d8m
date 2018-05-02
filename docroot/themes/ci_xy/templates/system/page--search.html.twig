@@ -108,10 +108,13 @@
         {% else %}
         <div id="xyBackground">
             {% endif %}
-            <div id="navbar-collapse" class="navbar-collapse collapse" style="background-color:#{{ nav_color }}">
-
-                {{ render_block('mainnavigation') }}
-            </div>
+            {% block navbar %}
+                <div class="top-nav {{ nav_color }} ">
+                    <nav class="container">
+                        {{ render_block('mainnavigation_2') }}
+                    </nav>
+                </div>
+            {% endblock %}
             <div role="main" class="main-container {{ container }} js-quickedit-main-content">
                 <div class="row">
                     {# Breadcrumbs #}
