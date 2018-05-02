@@ -110,7 +110,6 @@
     Drupal.behaviors.SearchSubmit = {
         attach: function(context, settings) {
             $(document).ready(function() {
-              
                 $('#edit-type').on('change', function() {
                     var $form = $(this).closest('form');
                     $form.find('button[type=submit]').click();

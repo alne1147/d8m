@@ -2,7 +2,6 @@ ci_search_forms:
   version: 1.x
   js:
     js/ci_search_forms.js: {}
-    js/highlite.js: {}
     js/searchToggle.js: {}
 
 
