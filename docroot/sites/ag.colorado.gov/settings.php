@@ -774,3 +774,24 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_ag_colorado_gov.inc';
 }
 // </DDSETTINGS>
+$acquia_search_available_cores = [
+"CDIY-145117.dev.agcoloradogov" => [
+    "host" => "useast1-c26.acquia-search.com",
+    "path" => "/solr/CDIY-145117.dev.agcoloradogov",
+    "derived_key" => "781ecf80727eb2417d3ae500c5d5a16c1011dddb",
+],
+
+  // Entry for CDIY-145117.prod.agcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.agcoloradogov/admin/ping
+  "CDIY-145117.prod.agcoloradogov" => [
+    "host" => "useast1-c26.acquia-search.com",
+    "path" => "/solr/CDIY-145117.prod.agcoloradogov",
+    "derived_key" => "cecacbb873529eca76c685f15faa0a1422be41a9",
+],
+
+  // Entry for CDIY-145117.test.agcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.agcoloradogov/admin/ping
+  "CDIY-145117.test.agcoloradogov" => [
+    "host" => "useast1-c26.acquia-search.com",
+    "path" => "/solr/CDIY-145117.test.agcoloradogov",
+    "derived_key" => "86cd524a8c235c3b86c8077633f9a41067c1eefc",
+],
+];
