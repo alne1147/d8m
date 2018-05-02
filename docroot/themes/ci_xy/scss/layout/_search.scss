@@ -139,10 +139,6 @@ ul{
   padding:0px;
 }
 
-.promoted-search h2 a:before {
-  content: "Promoted: ";
-}
-
 .ommited .field--name-field-article-tags
 {
   border-top:1px solid #d1d1d1;
@@ -158,7 +154,6 @@ ul{
   }
 
 }
-
 
 .form-inline .form-control {
   width: inherit;
