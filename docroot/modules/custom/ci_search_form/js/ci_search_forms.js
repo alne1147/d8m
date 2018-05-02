@@ -60,7 +60,7 @@
 
                 $("input#edit-search").attr({
 
-                    "placeholder" : "Search The Government"
+                    "placeholder" : "Search Here"
                 });
 
 
