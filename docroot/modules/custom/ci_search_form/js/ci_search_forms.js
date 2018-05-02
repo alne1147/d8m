@@ -42,10 +42,16 @@
         attach: function(context, settings) {
             $(document).ready(function(){
 
+                $("button#edit-submit-acquia-search-fields").attr({
+                    "name" : "submit"
+
+                });
+
                 $("input#edit-created-lt").attr({
                     "size" : 10,
                     "placeholder" : "End Date"
                 });
+
 
                 $("input#edit-created").attr({
                     "size" : 10,
@@ -101,6 +107,18 @@
 
     };
 
+    Drupal.behaviors.SearchSubmit = {
+        attach: function(context, settings) {
+            $(document).ready(function() {
+                $('#edit-type').on('change', function() {
+                    var $form = $(this).closest('form');
+                    $form.find('button[type=submit]').click();
+                });
+            });
+
+        }
+
+    };
 
 
 }(jQuery));
