@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mini_calendar.bp_background
+    - paragraphs.paragraphs_type.mini_calendar
+  module:
+    - options
+id: paragraph.mini_calendar.default
+targetEntityType: paragraph
+bundle: mini_calendar
+mode: default
+content:
+  bp_background:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

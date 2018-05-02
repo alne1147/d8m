@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.card_map
     - paragraphs.paragraphs_type.card_open_embed
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
@@ -25,6 +26,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       card_basic: card_basic
       bp_block: bp_block
@@ -32,6 +34,7 @@ settings:
       card_open_embed: card_open_embed
       bp_tabs: bp_tabs
       bp_view: bp_view
+      card_map: card_map
     target_bundles_drag_drop:
       card_basic:
         enabled: true
@@ -98,5 +101,11 @@ settings:
         enabled: false
       row_slide_container:
         weight: -24
+        enabled: false
+      card_map:
+        enabled: true
+        weight: 42
+      mini_calendar:
+        weight: 45
         enabled: false
 field_type: entity_reference_revisions

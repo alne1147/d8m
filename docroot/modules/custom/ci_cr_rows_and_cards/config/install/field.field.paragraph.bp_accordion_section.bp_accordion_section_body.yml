@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.card_map
     - paragraphs.paragraphs_type.card_open_embed
   module:
     - entity_reference_revisions
@@ -27,6 +28,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bp_image: bp_image
       card_basic: card_basic
@@ -36,6 +38,7 @@ settings:
       bp_carousel: bp_carousel
       bp_tabs: bp_tabs
       card_open_embed: card_open_embed
+      card_map: card_map
     target_bundles_drag_drop:
       bp_simple:
         weight: -39
@@ -102,5 +105,11 @@ settings:
         weight: 40
       row_slide_container:
         weight: 42
+        enabled: false
+      card_map:
+        enabled: true
+        weight: 42
+      mini_calendar:
+        weight: 45
         enabled: false
 field_type: entity_reference_revisions
