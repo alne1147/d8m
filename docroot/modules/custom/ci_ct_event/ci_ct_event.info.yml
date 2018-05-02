@@ -4,15 +4,20 @@ type: module
 core: 8.x
 dependencies:
   - addtocalendar
+  - block
+  - block_class
+  - block_visibility_groups
   - calendar
   - ci_cr_rows_and_cards
   - ci_ct_content_types
   - content_moderation
+  - ctools
   - datetime
   - datetime_range
   - entity_reference_revisions
   - field
   - field_group
+  - menu_condition
   - menu_ui
   - node
   - options
@@ -20,6 +25,8 @@ dependencies:
   - path
   - simple_gmap
   - single_datetime
+  - taxonomy
+  - term_condition
   - text
   - user
   - views

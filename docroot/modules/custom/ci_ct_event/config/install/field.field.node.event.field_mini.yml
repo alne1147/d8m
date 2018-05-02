@@ -2,26 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_page_options
+    - field.storage.node.field_mini
     - node.type.event
-    - taxonomy.vocabulary.page_options
-id: node.event.field_page_options
-field_name: field_page_options
+    - taxonomy.vocabulary.mini_calendar
+id: node.event.field_mini
+field_name: field_mini
 entity_type: node
 bundle: event
-label: 'Menu Options'
+label: 'Mini Calendar'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      page_options: page_options
+      mini_calendar: mini_calendar
     sort:
-      field: _none
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

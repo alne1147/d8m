@@ -3,15 +3,18 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
     - field.field.node.event.field_location
+    - field.field.node.event.field_mini
     - field.field.node.event.field_page_options
     - field.field.node.event.field_promote
     - field.field.node.event.field_related_content
     - field.field.node.event.field_rows
     - node.type.event
   module:
+    - addtocalendar
     - content_moderation
     - field_group
     - paragraphs
@@ -27,19 +30,22 @@ third_party_settings:
       weight: 3
       format_type: details
       format_settings:
+        label: 'Layout Options'
+        required_fields: true
         id: ''
         classes: ''
         open: false
-        required_fields: true
       label: 'Layout Options'
       region: content
     group_event_options:
       children:
         - field_date
+        - field_add_to_cal
         - field_location
         - field_page_options
         - field_promote
         - field_related_content
+        - field_mini
         - field_article_tags
       parent_name: ''
       weight: 1
@@ -71,8 +77,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_cal:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: add_to_calendar_widget_type
+    region: content
   field_article_tags:
-    weight: 11
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -98,34 +110,40 @@ content:
     type: single_date_time_widget
     region: content
   field_location:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_mini:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_page_options:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_promote:
-    weight: 9
+    weight: 10
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_related_content:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_rows:
-    weight: 14
+    weight: 52
     settings:
       title: Paragraph
       title_plural: Paragraphs

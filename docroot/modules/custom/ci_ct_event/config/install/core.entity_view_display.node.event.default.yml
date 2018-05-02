@@ -3,9 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
     - field.field.node.event.field_location
+    - field.field.node.event.field_mini
     - field.field.node.event.field_page_options
     - field.field.node.event.field_promote
     - field.field.node.event.field_related_content
@@ -26,19 +28,25 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_add_to_cal:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: add_to_calendar
+    region: content
   field_date:
     weight: 1
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: long
     third_party_settings:
       addtocalendar:
-        addtocalendar_show: '1'
         addtocalendar_settings:
           style: blue
           display_text: 'Add to Calendar'
@@ -68,10 +76,13 @@ content:
             Outlook: Outlook
             'Outlook Online': 'Outlook Online'
             'Yahoo! Calendar': 'Yahoo! Calendar'
+        addtocalendar_show: 0
     type: datetime_default
     region: content
   field_location:
-    weight: 4
+    type: simple_gmap
+    weight: 5
+    region: content
     label: above
     settings:
       include_map: true
@@ -87,10 +98,8 @@ content:
       include_static_map: false
       include_text: false
     third_party_settings: {  }
-    type: simple_gmap
-    region: content
   field_rows:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -105,6 +114,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_article_tags: true
+  field_mini: true
   field_page_options: true
   field_promote: true
   field_related_content: true

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Mini-Calendar
+vid: mini_calendar
+description: ''
+hierarchy: 0
+weight: 0

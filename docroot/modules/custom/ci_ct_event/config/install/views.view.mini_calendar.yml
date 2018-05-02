@@ -379,7 +379,7 @@ display:
           empty: true
           tokenize: 1
           content: ''
-          pager_embed: 1
+          pager_embed: 0
           plugin_id: calendar_header
       defaults:
         arguments: false
@@ -586,18 +586,6 @@ display:
           tokenize: 1
           content: '{{ arguments.field_date_value_year_month }}'
           pager_embed: 0
-          plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
           plugin_id: calendar_header
       defaults:
         arguments: false

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - term_condition
+id: mini_calendar_left
+label: 'Mini Calendar- Left'
+logic: and
+conditions:
+  b79bc977-5134-47e3-8805-95d0e324f61d:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: b79bc977-5134-47e3-8805-95d0e324f61d
+  28a72f26-cbe1-474a-9e77-9feaa201b392:
+    id: term
+    negate: 0
+    tid: '100047'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 28a72f26-cbe1-474a-9e77-9feaa201b392
+allow_other_conditions: false
