@@ -214,7 +214,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -330,7 +330,7 @@ display:
           max_items_behavior: more
           groupby_times: half
           groupby_times_custom: null
-          theme_style: '1'
+          theme_style: '0'
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
@@ -342,6 +342,8 @@ display:
         row: false
         arguments: false
         header: false
+        filters: false
+        filter_groups: false
       row:
         type: calendar_row
         options:
@@ -409,18 +411,22 @@ display:
           content: '{{ arguments.field_date_value_full_date }}'
           pager_embed: 0
           plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
-          plugin_id: calendar_header
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: 0
       contexts:
@@ -502,18 +508,6 @@ display:
           content: '{{ arguments.field_date_value_year_month }}'
           pager_embed: 0
           plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
-          plugin_id: calendar_header
       defaults:
         arguments: false
         header: false
@@ -547,10 +541,13 @@ display:
           max_items_behavior: more
           groupby_times: hour
           groupby_times_custom: null
-          theme_style: '1'
+          theme_style: '0'
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
+          granularity_links:
+            day: ''
+            week: ''
       defaults:
         style: false
         row: false
@@ -622,18 +619,6 @@ display:
           tokenize: 1
           content: 'Week of {{ arguments.field_date_value_year_week }}'
           pager_embed: 0
-          plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
           plugin_id: calendar_header
     cache_metadata:
       max-age: 0
@@ -730,18 +715,6 @@ display:
           tokenize: 1
           content: '{{ arguments.field_date_value_year }}'
           pager_embed: 0
-          plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
           plugin_id: calendar_header
       path: calendar-field_date/year
       menu:

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: views_block__mini_calendar_block_1
+theme: ''
+text: ''
+classes: ''
