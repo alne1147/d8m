@@ -14,6 +14,7 @@ dependencies:
   - content_moderation
   - datetime
   - entity_reference_revisions
+  - exclude_node_title
   - facets
   - field
   - field_group
