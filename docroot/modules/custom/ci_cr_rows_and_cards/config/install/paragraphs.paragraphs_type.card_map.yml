@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card_map
+label: 'Card - Map'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
