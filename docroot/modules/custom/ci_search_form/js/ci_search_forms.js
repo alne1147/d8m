@@ -16,6 +16,7 @@
 
     };
 
+    // Search form Input overrides
     Drupal.behaviors.SearchFieldProperties = {
         attach: function(context, settings) {
             $(document).ready(function(){
@@ -48,19 +49,15 @@
 
     };
 
-
+// Bootstrap class additions for adding columns in search result rows.
     Drupal.behaviors.ColumnBs = {
         attach: function(context, settings) {
             $(document).ready(function() {
                 var $myDiv = $('.promoted-search .related-tags');
-
                 if ( $myDiv.length){
-
                     $($myDiv).addClass("col-sm-3");
                     $($myDiv).prev().addClass("col-sm-9");
-
                 }
-
 
             });
 
@@ -84,6 +81,7 @@
 
     };
 
+// Search Auto Submit functions
     Drupal.behaviors.SearchAutoSubmit = {
         attach: function(context, settings) {
             $(document).ready(function() {
