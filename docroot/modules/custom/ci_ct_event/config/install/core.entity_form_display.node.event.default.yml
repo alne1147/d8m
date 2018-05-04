@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
+    - field.field.node.event.field_date_time_range
     - field.field.node.event.field_location
     - field.field.node.event.field_mini
     - field.field.node.event.field_page_options
@@ -27,7 +28,7 @@ third_party_settings:
       children:
         - field_rows
       parent_name: ''
-      weight: 3
+      weight: 2
       format_type: details
       format_settings:
         label: 'Layout Options'
@@ -39,7 +40,7 @@ third_party_settings:
       region: content
     group_event_options:
       children:
-        - field_date
+        - field_date_time_range
         - field_add_to_cal
         - field_location
         - field_page_options
@@ -64,7 +65,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -73,18 +74,18 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_add_to_cal:
-    weight: 7
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: add_to_calendar_widget_type
     region: content
   field_article_tags:
-    weight: 13
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -92,8 +93,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_date:
-    weight: 6
+  field_date_time_range:
+    weight: 8
     settings:
       hour_format: 12h
       allow_times: '15'
@@ -107,10 +108,10 @@ content:
         6: 0
         7: 0
     third_party_settings: {  }
-    type: single_date_time_widget
+    type: single_date_time_range_widget
     region: content
   field_location:
-    weight: 8
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -118,32 +119,32 @@ content:
     type: string_textfield
     region: content
   field_mini:
-    weight: 12
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_page_options:
-    weight: 9
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_promote:
-    weight: 10
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_related_content:
-    weight: 11
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_rows:
-    weight: 52
+    weight: 54
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -156,13 +157,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 10
+    weight: 9
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -170,21 +171,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -197,7 +198,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -205,8 +206,9 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_date: true
