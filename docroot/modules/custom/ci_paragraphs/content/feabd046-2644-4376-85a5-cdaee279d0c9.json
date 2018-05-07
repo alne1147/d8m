@@ -1,0 +1,147 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 571
+        }
+    ],
+    "uuid": [
+        {
+            "value": "feabd046-2644-4376-85a5-cdaee279d0c9"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2656
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-15T03:35:54+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "576"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-indigo-strong",
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>ould somehow form a family that's the way we all became the Brady Bunch. You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. The Love Boat soon will be making another run.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>The Love Boat promises something for everyone. The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p>ould somehow form a family that's the way we all became the Brady Bunch. You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. The Love Boat soon will be making another run.<\/p>\n<p>\u00a0<\/p>\n<p>The Love Boat promises something for everyone. The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife.<\/p>\n"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "Card 2 TItle"
+        }
+    ]
+}

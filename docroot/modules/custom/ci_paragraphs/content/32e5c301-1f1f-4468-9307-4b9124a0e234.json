@@ -1,0 +1,183 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 644
+        }
+    ],
+    "uuid": [
+        {
+            "value": "32e5c301-1f1f-4468-9307-4b9124a0e234"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3049
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5c4a26df-60d7-468f-8384-0264f33a0e6a"
+                    }
+                ],
+                "target_revision_id": "3047"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2888e935-6792-4060-aad8-6780a7b9f652"
+                    }
+                ],
+                "target_revision_id": "3048"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-22T17:20:42+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "12"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_rows"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "paragraph--color paragraph--color--rgba-cyan-slight",
+            "lang": "en"
+        }
+    ],
+    "field_row_title": [
+        {
+            "value": "Quid securi etiam",
+            "lang": "en"
+        }
+    ]
+}
