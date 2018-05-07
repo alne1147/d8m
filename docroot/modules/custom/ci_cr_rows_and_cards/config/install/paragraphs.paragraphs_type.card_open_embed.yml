@@ -3,4 +3,6 @@ status: true
 dependencies: {  }
 id: card_open_embed
 label: 'Card - Open Embed'
+icon_uuid: null
+description: null
 behavior_plugins: {  }

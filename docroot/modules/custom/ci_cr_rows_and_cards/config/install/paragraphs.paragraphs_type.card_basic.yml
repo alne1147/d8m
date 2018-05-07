@@ -3,4 +3,6 @@ status: true
 dependencies: {  }
 id: card_basic
 label: 'Card - Basic'
+icon_uuid: null
+description: null
 behavior_plugins: {  }
