@@ -39,4 +39,3 @@ dependencies:
   - user
   - views
   - viewsreference
-package: ci_ct
