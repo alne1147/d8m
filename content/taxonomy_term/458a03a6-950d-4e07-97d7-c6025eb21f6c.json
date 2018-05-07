@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/revenue.colorado.gov\/category\/news-article?_format=hal_json"
+            "href": "http:\/\/default\/category\/news-article?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
@@ -52,19 +52,19 @@
             "lang": "en"
         }
     ],
-    "path": [
-        {
-            "alias": "\/category\/news-article",
-            "pid": 36,
-            "langcode": "en",
-            "lang": "en"
-        }
-    ],
     "metatag": [
         {
             "value": {
-                "title": "News Article | Department of Revenue"
+                "title": "News Article | CI Drupal 8"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/category\/news-article",
+            "pid": 1,
+            "langcode": "en",
+            "lang": "en"
         }
     ]
 }

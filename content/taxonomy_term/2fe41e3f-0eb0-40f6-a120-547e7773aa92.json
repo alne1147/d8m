@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/revenue.colorado.gov\/taxonomy\/term\/100039?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "Show Site Footer | Department of Revenue"
+                "title": "Show Site Footer | CI Drupal 8"
             }
         }
     ]

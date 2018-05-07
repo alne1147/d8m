@@ -1,20 +1,20 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100021?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100047?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/mini_calendar"
         }
     },
     "tid": [
         {
-            "value": 100021
+            "value": 100047
         }
     ],
     "uuid": [
         {
-            "value": "fa94d31b-04a7-4d9c-bb20-96fc7310f5d0"
+            "value": "242afc4a-0219-4cdf-80b5-af9bded1f684"
         }
     ],
     "langcode": [
@@ -25,12 +25,12 @@
     ],
     "vid": [
         {
-            "target_id": "free_tagging"
+            "target_id": "mini_calendar"
         }
     ],
     "name": [
         {
-            "value": "State",
+            "value": "Show Mini Calendar - Left",
             "lang": "en"
         }
     ],
@@ -41,7 +41,7 @@
     ],
     "changed": [
         {
-            "value": "2017-10-17T19:58:08+00:00",
+            "value": "2018-05-01T17:55:05+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "State | CI Drupal 8"
+                "title": "Show Mini Calendar - Left | CI Drupal 8"
             }
         }
     ]
