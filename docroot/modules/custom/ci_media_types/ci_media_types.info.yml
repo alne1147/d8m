@@ -9,6 +9,7 @@ dependencies:
   - entity_embed
   - field
   - file
+  - focal_point
   - image
   - media
   - path
