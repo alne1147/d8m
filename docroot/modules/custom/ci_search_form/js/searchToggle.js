@@ -10,14 +10,14 @@
                     $("input.sb").focus();
                 });
 
-                $('form.s').hover(
-                    function () {
-                        $(this).css({"background-color":"#EBEAEB"});
-                    },
-                    function () {
-                        $(this).css({"background-color":"#F6F6F6"});
-                    }
-                );
+                // $('form.s').hover(
+                //     function () {
+                //         $(this).css({"background-color":"#EBEAEB"});
+                //     },
+                //     function () {
+                //         $(this).css({"background-color":"#F6F6F6"});
+                //     }
+                // );
             });
 
 
