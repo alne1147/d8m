@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/revenue.colorado.gov\/taxonomy\/term\/100036?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/100036?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
@@ -55,7 +55,7 @@
     "metatag": [
         {
             "value": {
-                "title": "County | Department of Revenue"
+                "title": "County | CI Drupal 8"
             }
         }
     ]

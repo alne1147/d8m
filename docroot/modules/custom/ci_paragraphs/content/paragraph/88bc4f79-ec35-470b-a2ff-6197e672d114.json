@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-cyan-light",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>Quisque ut dolor gravida, placerat libero vel, euismod. Paullum deliquit, ponderibus modulisque suis ratio utitur. Phasellus laoreet lorem vel dolor tempus vehicula. Cum sociis natoque penatibus et magnis dis parturient. Contra legem facit qui id facit quod lex prohibet.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Quisque ut dolor gravida, placerat libero vel, euismod. Paullum deliquit, ponderibus modulisque suis ratio utitur. Phasellus laoreet lorem vel dolor tempus vehicula. Cum sociis natoque penatibus et magnis dis parturient. Contra legem facit qui id facit quod lex prohibet.<\/p>\n"
         }
     ],
     "field_card_title": [

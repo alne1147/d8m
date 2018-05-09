@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<p>Tingling of the spine network of wormholes, not a sunrise but a galaxyrise rings of Uranus, ship of the imagination Vangelis adipisci velit Flatland muse about Jean-Fran\u00c3\u0192\u00c2\u00a7ois Champollion from which we spring astonishment. Descended from astronomers! Tendrils of gossamer clouds eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit science a billion trillion galaxies. Extraplanetary not a sunrise but a galaxyrise. How far away n<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Tingling of the spine network of wormholes, not a sunrise but a galaxyrise rings of Uranus, ship of the imagination Vangelis adipisci velit Flatland muse about Jean-Fran\u00c3\u0192\u00c2\u00a7ois Champollion from which we spring astonishment. Descended from astronomers! Tendrils of gossamer clouds eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit science a billion trillion galaxies. Extraplanetary not a sunrise but a galaxyrise. How far away n<\/p>\n"
         }
     ],
     "field_card_title": [

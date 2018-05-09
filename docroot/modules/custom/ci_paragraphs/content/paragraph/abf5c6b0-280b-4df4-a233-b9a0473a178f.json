@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-blue-light",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>Just two good ol' boys Wouldn't change if they could. Fightin' the system like a true modern day Robin Hood? Baby if you've ever wondered - wondered whatever became of me. I'm living on the air in Cincinnati. Cincinnati WKRP. Now were up in the big leagues getting' our turn at bat., Fleeing from the Cylon tyranny the last Battlestar \u2013 Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth. That this group<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Just two good ol' boys Wouldn't change if they could. Fightin' the system like a true modern day Robin Hood? Baby if you've ever wondered - wondered whatever became of me. I'm living on the air in Cincinnati. Cincinnati WKRP. Now were up in the big leagues getting' our turn at bat., Fleeing from the Cylon tyranny the last Battlestar \u2013 Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth. That this group<\/p>\n"
         }
     ],
     "field_card_title": [

@@ -70,10 +70,10 @@ settings:
             - TextColor
             - BGColor
   plugins:
-    stylescombo:
-      styles: "i.fa .fa-ban|Icon Ban\r\ni.fa .fa-arrow-down|Icon Arrow Down\r\ni.fa .fa-arrow-left|Icon Arrow Left\r\ni.fa .fa-arrow-right|Icon Arrow Right\r\ni.fa .fa-arrow-up|Icon Arrow Up"
     language:
       language_list: un
+    stylescombo:
+      styles: "i.fa .fa-ban|Icon Ban\r\ni.fa .fa-arrow-down|Icon Arrow Down\r\ni.fa .fa-arrow-left|Icon Arrow Left\r\ni.fa .fa-arrow-right|Icon Arrow Right\r\ni.fa .fa-arrow-up|Icon Arrow Up"
     templates:
       template_path: ''
       replace_content: 0
@@ -88,6 +88,8 @@ settings:
       max_chars: '-1'
     colorbutton:
       colors: ''
+    linkit:
+      linkit_profile: content_authors
     video_embed:
       defaults:
         children:

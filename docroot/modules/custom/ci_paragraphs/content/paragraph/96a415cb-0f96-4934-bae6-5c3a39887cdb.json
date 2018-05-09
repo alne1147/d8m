@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<h1 class=\"text-align-center\"><span style=\"font-family:museo sans,sans-serif;\"><strong>Welcome!<\/strong><\/span><\/h1>\r\n\r\n<p class=\"text-align-center\">This is a sample Home Page on the D8M Platform.<\/p>\r\n\r\n<p class=\"text-align-center\">This is just a simple card with text, but cards can be used in a variety of ways.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<h1 class=\"text-align-center\"><span style=\"font-family:museo sans,sans-serif;\"><strong>Welcome!<\/strong><\/span><\/h1>\n<p class=\"text-align-center\">This is a sample Home Page on the D8M Platform.<\/p>\n<p class=\"text-align-center\">This is just a simple card with text, but cards can be used in a variety of ways.<\/p>\n"
         }
     ]
 }

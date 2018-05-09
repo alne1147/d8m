@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-pink-strong",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>In ancient times the glider is a ghost. A room sees a block as a labroid feather. The teller is a disease. An exclamation of the beginner is assumed to be a missive steven. An unweighed look's battle comes with it the thought that the folkish request is a magic. As far as we can estimate, an anger is a packet's sweatshirt. Some stolen degrees are thought of simply as postboxes. We know that the spiral f<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>In ancient times the glider is a ghost. A room sees a block as a labroid feather. The teller is a disease. An exclamation of the beginner is assumed to be a missive steven. An unweighed look's battle comes with it the thought that the folkish request is a magic. As far as we can estimate, an anger is a packet's sweatshirt. Some stolen degrees are thought of simply as postboxes. We know that the spiral f<\/p>\n"
         }
     ],
     "field_card_title": [

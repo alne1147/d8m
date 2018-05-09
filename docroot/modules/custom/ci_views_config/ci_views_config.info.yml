@@ -1,4 +1,4 @@
-name: ci_views_config
+name: CI Views Config
 description: 'Exported Views Configuration.'
 type: module
 core: 8.x

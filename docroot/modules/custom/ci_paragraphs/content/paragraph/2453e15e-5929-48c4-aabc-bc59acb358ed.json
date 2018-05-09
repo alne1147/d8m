@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<p>Salutantibus vitae elit libero, a pharetra augue. Gallia est omnis divisa in partes tres, quarum. Hi omnes lingua, institutis, legibus inter se differunt. Quo usque tandem abutere, Catilina, patientia nostra? Donec sed odio operae, eu vulputate felis rhoncus. Nec dubitamus multa iter quae et nos invenerat.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Salutantibus vitae elit libero, a pharetra augue. Gallia est omnis divisa in partes tres, quarum. Hi omnes lingua, institutis, legibus inter se differunt. Quo usque tandem abutere, Catilina, patientia nostra? Donec sed odio operae, eu vulputate felis rhoncus. Nec dubitamus multa iter quae et nos invenerat.<\/p>\n"
         }
     ],
     "field_card_title": [

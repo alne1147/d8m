@@ -12,4 +12,3 @@ dependencies:
   - paragraphs
   - simple_gmap
   - text
-package: ci_blocks

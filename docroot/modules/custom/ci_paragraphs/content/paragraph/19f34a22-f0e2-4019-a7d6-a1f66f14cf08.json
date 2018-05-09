@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<h3>Service 1 Content title<\/h3>\r\n\r\n<ul>\r\n\t<li><a href=\"https:\/\/apps.colorado.gov\/apps\/dor\/dmv\/vehicle\/registration\/renewal\/welcome.jsf\" target=\"_blank\">Ultricies, est ac magna adipiscing<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apps.colorado.gov\/apps\/jboss\/cbe\/index.xhtml\">Aliquam, scelerisque nisi<\/a><\/li>\r\n<\/ul>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<h3>Service 1 Content title<\/h3>\n<ul><li><a href=\"https:\/\/apps.colorado.gov\/apps\/dor\/dmv\/vehicle\/registration\/renewal\/welcome.jsf\" target=\"_blank\">Ultricies, est ac magna adipiscing<\/a><\/li>\n<li><a href=\"https:\/\/apps.colorado.gov\/apps\/jboss\/cbe\/index.xhtml\">Aliquam, scelerisque nisi<\/a><\/li>\n<\/ul>"
         }
     ]
 }

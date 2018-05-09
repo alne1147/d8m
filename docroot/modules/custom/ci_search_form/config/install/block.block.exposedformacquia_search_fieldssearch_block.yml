@@ -1,6 +1,5 @@
-uuid: 729fbde1-96e3-4d4a-8450-770c914389ed
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.acquia_search_fields
@@ -15,6 +14,8 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
+_core:
+  default_config_hash: BA6_M6Ix6p9JXCym0VKsuDlE6knc44EFleDa1UqO3xo
 id: exposedformacquia_search_fieldssearch_block
 theme: ci_xy
 region: highlighted

@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color color__brand-blue--strong",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>- Example Call to Action -<\/p>\r\n\r\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\r\n\r\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\r\n\r\n<p><br \/>\r\n&nbsp;<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>- Example Call to Action -<\/p>\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\n<p>\n\u00a0<\/p>\n"
         }
     ]
 }

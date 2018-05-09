@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_width": [
         {
             "value": "paragraph--width--tiny",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>Mercedem aut nummos unde unde extricat, amaras. Cras mattis iudicium purus sit amet fermentum. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Paullum deliquit, ponderibus modulisque suis ratio utitur.<br \/>\r\nUt enim ad minim veniam, quis nostrud exercitation. Quae vero auctorem tractata ab fiducia dicuntur. Quisque ut dolor gravida, placerat libero vel, euismod.<br \/>\r\nCurabitur blandit tempus ardua ridiculus sed magna. Quam diu etiam furor iste tuus nos eludet? Sed haec quis possit intrepidus aestimare tellus. Phasellus laoreet lorem vel dolor tempus vehicula. Quo usque tandem abutere, Catilina, patientia nostra?<br \/>\r\nCum sociis natoque penatibus et magnis dis parturient. Magna pars studiorum, prodita quaerimus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Hi omnes lingua, institutis, legibus inter se differunt. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Mercedem aut nummos unde unde extricat, amaras. Cras mattis iudicium purus sit amet fermentum. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Paullum deliquit, ponderibus modulisque suis ratio utitur.<br \/>\nUt enim ad minim veniam, quis nostrud exercitation. Quae vero auctorem tractata ab fiducia dicuntur. Quisque ut dolor gravida, placerat libero vel, euismod.<br \/>\nCurabitur blandit tempus ardua ridiculus sed magna. Quam diu etiam furor iste tuus nos eludet? Sed haec quis possit intrepidus aestimare tellus. Phasellus laoreet lorem vel dolor tempus vehicula. Quo usque tandem abutere, Catilina, patientia nostra?<br \/>\nCum sociis natoque penatibus et magnis dis parturient. Magna pars studiorum, prodita quaerimus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Hi omnes lingua, institutis, legibus inter se differunt. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\n"
         }
     ]
 }

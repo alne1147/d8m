@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color color__sea-foam--slight",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\r\n\r\n<p>You can put any rows or cards here.&nbsp; It will show above all of the Landing Pages on your site.<\/p>\r\n\r\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\r\n\r\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\n<p>You can put any rows or cards here.\u00a0 It will show above all of the Landing Pages on your site.<\/p>\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\n"
         }
     ]
 }

@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-black-light",
@@ -153,7 +146,8 @@
     "field_card_body": [
         {
             "value": "<h2>Maroon Bells<\/h2>\r\n\r\n<p>The Maroon Bells are two peaks in the Elk Mountains, Maroon Peak and North Maroon Peak, separated by about a third of a mile.<\/p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Learn More<\/span><\/a><\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<h2>Maroon Bells<\/h2>\n<p>The Maroon Bells are two peaks in the Elk Mountains, Maroon Peak and North Maroon Peak, separated by about a third of a mile.<\/p>\n<p><a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Learn More<\/span><\/a><\/p>\n"
         }
     ]
 }

@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color color__eggplant--strong",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>&nbsp;<a class=\"btn btn-success\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>&nbsp;Get involved<\/p>\r\n\r\n<p>&nbsp;<a class=\"btn btn-info\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>&nbsp;Make a statement<\/p>\r\n\r\n<p>&nbsp;<a class=\"btn btn-danger\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>&nbsp;Do some things<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>\u00a0<a class=\"btn btn-success\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>\u00a0Get involved<\/p>\n<p>\u00a0<a class=\"btn btn-info\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>\u00a0Make a statement<\/p>\n<p>\u00a0<a class=\"btn btn-danger\" href=\"#\"><span class=\"text\">A Button<\/span><\/a>\u00a0Do some things<\/p>\n"
         }
     ]
 }

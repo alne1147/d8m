@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_text": [
         {
             "value": "<p>Hi omnes lingua, institutis, legibus inter se differunt. Etiam habebis sem dicantur magna mollis euismod. Unam incolunt Belgae, aliam Aquitani, tertiam. Ab illo tempore, ab est sed immemorabili. Gallia est omnis divisa in partes tres, quarum. Nihil hic munitissimus habendi senatus locus, nihil horum?<br \/>\r\nQuisque ut dolor gravida, placerat libero vel, euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Fabio vel iudice vincam, sunt in culpa qui officia.<\/p>\r\n",
-            "format": "basic_html"
+            "format": "basic_html",
+            "processed": ""
         }
     ]
 }

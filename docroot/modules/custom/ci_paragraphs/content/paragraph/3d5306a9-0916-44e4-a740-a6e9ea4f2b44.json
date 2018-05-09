@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<p>Fictum, &nbsp;deserunt mollit anim laborum astutumque! Quisque ut dolor gravida, placerat libero vel, euismod. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Contra legem facit qui id facit quod lex prohibet.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>Fictum, \u00a0deserunt mollit anim laborum astutumque! Quisque ut dolor gravida, placerat libero vel, euismod. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Contra legem facit qui id facit quod lex prohibet.<\/p>\n"
         }
     ],
     "field_card_title": [

@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-brown-strong",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>alamus brains sit\u200b\u200b, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cor<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>alamus brains sit\u200b\u200b, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cor<\/p>\n"
         }
     ],
     "field_card_title": [

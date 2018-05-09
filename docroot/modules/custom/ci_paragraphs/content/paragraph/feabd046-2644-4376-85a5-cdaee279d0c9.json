@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,13 +126,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "bp_background": [
         {
             "value": "paragraph--color paragraph--color--rgba-indigo-strong",
@@ -142,7 +135,8 @@
     "field_card_body": [
         {
             "value": "<p>ould somehow form a family that's the way we all became the Brady Bunch. You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. The Love Boat soon will be making another run.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>The Love Boat promises something for everyone. The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>ould somehow form a family that's the way we all became the Brady Bunch. You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. The Love Boat soon will be making another run.<\/p>\n<p>\u00a0<\/p>\n<p>The Love Boat promises something for everyone. The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife.<\/p>\n"
         }
     ],
     "field_card_title": [

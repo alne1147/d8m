@@ -3,4 +3,6 @@ status: true
 dependencies: {  }
 id: full_column_hero
 label: 'Row - Equal Column Hero'
+icon_uuid: null
+description: null
 behavior_plugins: {  }

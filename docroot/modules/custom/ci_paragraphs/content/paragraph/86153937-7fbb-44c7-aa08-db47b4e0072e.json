@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<p>I love cheese, especially cheesy grin ricotta. Camembert de normandie mozzarella swiss cut the cheese when the cheese comes out everybody's happy feta parmesan who moved my cheese. Edam cheese strings mascarpone gouda mascarpone melted cheese ricotta airedale. Fromage cheese on toast taleggio red leicester chalk and cheese red leicester pepper jack roquefort. Pecorino jarlsberg squirty cheese.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>I love cheese, especially cheesy grin ricotta. Camembert de normandie mozzarella swiss cut the cheese when the cheese comes out everybody's happy feta parmesan who moved my cheese. Edam cheese strings mascarpone gouda mascarpone melted cheese ricotta airedale. Fromage cheese on toast taleggio red leicester chalk and cheese red leicester pepper jack roquefort. Pecorino jarlsberg squirty cheese.<\/p>\n"
         }
     ]
 }

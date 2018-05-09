@@ -11,6 +11,7 @@ langcode: en
 dependencies:
   - superfish
   - file_browser
+  - video_embed_wysiwyg
   - admin_toolbar
   - admin_toolbar_tools
   - filter_perms

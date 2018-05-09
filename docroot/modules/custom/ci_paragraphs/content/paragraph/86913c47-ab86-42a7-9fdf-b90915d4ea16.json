@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
                     }
                 ]
             }
@@ -126,17 +126,11 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| CI Drupal 8"
-            }
-        }
-    ],
     "field_card_body": [
         {
             "value": "<p>ext level master cleanse trust fund shaman post-ironic woke. Tumeric blue bottle tote bag biodiesel taxidermy, locavore slow-carb cold-pressed cray mlkshk meditation jianbing small batch. Marfa salvia hexagon, pitchfork meggings locavore craft beer austin copper mug. Pinterest shaman poutine fanny pack, chicharrones lyft dreamcatcher irony gentrify hoodie street art kickstarter kale chips. Whatever VHS synth, tattooed next level locavore la croix health goth trust fund fashion axe hell of. Cronut ugh post-ironic butcher tumeric tofu, church-key ennui mlkshk enamel pin coloring book celiac. Tofu yuccie gentrify deep v 90's.<\/p>\r\n",
-            "format": "d8m_text_editor"
+            "format": "d8m_text_editor",
+            "processed": "<p>ext level master cleanse trust fund shaman post-ironic woke. Tumeric blue bottle tote bag biodiesel taxidermy, locavore slow-carb cold-pressed cray mlkshk meditation jianbing small batch. Marfa salvia hexagon, pitchfork meggings locavore craft beer austin copper mug. Pinterest shaman poutine fanny pack, chicharrones lyft dreamcatcher irony gentrify hoodie street art kickstarter kale chips. Whatever VHS synth, tattooed next level locavore la croix health goth trust fund fashion axe hell of. Cronut ugh post-ironic butcher tumeric tofu, church-key ennui mlkshk enamel pin coloring book celiac. Tofu yuccie gentrify deep v 90's.<\/p>\n"
         }
     ],
     "field_card_title": [
