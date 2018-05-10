@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.storage.node.field_promote
   module:
     - node
     - user
@@ -352,6 +354,71 @@ display:
           hide_alter_empty: true
           destination: true
           plugin_id: entity_operations
+        field_promote:
+          id: field_promote
+          table: node__field_promote
+          field: field_promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Promoted
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: yes-no
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         title:
           id: title
@@ -538,17 +605,17 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: ''
+          value: All
           group: 1
           exposed: true
           expose:
             operator_id: ''
-            label: Promote
+            label: Promoted
             description: ''
             use_operator: false
             operator: field_promote_value_op
             identifier: field_promote_value
-            required: true
+            required: false
             remember: false
             multiple: false
             remember_roles:
@@ -599,6 +666,20 @@ display:
         groups:
           1: AND
       display_extenders: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: 'Test Man'
+            format: d8m_text_editor
+          plugin_id: text
     display_plugin: default
     display_title: Master
     id: default
@@ -613,7 +694,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_promote'
   page_1:
     display_options:
       path: admin/content/node
@@ -645,4 +727,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_promote'
