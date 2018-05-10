@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: view-navigation
-label: 'View Navigation'
-description: ''
-locked: false

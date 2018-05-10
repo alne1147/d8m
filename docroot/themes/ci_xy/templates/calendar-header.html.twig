@@ -1,0 +1,20 @@
+{#/**
+* @file
+* Template to display a calendar header.
+* Be default called by CalendarHeader area.
+*
+* Available variables:
+* - title: Header Title.
+* - empty: Whether there are any results.
+* - granularity: whether this is week, day, month or year display.
+*
+* @ingroup themeable
+*/
+#}
+{# @todo Finish Header if this the way to go. #}
+<h3>{{ title }}</h3>
+<select id="cal_selectbox" name="" onchange="javascript:location.href = this.value;">
+    <option value="/calendar-field_date/month" selected>Month</option>
+    <option value="/calendar-field_date/week">Week</option>
+    <option value="/calendar-field_date/day">Day</option>
+</select>
