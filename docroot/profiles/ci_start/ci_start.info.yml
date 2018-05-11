@@ -75,7 +75,6 @@ dependencies:
   - content_moderation
   - datetime_range
   - layout_discovery
-  - block_place
   - workflows
   - linkit
   - role_delegation
