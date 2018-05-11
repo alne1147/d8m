@@ -30,7 +30,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'administer search_api'
       cache:
         type: tag
         options: {  }
@@ -706,6 +706,7 @@ display:
         fields: false
         style: false
         row: false
+        access: false
       enabled: true
       header: {  }
       filters:
@@ -1287,6 +1288,10 @@ display:
               page: search_result
             'entity:paragraph':
               card_basic: default
+      access:
+        type: perm
+        options:
+          perm: 'administer search_api'
     cache_metadata:
       max-age: -1
       contexts:
