@@ -30,7 +30,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'administer search_api'
+          perm: 'access site in maintenance mode'
       cache:
         type: tag
         options: {  }
@@ -653,6 +653,7 @@ display:
       defaults:
         style: false
         row: false
+        access: false
       row:
         type: search_api
         options:
@@ -664,6 +665,10 @@ display:
               page: search_index
             'entity:paragraph':
               card_basic: default
+      access:
+        type: perm
+        options:
+          perm: 'administer search_api'
     cache_metadata:
       max-age: -1
       contexts:
@@ -1333,6 +1338,7 @@ display:
         title: false
         sorts: false
         fields: false
+        access: false
       enabled: true
       header: {  }
       filters:
@@ -2022,6 +2028,9 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+      access:
+        type: none
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -2030,7 +2039,6 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_article_tags'
