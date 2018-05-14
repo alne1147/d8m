@@ -490,12 +490,11 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
-            type: calendar
+            type: none
             fail: 'not found'
-          validate_options:
-            replacement_format: 'F Y'
+          validate_options: {  }
           plugin_id: datetime_year_month
       header:
         calendar_header:
