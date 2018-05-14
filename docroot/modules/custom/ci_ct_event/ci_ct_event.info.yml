@@ -10,7 +10,6 @@ dependencies:
   - calendar
   - ci_cr_rows_and_cards
   - ci_ct_content_types
-  - ci_search
   - content_moderation
   - ctools
   - datetime
