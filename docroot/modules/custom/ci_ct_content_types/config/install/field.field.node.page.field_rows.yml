@@ -8,10 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
-    - paragraphs.paragraphs_type.full_column_hero
     - paragraphs.paragraphs_type.row_slide_container
-    - paragraphs.paragraphs_type.row_three_column_hero
-    - paragraphs.paragraphs_type.row_two_column_hero
   module:
     - entity_reference_revisions
 id: node.page.field_rows
@@ -27,14 +24,12 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bp_accordion: bp_accordion
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_columns_three_uneven: bp_columns_three_uneven
-      full_column_hero: full_column_hero
-      row_two_column_hero: row_two_column_hero
-      row_three_column_hero: row_three_column_hero
       row_slide_container: row_slide_container
     target_bundles_drag_drop:
       bp_accordion:
@@ -86,14 +81,14 @@ settings:
         weight: -24
         enabled: false
       full_column_hero:
-        enabled: true
         weight: -23
+        enabled: false
       row_two_column_hero:
-        enabled: true
         weight: -22
+        enabled: false
       row_three_column_hero:
-        enabled: true
         weight: -21
+        enabled: false
       bp_column_wrapper:
         weight: 30
         enabled: false
@@ -102,5 +97,11 @@ settings:
         weight: 38
       card_open_embed:
         weight: 40
+        enabled: false
+      card_map:
+        weight: 42
+        enabled: false
+      mini_calendar:
+        weight: 45
         enabled: false
 field_type: entity_reference_revisions
