@@ -22,6 +22,7 @@ dependencies:
   - options
   - paragraphs
   - responsive_image
+  - simple_gmap
   - text
   - views
   - viewsreference

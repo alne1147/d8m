@@ -4,15 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.bp_accordion_section_body
     - paragraphs.paragraphs_type.bp_accordion_section
-    - paragraphs.paragraphs_type.bp_block
-    - paragraphs.paragraphs_type.bp_carousel
-    - paragraphs.paragraphs_type.bp_image
-    - paragraphs.paragraphs_type.bp_modal
-    - paragraphs.paragraphs_type.bp_tabs
-    - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
-    - paragraphs.paragraphs_type.card_map
-    - paragraphs.paragraphs_type.card_open_embed
   module:
     - entity_reference_revisions
 id: paragraph.bp_accordion_section.bp_accordion_section_body
@@ -30,22 +22,14 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      bp_image: bp_image
       card_basic: card_basic
-      bp_block: bp_block
-      bp_modal: bp_modal
-      bp_view: bp_view
-      bp_carousel: bp_carousel
-      bp_tabs: bp_tabs
-      card_open_embed: card_open_embed
-      card_map: card_map
     target_bundles_drag_drop:
       bp_simple:
         weight: -39
         enabled: false
       bp_image:
-        enabled: true
         weight: -38
+        enabled: false
       bp_blank:
         weight: -37
         enabled: false
@@ -65,14 +49,14 @@ settings:
         enabled: true
         weight: -32
       bp_block:
-        enabled: true
         weight: -31
+        enabled: false
       bp_modal:
-        enabled: true
         weight: -30
+        enabled: false
       bp_view:
-        enabled: true
         weight: -29
+        enabled: false
       bp_accordion:
         weight: -28
         enabled: false
@@ -80,11 +64,11 @@ settings:
         weight: -27
         enabled: false
       bp_carousel:
-        enabled: true
         weight: -26
+        enabled: false
       bp_tabs:
-        enabled: true
         weight: -25
+        enabled: false
       bp_tab_section:
         weight: -24
         enabled: false
@@ -101,14 +85,14 @@ settings:
         weight: 31
         enabled: false
       card_open_embed:
-        enabled: true
         weight: 40
+        enabled: false
+      card_map:
+        weight: 42
+        enabled: false
       row_slide_container:
         weight: 42
         enabled: false
-      card_map:
-        enabled: true
-        weight: 42
       mini_calendar:
         weight: 45
         enabled: false
