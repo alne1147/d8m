@@ -7,7 +7,7 @@
             $(".search").attr("aria-hidden", true);
 
             // Toggle Expansion
-            $(".header__search").click(function(){
+            $(".header__search").off('click').click(function(){
                 $(".search").toggleClass("search--open");
                 $(".search").slideToggle(300);
                 if ($(".search").hasClass("search--open")) {
@@ -19,8 +19,8 @@
 
             // Toggle Expansion
             $(".header__search").keydown( function (e) {
-                // Enter Key
-                if (e.keyCode === 13) {
+                // Enter and Space keys
+                if (e.keyCode === 13 || e.keyCode === 32) {
                     $(".search").slideToggle(300);
                 }
             });
