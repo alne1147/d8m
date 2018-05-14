@@ -1,11 +1,25 @@
-.search {
-  //background-color: darken($color-brand-silver, 5%);
-  background-color: #f1f1f1;
-  
+/* Search Module css overrides
+ * 1. Header Search
+ */
+// [1]
+.search__form {
+  &--input {
+    color: darken($color-brand-green, 1%);
+    &:focus {
+      border-bottom-color: darken($color-brand-green, 1%);
+      outline-color: darken($color-brand-green, 1%);
+    }
+    &::placeholder {
+      color: darken($color-brand-green, 1%);  // Contrast Ratio 3.68
+      font-style: italic;
+    }
+  }
 }
-#searchForm {
-  margin-bottom:20px;
-}
+
+
+//#searchForm {
+//  margin-bottom:20px;
+//}
 .promoted-search,
 article.promoted-search
 {
@@ -140,7 +154,7 @@ h2 {
   color: red;
   content: "";
 }
-.view-acquia-search-fields
+//.view-acquia-search-fields
 
 ul{
   list-style-type: none;

@@ -38,8 +38,7 @@
                 });
 
                 $("input#edit-search").attr({
-
-                    "placeholder" : "Search Here"
+                    "placeholder" : "How can we help you?"
                 });
 
 
