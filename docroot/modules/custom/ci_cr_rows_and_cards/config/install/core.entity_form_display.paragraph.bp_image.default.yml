@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.bp_image.bp_background
     - field.field.paragraph.bp_image.bp_image_field
     - field.field.paragraph.bp_image.bp_link
+    - field.field.paragraph.bp_image.bp_width
     - image.style.thumbnail
     - paragraphs.paragraphs_type.bp_image
   module:
@@ -23,7 +24,7 @@ content:
     type: options_select
     region: content
   bp_image_field:
-    weight: 2
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -31,7 +32,7 @@ content:
     type: image_image
     region: content
   bp_link:
-    weight: 3
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -40,11 +41,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 3
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_width: true
   created: true
   status: true
   uid: true

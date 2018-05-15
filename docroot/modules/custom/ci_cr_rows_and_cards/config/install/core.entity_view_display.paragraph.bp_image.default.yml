@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.bp_image.bp_background
     - field.field.paragraph.bp_image.bp_image_field
     - field.field.paragraph.bp_image.bp_link
+    - field.field.paragraph.bp_image.bp_width
     - paragraphs.paragraphs_type.bp_image
     - responsive_image.styles.carousel_responsive
   module:
@@ -43,6 +44,13 @@ content:
       target: '0'
     third_party_settings: {  }
     type: link_separate
+    region: content
+  bp_width:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
 hidden:
   created: true

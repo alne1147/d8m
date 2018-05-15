@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.bp_columns.bp_background
     - field.field.paragraph.bp_columns.bp_column_content
+    - field.field.paragraph.bp_columns.bp_width
     - field.field.paragraph.bp_columns.field_row_title
     - paragraphs.paragraphs_type.bp_columns
   module:
@@ -15,14 +16,14 @@ bundle: bp_columns
 mode: default
 content:
   bp_background:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   bp_column_content:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 2
     settings:
       title: Card
       title_plural: Cards
@@ -42,11 +43,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 3
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_width: true
   created: true
   status: true
   uid: true
