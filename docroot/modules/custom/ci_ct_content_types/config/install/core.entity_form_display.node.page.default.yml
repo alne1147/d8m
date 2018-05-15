@@ -28,11 +28,12 @@ third_party_settings:
       weight: 2
       format_type: details
       format_settings:
-        open: false
+        label: 'Rows and Cards'
         required_fields: true
-        classes: ''
         id: ''
-      label: 'Layout Options'
+        classes: ''
+        open: false
+      label: 'Rows and Cards'
       region: content
     group_page_options:
       children:
