@@ -35,6 +35,7 @@ third_party_settings:
         - field_background_image
         - field_footer_options
         - field_footer_selection
+        - field_promote
       parent_name: ''
       weight: 6
       format_type: details
@@ -218,7 +219,7 @@ content:
     type: metatag_firehose
     region: content
   field_promote:
-    weight: 26
+    weight: 14
     settings:
       display_label: true
     third_party_settings: {  }
