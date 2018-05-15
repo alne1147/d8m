@@ -27,12 +27,12 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  bp_background:
+  bp_width:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_bp_title_color:
     weight: 0
     settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  bp_width: true
+  bp_background: true
   created: true
   status: true
   uid: true
