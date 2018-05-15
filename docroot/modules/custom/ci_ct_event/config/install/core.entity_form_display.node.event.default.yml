@@ -40,12 +40,12 @@ third_party_settings:
       weight: 2
       format_type: details
       format_settings:
-        label: 'Layout Options'
+        label: 'Rows and Cards'
         required_fields: true
         id: ''
         classes: ''
         open: false
-      label: 'Layout Options'
+      label: 'Rows and Cards'
       region: content
     group_event_options:
       children:
