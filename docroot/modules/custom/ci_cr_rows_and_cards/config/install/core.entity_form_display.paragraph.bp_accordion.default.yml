@@ -17,7 +17,7 @@ mode: default
 content:
   bp_accordion_section:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -27,18 +27,12 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  bp_background:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_width:
-    weight: 2
+    type: options_select
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_bp_title_color:
     weight: 0
     settings: {  }
@@ -47,11 +41,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 3
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   created: true
   status: true
   uid: true
