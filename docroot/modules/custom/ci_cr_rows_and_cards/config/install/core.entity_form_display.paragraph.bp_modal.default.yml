@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_button_text
     - field.field.paragraph.bp_modal.bp_modal_footer
     - field.field.paragraph.bp_modal.bp_modal_title
-    - field.field.paragraph.bp_modal.bp_width
     - paragraphs.paragraphs_type.bp_modal
   module:
     - content_moderation
@@ -60,12 +59,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  bp_width:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   moderation_state:
     type: moderation_state_default

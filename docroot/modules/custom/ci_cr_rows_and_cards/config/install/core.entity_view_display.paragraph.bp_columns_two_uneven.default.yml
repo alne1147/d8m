@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph.bp_columns_two_uneven.bp_background
     - field.field.paragraph.bp_columns_two_uneven.bp_column_content_2
     - field.field.paragraph.bp_columns_two_uneven.bp_column_style_2
-    - field.field.paragraph.bp_columns_two_uneven.bp_width
     - field.field.paragraph.bp_columns_two_uneven.field_row_title
     - paragraphs.paragraphs_type.bp_columns_two_uneven
   module:
@@ -34,13 +33,6 @@ content:
     region: content
   bp_column_style_2:
     weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
-  bp_width:
-    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }

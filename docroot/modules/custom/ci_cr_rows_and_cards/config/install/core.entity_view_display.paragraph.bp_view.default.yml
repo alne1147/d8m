@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_view
-    - field.field.paragraph.bp_view.bp_width
     - field.field.paragraph.bp_view.field_ci_views
     - paragraphs.paragraphs_type.bp_view
   module:
@@ -16,13 +15,6 @@ mode: default
 content:
   bp_background:
     weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
-  bp_width:
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }

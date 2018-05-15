@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_basic.bp_background
-    - field.field.paragraph.card_basic.bp_width
     - field.field.paragraph.card_basic.field_alignment
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
@@ -22,12 +21,6 @@ mode: default
 content:
   bp_background:
     weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  bp_width:
-    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select

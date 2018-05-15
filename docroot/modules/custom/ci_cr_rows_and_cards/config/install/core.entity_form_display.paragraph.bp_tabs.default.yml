@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.paragraph.bp_tabs.bp_background
     - field.field.paragraph.bp_tabs.bp_tab_section
-    - field.field.paragraph.bp_tabs.bp_width
     - paragraphs.paragraphs_type.bp_tabs
   module:
     - content_moderation
@@ -30,12 +29,6 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
-    region: content
-  bp_width:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   moderation_state:
     type: moderation_state_default

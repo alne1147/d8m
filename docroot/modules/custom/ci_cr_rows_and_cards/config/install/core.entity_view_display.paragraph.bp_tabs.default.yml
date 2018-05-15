@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.paragraph.bp_tabs.bp_background
     - field.field.paragraph.bp_tabs.bp_tab_section
-    - field.field.paragraph.bp_tabs.bp_width
     - paragraphs.paragraphs_type.bp_tabs
   module:
     - entity_reference_revisions
@@ -29,13 +28,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  bp_width:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
     region: content
 hidden:
   created: true
