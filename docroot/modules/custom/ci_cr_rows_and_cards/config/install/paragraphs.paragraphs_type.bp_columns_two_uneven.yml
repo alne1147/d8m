@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: bp_columns_two_uneven
-label: 'Row - Two Uneven'
+label: 'Row - Two Uneven Columns'
 icon_uuid: null
-description: null
+description: ''
 behavior_plugins: {  }

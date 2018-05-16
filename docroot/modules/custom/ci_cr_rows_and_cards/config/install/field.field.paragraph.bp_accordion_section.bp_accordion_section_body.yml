@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.bp_accordion_section_body
     - paragraphs.paragraphs_type.bp_accordion_section
-    - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.section_body
   module:
     - entity_reference_revisions
 id: paragraph.bp_accordion_section.bp_accordion_section_body
@@ -22,7 +22,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      card_basic: card_basic
+      section_body: section_body
     target_bundles_drag_drop:
       bp_simple:
         weight: -39
@@ -46,8 +46,8 @@ settings:
         weight: -33
         enabled: false
       card_basic:
-        enabled: true
         weight: -32
+        enabled: false
       bp_block:
         weight: -31
         enabled: false
@@ -95,5 +95,11 @@ settings:
         enabled: false
       mini_calendar:
         weight: 45
+        enabled: false
+      section_body:
+        enabled: true
+        weight: 51
+      views:
+        weight: 52
         enabled: false
 field_type: entity_reference_revisions

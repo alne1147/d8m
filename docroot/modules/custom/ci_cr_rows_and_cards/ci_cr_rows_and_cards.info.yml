@@ -14,6 +14,7 @@ dependencies:
   - crop
   - entity_reference_revisions
   - field
+  - field_group
   - file
   - focal_point
   - image

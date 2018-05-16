@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: bp_columns_three_uneven
-label: 'Row - Three Uneven Columns'
+id: section_body
+label: 'Section Body'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

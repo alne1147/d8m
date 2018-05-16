@@ -13,33 +13,102 @@ dependencies:
     - paragraphs.paragraphs_type.card_basic
   module:
     - content_moderation
+    - field_group
     - image_widget_crop
     - text
+third_party_settings:
+  field_group:
+    group_basic_card_edit:
+      children:
+        - group_title
+        - group_alignment
+        - group_background_color
+        - group_background_image
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Basic Card Edit'
+      region: content
+    group_alignment:
+      children:
+        - field_alignment
+      parent_name: group_basic_card_edit
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Alignment
+      region: content
+    group_background_color:
+      children:
+        - bp_background
+      parent_name: group_basic_card_edit
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Background Color'
+      region: content
+    group_background_image:
+      children:
+        - field_card_background_image
+      parent_name: group_basic_card_edit
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Background Image'
+      region: content
+    group_title:
+      children:
+        - field_card_title
+        - field_title_color
+      parent_name: group_basic_card_edit
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Title
+      region: content
 id: paragraph.card_basic.default
 targetEntityType: paragraph
 bundle: card_basic
 mode: default
 content:
   bp_background:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  bp_width:
     weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_alignment:
-    weight: 2
+    weight: 24
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_card_background_image:
-    weight: 5
+    weight: 2
     settings:
       show_default_crop: true
       preview_image_style: thumbnail
@@ -53,7 +122,7 @@ content:
     type: image_widget_crop
     region: content
   field_card_body:
-    weight: 6
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -61,7 +130,7 @@ content:
     type: text_textarea
     region: content
   field_card_title:
-    weight: 0
+    weight: 21
     settings:
       size: 60
       placeholder: ''
@@ -69,18 +138,19 @@ content:
     type: string_textfield
     region: content
   field_title_color:
-    weight: 1
+    weight: 23
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 4
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_width: true
   created: true
   status: true
   uid: true
