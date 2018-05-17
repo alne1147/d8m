@@ -5,7 +5,13 @@ dependencies:
     - field.storage.paragraph.field_card_body
     - paragraphs.paragraphs_type.card_basic
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    d8m_text_editor: d8m_text_editor
+    open_embed: '0'
+    plain_text: '0'
 id: paragraph.card_basic.field_card_body
 field_name: field_card_body
 entity_type: paragraph

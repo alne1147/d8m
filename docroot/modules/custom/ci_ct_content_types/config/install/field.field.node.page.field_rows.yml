@@ -104,4 +104,10 @@ settings:
       mini_calendar:
         weight: -26
         enabled: false
+      section_body:
+        weight: 51
+        enabled: false
+      views:
+        weight: 52
+        enabled: false
 field_type: entity_reference_revisions

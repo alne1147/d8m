@@ -3,6 +3,7 @@ description: 'Content Type Configuration'
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - block
   - block_class
   - block_content
