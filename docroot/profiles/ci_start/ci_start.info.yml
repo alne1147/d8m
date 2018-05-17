@@ -149,7 +149,7 @@ dependencies:
   - views_templates
   - simple_sitemap
   - termcase
-  
+  - paragraphs_edit
   
   # Adding these lines to our profilename.info.yml will only enable these themes.
 themes:
