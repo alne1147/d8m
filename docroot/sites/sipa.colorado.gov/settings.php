@@ -776,14 +776,3 @@ $config['acquia_search.settings']['connection_override'] = [
     'index_id' => 'CDIY-145117.dev.cicoloradogov',
     'derived_key' => '4793e027a7f176fc49cf97c6bf7e68c6e53726cc',
 ];
-
-if (isset($settings['memcache']['servers'])) {
-    // Memcache settings
-    $settings['cache']['bins']['bootstrap'] = 'cache.backend.memcache';
-    $settings['cache']['bins']['discovery'] = 'cache.backend.memcache';
-    $settings['cache']['bins']['config'] = 'cache.backend.memcache';
-    // Use memcache as the default bin
-    $settings['cache']['default'] = 'cache.backend.memcache';
-}
-$conf['acquia_purge_http'] = FALSE;
-$conf['acquia_purge_https'] = TRUE;
