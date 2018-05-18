@@ -779,7 +779,7 @@ $config['acquia_search.settings']['connection_override'] = [
 
 $moduleHandler = \Drupal::service('module_handler');
 if ($moduleHandler->moduleExists('memcache')) {
-    include '/memcache.php';
+    include $app_root . '/' . $site_path . '/memcache.php';
 }
 
 // <DDSETTINGS>

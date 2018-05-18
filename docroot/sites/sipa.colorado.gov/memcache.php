@@ -1,3 +1,5 @@
+<?php
+
 if (isset($settings['memcache']['servers'])) {
     // Memcache settings
     $settings['cache']['bins']['bootstrap'] = 'cache.backend.memcache';
