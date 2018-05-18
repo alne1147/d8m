@@ -849,6 +849,6 @@ if ($memcache_module_is_present && ($memcache_exists || $memcached_exists)) {
     // Use memcache as the default bin.
     $settings['cache']['default'] = 'cache.backend.memcache';
   }
-}slice
+}
 $conf['acquia_purge_http'] = FALSE;
 $conf['acquia_purge_https'] = TRUE;
