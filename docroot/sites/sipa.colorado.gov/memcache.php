@@ -1,4 +1,4 @@
-<?php
+
     // Memcache settings
     $settings['cache']['bins']['bootstrap'] = 'cache.backend.memcache';
     $settings['cache']['bins']['discovery'] = 'cache.backend.memcache';
