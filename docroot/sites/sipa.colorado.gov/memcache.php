@@ -10,5 +10,3 @@ if (isset($settings['memcache']['servers'])) {
 }
 $conf['acquia_purge_http'] = FALSE;
 $conf['acquia_purge_https'] = TRUE;
-
- ?>
