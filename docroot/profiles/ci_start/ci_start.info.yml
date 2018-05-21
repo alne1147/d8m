@@ -150,6 +150,14 @@ dependencies:
   - simple_sitemap
   - termcase
   - paragraphs_edit
+  - memcache
+  - purge
+  - purge_ui
+  - purge_drush
+  - purge_queuer_coretags
+  - purge_processor_cron
+  - purge_processor_lateruntime
+  - acquia_purge
   
   # Adding these lines to our profilename.info.yml will only enable these themes.
 themes:
