@@ -19,14 +19,41 @@
   {{ q }}
 {% endif %}
 
-<div class="form--inline form-inline clearfix">
-   <div id="searchForm">{{ form.search}}{{  form.actions.submit}}
-       {{  form.actions.reset}}
-   </div>
-
-        {{ form.type }}
-    {{ form.field_article_tags }}
-        <div id="dateRange">{{ form.created }}{{ form.created_lt }}</div>
-
-    
+<div class="search-page--container form--inline form-inline clearfix">
+  <div id="searchForm" class="search-page--wrapper">
+    {#<div class="row">#}
+    {#<div class="col-sm-12">#}
+    <div class="search-page__search--wrapper">
+      <div class="search-page__input input-group">
+        <div class="search-page__input--field">
+          {{ form.search }}
+        </div>
+        <div class="search-page__button--submit input-group-btn">
+          {{ form.actions.submit }}
+        </div>
+        <div class="search-page__button--reset input-group-btn">
+          {{ form.actions.reset }}
+        </div>
+      </div>
+    </div>
+    {#</div>#}
+    {#</div>#}
+    <div class="search-page--refine-wrapper">
+      <p>Refine Results</p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="search-page__list--type">
+            {{ form.type }}
+          </div>
+          <div class="search-page__input--tags">
+            {{ form.field_article_tags }}
+          </div>
+        </div>
+        <div id="dateRange" class="search-page__date col-md-4">
+          {{ form.created }}
+          {{ form.created_lt }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

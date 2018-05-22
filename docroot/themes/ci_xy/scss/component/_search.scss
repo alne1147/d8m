@@ -1,5 +1,7 @@
 /* Search Module css overrides
- * 1. Header Search
+ * 1. Header - Search
+ * 2. Page Results - Search Form
+ * 3. Page Results - Results
  */
 // [1]
 .search__form {
@@ -15,169 +17,278 @@
     }
   }
 }
-
-
-//#searchForm {
-//  margin-bottom:20px;
-//}
-.promoted-search,
-article.promoted-search
-{
-  background-color: #f4fffe;
-  padding:10px;
-
-
-
-  h2
-  {
-    background-color: #C70039;
-    padding:5px;
-    margin-bottom:10px;
-    font-family: "museo-sans",sans-serif;
-    margin: 0;
-    font-size: 21px;
-
-    a {
-      text-decoration: underline;
-      color:white;
+// [2]
+.search-page__input {
+  .search-page__input--field {
+    background-color: #f1f1f1;
+    float: left;
+    padding: .55em 1em;
+    width: 100%;
+    input.form-control {
+      background-color: transparent;
+      border: 0;
+      border-bottom-color: #cfcfcf;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      box-shadow: none;
+      font-size: 22px;
+      color: darken($color-brand-green, 1%);
+      padding: 1.182em 0;
+      &:focus {
+        border-bottom-color: darken($color-brand-green, 1%);
+        outline: thin dashed darken($color-brand-green, 1%);
+        //outline-color: darken($color-brand-green, 1%);
+      }
+      &::placeholder {
+        color: darken($color-brand-green, 1%);  // Contrast Ratio 3.68
+        font-style: italic;
+      }
     }
   }
-  .promoted-search h2,
-  .promotedLabel
-  {
-    background-color: #C70039;
-    font-weight:bold;
-    color:white;
-    padding:5px;
-    margin-bottom:10px;
+  .form-item-search {
+    width: 100%;
+    > input {
+      width: 100%!important;
+    }
+  }
+  .search-page__button--submit {
+    button {
+      &.btn-primary {
+        background-color: transparent;
+        border-color: transparent;
+        margin: 0 .75em 0 1.5em;
+        padding: 0;
+      }
+      &:before {
+        color: $color-brand-green;
+        font-family: FontAwesome;
+        font-size: 25px;
+        content: "\f002";
+      }
+    }
+  }
+  .search-page__button--reset {
+    button {
+      &.btn-default {
+        border: 0;
+        color: $color-brand-slate;
+        font-weight: $font-weight-300;
+        font-size: 20px;
+        text-decoration: underline;
+        &:hover {
+          background-color: transparent;
+          color: $color-brand-green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .input-group-btn {
+    width: 1%!important;
+  }
+}
+.search-page__search--wrapper {
+  margin-bottom: 3%;
+}
+.search-page--refine-wrapper {
+  p {
+    font-size: 19px;
+    font-weight: $font-weight-500;
+  }
+  .search-page__list--type {
+    float: left;
+    label {
+      display: block;
+    }
+  }
+  .search-page__input--tags {
+    float: left;
+    label {
+      display: block;
+    }
+  }
+}
+// [3]
+.search-page__result {
+  margin-top: 1em;
+  h3 {
+    font-family: $font-family-sans-serif;
+    margin-top: 0;
+  }
+  &--promoted {
+    //float: left;
+    .search-result--content {
+      background-color: darken($color-sky-blue, 5%);  // Contrast Ratio 4.52
+        color: $color-white;
+        a {
+          color: $color-white;
+        }
+    }
+    .search-result--tags {
+      background-color: $color-grey-sand;
+      .field--label {
+        position: absolute;
+        left: -9999px;
+      }
+    }
+  }
+  &--omitted {
+    //float: left;
   }
 }
 
-
-.view-acquia-search-fields,
-.view-acquia-search
-{
-  padding:20px;
-
-  h2 {
-    font-family: "museo-sans",sans-serif;
-    margin: 0;
-    font-size: 21px;
-  }
-
-  a {
-    text-decoration:underline;
-  }
-  .views-row
-  {
-    margin-bottom:20px;
-  }
-}
-h2.search-results
-{
-  font-size:24px;
-  color: #393939;
-  font-weight: normal;
-  margin:10px 0px 10px 0px;
-}
-article.omitted-search
-{
-  margin:10px 10px;
-  padding:0 0 10px 0;
-  border-bottom:1px solid  #e7e7e7;
-}
-.related-tags .field--item {
-  display: inline;
-}
-
-.related-tags.col-sm-3 .field--label
-{
-  display:none;
-}
-.form-control
-{
-  padding:20px;
-}
-#dateRange
-{
-  margin-top:20px;
-}
-.block-views-exposed-filter-blockacquia-search-search-block .control-label
-{
-  color:#494949;
-  font-weight: normal;
-}
-#views-exposed-form-acquia-search-search-block
-{
-  padding-bottom:30px;
-}
-
-#searchForm .control-label
-{
-  display:none;
-}
-
-.highlight {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.promoted-search .related-tags a,
-.promoted-search .field--name-field-article-tags .field--item a {
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 22px;
-  background: #22c7bf;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  display:block;
-  margin:10px 0;
-}
-.view-acquia-search-fields .promoted-search
-
-h2 {
-
-  margin:0px 0px 10px 0px;
-
-  a {
-    font-family: "museo-sans", sans-serif;
-    text-decoration: underline;
-    font-size: 18px;
-  }
-}
-
-
-.highlight:before {
-  color: red;
-  content: "";
-}
-//.view-acquia-search-fields
-
-ul{
-  list-style-type: none;
-  padding:0px;
-}
-
-.ommited .field--name-field-article-tags
-{
-  border-top:1px solid #d1d1d1;
-  border-bottom:1px solid #d1d1d1;
-  margin-top:10px;
-  margin-bottom:15px;
-  padding:5px;
-
-  li{
-    float:left;
-    display:block;
-    margin-left:5px;
-  }
-
-}
-
-.form-inline .form-control {
-  width: inherit;
-}
+//.search-page__result--promoted,
+//article.search-page__result--promoted  {
+//  background-color: green;
+//  //padding:10px;
+//  h3 {
+//    background-color: #C70039;
+//    padding:5px;
+//    margin-bottom:10px;
+//    font-family: "museo-sans",sans-serif;
+//    margin: 0;
+//    font-size: 21px;
+//    a {
+//      text-decoration: underline;
+//      color:white;
+//    }
+//  }
+//  .search-page__result--promoted h3,
+//  .promotedLabel
+//  {
+//    background-color: #C70039;
+//    font-weight:bold;
+//    color:white;
+//    padding:5px;
+//    margin-bottom:10px;
+//  }
+//}
+//
+//
+//.view-acquia-search-fields,
+//.view-acquia-search
+//{
+//  //padding:20px;
+//
+//  h3 {
+//    font-family: "museo-sans",sans-serif;
+//    margin: 0;
+//    font-size: 21px;
+//  }
+//
+//  a {
+//    text-decoration:underline;
+//  }
+//  .views-row
+//  {
+//    margin-bottom:20px;
+//  }
+//}
+//h3.search-results
+//{
+//  font-size:24px;
+//  color: #393939;
+//  font-weight: normal;
+//  margin:10px 0px 10px 0px;
+//}
+//article.omitted-search
+//{
+//  margin:10px 10px;
+//  padding:0 0 10px 0;
+//  border-bottom:1px solid  #e7e7e7;
+//}
+//.related-tags .field--item {
+//  display: inline;
+//}
+//
+//.related-tags.col-sm-3 .field--label
+//{
+//  display:none;
+//}
+//.form-control
+//{
+//  padding:20px;
+//}
+////#dateRange
+////{
+////  margin-top:20px;
+////}
+//.block-views-exposed-filter-blockacquia-search-search-block .control-label
+//{
+//  color:#494949;
+//  font-weight: normal;
+//}
+//#views-exposed-form-acquia-search-search-block
+//{
+//  padding-bottom:30px;
+//}
+//
+////#searchForm .control-label
+////{
+////  display:none;
+////}
+//
+//.highlight {
+//  font-weight: bold;
+//  text-decoration: underline;
+//}
+//
+//.search-page__result--promoted .related-tags a,
+//.search-page__result--promoted .field--name-field-article-tags .field--item a {
+//  -webkit-border-radius: 9;
+//  -moz-border-radius: 9;
+//  border-radius: 9px;
+//  font-family: Arial;
+//  color: #ffffff;
+//  font-size: 22px;
+//  background: #22c7bf;
+//  padding: 10px 20px 10px 20px;
+//  text-decoration: none;
+//  display:block;
+//  margin:10px 0;
+//}
+//.view-acquia-search-fields .search-page__result--promoted
+//
+//h3 {
+//
+//  margin:0px 0px 10px 0px;
+//
+//  a {
+//    font-family: "museo-sans", sans-serif;
+//    text-decoration: underline;
+//    font-size: 18px;
+//  }
+//}
+//
+//
+//.highlight:before {
+//  color: red;
+//  content: "";
+//}
+////.view-acquia-search-fields
+//
+//ul{
+//  list-style-type: none;
+//  padding:0px;
+//}
+//
+//.ommited .field--name-field-article-tags
+//{
+//  border-top:1px solid #d1d1d1;
+//  border-bottom:1px solid #d1d1d1;
+//  margin-top:10px;
+//  margin-bottom:15px;
+//  padding:5px;
+//
+//  li{
+//    float:left;
+//    display:block;
+//    margin-left:5px;
+//  }
+//
+//}
+//
+//.form-inline .form-control {
+//  width: inherit;
+//}
 

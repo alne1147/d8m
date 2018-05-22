@@ -21,10 +21,7 @@
         attach: function(context, settings) {
             $(document).ready(function(){
 
-                $("button#edit-submit-acquia-search-fields").attr({
-                    "name" : "submit"
-
-                });
+                $(".search-page__button--submit button").text("");
 
                 $("input#edit-created-lt").attr({
                     "size" : 10,
@@ -52,33 +49,31 @@
     Drupal.behaviors.ColumnBs = {
         attach: function(context, settings) {
             $(document).ready(function() {
-                var $myDiv = $('.promoted-search .related-tags');
-                if ( $myDiv.length){
-                    $($myDiv).addClass("col-sm-3");
-                    $($myDiv).prev().addClass("col-sm-9");
+                var promoted = $('.search-page__result--promoted .search-result--content');
+                $('.search-page__result--omitted .search-result--content').addClass("col-sm-12");
+                if (promoted) {
+                    $(promoted).addClass("col-sm-9");
+                    $(promoted).next().addClass("col-sm-3");
                 }
-
             });
-
         }
-
     };
 
-    Drupal.behaviors.SearchColumns = {
-        attach: function(context, settings) {
-            $(document).ready(function(){
-                $('.promoted-search .related-tags').each(function(){
-                    if($(this).hasClass('col-sm-3')) {
-                        $(this).prev().addClass("col-sm-9");
-
-                    }
-                });
-
-            });
-
-        }
-
-    };
+    // Drupal.behaviors.SearchColumns = {
+    //     attach: function(context, settings) {
+    //         $(document).ready(function(){
+    //             $('.search-page__result--promote .search-result--tags').each(function(){
+    //                 if($(this).hasClass('col-sm-3')) {
+    //                     $(this).prev().addClass("col-sm-9");
+    //
+    //                 }
+    //             });
+    //
+    //         });
+    //
+    //     }
+    //
+    // };
 
 // Search Auto Submit functions
     Drupal.behaviors.SearchAutoSubmit = {
@@ -89,10 +84,10 @@
                     $form.find('button[type=submit]').click();
                 });
 
-                $('#edit-items-per-page').on('change', function() {
-                    var $form = $(this).closest('form');
-                    $form.find('button[type=submit]').click();
-                });
+                // $('#edit-items-per-page').on('change', function() {
+                //     var $form = $(this).closest('form');
+                //     $form.find('button[type=submit]').click();
+                // });
 
                 $('#edit-field-article-tags').focusout( function() {
                     var $form = $(this).closest('form');
