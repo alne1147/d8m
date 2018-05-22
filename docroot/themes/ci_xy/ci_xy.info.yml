@@ -24,6 +24,7 @@ regions:
   global_footer: 'Global Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  block_reserve: 'Block Reserve'
 
 libraries:
   - 'ci_xy/global-styling'
