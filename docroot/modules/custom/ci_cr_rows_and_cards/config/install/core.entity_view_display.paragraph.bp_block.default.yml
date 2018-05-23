@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.bp_block.bp_background
     - field.field.paragraph.bp_block.bp_block
     - field.field.paragraph.bp_block.bp_width
+    - field.field.paragraph.bp_block.field_custom_block_reference
     - paragraphs.paragraphs_type.bp_block
   module:
     - options
@@ -35,6 +36,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_key
+    region: content
+  field_custom_block_reference:
+    weight: 3
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden:
   created: true
