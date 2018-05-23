@@ -2,6 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - block_content.type.row_block
+    - block_content.type.simple_maps
     - block_content.type.views_reference_block
     - field.storage.paragraph.field_custom_block_reference
     - paragraphs.paragraphs_type.bp_block
@@ -19,9 +22,12 @@ settings:
   handler: 'default:block_content'
   handler_settings:
     target_bundles:
+      basic: basic
+      row_block: row_block
+      simple_maps: simple_maps
       views_reference_block: views_reference_block
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: basic
 field_type: entity_reference

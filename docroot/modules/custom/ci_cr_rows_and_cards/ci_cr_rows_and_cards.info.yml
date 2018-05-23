@@ -7,6 +7,7 @@ dependencies:
   - background_image_formatter
   - block
   - block_content
+  - ci_blocks_block_types
   - ci_ct_content_types
   - classy_paragraphs
   - contact
