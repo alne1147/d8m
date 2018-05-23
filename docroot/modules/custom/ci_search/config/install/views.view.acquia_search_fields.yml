@@ -1668,8 +1668,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: promoted-search
-            format_custom_false: ommited
+            format_custom_true: 'search-page search-page__result--promoted'
+            format_custom_false: 'search-page search-page__result--omitted'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1979,7 +1979,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>{{ title }}</h2>\n<div class=\"bodyContent\">{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"related-tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-result--content\">\n<h2>{{ title }}</h2>\n{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"search-result-tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false
