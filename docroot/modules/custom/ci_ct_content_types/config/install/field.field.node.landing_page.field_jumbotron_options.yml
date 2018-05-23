@@ -11,7 +11,7 @@ id: node.landing_page.field_jumbotron_options
 field_name: field_jumbotron_options
 entity_type: node
 bundle: landing_page
-label: 'Jumbotron Options'
+label: Options
 description: ''
 required: true
 translatable: false
