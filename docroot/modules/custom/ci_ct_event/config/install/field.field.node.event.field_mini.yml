@@ -9,7 +9,7 @@ id: node.event.field_mini
 field_name: field_mini
 entity_type: node
 bundle: event
-label: 'Mini Calendar'
+label: Options
 description: ''
 required: false
 translatable: false

@@ -10,7 +10,7 @@ id: node.event.field_date_time_range
 field_name: field_date_time_range
 entity_type: node
 bundle: event
-label: 'Date & Time Range'
+label: 'Date & Time'
 description: ''
 required: false
 translatable: false

@@ -23,6 +23,7 @@ dependencies:
     - node.type.event
   module:
     - addtocalendar
+    - allowed_formats
     - content_moderation
     - entity_browser_entity_form
     - field_group
@@ -36,8 +37,8 @@ third_party_settings:
     group_layout_options:
       children:
         - field_rows
-      parent_name: ''
-      weight: 2
+      parent_name: group_event_options
+      weight: 31
       format_type: details
       format_settings:
         label: 'Rows and Cards'
@@ -49,35 +50,30 @@ third_party_settings:
       region: content
     group_event_options:
       children:
-        - field_date_time_range
-        - field_add_to_cal
-        - field_location
-        - field_page_options
-        - field_promote
-        - field_related_content
-        - field_mini
-        - field_article_tags
+        - group_event
+        - group_layout_options
+        - group_event_summary
+        - group_display
+        - group_relationships
+        - group_search_tab
       parent_name: ''
-      weight: 1
-      format_type: details
+      weight: 0
+      format_type: tabs
       format_settings:
+        label: 'Event- Options'
+        direction: horizontal
         id: ''
         classes: ''
-        open: false
-        required_fields: true
-      label: 'Event Options'
+      label: 'Event- Options'
       region: content
     group_event_summary:
       children:
-        - field_show_date_and_time
-        - field_show_event_organizer
-        - field_event_organizer
-        - field_show_organizer_email
-        - field_organizer_email
-        - field_show_event_tags
+        - group_details
+        - group_map
+        - group_organizer
         - field_venue
-      parent_name: ''
-      weight: 9
+      parent_name: group_event_options
+      weight: 33
       format_type: details
       format_settings:
         id: ''
@@ -86,6 +82,177 @@ third_party_settings:
         required_fields: true
       label: 'Event Summary'
       region: content
+    group_event:
+      children:
+        - title
+        - field_date_time_range
+        - body
+      parent_name: group_event_options
+      weight: 30
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Event
+      region: content
+    group_display:
+      children:
+        - group_add_to_calendar
+        - group_menu
+        - group_related_content
+        - group_mini_calendar
+      parent_name: group_event_options
+      weight: 34
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Display
+      region: content
+    group_menu:
+      children:
+        - field_page_options
+      parent_name: group_display
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Menu
+      region: content
+    group_related_content:
+      children:
+        - field_related_content
+      parent_name: group_display
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Related Content'
+      region: content
+    group_relationships:
+      children:
+        - field_article_tags
+      parent_name: group_event_options
+      weight: 36
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Relationships
+      region: content
+    group_mini_calendar:
+      children:
+        - field_mini
+      parent_name: group_display
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Mini Calendar'
+      region: content
+    group_search_tab:
+      children:
+        - group_search
+      parent_name: group_event_options
+      weight: 37
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Search
+      region: content
+    group_search:
+      children:
+        - field_promote
+      parent_name: group_search_tab
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        label: Search
+        description: 'Feature this content at the top of site search results'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Search
+      region: content
+    group_organizer:
+      children:
+        - field_show_event_organizer
+        - field_event_organizer
+        - field_show_organizer_email
+        - field_organizer_email
+      parent_name: group_event_summary
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Organizer
+      region: content
+    group_details:
+      children:
+        - field_show_date_and_time
+        - field_show_event_tags
+      parent_name: group_event_summary
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Details
+      region: content
+    group_map:
+      children:
+        - field_location
+      parent_name: group_event_summary
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Map
+      region: content
+    group_add_to_calendar:
+      children:
+        - field_add_to_cal
+      parent_name: group_display
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Add to Calendar'
+      region: content
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -93,27 +260,30 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 2
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
+      summary_rows: 3
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_add_to_cal:
-    weight: 9
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: add_to_calendar_widget_type
     region: content
   field_article_tags:
-    weight: 15
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -122,7 +292,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_date_time_range:
-    weight: 8
+    weight: 1
     settings:
       hour_format: 12h
       allow_times: '15'
@@ -139,7 +309,7 @@ content:
     type: single_date_time_range_widget
     region: content
   field_event_organizer:
-    weight: 60
+    weight: 35
     settings:
       size: 60
       placeholder: ''
@@ -147,7 +317,7 @@ content:
     type: string_textfield
     region: content
   field_location:
-    weight: 10
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -155,13 +325,13 @@ content:
     type: string_textfield
     region: content
   field_mini:
-    weight: 14
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_organizer_email:
-    weight: 62
+    weight: 37
     settings:
       size: 60
       placeholder: ''
@@ -169,20 +339,20 @@ content:
     type: email_default
     region: content
   field_page_options:
-    weight: 11
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_promote:
-    weight: 12
+    weight: 8
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_related_content:
-    weight: 13
+    weight: 35
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -200,35 +370,35 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_show_date_and_time:
-    weight: 58
+    weight: 23
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_event_organizer:
-    weight: 59
+    weight: 34
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_event_tags:
-    weight: 63
+    weight: 24
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_organizer_email:
-    weight: 61
+    weight: 36
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_venue:
-    weight: 64
+    weight: 6
     settings:
       form_mode: default
       label_singular: ''
@@ -244,13 +414,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 10
+    weight: 7
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -258,21 +428,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -285,7 +455,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -293,7 +463,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 12
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
