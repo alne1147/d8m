@@ -150,7 +150,6 @@ dependencies:
   - simple_sitemap
   - termcase
   - paragraphs_edit
-  - memcache
   - purge
   - purge_ui
   - purge_drush
