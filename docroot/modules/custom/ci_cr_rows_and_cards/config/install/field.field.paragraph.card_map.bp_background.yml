@@ -3,14 +3,14 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_background
-    - paragraphs.paragraphs_type.row_three_column_hero
+    - paragraphs.paragraphs_type.card_map
   module:
     - options
-id: paragraph.row_three_column_hero.bp_background
+id: paragraph.card_map.bp_background
 field_name: bp_background
 entity_type: paragraph
-bundle: row_three_column_hero
-label: Background
+bundle: card_map
+label: 'Card Color'
 description: ''
 required: false
 translatable: true

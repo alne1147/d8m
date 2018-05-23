@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_title
+    - paragraphs.paragraphs_type.card_map
+id: paragraph.card_map.field_card_title
+field_name: field_card_title
+entity_type: paragraph
+bundle: card_map
+label: 'Card Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

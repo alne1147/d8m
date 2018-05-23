@@ -2,28 +2,39 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.full_column_hero.bp_background
     - field.field.paragraph.full_column_hero.bp_column_content
     - field.field.paragraph.full_column_hero.field_row_background_image
     - image.style.crop_thumbnail
     - paragraphs.paragraphs_type.full_column_hero
   module:
     - content_moderation
+    - field_group
     - image_widget_crop
     - paragraphs
+third_party_settings:
+  field_group:
+    group_background:
+      children:
+        - field_row_background_image
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        label: 'Background Image'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Background Image'
+      region: content
 id: paragraph.full_column_hero.default
 targetEntityType: paragraph
 bundle: full_column_hero
 mode: default
 content:
-  bp_background:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_column_content:
-    weight: 3
+    weight: 1
     settings:
       title: Card
       title_plural: Cards
@@ -50,7 +61,7 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 2
     settings: {  }
     region: content
     third_party_settings: {  }

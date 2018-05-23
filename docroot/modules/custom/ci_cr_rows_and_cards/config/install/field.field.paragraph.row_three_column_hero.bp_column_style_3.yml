@@ -10,7 +10,7 @@ id: paragraph.row_three_column_hero.bp_column_style_3
 field_name: bp_column_style_3
 entity_type: paragraph
 bundle: row_three_column_hero
-label: 'Column Style'
+label: 'Row Column Style'
 description: ''
 required: false
 translatable: true

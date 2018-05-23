@@ -10,7 +10,7 @@ id: paragraph.bp_accordion.field_bp_title_color
 field_name: field_bp_title_color
 entity_type: paragraph
 bundle: bp_accordion
-label: 'Title Color'
+label: 'Accordion Title Color'
 description: ''
 required: false
 translatable: false

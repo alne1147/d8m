@@ -11,14 +11,75 @@ dependencies:
     - paragraphs.paragraphs_type.bp_modal
   module:
     - content_moderation
+    - field_group
     - paragraphs
+third_party_settings:
+  field_group:
+    group_card_modal_edit:
+      children:
+        - group_button_text
+        - group_color
+        - group_pop_up
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Card Modal Edit'
+      region: content
+    group_button_text:
+      children:
+        - bp_modal_button_text
+      parent_name: group_card_modal_edit
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Button Text'
+      region: content
+    group_color:
+      children:
+        - bp_background
+      parent_name: group_card_modal_edit
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Color
+      region: content
+    group_pop_up:
+      children:
+        - bp_modal_title
+        - bp_modal_body
+        - bp_modal_footer
+      parent_name: group_card_modal_edit
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Pop-up
+      region: content
 id: paragraph.bp_modal.default
 targetEntityType: paragraph
 bundle: bp_modal
 mode: default
 content:
   bp_background:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -36,7 +97,7 @@ content:
     third_party_settings: {  }
     region: content
   bp_modal_button_text:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''

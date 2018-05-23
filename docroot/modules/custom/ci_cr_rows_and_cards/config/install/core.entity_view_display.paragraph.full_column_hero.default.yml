@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.full_column_hero.bp_background
     - field.field.paragraph.full_column_hero.bp_column_content
     - field.field.paragraph.full_column_hero.field_row_background_image
     - image.style.max_1920
@@ -10,19 +9,11 @@ dependencies:
   module:
     - background_image_formatter
     - entity_reference_revisions
-    - options
 id: paragraph.full_column_hero.default
 targetEntityType: paragraph
 bundle: full_column_hero
 mode: default
 content:
-  bp_background:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   bp_column_content:
     weight: 2
     label: hidden

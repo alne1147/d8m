@@ -10,7 +10,7 @@ id: paragraph.row_two_column_hero.field_row_background_image
 field_name: field_row_background_image
 entity_type: paragraph
 bundle: row_two_column_hero
-label: 'Row Background Image'
+label: 'Row Hero Image'
 description: ''
 required: false
 translatable: true

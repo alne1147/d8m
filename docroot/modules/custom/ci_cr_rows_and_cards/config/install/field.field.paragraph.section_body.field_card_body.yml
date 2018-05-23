@@ -9,14 +9,14 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    d8m_text_editor: '0'
+    d8m_text_editor: d8m_text_editor
     open_embed: '0'
     plain_text: '0'
 id: paragraph.section_body.field_card_body
 field_name: field_card_body
 entity_type: paragraph
 bundle: section_body
-label: 'Section Body'
+label: 'Accordion Section Content'
 description: ''
 required: false
 translatable: true

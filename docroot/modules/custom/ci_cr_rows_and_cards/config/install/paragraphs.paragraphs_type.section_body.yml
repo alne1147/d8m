@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: section_body
-label: 'Section Body'
+label: 'Accordion Section Content'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }
