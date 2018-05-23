@@ -1979,7 +1979,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"search-page__result search-result--content\">\n<h3>{{ title }}</h3>\n{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"search-page__result search-result-tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-page__result search-result--content\">\n<h3>{{ title }}</h3>\n<p>{{ body }}</p>\n<p>{{ search_api_excerpt }}</p>\n</div>\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false
