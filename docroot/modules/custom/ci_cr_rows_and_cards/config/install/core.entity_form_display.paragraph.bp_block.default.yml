@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.bp_block.bp_background
     - field.field.paragraph.bp_block.bp_block
     - field.field.paragraph.bp_block.bp_width
+    - field.field.paragraph.bp_block.field_custom_block_reference
     - paragraphs.paragraphs_type.bp_block
   module:
     - content_moderation
@@ -53,5 +54,6 @@ content:
 hidden:
   bp_width: true
   created: true
+  field_custom_block_reference: true
   status: true
   uid: true

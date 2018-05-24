@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.full_column_hero.bp_background
     - field.field.paragraph.full_column_hero.bp_column_content
     - field.field.paragraph.full_column_hero.field_row_background_image
     - image.style.crop_thumbnail
@@ -66,6 +67,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   created: true
   status: true
   uid: true

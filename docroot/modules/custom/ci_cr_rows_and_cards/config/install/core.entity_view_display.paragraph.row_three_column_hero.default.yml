@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.row_three_column_hero.bp_background
     - field.field.paragraph.row_three_column_hero.bp_column_content_3
     - field.field.paragraph.row_three_column_hero.bp_column_style_3
     - field.field.paragraph.row_three_column_hero.field_row_background_image
@@ -42,4 +43,5 @@ content:
     third_party_settings: {  }
     type: background_image_formatter
     region: content
-hidden: {  }
+hidden:
+  bp_background: true
