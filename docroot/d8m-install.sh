@@ -12,7 +12,7 @@ drush role-create user_administrator;
 
 drush config-set system.site mail "no-reply@www.colorado.gov" -y
 
-drush en -y $(cat custom_modules_list.txt)
+
 
 #// User additions and role assignments.
 
@@ -23,7 +23,7 @@ drush user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contenta
 
 
 #// Revert Features
-
+drush en -y $(cat custom_modules_list.txt)
 drush features-import-all -y;
 
 
@@ -33,13 +33,8 @@ drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
 
 drush cim --partial sync --y;
-drush en ci_blocks -y;
+drush en acquia_connector;
 drush -y dcdi;
-drush features-import-all -y;
 
-# Some need special attention
-
-drush fr block_visibility_config --y
-drush fr ci_ct_content_types --y
 
 echo "That's the end of the D8M install script!"

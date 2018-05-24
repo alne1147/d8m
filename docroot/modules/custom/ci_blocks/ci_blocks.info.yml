@@ -1,8 +1,0 @@
-name: ci_blocks
-dependencies:
-    - default_content
-    - default_content_deploy
-description: 'Default Block Content'
-core: 8.x
-package: Custom
-type: module
