@@ -3,9 +3,6 @@ status: true
 dependencies:
   config:
     - block_content.type.views_reference_block
-    - field.field.block_content.views_reference_block.field_view_field
-  module:
-    - viewsreference
 id: block_content.views_reference_block.default
 targetEntityType: block_content
 bundle: views_reference_block
