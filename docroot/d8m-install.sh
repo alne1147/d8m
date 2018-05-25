@@ -33,7 +33,7 @@ drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
 
 drush cim --partial sync --y;
-drush en acquia_connector;
+drush en acquia_connector --y;
 drush -y dcdi;
 
 
