@@ -862,3 +862,5 @@ if ($memcache_module_is_present && ($memcache_exists || $memcached_exists)) {
 }
 $conf['acquia_purge_http'] = FALSE;
 $conf['acquia_purge_https'] = TRUE;
+
+$settings['memcache']['stampede_protection'] = TRUE;
