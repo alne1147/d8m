@@ -1,0 +1,27 @@
+uuid: f2564cb7-a94c-4e65-b8a9-a151df16c5ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_display_options
+field_name: field_display_options
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: show-author
+      label: 'Show Author'
+    -
+      value: show-post-date
+      label: 'Show Post Date'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

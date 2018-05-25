@@ -1,0 +1,18 @@
+uuid: 85276710-5d3f-4149-9c61-173cbab75857
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: related_content
+label: 'Related Content'
+logic: and
+conditions:
+  a3ea1c28-6f44-4850-bf75-1868b4d21c3d:
+    id: term
+    negate: 0
+    tid: '100018'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a3ea1c28-6f44-4850-bf75-1868b4d21c3d
+allow_other_conditions: true

@@ -1,0 +1,18 @@
+uuid: ccc1ab51-afa6-4e18-a0d5-d17e92212781
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: sidebar_right_menu
+label: 'Main Menu - Right'
+logic: and
+conditions:
+  97f5bcab-3304-4de3-b55a-2973be9825c3:
+    id: term
+    negate: 0
+    tid: '100011'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 97f5bcab-3304-4de3-b55a-2973be9825c3
+allow_other_conditions: false

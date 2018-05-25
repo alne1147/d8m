@@ -1,0 +1,9 @@
+uuid: 5bd52523-f9ce-4788-b558-2bd9b0fb7e0f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Related Content'
+vid: related_content
+description: 'Control Related Content Block Placement'
+hierarchy: 0
+weight: 0
