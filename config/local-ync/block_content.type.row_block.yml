@@ -1,8 +1,0 @@
-uuid: a87bb2cd-f428-4db6-a717-d669c6ab283a
-langcode: en
-status: true
-dependencies: {  }
-id: row_block
-label: 'Row Block'
-revision: 0
-description: 'A Block type that uses rows.'

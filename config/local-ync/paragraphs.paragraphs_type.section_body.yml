@@ -1,9 +1,0 @@
-uuid: 8aba1336-449b-4c1d-9a91-5b93ecbf6f7c
-langcode: en
-status: true
-dependencies: {  }
-id: section_body
-label: 'Accordion Section Content'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

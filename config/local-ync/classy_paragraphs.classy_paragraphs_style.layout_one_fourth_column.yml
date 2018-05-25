@@ -1,9 +1,0 @@
-uuid: 795354e6-cbc7-4075-98c9-72c891802f08
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: wVUCHrniVh8AD2CaVipOB-tKc87iqeJjHw4n-qziYzg
-id: layout_one_fourth_column
-label: 'Layout: One fourth column'
-classes: flex-grid__4-grid-col

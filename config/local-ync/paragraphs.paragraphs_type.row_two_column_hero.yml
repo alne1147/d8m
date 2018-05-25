@@ -1,9 +1,0 @@
-uuid: 170c1ace-0373-4990-b150-36ec82c10908
-langcode: en
-status: true
-dependencies: {  }
-id: row_two_column_hero
-label: 'Row - Two Column Hero'
-icon_uuid: null
-description: null
-behavior_plugins: {  }

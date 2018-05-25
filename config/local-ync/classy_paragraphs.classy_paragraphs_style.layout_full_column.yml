@@ -1,9 +1,0 @@
-uuid: d9d9a3dc-5649-4dea-8a28-50411ef516a4
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: TllRGtJjURahpj1D4N-gJnUYOPqjuMYtCfDcIUgkcyQ
-id: layout_full_column
-label: 'Layout: Full column'
-classes: flex-grid__full-col

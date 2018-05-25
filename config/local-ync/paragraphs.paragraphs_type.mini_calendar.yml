@@ -1,9 +1,0 @@
-uuid: 4cdcb38f-3592-47b0-9e35-da9ca9e71dfc
-langcode: en
-status: true
-dependencies: {  }
-id: mini_calendar
-label: 'Mini Calendar'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
