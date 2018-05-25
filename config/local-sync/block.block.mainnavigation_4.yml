@@ -1,0 +1,38 @@
+uuid: e098dbec-19ea-46ac-b08d-b8040c39220c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.sidebar_right_menu
+    - system.menu.main
+  module:
+    - block_class
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: mainnavigation_4
+theme: ci_xy
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: sidebar_right_menu
+    context_mapping: {  }

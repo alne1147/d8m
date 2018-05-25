@@ -1,0 +1,28 @@
+uuid: 79863132-e2d6-4c28-bf36-dfe2e6086609
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.event
+    - taxonomy.vocabulary.related_content
+id: node.event.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: event
+label: Options
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      related_content: related_content
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

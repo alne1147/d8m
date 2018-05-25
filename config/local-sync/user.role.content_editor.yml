@@ -1,0 +1,25 @@
+uuid: 4ba645da-4cef-4a37-8dff-ba475b56df81
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xHETyxbmvwdYoTyuCX61gFLDLuz6dwPaXBynqRWoKJk
+id: content_editor
+label: 'Content Editor'
+weight: 7
+is_admin: null
+permissions:
+  - 'create paragraph content bp_carousel'
+  - 'create paragraph content bp_columns'
+  - 'create paragraph content bp_image'
+  - 'create paragraph content full_column_hero'
+  - 'delete paragraph content bp_carousel'
+  - 'delete paragraph content bp_columns'
+  - 'delete paragraph content full_column_hero'
+  - 'edit any webform'
+  - 'update paragraph content bp_carousel'
+  - 'update paragraph content bp_columns'
+  - 'update paragraph content bp_image'
+  - 'update paragraph content full_column_hero'
+  - 'use editorial transition create_new_draft'
+  - 'use exclude node title'

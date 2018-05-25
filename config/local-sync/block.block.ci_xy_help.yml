@@ -1,0 +1,20 @@
+uuid: eb268787-c4b1-4c39-86ca-fda003dcdb21
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ci_xy
+id: ci_xy_help
+theme: ci_xy
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

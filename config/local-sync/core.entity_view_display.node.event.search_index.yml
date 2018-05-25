@@ -1,0 +1,99 @@
+uuid: 6cbeedf7-4aa7-4cba-807b-9b1afeb934b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_article_tags
+    - field.field.node.event.field_date
+    - field.field.node.event.field_date_time_range
+    - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_location
+    - field.field.node.event.field_mini
+    - field.field.node.event.field_organizer_email
+    - field.field.node.event.field_page_options
+    - field.field.node.event.field_promote
+    - field.field.node.event.field_related_content
+    - field.field.node.event.field_rows
+    - field.field.node.event.field_show_date_and_time
+    - field.field.node.event.field_show_event_organizer
+    - field.field.node.event.field_show_event_tags
+    - field.field.node.event.field_show_organizer_email
+    - field.field.node.event.field_venue
+    - node.type.event
+  module:
+    - datetime
+    - simple_gmap
+    - text
+    - user
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_article_tags:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_location:
+    weight: 3
+    label: above
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '250'
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_add_to_cal: true
+  field_date_time_range: true
+  field_event_organizer: true
+  field_mini: true
+  field_organizer_email: true
+  field_page_options: true
+  field_promote: true
+  field_related_content: true
+  field_rows: true
+  field_show_date_and_time: true
+  field_show_event_organizer: true
+  field_show_event_tags: true
+  field_show_organizer_email: true
+  field_venue: true
