@@ -14,7 +14,7 @@ mode: default
 content:
   field_view_field:
     weight: 1
-    label: above
+    label: visually_hidden
     settings:
       plugin_types:
         - block
