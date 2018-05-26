@@ -779,3 +779,4 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
 }
 // </DDSETTINGS>
 
+$settings['memcache']['stampede_protection'] = TRUE;

@@ -773,3 +773,5 @@ $config['system.site']['name'] = 'Department of Agriculture';
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_ag_colorado_gov.inc')) {
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_ag_colorado_gov.inc';
 }
+
+$settings['memcache']['stampede_protection'] = TRUE;
