@@ -762,7 +762,7 @@ if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/sipa-settings.inc';
 }
 
-$config_directories['sync'] = '../config/sync';
+$config_directories['sync'] = '../config/local-sync';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
