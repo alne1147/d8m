@@ -1,4 +1,3 @@
-uuid: a01f6b55-583b-4f3c-b5fe-d25858d05a23
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
   module:
     - search_api
     - user
-_core:
-  default_config_hash: iKX3AO4z80axRFpnSEo5Dkmy5WKZcHoJPljApDsoGZg
 id: acquia_search
 label: 'Acquia Search'
 module: views

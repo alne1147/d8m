@@ -1,4 +1,3 @@
-uuid: 3a14c351-d20d-4910-95b0-a9e69524157b
 langcode: en
 status: true
 dependencies:
@@ -13,8 +12,6 @@ dependencies:
     - search_api
     - node
     - paragraphs
-_core:
-  default_config_hash: 49lEFnjBYn-I1wXXlu2yotBDLPeQce_VGahRteGC5po
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -108,6 +105,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_promote
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'body:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
 datasource_settings:
   'entity:node':
     bundles:
@@ -148,17 +153,6 @@ processor_settings:
   add_url:
     plugin_id: add_url
     settings: {  }
-  aggregated_field: {  }
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
   tokenizer:
     all_fields: false
     fields:
@@ -174,6 +168,17 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  aggregated_field: {  }
   type_boost:
     boosts:
       'entity:paragraph':
@@ -224,6 +229,7 @@ processor_settings:
       - field_article_tags
       - type
       - field_rows
+      - processed
     title: true
     alt: true
     tags:

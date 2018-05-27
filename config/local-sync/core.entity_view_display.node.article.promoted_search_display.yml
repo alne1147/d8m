@@ -1,4 +1,3 @@
-uuid: 1506dc17-e26b-402f-b8e0-e1d7485ab31b
 langcode: en
 status: true
 dependencies:
@@ -18,8 +17,6 @@ dependencies:
     - entity_reference_revisions
     - text
     - user
-_core:
-  default_config_hash: qjwgzuaVh5_572E6NflcIN1rmb0454bJCEJernm_Zf0
 id: node.article.promoted_search_display
 targetEntityType: node
 bundle: article

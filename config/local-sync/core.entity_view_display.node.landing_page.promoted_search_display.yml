@@ -1,4 +1,3 @@
-uuid: da16386f-eb79-4fe1-a11a-249329209cbf
 langcode: en
 status: true
 dependencies:
@@ -19,8 +18,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-_core:
-  default_config_hash: 3ZsEkqQYZg3zE2Eblr7zR2Btcz5J2sVCag5RwgokmYc
 id: node.landing_page.promoted_search_display
 targetEntityType: node
 bundle: landing_page

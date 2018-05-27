@@ -8,7 +8,7 @@ dependencies:
   - block_visibility_groups
   - datetime
   - entity_reference_revisions
-  - media
+  - facets
   - menu_condition
   - node
   - options
