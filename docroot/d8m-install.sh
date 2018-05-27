@@ -4,11 +4,11 @@
 
 drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
 
-drush role-create administrator &&
-drush role-create support_administrator &&
-drush role-create content_administrator &&
-drush role-create structure_administrator &&
-drush role-create user_administrator;
+drush role-create administrator --y;
+drush role-create support_administrator --y;
+drush role-create content_administrator --y;
+drush role-create structure_administrator --y;
+drush role-create user_administrator --y;
 
 drush config-set system.site mail "no-reply@www.colorado.gov" -y
 
@@ -21,12 +21,6 @@ drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzf
 
 drush user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
 
-
-#// Revert Features
-drush en -y $(cat custom_modules_list.txt)
-drush features-import-all -y;
-
-
 drush en ci_article_setup -y;
 drush en ci_admin_tweaks --y;
 rdush en ci_theme_options --y;
@@ -35,7 +29,7 @@ drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
 
 drush cim --partial sync --y;
-drush en acquia_connector --y;
+drush cr;
 drush -y dcdi;
 drush uli;
 

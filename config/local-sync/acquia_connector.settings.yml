@@ -1,6 +1,4 @@
-subscription_data:
-  active: false
-subscription_name: ''
+subscription_name: 'Colorado D8M'
 debug: false
 cron_interval: 30
 cron_interval_override: 0
@@ -10,9 +8,12 @@ spi:
   server: 'https://nspi.acquia.com'
   ssl_override: false
   ssl_verify: true
-  def_vars: {  }
+  def_vars:
+    preprocess_css:
+      optional: 0
+      description: ''
   def_waived_vars: {  }
-  def_timestamp: 0
+  def_timestamp: 1374783288
   new_optional_data: 1
   admin_priv: 1
   send_node_user: 1
@@ -41,6 +42,9 @@ spi:
     variables: {  }
     time: 0
   cron_interval: 28800
+  site_name: local
+  site_machine_name: local
+  env_detection_enabled: true
 mapping:
   acquia_spi_send_node_user:
     - acquia_connector.settings
@@ -174,3 +178,167 @@ mapping:
     - http.response.debug_cacheability_headers
 _core:
   default_config_hash: wxTqZpydlDKlPxO8i3OqgtM9BwmL6dLY_8T0x_HLxns
+subscription_data:
+  active: true
+  href: 'https://insight.acquia.com/node/uuid/85336a01-4cbc-4509-9d76-d91bdac69008/dashboard'
+  uuid: 85336a01-4cbc-4509-9d76-d91bdac69008
+  subscription_name: 'Colorado D8M'
+  expiration_date:
+    value: '2018-06-17T00:00:00'
+  product:
+    view: 'Acquia Network'
+  derived_key_salt: 65e628fa2cc4877fba8f5cd110734b7b
+  update_service: '1'
+  search_service_enabled: 1
+  rpc_version: '3.1'
+  update: {  }
+  heartbeat_data:
+    acquia_lift:
+      status: false
+      decision:
+        public_key: ''
+        private_key: ''
+      profile:
+        account_name: ''
+        hostname: ''
+        public_key: ''
+        secret_key: ''
+        js_path: ''
+    search_service_enabled: 1
+    search_cores:
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117
+      -
+        balancer: useast1-c1.acquia-search.com
+        core_id: CDIY-145117.dev.default
+      -
+        balancer: useast1-c1.acquia-search.com
+        core_id: CDIY-145117.test.default
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.agcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.agcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.agcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.cdlecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.cdlecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.cdlecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.cdphecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.cdphecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.cdphecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.cdpscoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.cdpscoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.cdpscoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.cicoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.cicoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.cicoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.dhsemcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.dhsemcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.dhsemcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.dolacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.dolacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.dolacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.doracoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.doracoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.doracoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.dpacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.dpacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.dpacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.estescoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.estescoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.estescoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.hcpfcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.hcpfcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.hcpfcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.revenuecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.revenuecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.revenuecoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.sipacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.sipacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.sipacoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.dev.slbcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.prod.slbcoloradogov
+      -
+        balancer: useast1-c26.acquia-search.com
+        core_id: CDIY-145117.test.slbcoloradogov
+    search_service_colony: useast1-c26.acquia-search.com

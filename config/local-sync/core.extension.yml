@@ -1,10 +1,11 @@
 module:
-  allowed_formats: 0
   acquia_connector: 0
   acquia_purge: 0
+  acquia_search: 0
   addtocalendar: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  allowed_formats: 0
   anchor_link: 0
   automated_cron: 0
   background_image_formatter: 0
@@ -28,6 +29,7 @@ module:
   chosen_lib: 0
   ci_admin_tweaks: 0
   ci_article_setup: 0
+  ci_search_form: 0
   ci_theme_options: 0
   ckeditor: 0
   ckeditor_a11ychecker: 0
@@ -68,6 +70,7 @@ module:
   entity_embed: 0
   entity_reference_revisions: 0
   exclude_node_title: 0
+  facets: 0
   features: 0
   features_ui: 0
   field: 0
@@ -120,6 +123,8 @@ module:
   role_delegation: 0
   roleassign: 0
   scheduled_updates: 0
+  search_api: 0
+  search_api_solr: 0
   serialization: 0
   sharethis_block: 0
   shortcut: 0

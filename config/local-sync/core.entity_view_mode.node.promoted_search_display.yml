@@ -1,0 +1,12 @@
+uuid: 1a215331-0296-45a0-a028-f57511b52813
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: XH7-5rMf5OUagxLbBHOqGofN8De02QGnT-fPpG3Fu3k
+id: node.promoted_search_display
+label: 'Promoted Search Display'
+targetEntityType: node
+cache: true
