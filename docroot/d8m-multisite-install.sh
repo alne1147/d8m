@@ -28,10 +28,8 @@ drush @sites -y config-set system.performance css.preprocess 0;
 drush @sites -y config-set system.performance js.preprocess 0;
 
 drush @sites cim --partial sync --y;
-drush @sites en acquia_connector --y;
-drush @sites -y dcdi -1;
-
-# Some need special attention
+drush @sites cr
+drush @sites --y dcdi -1;
 drush @sites uli;
 
 echo "That's the end of the D8M install script!"
