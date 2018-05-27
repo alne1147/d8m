@@ -108,14 +108,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_promote
-  processed:
-    label: 'Body » Processed text'
-    datasource_id: 'entity:node'
-    property_path: 'body:processed'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.body
 datasource_settings:
   'entity:node':
     bundles:
@@ -232,7 +224,6 @@ processor_settings:
       - field_article_tags
       - type
       - field_rows
-      - processed
     title: true
     alt: true
     tags:
