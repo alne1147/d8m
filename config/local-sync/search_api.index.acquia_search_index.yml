@@ -1,0 +1,256 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_article_tags
+    - field.storage.node.field_rows
+    - field.storage.node.field_promote
+    - search_api.server.acquia_search_server
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api
+    - node
+    - paragraphs
+id: acquia_search_index
+name: 'Acquia Search Solr Index'
+description: ''
+read_only: false
+field_settings:
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:paragraph':
+          bp_accordion: ''
+          bp_accordion_section: ''
+          bp_blank: ''
+          bp_block: ''
+          bp_carousel: ''
+          bp_column_wrapper: ''
+          bp_columns: ''
+          bp_columns_three_uneven: ''
+          bp_columns_two_uneven: ''
+          bp_contact: ''
+          bp_image: ''
+          bp_modal: ''
+          bp_simple: ''
+          bp_tab_section: ''
+          bp_tabs: ''
+          bp_view: ''
+          card_open_embed: ''
+          full_column_hero: ''
+          image_text: ''
+          images: ''
+          nested_paragraph: ''
+          row_slide_container: ''
+          row_three_column_hero: ''
+          row_two_column_hero: ''
+          text: ''
+          text_image: ''
+          user: ''
+        'entity:node':
+          article: search_index
+          event: search_index
+          landing_page: search_index
+          page: search_index
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_article_tags:
+    label: 'Related Tags'
+    datasource_id: 'entity:node'
+    property_path: field_article_tags
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_article_tags
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  field_rows:
+    label: Rows
+    datasource_id: 'entity:node'
+    property_path: field_rows
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_rows
+  field_promote:
+    label: Promote
+    datasource_id: 'entity:node'
+    property_path: field_promote
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_promote
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'body:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - article
+        - event
+        - landing_page
+        - page
+    languages:
+      default: true
+      selected: {  }
+  'entity:paragraph':
+    bundles:
+      default: false
+      selected:
+        - card_basic
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  stemmer:
+    all_fields: false
+    fields:
+      - rendered_item
+      - body
+      - title
+      - field_article_tags
+      - type
+      - field_rows
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  rendered_item: {  }
+  add_url:
+    plugin_id: add_url
+    settings: {  }
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+      - body
+      - title
+      - field_article_tags
+      - type
+      - field_rows
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  aggregated_field: {  }
+  type_boost:
+    boosts:
+      'entity:paragraph':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          bp_accordion: !!float 0
+          bp_accordion_section: !!float 0
+          bp_blank: !!float 0
+          bp_block: !!float 0
+          bp_carousel: !!float 0
+          bp_column_wrapper: !!float 0
+          bp_columns: !!float 0
+          bp_columns_three_uneven: !!float 0
+          bp_columns_two_uneven: !!float 0
+          bp_contact: !!float 0
+          bp_image: !!float 0
+          bp_modal: !!float 0
+          bp_simple: !!float 0
+          bp_tab_section: !!float 0
+          bp_tabs: !!float 0
+          bp_view: !!float 0
+          card_open_embed: !!float 0
+          full_column_hero: !!float 0
+          image_text: !!float 0
+          images: !!float 0
+          nested_paragraph: !!float 0
+          row_slide_container: !!float 0
+          row_three_column_hero: !!float 0
+          row_two_column_hero: !!float 0
+          text: !!float 0
+          text_image: !!float 0
+          user: !!float 0
+      'entity:node':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          article: !!float 0
+          event: !!float 0
+          landing_page: !!float 0
+          page: !!float 0
+    weights:
+      preprocess_index: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - rendered_item
+      - body
+      - title
+      - field_article_tags
+      - type
+      - field_rows
+      - processed
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: -1
+  processors:
+    language:
+      status: '1'
+      weight: -50
+      settings: {  }
+      processorPluginId: language
+server: acquia_search_server

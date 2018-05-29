@@ -1,0 +1,144 @@
+uuid: 18775009-2f8f-4392-98f4-684db02b87c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_columns_two_uneven.bp_background
+    - field.field.paragraph.bp_columns_two_uneven.bp_column_content_2
+    - field.field.paragraph.bp_columns_two_uneven.bp_column_style_2
+    - field.field.paragraph.bp_columns_two_uneven.bp_width
+    - field.field.paragraph.bp_columns_two_uneven.field_row_title
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+  module:
+    - content_moderation
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_row_two_uneven_columns_opt:
+      children:
+        - group_title
+        - group_column_style
+        - group_color
+        - group_width
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Row - Two Uneven Columns - Options'
+      region: content
+    group_title:
+      children:
+        - field_row_title
+      parent_name: group_row_two_uneven_columns_opt
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Title
+      region: content
+    group_color:
+      children:
+        - bp_background
+      parent_name: group_row_two_uneven_columns_opt
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Color
+      region: content
+    group_width:
+      children:
+        - bp_width
+      parent_name: group_row_two_uneven_columns_opt
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Width
+      region: content
+    group_column_style:
+      children:
+        - bp_column_style_2
+      parent_name: group_row_two_uneven_columns_opt
+      weight: 21
+      format_type: tab
+      format_settings:
+        label: Columns
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Columns
+      region: content
+_core:
+  default_config_hash: 1mRkKHSc-UHn2x9b0jpMEi-avsBvuyTgxp6aCYxWcSg
+id: paragraph.bp_columns_two_uneven.default
+targetEntityType: paragraph
+bundle: bp_columns_two_uneven
+mode: default
+content:
+  bp_background:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  bp_column_content_2:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  bp_column_style_2:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  bp_width:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_row_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 6
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

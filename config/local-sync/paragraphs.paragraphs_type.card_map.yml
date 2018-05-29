@@ -1,0 +1,9 @@
+uuid: 8361ae28-7dd6-4439-a667-5fcb75e09fcc
+langcode: en
+status: true
+dependencies: {  }
+id: card_map
+label: 'Card - Map'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

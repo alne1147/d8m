@@ -1,0 +1,19 @@
+uuid: dff32561-d2e8-4dd0-a5a5-1dcde93e3488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone_number
+    - taxonomy.vocabulary.venue
+id: taxonomy_term.venue.field_phone_number
+field_name: field_phone_number
+entity_type: taxonomy_term
+bundle: venue
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

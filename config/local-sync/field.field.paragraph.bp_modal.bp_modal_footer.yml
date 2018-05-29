@@ -1,0 +1,90 @@
+uuid: 8b5fc7d6-2665-4fb6-b44a-16ce95125ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_modal_footer
+    - paragraphs.paragraphs_type.bp_block
+    - paragraphs.paragraphs_type.bp_modal
+    - paragraphs.paragraphs_type.bp_view
+    - paragraphs.paragraphs_type.card_basic
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Kr_XwhO5HPLyh24jY5kvO66jCyp8aMUQv139-RjXAL0
+id: paragraph.bp_modal.bp_modal_footer
+field_name: bp_modal_footer
+entity_type: paragraph
+bundle: bp_modal
+label: 'Modal Footer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_basic: card_basic
+      bp_block: bp_block
+      bp_view: bp_view
+    target_bundles_drag_drop:
+      card_basic:
+        enabled: true
+        weight: -39
+      bp_block:
+        enabled: true
+        weight: -38
+      bp_view:
+        enabled: true
+        weight: -37
+      bp_simple:
+        weight: -36
+        enabled: false
+      bp_image:
+        weight: -35
+        enabled: false
+      bp_blank:
+        weight: -34
+        enabled: false
+      bp_accordion:
+        weight: -33
+        enabled: false
+      bp_carousel:
+        weight: -32
+        enabled: false
+      bp_columns:
+        weight: -31
+        enabled: false
+      bp_columns_three_uneven:
+        weight: -30
+        enabled: false
+      bp_columns_two_uneven:
+        weight: -29
+        enabled: false
+      bp_contact:
+        weight: -28
+        enabled: false
+      bp_tabs:
+        weight: -27
+        enabled: false
+      bp_accordion_section:
+        weight: -26
+        enabled: false
+      bp_modal:
+        weight: -25
+        enabled: false
+      bp_tab_section:
+        weight: -24
+        enabled: false
+      full_column_hero:
+        weight: -23
+        enabled: false
+      row_three_column_hero:
+        weight: -22
+        enabled: false
+      row_two_column_hero:
+        weight: -21
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,27 @@
+uuid: 1fddc870-0bbc-48ec-b876-8f74122e6cf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.link
+    - field.field.media.document.field_media_file_1
+    - media.type.document
+  module:
+    - file
+id: media.document.link
+targetEntityType: media
+bundle: document
+mode: link
+content:
+  field_media_file_1:
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

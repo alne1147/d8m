@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bp_title_color
+    - paragraphs.paragraphs_type.bp_accordion
+  module:
+    - options
+id: paragraph.bp_accordion.field_bp_title_color
+field_name: field_bp_title_color
+entity_type: paragraph
+bundle: bp_accordion
+label: 'Accordion Title Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: 9a386008-e381-40ed-a5ab-cd279383e6a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - term_condition
+id: recent_events
+label: 'Recent Events'
+logic: and
+conditions:
+  f7696a1d-22bd-418c-825c-930cf29c17c3:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: f7696a1d-22bd-418c-825c-930cf29c17c3
+  0030fbe7-5e61-4a45-ba0b-43ca68204166:
+    id: term
+    negate: 0
+    tid: '100020'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 0030fbe7-5e61-4a45-ba0b-43ca68204166
+allow_other_conditions: true

@@ -1,0 +1,22 @@
+uuid: 97130269-e817-45e7-98ca-18616433fdf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_maps
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.simple_maps.body
+field_name: body
+entity_type: block_content
+bundle: simple_maps
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

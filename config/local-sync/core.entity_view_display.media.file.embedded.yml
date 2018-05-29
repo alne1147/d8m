@@ -1,0 +1,27 @@
+uuid: afa98518-6577-42e8-af68-bc4c1c87ba06
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embedded
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - file
+id: media.file.embedded
+targetEntityType: media
+bundle: file
+mode: embedded
+content:
+  field_media_file:
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

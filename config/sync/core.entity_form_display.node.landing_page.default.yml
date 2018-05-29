@@ -1,0 +1,387 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_background_color
+    - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_footer_options
+    - field.field.node.landing_page.field_footer_selection
+    - field.field.node.landing_page.field_jumbotron
+    - field.field.node.landing_page.field_jumbotron_options
+    - field.field.node.landing_page.field_landing_page_options
+    - field.field.node.landing_page.field_meta
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_promote
+    - field.field.node.landing_page.field_rows
+    - image.style.thumbnail
+    - node.type.landing_page
+  module:
+    - conditional_fields
+    - content_moderation
+    - field_group
+    - image
+    - jquery_colorpicker
+    - metatag
+    - paragraphs
+    - path
+third_party_settings:
+  field_group:
+    group_landing_page_options:
+      children:
+        - title
+      parent_name: group_landing_page
+      weight: 9
+      format_type: tab
+      format_settings:
+        label: Title
+        formatter: closed
+        description: 'Title is for administrative purposes only and will not be shown on page.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Title
+      region: content
+    group_layout_options:
+      children:
+        - field_rows
+      parent_name: group_landing_page
+      weight: 8
+      format_type: tab
+      format_settings:
+        label: 'Rows and Cards'
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Rows and Cards'
+      region: content
+    group_landing_page:
+      children:
+        - group_layout_options
+        - group_landing_page_options
+        - group_display
+        - group_search_tab
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        label: 'Landing Page- Options'
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: 'Landing Page- Options'
+      region: content
+    group_search_tab:
+      children:
+        - group_search
+      parent_name: group_landing_page
+      weight: 11
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Search
+      region: content
+    group_search:
+      children:
+        - field_promote
+      parent_name: group_search_tab
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        label: Search
+        description: 'Feature this content at the top of site search results'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Search
+      region: content
+    group_display:
+      children:
+        - group_jumbotron
+        - group_background
+        - group_footer
+      parent_name: group_landing_page
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Display
+      region: content
+    group_jumbotron:
+      children:
+        - field_jumbotron_options
+        - field_jumbotron
+      parent_name: group_display
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Jumbotron
+      region: content
+    group_background:
+      children:
+        - field_landing_page_options
+        - field_background_color
+        - field_background_image
+      parent_name: group_display
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Background
+      region: content
+    group_footer:
+      children:
+        - field_footer_options
+        - field_footer_selection
+      parent_name: group_display
+      weight: 9
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Footer
+      region: content
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_background_color:
+    weight: 10
+    settings:
+      color: FFFFFF
+    third_party_settings:
+      conditional_fields:
+        41a21126-1513-479a-9e11-dbbe3d627490:
+          dependee: field_landing_page_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Show Custom Background Color'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: jquery_colorpicker
+    region: content
+  field_background_image:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        71669b1c-8e59-49c9-96f8-0ff6851e0ef2:
+          dependee: field_landing_page_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Show Custom Background Image'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: image_image
+    region: content
+  field_footer_options:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_footer_selection:
+    weight: 11
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        0a51d8c6-3276-423e-be18-f749c48e00b7:
+          dependee: field_footer_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100042'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: options_select
+    region: content
+  field_jumbotron:
+    weight: 9
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        6f0dec73-3d2e-4f8d-bf6e-2ab6c1245b61:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100038'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: options_select
+    region: content
+  field_jumbotron_options:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_landing_page_options:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_meta:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_promote:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_rows:
+    weight: 8
+    settings:
+      title: Row
+      title_plural: Rows
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 7
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_meta_tags: true

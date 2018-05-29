@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row_three_column_hero.bp_background
+    - field.field.paragraph.row_three_column_hero.bp_column_content_3
+    - field.field.paragraph.row_three_column_hero.bp_column_style_3
+    - field.field.paragraph.row_three_column_hero.field_row_background_image
+    - image.style.max_1920
+    - paragraphs.paragraphs_type.row_three_column_hero
+  module:
+    - background_image_formatter
+    - entity_reference_revisions
+    - options
+id: paragraph.row_three_column_hero.default
+targetEntityType: paragraph
+bundle: row_three_column_hero
+mode: default
+content:
+  bp_column_content_3:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  bp_column_style_3:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_row_background_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: max_1920
+      background_image_output_type: inline
+      background_image_selector: hero__responsive
+    third_party_settings: {  }
+    type: background_image_formatter
+    region: content
+hidden:
+  bp_background: true
