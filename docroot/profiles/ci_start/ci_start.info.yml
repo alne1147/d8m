@@ -160,7 +160,6 @@ dependencies:
   - purge_processor_cron
   - purge_processor_lateruntime
   - acquia_purge
-  - scheduler
   
   # Adding these lines to our profilename.info.yml will only enable these themes.
 themes:
