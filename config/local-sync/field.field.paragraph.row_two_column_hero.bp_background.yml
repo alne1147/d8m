@@ -1,0 +1,21 @@
+uuid: bfb5c757-df98-4867-8e7e-b5e2c04a6d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.row_two_column_hero
+  module:
+    - options
+id: paragraph.row_two_column_hero.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: row_two_column_hero
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

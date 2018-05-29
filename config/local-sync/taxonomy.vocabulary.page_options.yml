@@ -1,0 +1,9 @@
+uuid: f94fca97-5a20-4667-b3bb-78a6157a85e2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Page Options'
+vid: page_options
+description: ''
+hierarchy: 0
+weight: 0

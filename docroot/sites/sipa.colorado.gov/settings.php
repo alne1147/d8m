@@ -762,7 +762,7 @@ if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/sipa-settings.inc';
 }
 
-$config_directories['sync'] = '../config/sync';
+$config_directories['sync'] = '../config/local-sync';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
@@ -862,3 +862,5 @@ if ($memcache_module_is_present && ($memcache_exists || $memcached_exists)) {
 }
 $conf['acquia_purge_http'] = FALSE;
 $conf['acquia_purge_https'] = TRUE;
+
+$settings['memcache']['stampede_protection'] = TRUE;

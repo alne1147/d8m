@@ -1,0 +1,13 @@
+uuid: 5e80e12e-ec4e-4791-9af0-8fc7850b743a
+langcode: en
+status: true
+dependencies: {  }
+id: document
+label: Document
+description: 'Documents that can be embedded in content.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file_1
+field_map: {  }

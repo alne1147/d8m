@@ -776,3 +776,5 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_revenue_colorado_gov.inc';
 }
 // </DDSETTINGS>
+
+$settings['memcache']['stampede_protection'] = TRUE;

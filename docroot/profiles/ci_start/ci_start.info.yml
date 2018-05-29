@@ -9,6 +9,8 @@ distribution:
 langcode: en
 
 dependencies:
+  - allowed_formats
+  - addtocalendar
   - superfish
   - file_browser
   - video_embed_wysiwyg
@@ -48,6 +50,7 @@ dependencies:
   - block_content
   - menu_link_content
   - dblog
+  - editor_file
   - field
   - field_ui
   - filter

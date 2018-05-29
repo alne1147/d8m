@@ -1,0 +1,9 @@
+uuid: b130699c-f420-40d4-abef-fcda5b8539b0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BOv5LsrrPIhW4_VYxBan15bFwTwAGTHuz1rofCQ4qa0
+id: layout_half_column
+label: 'Layout: Half column'
+classes: flex-grid__2-grid-col

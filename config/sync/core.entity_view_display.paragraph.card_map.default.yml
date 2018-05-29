@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_map.bp_background
+    - field.field.paragraph.card_map.field_card_title
+    - field.field.paragraph.card_map.field_location
+    - field.field.paragraph.card_map.field_title_color
+    - paragraphs.paragraphs_type.card_map
+  module:
+    - options
+    - simple_gmap
+id: paragraph.card_map.default
+targetEntityType: paragraph
+bundle: card_map
+mode: default
+content:
+  bp_background:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_card_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_location:
+    weight: 1
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '250'
+      static_scale: 1
+      include_link: true
+      link_text: use_address
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+  field_title_color:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

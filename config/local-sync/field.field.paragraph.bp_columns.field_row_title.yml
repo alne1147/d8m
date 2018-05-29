@@ -1,0 +1,19 @@
+uuid: 2d7badbd-5d9f-4560-98f6-2a671402345b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_title
+    - paragraphs.paragraphs_type.bp_columns
+id: paragraph.bp_columns.field_row_title
+field_name: field_row_title
+entity_type: paragraph
+bundle: bp_columns
+label: 'Row Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

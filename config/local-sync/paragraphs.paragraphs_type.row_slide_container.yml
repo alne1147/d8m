@@ -1,0 +1,9 @@
+uuid: 60ccd550-b777-4478-90af-ef787415d3bd
+langcode: en
+status: true
+dependencies: {  }
+id: row_slide_container
+label: 'Row - Slide Container'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

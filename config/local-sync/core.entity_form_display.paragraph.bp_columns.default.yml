@@ -1,0 +1,116 @@
+uuid: bc0ab25a-6095-48c7-aa8e-2fc0447e0784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_columns.bp_background
+    - field.field.paragraph.bp_columns.bp_column_content
+    - field.field.paragraph.bp_columns.bp_width
+    - field.field.paragraph.bp_columns.field_row_title
+    - paragraphs.paragraphs_type.bp_columns
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_row_equal_columns_options:
+      children:
+        - group_title
+        - group_background
+        - group_width
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Row - Equal Columns - Options'
+      region: content
+    group_title:
+      children:
+        - field_row_title
+      parent_name: group_row_equal_columns_options
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Title
+      region: content
+    group_width:
+      children:
+        - bp_width
+      parent_name: group_row_equal_columns_options
+      weight: 26
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Width
+      region: content
+    group_background:
+      children:
+        - bp_background
+      parent_name: group_row_equal_columns_options
+      weight: 25
+      format_type: tab
+      format_settings:
+        label: Color
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Color
+      region: content
+_core:
+  default_config_hash: 0KoEp7uHdq6dO4VLrkaeVOfmDCsIYuhWIW5PaSrVBrs
+id: paragraph.bp_columns.default
+targetEntityType: paragraph
+bundle: bp_columns
+mode: default
+content:
+  bp_background:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  bp_column_content:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  bp_width:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_row_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

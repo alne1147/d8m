@@ -1,0 +1,20 @@
+uuid: 74e4e542-e305-4f84-bf07-fc38839cf05a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - node
+id: node.field_footer_selection
+field_name: field_footer_selection
+entity_type: node
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

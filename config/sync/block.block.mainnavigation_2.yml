@@ -1,4 +1,3 @@
-uuid: abd0c7c6-1d01-4fdf-bea4-dbe349f88704
 langcode: en
 status: true
 dependencies:
@@ -58,7 +57,7 @@ settings:
   smallicm: ''
   smallich: ''
   smallamt: Menu
-  smallabt: '1'
+  smallabt: '2'
   supersubs: 1
   minwidth: '12'
   maxwidth: '27'

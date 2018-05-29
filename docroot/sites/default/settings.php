@@ -771,7 +771,7 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
 }
-$config_directories['sync'] = '../config/sync';
+$config_directories['sync'] = '../config/local-sync';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
@@ -1185,3 +1185,5 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_default.inc';
 }
 // </DDSETTINGS>
+
+$settings['memcache']['stampede_protection'] = TRUE;

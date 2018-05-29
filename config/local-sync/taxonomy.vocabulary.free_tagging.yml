@@ -1,0 +1,9 @@
+uuid: 947b18f2-3379-4cf1-b16d-c4bc8fbb8f00
+langcode: en
+status: true
+dependencies: {  }
+name: 'Related Tags'
+vid: free_tagging
+description: ''
+hierarchy: 0
+weight: 0

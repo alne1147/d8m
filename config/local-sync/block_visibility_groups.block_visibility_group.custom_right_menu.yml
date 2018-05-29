@@ -1,0 +1,18 @@
+uuid: 6a9fa209-222e-4155-9c56-824274219378
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: custom_right_menu
+label: 'Second Menu - Right'
+logic: and
+conditions:
+  8d8df478-46c8-4529-8760-5251a881a4bc:
+    id: term
+    negate: 0
+    tid: '100010'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 8d8df478-46c8-4529-8760-5251a881a4bc
+allow_other_conditions: false
