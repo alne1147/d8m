@@ -1,6 +1,9 @@
+uuid: 067c66e4-27ba-42bf-bd38-6b7c456a81f7
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 0610pffT0U5MVMvnisgwU-tOg4NHD6-fc2fUcKImcjo
 id: bp_modal
 label: 'Card - Modal'
 icon_uuid: null

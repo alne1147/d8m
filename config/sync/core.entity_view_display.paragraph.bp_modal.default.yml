@@ -1,3 +1,4 @@
+uuid: a9a321a9-2d0e-4110-ac91-f86f84ef7b63
 langcode: en
 status: true
 dependencies:
@@ -12,6 +13,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: 0PmBiXZLN2ZxqXMPlJWXpjOMtxB8o0Ivt44Gl3E4HpE
 id: paragraph.bp_modal.default
 targetEntityType: paragraph
 bundle: bp_modal

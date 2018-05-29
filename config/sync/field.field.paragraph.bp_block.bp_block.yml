@@ -1,9 +1,12 @@
+uuid: fc21e6ba-0b18-4a70-abaa-3a912065823e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_block
     - paragraphs.paragraphs_type.bp_block
+_core:
+  default_config_hash: hQt3KsTrCfFYrQYj6UxCUK36xN4EeJ0vYpWH1uEBVbw
 id: paragraph.bp_block.bp_block
 field_name: bp_block
 entity_type: paragraph

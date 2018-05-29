@@ -1,3 +1,4 @@
+uuid: d9000be6-1116-4fae-97ba-7a1c2ac680e0
 langcode: en
 status: true
 dependencies:
@@ -12,6 +13,8 @@ dependencies:
     - link
     - options
     - responsive_image
+_core:
+  default_config_hash: f1qcyZTh1nWCN2Sk7I1xwTOhucQDBgnWOUBoF3T94Xk
 id: paragraph.bp_image.default
 targetEntityType: paragraph
 bundle: bp_image

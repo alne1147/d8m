@@ -1,9 +1,12 @@
+uuid: c2b7445f-b369-459f-b5a8-79f24ef21810
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
+_core:
+  default_config_hash: q4fnGN4mMCXFzOzDYLzwQ4AVzeSWJNqLPjds7RVlNVI
 id: paragraph.bp_accordion_section
 field_name: bp_accordion_section
 entity_type: paragraph

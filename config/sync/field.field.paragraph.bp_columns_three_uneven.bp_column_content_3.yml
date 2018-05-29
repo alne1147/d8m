@@ -1,3 +1,4 @@
+uuid: 470a5ffb-c219-48d4-b9af-a48439aebfe7
 langcode: en
 status: true
 dependencies:
@@ -15,6 +16,8 @@ dependencies:
     - paragraphs.paragraphs_type.card_open_embed
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: LNLpRcpyoZwawuGDi6q-nIKH9393-oSmG0CKJNmkaaI
 id: paragraph.bp_columns_three_uneven.bp_column_content_3
 field_name: bp_column_content_3
 entity_type: paragraph

@@ -1,3 +1,4 @@
+uuid: 8b5fc7d6-2665-4fb6-b44a-16ce95125ca0
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.card_basic
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: Kr_XwhO5HPLyh24jY5kvO66jCyp8aMUQv139-RjXAL0
 id: paragraph.bp_modal.bp_modal_footer
 field_name: bp_modal_footer
 entity_type: paragraph

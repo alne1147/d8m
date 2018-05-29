@@ -1,3 +1,4 @@
+uuid: ccb57ada-9d96-47ff-91c2-dd3568755234
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: wIDWPSouhITkH6QV8vXzWJ-cbN-dEYeBvMGBS0jV4x0
 id: paragraph.bp_columns.default
 targetEntityType: paragraph
 bundle: bp_columns

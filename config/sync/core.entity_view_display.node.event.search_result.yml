@@ -1,3 +1,4 @@
+uuid: 169fc405-52ca-490d-9d7b-f4bc414ec4cc
 langcode: en
 status: true
 dependencies:
@@ -28,6 +29,8 @@ dependencies:
     - simple_gmap
     - text
     - user
+_core:
+  default_config_hash: RcDO95JBllileRXCEGJhh64kWXCv55v0mT13g0zRYvk
 id: node.event.search_result
 targetEntityType: node
 bundle: event

@@ -1,3 +1,4 @@
+uuid: ba6a1309-8daa-471d-a5e4-e6fdbd2679da
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: rpf9oQ5Et9gNdK5Tw2d_Arpme6-F5Sto4_xd0dQMxoQ
 id: paragraph.bp_accordion.default
 targetEntityType: paragraph
 bundle: bp_accordion

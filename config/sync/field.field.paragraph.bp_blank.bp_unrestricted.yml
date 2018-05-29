@@ -1,3 +1,4 @@
+uuid: 213d0711-b287-4a48-9ec3-73e6da32c71a
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_blank
   module:
     - text
+_core:
+  default_config_hash: ypX0TW4KQVVTfhgQjHQlTPWID9CHpLiTEwDtci3FVGk
 id: paragraph.bp_blank.bp_unrestricted
 field_name: bp_unrestricted
 entity_type: paragraph

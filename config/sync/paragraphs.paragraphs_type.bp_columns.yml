@@ -1,6 +1,9 @@
+uuid: 4afeb728-e4fd-4480-ba01-ab0d4c187654
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ZIqYoYeeg89FHoqWHTADdXPP-6bpFlyUg0HPB1iShSA
 id: bp_columns
 label: 'Row - Equal Columns'
 icon_uuid: null

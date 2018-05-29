@@ -1,3 +1,4 @@
+uuid: b3e8d76e-71b6-42a2-92d9-c92af7410e14
 langcode: en
 status: true
 dependencies:
@@ -73,6 +74,8 @@ third_party_settings:
         required_fields: true
       label: Pop-up
       region: content
+_core:
+  default_config_hash: SraL8fGETGo7xi0UBg9nW1reoceCdCZdFp7-2TxenwU
 id: paragraph.bp_modal.default
 targetEntityType: paragraph
 bundle: bp_modal

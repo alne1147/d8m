@@ -1,8 +1,0 @@
-uuid: a42119f5-f3cf-4f70-88ff-aafa7eabc290
-langcode: en
-status: true
-dependencies: {  }
-name: 'Open Embed'
-format: open_embed
-weight: 0
-filters: {  }

@@ -1,3 +1,4 @@
+uuid: bc0ab25a-6095-48c7-aa8e-2fc0447e0784
 langcode: en
 status: true
 dependencies:
@@ -69,6 +70,8 @@ third_party_settings:
         classes: ''
       label: Color
       region: content
+_core:
+  default_config_hash: 0KoEp7uHdq6dO4VLrkaeVOfmDCsIYuhWIW5PaSrVBrs
 id: paragraph.bp_columns.default
 targetEntityType: paragraph
 bundle: bp_columns

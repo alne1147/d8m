@@ -1,3 +1,4 @@
+uuid: 1f698df0-ed61-4ade-aba8-ac9c87ecca37
 langcode: en
 status: true
 dependencies:
@@ -55,6 +56,8 @@ third_party_settings:
         required_fields: true
       label: Width
       region: content
+_core:
+  default_config_hash: zSy0KOISVHBDX_J9egB1NORxWuoONNkl0VVkccnFfBU
 id: paragraph.bp_accordion.default
 targetEntityType: paragraph
 bundle: bp_accordion

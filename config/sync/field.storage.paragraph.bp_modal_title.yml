@@ -1,8 +1,11 @@
+uuid: c38759c2-dbaa-4b82-afd9-1e36ae0e969a
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: aisOwH1jSxU1RyHbDsjeRxdPVHJP2KcNfXRsCusHuKI
 id: paragraph.bp_modal_title
 field_name: bp_modal_title
 entity_type: paragraph

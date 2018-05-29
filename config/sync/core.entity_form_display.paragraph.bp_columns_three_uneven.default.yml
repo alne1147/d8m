@@ -1,3 +1,4 @@
+uuid: cec8e9c2-2816-492a-b181-abee208c3719
 langcode: en
 status: true
 dependencies:
@@ -86,6 +87,8 @@ third_party_settings:
         required_fields: true
       label: Width
       region: content
+_core:
+  default_config_hash: FhwuozScv-Q1EloGIz7kz1hrG5A53Bv7L8vfLkcnJkw
 id: paragraph.bp_columns_three_uneven.default
 targetEntityType: paragraph
 bundle: bp_columns_three_uneven

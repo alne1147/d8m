@@ -1,3 +1,4 @@
+uuid: 4aed4caa-b69c-43f4-b687-50b038e501a4
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: '-64ufU5i6z27pD4G22OwkhCO4dkJicpngb1gNsGLwtw'
 id: paragraph.bp_carousel.default
 targetEntityType: paragraph
 bundle: bp_carousel

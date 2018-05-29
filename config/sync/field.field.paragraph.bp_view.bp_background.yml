@@ -1,3 +1,4 @@
+uuid: cb7e4924-4c85-455c-aed1-17f4809edae4
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_view
   module:
     - options
+_core:
+  default_config_hash: PuxMWNL5HJ4YqXm8O3cCw6L0ap5AGB7tyDPpxEY1R54
 id: paragraph.bp_view.bp_background
 field_name: bp_background
 entity_type: paragraph

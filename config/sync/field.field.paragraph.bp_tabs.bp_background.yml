@@ -1,3 +1,4 @@
+uuid: 6fda1e77-f319-4f64-9da1-1981c79e517d
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
   module:
     - options
+_core:
+  default_config_hash: rKel_HSXubRSbukrJnGanL-foVKMM8PqZg1ucRLP2VE
 id: paragraph.bp_tabs.bp_background
 field_name: bp_background
 entity_type: paragraph

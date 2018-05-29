@@ -1,3 +1,4 @@
+uuid: ca25989b-676f-4387-954f-0207e297026e
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
   module:
     - content_moderation
     - viewsreference
+_core:
+  default_config_hash: W2kdovIcfQyP_l5f4G2NKrJZaACTJhEaBu1gD0RAGMs
 id: paragraph.bp_view.default
 targetEntityType: paragraph
 bundle: bp_view

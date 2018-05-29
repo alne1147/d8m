@@ -1,9 +1,0 @@
-uuid: 1f7052d7-e6b5-4af1-bec1-6278f126ca50
-langcode: en
-status: true
-dependencies: {  }
-id: row_three_column_hero
-label: 'Row - Three Column Hero'
-icon_uuid: null
-description: null
-behavior_plugins: {  }

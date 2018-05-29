@@ -1,9 +1,0 @@
-uuid: 21c619ba-752f-4364-8696-dadeaa23eff5
-langcode: en
-status: true
-dependencies: {  }
-name: 'Jumbotron Options'
-vid: jumbotron_options
-description: ''
-hierarchy: 0
-weight: 0

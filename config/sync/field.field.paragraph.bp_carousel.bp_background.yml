@@ -1,3 +1,4 @@
+uuid: ad1c670e-0be3-40cc-94be-5f70259481c0
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_carousel
   module:
     - options
+_core:
+  default_config_hash: wIho-Pkau2cn0rBF9RVd0DXi2kz7VOnZ3zhd926szqo
 id: paragraph.bp_carousel.bp_background
 field_name: bp_background
 entity_type: paragraph

@@ -1,3 +1,4 @@
+uuid: e36d6308-9c97-44dc-9175-397d611da86e
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
   module:
     - content_moderation
     - paragraphs
+_core:
+  default_config_hash: wK-BPkwFH8QxQfRE09q4U3USipjad-jYZ3npZF69F5w
 id: paragraph.bp_column_wrapper.default
 targetEntityType: paragraph
 bundle: bp_column_wrapper

@@ -1,3 +1,4 @@
+uuid: 0e4b0453-7932-472f-8139-de2d1e61e35e
 langcode: en
 status: true
 dependencies:
@@ -71,6 +72,8 @@ third_party_settings:
         required_fields: true
       label: Link
       region: content
+_core:
+  default_config_hash: HdN79DCCkrP_BBFmnXk4bHUxNg16EtuZC7olW5xr2wE
 id: paragraph.bp_image.default
 targetEntityType: paragraph
 bundle: bp_image

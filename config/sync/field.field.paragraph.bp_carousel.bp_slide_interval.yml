@@ -1,3 +1,4 @@
+uuid: 267aad52-1bae-442f-a396-26c28bde5c21
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_carousel
   module:
     - options
+_core:
+  default_config_hash: ThN_y2wi4u_frFb6QvG4V-dixMHNol1xMbD1s_6vqRw
 id: paragraph.bp_carousel.bp_slide_interval
 field_name: bp_slide_interval
 entity_type: paragraph

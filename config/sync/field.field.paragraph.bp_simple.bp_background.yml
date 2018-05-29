@@ -1,3 +1,4 @@
+uuid: 23b48c07-2b80-479c-8b85-ad39bebe2656
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_simple
   module:
     - options
+_core:
+  default_config_hash: Kwets595lMGLAPyuU5kPHZbLNCFQcKNGafYZyWG42w0
 id: paragraph.bp_simple.bp_background
 field_name: bp_background
 entity_type: paragraph

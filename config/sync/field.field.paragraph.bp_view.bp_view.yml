@@ -1,3 +1,4 @@
+uuid: f8a36644-3616-4f13-bdc0-701bce3bd048
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_view
   module:
     - viewsreference
+_core:
+  default_config_hash: KNzR1M6Vua-Cj-QAv1UyamqVqp24bcn_JrLy9PZaUio
 id: paragraph.bp_view.bp_view
 field_name: bp_view
 entity_type: paragraph

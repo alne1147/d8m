@@ -1,9 +1,12 @@
+uuid: 5972348e-cabb-4362-98da-2336d9c565d2
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
+_core:
+  default_config_hash: 4k-eP7sb-EhCQO7-rnGADmXfZkooYxRPssIQ9Lm9Lak
 id: paragraph.bp_tab_section_body
 field_name: bp_tab_section_body
 entity_type: paragraph
