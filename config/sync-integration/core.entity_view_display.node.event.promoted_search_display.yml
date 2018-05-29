@@ -1,3 +1,4 @@
+uuid: 47e57ddf-fb48-4230-a91f-68345c702eb9
 langcode: en
 status: true
 dependencies:
@@ -86,7 +87,14 @@ content:
 hidden:
   field_add_to_cal: true
   field_date_time_range: true
+  field_event_organizer: true
   field_mini: true
+  field_organizer_email: true
   field_page_options: true
   field_promote: true
   field_related_content: true
+  field_show_date_and_time: true
+  field_show_event_organizer: true
+  field_show_event_tags: true
+  field_show_organizer_email: true
+  field_venue: true
