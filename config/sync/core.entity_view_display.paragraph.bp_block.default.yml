@@ -24,15 +24,6 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
-  bp_block:
-    weight: 2
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
   bp_width:
     weight: 1
     label: hidden
@@ -40,7 +31,16 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
+  field_custom_block_reference:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
 hidden:
+  bp_block: true
   created: true
-  field_custom_block_reference: true
   uid: true
