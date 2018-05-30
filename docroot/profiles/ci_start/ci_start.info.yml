@@ -136,8 +136,6 @@ dependencies:
   - paragraphs_layouts
   - metatag
   - quick_clone
-  - redirect
-  - scheduler
   - simple_block
   - single_datetime
   - slick

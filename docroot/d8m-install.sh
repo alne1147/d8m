@@ -34,5 +34,7 @@ drush cim --partial sync --y;
 drush cr --y;
 drush -y dcdi;
 drush uli --y;
+drush en scheduler --y;
+drush en redirect --y;
 
 echo "That's the end of the D8M install script!"
