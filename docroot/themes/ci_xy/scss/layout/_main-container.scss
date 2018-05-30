@@ -1,6 +1,7 @@
 .main-container {
   background-color:$color-white;
   flex: 1;
+  margin-bottom: 1em;
   .content {
     > .field--name-body {
       h1,h2,h3,h4,h5,h6 {

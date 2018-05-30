@@ -39,9 +39,9 @@
     {#</div>#}
     {#</div>#}
     <div class="search-page--refine-wrapper">
-      <p>Refine Results</p>
+      <p>Refine Search Results</p>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="search-page__list--type">
             {{ form.type }}
           </div>
@@ -49,9 +49,13 @@
             {{ form.field_article_tags }}
           </div>
         </div>
-        <div id="dateRange" class="search-page__date col-md-4">
+        <div id="dateRange" class="search-page__date col-md-5">
+          <div class="search-page__date--title">
+            Date Range
+          </div>
           {{ form.created }}
           {{ form.created_lt }}
+          <button id="submit-date-range" class="btn btn-default button--date-range" type="submit" value="Apply">Apply</button>
         </div>
       </div>
     </div>
