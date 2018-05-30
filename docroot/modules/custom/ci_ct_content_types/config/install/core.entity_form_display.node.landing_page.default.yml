@@ -35,7 +35,7 @@ third_party_settings:
         - field_background_image
         - field_footer_options
         - field_footer_selection
-        - field_promote_options
+        - field_promote
       parent_name: ''
       weight: 6
       format_type: details
@@ -61,11 +61,12 @@ third_party_settings:
       weight: 7
       format_type: details
       format_settings:
+        label: 'Rows and Cards'
+        required_fields: true
         id: ''
         classes: ''
         open: false
-        required_fields: true
-      label: 'Layout Options'
+      label: 'Rows and Cards'
       region: content
 id: node.landing_page.default
 targetEntityType: node
@@ -218,7 +219,7 @@ content:
     type: metatag_firehose
     region: content
   field_promote:
-    weight: 26
+    weight: 14
     settings:
       display_label: true
     third_party_settings: {  }

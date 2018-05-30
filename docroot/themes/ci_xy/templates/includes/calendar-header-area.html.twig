@@ -1,0 +1,10 @@
+<script>
+    var e = document.getElementById("cal_selectbox");
+    var value = e.options[e.selectedIndex].value;
+    var text = e.options[e.selectedIndex].text;
+</script>
+<select id="cal_selectbox" name="" onchange="javascript:location.href = this.value;">
+    <option value="/calendar-field_date/month" selected="selected">Month</option>
+    <option value="/calendar-field_date/week">Week</option>
+    <option value="/calendar-field_date/day">Day</option>
+</select>

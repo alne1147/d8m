@@ -8,10 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
-    - paragraphs.paragraphs_type.full_column_hero
     - paragraphs.paragraphs_type.row_slide_container
-    - paragraphs.paragraphs_type.row_three_column_hero
-    - paragraphs.paragraphs_type.row_two_column_hero
   module:
     - entity_reference_revisions
 id: node.page.field_rows
@@ -27,80 +24,90 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
-      bp_accordion: bp_accordion
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_columns_three_uneven: bp_columns_three_uneven
-      full_column_hero: full_column_hero
-      row_two_column_hero: row_two_column_hero
-      row_three_column_hero: row_three_column_hero
+      bp_accordion: bp_accordion
       row_slide_container: row_slide_container
     target_bundles_drag_drop:
-      bp_accordion:
-        enabled: true
-        weight: -39
       bp_accordion_section:
-        weight: -38
+        weight: -49
         enabled: false
       bp_blank:
-        weight: -37
+        weight: -48
         enabled: false
       bp_block:
-        weight: -36
+        weight: -47
         enabled: false
       bp_carousel:
-        weight: -35
+        weight: -46
         enabled: false
       bp_columns:
         enabled: true
-        weight: -34
+        weight: -45
       bp_columns_two_uneven:
         enabled: true
-        weight: -33
+        weight: -44
       bp_columns_three_uneven:
         enabled: true
-        weight: -32
+        weight: -43
       bp_contact:
-        weight: -31
+        weight: -42
         enabled: false
       bp_image:
-        weight: -30
+        weight: -41
         enabled: false
       bp_modal:
-        weight: -29
+        weight: -40
         enabled: false
+      bp_accordion:
+        enabled: true
+        weight: -39
       bp_simple:
-        weight: -28
+        weight: -38
         enabled: false
       bp_tab_section:
-        weight: -27
+        weight: -37
         enabled: false
       bp_tabs:
-        weight: -26
+        weight: -36
         enabled: false
       bp_view:
-        weight: -25
+        weight: -35
         enabled: false
       card_basic:
-        weight: -24
+        weight: -34
         enabled: false
       full_column_hero:
-        enabled: true
-        weight: -23
+        weight: -33
+        enabled: false
       row_two_column_hero:
-        enabled: true
-        weight: -22
+        weight: -32
+        enabled: false
       row_three_column_hero:
-        enabled: true
-        weight: -21
+        weight: -31
+        enabled: false
       bp_column_wrapper:
-        weight: 30
+        weight: -30
         enabled: false
       row_slide_container:
         enabled: true
-        weight: 38
+        weight: -29
       card_open_embed:
-        weight: 40
+        weight: -28
+        enabled: false
+      card_map:
+        weight: -27
+        enabled: false
+      mini_calendar:
+        weight: -26
+        enabled: false
+      section_body:
+        weight: 51
+        enabled: false
+      views:
+        weight: 52
         enabled: false
 field_type: entity_reference_revisions

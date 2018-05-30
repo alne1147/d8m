@@ -10,7 +10,7 @@ id: paragraph.card_basic.field_alignment
 field_name: field_alignment
 entity_type: paragraph
 bundle: card_basic
-label: Alignment
+label: 'Card Alignment'
 description: ''
 required: false
 translatable: false

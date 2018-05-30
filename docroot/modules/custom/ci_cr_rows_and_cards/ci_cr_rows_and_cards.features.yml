@@ -152,6 +152,7 @@ required:
   - field.storage.paragraph.field_row_background_image
   - field.storage.paragraph.field_row_title
   - field.storage.paragraph.field_title_color
+  - field.storage.block_content.field_view_field
   - image.style.carousel_images
   - image.style.max_1920
   - paragraphs.paragraphs_type.bp_accordion
