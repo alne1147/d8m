@@ -24,28 +24,22 @@ drush @sites  user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-
 
 #// Revert Features
 
-drush @sites  features-import-all -y
+drush @sites  features-import-all -y;
 
 
-drush @sites  en ci_article_setup -y
+drush @sites  en ci_article_setup -y;
 
+drush @sites -y config-set system.performance css.preprocess 0;
+drush @sites -y config-set system.performance js.preprocess 0;
 
-drush @sites  php-eval 'node_access_rebuild()'
+drush @sites cim --partial sync --y;
+drush @sites en ci_blocks -y;
+drush @sites -y dcdi -1;
+drush @sites features-import-all -y;
 
-drush @sites -y config-set system.performance css.preprocess 0
-drush @sites -y config-set system.performance js.preprocess 0
+# Some need special attention
 
-echo "
+drush @sites fr block_visibility_config --y
+drush @sites fr ci_ct_content_types --y
 
-//////// FINAL STEPS! ////////
-
-MUST BE DONE FROM LOCAL - Drush Aliases must be up to date!
-
-- Import a partial config for permission validation.
-
-drush @ag.dev cim  --partial; drush @dhsem.dev cim  --partial; drush @cdle.dev cim --partial;drush @cdps.dev cim --partial;drush @ci.dev cim --partial;drush @dola.dev cim --partial;drush @dora.dev cim --partial;drush @dpa.dev cim --partial;drush @estes.dev cim --partial;drush @hcpf.dev cim --partial;drush @revenue.dev cim --partial;drush @sipa.dev cim --partial;drush @slb.dev cim --partial;drush @cdphe.dev cim --partial;
-
-Run these on Acquia SSH
-drush @sites en ci_blocks -y
-drush @sites -y dcdi -1
-drush @sites features-import-all -y "
+echo "That's the end of the D8M install script!"

@@ -1,1 +1,4 @@
+excluded:
+  - block.block.viewnavigation
+  - system.menu.view-navigation
 required: true

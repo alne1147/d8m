@@ -14,9 +14,11 @@ dependencies:
   - ctools
   - datetime
   - datetime_range
+  - entity_browser_entity_form
   - entity_reference_revisions
   - field
   - field_group
+  - inline_entity_form
   - menu_condition
   - menu_ui
   - node

@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_carousel
     - paragraphs.paragraphs_type.bp_columns
-    - paragraphs.paragraphs_type.bp_image
     - paragraphs.paragraphs_type.bp_modal
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
@@ -37,7 +36,6 @@ settings:
       card_open_embed: card_open_embed
       bp_tabs: bp_tabs
       bp_view: bp_view
-      bp_image: bp_image
       card_map: card_map
     target_bundles_drag_drop:
       bp_simple:
@@ -83,8 +81,8 @@ settings:
         enabled: true
         weight: -32
       bp_image:
-        enabled: true
         weight: -31
+        enabled: false
       bp_accordion_section:
         weight: -30
         enabled: false
@@ -111,5 +109,11 @@ settings:
         weight: 42
       mini_calendar:
         weight: 45
+        enabled: false
+      section_body:
+        weight: 51
+        enabled: false
+      views:
+        weight: 52
         enabled: false
 field_type: entity_reference_revisions

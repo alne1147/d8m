@@ -773,13 +773,5 @@ $config['system.site']['name'] = 'Department of Agriculture';
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_ag_colorado_gov.inc')) {
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_ag_colorado_gov.inc';
 }
-// </DDSETTINGS>
 
-
-$config['acquia_search.settings']['connection_override'] = [
-    'scheme' => 'https',
-    'port' => 443,
-    'host' => 'useast1-c26.acquia-search.com',
-    'index_id' => 'CDIY-145117.dev.agcoloradogov',
-    'derived_key' => '781ecf80727eb2417d3ae500c5d5a16c1011dddb',
-];
+$settings['memcache']['stampede_protection'] = TRUE;

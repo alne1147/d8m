@@ -66,18 +66,12 @@ third_party_settings:
       weight: 4
       format_type: details
       format_settings:
+        label: 'Rows and Cards'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
-        element: div
-        show_label: false
-        label_element: h3
-        effect: none
-        speed: fast
-        attributes: ''
         open: false
-      label: 'Layout Options'
+      label: 'Rows and Cards'
       region: content
 id: node.article.default
 targetEntityType: node
@@ -201,5 +195,8 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
 hidden:
   field_page_options: true

@@ -35,10 +35,10 @@ settings:
       tokenized: Location
     atc_organizer:
       field: token
-      tokenized: 'Department of Local Affairs'
+      tokenized: '[site:name]'
     atc_organizer_email:
       field: token
-      tokenized: no-reply@www.colorado.gov
+      tokenized: '[site:mail]'
     atc_date_start:
       field: field_date
       tokenized: ''

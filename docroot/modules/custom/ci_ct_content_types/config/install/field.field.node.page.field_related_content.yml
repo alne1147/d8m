@@ -9,7 +9,7 @@ id: node.page.field_related_content
 field_name: field_related_content
 entity_type: node
 bundle: page
-label: 'Related Content'
+label: Options
 description: ''
 required: false
 translatable: true

@@ -6,9 +6,13 @@ dependencies:
   - block_content
   - block_styles
   - ci_cr_rows_and_cards
+  - ci_ct_content_types
   - content_moderation
   - entity_reference_revisions
   - field
+  - options
   - paragraphs
   - simple_gmap
   - text
+  - user
+  - viewsreference
