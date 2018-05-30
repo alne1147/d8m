@@ -1,9 +1,0 @@
-uuid: f1f7af66-9796-4611-8f64-17234ac7240a
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: kYp61zu2DkdYjqzSNoF02IJ4JDFPtCFkzLWKzkZCQu4
-id: layout_one_third_column
-label: 'Layout: One third column'
-classes: flex-grid__3-grid-col
