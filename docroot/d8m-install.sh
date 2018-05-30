@@ -38,7 +38,7 @@ drush user-add-role administrator ci-amarshall --y;
 
 drush -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
 
-drush en ci_article_setup --y;
+drush  en ci_article_setup --y;
 drush en ci_media_types -y;
 drush en ci_admin_tweaks --y;
 drush en ci_theme_options --y;
