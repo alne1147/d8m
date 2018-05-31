@@ -24,7 +24,7 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
-font-awesome:
-  css:
-    theme:
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }
+#font-awesome:
+#  css:
+#    theme:
+#      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

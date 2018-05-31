@@ -29,7 +29,7 @@ regions:
 libraries:
   - 'ci_xy/global-styling'
   - 'ci_xy/bootstrap-scripts'
-  - 'ci_xy/font-awesome'
+#  - 'ci_xy/font-awesome'
 
 libraries-override:
   ckeditor_accordion/accordion_style:

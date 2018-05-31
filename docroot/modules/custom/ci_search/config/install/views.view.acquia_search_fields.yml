@@ -62,7 +62,7 @@ display:
             first: '« First'
             last: 'Last »'
           expose:
-            items_per_page: true
+            items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '2,5, 10, 25, 50'
             items_per_page_options_all: false
@@ -857,6 +857,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -905,6 +908,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1466,7 +1472,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: ''
+            label: 'Start Date'
             description: ''
             use_operator: false
             operator: created_op
@@ -1484,6 +1490,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1514,7 +1523,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: ''
+            label: 'End Date'
             description: ''
             use_operator: false
             operator: created_1_op
@@ -1532,18 +1541,24 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Authored on'
+            description: null
+            identifier: created_1
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
           plugin_id: search_api_date
         field_article_tags:
           id: field_article_tags
@@ -1679,8 +1694,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: promoted-search
-            format_custom_false: ommited
+            format_custom_true: 'search-page search-page__result--promoted'
+            format_custom_false: 'search-page search-page__result--omitted'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1990,7 +2005,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>{{ title }}</h2>\n<div class=\"bodyContent\">{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"related-tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-page__result search-result--content\">\n<h3>{{ title }}</h3>\n<p>{{ body }}</p>\n<p>{{ search_api_excerpt }}</p>\n</div>\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false

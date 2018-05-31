@@ -72,24 +72,33 @@
 
                         </div>
                     </div>
-                    <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i>
+                    <div class="header__search">
+                        <i class="header__search--icon" tabindex="0" role="button" aria-label="Search icon toggles the search input field."></i>
                     </div>
                 </div>
             </div>
         </div>
-        <form class="s" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8">
-
-
-            <input data-drupal-selector="edit-search" class="sb" type="text" id="edit-search" name="search" />
-
-
-
-            <button data-drupal-selector="edit-submit-acquia-search-fields" class="button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
-            </button>
-
-
-        </form>
     </header>
+  {# Seaarch #}
+    <div class="search">
+        <div class="container">
+            <div class="row">
+                <form class="search__form" role="search" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="edit-search">Search</label>
+                                <input data-drupal-selector="edit-search" class="search__form--input" type="text" id="edit-search" name="search"/>
+                                <div class="input-group-btn">
+                                    <button data-drupal-selector="edit-submit-acquia-search-fields" class="search__form--button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name=""><i class="icon glyphicon glyphicon-search" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {{ page.search }}
 {# Jumbotron #}
