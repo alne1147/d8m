@@ -1,0 +1,45 @@
+uuid: a6aedb67-46f2-4785-8950-f88fa9903df7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use advanced search'
+  - 'use exclude node title'
+  - 'use text format d8m_text_editor'
+  - 'view media'
+  - 'view paragraph content bp_accordion'
+  - 'view paragraph content bp_accordion_section'
+  - 'view paragraph content bp_block'
+  - 'view paragraph content bp_carousel'
+  - 'view paragraph content bp_columns'
+  - 'view paragraph content bp_columns_three_uneven'
+  - 'view paragraph content bp_columns_two_uneven'
+  - 'view paragraph content bp_contact'
+  - 'view paragraph content bp_image'
+  - 'view paragraph content bp_modal'
+  - 'view paragraph content bp_tab_section'
+  - 'view paragraph content bp_tabs'
+  - 'view paragraph content bp_view'
+  - 'view paragraph content card_basic'
+  - 'view paragraph content card_map'
+  - 'view paragraph content card_open_embed'
+  - 'view paragraph content full_column_hero'
+  - 'view paragraph content mini_calendar'
+  - 'view paragraph content row_slide_container'
+  - 'view paragraph content row_three_column_hero'
+  - 'view paragraph content row_two_column_hero'
+  - 'view paragraph content section_body'
+  - 'view the administration theme'
