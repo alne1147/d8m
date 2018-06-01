@@ -1,0 +1,48 @@
+uuid: c8045067-3b20-4400-8b07-88258782794f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:views_reference_block:53a51a1b-e9cc-400b-a4ff-4fc640572154'
+  module:
+    - block_class
+    - block_content
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: viewreferenceblock
+theme: ci_xy
+region: block_reserve
+weight: 0
+provider: null
+plugin: 'block_content:53a51a1b-e9cc-400b-a4ff-4fc640572154'
+settings:
+  id: 'block_content:53a51a1b-e9cc-400b-a4ff-4fc640572154'
+  label: 'View Reference Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'

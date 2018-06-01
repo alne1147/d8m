@@ -1,8 +1,9 @@
-uuid: 165e5315-c01e-4f62-9301-1b8a4be79e96
+uuid: 255e0743-8a9e-4bf7-8323-cd15f351d710
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.rss
     - field.storage.node.body
     - field.storage.node.field_article_type
     - node.type.article
@@ -381,18 +382,7 @@ display:
           granularity: second
       title: 'Recent Articles'
       header: {  }
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          content: '<a href="feed">[site:url]taxonomy/{{termfield_article_type}}feed</a>'
-          plugin_id: text_custom
+      footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
@@ -405,6 +395,96 @@ display:
         - 'languages:language_interface'
         - url
         - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_article_type'
+  feed_1:
+    display_plugin: feed
+    id: feed_1
+    display_title: Feed
+    position: 2
+    display_options:
+      display_extenders: {  }
+      row:
+        type: node_rss
+        options:
+          relationship: none
+          view_mode: rss
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: article-feed.xnl
+      pager:
+        type: some
+        options:
+          items_per_page: 0
+          offset: 0
+      displays:
+        default: default
+        ref_nodes: ref_nodes
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:

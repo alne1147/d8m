@@ -33,6 +33,18 @@
             "target_id": "simple_maps"
         }
     ],
+    "revision_created": [
+        {
+            "value": "2017-06-22T17:27:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "info": [
         {
             "value": "A Simple Map Example",
@@ -43,12 +55,6 @@
         {
             "value": "2017-06-22T17:27:23+00:00",
             "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ],
-    "revision_created": [
-        {
-            "value": "2017-06-22T17:27:23+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -67,7 +73,8 @@
     "metatag": [
         {
             "value": {
-                "title": "| CI Drupal 8"
+                "title": "| CI Drupal 8",
+                "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
     ],

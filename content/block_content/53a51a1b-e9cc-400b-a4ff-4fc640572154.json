@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/42?_format=hal_json"
+            "href": "http:\/\/default\/block\/44?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/views_reference_block"
@@ -14,17 +14,17 @@
     },
     "id": [
         {
-            "value": 42
+            "value": 44
         }
     ],
     "uuid": [
         {
-            "value": "132885ae-ae95-48f5-b5f1-ac35fec3a248"
+            "value": "53a51a1b-e9cc-400b-a4ff-4fc640572154"
         }
     ],
     "revision_id": [
         {
-            "value": 42
+            "value": 45
         }
     ],
     "langcode": [
@@ -40,7 +40,7 @@
     ],
     "revision_created": [
         {
-            "value": "2018-05-31T21:45:50+00:00",
+            "value": "2018-06-01T16:19:06+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "b2fd72dd-ab46-41d4-bf59-12e24003c4a5"
+                        "value": "4d0b77a1-576b-42bb-aec2-50704351866a"
                     }
                 ]
             }
@@ -71,13 +71,13 @@
     ],
     "info": [
         {
-            "value": "Reference of Recent Content",
+            "value": "View Reference Block",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "2018-05-31T21:45:50+00:00",
+            "value": "2018-06-01T16:19:06+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }

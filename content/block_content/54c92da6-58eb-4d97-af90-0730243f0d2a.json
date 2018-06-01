@@ -38,6 +38,18 @@
             "target_id": "row_block"
         }
     ],
+    "revision_created": [
+        {
+            "value": "2018-01-09T17:28:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "info": [
         {
             "value": "Block - Alternate Footer",
@@ -48,12 +60,6 @@
         {
             "value": "2018-01-09T18:06:10+00:00",
             "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ],
-    "revision_created": [
-        {
-            "value": "2018-01-09T17:28:32+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -72,7 +78,8 @@
     "metatag": [
         {
             "value": {
-                "title": "| CI Drupal 8"
+                "title": "| CI Drupal 8",
+                "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
     ],
