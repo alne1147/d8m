@@ -1,0 +1,94 @@
+uuid: 0d6a7f0b-855c-4204-8715-b6359db36583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_carousel.bp_background
+    - field.field.paragraph.bp_carousel.bp_slide_content
+    - field.field.paragraph.bp_carousel.bp_slide_interval
+    - field.field.paragraph.bp_carousel.bp_width
+    - paragraphs.paragraphs_type.bp_carousel
+  module:
+    - content_moderation
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_card_carousel_edit:
+      children:
+        - group_slide_control
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Card Carousel Edit'
+      region: content
+    group_color:
+      children:
+        - bp_background
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Color
+      region: hidden
+    group_slide_control:
+      children:
+        - bp_slide_interval
+      parent_name: group_card_carousel_edit
+      weight: 21
+      format_type: tab
+      format_settings:
+        label: Interval
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Interval
+      region: content
+_core:
+  default_config_hash: VM2-v4lCqhNA7pfcql-iEyt7O9WwxXkSgTd8cvTR51o
+id: paragraph.bp_carousel.default
+targetEntityType: paragraph
+bundle: bp_carousel
+mode: default
+content:
+  bp_slide_content:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: bp_image
+    third_party_settings: {  }
+    region: content
+  bp_slide_interval:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 2
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  bp_background: true
+  bp_width: true
+  created: true
+  status: true
+  uid: true

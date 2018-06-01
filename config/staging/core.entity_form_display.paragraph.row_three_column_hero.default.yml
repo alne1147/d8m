@@ -1,0 +1,109 @@
+uuid: d310f9c1-4460-4203-a08f-877e624dbf2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row_three_column_hero.bp_background
+    - field.field.paragraph.row_three_column_hero.bp_column_content_3
+    - field.field.paragraph.row_three_column_hero.bp_column_style_3
+    - field.field.paragraph.row_three_column_hero.field_row_background_image
+    - image.style.crop_thumbnail
+    - paragraphs.paragraphs_type.row_three_column_hero
+  module:
+    - content_moderation
+    - field_group
+    - image_widget_crop
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_row_three_column_hero_opti:
+      children:
+        - group_col
+        - group_background_image
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Row - Three Column Hero - Options'
+      region: content
+    group_background_image:
+      children:
+        - field_row_background_image
+      parent_name: group_row_three_column_hero_opti
+      weight: 11
+      format_type: tab
+      format_settings:
+        label: Image
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Image
+      region: content
+    group_col:
+      children:
+        - bp_column_style_3
+      parent_name: group_row_three_column_hero_opti
+      weight: 9
+      format_type: tab
+      format_settings:
+        label: Columns
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Columns
+      region: content
+id: paragraph.row_three_column_hero.default
+targetEntityType: paragraph
+bundle: row_three_column_hero
+mode: default
+content:
+  bp_column_content_3:
+    weight: 4
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  bp_column_style_3:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_row_background_image:
+    weight: 8
+    settings:
+      show_default_crop: true
+      preview_image_style: crop_thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero_cropping
+      progress_indicator: throbber
+      show_crop_area: false
+      warn_multiple_usages: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 5
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  bp_background: true
+  created: true
+  status: true
+  uid: true
