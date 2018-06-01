@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
-    - paragraphs.paragraphs_type.card_map
     - paragraphs.paragraphs_type.full_column_hero
     - paragraphs.paragraphs_type.row_slide_container
     - paragraphs.paragraphs_type.row_three_column_hero
@@ -35,7 +34,6 @@ settings:
       full_column_hero: full_column_hero
       row_two_column_hero: row_two_column_hero
       row_three_column_hero: row_three_column_hero
-      card_map: card_map
     target_bundles_drag_drop:
       card_basic:
         weight: -43
@@ -101,12 +99,15 @@ settings:
         weight: -23
         enabled: false
       card_map:
-        enabled: true
         weight: 42
+        enabled: false
       card_open_embed:
         weight: 43
         enabled: false
       mini_calendar:
         weight: 45
+        enabled: false
+      section_body:
+        weight: 50
         enabled: false
 field_type: entity_reference_revisions

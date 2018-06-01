@@ -11,7 +11,6 @@ dependencies:
     - responsive_image.styles.carousel_responsive
   module:
     - link
-    - options
     - responsive_image
 _core:
   default_config_hash: f1qcyZTh1nWCN2Sk7I1xwTOhucQDBgnWOUBoF3T94Xk
@@ -20,15 +19,8 @@ targetEntityType: paragraph
 bundle: bp_image
 mode: default
 content:
-  bp_background:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   bp_image_field:
-    weight: 2
+    weight: 0
     label: hidden
     settings:
       responsive_image_style: carousel_responsive
@@ -37,7 +29,7 @@ content:
     type: responsive_image
     region: content
   bp_link:
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       trim_length: null
@@ -48,13 +40,8 @@ content:
     third_party_settings: {  }
     type: link_separate
     region: content
-  bp_width:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
 hidden:
+  bp_background: true
+  bp_width: true
   created: true
   uid: true

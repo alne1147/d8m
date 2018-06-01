@@ -54,11 +54,11 @@ content:
     region: content
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
   field_date_time_range:
     weight: 1
-    label: inline
+    label: above
     settings:
       timezone_override: ''
       format_type: long

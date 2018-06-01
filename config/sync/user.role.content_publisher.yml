@@ -71,4 +71,5 @@ permissions:
   - 'view paragraph content bp_image'
   - 'view paragraph content bp_modal'
   - 'view paragraph content bp_simple'
+  - 'view paragraph content mini_calendar'
   - 'view webform submissions own node'

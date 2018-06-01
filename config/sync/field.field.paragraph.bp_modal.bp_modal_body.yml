@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_modal_body
-    - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_modal
-    - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
   module:
     - entity_reference_revisions
@@ -25,20 +23,19 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       card_basic: card_basic
-      bp_block: bp_block
-      bp_view: bp_view
     target_bundles_drag_drop:
       card_basic:
         enabled: true
         weight: -39
       bp_block:
-        enabled: true
         weight: -38
+        enabled: false
       bp_view:
-        enabled: true
         weight: -37
+        enabled: false
       bp_simple:
         weight: -36
         enabled: false
@@ -86,5 +83,23 @@ settings:
         enabled: false
       row_two_column_hero:
         weight: -21
+        enabled: false
+      bp_column_wrapper:
+        weight: 31
+        enabled: false
+      card_map:
+        weight: 43
+        enabled: false
+      card_open_embed:
+        weight: 44
+        enabled: false
+      mini_calendar:
+        weight: 46
+        enabled: false
+      row_slide_container:
+        weight: 47
+        enabled: false
+      section_body:
+        weight: 50
         enabled: false
 field_type: entity_reference_revisions

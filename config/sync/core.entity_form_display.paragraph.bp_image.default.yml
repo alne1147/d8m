@@ -18,7 +18,6 @@ third_party_settings:
   field_group:
     group_slide_content_edit:
       children:
-        - group_slide_color
         - group_image
         - group_link
       parent_name: ''
@@ -33,17 +32,18 @@ third_party_settings:
     group_slide_color:
       children:
         - bp_background
-      parent_name: group_slide_content_edit
-      weight: 4
+      parent_name: ''
+      weight: 3
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
-        formatter: open
+        label: Color
+        formatter: closed
         description: ''
         required_fields: true
+        id: ''
+        classes: ''
       label: Color
-      region: content
+      region: hidden
     group_image:
       children:
         - bp_image_field
@@ -51,18 +51,19 @@ third_party_settings:
       weight: 5
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
+        label: Image
+        formatter: open
         description: ''
         required_fields: true
+        id: ''
+        classes: ''
       label: Image
       region: content
     group_link:
       children:
         - bp_link
       parent_name: group_slide_content_edit
-      weight: 6
+      weight: 7
       format_type: tab
       format_settings:
         id: ''
@@ -79,12 +80,6 @@ targetEntityType: paragraph
 bundle: bp_image
 mode: default
 content:
-  bp_background:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_image_field:
     weight: 2
     settings:
@@ -103,11 +98,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 4
+    weight: 1
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   bp_width: true
   created: true
   status: true

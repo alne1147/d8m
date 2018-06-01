@@ -19,7 +19,6 @@ third_party_settings:
     group_row_three_column_hero_opti:
       children:
         - group_col
-        - group_color
         - group_background_image
       parent_name: ''
       weight: 0
@@ -37,12 +36,13 @@ third_party_settings:
       weight: 11
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: Image
         formatter: closed
         description: ''
         required_fields: true
-      label: 'Background Image'
+        id: ''
+        classes: ''
+      label: Image
       region: content
     group_col:
       children:

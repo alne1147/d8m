@@ -32,13 +32,13 @@ third_party_settings:
       weight: 1
       format_type: tab
       format_settings:
-        label: Name
+        label: Title
         formatter: open
         description: ''
         required_fields: true
         id: ''
         classes: ''
-      label: Name
+      label: Title
       region: content
     group_body:
       children:

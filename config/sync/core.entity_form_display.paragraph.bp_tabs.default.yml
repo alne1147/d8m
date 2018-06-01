@@ -16,15 +16,29 @@ third_party_settings:
     group_color:
       children:
         - bp_background
+      parent_name: group_card_tab_edit
+      weight: 1
+      format_type: tab
+      format_settings:
+        label: Color
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Color
+      region: content
+    group_card_tab_edit:
+      children:
+        - group_color
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: tabs
       format_settings:
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
-      label: Color
+        direction: horizontal
+      label: 'Card - Tab - Edit'
       region: content
 _core:
   default_config_hash: Bk3XwJh637yaOtKWqivmcQQBa_YwjWPyqkXjZV5bnLs

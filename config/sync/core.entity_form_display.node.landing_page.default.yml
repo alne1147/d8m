@@ -25,6 +25,7 @@ dependencies:
     - metatag
     - paragraphs
     - path
+    - scheduler
 third_party_settings:
   field_group:
     group_landing_page_options:
@@ -64,7 +65,7 @@ third_party_settings:
         - group_display
         - group_search_tab
       parent_name: ''
-      weight: 5
+      weight: 3
       format_type: tabs
       format_settings:
         label: 'Landing Page- Options'
@@ -305,7 +306,7 @@ content:
     type: options_select
     region: content
   field_meta:
-    weight: 6
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -331,44 +332,32 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 7
+    weight: 5
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 2
-    region: content
-    third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 20
+    weight: 8
     region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -390,14 +379,16 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 30
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_meta_tags: true
+  promote: true
+  sticky: true

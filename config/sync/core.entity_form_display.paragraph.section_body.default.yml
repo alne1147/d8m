@@ -15,15 +15,28 @@ third_party_settings:
     group_color:
       children:
         - bp_background
-      parent_name: ''
-      weight: 0
-      format_type: fieldset
+      parent_name: group_row_accordion_section_cont
+      weight: 1
+      format_type: tab
       format_settings:
         id: ''
         classes: ''
         description: ''
         required_fields: true
+        formatter: closed
       label: Color
+      region: content
+    group_row_accordion_section_cont:
+      children:
+        - group_color
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Row - Accordion Section Content - Options'
       region: content
 id: paragraph.section_body.default
 targetEntityType: paragraph

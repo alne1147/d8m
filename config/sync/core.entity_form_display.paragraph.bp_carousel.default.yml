@@ -16,7 +16,6 @@ third_party_settings:
   field_group:
     group_card_carousel_edit:
       children:
-        - group_color
         - group_slide_control
       parent_name: ''
       weight: 0
@@ -30,8 +29,8 @@ third_party_settings:
     group_color:
       children:
         - bp_background
-      parent_name: group_card_carousel_edit
-      weight: 20
+      parent_name: ''
+      weight: 5
       format_type: tab
       format_settings:
         id: ''
@@ -40,7 +39,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Color
-      region: content
+      region: hidden
     group_slide_control:
       children:
         - bp_slide_interval
@@ -48,12 +47,13 @@ third_party_settings:
       weight: 21
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: Interval
         formatter: closed
         description: ''
         required_fields: true
-      label: 'Slide Control'
+        id: ''
+        classes: ''
+      label: Interval
       region: content
 _core:
   default_config_hash: VM2-v4lCqhNA7pfcql-iEyt7O9WwxXkSgTd8cvTR51o
@@ -62,15 +62,9 @@ targetEntityType: paragraph
 bundle: bp_carousel
 mode: default
 content:
-  bp_background:
-    weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_slide_content:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 1
     settings:
       title: Card
       title_plural: Cards
@@ -88,11 +82,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 4
+    weight: 2
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   bp_width: true
   created: true
   status: true

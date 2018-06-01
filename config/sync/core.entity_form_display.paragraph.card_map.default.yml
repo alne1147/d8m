@@ -15,6 +15,7 @@ third_party_settings:
   field_group:
     group_map_card_edit:
       children:
+        - group_map_location
         - group_title
         - group_color
       parent_name: ''
@@ -30,7 +31,7 @@ third_party_settings:
       children:
         - field_card_title
       parent_name: group_map_card_edit
-      weight: 6
+      weight: 21
       format_type: tab
       format_settings:
         id: ''
@@ -45,7 +46,7 @@ third_party_settings:
         - field_title_color
         - bp_background
       parent_name: group_map_card_edit
-      weight: 7
+      weight: 22
       format_type: tab
       format_settings:
         id: ''
@@ -54,6 +55,21 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Color
+      region: content
+    group_map_location:
+      children:
+        - field_location
+      parent_name: group_map_card_edit
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: Location
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Location
       region: content
 id: paragraph.card_map.default
 targetEntityType: paragraph
