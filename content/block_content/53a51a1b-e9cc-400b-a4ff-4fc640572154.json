@@ -5,7 +5,12 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/views_reference_block"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/views_reference_block\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
     },
     "id": [
         {
@@ -19,7 +24,7 @@
     ],
     "revision_id": [
         {
-            "value": 45
+            "value": 46
         }
     ],
     "langcode": [
@@ -35,10 +40,29 @@
     ],
     "revision_created": [
         {
-            "value": "2018-06-01T16:19:06+00:00",
+            "value": "2018-06-01T16:51:19+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/views_reference_block\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "73125134-b761-4393-beda-6f492383165b"
+                    }
+                ]
+            }
+        ]
+    },
     "status": [
         {
             "value": true,
@@ -53,7 +77,7 @@
     ],
     "changed": [
         {
-            "value": "2018-06-01T16:35:21+00:00",
+            "value": "2018-06-01T16:51:19+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -81,7 +105,7 @@
     "field_view_field": [
         {
             "target_id": "references_recent_nodes",
-            "display_id": "ref_nodes",
+            "display_id": "default",
             "argument": null,
             "title": "0",
             "data": null
