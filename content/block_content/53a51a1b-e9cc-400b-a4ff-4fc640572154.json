@@ -5,12 +5,7 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/views_reference_block"
-        },
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/views_reference_block\/revision_user": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ]
+        }
     },
     "id": [
         {
@@ -44,25 +39,6 @@
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/block_content\/views_reference_block\/revision_user": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "4d0b77a1-576b-42bb-aec2-50704351866a"
-                    }
-                ]
-            }
-        ]
-    },
     "status": [
         {
             "value": true,
@@ -77,7 +53,7 @@
     ],
     "changed": [
         {
-            "value": "2018-06-01T16:19:06+00:00",
+            "value": "2018-06-01T16:35:21+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
