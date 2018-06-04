@@ -15,484 +15,484 @@ settings:
   allowed_values:
     -
       value: 'paragraph--color color__brand-green--strong'
-      label: 'Brand Colorado Green strong'
+      label: 'Green - 100%'
     -
       value: 'paragraph--color color__brand-green--light'
-      label: 'Brand Colorado Green light'
+      label: 'Green - 50%'
     -
       value: 'paragraph--color color__brand-green--slight'
-      label: 'Brand Colorado Green slight'
+      label: 'Green - 25%'
     -
       value: 'paragraph--color color__brand-slate--strong'
-      label: 'Brand Colorado Slate strong'
+      label: 'Slate - 100%'
     -
       value: 'paragraph--color color__brand-slate--light'
-      label: 'Brand Colorado Slate light'
+      label: 'Slate - 50%'
     -
       value: 'paragraph--color color__brand-slate--slight'
-      label: 'Brand Colorado Slate slight'
+      label: 'Slate - 25%'
     -
       value: 'paragraph--color color__brand-silver--strong'
-      label: 'Brand Colorado Silver strong'
+      label: 'Silver - 100%'
     -
       value: 'paragraph--color color__brand-silver--light'
-      label: 'Brand Colorado Silver light'
+      label: 'Silver - 50%'
     -
       value: 'paragraph--color color__brand-silver--slight'
-      label: 'Brand Colorado Silver slight'
+      label: 'Silver - 25%'
     -
       value: 'paragraph--color color__brand-orange--strong'
-      label: 'Brand Colorado Orange strong'
+      label: 'Orange - 100%'
     -
       value: 'paragraph--color color__brand-orange--light'
-      label: 'Brand Colorado Orange light'
+      label: 'Orange - 50%'
     -
       value: 'paragraph--color color__brand-orange--slight'
-      label: 'Brand Colorado Orange slight'
+      label: 'Orange - 25%'
     -
       value: 'paragraph--color color__brand-brown--strong'
-      label: 'Brand Colorado Brown strong'
+      label: 'Brown - 100%'
     -
       value: 'paragraph--color color__brand-brown--light'
-      label: 'Brand Colorado Brown light'
+      label: 'Brown - 50%'
     -
       value: 'paragraph--color color__brand-brown--slight'
-      label: 'Brand Colorado Brown slight'
+      label: 'Brown - 25%'
     -
       value: 'paragraph--color color__brand-blue--strong'
-      label: 'Brand Colorado Blue strong'
+      label: 'Blue - 100%'
     -
       value: 'paragraph--color color__brand-blue--light'
-      label: 'Brand Colorado Blue light'
+      label: 'Blue - 50%'
     -
       value: 'paragraph--color color__brand-blue--slight'
-      label: 'Brand Colorado Blue slight'
+      label: 'Blue - 25%'
     -
       value: 'paragraph--color color__white--strong'
-      label: 'Brand Colorado White strong'
+      label: 'White - 100%'
     -
       value: 'paragraph--color color__white--light'
-      label: 'Brand Colorado White light'
+      label: 'White - 50%'
     -
       value: 'paragraph--color color__white--slight'
-      label: 'Brand Colorado White slight'
+      label: 'White - 25%'
     -
       value: 'paragraph--color color__black--strong'
-      label: 'Brand Colorado Black strong'
+      label: 'Black - 100%'
     -
       value: 'paragraph--color color__black--light'
-      label: 'Brand Colorado Black light'
+      label: 'Black - 50%'
     -
       value: 'paragraph--color color__black--slight'
-      label: 'Brand Colorado Black slight'
+      label: 'Black - 25%'
     -
       value: 'paragraph--color color__evening--strong'
-      label: 'Brand Colorado Evening strong'
+      label: 'Evening - 100%'
     -
       value: 'paragraph--color color__evening--light'
-      label: 'Brand Colorado Evening light'
+      label: 'Evening - 50%'
     -
       value: 'paragraph--color color__evening--slight'
-      label: 'Brand Colorado Evening slight'
+      label: 'Evening - 25%'
     -
       value: 'paragraph--color color__charcoal--strong'
-      label: 'Brand Colorado Charcoal strong'
+      label: 'Charcoal - 100%'
     -
       value: 'paragraph--color color__charcoal--light'
-      label: 'Brand Colorado Charcoal light'
+      label: 'Charcoal - 50%'
     -
       value: 'paragraph--color color__charcoal--slight'
-      label: 'Brand Colorado Charcoal slight'
+      label: 'Charcoal - 25%'
     -
       value: 'paragraph--color color__blackboard--strong'
-      label: 'Brand Colorado Blackboard strong'
+      label: 'Blackboard - 100%'
     -
       value: 'paragraph--color color__blackboard--light'
-      label: 'Brand Colorado Blackboard light'
+      label: 'Blackboard - 50%'
     -
       value: 'paragraph--color color__blackboard--slight'
-      label: 'Brand Colorado Blackboard slight'
+      label: 'Blackboard - 25%'
     -
       value: 'paragraph--color color__grey-sand--strong'
-      label: 'Brand Colorado Grey Sand strong'
+      label: 'Grey Sand - 100%'
     -
       value: 'paragraph--color color__grey-sand--light'
-      label: 'Brand Colorado Grey Sand light'
+      label: 'Grey Sand - 50%'
     -
       value: 'paragraph--color color__grey-sand--slight'
-      label: 'Brand Colorado Grey Sand slight'
+      label: 'Grey Sand - 25%'
     -
       value: 'paragraph--color color__sleek-grey--strong'
-      label: 'Brand Colorado Sleek Grey strong'
+      label: 'Sleek Grey - 100%'
     -
       value: 'paragraph--color color__sleek-grey--light'
-      label: 'Brand Colorado Sleek Grey light'
+      label: 'Sleek Grey - 50%'
     -
       value: 'paragraph--color color__sleek-grey--slight'
-      label: 'Brand Colorado Sleek Grey slight'
+      label: 'Sleek Grey - 25%'
     -
       value: 'paragraph--color color__lemon-grass--strong'
-      label: 'Brand Colorado Lemon Grass strong'
+      label: 'Lemongrass - 100%'
     -
       value: 'paragraph--color color__lemon-grass--light'
-      label: 'Brand Colorado Lemon Grass light'
+      label: 'Lemongrass - 50%'
     -
       value: 'paragraph--color color__lemon-grass--slight'
-      label: 'Brand Colorado Lemon Grass slight'
+      label: 'Lemongrass - 25%'
     -
       value: 'paragraph--color color__walnut--strong'
-      label: 'Brand Colorado Walnut strong'
+      label: 'Walnut - 100%'
     -
       value: 'paragraph--color color__walnut--light'
-      label: 'Brand Colorado Walnut light'
+      label: 'Walnut - 50%'
     -
       value: 'paragraph--color color__walnut--slight'
-      label: 'Brand Colorado Walnut slight'
+      label: 'Walnut - 25%'
     -
       value: 'paragraph--color color__beige--strong'
-      label: 'Brand Colorado Beige strong'
+      label: 'Beige - 100%'
     -
       value: 'paragraph--color color__beige--light'
-      label: 'Brand Colorado Beige light'
+      label: 'Beige - 50%'
     -
       value: 'paragraph--color color__beige--slight'
-      label: 'Brand Colorado Beige slight'
+      label: 'Beige - 25%'
     -
       value: 'paragraph--color color__spice--strong'
-      label: 'Brand Colorado Spice strong'
+      label: 'Spice - 100%'
     -
       value: 'paragraph--color color__spice--light'
-      label: 'Brand Colorado Spice light'
+      label: 'Spice - 50%'
     -
       value: 'paragraph--color color__spice--slight'
-      label: 'Brand Colorado Spice slight'
+      label: 'Spice - 25%'
     -
       value: 'paragraph--color color__brick-red--strong'
-      label: 'Brand Colorado Brick Red strong'
+      label: 'Brick Red - 100%'
     -
       value: 'paragraph--color color__brick-red--light'
-      label: 'Brand Colorado Brick Red light'
+      label: 'Brick Red - 50%'
     -
       value: 'paragraph--color color__brick-red--slight'
-      label: 'Brand Colorado Brick Red slight'
+      label: 'Brick Red - 25%'
     -
       value: 'paragraph--color color__scarlet--strong'
-      label: 'Brand Colorado Scarlet strong'
+      label: 'Scarlet - 100%'
     -
       value: 'paragraph--color color__scarlet--light'
-      label: 'Brand Colorado Scarlet light'
+      label: 'Scarlet - 50%'
     -
       value: 'paragraph--color color__scarlet--slight'
-      label: 'Brand Colorado Scarlet slight'
+      label: 'Scarlet - 25%'
     -
       value: 'paragraph--color color__cognac--strong'
-      label: 'Brand Colorado Cognac strong'
+      label: 'Cognac - 100%'
     -
       value: 'paragraph--color color__cognac--light'
-      label: 'Brand Colorado Cognac light'
+      label: 'Cognac - 50%'
     -
       value: 'paragraph--color color__cognac--slight'
-      label: 'Brand Colorado Cognac slight'
+      label: 'Cognac - 25%'
     -
       value: 'paragraph--color color__tiger-orange--strong'
-      label: 'Brand Colorado Tiger Orange strong'
+      label: 'Tiger Orange - 100%'
     -
       value: 'paragraph--color color__tiger-orange--light'
-      label: 'Brand Colorado Tiger Orange light'
+      label: 'Tiger Orange - 50%'
     -
       value: 'paragraph--color color__tiger-orange--slight'
-      label: 'Brand Colorado Tiger Orange slight'
+      label: 'Tiger Orange - 25%'
     -
       value: 'paragraph--color color__wheat--strong'
-      label: 'Brand Colorado Wheat strong'
+      label: 'Wheat - 100%'
     -
       value: 'paragraph--color color__wheat--light'
-      label: 'Brand Colorado Wheat light'
+      label: 'Wheat - 50%'
     -
       value: 'paragraph--color color__wheat--slight'
-      label: 'Brand Colorado Wheat slight'
+      label: 'Wheat - 25%'
     -
       value: 'paragraph--color color__sunflower--strong'
-      label: 'Brand Colorado Sunflower strong'
+      label: 'Sunflower - 100%'
     -
       value: 'paragraph--color color__sunflower--light'
-      label: 'Brand Colorado Sunflower light'
+      label: 'Sunflower - 50%'
     -
       value: 'paragraph--color color__sunflower--slight'
-      label: 'Brand Colorado Sunflower slight'
+      label: 'Sunflower - 25%'
     -
       value: 'paragraph--color color__lemon--strong'
-      label: 'Brand Colorado Lemon strong'
+      label: 'Lemon - 100%'
     -
       value: 'paragraph--color color__lemon--light'
-      label: 'Brand Colorado Lemon light'
+      label: 'Lemon - 50%'
     -
       value: 'paragraph--color color__lemon--slight'
-      label: 'Brand Colorado Lemon slight'
+      label: 'Lemon - 25%'
     -
       value: 'paragraph--color color__eggplant--strong'
-      label: 'Brand Colorado Eggplant strong'
+      label: 'Eggplant - 100%'
     -
       value: 'paragraph--color color__eggplant--light'
-      label: 'Brand Colorado Eggplant light'
+      label: 'Eggplant - 50%'
     -
       value: 'paragraph--color color__eggplant--slight'
-      label: 'Brand Colorado Eggplant slight'
+      label: 'Eggplant - 25%'
     -
       value: 'paragraph--color color__grape--strong'
-      label: 'Brand Colorado Grape strong'
+      label: 'Grape - 100%'
     -
       value: 'paragraph--color color__grape--light'
-      label: 'Brand Colorado Grape light'
+      label: 'Grape - 50%'
     -
       value: 'paragraph--color color__grape--slight'
-      label: 'Brand Colorado Grape slight'
+      label: 'Grape - 25%'
     -
       value: 'paragraph--color color__ink--strong'
-      label: 'Brand Colorado Ink strong'
+      label: 'Ink - 100%'
     -
       value: 'paragraph--color color__ink--light'
-      label: 'Brand Colorado Ink light'
+      label: 'Ink - 50%'
     -
       value: 'paragraph--color color__ink--slight'
-      label: 'Brand Colorado Ink slight'
+      label: 'Ink - 25%'
     -
       value: 'paragraph--color color__sky-blue--strong'
-      label: 'Brand Colorado Sky Blue strong'
+      label: 'Sky Blue - 100%'
     -
       value: 'paragraph--color color__sky-blue--light'
-      label: 'Brand Colorado Sky Blue light'
+      label: 'Sky Blue - 50%'
     -
       value: 'paragraph--color color__sky-blue--slight'
-      label: 'Brand Colorado Sky Blue slight'
+      label: 'Sky Blue - 25%'
     -
       value: 'paragraph--color color__pacific-blue--strong'
-      label: 'Brand Colorado Pacific Blue strong'
+      label: 'Pacific Blue - 100%'
     -
       value: 'paragraph--color color__pacific-blue--light'
-      label: 'Brand Colorado Pacific Blue light'
+      label: 'Pacific Blue - 50%'
     -
       value: 'paragraph--color color__pacific-blue--slight'
-      label: 'Brand Colorado Pacific Blue slight'
+      label: 'Pacific Blue - 25%'
     -
       value: 'paragraph--color color__aqua--strong'
-      label: 'Brand Colorado Aqua strong'
+      label: 'Aqua - 100%'
     -
       value: 'paragraph--color color__aqua--light'
-      label: 'Brand Colorado Aqua light'
+      label: 'Aqua - 50%'
     -
       value: 'paragraph--color color__aqua--slight'
-      label: 'Brand Colorado Aqua slight'
+      label: 'Aqua - 25%'
     -
       value: 'paragraph--color color__pastel-blue--strong'
-      label: 'Brand Colorado Pastel Blue strong'
+      label: 'Pastel Blue - 100%'
     -
       value: 'paragraph--color color__pastel-blue--light'
-      label: 'Brand Colorado Pastel Blue light'
+      label: 'Pastel Blue - 50%'
     -
       value: 'paragraph--color color__pastel-blue--slight'
-      label: 'Brand Colorado Pastel Blue slight'
+      label: 'Pastel Blue - 25%'
     -
       value: 'paragraph--color color__ice--strong'
-      label: 'Brand Colorado Ice strong'
+      label: 'Ice - 100%'
     -
       value: 'paragraph--color color__ice--light'
-      label: 'Brand Colorado Ice light'
+      label: 'Ice - 50%'
     -
       value: 'paragraph--color color__ice--slight'
-      label: 'Brand Colorado Ice slight'
+      label: 'Ice - 25%'
     -
       value: 'paragraph--color color__forest--strong'
-      label: 'Brand Colorado Forest strong'
+      label: 'Forest - 100%'
     -
       value: 'paragraph--color color__forest--light'
-      label: 'Brand Colorado Forest light'
+      label: 'Forest - 50%'
     -
       value: 'paragraph--color color__forest-slight'
-      label: 'Brand Colorado Forest slight'
+      label: 'Forest - 25%'
     -
       value: 'paragraph--color color__neon-green-strong'
-      label: 'Brand Colorado Neon Green strong'
+      label: 'Neon Green - 100%'
     -
       value: 'paragraph--color color__neon-green--light'
-      label: 'Brand Colorado Neon Green light'
+      label: 'Neon Green - 50%'
     -
       value: 'paragraph--color color__neon-green-slight'
-      label: 'Brand Colorado Neon Green slight'
+      label: 'Neon Green - 25%'
     -
       value: 'paragraph--color color__cucumber-strong'
-      label: 'Brand Colorado Cucumber strong'
+      label: 'Cucumber - 100%'
     -
       value: 'paragraph--color color__cucumber--light'
-      label: 'Brand Colorado Cucumber light'
+      label: 'Cucumber - 50%'
     -
       value: 'paragraph--color color__cucumber-slight'
-      label: 'Brand Colorado Cucumber slight'
+      label: 'Cucumber - 25%'
     -
       value: 'paragraph--color color__fern--strong'
-      label: 'Brand Colorado Fern strong'
+      label: 'Fern - 100%'
     -
       value: 'paragraph--color color__fern--light'
-      label: 'Brand Colorado Fern light'
+      label: 'Fern - 50%'
     -
       value: 'paragraph--color color__fern--slight'
-      label: 'Brand Colorado Fern slight'
+      label: 'Fern - 25%'
     -
       value: 'paragraph--color color__mineral-green--strong'
-      label: 'Brand Colorado Mineral Green strong'
+      label: 'Mineral Green - 100%'
     -
       value: 'paragraph--color color__mineral-green--light'
-      label: 'Brand Colorado Mineral Green light'
+      label: 'Mineral Green - 50%'
     -
       value: 'paragraph--color color__mineral-green--slight'
-      label: 'Brand Colorado Mineral Green slight'
+      label: 'Mineral Green - 25%'
     -
       value: 'paragraph--color color__pine-needle--strong'
-      label: 'Brand Colorado Pine Needle strong'
+      label: 'Pine Needle - 100%'
     -
       value: 'paragraph--color color__pine-needle--light'
-      label: 'Brand Colorado Pine Needle light'
+      label: 'Pine Needle - 50%'
     -
       value: 'paragraph--color color__pine-needle--slight'
-      label: 'Brand Colorado Pine Needle slight'
+      label: 'Pine Needle - 25%'
     -
       value: 'paragraph--color color__corduroy--strong'
-      label: 'Brand Colorado Corduroy strong'
+      label: 'Corduroy - 100%'
     -
       value: 'paragraph--color color__corduroy--light'
-      label: 'Brand Colorado Corduroy light'
+      label: 'Corduroy - 50%'
     -
       value: 'paragraph--color color__corduroy--slight'
-      label: 'Brand Colorado Corduroy slight'
+      label: 'Corduroy - 25%'
     -
       value: 'paragraph--color color__sea-foam--strong'
-      label: 'Brand Colorado Sea Foam strong'
+      label: 'Sea Foam - 100%'
     -
       value: 'paragraph--color color__sea-foam--light'
-      label: 'Brand Colorado Sea Foam light'
+      label: 'Sea Foam - 50%'
     -
       value: 'paragraph--color color__sea-foam--slight'
-      label: 'Brand Colorado Sea Foam slight'
+      label: 'Sea Foam - 25%'
     -
       value: 'paragraph--color color__clear'
-      label: 'Brand Colorado Clear'
+      label: 'RGB - Black - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-black-slight'
-      label: 'Black slight'
+      label: 'RGB - Black - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-black-light'
-      label: 'Black light'
+      label: 'RGB - Black - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-black-strong'
-      label: 'Black strong'
+      label: 'RGB - Black - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-blue-slight'
-      label: 'Blue slight'
+      label: 'RGB - Blue - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-blue-light'
-      label: 'Blue light'
+      label: 'RGB - Blue - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-blue-strong'
-      label: 'Blue strong'
+      label: 'RGB - Blue - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-bluegrey-slight'
-      label: 'Bluegrey slight'
+      label: 'RGB - Bluegrey - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-bluegrey-light'
-      label: 'Bluegrey light'
+      label: 'RGB - Bluegrey - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-bluegrey-strong'
-      label: 'Bluegrey strong'
+      label: 'RGB - Bluegrey - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-slight'
-      label: 'Brown slight'
+      label: 'Brown - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-light'
-      label: 'Brown light'
+      label: 'Brown - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-strong'
-      label: 'Brown strong'
+      label: 'Brown - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-cyan-slight'
-      label: 'Cyan slight'
+      label: 'RGB - Cyan - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-cyan-light'
-      label: 'Cyan light'
+      label: 'RGB - Cyan - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-cyan-strong'
-      label: 'Cyan strong'
+      label: 'RGB - Cyan - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-green-slight'
-      label: 'Green slight'
+      label: 'RGB - Green - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-green-light'
-      label: 'Green light'
+      label: 'RGB - Green - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-green-strong'
-      label: 'Green strong'
+      label: 'RGB - Green - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-grey-slight'
-      label: 'Grey slight'
+      label: 'RGB - Grey - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-grey-light'
-      label: 'Grey light'
+      label: 'RGB - Grey - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-grey-strong'
-      label: 'Grey strong'
+      label: 'RGB - Grey - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-indigo-slight'
-      label: 'Indigo slight'
+      label: 'RGB - Indigo - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-indigo-light'
-      label: 'Indigo light'
+      label: 'RGB - Indigo - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-indigo-strong'
-      label: 'Indigo strong'
+      label: 'RGB - Indigo - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-lime-slight'
-      label: 'Lime slight'
+      label: 'RGB - Lime - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-lime-light'
-      label: 'Lime light'
+      label: 'RGB - Lime - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-lime-strong'
-      label: 'Lime strong'
+      label: 'RGB - Lime - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-orange-slight'
-      label: 'Orange slight'
+      label: 'RGB - Orange - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-orange-light'
-      label: 'Orange light'
+      label: 'RGB - Orange - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-orange-strong'
-      label: 'Orange strong'
+      label: 'RGB - Orange - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-pink-slight'
-      label: 'Pink slight'
+      label: 'RGB - Pink - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-pink-light'
-      label: 'Pink light'
+      label: 'RGB - Pink - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-pink-strong'
-      label: 'Pink strong'
+      label: 'RGB - Pink - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-purple-slight'
-      label: 'Purple slight'
+      label: 'RGB - Purple - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-purple-light'
-      label: 'Purple light'
+      label: 'RGB - Purple - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-purple-strong'
-      label: 'Purple strong'
+      label: 'RGB - Purple - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-red-slight'
-      label: 'Red slight'
+      label: 'RGB - Red - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-red-light'
-      label: 'Red light'
+      label: 'RGB - Red - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-red-strong'
-      label: 'Red strong'
+      label: 'RGB - Red - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-stylish-slight'
       label: 'Stylish slight'
@@ -504,52 +504,52 @@ settings:
       label: 'Stylish strong'
     -
       value: 'paragraph--color paragraph--color--rgba-teal-slight'
-      label: 'Teal slight'
+      label: 'RGB - Teal - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-teal-light'
-      label: 'Teal light'
+      label: 'RGB - Teal - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-teal-strong'
-      label: 'Teal strong'
+      label: 'RGB - Teal - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-white-slight'
-      label: 'White slight'
+      label: 'RGB - White - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-white-light'
-      label: 'White light'
+      label: 'RGB - White - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-white-strong'
-      label: 'White strong'
+      label: 'RGB - White - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-yellow-slight'
-      label: 'Yellow slight'
+      label: 'RGB - Yellow - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-yellow-light'
-      label: 'Yellow light'
+      label: 'RGB - Yellow - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-yellow-strong'
-      label: 'Yellow strong'
+      label: 'RGB - Yellow - 100%'
     -
       value: paragraph--color--transparent
       label: Transparent
     -
       value: 'paragraph--color paragraph--color--primary'
-      label: 'Brand Primary Color'
+      label: 'Site Primary Color'
     -
       value: 'paragraph--color paragraph--color--secondary'
-      label: 'Brand Secondary Color'
+      label: 'Site Secondary Color'
     -
       value: 'paragraph--color paragraph--color--success'
-      label: 'Brand Success Color'
+      label: 'Site Success Color'
     -
       value: 'paragraph--color paragraph--color--info'
-      label: 'Brand Info Color'
+      label: 'Site Info Color'
     -
       value: 'paragraph--color paragraph--color--warning'
-      label: 'Brand Warning Color'
+      label: 'Site Warning Color'
     -
       value: 'paragraph--color paragraph--color--danger'
-      label: 'Brand Danger Color'
+      label: 'Site Danger Color'
     -
       value: 'paragraph--color paragraph--color--bluegloss'
       label: 'Gradient Blue Gloss'

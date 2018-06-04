@@ -13,124 +13,190 @@ settings:
   allowed_values:
     -
       value: color__brand-green--strong
-      label: 'Brand Colorado Green'
+      label: 'Green'
     -
       value: color__brand-slate--strong
-      label: 'Brand Colorado Slate'
+      label: 'Slate'
     -
       value: color__brand-silver--strong
-      label: 'Brand Colorado Silver'
+      label: 'Silver'
     -
       value: color__brand-orange--strong
-      label: 'Brand Colorado Orange'
+      label: 'Orange'
     -
       value: color__brand-brown--strong
-      label: 'Brand Colorado Brown'
+      label: 'Brown'
     -
       value: color__brand-blue--strong
-      label: 'Brand Colorado Blue'
+      label: 'Blue'
     -
       value: color__white--strong
-      label: 'Brand Colorado White'
+      label: 'White'
     -
       value: color__black--strong
-      label: 'Brand Colorado Black'
+      label: 'Black'
     -
       value: color__evening--strong
-      label: 'Brand Colorado Evening'
+      label: 'Evening'
     -
       value: color__charcoal--strong
-      label: 'Brand Colorado Charcoal'
+      label: 'Charcoal'
     -
       value: color__blackboard--strong
-      label: 'Brand Colorado Blackboard'
+      label: 'Blackboard'
     -
       value: color__grey-sand--strong
-      label: 'Brand Colorado Grey Sand'
+      label: 'Grey Sand'
     -
       value: color__sleek-grey--strong
-      label: 'Brand Colorado Sleek Green'
+      label: 'Sleek Green'
     -
       value: color__lemon-grass--strong
-      label: 'Brand Colorado Lemon Grass'
+      label: 'Lemon Grass'
     -
       value: color__walnut--strong
-      label: 'Brand Colorado Walnut'
+      label: 'Walnut'
     -
       value: color__beige--strong
-      label: 'Brand Colorado Beige'
+      label: 'Beige'
     -
       value: color__spice--strong
-      label: 'Brand Colorado Spice'
+      label: 'Spice'
     -
       value: color__brick-red--strong
-      label: 'Brand Colorado Brick Red'
+      label: 'Brick Red'
     -
       value: color__scarlet--strong
-      label: 'Brand Colorado Scarlet'
+      label: 'Scarlet'
     -
       value: color__cognac--strong
-      label: 'Brand Colorado Cognac'
+      label: 'Cognac'
     -
       value: color__tiger-orange--strong
-      label: 'Brand Colorado Tiger Orange'
+      label: 'Tiger Orange'
     -
       value: color__wheat--strong
-      label: 'Brand Colorado Wheat'
+      label: 'Wheat'
     -
       value: color__sunflower--strong
-      label: 'Brand Colorado Sunflower'
+      label: 'Sunflower'
     -
       value: color__lemon--strong
-      label: 'Brand Colorado Lemon'
+      label: 'Lemon'
     -
       value: color__eggplant--strong
-      label: 'Brand Colorado Eggplant'
+      label: 'Eggplant'
     -
       value: color__grape--strong
-      label: 'Brand Colorado Grape'
+      label: 'Grape'
     -
       value: color__ink--strong
-      label: 'Brand Colorado Ink'
+      label: 'Ink'
     -
       value: color__sky-blue--strong
-      label: 'Brand Colorado Sky Blue'
+      label: 'Sky Blue'
     -
       value: color__pacific-blue--strong
-      label: 'Brand Colorado Pacific Blue'
+      label: 'Pacific Blue'
     -
       value: color__aqua--strong
-      label: 'Brand Colorado Aqua'
+      label: 'Aqua'
     -
       value: color__pastel-blue--strong
-      label: 'Brand Colorado Pastel Blue'
+      label: 'Pastel Blue'
     -
       value: color__ice--strong
-      label: 'Brand Colorado Ice'
+      label: 'Ice'
     -
       value: color__forest--strong
-      label: 'Brand Colorado Forest'
+      label: 'Forest'
     -
       value: color__neon-green--strong
-      label: 'Brand Colorado Neon Green'
+      label: 'Neon Green'
     -
       value: color__cucumber--strong
-      label: 'Brand Colorado Cucumber'
+      label: 'Cucumber'
     -
       value: color__fern--strong
-      label: 'Brand Colorado Fern'
+      label: 'Fern'
     -
       value: color__mineral-green--strong
-      label: 'Brand Colorado Mineral Green'
+      label: 'Mineral Green'
     -
       value: color__pine-needle--strong
-      label: 'Brand Colorado Pine Needle'
+      label: 'Pine Needle'
     -
       value: color__corduroy--strong
-      label: 'Brand Colorado Corduroy'
+      label: 'Corduroy'
     -
       value: color__sea-foam--strong
-      label: 'Brand Colorado Sea Foam'
+      label: 'Sea Foam'
+    -
+      value: paragraph--color paragraph--color--rgba-black-strong
+      label: 'RGB - Black'
+    -
+      value: paragraph--color paragraph--color--rgba-white-strong
+      label: 'RGB - White'
+    -
+      value: paragraph--color paragraph--color--rgba-blue-strong
+      label: 'RGB - Blue'
+    -
+      value: paragraph--color paragraph--color--rgba-bluegrey-strong
+      label: 'RGB - Bluegrey'
+    -
+      value: paragraph--color paragraph--color--rgba-brown-strong
+      label: 'RGB - Brown'
+    -
+      value: paragraph--color paragraph--color--rgba-cyan-strong
+      label: 'RGB - Cyan'
+    -
+      value: paragraph--color paragraph--color--rgba-green-strong|
+      label: 'RGB - Green'
+    -
+      value: paragraph--color paragraph--color--rgba-grey-strong
+      label: 'RGB - Grey'
+    -
+      value: paragraph--color paragraph--color--rgba-indigo-strong
+      label: 'RGB - Indigo'
+    -
+      value: paragraph--color paragraph--color--rgba-lime-strong
+      label: 'RGB - Lime'
+    -
+      value: paragraph--color paragraph--color--rgba-orange-strong
+      label: 'RGB - Orange'
+    -
+      value: paragraph--color paragraph--color--rgba-pink-strong
+      label: 'Sea Foam'
+    -
+      value: paragraph--color paragraph--color--rgba-purple-strong
+      label: 'RGB - Purple'
+    -
+      value: paragraph--color paragraph--color--rgba-red-strong
+      label: 'RGB - Red'
+    -
+      value: paragraph--color paragraph--color--rgba-teal-strong
+      label: 'RGB - Teal'
+    -
+      value: paragraph--color paragraph--color--rgba-yellow-strong
+      label: 'RGB - Yellow'
+    -
+      value: paragraph--color paragraph--color--primary
+      label: 'Site Primary Color'
+    -
+      value: paragraph--color paragraph--color--secondary
+      label: 'Site Secondary Color'
+    -
+      value: paragraph--color paragraph--color--success
+      label: 'Site Success Color'
+    -
+      value: paragraph--color paragraph--color--info
+      label: 'Site Info Color'
+    -
+      value: paragraph--color paragraph--color--warning
+      label: 'Site Warning Color'
+    -
+      value: paragraph--color paragraph--color--danger
+      label: 'Site Danger Color'
   allowed_values_function: ''
 module: options
 locked: false

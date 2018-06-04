@@ -31,6 +31,7 @@ drush -y config-set system.performance js.preprocess 0;
 drush cim --partial sync --y;
 drush cr --y;
 drush dcdi --y;
+drush en google_analytics --y;
 drush uli;
 
 echo "That's the end of the D8M install script!"

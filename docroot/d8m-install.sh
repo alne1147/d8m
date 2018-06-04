@@ -33,6 +33,7 @@ drush en memcache --y;
 drush en ci_search --y;
 drush cr --y;
 drush dcdi --y;
+drush en google_analytics --y;
 
 
 echo "That's the end of the D8M install script!"
