@@ -40,7 +40,6 @@ module:
   ckeditor_font: 0
   ckeditor_templates: 0
   ckwordcount: 0
-  classy_paragraphs: 0
   colorbutton: 0
   conditional_fields: 0
   config: 0
@@ -109,7 +108,6 @@ module:
   page_cache: 0
   panelbutton: 0
   paragraphs_edit: 0
-  paragraphs_layouts: 0
   paragraphs_type_permissions: 0
   path: 0
   purge: 0
