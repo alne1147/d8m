@@ -160,13 +160,7 @@ dependencies:
   - purge_processor_cron
   - purge_processor_lateruntime
   - acquia_purge
-  - webform
-  - webform_bootstrap
-  - webform_node
-  - webform_ui
-  - captcha
-  - recaptcha
-  
+
   # Adding these lines to our profilename.info.yml will only enable these themes.
 themes:
   - bartik

@@ -161,7 +161,6 @@ module:
   webform: 0
   webform_example_composite: 0
   webform_example_element: 0
-  webform_example_remote_post: 0
   webform_examples: 0
   webform_node: 0
   webform_templates: 0
