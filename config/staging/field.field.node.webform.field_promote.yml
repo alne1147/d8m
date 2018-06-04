@@ -1,0 +1,23 @@
+uuid: a19e1783-a3f6-40ff-b3e8-cdf6e72e06d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promote
+    - node.type.webform
+id: node.webform.field_promote
+field_name: field_promote
+entity_type: node
+bundle: webform
+label: Promote
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
