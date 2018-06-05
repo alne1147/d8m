@@ -42,8 +42,8 @@ spi:
     variables: {  }
     time: 0
   cron_interval: 28800
-  site_name: local
-  site_machine_name: local
+  site_name: ag
+  site_machine_name: ag
   env_detection_enabled: true
 mapping:
   acquia_spi_send_node_user:
