@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_modal
     - paragraphs.paragraphs_type.bp_tabs
+    - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
     - paragraphs.paragraphs_type.card_map
     - paragraphs.paragraphs_type.card_open_embed
@@ -37,6 +38,7 @@ settings:
       bp_modal: bp_modal
       bp_tabs: bp_tabs
       bp_block: bp_block
+      bp_view: bp_view
       card_open_embed: card_open_embed
     target_bundles_drag_drop:
       card_basic:
@@ -58,8 +60,8 @@ settings:
         enabled: true
         weight: -46
       bp_view:
+        enabled: true
         weight: -45
-        enabled: false
       card_open_embed:
         enabled: true
         weight: -44
