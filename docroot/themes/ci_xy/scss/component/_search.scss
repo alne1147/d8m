@@ -184,6 +184,11 @@
     .button--date-range {
       border-color: $color-brand-green;
       color: $color-brand-green;
+      &:hover,
+      &:active {
+        background-color: $color-brand-green;
+        color: $color-white;
+      }
     }
   }
 }
