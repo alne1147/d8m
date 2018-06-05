@@ -15,25 +15,25 @@ drush   config-set system.site mail "no-reply@www.colorado.gov" -y
 #// User additions and role assignments.
 
 drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role administrator ci-nevarez --y; 
+drush urol administrator ci-nevarez --y; 
 drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role administrator ci-jwathen --y; 
+drush urol administrator ci-jwathen --y; 
 drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role administrator ci-blawson --y; 
+drush urol administrator ci-blawson --y; 
 drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role support_administrator ci-kharrison --y;  
+drush urol support_administrator ci-kharrison --y;  
 drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role support_administrator ci-twhatley --y; 
+drush urol support_administrator ci-twhatley --y; 
 drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;  
-drush user-add-role support_administrator ci-supportadmin --y; 
+drush urol support_administrator ci-supportadmin --y; 
 drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;  
-drush user-add-role content_administrator ci-contentadmin --y; 
+drush urol content_administrator ci-contentadmin --y; 
 drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;  
-drush user-add-role user_administrator ci-useradmin --y; 
+drush urol user_administrator ci-useradmin --y; 
 drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;  
-drush user-add-role structure_administrator ci-structureadmin --y; 
+drush urol structure_administrator ci-structureadmin --y; 
 drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush user-add-role administrator ci-amarshall --y;
+drush urol administrator ci-amarshall --y;
 
 
 drush -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
