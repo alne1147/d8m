@@ -38,20 +38,18 @@ drush @sites user-add-role administrator ci-amarshall --y;
 
 drush @sites -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
 
-drush @sites  en ci_article_setup --y;
+drush @sites en ci_article_setup -y;
 drush @sites en ci_media_types -y;
 drush @sites en ci_admin_tweaks --y;
 drush @sites en ci_theme_options --y;
-
-
 drush @sites -y config-set system.performance css.preprocess 0;
 drush @sites -y config-set system.performance js.preprocess 0;
-
+drush @sites en google_analytics --y;
 drush @sites cim --partial sync --y;
 drush @sites cr --y;
-drush @sites --y dcdi -1;
-drush en memcache --y;
-drush en ci_search --y;
-drush en google_analytics --y;
+drush @sites dcdi --y;
+
+
+
 
 echo "That's the end of the D8M install script!"
