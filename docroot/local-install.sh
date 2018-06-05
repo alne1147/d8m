@@ -30,6 +30,7 @@ drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
 drush en google_analytics --y;
 drush cim --partial sync --y;
+drush cim --partial sole --y;
 drush cr --y;
 drush dcdi --y;
 
