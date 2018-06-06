@@ -1,0 +1,30 @@
+uuid: 7f097cc1-31d0-4b52-b0da-f1d8a0e4e296
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webform
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    d8m_text_editor: d8m_text_editor
+    open_embed: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: '-Qu0UyzQ0jD4TDYq8fOasS-D-vGd3gSwzi15PzRJUD4'
+id: node.webform.body
+field_name: body
+entity_type: node
+bundle: webform
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

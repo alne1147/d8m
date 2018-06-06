@@ -1,0 +1,29 @@
+uuid: 655aaa23-2676-4ca6-bf50-ca21aca8a365
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.webform
+    - taxonomy.vocabulary.related_content
+id: node.webform.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: webform
+label: Options
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      related_content: related_content
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -773,6 +773,7 @@ if (file_exists('/var/www/site-php')) {
 }
 $config_directories['sync'] = '../config/sync';
 $config_directories['staging'] = '../config/staging';
+$config_directories['sole'] = '../config/sole';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
