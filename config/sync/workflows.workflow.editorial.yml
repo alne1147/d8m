@@ -2,6 +2,12 @@ uuid: 0307ad69-bfab-40de-9bb3-8eec877ffdf3
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.event
+    - node.type.landing_page
+    - node.type.page
+    - node.type.webform
   module:
     - content_moderation
 _core:
@@ -59,4 +65,10 @@ type_settings:
       from:
         - draft
         - published
-  entity_types: {  }
+  entity_types:
+    node:
+      - article
+      - event
+      - landing_page
+      - page
+      - webform
