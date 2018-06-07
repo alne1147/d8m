@@ -1,37 +1,20 @@
 (function ($) {
-        'use strict';
+    'use strict';
 
-    Drupal.behaviors.SearchCalendarStyles = {
-        attach: function(context, settings) {
-            $("#edit-search").addClass( "input-lg" );
-            $("#edit-created, #edit-created-lt").datepicker().attr("autocomplete", "off");
-        }
-    };
-
-    // Search form Input overrides
+    // Search bar and Refine Results
     Drupal.behaviors.SearchFieldProperties = {
-        attach: function(context, settings) {
+        attach: function (context, settings) {
             $(".search-page__button--submit button").text("");
-
-            $("input#edit-created-lt").attr({
-                "size" : 10,
-                "placeholder" : "End Date"
-            });
-
-            $("input#edit-created").attr({
-                "size" : 10,
-                "placeholder" : "Start Date"
-            });
-
-            $(".search__form input#edit-search").attr({
-                "placeholder" : "How can we help you?"
-            });
+            $(".search__form input#edit-search").attr("placeholder","How can we help you?");
+            $("#edit-search").addClass("input-lg");
+            $("#edit-created").attr("placeholder","Start Date");
+            $("#edit-created-lt").attr("placeholder","End Date");
+            $("#edit-created, #edit-created-lt").datepicker().attr({"autocomplete": "off", "size": "11"});
         }
     };
-
-// Bootstrap class additions for adding columns in search result rows.
+    // Bootstrap class additions for adding columns in search result rows.
     Drupal.behaviors.ColumnBs = {
-        attach: function(context, settings) {
+        attach: function (context, settings) {
             // Promoted Search Item
             var $promoted = $('.search-page__result--promoted .search-result--content');
             $('.search-page__result--omitted .search-result--content').addClass("col-sm-12");
@@ -48,7 +31,7 @@
                 $refineresultsrow.removeClass("refine-results");
             }
             var $refineresultstoggle = $('.refine-results');
-            $refineresults.off('click').click(function(){
+            $refineresults.off('click').click(function () {
                 $refineresultstoggle.toggleClass("refine-results--open");
                 $refineresultstoggle.slideToggle(300);
                 if ($($refineresultstoggle).hasClass("refine-results--open")) {
@@ -63,23 +46,21 @@
     };
     // Search Auto Submit functions
     Drupal.behaviors.SearchAutoSubmit = {
-        attach: function(context, settings) {
-            $('#edit-type').on('change', function() {
+        attach: function (context, settings) {
+            $('#edit-type').on('change', function () {
                 var $form = $(this).closest('form');
                 $form.find('button[type=submit]').click();
             });
-
-            $('#edit-field-article-tags').focusout( function() {
+            $('#edit-field-article-tags').focusout(function () {
                 var $form = $(this).closest('form');
                 $form.find('button[type=submit]').click();
             });
             // Date Range Refinement
-            $('#submit-date-range').click(function(){
+            $('#submit-date-range').click(function () {
                 var startDate = $('#edit-created').val();
                 var endDate = $('#edit-created-lt').val();
                 $("#views-exposed-form-acquia-search-fields-search-block").submit();
             });
         }
-
     };
 }(jQuery));
