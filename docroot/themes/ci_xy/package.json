@@ -2,18 +2,18 @@
   "name": "ci_xy",
   "version": "0.0.1",
   "devDependencies": {
-    "browser-sync": "^2.4.0",
-    "gulp": "^3.8.11",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
     "gulp-babel": "^5.2.1",
-    "gulp-concat": "^2.6.0",
+    "gulp-concat": "^2.6.1",
     "gulp-notify": "^2.2.0",
     "gulp-react": "^3.0.1",
-    "gulp-sass": "*",
-    "gulp-shell": "^0.4.0",
-    "gulp-sourcemaps": "^1.5.1",
-    "gulp-uglify": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-shell": "^0.4.3",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^1.5.4",
     "gulp-util": "*",
-    "gulp-watch": "*"
+    "gulp-watch": "^5.0.0"
   },
   "scripts": {
     "postinstall": "node_modules/.bin/rimraf node_modules/**/*.info"
