@@ -4,6 +4,7 @@
     Drupal.behaviors.SearchCalendarStyles = {
         attach: function(context, settings) {
             $("#edit-search").addClass( "input-lg" );
+            $("#edit-created, #edit-created-lt").datepicker().attr("autocomplete", "off");
         }
     };
 
