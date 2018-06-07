@@ -17,7 +17,11 @@ content:
     label: visually_hidden
     settings:
       plugin_types:
-        - block
+        default: default
+        block: block
+        feed: feed
+        page: 0
+        entity_browser: 0
     third_party_settings: {  }
     type: viewsreference_formatter
     region: content

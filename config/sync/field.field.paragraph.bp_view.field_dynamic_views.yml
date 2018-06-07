@@ -1,20 +1,20 @@
-uuid: f0ed2ddb-3e4b-4293-8248-6b08df6d858d
+uuid: 84564164-ffd4-48ad-b4e1-1d39639afb53
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.views_reference_block
-    - field.storage.block_content.field_view_field
+    - field.storage.paragraph.field_dynamic_views
+    - paragraphs.paragraphs_type.bp_view
   module:
     - viewsreference
-id: block_content.views_reference_block.field_view_field
-field_name: field_view_field
-entity_type: block_content
-bundle: views_reference_block
-label: 'View Field'
+id: paragraph.bp_view.field_dynamic_views
+field_name: field_dynamic_views
+entity_type: paragraph
+bundle: bp_view
+label: Views
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

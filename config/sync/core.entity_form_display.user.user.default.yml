@@ -30,6 +30,9 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  google_analytics:
+    weight: 3
+    region: content
   language:
     weight: 2
     region: content

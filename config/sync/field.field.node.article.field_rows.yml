@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
+    - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.row_slide_container
   module:
     - entity_reference_revisions
@@ -31,6 +32,7 @@ settings:
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_columns_three_uneven: bp_columns_three_uneven
       bp_accordion: bp_accordion
+      bp_view: bp_view
       row_slide_container: row_slide_container
     target_bundles_drag_drop:
       bp_accordion_section:
@@ -79,8 +81,8 @@ settings:
         weight: -35
         enabled: false
       bp_view:
+        enabled: true
         weight: -34
-        enabled: false
       card_basic:
         weight: -33
         enabled: false
@@ -104,5 +106,8 @@ settings:
         enabled: false
       mini_calendar:
         weight: -26
+        enabled: false
+      section_body:
+        weight: 50
         enabled: false
 field_type: entity_reference_revisions

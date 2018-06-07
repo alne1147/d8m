@@ -31,4 +31,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_article_tags: true
+  field_page_options: true
+  field_promote: true
+  field_related_content: true
   webform: true

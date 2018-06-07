@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
-    - field.field.paragraph.bp_view.bp_view
     - field.field.paragraph.bp_view.bp_width
-    - field.field.paragraph.bp_view.field_ci_views
+    - field.field.paragraph.bp_view.field_dynamic_views
     - paragraphs.paragraphs_type.bp_view
   module:
     - options
+    - viewsreference
 _core:
   default_config_hash: Q4Zemwcib9q-022d2TYMKL8I1Ca_nMkmLJui3lUmhJ4
 id: paragraph.bp_view.default
@@ -31,8 +31,19 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
+  field_dynamic_views:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        entity_browser: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
 hidden:
-  bp_view: true
   created: true
-  field_ci_views: true
   uid: true

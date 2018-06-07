@@ -1,21 +1,22 @@
-uuid: 255e0743-8a9e-4bf7-8323-cd15f351d710
+uuid: dfd7f427-262a-45c7-aadf-42ecc6c72e32
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
     - field.storage.node.body
     - node.type.article
     - taxonomy.vocabulary.article_type
+  content:
+    - 'taxonomy_term:article_type:c9886064-7c47-4ed4-a3a5-23e9b16dad4e'
   module:
     - node
     - taxonomy
     - text
     - user
-id: references_recent_nodes
-label: 'References - Recent Nodes'
+id: article_blocks
+label: 'Article Blocks'
 module: views
-description: 'View of Recent Nodes'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -59,70 +60,46 @@ display:
           offset: 0
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       fields:
         title:
           id: title
           table: node_field_data
           field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -132,8 +109,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: true
-          plugin_id: field
+          field_api_classes: false
         body:
           id: body
           table: node__body
@@ -185,7 +161,7 @@ display:
           click_sort_column: value
           type: text_summary_or_trimmed
           settings:
-            trim_length: 120
+            trim_length: 400
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -213,93 +189,11 @@ display:
           id: type
           table: node_field_data
           field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
           value:
             article: article
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_article_type_target_id:
-          id: field_article_type_target_id
-          table: node__field_article_type
-          field: field_article_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_article_type_target_id_op
-            label: Type
-            description: ''
-            use_operator: false
-            operator: field_article_type_target_id_op
-            identifier: field_article_type_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              support_administrator: '0'
-              user_administrator: '0'
-              content_administrator: '0'
-              content_publisher: '0'
-              content_editor: '0'
-              structure_administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: article_type
-          hierarchy: false
-          error_message: false
-          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -316,42 +210,52 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Recent Articles'
+      title: 'News Articles'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: true
       use_more: true
       use_more_always: true
-      use_more_text: rss
-      link_url: ''
-      link_display: feed_1
+      use_more_text: more
+      link_url: article-feed.xml
+      link_display: custom_url
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-  feed_1:
-    display_plugin: feed
-    id: feed_1
-    display_title: Feed
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: News
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: Blog
     position: 2
     display_options:
       display_extenders: {  }
-      row:
-        type: node_rss
-        options:
-          relationship: none
-          view_mode: rss
+      display_description: ''
       filters:
         status:
           value: '1'
@@ -368,12 +272,21 @@ display:
           id: type
           table: node_field_data
           field: type
+          value:
+            article: article
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_article_type_target_id:
+          id: field_article_type_target_id
+          table: node__field_article_type
+          field: field_article_type_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
+          operator: or
           value:
-            article: article
+            - 100013
           group: 1
           exposed: false
           expose:
@@ -401,9 +314,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: article_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       defaults:
         filters: false
         filter_groups: false
@@ -411,42 +328,29 @@ display:
         operator: AND
         groups:
           1: AND
-      path: article-feed.xml
-      pager:
-        type: some
-        options:
-          items_per_page: 0
-          offset: 0
-      displays:
-        default: default
-        ref_nodes: '0'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-  ref_nodes:
+  block_3:
     display_plugin: block
-    id: ref_nodes
-    display_title: 'Recent Articles - Block'
-    position: 1
+    id: block_3
+    display_title: 'Press Release'
+    position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
-      footer: {  }
-      defaults:
-        footer: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

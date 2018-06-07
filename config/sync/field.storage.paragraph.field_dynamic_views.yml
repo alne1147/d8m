@@ -1,4 +1,4 @@
-uuid: 99c4e243-da27-44d2-a3d4-0395ce3f4dc7
+uuid: c3c34ec8-1051-4f47-97ef-f783b94b4d4e
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - paragraphs
     - views
     - viewsreference
-id: paragraph.field_ci_views
-field_name: field_ci_views
+id: paragraph.field_dynamic_views
+field_name: field_dynamic_views
 entity_type: paragraph
 type: viewsreference
 settings:
