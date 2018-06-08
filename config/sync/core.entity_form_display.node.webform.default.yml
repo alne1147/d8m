@@ -23,6 +23,7 @@ third_party_settings:
     group_webform_options:
       children:
         - group_webform
+        - group_intro
         - group_display
         - group_relationships
         - group_search_tab
@@ -38,8 +39,7 @@ third_party_settings:
     group_webform:
       children:
         - title
-        - body
-        - webform
+        - group_tab_webform
       parent_name: group_webform_options
       weight: 17
       format_type: tab
@@ -56,7 +56,7 @@ third_party_settings:
         - group_menu
         - group_related_content
       parent_name: group_webform_options
-      weight: 18
+      weight: 19
       format_type: tab
       format_settings:
         id: ''
@@ -84,7 +84,7 @@ third_party_settings:
       children:
         - group_search
       parent_name: group_webform_options
-      weight: 20
+      weight: 21
       format_type: tab
       format_settings:
         id: ''
@@ -126,7 +126,7 @@ third_party_settings:
       children:
         - field_article_tags
       parent_name: group_webform_options
-      weight: 19
+      weight: 20
       format_type: tab
       format_settings:
         id: ''
@@ -135,6 +135,34 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Relationships
+      region: content
+    group_intro:
+      children:
+        - body
+      parent_name: group_webform_options
+      weight: 18
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Intro
+      region: content
+    group_tab_webform:
+      children:
+        - webform
+      parent_name: group_webform
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: Options
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Options
       region: content
 _core:
   default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
@@ -157,7 +185,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -184,26 +212,26 @@ content:
     type: boolean_checkbox
     region: content
   field_related_content:
-    weight: 22
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 8
+    weight: 7
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -211,15 +239,8 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 8
     region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 2
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -240,21 +261,22 @@ content:
     region: content
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   webform:
     weight: 3
     settings:
-      default_data: true
+      default_data: false
     third_party_settings: {  }
     type: webform_entity_reference_select
     region: content
 hidden:
   promote: true
+  sticky: true
