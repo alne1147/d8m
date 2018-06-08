@@ -1,0 +1,282 @@
+uuid: 778308c8-7287-4a77-b595-4ccb3cf80800
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webform.body
+    - field.field.node.webform.field_article_tags
+    - field.field.node.webform.field_page_options
+    - field.field.node.webform.field_promote
+    - field.field.node.webform.field_related_content
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - allowed_formats
+    - content_moderation
+    - field_group
+    - path
+    - scheduler
+    - text
+    - webform
+third_party_settings:
+  field_group:
+    group_webform_options:
+      children:
+        - group_webform
+        - group_intro
+        - group_display
+        - group_relationships
+        - group_search_tab
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Webform - Options'
+      region: content
+    group_webform:
+      children:
+        - title
+        - group_tab_webform
+      parent_name: group_webform_options
+      weight: 17
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Webform
+      region: content
+    group_display:
+      children:
+        - group_menu
+        - group_related_content
+      parent_name: group_webform_options
+      weight: 19
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Display
+      region: content
+    group_menu:
+      children:
+        - field_page_options
+      parent_name: group_display
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        label: Menu
+        description: 'Display menu on the left or right side of this page'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Menu
+      region: content
+    group_search_tab:
+      children:
+        - group_search
+      parent_name: group_webform_options
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Search
+      region: content
+    group_search:
+      children:
+        - field_promote
+      parent_name: group_search_tab
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        label: Search
+        description: 'Feature this content at the top of site search results'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Search
+      region: content
+    group_related_content:
+      children:
+        - field_related_content
+      parent_name: group_display
+      weight: 21
+      format_type: fieldset
+      format_settings:
+        label: 'Related Content'
+        description: "Display the three most recent articles at the bottom of this page <br>\nDisplay content with related tags on the right side of this page"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Related Content'
+      region: content
+    group_relationships:
+      children:
+        - field_article_tags
+      parent_name: group_webform_options
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Relationships
+      region: content
+    group_intro:
+      children:
+        - body
+      parent_name: group_webform_options
+      weight: 18
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Intro
+      region: content
+    group_tab_webform:
+      children:
+        - webform
+      parent_name: group_webform
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: Options
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Options
+      region: content
+_core:
+  default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      placeholder: ''
+      summary_rows: 3
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_article_tags:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_page_options:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_promote:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_related_content:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 7
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  webform:
+    weight: 3
+    settings:
+      default_data: false
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+hidden:
+  promote: true
+  sticky: true
