@@ -47,10 +47,9 @@ drush @sites -y config-set system.performance css.preprocess 0;
 drush @sites -y config-set system.performance js.preprocess 0;
 drush @sites en google_analytics --y;
 drush @sites cim --partial sync --y;
-drush @sites cim --partial sole --y;
 drush @sites cr --y;
 drush @sites dcdi --y;
-
+drush @sites cim --partial sole --y;
 
 
 
