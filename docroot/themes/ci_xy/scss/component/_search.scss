@@ -192,6 +192,9 @@
     }
   }
 }
+.ui-widget.ui-datepicker {
+  z-index: 2!important;
+}
 // [3]
 .search-page {
   a {
