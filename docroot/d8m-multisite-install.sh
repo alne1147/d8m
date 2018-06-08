@@ -50,6 +50,7 @@ drush @sites cim --partial sync --y;
 drush @sites cr --y;
 drush @sites dcdi --y;
 drush @sites cim --partial sole --y;
+drush @sites cim --partial staging --y;
 
 
 

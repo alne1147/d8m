@@ -50,6 +50,7 @@ drush cim --partial sync --y;
 drush cr --y;
 drush dcdi --y;
 drush cim --partial sole --y;
+drush cim --partial staging --y;
 
 
 echo "That's the end of the D8M install script!"
