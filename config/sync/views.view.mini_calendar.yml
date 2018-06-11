@@ -585,7 +585,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 1
-          content: '{{ arguments.field_date_value_year_month }}'
+          content: '{{ raw_arguments.field_date_value_year_month }}'
           pager_embed: 0
           plugin_id: calendar_header
       defaults:
