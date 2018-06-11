@@ -49,7 +49,7 @@
   {{ title_suffix }}
   {% if header %}
     <div class="view-header">
-      {{ header }}
+     <h3><a href="/calendar-field_date/month/{{ header.calendar_header ['#title'] }}"> {{ header.calendar_header ['#title']|split('', 4)|join('-')|date('F Y') }} </a></h3>
     </div>
   {% endif %}
   {% if exposed %}
@@ -95,5 +95,3 @@
     </div>
   {% endif %}
 </div>
-{{ dump(header.calendar_header.['#title']) }}
-
