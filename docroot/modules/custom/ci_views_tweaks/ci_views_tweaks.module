@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ci_views_tweaks_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'ci_views_tweaks/ci_reference_recent';
+}
