@@ -195,6 +195,7 @@
   margin-top:20px;
 }
 
+.view-article-blocks .more-link a,
 .view-references-recent-nodes .more-link a
 {
   text-indent:-9999px;
@@ -206,4 +207,8 @@
 .js-form-item-field-article-type-target-id
 {
 float:right;
+}
+.view-article-blocks .more-link a
+{
+  margin-top:20px;
 }
