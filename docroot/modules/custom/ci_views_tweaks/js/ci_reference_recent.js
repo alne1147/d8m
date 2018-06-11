@@ -9,6 +9,8 @@
                 $form.find('button[type=submit]').click();
             });
 
+            $( '.js-form-item-field-article-type-target-id' ).addClass( "float-right" );
+
         }
     };
 }(jQuery));
