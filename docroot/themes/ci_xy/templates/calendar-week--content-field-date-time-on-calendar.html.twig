@@ -29,7 +29,7 @@
   <thead>
     <tr>
       {% if by_hour_content > 0 or start_times is not empty %}
-      <th class="calendar-agenda-hour">{% trans %}Time{% endtrans %}</th>
+      <th>{% trans %}Time{% endtrans %}</th>
       {% endif %}
       {% for cell in day_names %}
         <th class="{{ cell.class }}" id="{{ cell.header_id }}">
