@@ -42,6 +42,7 @@ drush @sites en ci_article_setup -y;
 drush @sites en ci_media_types -y;
 drush @sites en ci_admin_tweaks --y;
 drush @sites en ci_theme_options --y;
+drush @sites en ci_views_tweaks --y
 drush @sites en redirect --y;
 drush @sites -y config-set system.performance css.preprocess 0;
 drush @sites -y config-set system.performance js.preprocess 0;
