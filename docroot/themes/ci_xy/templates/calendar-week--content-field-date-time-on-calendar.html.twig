@@ -29,7 +29,7 @@
   <thead>
     <tr>
       {% if by_hour_content > 0 or start_times is not empty %}
-      <th>{% trans %}Time{% endtrans %}</th>
+     
       {% endif %}
       {% for cell in day_names %}
         <th class="{{ cell.class }}" id="{{ cell.header_id }}">
@@ -67,16 +67,12 @@
         {% endif %}
       {% endfor %}
 
-      {% for j in colpos..6 %}
-        <td class="multi-day no-entry"><div class="inner">&nbsp;</div></td>
-      {% endfor %}
+      
     </tr>
     {% endfor %}
     {% for time in items %}
     <tr class="not-all-day">
-      <td class="calendar-agenda-hour">
-        <span class="calendar-hour">{{ time.hour }}</span><span class="calendar-ampm">{{ time.ampm }}</span>
-      </td>
+
       {% set current_position = 0 %}
       {% for column in columns %}
         {% set column_position = time.values.column[0] ? time.values.column[0].wday : loop.index %}
