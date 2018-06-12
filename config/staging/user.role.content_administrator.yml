@@ -30,7 +30,6 @@ permissions:
   - 'administer nodes'
   - 'administer redirects'
   - 'administer taxonomy'
-  - 'bypass node access'
   - 'change own username'
   - 'create article content'
   - 'create document media'
