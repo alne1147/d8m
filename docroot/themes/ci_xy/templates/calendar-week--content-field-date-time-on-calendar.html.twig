@@ -66,7 +66,9 @@
           {% set colpos = cell['wday'] + cell['colspan'] + 1 %}
         {% endif %}
       {% endfor %}
-
+      {% for j in colpos..6 %}
+        <td class="multi-day no-entry"><div class="inner">&nbsp;</div></td>
+      {% endfor %}
       
     </tr>
     {% endfor %}
