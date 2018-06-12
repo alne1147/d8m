@@ -1,4 +1,4 @@
-.field--type-viewsreference .form-actions .btn {
-    margin-right: 10px;
+.view-references-recent-nodes .js-form-submit
+{
     display:none;
 }
