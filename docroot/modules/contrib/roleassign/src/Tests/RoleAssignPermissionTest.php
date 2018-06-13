@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\roleassign\Tests\RoleAssignPermissionTest.
- */
-
 namespace Drupal\roleassign\Tests;
 
 use Drupal\simpletest\WebTestBase;
