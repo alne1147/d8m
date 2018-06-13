@@ -187,5 +187,41 @@
 			.paragraph__title
 			{
 				padding: 8px 12px;
+                margin-bottom:20px;
 			}
+}
+#views-exposed-form-references-recent-nodes-ref-nodes .form-type-select
+{
+  margin-top:20px;
+}
+
+.view-article-blocks .more-link a,
+.view-references-recent-nodes .more-link a
+{
+  text-indent:-9999px;
+  display:block;
+  background: url("../images/rss.png") no-repeat right top;
+  width: 20px;
+  height:20px;
+}
+.js-form-item-field-article-type-target-id
+{
+float:right;
+}
+.view-article-blocks .more-link a
+{
+  margin-top:20px;
+}
+.view-references-recent-nodes .views-row,
+.view-article-blocks .views-row
+{
+  margin-bottom:10px;
+}
+select#cal_selectbox
+{
+	margin-bottom:10px !important;
+}
+.path-calendar-field-date ol.breadcrumb
+{
+	display:none;
 }

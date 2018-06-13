@@ -1,0 +1,12 @@
+ci_reference_recent:
+  version: 1.x
+  css:
+    layout:
+      css/ci_reference_recent.css: {}
+  js:
+    js/ci_reference_recent.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
