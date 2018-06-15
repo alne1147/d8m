@@ -305,6 +305,9 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: '0'
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -367,19 +370,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 1
-          content: '{{ arguments.field_date_value_year_month }}'
-          pager_embed: 0
-          plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
+          content: '{{ raw_arguments.field_date_value_year_month }}'
           pager_embed: 0
           plugin_id: calendar_header
       defaults:

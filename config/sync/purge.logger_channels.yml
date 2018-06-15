@@ -15,9 +15,3 @@ channels:
     id: diagnostics
     grants:
       - 3
-  -
-    id: purger_acquia_purge_b2b18c198f
-    grants:
-      - 0
-      - 2
-      - 3
