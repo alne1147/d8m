@@ -1,0 +1,82 @@
+uuid: d5b97384-dbf4-41f2-9aad-7f4335c35a7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.body
+    - field.field.node.contact.field_agency
+    - field.field.node.contact.field_agency_logo
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_map
+    - field.field.node.contact.field_phone_number
+    - field.field.node.contact.field_photo
+    - field.field.node.contact.field_title
+    - image.style.contact_thumbnail
+    - node.type.contact
+  module:
+    - image
+    - telephone
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  field_agency:
+    type: string
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_agency_logo:
+    type: image
+    weight: 5
+    region: content
+    label: above
+    settings:
+      image_style: logo
+      image_link: ''
+    third_party_settings: {  }
+  field_email:
+    type: basic_string
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_phone_number:
+    type: telephone_link
+    weight: 4
+    region: content
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_photo:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: contact_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_title:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_map: true

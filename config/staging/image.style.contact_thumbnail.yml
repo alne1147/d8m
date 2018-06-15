@@ -1,0 +1,17 @@
+uuid: 3a0dc797-bf3b-4386-a5fd-05bf11d774e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: contact_thumbnail
+label: 'Contact Thumbnail'
+effects:
+  bdfd854b-39af-429e-a24a-7f03cc2abc86:
+    uuid: bdfd854b-39af-429e-a24a-7f03cc2abc86
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      crop_type: focal_point
