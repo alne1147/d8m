@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ci_js_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'ci_js/superfish-insert';
+}
