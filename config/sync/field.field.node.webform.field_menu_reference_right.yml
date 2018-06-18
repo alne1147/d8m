@@ -1,0 +1,23 @@
+uuid: 341cf5c5-79be-4ddf-8e27-5f18f84a0c0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_reference_right
+    - node.type.webform
+id: node.webform.field_menu_reference_right
+field_name: field_menu_reference_right
+entity_type: node
+bundle: webform
+label: 'Menu Reference Right'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:menu'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
