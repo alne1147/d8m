@@ -23,9 +23,9 @@ settings:
   id: 'entity_field:node:field_menu_reference_right'
   label: 'Menu Reference Right'
   provider: ctools_block
-  label_display: visible
+  label_display: '0'
   formatter:
-    label: above
+    label: hidden
     type: menu_reference_render
     settings: {  }
     third_party_settings: {  }
