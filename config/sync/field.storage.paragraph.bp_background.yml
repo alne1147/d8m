@@ -492,7 +492,7 @@ settings:
       label: 'RGB - Red - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-red-strong'
-      label: 'RGB - Red - 100%'	 f
+      label: 'RGB - Red - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-teal-slight'
       label: 'RGB - Teal - 25%'
@@ -541,7 +541,6 @@ settings:
     -
       value: 'paragraph--color paragraph--color--danger'
       label: 'Site Danger Color'
-
   allowed_values_function: ''
 module: options
 locked: false
