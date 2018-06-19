@@ -52,6 +52,7 @@ drush cr --y;
 drush dcdi --y;
 drush cim --partial sole --y;
 drush cim --partial staging --y;
+drush en memcache --y;
 
 
 echo "That's the end of the D8M install script!"

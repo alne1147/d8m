@@ -52,6 +52,7 @@ drush @sites cr --y;
 drush @sites dcdi --y;
 drush @sites cim --partial sole --y;
 drush @sites cim --partial staging --y;
+drush @sites en memcache --y;
 
 
 
