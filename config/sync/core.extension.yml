@@ -142,6 +142,7 @@ module:
   superfish: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   term_condition: 0
   termcase: 0
   text: 0
