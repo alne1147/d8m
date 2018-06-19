@@ -492,16 +492,7 @@ settings:
       label: 'RGB - Red - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-red-strong'
-      label: 'RGB - Red - 100%'
-    -
-      value: 'paragraph--color paragraph--color--rgba-stylish-slight'
-      label: 'Stylish slight'
-    -
-      value: 'paragraph--color paragraph--color--rgba-stylish-light'
-      label: 'Stylish light'
-    -
-      value: 'paragraph--color paragraph--color--rgba-stylish-strong'
-      label: 'Stylish strong'
+      label: 'RGB - Red - 100%'	 f
     -
       value: 'paragraph--color paragraph--color--rgba-teal-slight'
       label: 'RGB - Teal - 25%'
@@ -550,15 +541,7 @@ settings:
     -
       value: 'paragraph--color paragraph--color--danger'
       label: 'Site Danger Color'
-    -
-      value: 'paragraph--color paragraph--color--bluegloss'
-      label: 'Gradient Blue Gloss'
-    -
-      value: 'paragraph--color paragraph--color--greygloss'
-      label: 'Gradient Grey Gloss'
-    -
-      value: 'paragraph--color paragraph--color--black3d'
-      label: 'Gradient Black 3D'
+
   allowed_values_function: ''
 module: options
 locked: false
