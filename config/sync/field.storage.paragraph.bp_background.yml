@@ -405,13 +405,13 @@ settings:
       label: 'RGB - Bluegrey - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-slight'
-      label: 'Brown - 25%'
+      label: 'RGB - Brown - 25%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-light'
-      label: 'Brown - 50%'
+      label: 'RGB - Brown - 50%'
     -
       value: 'paragraph--color paragraph--color--rgba-brown-strong'
-      label: 'Brown - 100%'
+      label: 'RGB - Brown - 100%'
     -
       value: 'paragraph--color paragraph--color--rgba-cyan-slight'
       label: 'RGB - Cyan - 25%'
