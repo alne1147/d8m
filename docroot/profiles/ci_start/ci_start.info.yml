@@ -149,7 +149,6 @@ dependencies:
   - views_templates
   - simple_sitemap
   - termcase
-  - paragraphs_edit
   - purge
   - purge_ui
   - purge_drush
