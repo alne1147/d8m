@@ -275,6 +275,9 @@ function template_preprocess_superfish_menu_items(array &$variables) {
       // Dirty fix! to only add a "menuparent" class.
       $item['options_menuparent'] = $item['options'];
       $item['options_menuparent']['attributes']['class'][] = 'menuparent';
+      if ($item['url']->isRouted() && $item['url']->getRouteName() === '<nolink>') {
+        $item['options_menuparent']['attributes']['class'][] = 'nolink';
+      }
       $link_element = [
         '#type' => 'link',
         '#title' => SafeMarkup::format($link_text, $link_text_replace),
