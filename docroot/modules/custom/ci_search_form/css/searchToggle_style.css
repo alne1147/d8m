@@ -39,7 +39,7 @@
 }
 
 .search__form--input:focus {
-  outline: thin dashed #f1f1f1 !important;
+  outline: #f1f1f1 !important;
 }
 
 .search__form--input.input-lg {
