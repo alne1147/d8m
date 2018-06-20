@@ -9,9 +9,10 @@
 
                 $(".search").toggleClass("search--open");
                 $(".search").slideToggle(300);
-                $( "input#edit-search.search__form--input.input-lg").focus();
+
                 if ($(".search").hasClass("search--open")) {
                     $(".header__search--icon").addClass("search--open");
+                    $( "input#edit-search.search__form--input.input-lg").focus();
 
                     $(".search").attr("aria-hidden", false);
                 } else {
