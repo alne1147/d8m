@@ -94,7 +94,25 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+    <div class="row">
+      <div class="col-sm-4">
+        {{ content.field_photo }}
+        {{  label }}
+        {{ content.field_title }}
+        {{ content.field_agency }}
+        {{ content.field_phone_number }}
+        {{ content.field_email }}
+        {{ content.field_address }}
+        {{ content.field_map }}
+      </div>
+      <div class="col-sm-8">
+        {{ content.field_agency_logo }}
+        {{ content.field_agency }}
+        {{ content.body }}
+      </div>
+    </div>
   </div>
 
+
 </article>
+
