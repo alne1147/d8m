@@ -19,10 +19,7 @@
                     $(".search").attr("aria-hidden", true);
                 }
             });
-
-
-
-            // Toggle Expansion with keyboard
+            // Toggle Expansion with keyboards
             $(".header__search").keydown( function (e) {
                 // Enter and Space keys
                 if (e.keyCode === 13 || e.keyCode === 32) {
