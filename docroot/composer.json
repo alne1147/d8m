@@ -39,7 +39,8 @@
         "drupal/libraries": "^3.0",
         "drupal/search_api_solr": "^1.2",
         "drupal/addtocalendar": "^3.1",
-        "drupal/roleassign": "1.x-dev"
+        "drupal/roleassign": "1.x-dev",
+        "drupal/draggableviews": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.5"
