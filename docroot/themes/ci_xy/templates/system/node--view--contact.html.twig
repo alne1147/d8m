@@ -72,7 +72,6 @@
  * @ingroup themeable
  */
 #}
-
 <article{{ attributes }}>
 
   {{ title_prefix }}
@@ -94,25 +93,7 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    <div class="row">
-      <div class="col-sm-4">
-        {{ content.field_photo }}
-        <h4>{{  label }}</h4>
-        <h4>{{ content.field_title }}</h4>
-        <h5>{{ content.field_agency }}</h5>
-        {{ content.field_phone_number }}
-        {{ content.field_email }}
-        {{ content.field_address }}
-        {{ content.field_map }}
-      </div>
-      <div class="col-sm-8">
-        <div class="col-sm-1">{{ content.field_agency_logo }}</div>
-        <div class="col-sm-11"><h4>{{ content.field_agency }}</h4></div>
-          {{ content.body }}
-      </div>
-    </div>
+    {{ content }}
   </div>
 
-
 </article>
-
