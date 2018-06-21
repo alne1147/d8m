@@ -97,24 +97,72 @@
   </div>
     {# Event Summary #}
     {# Column 1#}
-    {% if node.field_show_date_and_time.value %}
-        {{  content.field_date_time_range }}
-    {% endif %}
-    {% if node.field_show_event_organizer.value %}
-        {{ content.field_event_organizer }}
-    {% endif %}
-    {% if node.field_show_organizer_email.value %}
-        {{ content.field_organizer_email}}
-    {% endif %}
-    {% if node.field_show_event_tags.value %}
-        {{ content.field_article_tags }}
-    {% endif %}
+
+    {#{% if node.field_show_date_and_time.value %}#}
+        {#{{  content.field_date_time_range }}#}
+    {#{% endif %}#}
+    {#{% if node.field_show_event_organizer.value %}#}
+        {#{{ content.field_event_organizer }}#}
+    {#{% endif %}#}
+    {#{% if node.field_show_organizer_email.value %}#}
+        {#{{ content.field_organizer_email}}#}
+    {#{% endif %}#}
+    {#{% if node.field_show_event_tags.value %}#}
+        {#{{ content.field_article_tags }}#}
+    {#{% endif %}#}
     {#Column 2 #}
-    {% if node.field_location.value %}
-        {{ content.field_location }}
-    {% endif %}
+    {#{% if node.field_location.value %}#}
+        {#{{ content.field_location }}#}
+    {#{% endif %}#}
     {# Column 3 #}
-    {% if node.field_venue.value %}
-        {{ content.field_venue }}
-    {% endif %}
+    {#{% if node.field_venue.value %}#}
+        {#{{ content.field_venue }}#}
+    {#{% endif %}#}
+
+  {%
+    set event_classes = [
+    content.field_date_time_range is not empty or content.field_event_organizer is not empty or content.field_organizer_email is not empty or content.field_article_tags is not empty ? 'col-sm-4',
+    content.field_date_time_range and content.field_event_organizer and content.field_organizer_email and content.field_article_tags is empty ? 'smile',
+    ]
+  %}
+
+  <div class="row">
+      <div {{ content_attributes.addClass(event_classes) }}>
+        {% if node.field_show_date_and_time.value %}
+          {{ content.field_date_time_range }}
+        {% endif %}
+        {% if node.field_show_event_organizer.value %}
+          {{ content.field_event_organizer }}
+        {% endif %}
+        {% if node.field_show_organizer_email.value %}
+          {{ content.field_organizer_email }}
+        {% endif %}
+        {% if node.field_show_event_tags.value %}
+          {{ content.field_article_tags }}
+        {% endif %}
+      </div>
+  </div>
+
+
+  {# Column 1#}
+  {#{% if node.field_show_date_and_time.value %}#}
+    {#{{  content.field_date_time_range }}#}
+  {#{% endif %}#}
+  {#{% if node.field_show_event_organizer.value %}#}
+    {#{{ content.field_event_organizer }}#}
+  {#{% endif %}#}
+  {#{% if node.field_show_organizer_email.value %}#}
+    {#{{ content.field_organizer_email}}#}
+  {#{% endif %}#}
+  {#{% if node.field_show_event_tags.value %}#}
+    {#{{ content.field_article_tags }}#}
+  {#{% endif %}#}
+  {#Column 2 #}
+  {% if node.field_location.value %}
+    {{ content.field_location }}
+  {% endif %}
+  {# Column 3 #}
+  {% if node.field_venue.value %}
+    {{ content.field_venue }}
+  {% endif %}
 </article>
