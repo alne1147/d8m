@@ -1,7 +1,7 @@
-.col-sm-6 .paragraph__column--container-wrapper .container,
-.col-sm-9 .paragraph__column--container-wrapper .container {
-  width: 100%;
-}
+//.col-sm-6 .paragraph__column--container-wrapper .container,
+//.col-sm-9 .paragraph__column--container-wrapper .container {
+//  width: 100%;
+//}
 
 .paragraph {
     &.paragraph--width--tiny,
@@ -159,7 +159,7 @@
     }
   //}
 }
-.region-content .paragraph .paragraph__column--container-wrapper .container {
+.main-container .paragraph .paragraph__column--container-wrapper .container {
   width: 100%;
 }
 .paragraph.paragraph--color + .paragraph > .paragraph__column {
