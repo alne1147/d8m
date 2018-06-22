@@ -35,7 +35,6 @@
         padding-bottom:0;
       }
     }
-
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
@@ -159,6 +158,9 @@
       }
     }
   //}
+}
+.region-content .paragraph .paragraph__column--container-wrapper .container {
+  width: 100%;
 }
 .paragraph.paragraph--color + .paragraph > .paragraph__column {
   padding-top: 0;
