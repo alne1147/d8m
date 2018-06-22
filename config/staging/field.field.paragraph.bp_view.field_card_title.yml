@@ -1,0 +1,19 @@
+uuid: dc004949-1b05-4e3f-8adc-d9de0b0ea84a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_title
+    - paragraphs.paragraphs_type.bp_view
+id: paragraph.bp_view.field_card_title
+field_name: field_card_title
+entity_type: paragraph
+bundle: bp_view
+label: 'Card Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

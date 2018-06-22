@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_width
+    - field.field.paragraph.bp_view.field_card_title
     - field.field.paragraph.bp_view.field_dynamic_views
     - field.field.paragraph.bp_view.field_title_color
     - paragraphs.paragraphs_type.bp_view
@@ -19,21 +20,29 @@ bundle: bp_view
 mode: default
 content:
   bp_background:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
-  bp_width:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
-  field_dynamic_views:
+  bp_width:
     weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_card_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dynamic_views:
+    weight: 3
     label: hidden
     settings:
       plugin_types:
@@ -46,7 +55,7 @@ content:
     type: viewsreference_formatter
     region: content
   field_title_color:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
