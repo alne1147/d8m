@@ -9,7 +9,9 @@
                 $form.find('button[type=submit]').click();
             });
 
-            $( '.js-form-item-field-article-type-target-id' ).addClass( "float-right" );
+            $( '.more-link' ).addClass( "col-sm-2" );
+            $( '#views-exposed-form-references-recent-nodes-ref-nodes' ).addClass( "col-sm-8 offset-md-2" );
+
 
         }
     };
