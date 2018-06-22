@@ -11,7 +11,7 @@
 
             $( '.more-link' ).addClass( "col-sm-2" );
             $( '#views-exposed-form-references-recent-nodes-ref-nodes' ).addClass( "col-sm-8 offset-md-2" );
-
+            $( '.view-article-blocks .view-footer' ).addClass( "col-sm-8 offset-md-2" );
 
         }
     };
