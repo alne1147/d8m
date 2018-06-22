@@ -189,7 +189,7 @@
 }
 #views-exposed-form-references-recent-nodes-ref-nodes .form-type-select
 {
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .view-article-blocks .more-link a,
@@ -200,14 +200,20 @@
   background: url("../images/rss.png") no-repeat right top;
   width: 20px;
   height:20px;
+  margin-top:10px;
 }
+.view-article-blocks .view-footer a
+{
+  margin-top:10px;
+}
+.view-article-blocks .view-footer a,
 .js-form-item-field-article-type-target-id
 {
 float:right;
 }
 .view-article-blocks .more-link a
 {
-  margin-top:20px;
+  margin-top:10px;
 }
 .view-references-recent-nodes .views-row,
 .view-article-blocks .views-row
