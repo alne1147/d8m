@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+ /**
+  * Implements hook_theme_suggestions_HOOK_alter().
+  */
+
+// This hook is used to create template files for our different content types
+
+ function ci_xy_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+   if ($node = \Drupal::routeMatch()->getParameter('node')) {
+     $content_type = $node->bundle();
+     $suggestions[] = 'page__'.$content_type;
+   }
+ }
