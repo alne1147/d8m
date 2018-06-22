@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\roleassign\Plugin\views\field\RoleAssignUserBulkForm.
- */
-
 namespace Drupal\roleassign\Plugin\views\field;
 
 use Drupal\views\Plugin\views\display\DisplayPluginBase;

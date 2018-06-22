@@ -1,0 +1,6 @@
+name: CI View Tweaks
+dependencies: {  }
+description: 'Behaviour tweaks for certain views'
+core: 8.x
+package: Custom
+type: module

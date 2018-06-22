@@ -3,6 +3,12 @@ CHANGELOG for RoleAssign for Drupal 8
 
 
 roleassign 8.x-1.x-dev:
+  Issue #2964630 by salvis: Move the Role Assign settings from "Configuration" to "People" where it's more easily found.
+  Issue #2935117 by idebr: Can't uninstall with Drush.
+  Issue by salvis: Add self-evident warning to the README.txt file.
+  Issue #2766347 by Vinay15, Dane Powell: Remove @file tag docblock from all the .php files.
+  Issue #2661864 by heykarthikwithu: Remove unused imports in the code base.
+  Issue #2758855 by Alan-H: Fix Hard-sets the Authenticated User role.
 
 
 roleassign 8.x-1.0-alpha2 (2016-02-02):

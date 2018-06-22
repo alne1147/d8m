@@ -42,6 +42,7 @@ drush en ci_article_setup -y;
 drush en ci_media_types -y;
 drush en ci_admin_tweaks --y;
 drush en ci_theme_options --y;
+drush en ci_views_tweaks --y;
 drush en redirect --y;
 drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
@@ -51,6 +52,9 @@ drush cr --y;
 drush dcdi --y;
 drush cim --partial sole --y;
 drush cim --partial staging --y;
+drush en memcache --y;
+drush en ci_search --y;
+drush en ci_views_tweaks --y;
 
 
 echo "That's the end of the D8M install script!"

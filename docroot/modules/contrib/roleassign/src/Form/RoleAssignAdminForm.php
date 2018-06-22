@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\roleassign\Form\RoleAssignAdminForm.
- */
-
 namespace Drupal\roleassign\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
