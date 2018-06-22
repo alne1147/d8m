@@ -36,8 +36,7 @@
       padding: 1.182em 0;
       &:focus {
         border-bottom-color: darken($color-brand-green, 1%);
-        outline: thin dashed darken($color-brand-green, 1%);
-        //outline-color: darken($color-brand-green, 1%);
+        outline: #f1f1f1;
       }
       &::placeholder {
         color: darken($color-brand-green, 1%);  // Contrast Ratio 3.68

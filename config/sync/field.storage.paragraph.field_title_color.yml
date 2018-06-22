@@ -166,7 +166,7 @@ settings:
       label: 'RGB - Orange'
     -
       value: 'paragraph--color paragraph--color--rgba-pink-strong'
-      label: 'Sea Foam'
+      label: 'RGB - Pink'
     -
       value: 'paragraph--color paragraph--color--rgba-purple-strong'
       label: 'RGB - Purple'
