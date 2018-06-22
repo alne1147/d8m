@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.contact.body
+    - field.field.node.contact.field_address
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_email
@@ -27,7 +28,7 @@ content:
     type: string
     weight: 6
     region: content
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -35,23 +36,23 @@ content:
     type: image
     weight: 5
     region: content
-    label: above
+    label: hidden
     settings:
-      image_style: logo
+      image_style: thumbnail_logo
       image_link: ''
     third_party_settings: {  }
   field_email:
-    type: basic_string
+    type: email_mailto
     weight: 2
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_phone_number:
     type: telephone_link
     weight: 4
     region: content
-    label: above
+    label: hidden
     settings:
       title: ''
     third_party_settings: {  }
@@ -59,7 +60,7 @@ content:
     type: image
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: contact_thumbnail
       image_link: ''
@@ -68,7 +69,7 @@ content:
     type: string
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -79,4 +80,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_address: true
   field_map: true
