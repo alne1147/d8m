@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_event_organizer
     - field.field.node.event.field_location
+    - field.field.node.event.field_menu_reference_left
+    - field.field.node.event.field_menu_reference_right
     - field.field.node.event.field_mini
     - field.field.node.event.field_organizer_email
     - field.field.node.event.field_page_options
@@ -123,6 +125,8 @@ third_party_settings:
       region: content
     group_menu:
       children:
+        - field_menu_reference_left
+        - field_menu_reference_right
         - field_page_options
       parent_name: group_display
       weight: 4
@@ -320,8 +324,20 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_menu_reference_left:
+    weight: 55
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_menu_reference_right:
+    weight: 56
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_mini:
-    weight: 21
+    weight: 56
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -335,13 +351,13 @@ content:
     type: email_default
     region: content
   field_page_options:
-    weight: 33
+    weight: 57
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_promote:
-    weight: 8
+    weight: 57
     settings:
       display_label: true
     third_party_settings: {  }
