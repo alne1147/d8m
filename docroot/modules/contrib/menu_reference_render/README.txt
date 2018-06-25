@@ -15,6 +15,8 @@ For a full description of the module, visit the project page:
 To submit bug reports and feature suggestions, or to track changes:
   http://drupal.org/project/issues/menu_reference_render
 
+Please use releases 8.x-1.* for Drupal core version <= 8.3 and
+releases 8.x-2.* for Drupal > 8.3.
 
 -- REQUIREMENTS --
 

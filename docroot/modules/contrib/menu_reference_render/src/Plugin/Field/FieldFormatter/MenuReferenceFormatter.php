@@ -2,6 +2,7 @@
 
 namespace Drupal\menu_reference_render\Plugin\Field\FieldFormatter;
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\EntityReferenceFormatterBase;
 use Drupal\Core\Field\FieldDefinitionInterface;
@@ -54,6 +55,15 @@ class MenuReferenceFormatter extends EntityReferenceFormatterBase {
   public static function isApplicable(FieldDefinitionInterface $field_definition) {
     // Limit formatter to only menu entity types.
     return ($field_definition->getFieldStorageDefinition()->getSetting('target_type') == 'menu');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function checkAccess(EntityInterface $entity) {
+    // Set 'view label' operation for menu entity.
+    // @see \Drupal\system\MenuAccessControlHandler::checkAccess().
+    return $entity->access('view label', NULL, TRUE);
   }
 
 }
