@@ -1,0 +1,11 @@
+<?php
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function ci_menu_tweaks_menu_link_content_presave(EntityInterface $entity) {
+    if ($entity->menu_name->value == 'menu-1') {
+        $entity->expanded = 1;
+    }
+}
