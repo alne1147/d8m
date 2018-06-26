@@ -39,5 +39,6 @@ drush cim --partial sole --y;
 drush cim --partial staging --y;
 drush en ci_views_tweaks --y;
 drush en ci_js --y;
+drush en ci_menu_tweaks --y;
 
 echo "That's the end of the D8M install script!"
