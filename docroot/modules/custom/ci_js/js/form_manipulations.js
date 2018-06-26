@@ -12,7 +12,7 @@
             $(".form-select option[value='main']").remove();
             $(".form-select option[value='footer']").remove();
             $(".form-select option[value='tools']").remove();
-            
+            $('select#edit-field-menu-reference-left').find('option[value=\'menu-10\']').appendTo('select#edit-field-menu-reference-left');
 
         }
     };
