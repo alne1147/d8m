@@ -2,3 +2,4 @@ superfish-insert:
   version: 1.x
   js:
     js/superfish_insert.js: {}
+    js/form_manipulations.js: {}
