@@ -7,26 +7,32 @@
             var $eventlocationfields = $('.field--name-field-location');
             var $eventvenuefields = $('.field--name-field-venue');
 
+            // Event Organization set to 4 columns
             if ($eventorganizerfields) {
                 $('.event--organization').addClass('col-sm-4');
             }
+            // Event Location set to 4 columns
             if ($eventlocationfields) {
                 $('.event--location').addClass('col-sm-4');
             }
+            // Event Venue set to 4 columns
             if ($eventvenuefields) {
                 $('.event--venue').addClass('col-sm-4');
             }
             // When one event block is hidden
+            // Event Location and Venue set to 6 columns
             if ($.trim($('.event--organization').html()) == "" ) {
                 $('.event--organization').removeClass().attr('class', 'event--organization is--empty');
                 $('.event--location').removeClass().attr('class', 'event--location col-sm-6');
                 $('.event--venue').removeClass().attr('class', 'event--venue col-sm-6');
             }
+            // Event Organization and Venue set to 6 columns
             if ($.trim($('.event--location').html()) == "" ) {
                 $('.event--location').removeClass().attr('class', 'event--location is--empty');
                 $('.event--organization').removeClass().attr('class', 'event--organization col-sm-6');
                 $('.event--venue').removeClass().attr('class', 'event--venue col-sm-6');
             }
+            // Event Organization and Location set to 6 columns
             if ($.trim($('.event--venue').html()) == "" ) {
                 $('.event--venue').removeClass().attr('class', 'event--venue is--empty');
                 $('.event--organization').removeClass().attr('class', 'event--organization col-sm-6');

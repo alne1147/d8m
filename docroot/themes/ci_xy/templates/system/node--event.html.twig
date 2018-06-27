@@ -85,59 +85,19 @@
   {% if display_submitted %}
     {#<footer>#}
 
-      <div{{ author_attributes }}>
-    <div class ="author_date hide"> {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
+    <div{{ author_attributes }}>
+      <div class="author_date hide"> {{ createdDate }}</div>
+      <div class="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
       {{ metadata }}
-  </div>
+    </div>
     {#</footer>#}
   {% endif %}
 
   <div{{ content_attributes }}>
-      {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location') }}
+    {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location') }}
   </div>
-    {# Event Summary #}
-    {# Column 1#}
 
-    {#{% if node.field_show_date_and_time.value %}#}
-        {#{{  content.field_date_time_range }}#}
-    {#{% endif %}#}
-    {#{% if node.field_show_event_organizer.value %}#}
-        {#{{ content.field_event_organizer }}#}
-    {#{% endif %}#}
-    {#{% if node.field_show_organizer_email.value %}#}
-        {#{{ content.field_organizer_email}}#}
-    {#{% endif %}#}
-    {#{% if node.field_show_event_tags.value %}#}
-        {#{{ content.field_article_tags }}#}
-    {#{% endif %}#}
-    {#Column 2 #}
-    {#{% if node.field_location.value %}#}
-        {#{{ content.field_location }}#}
-    {#{% endif %}#}
-    {# Column 3 #}
-    {#{% if node.field_venue.value %}#}
-        {#{{ content.field_venue }}#}
-    {#{% endif %}#}
-
-  {#{%#}
-    {#set event_classes = [#}
-      {#node.field_show_date_and_time.value or node.field_show_event_organizer.value or node.field_show_organizer_email.value or node.field_show_event_tags.value ? 'col-sm-4 event--organizer',#}
-      {#node.field_location.value ? 'col-sm-4 event--location',#}
-      {#node.field_venue.value ? 'col-sm-4 event--venue'#}
-    {#]#}
-  {#%}#}
-  {#{%#}
-    {#set event_location_classes = [#}
-    {#node.field_location.value ? 'col-sm-4 event--location'#}
-    {#]#}
-  {#%}#}
-  {#{%#}
-    {#set event_venue_classes = [#}
-    {#node.field_venue.value ? 'col-sm-4 event--venue'#}
-  {#]#}
-  {#%}#}
-
-
+  {# Events grid set using the events.js #}
   <div class="row">
     <div class="container">
       <div class="event--organization">
@@ -166,27 +126,4 @@
       </div>
     </div>
   </div>
-
-
-  {# Column 1#}
-  {#{% if node.field_show_date_and_time.value %}#}
-    {#{{  content.field_date_time_range }}#}
-  {#{% endif %}#}
-  {#{% if node.field_show_event_organizer.value %}#}
-    {#{{ content.field_event_organizer }}#}
-  {#{% endif %}#}
-  {#{% if node.field_show_organizer_email.value %}#}
-    {#{{ content.field_organizer_email}}#}
-  {#{% endif %}#}
-  {#{% if node.field_show_event_tags.value %}#}
-    {#{{ content.field_article_tags }}#}
-  {#{% endif %}#}
-  {#Column 2 #}
-  {#{% if node.field_location.value %}#}
-    {#{{ content.field_location }}#}
-  {#{% endif %}#}
-  {# Column 3 #}
-  {#{% if node.field_venue.value %}#}
-    {#{{ content.field_venue }}#}
-  {#{% endif %}#}
 </article>
