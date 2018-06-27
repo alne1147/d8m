@@ -85,36 +85,45 @@
   {% if display_submitted %}
     {#<footer>#}
 
-      <div{{ author_attributes }}>
-    <div class ="author_date hide"> {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
+    <div{{ author_attributes }}>
+      <div class="author_date hide"> {{ createdDate }}</div>
+      <div class="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
       {{ metadata }}
-  </div>
+    </div>
     {#</footer>#}
   {% endif %}
 
   <div{{ content_attributes }}>
-      {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location') }}
+    {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location') }}
   </div>
-    {# Event Summary #}
-    {# Column 1#}
-    {% if node.field_show_date_and_time.value %}
-        {{  content.field_date_time_range }}
-    {% endif %}
-    {% if node.field_show_event_organizer.value %}
-        {{ content.field_event_organizer }}
-    {% endif %}
-    {% if node.field_show_organizer_email.value %}
-        {{ content.field_organizer_email}}
-    {% endif %}
-    {% if node.field_show_event_tags.value %}
-        {{ content.field_article_tags }}
-    {% endif %}
-    {#Column 2 #}
-    {% if node.field_location.value %}
-        {{ content.field_location }}
-    {% endif %}
-    {# Column 3 #}
-    {% if node.field_venue.value %}
-        {{ content.field_venue }}
-    {% endif %}
+
+  {# Events grid set using the events.js #}
+  <div class="row">
+    <div class="container">
+      <div class="event--organization">
+        {% if node.field_show_date_and_time.value %}
+          {{ content.field_date_time_range }}
+        {% endif %}
+        {% if node.field_show_event_organizer.value %}
+          {{ content.field_event_organizer }}
+        {% endif %}
+        {% if node.field_show_organizer_email.value %}
+          {{ content.field_organizer_email }}
+        {% endif %}
+        {% if node.field_show_event_tags.value %}
+          {{ content.field_article_tags }}
+        {% endif %}
+      </div>
+      <div class="event--location">
+        {% if node.field_location.value %}
+          {{ content.field_location }}
+        {% endif %}
+      </div>
+      <div class="event--venue">
+        {% if node.field_venue.value %}
+          {{ content.field_venue }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </article>
