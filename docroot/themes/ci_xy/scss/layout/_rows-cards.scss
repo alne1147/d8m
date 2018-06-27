@@ -1,8 +1,3 @@
-.col-sm-6 .paragraph__column--container-wrapper .container,
-.col-sm-9 .paragraph__column--container-wrapper .container {
-  width: 100%;
-}
-
 .paragraph {
     &.paragraph--width--tiny,
     &.paragraph--width--narrow,
@@ -35,7 +30,6 @@
         padding-bottom:0;
       }
     }
-
   .paragraph__column--container-wrapper {
     padding-top: 30px;
     padding-bottom:30px;
@@ -160,6 +154,9 @@
     }
   //}
 }
+.main-container .paragraph .paragraph__column--container-wrapper .container {
+  width: 100%;
+}
 .paragraph.paragraph--color + .paragraph > .paragraph__column {
   padding-top: 0;
 }
@@ -192,7 +189,7 @@
 }
 #views-exposed-form-references-recent-nodes-ref-nodes .form-type-select
 {
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .view-article-blocks .more-link a,
@@ -203,14 +200,24 @@
   background: url("../images/rss.png") no-repeat right top;
   width: 20px;
   height:20px;
+  margin-top:10px;
 }
+.view-article-blocks .view-footer a
+{
+  margin-top:10px;
+}
+.view-article-blocks .view-footer a,
 .js-form-item-field-article-type-target-id
 {
 float:right;
 }
+#views-exposed-form-references-recent-nodes-ref-nodes label.control-label
+{
+  padding-right:10px;
+}
 .view-article-blocks .more-link a
 {
-  margin-top:20px;
+  margin-top:10px;
 }
 .view-references-recent-nodes .views-row,
 .view-article-blocks .views-row
