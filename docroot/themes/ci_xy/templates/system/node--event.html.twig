@@ -119,15 +119,28 @@
         {#{{ content.field_venue }}#}
     {#{% endif %}#}
 
-  {%
-    set event_classes = [
-    content.field_date_time_range is not empty or content.field_event_organizer is not empty or content.field_organizer_email is not empty or content.field_article_tags is not empty ? 'col-sm-4',
-    content.field_date_time_range and content.field_event_organizer and content.field_organizer_email and content.field_article_tags is empty ? 'smile',
-    ]
-  %}
+  {#{%#}
+    {#set event_classes = [#}
+      {#node.field_show_date_and_time.value or node.field_show_event_organizer.value or node.field_show_organizer_email.value or node.field_show_event_tags.value ? 'col-sm-4 event--organizer',#}
+      {#node.field_location.value ? 'col-sm-4 event--location',#}
+      {#node.field_venue.value ? 'col-sm-4 event--venue'#}
+    {#]#}
+  {#%}#}
+  {#{%#}
+    {#set event_location_classes = [#}
+    {#node.field_location.value ? 'col-sm-4 event--location'#}
+    {#]#}
+  {#%}#}
+  {#{%#}
+    {#set event_venue_classes = [#}
+    {#node.field_venue.value ? 'col-sm-4 event--venue'#}
+  {#]#}
+  {#%}#}
+
 
   <div class="row">
-      <div {{ content_attributes.addClass(event_classes) }}>
+    <div class="container">
+      <div class="event--organization">
         {% if node.field_show_date_and_time.value %}
           {{ content.field_date_time_range }}
         {% endif %}
@@ -141,6 +154,17 @@
           {{ content.field_article_tags }}
         {% endif %}
       </div>
+      <div class="event--location">
+        {% if node.field_location.value %}
+          {{ content.field_location }}
+        {% endif %}
+      </div>
+      <div class="event--venue">
+        {% if node.field_venue.value %}
+          {{ content.field_venue }}
+        {% endif %}
+      </div>
+    </div>
   </div>
 
 
@@ -158,11 +182,11 @@
     {#{{ content.field_article_tags }}#}
   {#{% endif %}#}
   {#Column 2 #}
-  {% if node.field_location.value %}
-    {{ content.field_location }}
-  {% endif %}
+  {#{% if node.field_location.value %}#}
+    {#{{ content.field_location }}#}
+  {#{% endif %}#}
   {# Column 3 #}
-  {% if node.field_venue.value %}
-    {{ content.field_venue }}
-  {% endif %}
+  {#{% if node.field_venue.value %}#}
+    {#{{ content.field_venue }}#}
+  {#{% endif %}#}
 </article>
