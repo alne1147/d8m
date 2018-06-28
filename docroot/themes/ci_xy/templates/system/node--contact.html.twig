@@ -102,12 +102,16 @@
         <h5>{{ content.field_agency }}</h5>
         {{ content.field_phone_number }}
         {{ content.field_email }}
+        <p class=empty-class><p>
         {{ content.field_address }}
+        <p class=empty-class><p>
         {{ content.field_map }}
       </div>
       <div class="col-sm-8">
-        <div class="col-sm-1">{{ content.field_agency_logo }}</div>
-        <div class="col-sm-11">{{ content.field_agency }}</div>
+        <div class="row agency">
+          <div class="col-sm-1">{{ content.field_agency_logo }}</div>
+          <div class="col-sm-11">{{ content.field_agency }}</div>
+        </div>
           {{ content.body }}
       </div>
     </div>

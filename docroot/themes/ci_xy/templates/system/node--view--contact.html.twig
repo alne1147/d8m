@@ -74,8 +74,6 @@
 #}
 <article{{ attributes }}>
 
-
-
   {% if display_submitted %}
     {#<footer>#}
 
@@ -86,30 +84,26 @@
     {#</footer>#}
   {% endif %}
 
-  <a href="{{ url }}" rel="bookmark"> <div{{ content_attributes }}>
+  <a href="{{ url }}" rel="bookmark"> <div class="contact_card"{{ content_attributes }}>
       <div class="row">
-      <div class="col-sm-3">
-        {{ content.field_photo }}
+        <div class="col-sm-3">
+          {{ content.field_photo }}
+        </div>
+        <div class="col-sm-9">
+            <h4{{ title_attributes }}>
+              {{ label }}
+            </h4>
+          {{  content.field_title}}
+          <p class=empty-class><p>
+          {{ content.field_address }}
+          {{ content.field_phone_number }}
+          {{ content.field_email }}
+        </div>
       </div>
-      <div class="col-sm-9">
-        {{ title_prefix }}
-        {% if not page %}
-          <h4{{ title_attributes }}>
-            {{ label }}
-          </h4>
-        {% endif %}
-        {{ title_suffix }}
-        {{  content.field_title }}
-        {{ content.field_agency }}
-        {{ content.field_address }}
-        {{ content.field_phone_number }}
-        {{ content.field_email }}
-      </div>
-      <div class="agency">
+      <div class="row agency">
         <div align ="right" class="col-sm-1 col-sm-offset-1">{{ content.field_agency_logo }}</div>
-        <div class="col-sm-9">{{ content.field_agency }}</div>
+        <div class="col-sm-10">{{ content.field_agency }}</div>
       </div>
-    </div>
   </div></a>
 
 </article>
