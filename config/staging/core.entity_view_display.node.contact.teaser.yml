@@ -17,13 +17,19 @@ dependencies:
     - node.type.contact
   module:
     - image
-    - telephone
     - user
 id: node.contact.teaser
 targetEntityType: node
 bundle: contact
 mode: teaser
 content:
+  field_address:
+    type: basic_string
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_agency:
     type: string
     weight: 6
@@ -34,7 +40,7 @@ content:
     third_party_settings: {  }
   field_agency_logo:
     type: image
-    weight: 5
+    weight: 4
     region: content
     label: hidden
     settings:
@@ -42,19 +48,19 @@ content:
       image_link: ''
     third_party_settings: {  }
   field_email:
-    type: email_mailto
+    type: basic_string
     weight: 2
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_phone_number:
-    type: telephone_link
-    weight: 4
+    type: string
+    weight: 3
     region: content
     label: hidden
     settings:
-      title: ''
+      link_to_entity: false
     third_party_settings: {  }
   field_photo:
     type: image
@@ -80,5 +86,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_address: true
   field_map: true

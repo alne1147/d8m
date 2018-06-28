@@ -16,6 +16,7 @@ dependencies:
     - node.type.contact
   module:
     - image
+    - simple_gmap
     - telephone
     - text
     - user
@@ -60,15 +61,26 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: email_mailto
     region: content
   field_map:
-    type: string
+    type: simple_gmap
     weight: 6
     region: content
-    label: inline
+    label: hidden
     settings:
-      link_to_entity: false
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '200'
+      iframe_width: '200'
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
     third_party_settings: {  }
   field_phone_number:
     weight: 4
