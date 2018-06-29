@@ -1,0 +1,17 @@
+uuid: c3ebc8b7-d6d7-4e96-bc69-3de79e74987a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: thumbnail_logo
+label: 'Thumbnail Logo'
+effects:
+  0cc2e4f4-60bc-4dfb-a82c-02fc5374cdb2:
+    uuid: 0cc2e4f4-60bc-4dfb-a82c-02fc5374cdb2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 40
+      height: 40
+      crop_type: focal_point

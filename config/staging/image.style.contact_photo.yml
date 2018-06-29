@@ -1,0 +1,17 @@
+uuid: 12ed2716-41db-401c-b4f3-b38d1a59e086
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: contact_photo
+label: 'Contact Photo'
+effects:
+  860ae0e3-1213-42e5-9c40-27d0d576c69d:
+    uuid: 860ae0e3-1213-42e5-9c40-27d0d576c69d
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 400
+      height: 400
+      crop_type: focal_point

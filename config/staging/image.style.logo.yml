@@ -1,0 +1,17 @@
+uuid: 2b25ead5-e167-4c27-90ba-50a3c3e7b681
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: logo
+label: Logo
+effects:
+  67e60bc3-8f48-4fe1-bcd8-cbc753c745d6:
+    uuid: 67e60bc3-8f48-4fe1-bcd8-cbc753c745d6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      crop_type: focal_point
