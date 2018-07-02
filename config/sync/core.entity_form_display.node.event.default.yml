@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_event_organizer
     - field.field.node.event.field_location
+    - field.field.node.event.field_menu_reference_left
+    - field.field.node.event.field_menu_reference_right
     - field.field.node.event.field_mini
     - field.field.node.event.field_organizer_email
     - field.field.node.event.field_page_options
@@ -73,7 +75,6 @@ third_party_settings:
     group_event_summary:
       children:
         - group_details
-        - group_organizer
         - group_map
         - field_venue
       parent_name: group_event_options
@@ -124,6 +125,8 @@ third_party_settings:
       region: content
     group_menu:
       children:
+        - field_menu_reference_left
+        - field_menu_reference_right
         - field_page_options
       parent_name: group_display
       weight: 4
@@ -206,26 +209,14 @@ third_party_settings:
         classes: ''
       label: Search
       region: content
-    group_organizer:
-      children:
-        - field_show_event_organizer
-        - field_event_organizer
-        - field_show_organizer_email
-        - field_organizer_email
-      parent_name: group_event_summary
-      weight: 7
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: Organizer
-      region: content
     group_details:
       children:
         - field_show_date_and_time
         - field_show_event_tags
+        - field_show_event_organizer
+        - field_event_organizer
+        - field_show_organizer_email
+        - field_organizer_email
       parent_name: group_event_summary
       weight: 6
       format_type: fieldset
@@ -318,7 +309,7 @@ content:
     type: single_date_time_range_widget
     region: content
   field_event_organizer:
-    weight: 35
+    weight: 26
     settings:
       size: 60
       placeholder: ''
@@ -333,14 +324,26 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_menu_reference_left:
+    weight: 55
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_menu_reference_right:
+    weight: 56
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_mini:
-    weight: 21
+    weight: 56
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_organizer_email:
-    weight: 37
+    weight: 28
     settings:
       size: 60
       placeholder: ''
@@ -348,13 +351,13 @@ content:
     type: email_default
     region: content
   field_page_options:
-    weight: 33
+    weight: 57
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_promote:
-    weight: 8
+    weight: 57
     settings:
       display_label: true
     third_party_settings: {  }
@@ -386,7 +389,7 @@ content:
     type: boolean_checkbox
     region: content
   field_show_event_organizer:
-    weight: 34
+    weight: 25
     settings:
       display_label: true
     third_party_settings: {  }
@@ -400,7 +403,7 @@ content:
     type: boolean_checkbox
     region: content
   field_show_organizer_email:
-    weight: 36
+    weight: 27
     settings:
       display_label: true
     third_party_settings: {  }

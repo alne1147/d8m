@@ -1,0 +1,23 @@
+uuid: 74ae54c0-5dcf-460e-ab94-8d524788e704
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_reference_right
+    - node.type.event
+id: node.event.field_menu_reference_right
+field_name: field_menu_reference_right
+entity_type: node
+bundle: event
+label: 'Menu Reference Right'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:menu'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
