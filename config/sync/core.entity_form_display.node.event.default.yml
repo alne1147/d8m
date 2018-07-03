@@ -1,3 +1,4 @@
+uuid: 9646d449-3447-4403-b5bb-669cbd96da78
 langcode: en
 status: true
 dependencies:
@@ -467,5 +468,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_date: true
+  field_menu_reference_left: true
+  field_menu_reference_right: true
   promote: true
   sticky: true
