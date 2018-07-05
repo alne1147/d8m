@@ -9,154 +9,155 @@ distribution:
 langcode: en
 
 dependencies:
-  - allowed_formats
+  - acquia_purge
   - addtocalendar
-  - superfish
-  - file_browser
-  - video_embed_wysiwyg
   - admin_toolbar
   - admin_toolbar_tools
-  - filter_perms
+  - allowed_formats
+  - anchor_link
+  - automated_cron
+  - background_image_formatter
+  - big_pipe
   - blazy
   - blazy_ui
+  - block
+  - block_class
+  - block_content
   - block_content_permissions
   - block_region_permissions
-  - ctools
-  - ctools_block
+  - block_styles
+  - block_visibility_groups
+  - block_visibility_groups_admin
+  - breakpoint
+  - calendar
+  - calendar_datetime
+  - chosen
+  - chosen_field
+  - chosen_lib
+  - ckeditor
   - ckeditor_a11ychecker
   - ckeditor_accordion
-  - anchor_link
   - ckeditor_balloonpanel
   - ckeditor_bootstrap_buttons
   - ckeditor_font
   - ckeditor_templates
+  - ckwordcount
   - colorbutton
   - conditional_fields
-  - exclude_node_title
-  - notification
-  - panelbutton
-  - ckwordcount
-  - context
-  - context_ui
-  - automated_cron
-  - big_pipe
-  - block
-  - breakpoint
-  - ckeditor
   - config
-  - contact
-  - contextual
-  - exclude_node_title 
-  - block_content
-  - menu_link_content
-  - dblog
-  - editor_file
-  - field
-  - field_ui
-  - filter
-  - file_browser
-  - help
-  - history
-  - dynamic_page_cache
-  - page_cache
-  - menu_ui
-  - node
-  - path
-  - quickedit
-  - rdf
-  - responsive_image
-  - shortcut
-  - system
-  - taxonomy
-  - editor
-  - toolbar
-  - tour
-  - update
-  - user
-  - views
-  - views_ui
-  - content_moderation
-  - datetime_range
-  - layout_discovery
-  - workflows
-  - linkit
-  - role_delegation
-  - calendar
-  - calendar_datetime
-  - features
-  - features_ui
-  - datetime
-  - entity_reference_revisions
-  - field_collection
-  - file
-  - image
-  - link
-  - options
-  - simple_gmap
-  - text
-  - field_group
-  - field_slideshow
-  - inline_entity_form
-  - entity_embed
-  - flexslider
-  - focal_point
-  - crop
-  - dropzonejs
-  - dropzonejs_eb_widget
-  - entity_browser
-  - entity_browser_entity_form
-  - image_widget_crop
-  - jquery_colorpicker
-  - background_image_formatter
-  - block_class
-  - block_visibility_groups
-  - block_visibility_groups_admin
   - config_update
+  - contact
   - contact_formatter
   - content_moderation
+  - content_moderation
+  - context
+  - context_ui
+  - contextual
+  - crop
+  - ctools
+  - ctools_block
+  - datetime
+  - datetime_range
+  - dblog
   - default_content
   - default_content_deploy
-  - hal
-  - serialization
+  - draggableviews
+  - dropzonejs
+  - dropzonejs_eb_widget
+  - dynamic_page_cache
+  - editor
+  - editor_file
   - embed
   - entity
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_embed
+  - entity_reference_revisions
+  - exclude_node_title
+  - exclude_node_title
+  - features
+  - features_ui
+  - field
+  - field_collection
+  - field_group
+  - field_slideshow
+  - field_ui
+  - file
+  - file_browser
+  - file_browser
+  - filter
+  - filter_perms
+  - flexslider
+  - focal_point
+  - hal
+  - help
+  - history
+  - image
+  - image_widget_crop
+  - inline_entity_form
+  - jquery_colorpicker
+  - layout_discovery
   - libraries
+  - link
+  - linkit
   - masquerade
   - menu_block
   - menu_condition
-  - pathauto
-  - roleassign
-  - scheduled_updates
-  - term_condition
-  - token
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - notification
+  - options
+  - page_cache
+  - panelbutton
   - paragraphs
   - paragraphs_type_permissions
-  - metatag
+  - path
+  - pathauto
+  - purge
+  - purge_drush
+  - purge_processor_cron
+  - purge_processor_lateruntime
+  - purge_queuer_coretags
+  - purge_ui
   - quick_clone
+  - quickedit
+  - rdf
+  - responsive_image
+  - role_delegation
+  - roleassign
+  - scheduled_updates
+  - serialization
+  - sharethis_block
+  - shortcut
   - simple_block
+  - simple_gmap
+  - simple_sitemap
   - single_datetime
   - slick
   - slick_paragraphs
   - slick_ui
-  - sharethis_block
-  - block_styles
   - styles_api
-  - twig_blocks
-  - chosen
-  - chosen_field
-  - chosen_lib
-  - viewsreference
-  - views_templates
-  - simple_sitemap
-  - termcase
-  - purge
-  - purge_ui
-  - purge_drush
-  - purge_queuer_coretags
-  - purge_processor_cron
-  - purge_processor_lateruntime
-  - acquia_purge
+  - superfish
+  - system
+  - taxonomy
   - telephone
+  - term_condition
+  - termcase
+  - text
+  - token
+  - toolbar
+  - tour
+  - twig_blocks
+  - update
+  - user
+  - video_embed_wysiwyg
+  - views
+  - views_templates
+  - views_ui
+  - viewsreference
+  - workflows
 
   
   # Adding these lines to our profilename.info.yml will only enable these themes.
