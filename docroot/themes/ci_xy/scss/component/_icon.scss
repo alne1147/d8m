@@ -20,3 +20,13 @@ a {
     margin-right: -.25em;
   }
 }
+
+
+.paragraph--type--card-icon {
+  .fontawesome-icons {
+    font-size: 5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $color-black;
+  }
+}
