@@ -1,0 +1,60 @@
+uuid: 9baf79a2-0202-447c-9fd6-9814797c1474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_icon.bp_background
+    - field.field.paragraph.card_icon.field_card_title
+    - field.field.paragraph.card_icon.field_icon
+    - field.field.paragraph.card_icon.field_link
+    - field.field.paragraph.card_icon.field_text
+    - field.field.paragraph.card_icon.field_title_color
+    - paragraphs.paragraphs_type.card_icon
+  module:
+    - fontawesome
+    - options
+id: paragraph.card_icon.default
+targetEntityType: paragraph
+bundle: card_icon
+mode: default
+content:
+  bp_background:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_card_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon:
+    weight: 3
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_text:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_color:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  field_link: true
