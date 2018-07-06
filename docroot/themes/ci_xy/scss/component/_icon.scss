@@ -24,11 +24,9 @@ a {
 
 .paragraph--type--card-icon {
   .fontawesome-icons {
-    font-size: 5vw
-  }
-}
-.paragraph--type--bp-columns__3col {
-  .fontawesome-icons{
-    font-size: 10em;
+    font-size: 5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $color-black;
   }
 }

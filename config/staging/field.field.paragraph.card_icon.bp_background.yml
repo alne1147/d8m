@@ -1,0 +1,21 @@
+uuid: 3c6205da-a747-455b-9174-2128e80b88b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.card_icon
+  module:
+    - options
+id: paragraph.card_icon.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: card_icon
+label: 'Card Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

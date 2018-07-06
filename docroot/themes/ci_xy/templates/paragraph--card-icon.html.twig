@@ -267,32 +267,30 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   {% set classes = classes|merge(layout_background_classes) %}
 {% endif %}
 
+
 {% if content.field_title_color|render|striptags|trim %}
 {# Prints div with classes, and content without Width and Background. #}
-<a href="{{ content.field_link }}">
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
     {{ title_suffix }}
     <div class="paragraph__title {{content.field_title_color[0] }}">
       {{ content.field_card_title }}
     </div>
-    {{ content|without('bp_width', 'bp_background', 'field_icon', 'field_card_title', 'field_title_color', 'field_link') }}
-    <div align= center class="paragraph-icon" {{ content.field_icon }} </div>
+    {{ content|without('bp_width', 'bp_background', 'field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
+    <a href="{{ content.field_link }}"><div align="center" class="paragraph-icon"> {{ content.field_icon }} </div></a>
+    <div align="center" class="icon_text"> {{  content.field_text }} </div>
   </div>
 </div>
-</a>
 
 {% else %}
-  <a href="{{ content.field_link }}">
   <div{{ attributes.addClass(classes) }}>
     <div class="paragraph__column">
       <div class="paragraph__title">
           {{ content.field_card_title }}
       </div>
-        {{ content|without('bp_width', 'bp_background','field_icon', 'field_card_title', 'field_title_color', 'field_link') }}
-      <div align= center class="paragraph-icon" {{ content.field_icon }} </div>
+        {{ content|without('bp_width', 'bp_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
+      <a href="{{ content.field_link }}"><div align="center" class="paragraph-icon"> {{ content.field_icon }} </div></a>
+      <div align="center" class="icon_text"> {{  content.field_text }} </div>
     </div>
   </div>
-  </a>
-
 {% endif %}
