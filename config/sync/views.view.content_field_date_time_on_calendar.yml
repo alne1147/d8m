@@ -411,7 +411,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 1
-          content: '{{ arguments.field_date_value_full_date }}'
+          content: '{{ arguments.field_date_time_range_value_full_date }}'
           pager_embed: 0
           plugin_id: calendar_header
       filters:
@@ -537,7 +537,7 @@ display:
         options:
           calendar_type: week
           mini: '0'
-          name_size: '3'
+          name_size: '2'
           with_weekno: '0'
           max_items: '0'
           max_items_behavior: more
@@ -619,7 +619,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 1
-          content: 'Week of {{ arguments.field_date_value_year_week }}'
+          content: '{{ arguments.field_date_time_range_value_year_month|split('''', 4)|join(''-'')|date(''F Y'') }}'
           pager_embed: 0
           plugin_id: calendar_header
     cache_metadata:

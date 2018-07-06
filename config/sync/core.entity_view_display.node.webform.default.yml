@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.webform.body
     - field.field.node.webform.field_article_tags
+    - field.field.node.webform.field_menu_reference_left
+    - field.field.node.webform.field_menu_reference_right
     - field.field.node.webform.field_page_options
     - field.field.node.webform.field_promote
     - field.field.node.webform.field_related_content
@@ -24,17 +26,22 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
-  links:
+  content_moderation_control:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   webform:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       source_entity: true
@@ -43,6 +50,8 @@ content:
     region: content
 hidden:
   field_article_tags: true
+  field_menu_reference_left: true
+  field_menu_reference_right: true
   field_page_options: true
   field_promote: true
   field_related_content: true

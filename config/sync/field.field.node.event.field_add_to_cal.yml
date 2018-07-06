@@ -41,10 +41,10 @@ settings:
       field: token
       tokenized: '[site:mail]'
     atc_date_start:
-      field: field_date
+      field: field_date_time_range
       tokenized: ''
     atc_date_end:
-      field: token
+      field: field_date_time_range
       tokenized: ''
     atc_privacy: public
     data_secure: auto

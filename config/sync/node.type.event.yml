@@ -7,10 +7,8 @@ dependencies:
     - scheduler
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-      - custom-menu
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   scheduler:
     expand_fieldset: when_required
     fields_display_mode: vertical_tab
@@ -26,6 +24,6 @@ name: Event
 type: event
 description: 'A date driven content type.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

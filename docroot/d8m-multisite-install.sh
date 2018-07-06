@@ -2,7 +2,7 @@
 
 # D8M Install Local
 
-drush @sites  site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
+drush @sites site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
 
 drush @sites role-create administrator  --y;
 drush @sites role-create support_administrator --y;
@@ -42,7 +42,7 @@ drush @sites en ci_article_setup -y;
 drush @sites en ci_media_types -y;
 drush @sites en ci_admin_tweaks --y;
 drush @sites en ci_theme_options --y;
-drush @sites en ci_views_tweaks --y
+drush @sites en ci_views_tweaks --y;
 drush @sites en redirect --y;
 drush @sites -y config-set system.performance css.preprocess 0;
 drush @sites -y config-set system.performance js.preprocess 0;
@@ -55,7 +55,6 @@ drush @sites cim --partial staging --y;
 drush @sites en memcache --y;
 drush @sites en ci_search --y;
 drush @sites en ci_views_tweaks --y;
-
-
+drush @sites en ci_js --y;
 
 echo "That's the end of the D8M install script!"

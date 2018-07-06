@@ -32,6 +32,8 @@ content:
     region: content
 hidden:
   field_article_tags: true
+  field_menu_reference_left: true
+  field_menu_reference_right: true
   field_page_options: true
   field_promote: true
   field_related_content: true

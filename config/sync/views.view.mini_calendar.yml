@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_date
+    - field.storage.node.field_date_time_range
   module:
     - calendar
     - datetime
+    - datetime_range
     - node
     - text
     - user
@@ -54,7 +55,7 @@ display:
       pager:
         type: calendar
         options:
-          pager_placement: top
+          exclude_display: 1
       style:
         type: calendar
         options:
@@ -146,70 +147,6 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-        field_date:
-          id: field_date
-          table: node__field_date
-          field: field_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: medium
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         body:
           id: body
           table: node__body
@@ -273,6 +210,71 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_date_time_range:
+          id: field_date_time_range
+          table: node__field_date_time_range
+          field: field_date_time_range
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_default
+          settings:
+            timezone_override: ''
+            format_type: medium
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -286,10 +288,10 @@ display:
             operator: ''
           group: 1
       sorts:
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
+        field_date_time_range_value:
+          id: field_date_time_range_value
+          table: node__field_date_time_range
+          field: field_date_time_range_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -305,6 +307,9 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: '0'
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -314,7 +319,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'
   block_1:
     display_plugin: block
     id: block_1
@@ -324,10 +329,10 @@ display:
       display_extenders: {  }
       display_description: ''
       arguments:
-        field_date_value_year_month:
-          id: field_date_value_year_month
-          table: node__field_date
-          field: field_date_value_year_month
+        field_date_time_range_value_year_month:
+          id: field_date_time_range_value_year_month
+          table: node__field_date_time_range
+          field: field_date_time_range_value_year_month
           relationship: none
           group_type: group
           admin_label: ''
@@ -350,12 +355,11 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
-            type: calendar
+            type: none
             fail: 'not found'
-          validate_options:
-            replacement_format: 'F Y'
+          validate_options: {  }
           plugin_id: datetime_year_month
       header:
         calendar_header:
@@ -367,19 +371,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: 1
-          content: '{{ arguments.field_date_value_year_month }}'
-          pager_embed: 0
-          plugin_id: calendar_header
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          empty: true
-          tokenize: 1
-          content: ''
+          content: '{{ raw_arguments.field_date_time_range_value_year_month }}'
           pager_embed: 0
           plugin_id: calendar_header
       defaults:
@@ -396,7 +388,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'
   page_day:
     display_plugin: page
     id: page_day
@@ -517,7 +509,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'
   page_month:
     display_plugin: page
     id: page_month
@@ -601,7 +593,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'
   page_week:
     display_plugin: page
     id: page_week
@@ -719,7 +711,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'
   page_year:
     display_plugin: page
     id: page_year
@@ -837,4 +829,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_date_time_range'

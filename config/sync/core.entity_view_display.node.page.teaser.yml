@@ -37,6 +37,8 @@ hidden:
   field_article_tags: true
   field_block_options: true
   field_landing_page_options: true
+  field_menu_reference_left: true
+  field_menu_reference_right: true
   field_meta: true
   field_meta_tags: true
   field_promote: true

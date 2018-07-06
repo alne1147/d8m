@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.webform.body
     - field.field.node.webform.field_article_tags
+    - field.field.node.webform.field_menu_reference_left
+    - field.field.node.webform.field_menu_reference_right
     - field.field.node.webform.field_page_options
     - field.field.node.webform.field_promote
     - field.field.node.webform.field_related_content
@@ -69,6 +71,8 @@ third_party_settings:
     group_menu:
       children:
         - field_page_options
+        - field_menu_reference_left
+        - field_menu_reference_right
       parent_name: group_display
       weight: 20
       format_type: fieldset
@@ -112,7 +116,7 @@ third_party_settings:
       children:
         - field_related_content
       parent_name: group_display
-      weight: 21
+      weight: 23
       format_type: fieldset
       format_settings:
         label: 'Related Content'
@@ -190,13 +194,25 @@ content:
     third_party_settings: {  }
     region: content
   field_article_tags:
-    weight: 27
+    weight: 30
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_menu_reference_left:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_menu_reference_right:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_page_options:
     weight: 21

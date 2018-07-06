@@ -11,7 +11,7 @@ id: paragraph.bp_view.field_dynamic_views
 field_name: field_dynamic_views
 entity_type: paragraph
 bundle: bp_view
-label: Views
+label: View
 description: ''
 required: false
 translatable: true
@@ -26,8 +26,8 @@ settings:
     block: block
     default: 0
     page: 0
-    feed: 0
     entity_browser: 0
+    feed: 0
   preselect_views:
     article_blocks: article_blocks
     mini_calendar: mini_calendar
@@ -47,6 +47,7 @@ settings:
     media: 0
     moderated_content: 0
     recent_articles: 0
+    redirect: 0
     related_content: 0
     rss_of_recent_nodes: 0
     site_footer: 0

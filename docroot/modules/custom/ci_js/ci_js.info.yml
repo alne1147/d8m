@@ -1,0 +1,5 @@
+name: 'CI JS'
+type: module
+core: 8.x
+version: 8.x
+description: 'CI Custom Javascript'

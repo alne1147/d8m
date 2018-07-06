@@ -9,6 +9,16 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
+      - menu-1
+      - menu-10
+      - menu-2
+      - menu-3
+      - menu-4
+      - menu-5
+      - menu-6
+      - menu-7
+      - menu-8
+      - menu-9
     parent: 'main:'
   scheduler:
     expand_fieldset: when_required
@@ -25,6 +35,6 @@ name: 'Landing Page'
 type: landing_page
 description: 'Used to create a homepage.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

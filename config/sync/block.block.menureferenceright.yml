@@ -1,0 +1,51 @@
+uuid: 0916debf-4b32-4ca6-9317-3fea7634ca0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - block_visibility_groups
+    - ctools_block
+    - menu_condition
+    - term_condition
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: menureferenceright
+theme: ci_xy
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_menu_reference_right'
+settings:
+  id: 'entity_field:node:field_menu_reference_right'
+  label: 'Menu Reference Right'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: menu_reference_render
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
