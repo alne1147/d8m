@@ -6,6 +6,7 @@ dependencies:
     - field.storage.paragraph.bp_modal_body
     - paragraphs.paragraphs_type.bp_modal
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 _core:
@@ -26,6 +27,7 @@ settings:
     negate: 0
     target_bundles:
       card_basic: card_basic
+      webform: webform
     target_bundles_drag_drop:
       card_basic:
         enabled: true
@@ -102,4 +104,7 @@ settings:
       section_body:
         weight: 50
         enabled: false
+      webform:
+        enabled: true
+        weight: 52
 field_type: entity_reference_revisions

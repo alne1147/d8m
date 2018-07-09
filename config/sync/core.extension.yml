@@ -30,11 +30,8 @@ module:
   chosen_lib: 0
   ci_admin_tweaks: 0
   ci_article_setup: 0
-  ci_js: 0
-  ci_menu_tweaks: 0
   ci_search_form: 0
   ci_theme_options: 0
-  ci_views_tweaks: 0
   ckeditor: 0
   ckeditor_a11ychecker: 0
   ckeditor_accordion: 0
@@ -88,6 +85,7 @@ module:
   filter_perms: 0
   flexslider: 0
   focal_point: 0
+  fontawesome: 0
   google_analytics: 0
   hal: 0
   help: 0

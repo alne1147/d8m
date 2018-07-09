@@ -1,0 +1,21 @@
+uuid: dc85bc00-2505-4c9d-b5da-4ebd257b78d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_icon
+    - paragraphs.paragraphs_type.bp_modal
+  module:
+    - fontawesome
+id: paragraph.bp_modal.field_button_icon
+field_name: field_button_icon
+entity_type: paragraph
+bundle: bp_modal
+label: 'Button Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon
