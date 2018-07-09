@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.promoted_search_display
     - field.field.node.page.body
     - field.field.node.page.field_article_tags
-    - field.field.node.page.field_block_options
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_meta
     - field.field.node.page.field_meta_tags
