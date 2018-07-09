@@ -1,9 +1,0 @@
-uuid: 144cd600-5e3f-483f-ac53-e5d504f96fcb
-langcode: en
-status: true
-dependencies: {  }
-id: card_icon
-label: 'Card - Icon'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
