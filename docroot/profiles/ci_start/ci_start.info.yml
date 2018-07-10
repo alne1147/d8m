@@ -105,6 +105,7 @@ dependencies:
   - menu_condition
   - menu_link_content
   - menu_ui
+  - menu_reference_render
   - metatag
   - node
   - notification

@@ -55,6 +55,7 @@ drush cim --partial staging --y;
 drush en memcache --y;
 drush en ci_search --y;
 drush en ci_views_tweaks --y;
+drush en ci_menu_tweaks --y;
 drush en ci_js --y;
 
 
