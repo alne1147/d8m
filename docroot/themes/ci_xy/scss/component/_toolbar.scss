@@ -40,5 +40,15 @@ body.toolbar-fixed {
     }
 
   }
+}
 
+// Hide Acquia subscription
+.toolbar-bar {
+  a.toolbar-icon.acquia-inactive-subscription {
+    visibility: hidden;
+  }
+  // Hide Block Visibility Group link
+  a.toolbar-icon.use-ajax.toolbar-item {
+    visibility: hidden;
+  }
 }
