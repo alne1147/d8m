@@ -1,0 +1,13 @@
+/**
+ Hide Acquia subscription
+  */
+
+a.toolbar-icon.acquia-inactive-subscription {
+    visibility: hidden;
+}
+/**
+ Hide Block Visibility Group link
+  */
+a.toolbar-icon.use-ajax.toolbar-item {
+   visibility: hidden;
+}
