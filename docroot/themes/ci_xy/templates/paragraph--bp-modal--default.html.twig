@@ -154,11 +154,11 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {# Button trigger modal #}
     {% if content.bp_background|render %}
       <button type="button" class="btn btn-lg btn-modal {{content.bp_background[0] }}" data-toggle="modal" data-target="#{{ paragraph_id }}">
-      {{ content.bp_modal_button_text }}
+        {{ content.field_button_icon }}{{ content.bp_modal_button_text }}
       </button>
     {% else %}
         <button type="button" class="btn btn-primary btn-lg btn-modal" data-toggle="modal" data-target="#{{ paragraph_id }}">
-          {{ content.bp_modal_button_text }}
+          {{ content.field_button_icon }}{{ content.bp_modal_button_text }}
         </button>
     {% endif %}
   </div>
