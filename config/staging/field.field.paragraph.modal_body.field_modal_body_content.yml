@@ -1,0 +1,27 @@
+uuid: 98e72b84-42dc-4c9c-9cb3-7fbecdd9b8c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modal_body_content
+    - paragraphs.paragraphs_type.modal_body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    d8m_text_editor: '0'
+    open_embed: '0'
+    plain_text: '0'
+id: paragraph.modal_body.field_modal_body_content
+field_name: field_modal_body_content
+entity_type: paragraph
+bundle: modal_body
+label: 'Modal Body Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

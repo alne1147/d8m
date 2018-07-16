@@ -1,0 +1,9 @@
+uuid: fade94b2-d62c-4948-9e4e-162fa201e3a7
+langcode: en
+status: true
+dependencies: {  }
+id: modal_body
+label: 'Modal Body'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
