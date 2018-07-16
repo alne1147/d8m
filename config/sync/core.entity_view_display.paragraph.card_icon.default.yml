@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.card_icon.bp_background
     - field.field.paragraph.card_icon.field_icon
+    - field.field.paragraph.card_icon.field_icon_card_background
     - field.field.paragraph.card_icon.field_link
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
@@ -16,13 +16,6 @@ targetEntityType: paragraph
 bundle: card_icon
 mode: default
 content:
-  bp_background:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   field_icon:
     weight: 3
     label: hidden
@@ -30,6 +23,13 @@ content:
       layers: false
     third_party_settings: {  }
     type: fontawesome_icon_formatter
+    region: content
+  field_icon_card_background:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_text:
     weight: 4

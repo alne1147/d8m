@@ -1,20 +1,20 @@
-uuid: 3c6205da-a747-455b-9174-2128e80b88b1
+uuid: 1a2a1c42-eac9-4859-8790-878cf209ba10
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.bp_background
+    - field.storage.paragraph.field_icon_card_background
     - paragraphs.paragraphs_type.card_icon
   module:
     - options
-id: paragraph.card_icon.bp_background
-field_name: bp_background
+id: paragraph.card_icon.field_icon_card_background
+field_name: field_icon_card_background
 entity_type: paragraph
 bundle: card_icon
-label: 'Card Color'
+label: 'Icon Card Background'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
