@@ -13,6 +13,7 @@ dependencies:
   - addtocalendar
   - admin_toolbar
   - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
   - allowed_formats
   - anchor_link
   - automated_cron
@@ -27,7 +28,6 @@ dependencies:
   - block_region_permissions
   - block_styles
   - block_visibility_groups
-  - block_visibility_groups_admin
   - breakpoint
   - calendar
   - calendar_datetime
