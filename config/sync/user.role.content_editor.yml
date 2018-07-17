@@ -23,7 +23,6 @@ permissions:
   - 'access toolbar'
   - 'access webform overview'
   - 'access webform submission log'
-  - 'administer redirects'
   - 'change own username'
   - 'create article content'
   - 'create document media'

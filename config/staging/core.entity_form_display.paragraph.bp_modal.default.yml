@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_title
     - field.field.paragraph.bp_modal.bp_width
     - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_title_color
     - paragraphs.paragraphs_type.bp_modal
   module:
     - content_moderation
@@ -51,6 +52,7 @@ third_party_settings:
     group_color:
       children:
         - bp_background
+        - field_title_color
       parent_name: group_card_modal_edit
       weight: 21
       format_type: tab
@@ -92,16 +94,16 @@ content:
     region: content
   bp_modal_body:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 2
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: closed
+      edit_mode: open
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
   bp_modal_button_text:
     weight: 2
     settings:
@@ -111,7 +113,7 @@ content:
     type: string_textfield
     region: content
   bp_modal_title:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -123,6 +125,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: fontawesome_icon_widget
+    region: content
+  field_title_color:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   moderation_state:
     type: moderation_state_default

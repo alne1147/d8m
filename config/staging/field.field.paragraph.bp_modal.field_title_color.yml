@@ -1,17 +1,17 @@
-uuid: 5f2a1164-ef9d-48b8-9ef7-41061c05b219
+uuid: 1074afa7-4e5b-455d-8ad2-0b56956e7501
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title_color
-    - paragraphs.paragraphs_type.card_icon
+    - paragraphs.paragraphs_type.bp_modal
   module:
     - options
-id: paragraph.card_icon.field_title_color
+id: paragraph.bp_modal.field_title_color
 field_name: field_title_color
 entity_type: paragraph
-bundle: card_icon
-label: 'Card Title Color'
+bundle: bp_modal
+label: 'Modal Title Color'
 description: ''
 required: false
 translatable: true

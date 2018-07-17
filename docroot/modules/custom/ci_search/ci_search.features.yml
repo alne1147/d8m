@@ -1,4 +1,0 @@
-excluded:
-  - block.block.exposedformacquia_searchpage
-  - search_api.server.acquia_search_server
-required: true

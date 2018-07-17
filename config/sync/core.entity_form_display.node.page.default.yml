@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_article_tags
-    - field.field.node.page.field_block_options
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -209,12 +208,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_block_options:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_landing_page_options:
     weight: 12
