@@ -1,0 +1,22 @@
+uuid: a61ec456-36cd-4f41-b7a0-0fa62db778b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.modal_body.field_modal_body_content
+    - paragraphs.paragraphs_type.modal_body
+  module:
+    - text
+id: paragraph.modal_body.default
+targetEntityType: paragraph
+bundle: modal_body
+mode: default
+content:
+  field_modal_body_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

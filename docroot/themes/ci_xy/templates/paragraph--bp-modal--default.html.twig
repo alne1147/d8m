@@ -126,6 +126,7 @@
 {%
 set classes = [
 'paragraph',
+'paragraph__card',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 'paragraph--id--' ~ paragraph.id.value,
@@ -154,11 +155,11 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {# Button trigger modal #}
     {% if content.bp_background|render %}
       <button type="button" class="btn btn-lg btn-modal {{content.bp_background[0] }}" data-toggle="modal" data-target="#{{ paragraph_id }}">
-      {{ content.bp_modal_button_text }}
+        {{ content.field_button_icon }}{{ content.bp_modal_button_text }}
       </button>
     {% else %}
         <button type="button" class="btn btn-primary btn-lg btn-modal" data-toggle="modal" data-target="#{{ paragraph_id }}">
-          {{ content.bp_modal_button_text }}
+          {{ content.field_button_icon }}{{ content.bp_modal_button_text }}
         </button>
     {% endif %}
   </div>
@@ -168,7 +169,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div class="modal fade" id="{{ paragraph_id }}" tabindex="-1" role="dialog" aria-labelledby="{{ paragraph_id }}-label" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+
+      <div class="modal-header {{content.field_title_color[0] }}">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -178,6 +180,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
           </div>
         {% endif %}
       </div>
+
       {% if content.bp_modal_body|render %}
         <div class="modal-body">
           {% for key, item in content.bp_modal_body if key|first != '#' %}
@@ -195,4 +198,6 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     </div>
   </div>
 </div>
+
+
 
