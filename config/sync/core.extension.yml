@@ -4,6 +4,7 @@ module:
   acquia_search: 0
   addtocalendar: 0
   admin_toolbar: 0
+  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
   anchor_link: 0
@@ -19,7 +20,6 @@ module:
   block_region_permissions: 0
   block_styles: 0
   block_visibility_groups: 0
-  block_visibility_groups_admin: 0
   bootstrap_paragraphs: 0
   breakpoint: 0
   calendar: 0
@@ -30,8 +30,11 @@ module:
   chosen_lib: 0
   ci_admin_tweaks: 0
   ci_article_setup: 0
+  ci_js: 0
+  ci_menu_tweaks: 0
   ci_search_form: 0
   ci_theme_options: 0
+  ci_views_tweaks: 0
   ckeditor: 0
   ckeditor_a11ychecker: 0
   ckeditor_accordion: 0
