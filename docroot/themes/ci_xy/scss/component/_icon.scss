@@ -22,11 +22,13 @@ a {
 }
 
 
-.paragraph--type--card-icon {
+.paragraph__icon {
   .fontawesome-icons {
     font-size: 5vw;
     padding-left: 2rem;
     padding-right: 2rem;
-    color: $color-black;
+    .fontawesome-icon svg {
+      color: $color-black;
+    }
   }
 }

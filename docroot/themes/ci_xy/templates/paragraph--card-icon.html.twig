@@ -134,8 +134,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
       {{ content.field_card_title }}
     </div>
     {{ content|without('bp_width', 'field_icon_card_background', 'field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
-    <a href="{{ content.field_link }}"><div align="center" class="paragraph-icon"> {{ content.field_icon }} </div></a>
-    <div align="center" class="icon_text"> {{  content.field_text }} </div>
+    <a href="{{ content.field_link }}"><div align="center" class="paragraph__icon"> {{ content.field_icon }} </div></a>
+    <div align="center" class="paragraph__icon-text"> {{  content.field_text }} </div>
   </div>
 </div>
 
@@ -146,8 +146,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
           {{ content.field_card_title }}
       </div>
         {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
-      <a href="{{ content.field_link }}"><div align="center" class="paragraph-icon"> {{ content.field_icon }} </div></a>
-      <div align="center" class="icon_text"> {{  content.field_text }} </div>
+      <a href="{{ content.field_link }}"><div align="center" class="paragraph__icon"> {{ content.field_icon }} </div></a>
+      <div align="center" class="paragraph__icon-text"> {{  content.field_text }} </div>
     </div>
   </div>
 {% endif %}
