@@ -32,7 +32,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-green);
@@ -53,7 +53,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text {
+  .paragraph__card--icon-link {
     color: set-title-text-color($color-brand-slate);
   }
 }
@@ -73,7 +73,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-silver);
@@ -98,7 +98,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-orange);
@@ -123,7 +123,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-brown);
@@ -145,7 +145,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-blue);
@@ -172,7 +172,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-black);
@@ -189,7 +189,7 @@
 .paragraph--type--card-icon.color__white--strong {
   background: rgba($color-white, 1);
   .fontawesome-icon svg,
-  .paragraph__icon-text {
+  .paragraph__card--icon-link {
     color: set-title-text-color($color-white);
   }
 }
@@ -213,7 +213,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-evening);
@@ -235,7 +235,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-charcoal);
@@ -257,7 +257,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-blackboard);
@@ -278,7 +278,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grey-sand);
@@ -302,7 +302,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sleek-grey);
@@ -326,7 +326,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon-grass);
@@ -351,7 +351,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-walnut);
@@ -371,7 +371,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-beige);
@@ -398,7 +398,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-spice);
@@ -420,7 +420,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-brick-red);
@@ -441,7 +441,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-scarlet);
@@ -464,7 +464,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-cognac);
@@ -484,7 +484,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-tiger-orange);
@@ -507,7 +507,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-wheat);
@@ -530,7 +530,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sunflower);
@@ -553,7 +553,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon);
@@ -579,7 +579,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-eggplant);
@@ -599,7 +599,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grape);
@@ -621,7 +621,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ink);
@@ -641,7 +641,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sky-blue);
@@ -664,7 +664,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-pacific-blue);
@@ -687,7 +687,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-aqua);
@@ -710,7 +710,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pastel-blue);
@@ -733,7 +733,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ice);
@@ -760,7 +760,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-forest);
@@ -780,7 +780,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-neon-green);
@@ -803,7 +803,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-cucumber);
@@ -828,7 +828,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-fern);
@@ -850,7 +850,7 @@
   .panel-title > a,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-mineral-green);
@@ -870,7 +870,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pine-needle);
@@ -890,7 +890,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-corduroy);
@@ -910,7 +910,7 @@
   .field--name-field-card-body,
   .sf-menu a,
   .fontawesome-icon svg,
-  .paragraph__icon-text,
+  .paragraph__card--icon-link,
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sea-foam);

@@ -40,7 +40,7 @@
       .container {
         display: flex;
         flex-wrap: no-wrap;
-          @media (max-width: $screen-sm-min) {
+          @media (max-width: $screen-xs-max) {
             display: block;
         }
       }
@@ -58,12 +58,12 @@
             margin-bottom:0px;
           }
         }
-        &:first-child {
-          padding-left:0;
-        }
-        &:last-child {
-          padding-right:0;
-        }
+        //&:first-child {
+        //  padding-left:0;
+        //}
+        //&:last-child {
+        //  padding-right:0;
+        //}
       }
       .paragraph {
         &.paragraph--color {

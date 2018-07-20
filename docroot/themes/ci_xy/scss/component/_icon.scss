@@ -9,7 +9,6 @@ a {
     margin-left: .25em;
   }
 }
-
 .btn {
   &.icon-before .glyphicon {
     margin-left: -.25em;
@@ -20,15 +19,70 @@ a {
     margin-right: -.25em;
   }
 }
-
-
-.paragraph__icon {
-  .fontawesome-icons {
-    font-size: 5vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    .fontawesome-icon svg {
+.paragraph--type--card-icon {
+  width: 100%;
+  border-radius: $border-radius;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  .paragraph__column {
+    width: 100% !important;
+    .paragraph__card--icon-link {
+      font-family: $font-family-serif;
+      font-weight: $font-weight-500;
+      display: block;
       color: $color-black;
+      text-decoration: none;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        -webkit-transform: translateY(-4px);
+        -moz-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+      }
+      .paragraph__card--icon {
+        .fontawesome-icons {
+          text-align: center;
+          .fontawesome-icon svg {
+            color: $color-black;
+            font-size: 2vw;
+            @media (max-width: $screen-xs-max) {
+              font-size: 7vw;
+            }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-md-2-min) {
+              font-size: 3.5vw;
+            }
+          }
+        }
+      }
+      .paragraph__card--icon-text {
+        padding-top: .5em;
+        font-size: 24px;
+        text-align: center;
+      }
     }
+  }
+}
+.paragraph--type--bp-columns__1col,
+.paragraph--type--bp-columns__2col,
+.paragraph--type--bp-columns__3col,
+.paragraph--type--bp-columns__5col {
+  .paragraph__card--icon-link {
+    padding: 3.175em .75em;
+
+  }
+}
+.paragraph--type--bp-columns__4col {
+  .paragraph__card--icon-link {
+    padding: 6.175em .75em;
+    @media (max-width: $screen-md-2) {
+      padding: 2.175em .75em;
+    }
+  }
+}
+.paragraph--type--bp-columns__6col {
+  .paragraph__card--icon-link {
+    padding: 1.965em .75em;
   }
 }
