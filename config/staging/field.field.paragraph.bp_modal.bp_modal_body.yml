@@ -1,0 +1,116 @@
+uuid: 6b98b649-1997-411c-81c0-a35c5ba194dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_modal_body
+    - paragraphs.paragraphs_type.bp_modal
+    - paragraphs.paragraphs_type.modal_body
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: BnTM60xAB8KjZCWIijFFIwFL_7olWt_aKdMEtF3YntI
+id: paragraph.bp_modal.bp_modal_body
+field_name: bp_modal_body
+entity_type: paragraph
+bundle: bp_modal
+label: 'Modal Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      modal_body: modal_body
+      webform: webform
+    target_bundles_drag_drop:
+      card_basic:
+        weight: -39
+        enabled: false
+      bp_block:
+        weight: -38
+        enabled: false
+      bp_view:
+        weight: -37
+        enabled: false
+      bp_simple:
+        weight: -36
+        enabled: false
+      bp_image:
+        weight: -35
+        enabled: false
+      bp_blank:
+        weight: -34
+        enabled: false
+      bp_accordion:
+        weight: -33
+        enabled: false
+      bp_carousel:
+        weight: -32
+        enabled: false
+      bp_columns:
+        weight: -31
+        enabled: false
+      bp_columns_three_uneven:
+        weight: -30
+        enabled: false
+      bp_columns_two_uneven:
+        weight: -29
+        enabled: false
+      bp_contact:
+        weight: -28
+        enabled: false
+      bp_tabs:
+        weight: -27
+        enabled: false
+      bp_accordion_section:
+        weight: -26
+        enabled: false
+      bp_modal:
+        weight: -25
+        enabled: false
+      bp_tab_section:
+        weight: -24
+        enabled: false
+      full_column_hero:
+        weight: -23
+        enabled: false
+      row_three_column_hero:
+        weight: -22
+        enabled: false
+      row_two_column_hero:
+        weight: -21
+        enabled: false
+      bp_column_wrapper:
+        weight: 31
+        enabled: false
+      card_map:
+        weight: 43
+        enabled: false
+      card_open_embed:
+        weight: 44
+        enabled: false
+      card_icon:
+        weight: 45
+        enabled: false
+      mini_calendar:
+        weight: 46
+        enabled: false
+      row_slide_container:
+        weight: 47
+        enabled: false
+      section_body:
+        weight: 50
+        enabled: false
+      modal_body:
+        enabled: true
+        weight: 51
+      webform:
+        enabled: true
+        weight: 52
+field_type: entity_reference_revisions

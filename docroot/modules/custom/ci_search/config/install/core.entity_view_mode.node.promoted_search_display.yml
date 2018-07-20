@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - node
-id: node.promoted_search_display
-label: 'Promoted Search Display'
-targetEntityType: node
-cache: true

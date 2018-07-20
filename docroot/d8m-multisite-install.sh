@@ -15,25 +15,25 @@ drush @sites   config-set system.site mail "no-reply@www.colorado.gov" -y
 #// User additions and role assignments.
 
 drush @sites ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol administrator ci-nevarez --y; 
+drush @sites user-add-role administrator ci-nevarez --y; 
 drush @sites ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol administrator ci-jwathen --y; 
+drush @sites user-add-role administrator ci-jwathen --y; 
 drush @sites ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol administrator ci-blawson --y; 
+drush @sites user-add-role administrator ci-blawson --y; 
 drush @sites ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol support_administrator ci-kharrison --y;  
+drush @sites user-add-role support_administrator ci-kharrison --y;  
 drush @sites ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol support_administrator ci-twhatley --y; 
+drush @sites user-add-role support_administrator ci-twhatley --y; 
 drush @sites ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;  
-drush @sites urol support_administrator ci-supportadmin --y; 
+drush @sites user-add-role support_administrator ci-supportadmin --y; 
 drush @sites ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;  
-drush @sites urol content_administrator ci-contentadmin --y; 
+drush @sites user-add-role content_administrator ci-contentadmin --y; 
 drush @sites ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;  
-drush @sites urol user_administrator ci-useradmin --y; 
+drush @sites user-add-role user_administrator ci-useradmin --y; 
 drush @sites ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;  
-drush @sites urol structure_administrator ci-structureadmin --y; 
+drush @sites user-add-role structure_administrator ci-structureadmin --y; 
 drush @sites ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;  
-drush @sites urol administrator ci-amarshall --y;
+drush @sites user-add-role administrator ci-amarshall --y;
 
 
 drush @sites -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
