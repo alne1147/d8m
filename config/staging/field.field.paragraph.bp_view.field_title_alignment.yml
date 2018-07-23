@@ -1,0 +1,21 @@
+uuid: b46fa72e-864d-46b7-95d0-05c6520eb30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_alignment
+    - paragraphs.paragraphs_type.bp_view
+  module:
+    - options
+id: paragraph.bp_view.field_title_alignment
+field_name: field_title_alignment
+entity_type: paragraph
+bundle: bp_view
+label: 'Title Alignment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
