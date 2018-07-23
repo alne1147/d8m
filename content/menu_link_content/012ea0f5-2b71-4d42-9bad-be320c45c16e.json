@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/5\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
@@ -9,12 +9,12 @@
     },
     "id": [
         {
-            "value": 5
+            "value": 1
         }
     ],
     "uuid": [
         {
-            "value": "41368692-534b-457b-a853-052247ea670c"
+            "value": "012ea0f5-2b71-4d42-9bad-be320c45c16e"
         }
     ],
     "langcode": [
@@ -30,18 +30,18 @@
     ],
     "title": [
         {
-            "value": "Video Example",
+            "value": "Home",
             "lang": "en"
         }
     ],
     "menu_name": [
         {
-            "value": "custom-menu"
+            "value": "main"
         }
     ],
     "link": [
         {
-            "uri": "entity:node\/7",
+            "uri": "entity:node\/1",
             "title": null,
             "options": []
         }
@@ -63,7 +63,7 @@
     ],
     "expanded": [
         {
-            "value": false
+            "value": true
         }
     ],
     "enabled": [
@@ -73,7 +73,7 @@
     ],
     "changed": [
         {
-            "value": "2017-06-22T16:35:46+00:00",
+            "value": "2018-07-22T23:43:12+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -87,7 +87,8 @@
     "metatag": [
         {
             "value": {
-                "title": "| CI Drupal 8"
+                "title": "| CI Drupal 8",
+                "canonical_url": "http:\/\/default\/%3Cnone%3E"
             }
         }
     ]
