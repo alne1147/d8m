@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.card_icon.bp_background
     - field.field.paragraph.card_icon.field_icon
+    - field.field.paragraph.card_icon.field_icon_card_background
     - field.field.paragraph.card_icon.field_link
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
@@ -46,7 +46,7 @@ third_party_settings:
       region: content
     group_color:
       children:
-        - bp_background
+        - field_icon_card_background
       parent_name: group_card_icon_edit
       weight: 3
       format_type: tab
@@ -78,17 +78,17 @@ targetEntityType: paragraph
 bundle: card_icon
 mode: default
 content:
-  bp_background:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_icon:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: fontawesome_icon_widget
+    region: content
+  field_icon_card_background:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_link:
     weight: 2

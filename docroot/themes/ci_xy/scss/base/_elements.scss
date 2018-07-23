@@ -5,6 +5,8 @@ body {
   display: flex;
   min-height: 100vh!important;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; // Firefox on iOS
 }
 i {
   font-style: normal;

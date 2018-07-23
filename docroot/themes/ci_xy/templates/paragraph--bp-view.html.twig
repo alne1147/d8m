@@ -272,20 +272,20 @@
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
     {{ title_suffix }}
-    <div class="paragraph__title {{content.field_title_color[0] }}">
+    <div class="paragraph__title {{content.field_title_color[0] }} {{ content.field_title_alignment[0] }}">
       {{ content.field_card_title }}
     </div>
-    {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color') }}
+    {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment') }}
   </div>
 </div>
 
 {% else %}
   <div{{ attributes.addClass(classes) }}>
     <div class="paragraph__column">
-      <div class="paragraph__title">
+      <div class="paragraph__title {{ content.field_title_alignment[0] }}">
           {{ content.field_card_title }}
       </div>
-        {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color') }}
+        {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment') }}
     </div>
   </div>
 

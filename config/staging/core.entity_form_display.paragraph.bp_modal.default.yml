@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_title
     - field.field.paragraph.bp_modal.bp_width
     - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_title_alignment
     - field.field.paragraph.bp_modal.field_title_color
     - paragraphs.paragraphs_type.bp_modal
   module:
@@ -67,6 +68,7 @@ third_party_settings:
     group_pop_up:
       children:
         - bp_modal_title
+        - field_title_alignment
         - bp_modal_body
       parent_name: group_card_modal_edit
       weight: 22
@@ -94,7 +96,7 @@ content:
     region: content
   bp_modal_body:
     type: entity_reference_paragraphs
-    weight: 2
+    weight: 3
     region: content
     settings:
       title: Paragraph
@@ -125,6 +127,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: fontawesome_icon_widget
+    region: content
+  field_title_alignment:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_title_color:
     weight: 2
