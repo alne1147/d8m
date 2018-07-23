@@ -1,0 +1,30 @@
+uuid: 843d1ea5-8ba4-45cd-87e0-3633f798386d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_title_alignment
+field_name: field_title_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'title--alignment title--alignment-right'
+      label: right
+    -
+      value: 'title--alignment title--alignment-center'
+      label: center
+    -
+      value: 'title--alignment title--alignment-left'
+      label: left
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

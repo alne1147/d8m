@@ -54,7 +54,7 @@
 {% endif %}
 
 
-{# Renders Width field. #}
+{# Renders alignment field. #}
 {# Sets class name from values in database. #}
 {% if content.field_alignment|render %}
   {% set layout_al = content.field_alignment['#items'].getString() %}
@@ -66,7 +66,6 @@
   ]
   %}
 {% endif %}
-
 
 {# Renders Background field. #}
 {# Sets class name from values in database. #}
@@ -292,21 +291,23 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {# Prints div with classes, and content without Width and Background. #}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    <div class="paragraph__title {{content.field_title_color[0] }}">
-      {{ content.field_card_title }}
+    <div class="paragraph__title {{ content.field_title_color[0] }} {{ content.field_title_alignment[0] }}" >
+    {{ content.field_card_title }}
     </div>
-      {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment') }}
+      {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment', 'field_title_alignment') }}
       {{ content.field_card_background_image }}
   </div>
 </div>
 {% else %}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    <div class="paragraph__title">
+    <div class="paragraph__title {{ content.field_title_alignment[0] }}">
       {{ content.field_card_title }}
     </div>
-      {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment') }}
+      {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment', 'field_title_alignment') }}
       {{ content.field_card_background_image }}
   </div>
 </div>
 {% endif %}
+
+

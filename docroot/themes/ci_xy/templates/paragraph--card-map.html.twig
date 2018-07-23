@@ -271,20 +271,20 @@
     {# Prints div with classes, and content without Width and Background. #}
     <div{{ attributes.addClass(classes) }}>
         <div class="paragraph__column">
-            <div class="paragraph__title {{content.field_title_color[0] }}">
+            <div class="paragraph__title {{content.field_title_color[0] }} {{ content.field_title_alignment[0] }}">
                 {{ content.field_card_title }}
             </div>
-            {{ content.field_location|without('bp_width', 'bp_background') }}
+            {{ content.field_location|without('bp_width', 'bp_background', 'field_title_alignment') }}
         </div>
     </div>
 
 {% else %}
     <div{{ attributes.addClass(classes) }}>
         <div class="paragraph__column">
-            <div class="paragraph__title">
+            <div class="paragraph__title {{ content.field_title_alignment[0] }}">
                 {{ content.field_card_title }}
             </div>
-            {{ content|without('bp_width', 'bp_background') }}
+            {{ content|without('bp_width', 'bp_background', 'field_title_alignment') }}
         </div>
     </div>
 
