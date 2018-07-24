@@ -14,25 +14,25 @@ drush   config-set system.site mail "no-reply@www.colorado.gov" -y
 
 #// User additions and role assignments.
 
-drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;  
+drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;
 
-drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;  
+drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;
 
-drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;  
+drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;
 
-drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;  
+drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;
 
-drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
 
 drush user-add-role administrator ci-amarshall --y;
 drush user-add-role administrator ci-nevarez --y;
@@ -62,7 +62,6 @@ drush dcdi --y;
 drush cim --partial sole --y;
 drush cim --partial staging --y;
 drush en memcache --y;
-drush en ci_search --y;
 drush en ci_views_tweaks --y;
 drush en ci_menu_tweaks --y;
 drush en ci_js --y;
