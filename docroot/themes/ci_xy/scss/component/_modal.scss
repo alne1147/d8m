@@ -4,7 +4,10 @@
   }
 }
 .modal-content {
-  border-radius: $border-radius!important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: $border-radius!important;
+  border-bottom-right-radius: $border-radius!important;
 }
 .modal-header {
   border-top-left-radius: $border-radius;
@@ -12,7 +15,7 @@
 }
 .modal--close {
   opacity: 1!important;
-  font-weight: $font-weight-500;
+  font-weight: $font-weight-500!important;
 }
 .field--name-bp-modal-title {
   font-size: floor(($font-size-base * 1.3));
