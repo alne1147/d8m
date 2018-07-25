@@ -1,0 +1,20 @@
+Config Setup
+
+Config Import is setup in 4 directories.
+
+"sync" - Common, initial configuration files.
+"post-sync" - Common, post configuration files. These get brought in after content is imported in the install process.
+"staging" - Configuration files to be imported for existing sites. This is usually an update to existing configuration.
+"sole" - The sole directory is the only sync directory that is not a sym link for each site. Unique configuration per site goes here. For example, acquia connector settings that require the site name.
+
+
+Install instructions
+
+On local:
+run sh local-install.sh - A list of drush commands will run installing the ci_profile and enabling custom modules.
+
+On Server:
+run sh d8m-install.sh - This script enables modules like Purge that require a solr search instance.
+
+Multisite:
+run d8m-multisite-install.sh - This runs all scripts for all sites on server environment.
