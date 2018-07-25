@@ -59,6 +59,7 @@ drush en google_analytics --y;
 drush cim --partial sync --y;
 drush cr --y;
 drush dcdi --y;
+drush cim --partial post-staging --y;
 drush cim --partial sole --y;
 drush cim --partial staging --y;
 drush en memcache --y;

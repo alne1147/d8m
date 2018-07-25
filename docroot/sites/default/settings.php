@@ -771,9 +771,9 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
 }
-$config_directories['sync'] = '../config/sync';
-$config_directories['staging'] = '../config/staging';
-$config_directories['sole'] = '../config/sole';
+$config_directories['sync'] = '../config/synchronize/sync'; $config_directories['post-sync'] = '../config/synchronize/post-sync';
+$config_directories['staging'] = '../config/synchronize/staging';
+$config_directories['sole'] = '../config/synchronize/sole';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';

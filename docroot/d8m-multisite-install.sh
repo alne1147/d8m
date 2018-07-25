@@ -53,7 +53,6 @@ drush @sites dcdi --y;
 drush @sites cim --partial sole --y;
 drush @sites cim --partial staging --y;
 drush @sites en memcache --y;
-drush @sites en ci_search --y;
 drush @sites en ci_views_tweaks --y;
 drush @sites en ci_menu_tweaks --y;
 drush @sites en ci_js --y;

@@ -48,7 +48,7 @@ drush cr --y;
 drush dcdi --y;
 drush uli;
 drush cim --partial sole --y;
-drush cim --partial staging --y;
+drush cim --partial post-sync --y;
 drush en ci_views_tweaks --y;
 drush en ci_menu_tweaks --y;
 drush en ci_js --y;
