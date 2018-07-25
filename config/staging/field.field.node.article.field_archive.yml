@@ -1,0 +1,23 @@
+uuid: 30688970-d78e-43cb-acc7-619ccf34478b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive
+    - node.type.article
+id: node.article.field_archive
+field_name: field_archive
+entity_type: node
+bundle: article
+label: Archive
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
