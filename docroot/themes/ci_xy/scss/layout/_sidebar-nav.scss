@@ -129,3 +129,13 @@
     }
   }
 }
+.region-sidebar-second {
+  padding: 10px 10px 15px 15px;
+  .views-row {
+    padding-bottom: 14px;
+    border-bottom: 1px solid $color-sleek-grey;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
