@@ -56,16 +56,6 @@ content:
     third_party_settings: {  }
     type: add_to_calendar
     region: content
-  field_archive:
-    weight: 11
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_article_tags:
     type: entity_reference_label
     weight: 8
@@ -173,6 +163,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_archive: true
   field_date: true
   field_menu_reference_left: true
   field_menu_reference_right: true
