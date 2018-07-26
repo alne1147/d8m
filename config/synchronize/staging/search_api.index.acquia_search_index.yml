@@ -1,3 +1,4 @@
+uuid: 09bca086-0622-4de1-96dd-e899d5a5d15b
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,7 @@ dependencies:
     - field.storage.node.field_article_tags
     - field.storage.node.field_rows
     - field.storage.node.field_promote
+    - field.storage.node.field_archive
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
   module:
@@ -113,6 +115,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  field_archive:
+    label: Archive
+    datasource_id: 'entity:node'
+    property_path: field_archive
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_archive
 datasource_settings:
   'entity:node':
     bundles:
@@ -153,6 +163,17 @@ processor_settings:
   add_url:
     plugin_id: add_url
     settings: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
   tokenizer:
     all_fields: false
     fields:
@@ -168,17 +189,6 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
-  aggregated_field: {  }
   type_boost:
     boosts:
       'entity:paragraph':
