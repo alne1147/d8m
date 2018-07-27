@@ -6,6 +6,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
  */
 //@import "theme/functions";
 @import "theme/variables";
+@import "theme/utilities";
 
 /* BASE
  * Defaults e.g, html, body
@@ -22,6 +23,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 @import "component/accordion";
 @import "component/carousel";
 @import "component/hero";
+@import "component/modal";
 @import "component/search";
 
 /* LAYOUT
