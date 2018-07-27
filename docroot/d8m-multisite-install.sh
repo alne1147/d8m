@@ -50,6 +50,7 @@ drush @sites en google_analytics --y;
 drush @sites cim --partial sync --y;
 drush @sites cr --y;
 drush @sites dcdi --y;
+drush cim --partial post-sync --y;
 drush @sites cim --partial sole --y;
 drush @sites cim --partial staging --y;
 drush @sites en memcache --y;
