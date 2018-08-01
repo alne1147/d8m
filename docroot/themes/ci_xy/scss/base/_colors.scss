@@ -40,6 +40,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-green);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-green);
+    border-bottom: 1px solid set-title-text-color($color-brand-green);
+  }
 }
 .color__brand-green--light {
   background: rgba($color-brand-green, .5)
@@ -61,6 +65,10 @@
   .fontawesome-icon svg,
   .paragraph__card--icon-link {
     color: set-title-text-color($color-brand-slate);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-slate);
+    border-bottom: 1px solid set-title-text-color($color-brand-slate);
   }
 }
 .color__brand-slate--light {
@@ -86,6 +94,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-silver);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-silver);
+    border-bottom: 1px solid set-title-text-color($color-brand-silver);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -115,6 +127,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-orange);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-orange);
+    border-bottom: 1px solid set-title-text-color($color-brand-orange);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -143,6 +159,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-brown);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-brown);
+    border-bottom: 1px solid set-title-text-color($color-brand-brown);
+  }
 }
 .color__brand-brown--light {
   background: rgba($color-brand-brown, .5)
@@ -167,6 +187,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-blue);
+    border-bottom: 1px solid set-title-text-color($color-brand-blue);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -198,6 +222,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-black);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-black);
+    border-bottom: 1px solid set-title-text-color($color-black);
+  }
 }
 .color__black--light {
   background: rgba($color-black, .5)
@@ -212,6 +240,10 @@
   .fontawesome-icon svg,
   .paragraph__card--icon-link {
     color: set-title-text-color($color-white);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-white);
+    border-bottom: 1px solid set-title-text-color($color-white);
   }
 }
 .color__white--light {
@@ -242,6 +274,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-evening);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-evening);
+    border-bottom: 1px solid set-title-text-color($color-evening);
+  }
 }
 .color__evening--light {
   background: rgba($color-evening, .5)
@@ -267,6 +303,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-charcoal);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-charcoal);
+    border-bottom: 1px solid set-title-text-color($color-charcoal);
+  }
 }
 .color__charcoal--light {
   background: rgba($color-charcoal, .5)
@@ -289,6 +329,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-blackboard);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-blackboard);
+    border-bottom: 1px solid set-title-text-color($color-blackboard);
   }
 }
 .color__blackboard--light {
@@ -313,6 +357,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grey-sand);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-grey-sand);
+    border-bottom: 1px solid set-title-text-color($color-grey-sand);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -341,6 +389,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sleek-grey);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-sleek-grey);
+    border-bottom: 1px solid set-title-text-color($color-sleek-grey);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -367,6 +419,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon-grass);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-lemon-grass);
+    border-bottom: 1px solid set-title-text-color($color-lemon-grass);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -396,6 +452,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-walnut);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-walnut);
+    border-bottom: 1px solid set-title-text-color($color-walnut);
+  }
 }
 .color__walnut--light {
   background: rgba($color-walnut, .5)
@@ -418,6 +478,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-beige);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-beige);
+    border-bottom: 1px solid set-title-text-color($color-beige);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -449,6 +513,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-spice);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-spice);
+    border-bottom: 1px solid set-title-text-color35($color-spice);
+  }
 }
 .color__spice--light {
   background: rgba($color-spice, .5)
@@ -474,6 +542,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-brick-red);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-brick-red);
+    border-bottom: 1px solid set-title-text-color35($color-brick-red);
+  }
 }
 .color__brick-red--light {
   background: rgba($color-brick-red, .5)
@@ -497,6 +569,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-scarlet);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-scarlet);
+    border-bottom: 1px solid set-title-text-color($color-scarlet);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -524,6 +600,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-cognac);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-cognac);
+    border-bottom: 1px solid set-title-text-color($color-cognac);
+  }
 }
 .color__cognac--light {
   background: rgba($color-cognac, .5)
@@ -546,6 +626,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-tiger-orange);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-tiger-orange);
+    border-bottom: 1px solid set-title-text-color35($color-tiger-orange);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -573,6 +657,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-wheat);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-wheat);
+    border-bottom: 1px solid set-title-text-color35($color-wheat);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -599,6 +687,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sunflower);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-sunflower);
+    border-bottom: 1px solid set-title-text-color35($color-sunflower);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -624,6 +716,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-lemon);
+    border-bottom: 1px solid set-title-text-color($color-lemon);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -654,6 +750,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-eggplant);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-eggplant);
+    border-bottom: 1px solid set-title-text-color($color-eggplant);
+  }
 }
 .color__eggplant--light {
   background: rgba($color-eggplant, .5)
@@ -676,6 +776,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grape);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-grape);
+    border-bottom: 1px solid set-title-text-color($color-grape);
   }
 }
 .color__grape--light {
@@ -702,6 +806,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ink);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-ink);
+    border-bottom: 1px solid set-title-text-color($color-ink);
+  }
 }
 .color__ink--light {
   background: rgba($color-ink, .5)
@@ -724,6 +832,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sky-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-sky-blue);
+    border-bottom: 1px solid set-title-text-color35($color-sky-blue);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -751,6 +863,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-pacific-blue);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-pacific-blue);
+    border-bottom: 1px solid set-title-text-color35($color-pacific-blue);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -776,6 +892,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-aqua);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-aqua);
+    border-bottom: 1px solid set-title-text-color35($color-aqua);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -803,6 +923,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pastel-blue);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-pastel-blue);
+    border-bottom: 1px solid set-title-text-color($color-pastel-blue);
+  }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
   }
@@ -828,6 +952,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ice);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-ice);
+    border-bottom: 1px solid set-title-text-color($color-ice);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -859,6 +987,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-forest);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-forest);
+    border-bottom: 1px solid set-title-text-color($color-forest);
+  }
 }
 .color__forest--light {
   background: rgba($color-forest, .5)
@@ -881,6 +1013,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-neon-green);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-neon-green);
+    border-bottom: 1px solid set-title-text-color35($color-neon-green);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -907,6 +1043,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-cucumber);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-cucumber);
+    border-bottom: 1px solid set-title-text-color35($color-cucumber);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
@@ -936,6 +1076,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-fern);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-fern);
+    border-bottom: 1px solid set-title-text-color($color-fern);
+  }
 }
 .color__fern--light {
   background: rgba($color-fern, .5)
@@ -961,6 +1105,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-mineral-green);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-mineral-green);
+    border-bottom: 1px solid set-title-text-color($color-mineral-green);
+  }
 }
 .color__mineral-green--light {
   background: rgba($color-mineral-green, .5)
@@ -983,6 +1131,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pine-needle);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-pine-needle);
+    border-bottom: 1px solid set-title-text-color($color-pine-needle);
   }
 }
 .color__pine-needle--light {
@@ -1007,6 +1159,10 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-corduroy);
   }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-corduroy);
+    border-bottom: 1px solid set-title-text-color($color-corduroy);
+  }
 }
 .color__corduroy--light {
   background: rgba($color-corduroy, .5)
@@ -1029,6 +1185,10 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sea-foam);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-sea-foam);
+    border-bottom: 1px solid set-title-text-color($color-sea-foam);
   }
   .footer__global-footer .logo--cogov {
     background-image: url(../images/cogov_logo-black.svg)!important;
