@@ -1,3 +1,4 @@
+
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
@@ -64,6 +65,8 @@
         }
       }
       a, span.nolink {
+        font-family: $font-family-meseo-sans-serif;
+        font-weight: $font-weight-500;
         text-decoration: none;
         padding: 1.265em 1.5em;
         color: #fff;
