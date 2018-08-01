@@ -1,3 +1,4 @@
+
 /* HEADER (global page header)
  1. Header (logo)
  2. Google Translation
@@ -9,6 +10,12 @@
   background-color: #fff;
   padding:12px 0 6px 0;
   width: 100%;
+  .row {
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
   &__logo {
       display: block;
     &--image {
