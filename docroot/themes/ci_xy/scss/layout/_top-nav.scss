@@ -43,7 +43,6 @@
     }
   }
   .sf-menu {
-    background-color: $color-brand-slate;
     display: inline-block;
     vertical-align: top;
     @media (max-width: $screen-md) {
@@ -70,6 +69,7 @@
         text-decoration: none;
         padding: 1.265em 1.5em;
         color: #fff;
+        transition: all 200ms ease-in-out;
         &:hover {
           background-color: rgba(0,0,0, 0.15);
         }
