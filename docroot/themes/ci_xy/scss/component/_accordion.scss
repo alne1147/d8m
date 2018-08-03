@@ -19,9 +19,12 @@
         border-radius: 3px;
       }
     }
+    .panel-heading a:after {
+      display: none!important; // Removes default Bootstrap +/-
+    }
     .panel-title {
       position: relative;
-      &.active {
+      a[aria-expanded=false] {
         > .accordion-toggle {
           &:before {
             -webkit-transform: rotate(135deg);
