@@ -1,3 +1,4 @@
+
 .top-nav {
   background-color: $color-brand-slate;
   margin-bottom: 24px;
@@ -42,7 +43,6 @@
     }
   }
   .sf-menu {
-    background-color: $color-brand-slate;
     display: inline-block;
     vertical-align: top;
     @media (max-width: $screen-md) {
@@ -64,9 +64,12 @@
         }
       }
       a, span.nolink {
+        font-family: $font-family-meseo-sans-serif;
+        font-weight: $font-weight-500;
         text-decoration: none;
         padding: 1.265em 1.5em;
         color: #fff;
+        transition: all 200ms ease-in-out;
         &:hover {
           background-color: rgba(0,0,0, 0.15);
         }

@@ -1,0 +1,23 @@
+uuid: 89871954-2ebf-42a4-81a2-2980a5dbe841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive
+    - node.type.landing_page
+id: node.landing_page.field_archive
+field_name: field_archive
+entity_type: node
+bundle: landing_page
+label: Archive
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

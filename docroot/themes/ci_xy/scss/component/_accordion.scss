@@ -1,3 +1,4 @@
+
 /* Paragraph Accordion / ckeditor Accordion
  1. paragraph accordion
  2. ckeditor accordion
@@ -18,9 +19,12 @@
         border-radius: 3px;
       }
     }
+    .panel-heading a:after {
+      display: none!important; // Removes default Bootstrap +/-
+    }
     .panel-title {
       position: relative;
-      &.active {
+      a[aria-expanded=false] {
         > .accordion-toggle {
           &:before {
             -webkit-transform: rotate(135deg);
@@ -86,18 +90,16 @@
     border:0!important;
     margin-bottom:0; // type.scss override
     dt {
-      &:last-of-type {
-        margin-bottom:0;
-      }
       margin-bottom: 1rem;
        > a {  
          background-color: #009add!important;  
          border-bottom:0 !important;  
          -webkit-border-radius: .3rem;  
          -moz-border-radius: .3rem;  
-         border-radius: .3rem;  
-         font-size: 20px;  
-         font-weight: 300;
+         border-radius: .3rem;
+         font-family: $font-family-meseo-sans-serif;
+         font-size: floor(($font-size-base * 1.3));
+         font-weight: $font-weight-500;
          text-decoration: none;
          &.accordion__title--no-pad {
            padding:0;

@@ -1,0 +1,46 @@
+uuid: 9c0244f1-4778-40aa-81bf-65cc98db02f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.archived_content
+  module:
+    - block_class
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+    - views
+  theme:
+    - ci_xy
+third_party_settings:
+  block_class:
+    classes: ''
+id: exposedformarchived_contentarchive_search_block
+theme: ci_xy
+region: block_reserve
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:archived_content-archive_search_block'
+settings:
+  id: 'views_exposed_filter_block:archived_content-archive_search_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
