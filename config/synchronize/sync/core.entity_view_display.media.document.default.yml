@@ -17,10 +17,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_url_plain
+    weight: 1
+    region: content
+  name:
+    type: string
     weight: 0
     region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
-  name: true
   thumbnail: true
   uid: true
