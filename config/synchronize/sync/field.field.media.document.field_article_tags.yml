@@ -1,0 +1,29 @@
+uuid: 3fecf2b8-eb68-4eb4-80c0-15f0a13b555f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_article_tags
+    - media.type.document
+    - taxonomy.vocabulary.free_tagging
+id: media.document.field_article_tags
+field_name: field_article_tags
+entity_type: media
+bundle: document
+label: 'Article Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      free_tagging: free_tagging
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
