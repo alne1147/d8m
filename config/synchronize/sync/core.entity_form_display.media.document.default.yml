@@ -1,10 +1,10 @@
-uuid: 9c07f2ac-aa5f-41da-8047-77da3cf586b7
+uuid: de5b0e87-01bf-4d77-9705-243ed328d6dd
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.document.field_article_tags
-    - field.field.media.document.field_media_file_1
+    - field.field.media.document.field_media_file
     - media.type.document
   module:
     - file
@@ -22,12 +22,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_media_file_1:
+  field_media_file:
+    weight: 1
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    weight: 1
     region: content
   name:
     type: string_textfield
