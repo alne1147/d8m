@@ -1,10 +1,10 @@
-uuid: 7e044478-fbbd-496e-bae7-f74d5a775157
+uuid: 2d86f534-9d8f-422a-ba1e-eae91ecf3abc
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.document.field_article_tags
-    - field.field.media.document.field_media_file_1
+    - field.field.media.document.field_media_file
     - media.type.document
   module:
     - file
@@ -14,19 +14,20 @@ bundle: document
 mode: default
 content:
   field_article_tags:
-    weight: 1
+    weight: 2
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_media_file_1:
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: file_url_plain
+  field_media_file:
     weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
     region: content
   name:
     type: string
