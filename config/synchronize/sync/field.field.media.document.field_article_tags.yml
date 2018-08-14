@@ -1,4 +1,4 @@
-uuid: a20ea079-2fcf-4251-b3f7-ba3baf319ff0
+uuid: 3fecf2b8-eb68-4eb4-80c0-15f0a13b555f
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: document
 label: 'Article Tags'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -24,6 +24,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
