@@ -2,7 +2,6 @@
   padding-top:0!important;
   padding-bottom:0!important;
   margin-bottom:0!important;
-  min-height:400px;
   p {
     font-size: $font-size-base!important;
     font-weight: $font-weight-300!important;
@@ -44,4 +43,9 @@
       width: 100%;
     }
   }
+}
+
+.paragraph--type--full-column-hero
+{
+  min-height:400px;
 }
