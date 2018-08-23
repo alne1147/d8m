@@ -89,4 +89,15 @@
   .field--name-field-address {
     margin-bottom: 20px;
   }
+  .postal_address {
+    .field--name-field-city {
+      display: inline;
+    }
+    .field--name-field-city::after {
+      content: ",";
+    }
+    .field--name-field-zip {
+      display: inline;
+    }
+  }
 }
