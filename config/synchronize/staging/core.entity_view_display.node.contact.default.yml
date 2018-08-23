@@ -38,9 +38,11 @@ content:
   content_moderation_control:
     weight: -20
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_address1:
     weight: 10
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -48,7 +50,7 @@ content:
     region: content
   field_address_2:
     weight: 11
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -73,7 +75,7 @@ content:
     region: content
   field_city:
     weight: 12
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -93,17 +95,17 @@ content:
     label: hidden
     settings:
       include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: 400px
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
       include_static_map: false
       include_link: false
       include_text: false
-      iframe_height: '200'
-      iframe_width: '200'
-      static_scale: 1
-      zoom_level: 14
-      link_text: 'View larger map'
-      map_type: m
-      langcode: en
-      apikey: ''
     third_party_settings: {  }
   field_phone_number:
     weight: 4
@@ -132,7 +134,7 @@ content:
     region: content
   field_zip:
     weight: 13
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
