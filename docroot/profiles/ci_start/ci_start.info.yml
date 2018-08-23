@@ -123,7 +123,6 @@ dependencies:
   - purge_queuer_coretags
   - purge_ui
   - quick_clone
-  - quickedit
   - rdf
   - responsive_image
   - role_delegation
