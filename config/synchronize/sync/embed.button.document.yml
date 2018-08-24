@@ -1,0 +1,26 @@
+uuid: 9615af4d-bf60-4d41-8601-02335a9eab78
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+  content:
+    - 'file:file:8922de1f-8d0d-41c0-aec6-f65c99f6848c'
+  module:
+    - entity_embed
+    - media
+label: Document
+id: document
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - document
+  display_plugins:
+    - 'view_mode:media.embedded'
+    - 'view_mode:media.link'
+    - 'entity_reference:media_thumbnail'
+  entity_browser: media_document_browser
+  entity_browser_settings:
+    display_review: true
+icon_uuid: 8922de1f-8d0d-41c0-aec6-f65c99f6848c
