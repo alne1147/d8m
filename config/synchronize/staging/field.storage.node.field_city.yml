@@ -1,14 +1,16 @@
-uuid: 6d884816-58f6-4526-94a7-07708cd6b80b
+uuid: 32dc6673-3ba2-4809-bb83-1b32a3c52789
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_address
-field_name: field_address
+id: node.field_city
+field_name: field_city
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 30
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

@@ -1,15 +1,15 @@
-uuid: 3787d42e-5273-4546-9138-d342eb215a91
+uuid: a03c04a8-eaee-4e51-b95b-34cd4cd90c33
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_map
+    - field.storage.node.field_city
     - node.type.contact
-id: node.contact.field_map
-field_name: field_map
+id: node.contact.field_city
+field_name: field_city
 entity_type: node
 bundle: contact
-label: 'Map Location'
+label: City
 description: ''
 required: false
 translatable: false

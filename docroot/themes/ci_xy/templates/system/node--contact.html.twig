@@ -114,7 +114,15 @@
         {{ content.field_phone_number }}
         {{ content.field_email }}
         <p class=empty-class><p>
-        {{ content.field_address }}
+        {{ content.field_address1 }}
+        {{ content.field_address_2 }}
+        <div class="postal_address">
+          {{ content.field_city }}
+          {% if content.field_city.0 %}
+            {{ "CO" }}
+          {% endif %}
+          {{ content.field_zip }}
+        </div>
         <p class=empty-class><p>
         {{ content.field_map }}
       </div>
