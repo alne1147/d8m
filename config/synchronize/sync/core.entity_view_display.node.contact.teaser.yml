@@ -5,14 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.contact.body
-    - field.field.node.contact.field_address
+    - field.field.node.contact.field_address1
+    - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
+    - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
     - field.field.node.contact.field_title
+    - field.field.node.contact.field_zip
     - image.style.contact_thumbnail
     - node.type.contact
   module:
@@ -23,13 +26,9 @@ targetEntityType: node
 bundle: contact
 mode: teaser
 content:
-  field_address:
-    type: basic_string
-    weight: 5
+  content_moderation_control:
+    weight: -20
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_agency:
     type: string
     weight: 6
@@ -86,4 +85,8 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_address1: true
+  field_address_2: true
+  field_city: true
   field_map: true
+  field_zip: true

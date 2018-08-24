@@ -4,14 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.contact.body
-    - field.field.node.contact.field_address
+    - field.field.node.contact.field_address1
+    - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
+    - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
     - field.field.node.contact.field_title
+    - field.field.node.contact.field_zip
     - image.style.contact_photo
     - node.type.contact
   module:
@@ -32,12 +35,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_address:
-    weight: 5
-    label: hidden
+  content_moderation_control:
+    weight: -20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+  field_address1:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_2:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_agency:
     weight: 9
@@ -56,6 +73,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_city:
+    weight: 12
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_email:
     weight: 3
     label: hidden
@@ -70,17 +95,17 @@ content:
     label: hidden
     settings:
       include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: 400px
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
       include_static_map: false
       include_link: false
       include_text: false
-      iframe_height: '200'
-      iframe_width: '200'
-      static_scale: 1
-      zoom_level: 14
-      link_text: 'View larger map'
-      map_type: m
-      langcode: en
-      apikey: ''
     third_party_settings: {  }
   field_phone_number:
     weight: 4
@@ -101,6 +126,14 @@ content:
     region: content
   field_title:
     weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zip:
+    weight: 13
     label: hidden
     settings:
       link_to_entity: false

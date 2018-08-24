@@ -1,15 +1,15 @@
-uuid: 3787d42e-5273-4546-9138-d342eb215a91
+uuid: 1ce206b6-5fe1-456c-aba1-ca54caf56799
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_map
+    - field.storage.node.field_address1
     - node.type.contact
-id: node.contact.field_map
-field_name: field_map
+id: node.contact.field_address1
+field_name: field_address1
 entity_type: node
 bundle: contact
-label: 'Map Location'
+label: 'Address 1'
 description: ''
 required: false
 translatable: false
