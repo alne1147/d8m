@@ -1,7 +1,11 @@
 uuid: 5e320718-2b71-46d2-b890-e40df128ef31
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.hero_cropping
+  module:
+    - crop
 _core:
   default_config_hash: N1S0PHZeyxfFqgzB-sDeGPaxi0dDOL8NUiP_d6WXSV0
 name: crop_thumbnail
@@ -10,8 +14,14 @@ effects:
   8fc26706-68dc-4eb7-8121-33e3936ed55f:
     uuid: 8fc26706-68dc-4eb7-8121-33e3936ed55f
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 400
       height: null
       upscale: false
+  f4e2c78b-91b4-47fc-b3f1-7e2368853fe8:
+    uuid: f4e2c78b-91b4-47fc-b3f1-7e2368853fe8
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: hero_cropping
