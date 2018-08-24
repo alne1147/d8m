@@ -1,15 +1,17 @@
 uuid: 9acfc348-1933-46aa-b69e-6bcb347c72d4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.hero_cropping
+  module:
+    - crop
 name: max_1920
 label: 'Max 1920'
 effects:
-  4553afc6-f755-4dab-bbfe-bb7c65dd0efb:
-    uuid: 4553afc6-f755-4dab-bbfe-bb7c65dd0efb
-    id: image_scale
-    weight: -9
+  0c5ad16d-6088-47b0-b9f9-8eee7ddff0e7:
+    uuid: 0c5ad16d-6088-47b0-b9f9-8eee7ddff0e7
+    id: crop_crop
+    weight: 1
     data:
-      width: 1920
-      height: 500
-      upscale: true
+      crop_type: hero_cropping

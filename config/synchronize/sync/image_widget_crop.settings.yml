@@ -1,9 +1,11 @@
 settings:
-  library_url: ''
-  css_url: ''
+  library_url: libraries/cropper/dist/cropper.min.js
+  css_url: libraries/cropper/dist/cropper.min.css
   crop_preview_image_style: crop_thumbnail
-  crop_list: {  }
-  warn_multiple_usages: false
+  crop_list:
+    hero_cropping: hero_cropping
+  warn_multiple_usages: true
   show_default_crop: true
+  show_crop_area: true
 _core:
   default_config_hash: Yew0jAlVowXHCAcybHScr6viLQf_tvHwC48O16wkg2w
