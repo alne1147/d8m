@@ -1,0 +1,26 @@
+uuid: 35263069-f9ed-4fc1-886f-b0f3d08f4f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+  content:
+    - 'file:file:876f639a-d637-4c26-8201-dfd03546c4f6'
+  module:
+    - entity_embed
+    - media
+label: Image
+id: image
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image
+  display_plugins:
+    - 'view_mode:media.embedded'
+    - 'view_mode:media.link'
+    - 'entity_reference:media_thumbnail'
+  entity_browser: media_image_browser
+  entity_browser_settings:
+    display_review: false
+icon_uuid: 876f639a-d637-4c26-8201-dfd03546c4f6
