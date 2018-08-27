@@ -9,9 +9,8 @@ dependencies:
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
     - field.field.paragraph.card_basic.field_card_title
-    - field.field.paragraph.card_basic.field_title_alignment
     - field.field.paragraph.card_basic.field_title_color
-    - image.style.thumbnail
+    - image.style.crop_thumbnail
     - paragraphs.paragraphs_type.card_basic
   module:
     - allowed_formats
@@ -38,7 +37,6 @@ third_party_settings:
     group_alignment:
       children:
         - field_alignment
-        - field_title_alignment
       parent_name: group_basic_card_edit
       weight: 30
       format_type: tab
@@ -117,14 +115,16 @@ content:
   field_card_background_image:
     weight: 2
     settings:
+      show_crop_area: true
       show_default_crop: true
-      preview_image_style: thumbnail
+      warn_multiple_usages: true
+      preview_image_style: crop_thumbnail
       crop_preview_image_style: crop_thumbnail
-      crop_list:
-        - focal_point
       progress_indicator: throbber
-      show_crop_area: false
-      warn_multiple_usages: false
+      crop_list:
+        - hero_cropping
+      crop_types_required:
+        - hero_cropping
     third_party_settings: {  }
     type: image_widget_crop
     region: content
@@ -146,12 +146,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_title_alignment:
-    weight: 31
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_title_color:
     weight: 23

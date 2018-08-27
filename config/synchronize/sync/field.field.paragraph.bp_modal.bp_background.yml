@@ -13,7 +13,7 @@ id: paragraph.bp_modal.bp_background
 field_name: bp_background
 entity_type: paragraph
 bundle: bp_modal
-label: 'Button Color'
+label: Background
 description: ''
 required: false
 translatable: true

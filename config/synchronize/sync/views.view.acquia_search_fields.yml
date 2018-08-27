@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_archive
     - field.storage.node.field_article_tags
     - field.storage.node.field_promote
     - search_api.index.acquia_search_index
@@ -14,6 +13,8 @@ dependencies:
     - search_api
     - text
     - user
+_core:
+  default_config_hash: XFL-koSKg1_tSF2jVGBPJ53HU5FFtT29Ee0vX_2J8dE
 id: acquia_search_fields
 label: 'Acquia Search Fields'
 module: views
@@ -64,7 +65,7 @@ display:
             first: '« First'
             last: 'Last »'
           expose:
-            items_per_page: true
+            items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '2,5, 10, 25, 50'
             items_per_page_options_all: false
@@ -859,6 +860,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -907,6 +911,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1468,7 +1475,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: ''
+            label: 'Start Date'
             description: ''
             use_operator: false
             operator: created_op
@@ -1486,6 +1493,9 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1516,7 +1526,7 @@ display:
           exposed: true
           expose:
             operator_id: created_1_op
-            label: ''
+            label: 'End Date'
             description: ''
             use_operator: false
             operator: created_1_op
@@ -1534,18 +1544,24 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Authored on'
+            description: null
+            identifier: created_1
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
           plugin_id: search_api_date
         field_article_tags:
           id: field_article_tags
@@ -1598,42 +1614,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: search_api_term
-        field_archive:
-          id: field_archive
-          table: search_api_index_acquia_search_index
-          field: field_archive
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '!='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_boolean
       filter_groups:
         operator: AND
         groups:
@@ -1717,8 +1697,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: promoted-search
-            format_custom_false: ommited
+            format_custom_true: 'search-page search-page__result--promoted'
+            format_custom_false: 'search-page search-page__result--omitted'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2028,7 +2008,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>{{ title }}</h2>\n<div class=\"bodyContent\">{{ body }}\n{{ search_api_excerpt }}\n</div>\n<div class=\"related-tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-page__result search-result--content\">\n<h3>{{ title }}</h3>\n<p>{{ body }}</p>\n<p>{{ search_api_excerpt }}</p>\n</div>\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2066,83 +2046,6 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-        field_archive:
-          id: field_archive
-          table: search_api_datasource_acquia_search_index_entity_node
-          field: field_archive
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: default
-            format_custom_true: ''
-            format_custom_false: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api_boolean
-          fallback_options:
-            type: yes-no
-            type_custom_true: ''
-            type_custom_false: ''
-            not: false
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          entity_type: node
-          plugin_id: search_api_field
       access:
         type: none
         options: {  }
@@ -2156,6 +2059,5 @@ display:
         - user
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_archive'
         - 'config:field.storage.node.field_article_tags'
         - 'config:field.storage.node.field_promote'

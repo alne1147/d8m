@@ -70,7 +70,8 @@ content:
       progress_indicator: throbber
       crop_list:
         - hero_cropping
-      crop_types_required: {  }
+      crop_types_required:
+        - hero_cropping
     third_party_settings: {  }
     type: image_widget_crop
     region: content

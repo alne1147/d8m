@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
     - field.field.paragraph.card_basic.field_card_title
-    - field.field.paragraph.card_basic.field_title_alignment
     - field.field.paragraph.card_basic.field_title_color
     - image.style.max_1920
     - paragraphs.paragraphs_type.card_basic
@@ -68,13 +67,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_title_alignment:
-    weight: 7
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   field_title_color:
     type: list_key
     weight: 6

@@ -85,14 +85,16 @@ content:
   field_row_background_image:
     weight: 8
     settings:
+      show_crop_area: true
       show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: crop_thumbnail
       crop_preview_image_style: crop_thumbnail
+      progress_indicator: throbber
       crop_list:
         - hero_cropping
-      progress_indicator: throbber
-      show_crop_area: false
-      warn_multiple_usages: false
+      crop_types_required:
+        - hero_cropping
     third_party_settings: {  }
     type: image_widget_crop
     region: content

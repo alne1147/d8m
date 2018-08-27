@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.bp_view.bp_width
     - field.field.paragraph.bp_view.field_card_title
     - field.field.paragraph.bp_view.field_dynamic_views
-    - field.field.paragraph.bp_view.field_title_alignment
     - field.field.paragraph.bp_view.field_title_color
     - paragraphs.paragraphs_type.bp_view
   module:
@@ -54,13 +53,6 @@ content:
         entity_browser: 0
     third_party_settings: {  }
     type: viewsreference_formatter
-    region: content
-  field_title_alignment:
-    weight: 5
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
     region: content
   field_title_color:
     weight: 4

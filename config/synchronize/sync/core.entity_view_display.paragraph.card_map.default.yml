@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.card_map.bp_background
     - field.field.paragraph.card_map.field_card_title
     - field.field.paragraph.card_map.field_location
-    - field.field.paragraph.card_map.field_title_alignment
     - field.field.paragraph.card_map.field_title_color
     - paragraphs.paragraphs_type.card_map
   module:
@@ -50,13 +49,6 @@ content:
       include_text: false
     third_party_settings: {  }
     type: simple_gmap
-    region: content
-  field_title_alignment:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
     region: content
   field_title_color:
     weight: 3

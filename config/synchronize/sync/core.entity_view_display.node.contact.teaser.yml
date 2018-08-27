@@ -88,5 +88,6 @@ hidden:
   field_address1: true
   field_address_2: true
   field_city: true
+  field_image: true
   field_map: true
   field_zip: true

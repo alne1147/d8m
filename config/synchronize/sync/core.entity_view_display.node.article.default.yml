@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_archive
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_options
@@ -27,17 +26,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_article_type:
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_article_type:
+    weight: 1
     label: inline
     settings:
       link: true
@@ -45,14 +39,14 @@ content:
     type: entity_reference_label
     region: content
   field_display_options:
-    weight: 5
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_rows:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -61,12 +55,11 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   links:
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_archive: true
   field_article_tags: true
   field_meta_tags: true
   field_page_options: true

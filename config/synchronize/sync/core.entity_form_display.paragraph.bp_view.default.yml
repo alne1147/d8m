@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.bp_view.bp_width
     - field.field.paragraph.bp_view.field_card_title
     - field.field.paragraph.bp_view.field_dynamic_views
-    - field.field.paragraph.bp_view.field_title_alignment
     - field.field.paragraph.bp_view.field_title_color
     - paragraphs.paragraphs_type.bp_view
   module:
@@ -47,7 +46,6 @@ third_party_settings:
     group_title:
       children:
         - field_card_title
-        - field_title_alignment
       parent_name: group_card_view_edit
       weight: 7
       format_type: tab
@@ -100,12 +98,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: viewsreference_select
-    region: content
-  field_title_alignment:
-    weight: 13
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_title_color:
     weight: 11
