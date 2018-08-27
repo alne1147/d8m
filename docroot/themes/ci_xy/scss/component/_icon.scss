@@ -43,6 +43,7 @@ a {
       }
       .paragraph__card--icon {
         .fontawesome-icons {
+          padding-bottom: .5em;
           text-align: center;
           .fontawesome-icon svg {
             color: $color-black;
@@ -57,7 +58,6 @@ a {
         }
       }
       .paragraph__card--icon-text {
-        padding-top: .5em;
         font-size: 24px;
         text-align: center;
       }
