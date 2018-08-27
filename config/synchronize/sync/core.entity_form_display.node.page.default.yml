@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
@@ -109,7 +110,7 @@ third_party_settings:
       children:
         - field_promote
       parent_name: group_search_tab
-      weight: 12
+      weight: 7
       format_type: fieldset
       format_settings:
         label: Search
@@ -137,7 +138,6 @@ third_party_settings:
       children:
         - field_menu_reference_left
         - field_menu_reference_right
-        - field_block_options
       parent_name: group_page_options
       weight: 10
       format_type: fieldset
@@ -166,6 +166,7 @@ third_party_settings:
     group_search_tab:
       children:
         - group_search
+        - group_archive
       parent_name: group_basic_page_options
       weight: 5
       format_type: tab
@@ -176,6 +177,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Search
+      region: content
+    group_archive:
+      children:
+        - field_archive
+      parent_name: group_search_tab
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        label: Archive
+        description: 'This will exclude page from search results'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Archive
       region: content
 id: node.page.default
 targetEntityType: node
@@ -200,6 +215,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_archive:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_article_tags:
     weight: 14
     settings:
