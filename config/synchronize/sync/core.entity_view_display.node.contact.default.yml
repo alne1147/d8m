@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
-    - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -88,15 +87,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: email_mailto
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    weight: 14
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
     region: content
   field_map:
     type: simple_gmap

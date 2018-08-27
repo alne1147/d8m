@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_footer_options
@@ -77,6 +78,7 @@ third_party_settings:
     group_search_tab:
       children:
         - group_search
+        - group_archive
       parent_name: group_landing_page
       weight: 11
       format_type: tab
@@ -161,6 +163,19 @@ third_party_settings:
         required_fields: true
       label: Footer
       region: content
+    group_archive:
+      children:
+        - field_archive
+      parent_name: group_search_tab
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Exclude page from search results'
+        required_fields: true
+      label: Archive
+      region: content
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -172,6 +187,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_archive:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_background_color:
     weight: 10
     settings:

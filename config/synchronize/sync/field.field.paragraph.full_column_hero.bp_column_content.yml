@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.card_icon
     - paragraphs.paragraphs_type.card_map
     - paragraphs.paragraphs_type.card_open_embed
     - paragraphs.paragraphs_type.full_column_hero
@@ -38,6 +39,7 @@ settings:
       bp_block: bp_block
       bp_view: bp_view
       card_open_embed: card_open_embed
+      card_icon: card_icon
     target_bundles_drag_drop:
       card_basic:
         enabled: true
@@ -113,5 +115,11 @@ settings:
         enabled: false
       section_body:
         weight: -27
+        enabled: false
+      card_icon:
+        enabled: true
+        weight: 45
+      webform:
+        weight: 54
         enabled: false
 field_type: entity_reference_revisions

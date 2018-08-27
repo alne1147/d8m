@@ -11,17 +11,19 @@ label: 'Content Title Pattern'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  52e96856-f823-41e4-90e6-1c5745d52ee4:
+  8cf8b25e-b848-411f-9b70-626ee2a44220:
     id: node_type
     bundles:
       article: article
+      contact: contact
       event: event
       landing_page: landing_page
       page: page
+      webform: webform
     negate: false
     context_mapping:
       node: node
-    uuid: 52e96856-f823-41e4-90e6-1c5745d52ee4
+    uuid: 8cf8b25e-b848-411f-9b70-626ee2a44220
 selection_logic: and
 weight: -5
 relationships: {  }

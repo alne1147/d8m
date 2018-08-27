@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.card_map.bp_background
     - field.field.paragraph.card_map.field_card_title
     - field.field.paragraph.card_map.field_location
+    - field.field.paragraph.card_map.field_title_alignment
     - field.field.paragraph.card_map.field_title_color
     - paragraphs.paragraphs_type.card_map
   module:
@@ -30,6 +31,7 @@ third_party_settings:
     group_title:
       children:
         - field_card_title
+        - field_title_alignment
       parent_name: group_map_card_edit
       weight: 21
       format_type: tab
@@ -46,7 +48,7 @@ third_party_settings:
         - field_title_color
         - bp_background
       parent_name: group_map_card_edit
-      weight: 22
+      weight: 23
       format_type: tab
       format_settings:
         id: ''
@@ -97,6 +99,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_title_alignment:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_title_color:
     weight: 7

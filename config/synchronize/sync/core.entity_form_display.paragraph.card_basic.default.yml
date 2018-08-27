@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
     - field.field.paragraph.card_basic.field_card_title
+    - field.field.paragraph.card_basic.field_title_alignment
     - field.field.paragraph.card_basic.field_title_color
     - image.style.thumbnail
     - paragraphs.paragraphs_type.card_basic
@@ -37,6 +38,7 @@ third_party_settings:
     group_alignment:
       children:
         - field_alignment
+        - field_title_alignment
       parent_name: group_basic_card_edit
       weight: 30
       format_type: tab
@@ -144,6 +146,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_title_alignment:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_title_color:
     weight: 23

@@ -5,11 +5,14 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_event_organizer
     - field.field.node.event.field_location
+    - field.field.node.event.field_menu_reference_left
+    - field.field.node.event.field_menu_reference_right
     - field.field.node.event.field_mini
     - field.field.node.event.field_organizer_email
     - field.field.node.event.field_page_options
@@ -180,6 +183,7 @@ third_party_settings:
     group_search_tab:
       children:
         - group_search
+        - group_archive
       parent_name: group_event_options
       weight: 37
       format_type: tab
@@ -249,6 +253,19 @@ third_party_settings:
         required_fields: true
       label: 'Add to Calendar'
       region: content
+    group_archive:
+      children:
+        - field_archive
+      parent_name: group_search_tab
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Exclude page from search results'
+        required_fields: true
+      label: Archive
+      region: content
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -277,6 +294,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: add_to_calendar_widget_type
+    region: content
+  field_archive:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_article_tags:
     weight: 3

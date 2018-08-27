@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_photo
     - image.style.contact_thumbnail
     - node.type.contact
+    - system.menu.admin
   module:
     - draggableviews
     - image
@@ -364,6 +365,15 @@ display:
       display_extenders: {  }
       path: contact
       display_description: ''
+      menu:
+        type: normal
+        title: 'Contact Order'
+        description: 'Chnage order that contacts show up in view.'
+        expanded: false
+        parent: system.admin_content
+        weight: 0
+        context: '0'
+        menu_name: admin
     cache_metadata:
       max-age: 0
       contexts:
@@ -401,6 +411,15 @@ display:
         options:
           view_mode: teaser
       display_description: ''
+      menu:
+        type: none
+        title: 'Contact Order'
+        description: 'Chnage order that contacts show up in view.'
+        expanded: false
+        parent: system.admin_content
+        weight: 0
+        context: '0'
+        menu_name: admin
     cache_metadata:
       max-age: 0
       contexts:

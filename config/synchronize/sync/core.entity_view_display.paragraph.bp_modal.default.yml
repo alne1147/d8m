@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.bp_modal.bp_background
     - field.field.paragraph.bp_modal.bp_modal_body
     - field.field.paragraph.bp_modal.bp_modal_button_text
     - field.field.paragraph.bp_modal.bp_modal_footer
     - field.field.paragraph.bp_modal.bp_modal_title
-    - field.field.paragraph.bp_modal.bp_width
     - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_modal_button_bg_color
+    - field.field.paragraph.bp_modal.field_modal_title_bg_color
     - paragraphs.paragraphs_type.bp_modal
   module:
     - entity_reference_revisions
@@ -22,16 +22,9 @@ targetEntityType: paragraph
 bundle: bp_modal
 mode: default
 content:
-  bp_background:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   bp_modal_body:
     type: entity_reference_revisions_entity_view
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -39,7 +32,7 @@ content:
     third_party_settings: {  }
     region: content
   bp_modal_button_text:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -47,28 +40,35 @@ content:
     type: string
     region: content
   bp_modal_title:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  bp_width:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   field_button_icon:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       layers: false
     third_party_settings: {  }
     type: fontawesome_icon_formatter
     region: content
+  field_modal_button_bg_color:
+    type: list_key
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_modal_title_bg_color:
+    type: list_key
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   bp_modal_footer: true
   created: true

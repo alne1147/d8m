@@ -669,7 +669,20 @@ display:
         groups:
           1: AND
       display_extenders: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: ''
+            format: d8m_text_editor
+          plugin_id: text
     display_plugin: default
     display_title: Master
     id: default

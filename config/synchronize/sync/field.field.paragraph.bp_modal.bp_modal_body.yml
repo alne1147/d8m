@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.bp_modal_body
     - paragraphs.paragraphs_type.bp_modal
-    - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.modal_body
     - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
@@ -26,12 +26,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      card_basic: card_basic
+      modal_body: modal_body
       webform: webform
     target_bundles_drag_drop:
       card_basic:
-        enabled: true
         weight: -39
+        enabled: false
       bp_block:
         weight: -38
         enabled: false
@@ -95,6 +95,9 @@ settings:
       card_open_embed:
         weight: 44
         enabled: false
+      card_icon:
+        weight: 45
+        enabled: false
       mini_calendar:
         weight: 46
         enabled: false
@@ -104,6 +107,9 @@ settings:
       section_body:
         weight: 50
         enabled: false
+      modal_body:
+        enabled: true
+        weight: 51
       webform:
         enabled: true
         weight: 52

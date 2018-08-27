@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_image_browser
     - field.field.node.contact.body
     - field.field.node.contact.field_address1
     - field.field.node.contact.field_address_2
@@ -11,7 +10,6 @@ dependencies:
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
-    - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -21,7 +19,6 @@ dependencies:
     - node.type.contact
   module:
     - content_moderation
-    - entity_browser
     - image
     - path
     - scheduler
@@ -94,20 +91,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
-    region: content
-  field_image:
-    weight: 26
-    settings:
-      entity_browser: media_image_browser
-      field_widget_display: rendered_entity
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: default
-      field_widget_edit: false
-      open: false
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
   field_map:
     weight: 10

@@ -4,10 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_modal_footer
-    - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_modal
-    - paragraphs.paragraphs_type.bp_view
-    - paragraphs.paragraphs_type.card_basic
+    - paragraphs.paragraphs_type.section_body
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 _core:
@@ -25,20 +24,20 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
-      card_basic: card_basic
-      bp_block: bp_block
-      bp_view: bp_view
+      section_body: section_body
+      webform: webform
     target_bundles_drag_drop:
       card_basic:
-        enabled: true
         weight: -39
+        enabled: false
       bp_block:
-        enabled: true
         weight: -38
+        enabled: false
       bp_view:
-        enabled: true
         weight: -37
+        enabled: false
       bp_simple:
         weight: -36
         enabled: false
@@ -87,4 +86,28 @@ settings:
       row_two_column_hero:
         weight: -21
         enabled: false
+      bp_column_wrapper:
+        weight: 36
+        enabled: false
+      card_icon:
+        weight: 45
+        enabled: false
+      card_map:
+        weight: 46
+        enabled: false
+      card_open_embed:
+        weight: 47
+        enabled: false
+      mini_calendar:
+        weight: 49
+        enabled: false
+      row_slide_container:
+        weight: 50
+        enabled: false
+      section_body:
+        enabled: true
+        weight: 53
+      webform:
+        enabled: true
+        weight: 54
 field_type: entity_reference_revisions
