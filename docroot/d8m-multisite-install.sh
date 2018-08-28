@@ -54,8 +54,6 @@ drush cim --partial post-sync --y;
 drush @sites cim --partial sole --y;
 drush @sites cim --partial staging --y;
 drush @sites en memcache --y;
-drush @sites en ci_views_tweaks --y;
-drush @sites en ci_menu_tweaks --y;
-drush @sites en ci_js --y;
+drush @sites en menu_reference_render --y;
 
 echo "That's the end of the D8M install script!"
