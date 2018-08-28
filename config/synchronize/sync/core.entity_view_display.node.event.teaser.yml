@@ -44,6 +44,7 @@ content:
     region: content
 hidden:
   field_add_to_cal: true
+  field_archive: true
   field_article_tags: true
   field_date: true
   field_date_time_range: true

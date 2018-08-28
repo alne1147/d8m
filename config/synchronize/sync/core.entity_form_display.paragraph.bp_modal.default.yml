@@ -134,5 +134,9 @@ hidden:
   bp_modal_footer: true
   bp_width: true
   created: true
+  field_modal_button_bg_color: true
+  field_modal_title_bg_color: true
+  field_title_alignment: true
+  field_title_color: true
   status: true
   uid: true

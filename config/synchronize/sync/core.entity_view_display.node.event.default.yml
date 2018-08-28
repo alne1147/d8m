@@ -162,6 +162,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_archive: true
   field_date: true
   field_menu_reference_left: true
   field_menu_reference_right: true

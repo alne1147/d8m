@@ -57,4 +57,5 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
-hidden: {  }
+hidden:
+  field_title_alignment: true

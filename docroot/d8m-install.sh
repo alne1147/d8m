@@ -16,11 +16,7 @@ drush   config-set system.site mail "no-reply@www.colorado.gov" -y
 
 drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus" --y;
-
 drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;
-
-drush ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus" --y;
 
 drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;
 
@@ -36,9 +32,7 @@ drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9x
 
 drush user-add-role administrator ci-amarshall --y;
 drush user-add-role administrator ci-nevarez --y;
-drush user-add-role administrator ci-jwathen --y;
 drush user-add-role administrator ci-blawson --y;
-drush user-add-role support_administrator ci-kharrison --y;
 drush user-add-role support_administrator ci-twhatley --y;
 drush user-add-role support_administrator ci-supportadmin --y;
 drush user-add-role content_administrator ci-contentadmin --y;

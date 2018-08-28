@@ -63,4 +63,5 @@ content:
     region: content
 hidden:
   created: true
+  field_title_alignment: true
   uid: true

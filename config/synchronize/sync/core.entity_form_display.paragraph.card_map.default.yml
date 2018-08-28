@@ -112,5 +112,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_title_alignment: true
   status: true
   uid: true

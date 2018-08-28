@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.full_column_hero.bp_background
     - field.field.paragraph.full_column_hero.bp_column_content
     - field.field.paragraph.full_column_hero.field_row_background_image
-    - image.style.crop_thumbnail
+    - image.style.max_1920
     - paragraphs.paragraphs_type.full_column_hero
   module:
     - content_moderation
@@ -65,8 +65,8 @@ content:
       show_crop_area: true
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: crop_thumbnail
-      crop_preview_image_style: crop_thumbnail
+      preview_image_style: max_1920
+      crop_preview_image_style: max_1920
       progress_indicator: throbber
       crop_list:
         - hero_cropping

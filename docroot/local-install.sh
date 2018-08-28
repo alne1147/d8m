@@ -16,15 +16,25 @@ drush role-create user_administrator --y;
 
 
  # //User additions and role assignments.
+drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;
 
-drush ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus";  drush  urol administrator ci-nevarez; drush  ucrt ci-jwathen --mail="jwathen@www.colorado.gov" --password="9xzfbddmus";  drush  urol administrator ci-jwathen; drush  ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus";  drush  urol administrator ci-blawson; drush  ucrt ci-kharrison --mail="kristina.harrison@www.colorado.gov" --password="9xzfbddmus";  drush  urol support_administrator ci-kharrison;  drush  ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus";  drush  urol support_administrator ci-twhatley; drush  ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus";  drush  urol support_administrator ci-supportadmin; drush  ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus";  drush  urol content_administrator ci-contentadmin; drush  ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus";  drush  urol user_administrator ci-useradmin; drush  ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus";  drush  urol structure_administrator ci-structureadmin; drush  ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus";  drush  urol administrator ci-amarshall;
+drush ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;
 
+drush ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;
+
+drush ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
 
 drush user-add-role administrator ci-amarshall --y;
 drush user-add-role administrator ci-nevarez --y;
-drush user-add-role administrator ci-jwathen --y;
 drush user-add-role administrator ci-blawson --y;
-drush user-add-role support_administrator ci-kharrison --y;
 drush user-add-role support_administrator ci-twhatley --y;
 drush user-add-role support_administrator ci-supportadmin --y;
 drush user-add-role content_administrator ci-contentadmin --y;
@@ -32,7 +42,7 @@ drush user-add-role user_administrator ci-useradmin --y;
 drush user-add-role structure_administrator ci-structureadmin --y;
 
 
-drush -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
+drush -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-blawson,ci-nevarez,ci-amarshall;
 
 drush en ci_article_setup -y;
 drush en ci_media_types -y;

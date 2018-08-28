@@ -74,4 +74,5 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_title_alignment: true

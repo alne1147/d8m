@@ -27,6 +27,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_archive: true
   field_background_color: true
   field_background_image: true
   field_footer_options: true

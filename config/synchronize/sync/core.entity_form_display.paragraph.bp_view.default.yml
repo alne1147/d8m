@@ -114,5 +114,6 @@ content:
 hidden:
   bp_width: true
   created: true
+  field_title_alignment: true
   status: true
   uid: true
