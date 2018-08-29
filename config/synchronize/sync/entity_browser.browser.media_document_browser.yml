@@ -17,10 +17,10 @@ display_configuration:
   auto_open: true
 selection_display: multi_step_display
 selection_display_configuration:
-  entity_type: media
+  entity_type: file
   display: rendered_entity
   display_settings:
-    view_mode: embedded
+    view_mode: default
   select_text: 'Use selected'
   selection_hidden: false
 widget_selector: tabs
