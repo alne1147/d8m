@@ -24,8 +24,6 @@
           dtd[tagName]['drupal-entity'] = 1;
         }
       }
-      // Display the drupal-entity element inline.
-      dtd.$inline['drupal-entity'] = 1;
 
       // Generic command for adding/editing entities of all types.
       editor.addCommand('editdrupalentity', {
