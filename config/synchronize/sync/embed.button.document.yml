@@ -13,7 +13,6 @@ type_settings:
   bundles: {  }
   display_plugins:
     - 'entity_reference:entity_reference_label'
-    - 'file:file_default'
     - 'file:file_url_plain'
   entity_browser: media_document_browser
   entity_browser_settings:
