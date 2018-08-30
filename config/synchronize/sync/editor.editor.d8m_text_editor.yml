@@ -50,7 +50,6 @@ settings:
             - video_embed
             - document
             - image
-            - document_media_browser
         -
           name: Tools
           items:
