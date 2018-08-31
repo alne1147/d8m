@@ -17,12 +17,12 @@ display_configuration:
   height: '500'
   link_text: 'Select image(s)'
   auto_open: true
-selection_display: multi_step_display
+selection_display: no_display
 selection_display_configuration:
-  entity_type: media
-  display: rendered_entity
+  entity_type: file
+  display: thumbnail
   display_settings:
-    view_mode: embedded
+    image_style: thumbnail
   select_text: 'Use selected'
   selection_hidden: false
 widget_selector: tabs
@@ -41,7 +41,7 @@ widgets:
   6212908c-8140-4eb4-9d8d-5ca61a6d247d:
     settings:
       media_type: image
-      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      upload_location: 'public://images'
       dropzone_description: 'Drop files here to upload them'
       max_filesize: 2M
       extensions: 'jpg jpeg gif png'
@@ -52,8 +52,8 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       submit_text: 'Select Images'
-      auto_select: true
+      auto_select: false
     uuid: 6212908c-8140-4eb4-9d8d-5ca61a6d247d
     weight: 2
-    label: Dropzone
+    label: 'Upload Images'
     id: dropzonejs_media_entity

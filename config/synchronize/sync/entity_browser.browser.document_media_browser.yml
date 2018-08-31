@@ -1,0 +1,92 @@
+uuid: 61521fbf-824f-4cf8-bdd8-d89678d57789
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+    - media.type.image
+    - views.view.media
+    - views.view.media_image_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+_core:
+  default_config_hash: J64CNAkrLn2UvL0lKlIEBn2kOHeXElHCK6bW_8qomww
+name: document_media_browser
+label: 'Document Media Browser'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '640'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: embedded
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  d6847c45-fb9c-43af-bc87-d211285668ac:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: Place
+      auto_select: false
+    uuid: d6847c45-fb9c-43af-bc87-d211285668ac
+    weight: -10
+    label: 'Media Browser'
+    id: view
+  d33cd08c-6874-4cb3-86fa-d58df113874f:
+    settings:
+      form_mode: default
+      media_type: document
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop a file here to upload'
+      max_filesize: 32M
+      extensions: 'txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: Select
+    uuid: d33cd08c-6874-4cb3-86fa-d58df113874f
+    weight: -7
+    label: 'Upload a Document'
+    id: dropzonejs_media_entity_inline_entity_form
+  b4babffd-4c88-4b8e-afd4-19c5dc9e810d:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 128M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: Select
+    uuid: b4babffd-4c88-4b8e-afd4-19c5dc9e810d
+    weight: -8
+    label: 'Upload an Image'
+    id: dropzonejs_media_entity_inline_entity_form
+  3dfe23ba-73f9-47e7-9c29-74014e3c5db9:
+    settings:
+      view: media_image_browser
+      view_display: entity_browser_1
+      submit_text: Place
+      auto_select: false
+    uuid: 3dfe23ba-73f9-47e7-9c29-74014e3c5db9
+    weight: -9
+    label: 'Image Gallery'
+    id: view
