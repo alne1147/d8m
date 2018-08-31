@@ -68,6 +68,7 @@ module:
   editor: 0
   editor_file: 0
   embed: 0
+  embed_image_style_permissions: 0
   entity: 0
   entity_browser: 0
   entity_browser_entity_form: 0

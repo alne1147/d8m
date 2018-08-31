@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "15c5539e19bb51bd44d24c1c9436432a",
+    "content-hash": "1bc47a346885c2103669b01e5972234a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1202,8 +1202,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
-            },
-            "time": "2018-01-04T14:54:04+00:00"
+            }
         },
         {
             "name": "drupal/calendar_datetime",
@@ -2036,6 +2035,53 @@
             }
         },
         {
+            "name": "drupal/embed_image_style_permissions",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/embed_image_style_permissions",
+                "reference": "5db6b4d866203bdb0fc6e4c735ab43ec8fa76806"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/entity_browser": "~1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1504217644",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ahebrank",
+                    "homepage": "https://www.drupal.org/user/3190515"
+                }
+            ],
+            "description": "Set access permissions on individual image styles",
+            "homepage": "https://www.drupal.org/project/embed_image_style_permissions",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/embed_image_style_permissions",
+                "issues": "https://www.drupal.org/project/issues/embed_image_style_permissions"
+            },
+            "time": "2018-08-27T15:16:12+00:00"
+        },
+        {
             "name": "drupal/entity",
             "version": "1.0.0-beta3",
             "source": {
@@ -2217,7 +2263,7 @@
                     }
                 },
                 "patches_applied": {
-                    "2640398-18 - Entity Embed inline widgets": "https://www.drupal.org/files/issues/entity_embed-inline-widgets-2640398-18.patch"
+                    "2640398-32 - Entity Embed inline widgets": "https://www.drupal.org/files/issues/2018-08-30/entity_embed-inline-widgets-2640398-32.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7759,7 +7805,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/calendar": 20,
-        "drupal/entity_embed": 20,
+        "drupal/embed_image_style_permissions": 20,
         "drupal/field_slideshow": 20,
         "drupal/roleassign": 20,
         "behat/mink": 20,
