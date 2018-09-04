@@ -5,16 +5,12 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - block_class
     - block_visibility_groups
     - menu_block
     - menu_condition
     - term_condition
   theme:
     - ci_xy
-third_party_settings:
-  block_class:
-    classes: ''
 id: mainnavigation
 theme: ci_xy
 region: navigation_collapsible

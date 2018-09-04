@@ -5,16 +5,12 @@ dependencies:
   config:
     - views.view.acquia_search_fields
   module:
-    - block_class
     - block_visibility_groups
     - menu_condition
     - term_condition
     - views
   theme:
     - ci_xy
-third_party_settings:
-  block_class:
-    classes: ''
 _core:
   default_config_hash: vb6VPHP5RZbN03adHs4Y-ufyLFzdPpJyBIET6VJurpU
 id: exposedformacquia_search_fieldssearch_block

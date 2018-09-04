@@ -5,16 +5,12 @@ dependencies:
   config:
     - views.view.archived_content
   module:
-    - block_class
     - block_visibility_groups
     - menu_condition
     - term_condition
     - views
   theme:
     - ci_xy
-third_party_settings:
-  block_class:
-    classes: ''
 id: exposedformarchived_contentarchive_search_block
 theme: ci_xy
 region: block_reserve

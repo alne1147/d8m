@@ -14,11 +14,9 @@ module:
   blazy: 0
   blazy_ui: 0
   block: 0
-  block_class: 0
   block_content: 0
   block_content_permissions: 0
   block_region_permissions: 0
-  block_styles: 0
   block_visibility_groups: 0
   bootstrap_paragraphs: 0
   breakpoint: 0

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - block_visibility_groups
     - ctools
     - masquerade
@@ -12,9 +11,6 @@ dependencies:
     - user
   theme:
     - ci_xy
-third_party_settings:
-  block_class:
-    classes: ''
 id: masquerade
 theme: ci_xy
 region: global_footer

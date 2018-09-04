@@ -6,14 +6,10 @@ dependencies:
     - block_visibility_groups.block_visibility_group.sidebar_menu
     - system.menu.main
   module:
-    - block_class
     - block_visibility_groups
     - menu_block
   theme:
     - ci_xy
-third_party_settings:
-  block_class:
-    classes: ''
 id: mainnavigation_3
 theme: ci_xy
 region: sidebar_first
