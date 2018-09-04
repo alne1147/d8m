@@ -32,6 +32,7 @@
         "drupal/field_slideshow": "2.x-dev",
         "drupal/focal_point": "^1.0",
         "drupal/fontawesome": "^2.3",
+        "drupal/google_analytics": "^2.3",
         "drupal/image_widget_crop": "^2.1",
         "drupal/libraries": "^3.0",
         "drupal/masquerade": "^2.0",
