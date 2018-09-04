@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "1bc47a346885c2103669b01e5972234a",
@@ -2086,8 +2086,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/embed_image_style_permissions",
                 "issues": "https://www.drupal.org/project/issues/embed_image_style_permissions"
-            },
-            "time": "2018-08-27T15:16:12+00:00"
+            }
         },
         {
             "name": "drupal/entity",
