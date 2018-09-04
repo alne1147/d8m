@@ -4,9 +4,10 @@ dependencies:
   config:
     - field.field.paragraph.bp_accordion_section.bp_accordion_section_body
     - field.field.paragraph.bp_accordion_section.bp_accordion_section_title
+    - field.field.paragraph.bp_accordion_section.bp_show_button
     - paragraphs.paragraphs_type.bp_accordion_section
   module:
-    - entity_reference_revisions
+    - paragraphs
     - text
 id: paragraph.bp_accordion_section.default
 targetEntityType: paragraph
@@ -14,20 +15,29 @@ bundle: bp_accordion_section
 mode: default
 content:
   bp_accordion_section_body:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: hidden
+    type: entity_reference_paragraphs
+    weight: 2
     settings:
-      view_mode: default
-      link: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
     third_party_settings: {  }
   bp_accordion_section_title:
-    weight: 0
-    label: hidden
+    weight: 1
     settings:
-      link_to_entity: false
+      size: 60
+      placeholder: ''
+    third_party_settings: { }
+    type: string_textfield
+  bp_show_button:
+    weight: 0
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: string
+    type: boolean_checkbox
 hidden:
   created: true
+  status: true
   uid: true

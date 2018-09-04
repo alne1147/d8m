@@ -1414,18 +1414,18 @@
     },
     {
         "name": "drupal/bootstrap_paragraphs",
-        "version": "2.0.0-beta3",
-        "version_normalized": "2.0.0.0-beta3",
+        "version": "2.0.0-beta5",
+        "version_normalized": "2.0.0.0-beta5",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/bootstrap_paragraphs",
-            "reference": "8.x-2.0-beta3"
+            "reference": "8.x-2.0-beta5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/bootstrap_paragraphs-8.x-2.0-beta3.zip",
-            "reference": "8.x-2.0-beta3",
-            "shasum": "5203c0dbdb7795c77687f9e42181bff87d945e8d"
+            "url": "https://ftp.drupal.org/files/projects/bootstrap_paragraphs-8.x-2.0-beta5.zip",
+            "reference": "8.x-2.0-beta5",
+            "shasum": "d0f75fd3aa8800a967045e1de9b27179e52cda00"
         },
         "require": {
             "drupal/core": "*",
@@ -1435,8 +1435,7 @@
         },
         "require-dev": {
             "drupal/contact_formatter": "*",
-            "drupal/paragraphs": "*",
-            "drupal/webform": "*"
+            "drupal/paragraphs": "*"
         },
         "type": "drupal-module",
         "extra": {
@@ -1444,8 +1443,8 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.0-beta3",
-                "datestamp": "1520222584",
+                "version": "8.x-2.0-beta5",
+                "datestamp": "1531408721",
                 "security-coverage": {
                     "status": "not-covered",
                     "message": "Beta releases are not covered by Drupal security advisories."
@@ -2698,18 +2697,18 @@
     },
     {
         "name": "drupal/entity_reference_revisions",
-        "version": "1.4.0",
-        "version_normalized": "1.4.0.0",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/entity_reference_revisions",
-            "reference": "8.x-1.4"
+            "reference": "8.x-1.5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.4.zip",
-            "reference": "8.x-1.4",
-            "shasum": "0d5e159ab52fe8e5aa7c27e7ccfc0299e1af4d72"
+            "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "417250a105afe8febef508c7f981d02cb138752d"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -2723,8 +2722,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.4",
-                "datestamp": "1515143885",
+                "version": "8.x-1.5",
+                "datestamp": "1527241084",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
