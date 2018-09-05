@@ -5,6 +5,9 @@ webform.webform.*:
     status:
       type: string
       label: 'Status'
+    weight:
+      type: integer
+      label: 'Weight'
     open:
       type: string
       label: 'Open date/time'
@@ -17,6 +20,9 @@ webform.webform.*:
     template:
       type: boolean
       label: 'Template'
+    archive:
+      type: boolean
+      label: 'Archive'
     id:
       type: string
       label: 'Machine name'
@@ -149,12 +155,21 @@ webform.webform.*:
           sequence:
             type: string
             label: 'Column name'
+        submission_user_duplicate:
+          type: boolean
+          label: 'Submission user duplicate'
         submission_login:
           type: boolean
           label: 'Redirect to login when access denied to submission'
         submission_login_message:
           type: text
           label: 'Login message when access denied to submission'
+        previous_submission_message:
+          type: text
+          label: 'Previous submission message'
+        previous_submissions_message:
+          type: text
+          label: 'Previous submissions message'
         autofill:
           type: boolean
           label: 'Autofill with previous submission'
@@ -176,12 +191,18 @@ webform.webform.*:
         wizard_progress_percentage:
           type: boolean
           label: 'Show wizard progress pages'
+        wizard_progress_link:
+          type: boolean
+          label: 'Link to previous pages in progress bar'
         wizard_start_label:
           type: label
           label: 'Wizard start label'
         wizard_start_attributes:
           type: ignore
           label: 'Wizard start attributes'
+        wizard_preview_link:
+          type: boolean
+          label: 'Link to previous pages in preview'
         wizard_confirmation:
           type: boolean
           label: 'Include confirmation page in progress'
@@ -215,6 +236,9 @@ webform.webform.*:
         preview_exclude_empty:
           type: boolean
           label: 'Preview exclude empty elements'
+        preview_exclude_empty_checkbox:
+          type: boolean
+          label: 'Preview exclude unselected checkboxes'
         draft:
           type: string
           label: 'Allow users to save and finish the webform later.'
@@ -311,7 +335,7 @@ webform.webform.*:
       mapping:
         create:
           type: mapping
-          label: 'Create webform submissions'
+          label: 'Create submissions'
           mapping:
             roles:
               type: sequence
@@ -333,7 +357,7 @@ webform.webform.*:
                 label: 'Permission'
         view_any:
           type: mapping
-          label: 'View any webform submissions'
+          label: 'View any submissions'
           mapping:
             roles:
               type: sequence
@@ -355,7 +379,7 @@ webform.webform.*:
                 label: 'Permission'
         update_any:
           type: mapping
-          label: 'Update any webform submissions'
+          label: 'Update any submissions'
           mapping:
             roles:
               type: sequence
@@ -377,7 +401,7 @@ webform.webform.*:
                 label: 'Permission'
         delete_any:
           type: mapping
-          label: 'Delete any webform submissions'
+          label: 'Delete any submissions'
           mapping:
             roles:
               type: sequence
@@ -399,7 +423,7 @@ webform.webform.*:
                 label: 'Permission'
         purge_any:
           type: mapping
-          label: 'Purge any webform submissions'
+          label: 'Purge any submissions'
           mapping:
             roles:
               type: sequence
@@ -421,7 +445,7 @@ webform.webform.*:
                 label: 'Permission'
         view_own:
           type: mapping
-          label: 'View own webform submissions'
+          label: 'View own submissions'
           mapping:
             roles:
               type: sequence
@@ -443,7 +467,7 @@ webform.webform.*:
                 label: 'Permission'
         update_own:
           type: mapping
-          label: 'Update own webform submissions'
+          label: 'Update own submissions'
           mapping:
             roles:
               type: sequence
@@ -465,7 +489,7 @@ webform.webform.*:
                 label: 'Permission'
         delete_own:
           type: mapping
-          label: 'Delete own webform submissions'
+          label: 'Delete own submissions'
           mapping:
             roles:
               type: sequence

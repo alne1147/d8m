@@ -48,7 +48,7 @@ class WebformUiElementEditForm extends WebformUiElementFormBase {
     // ISSUE:
     // The below delete link with .use-ajax is throwing errors because the modal
     // dialog code is creating a <button> without any parent form.
-    // Issue #2879304: Editing Select Other elements produces JavaScript errors
+    // Issue #2879304: Editing Select Other elements produces JavaScript errors.
     // @see Drupal.Ajax
     /*
     if ($this->isModalDialog()) {
@@ -69,7 +69,8 @@ class WebformUiElementEditForm extends WebformUiElementFormBase {
 
     // WORKAROUND:
     // Create a hidden link that is clicked using jQuery.
-    if ($this->isDialog()) {
+    // @see \Drupal\webform_ui\Form\WebformUiElementFormBase::buildDefaultValueForm
+    if ($this->isDialog() && !$form_state->get('default_value_element')) {
       $form['delete'] = [
         '#type' => 'link',
         '#title' => $this->t('Delete'),

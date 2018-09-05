@@ -8,6 +8,7 @@ open: null
 close: null
 uid: null
 template: false
+archive: false
 id: example_element_states
 title: 'Example: Elements: Condition Logic'
 description: 'Examples of elements using conditional logic.'
@@ -65,11 +66,11 @@ elements: |
         1: One
         2: Two
         3: Three
-        other: Other...
+        other: Other…
     select_other:
       '#type': textfield
       '#attributes':
-        placeholder: 'Enter other...'
+        placeholder: 'Enter other…'
       '#states':
         visible:
           ':input[name="select"]':
@@ -92,7 +93,7 @@ elements: |
     select_multiple_other:
       '#type': textfield
       '#attributes':
-        placeholder: 'Enter other...'
+        placeholder: 'Enter other…'
       '#states':
         visible:
           - ':input[name="select_multiple"]':
@@ -117,11 +118,11 @@ elements: |
         1: One
         2: Two
         3: Three
-        other: Other...
+        other: Other…
     radios_other:
       '#type': textfield
       '#attributes':
-        placeholder: 'Enter other...'
+        placeholder: 'Enter other…'
       '#states':
         visible:
           ':input[name="radios"]':
@@ -224,17 +225,22 @@ settings:
   submission_label: ''
   submission_log: false
   submission_user_columns: {  }
+  submission_user_duplicate: false
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
   submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
+  wizard_progress_link: false
   wizard_start_label: ''
+  wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
@@ -245,6 +251,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: none
   draft_multiple: false
   draft_auto_save: false
@@ -319,3 +326,4 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
+weight: 0

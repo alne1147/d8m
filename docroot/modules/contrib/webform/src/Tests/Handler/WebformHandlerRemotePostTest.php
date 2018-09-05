@@ -2,7 +2,6 @@
 
 namespace Drupal\webform\Tests\Handler;
 
-use Drupal\file\Entity\File;
 use Drupal\webform\Entity\Webform;
 use Drupal\webform\Entity\WebformSubmission;
 use Drupal\webform\Tests\WebformTestBase;
@@ -61,7 +60,7 @@ class WebformHandlerRemotePostTest extends WebformTestBase {
     $this->assertRaw('Your confirmation number is ' . $webform_submission->getElementData('confirmation_number') . '.');
 
     // Check custom header.
-    $this->assertRaw('{&quot;custom_header&quot;:&quot;true&quot;}');
+    $this->assertRaw('{&quot;headers&quot;:{&quot;Accept-Language&quot;:&quot;en&quot;,&quot;custom_header&quot;:&quot;true&quot;}');
 
     // Sleep for 1 second to make sure submission timestamp is updated.
     sleep(1);
@@ -176,10 +175,10 @@ class WebformHandlerRemotePostTest extends WebformTestBase {
     $this->postSubmission($webform);
 
     // Check request URL contains query string.
-    $this->assertRaw("http://webform-test-handler-remote-post/completed?custom_completed=1&amp;custom_data=1&amp;response_type=200&amp;first_name=John&amp;last_name=Smith");
+    $this->assertRaw("http://webform-test-handler-remote-post/completed?custom_completed=1&amp;custom_data=1&amp;first_name=John&amp;last_name=Smith&amp;response_type=200");
 
     // Check response data.
-    $this->assertRaw("message: 'Processed completed?custom_completed=1&amp;custom_data=1&amp;response_type=200&amp;first_name=John&amp;last_name=Smith request.'");
+    $this->assertRaw("message: 'Processed completed?custom_completed=1&amp;custom_data=1&amp;first_name=John&amp;last_name=Smith&amp;response_type=200 request.'");
 
     // Get confirmation number from JSON packet.
     preg_match('/&quot;confirmation_number&quot;:&quot;([a-zA-z0-9]+)&quot;/', $this->getRawContent(), $match);
@@ -201,6 +200,7 @@ class WebformHandlerRemotePostTest extends WebformTestBase {
   file: $fid
   file__name: file.txt
   file__uri: 'private://webform/test_handler_remote_post_file/$sid/file.txt'
+  file__mime: text/plain
   file__data: dGhpcyBpcyBhIHNhbXBsZSB0eHQgZmlsZQppdCBoYXMgdHdvIGxpbmVzCg==");
   }
 

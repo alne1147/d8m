@@ -35,6 +35,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   cardinality = \Drupal\webform\Plugin\WebformHandlerInterface::CARDINALITY_UNLIMITED,
  *   results = \Drupal\webform\Plugin\WebformHandlerInterface::RESULTS_PROCESSED,
  *   submission = \Drupal\webform\Plugin\WebformHandlerInterface::SUBMISSION_OPTIONAL,
+ *   tokens = TRUE,
  * )
  */
 class RemotePostWebformHandler extends WebformHandlerBase {
@@ -75,6 +76,17 @@ class RemotePostWebformHandler extends WebformHandlerBase {
   protected $elementManager;
 
   /**
+   * List of unsupported webform submission properties.
+   *
+   * The below properties will not being included in a remote post.
+   *
+   * @var array
+   */
+  protected $unsupportedProperties = [
+    'metatag',
+  ];
+
+  /**
    * {@inheritdoc}
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, LoggerChannelFactoryInterface $logger_factory, ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, WebformSubmissionConditionsValidatorInterface $conditions_validator, ModuleHandlerInterface $module_handler, ClientInterface $http_client, WebformTokenManagerInterface $token_manager, WebformMessageManagerInterface $message_manager, WebformElementManagerInterface $element_manager) {
@@ -111,18 +123,21 @@ class RemotePostWebformHandler extends WebformHandlerBase {
    */
   public function getSummary() {
     $configuration = $this->getConfiguration();
+    $settings = $configuration['settings'];
+
     if (!$this->isResultsEnabled()) {
-      $configuration['settings']['updated_url'] = '';
-      $configuration['settings']['deleted_url'] = '';
+      $settings['updated_url'] = '';
+      $settings['deleted_url'] = '';
     }
     if (!$this->isDraftEnabled()) {
-      $configuration['settings']['draft_url'] = '';
+      $settings['draft_url'] = '';
     }
     if (!$this->isConvertEnabled()) {
-      $configuration['settings']['converted_url'] = '';
+      $settings['converted_url'] = '';
     }
+
     return [
-      '#settings' => $configuration['settings'],
+      '#settings' => $settings,
     ] + parent::getSummary();
   }
 
@@ -299,7 +314,7 @@ class RemotePostWebformHandler extends WebformHandlerBase {
     $form['additional']['messages'] = [
       '#type' => 'webform_multiple',
       '#title' => $this->t('Custom error response messages'),
-      '#description' => $this->t('Enter custom response messages for specific status codes.') . '<br/>' . $this->t('Defaults to: %value', ['%value' => $this->messageManager->render(WebformMessageManagerInterface::SUBMISSION_EXCEPTION)]),
+      '#description' => $this->t('Enter custom response messages for specific status codes.') . '<br/>' . $this->t('Defaults to: %value', ['%value' => $this->messageManager->render(WebformMessageManagerInterface::SUBMISSION_EXCEPTION_MESSAGE)]),
       '#empty_items' => 0,
       '#add' => FALSE,
       '#element' => [
@@ -368,8 +383,6 @@ class RemotePostWebformHandler extends WebformHandlerBase {
       '#default_value' => $this->configuration['excluded_data'],
     ];
 
-    $form['token_tree_link'] = $this->tokenManager->buildTreeLink();
-
     $this->tokenManager->elementValidate($form);
 
     return $form;
@@ -424,7 +437,10 @@ class RemotePostWebformHandler extends WebformHandlerBase {
     $request_url = $this->configuration[$state . '_url'];
     $request_method = (!empty($this->configuration['method'])) ? $this->configuration['method'] : 'POST';
     $request_type = ($request_method == 'POST') ? $this->configuration['type'] : NULL;
+
+    // Get request options with tokens replaced.
     $request_options = (!empty($this->configuration['custom_options'])) ? Yaml::decode($this->configuration['custom_options']) : [];
+    $request_options = $this->tokenManager->replace($request_options, $webform_submission);
 
     try {
       if ($request_method === 'GET') {
@@ -494,10 +510,16 @@ class RemotePostWebformHandler extends WebformHandlerBase {
     // Get submission and elements data.
     $data = $webform_submission->toArray(TRUE);
 
-    // Flatten data.
-    // Prioritizing elements before the submissions fields.
-    $data = $data['data'] + $data;
+    // Remove unsupported properties from data.
+    // These are typically added by other module's like metatag.
+    $unsupported_properties = array_combine($this->unsupportedProperties, $this->unsupportedProperties);
+    $data = array_diff_key($data, $unsupported_properties);
+
+    // Flatten data and prioritize the element data over the
+    // webform submission data.
+    $element_data = $data['data'];
     unset($data['data']);
+    $data = $element_data + $data;
 
     // Excluded selected submission data.
     $data = array_diff_key($data, $this->configuration['excluded_data']);
@@ -505,6 +527,10 @@ class RemotePostWebformHandler extends WebformHandlerBase {
     // Append uploaded file name, uri, and base64 data to data.
     $webform = $this->getWebform();
     foreach ($data as $element_key => $element_value) {
+      if (empty($element_value)) {
+        continue;
+      }
+
       $element = $webform->getElement($element_key);
       if (!$element) {
         continue;
@@ -521,9 +547,10 @@ class RemotePostWebformHandler extends WebformHandlerBase {
         continue;
       }
 
-      $data[$element_key .'__name'] = $file->getFilename();
-      $data[$element_key .'__uri'] = $file->getFileUri();
-      $data[$element_key .'__data'] = base64_encode(file_get_contents($file->getFileUri()));
+      $data[$element_key . '__name'] = $file->getFilename();
+      $data[$element_key . '__uri'] = $file->getFileUri();
+      $data[$element_key . '__mime'] = $file->getMimeType();
+      $data[$element_key . '__data'] = base64_encode(file_get_contents($file->getFileUri()));
     }
 
     // Append custom data.
@@ -602,10 +629,10 @@ class RemotePostWebformHandler extends WebformHandlerBase {
   }
 
   /**
-   * Determine if converting anoynmous submissions to authenticated is enabled.
+   * Determine if converting anonymous submissions to authenticated is enabled.
    *
    * @return bool
-   *   TRUE if converting anoynmous submissions to authenticated is enabled.
+   *   TRUE if converting anonymous submissions to authenticated is enabled.
    */
   protected function isConvertEnabled() {
     return $this->isDraftEnabled() && ($this->getWebform()->getSetting('form_convert_anonymous') === TRUE);
@@ -761,7 +788,7 @@ class RemotePostWebformHandler extends WebformHandlerBase {
       '#markup' => $message,
     ];
 
-    drupal_set_message(\Drupal::service('renderer')->renderPlain($build), $type);
+    $this->messenger()->addMessage(\Drupal::service('renderer')->renderPlain($build), $type);
   }
 
   /**
@@ -810,12 +837,12 @@ class RemotePostWebformHandler extends WebformHandlerBase {
         ],
       ];
       $build_message = [
-        '#markup' => $this->tokenManager->replace($custom_response_message, $this->getWebform(), $token_data)
+        '#markup' => $this->tokenManager->replace($custom_response_message, $this->getWebform(), $token_data),
       ];
-      drupal_set_message(\Drupal::service('renderer')->renderPlain($build_message), 'error');
+      $this->messenger()->addError(\Drupal::service('renderer')->renderPlain($build_message));
     }
     else {
-      $this->messageManager->display(WebformMessageManagerInterface::SUBMISSION_EXCEPTION, 'error');
+      $this->messageManager->display(WebformMessageManagerInterface::SUBMISSION_EXCEPTION_MESSAGE, 'error');
     }
   }
 
@@ -829,10 +856,12 @@ class RemotePostWebformHandler extends WebformHandlerBase {
    *   A custom custom response message.
    */
   protected function getCustomResponseMessage($response) {
-    $status_code = $response->getStatusCode();
-    foreach ($this->configuration['messages'] as $message_item) {
-      if ($message_item['code'] == $status_code) {
-        return $message_item['message'];
+    if ($response instanceof ResponseInterface) {
+      $status_code = $response->getStatusCode();
+      foreach ($this->configuration['messages'] as $message_item) {
+        if ($message_item['code'] == $status_code) {
+          return $message_item['message'];
+        }
       }
     }
     return (!empty($this->configuration['message'])) ? $this->configuration['message'] : '';

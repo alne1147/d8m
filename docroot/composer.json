@@ -52,6 +52,7 @@
         "drupal/simple_sitemap": "^2.12",
         "drupal/single_datetime": "^1.5",
         "drupal/superfish": "^1.2",
+        "drupal/webform": "^5.0",
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "replace": {

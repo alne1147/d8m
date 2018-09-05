@@ -38,6 +38,23 @@ details details details {
   border: 1px solid #ed5;
 }
 
+.webform-tabs .ui-tabs-active.ui-state-active.ui-state-focus a {
+  text-decoration: underline;
+}
+
+/** Compress tabs for mobile */
+@media screen and (max-width: 600px) {
+  .webform-tabs.ui-tabs .ui-tabs-nav {
+    padding: 5px 0 4px 0;
+  }
+  .webform-tabs.ui-tabs .ui-tabs-nav li {
+    padding: 0;
+  }
+  .webform-tabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: .5em .7em;
+  }
+}
+
 /* Accordion icon */
 .ui-accordion-icons .ui-icon {
   display: inline-block;
@@ -65,6 +82,17 @@ pre.webform-codemirror-runmode {
   .webform-filter-form {
     display: none !important; /* Using !important to ensure with these elements are hidden with getting into a specificity war */
   }
+}
+
+/**
+ * Form action are moved to a dialogs footer and don't need to be visually
+ * hidden.
+
+ * @see Drupal.behaviors.dialog.prepareDialogButtons
+ */
+.webform-ui-dialog .form-actions input[type=submit],
+.webform-ui-dialog .form-actions a.button {
+  display: none !important;
 }
 
 /* System tray divider */
@@ -96,7 +124,23 @@ pre.webform-codemirror-runmode {
   border: solid 1px #ed5;
 }
 
+/* jQuery UI tooltip */
+.ui-tooltip hr {
+  background: #840;
+  margin: .3em 0;
+}
+
 /* jQuery UI tabs */
 .ui-tabs .ui-tabs-panel {
   padding: 0;
+}
+
+/* Tweak details toggle state. */
+.webform-details-toggle-state {
+  color: #0074bd;
+}
+
+.webform-details-toggle-state:hover,
+.webform-details-toggle-statelink:focus {
+  text-decoration: underline;
 }
