@@ -736,7 +736,7 @@ display:
             use_operator: false
             operator: search_api_fulltext_op
             identifier: search
-            required: false
+            required: true
             remember: false
             multiple: false
             remember_roles:
@@ -749,6 +749,7 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1369,7 +1370,7 @@ display:
             use_operator: false
             operator: search_api_fulltext_op
             identifier: search
-            required: false
+            required: true
             remember: false
             multiple: false
             remember_roles:
@@ -1382,6 +1383,7 @@ display:
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
