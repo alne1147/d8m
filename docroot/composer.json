@@ -43,6 +43,7 @@
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.1",
         "drupal/quick_clone": "^1.0",
+        "drupal/redirect": "^1.2",
         "drupal/roleassign": "1.x-dev",
         "drupal/search_api_solr": "^1.2",
         "drupal/sharethis_block": "^1.1",
