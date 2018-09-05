@@ -4178,18 +4178,18 @@
     },
     {
         "name": "drupal/sharethis_block",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/sharethis_block",
-            "reference": "8.x-1.1"
+            "reference": "8.x-1.2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/sharethis_block-8.x-1.1.zip",
-            "reference": "8.x-1.1",
-            "shasum": "b6d29cf8e319ac981a0760c62a74a309a4e97d0a"
+            "url": "https://ftp.drupal.org/files/projects/sharethis_block-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "0e98573b82921393d44fdc31c41999c97c206230"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -4200,8 +4200,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.1",
-                "datestamp": "1522316280",
+                "version": "8.x-1.2",
+                "datestamp": "1526886184",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
