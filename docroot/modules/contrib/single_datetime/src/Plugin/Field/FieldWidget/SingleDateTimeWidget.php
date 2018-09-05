@@ -29,12 +29,18 @@ class SingleDateTimeWidget extends DateTimeWidgetBase implements ContainerFactor
    * {@inheritdoc}
    */
   public static function defaultSettings() {
-    return array(
+    return [
       'hour_format' => '24h',
       'allow_times' => '15',
       'disable_days' => [],
       'exclude_date' => '',
-    );
+      'inline' => FALSE,
+      'datetimepicker_theme' => 'default',
+      'min_date' => '',
+      'max_date' => '',
+      'year_start' => '',
+      'year_end' => '',
+    ];
   }
 
   /**
@@ -42,37 +48,37 @@ class SingleDateTimeWidget extends DateTimeWidgetBase implements ContainerFactor
    */
   public function settingsForm(array $form, FormStateInterface $form_state) {
 
-    $elements = array();
-    $elements['hour_format'] = array(
+    $elements = [];
+    $elements['hour_format'] = [
       '#type' => 'select',
       '#title' => $this->t('Hours Format'),
       '#description' => $this->t('Select the hours format'),
-      '#options' => array(
+      '#options' => [
         '12h' => $this->t('12 Hours'),
         '24h' => $this->t('24 Hours'),
-      ),
+      ],
       '#default_value' => $this->getSetting('hour_format'),
       '#required' => TRUE,
-    );
-    $elements['allow_times'] = array(
+    ];
+    $elements['allow_times'] = [
       '#type' => 'select',
       '#title' => $this->t('Minutes granularity'),
       '#description' => $this->t('Select granularity for minutes in calendar'),
-      '#options' => array(
+      '#options' => [
         '5' => $this->t('5 minutes'),
         '10' => $this->t('10 minutes'),
         '15' => $this->t('15 minutes'),
         '30' => $this->t('30 minutes'),
         '60' => $this->t('60 minutes'),
-      ),
+      ],
       '#default_value' => $this->getSetting('allow_times'),
       '#required' => TRUE,
-    );
-    $elements['disable_days'] = array(
+    ];
+    $elements['disable_days'] = [
       '#type' => 'checkboxes',
       '#title' => $this->t('Disable specific days in week'),
       '#description' => $this->t('Select days which are disabled in calendar, etc. weekends or just Friday'),
-      '#options' => array(
+      '#options' => [
         '1' => $this->t('Monday'),
         '2' => $this->t('Tuesday'),
         '3' => $this->t('Wednesday'),
@@ -80,17 +86,65 @@ class SingleDateTimeWidget extends DateTimeWidgetBase implements ContainerFactor
         '5' => $this->t('Friday'),
         '6' => $this->t('Saturday'),
         '7' => $this->t('Sunday'),
-      ),
+      ],
       '#default_value' => $this->getSetting('disable_days'),
       '#required' => FALSE,
-    );
-    $elements['exclude_date'] = array(
+    ];
+    $elements['exclude_date'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Disable specific dates from calendar'),
       '#description' => $this->t('Enter days in following format d.m.Y etc. 31.12.2018. Each date in new line. This is used for specific dates, if you want to disable all weekends use settings above, not this field.'),
       '#default_value' => $this->getSetting('exclude_date'),
       '#required' => FALSE,
-    );
+    ];
+    $elements['inline'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Render inline'),
+      '#description' => $this->t('Select if you want to render the widget inline.'),
+      '#default_value' => $this->getSetting('inline'),
+      '#required' => FALSE,
+    ];
+    $elements['datetimepicker_theme'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Theme'),
+      '#description' => $this->t('Setting a color scheme. Now only supported default and dark theme'),
+      '#options' => [
+        'default' => $this->t('Default'),
+        'dark' => $this->t('Dark'),
+      ],
+      '#default_value' => $this->getSetting('datetimepicker_theme'),
+      '#required' => FALSE,
+    ];
+    $elements['min_date'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Set a limit to the minimum date/time allowed to pick.'),
+      '#description' => $this->t('Examples: \'0\' for now, \'+1970/01/02\' for tomorrow, \'12:00\' for time, \'13:45:34\',formatTime:\'H:i:s\'. <a href=":external">More info</a>',
+        [':external' => 'https://xdsoft.net/jqplugins/datetimepicker/']),
+      '#default_value' => $this->getSetting('min_date'),
+      '#required' => FALSE,
+    ];
+    $elements['max_date'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Set a limit to the maximum date/time allowed to pick.'),
+      '#description' => $this->t('Examples: \'0\' for now, \'+1970/01/02\' for tomorrow, \'12:00\' for time, \'13:45:34\',formatTime:\'H:i:s\'. <a href=":external">More info</a>.',
+        [':external' => 'https://xdsoft.net/jqplugins/datetimepicker/']),
+      '#default_value' => $this->getSetting('max_date'),
+      '#required' => FALSE,
+    ];
+    $elements['year_start'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Start year'),
+      '#description' => $this->t('Start value for fast Year selector - used only for selector'),
+      '#default_value' => $this->getSetting('year_start'),
+      '#required' => FALSE,
+    ];
+    $elements['year_end'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('End year'),
+      '#description' => $this->t('End value for fast Year selector - used only for selector'),
+      '#default_value' => $this->getSetting('year_end'),
+      '#required' => FALSE,
+    ];
     return $elements;
   }
 
@@ -114,17 +168,33 @@ class SingleDateTimeWidget extends DateTimeWidgetBase implements ContainerFactor
     ];
 
     $disabled_days = [];
-    foreach ($this->getSetting('disable_days') as $key => $value) {
+    foreach ($this->getSetting('disable_days') as $value) {
       if (!empty($value)) {
         $disabled_days[] = $options[$value];
       }
     }
 
     $disabled_days = implode(',', $disabled_days);
+    $min_date = $this->getSetting('min_date');
+    $max_date = $this->getSetting('max_date');
+    $year_start = $this->getSetting('year_start');
+    $year_end = $this->getSetting('year_end');
 
     $summary[] = t('Disabled days: @disabled_days', ['@disabled_days' => !empty($disabled_days) ? $disabled_days : t('None')]);
 
     $summary[] = t('Disabled dates: @disabled_dates', ['@disabled_dates' => !empty($this->getSetting('exclude_date')) ? $this->getSetting('exclude_date') : t('None')]);
+
+    $summary[] = t('Display inline widget: @render_widget', ['@render_widget' => !empty($this->getSetting('inline')) ? t('Yes') : t('No')]);
+
+    $summary[] = t('Theme: @theme', ['@theme' => ucfirst($this->getSetting('datetimepicker_theme'))]);
+
+    $summary[] = t('Minimum date/time: @min_date', ['@min_date' => !empty($min_date) ? $min_date : t('None')]);
+
+    $summary[] = t('Maximum date/time: @max_date', ['@max_date' => !empty($max_date) ? $max_date : t('None')]);
+
+    $summary[] = t('Start year: @year_start', ['@year_start' => !empty($year_start) ? $year_start : t('None')]);
+
+    $summary[] = t('End year: @year_end', ['@year_end' => !empty($year_end) ? $year_end : t('None')]);
 
     return $summary;
   }
@@ -252,6 +322,12 @@ class SingleDateTimeWidget extends DateTimeWidgetBase implements ContainerFactor
     $element['value']['#allow_times'] = $this->getSetting('allow_times');
     $element['value']['#disable_days'] = $this->getSetting('disable_days');
     $element['value']['#exclude_date'] = $this->getSetting('exclude_date');
+    $element['value']['#inline'] = $this->getSetting('inline');
+    $element['value']['#datetimepicker_theme'] = $this->getSetting('datetimepicker_theme');
+    $element['value']['#min_date'] = $this->getSetting('min_date');
+    $element['value']['#max_date'] = $this->getSetting('max_date');
+    $element['value']['#year_start'] = $this->getSetting('year_start');
+    $element['value']['#year_end'] = $this->getSetting('year_end');
     return $element;
   }
 

@@ -4,6 +4,7 @@
     "type": "project",
     "license": "GPL-2.0-or-later",
     "require": {
+        "balbuf/drupal-libraries-installer": "^1.0",
         "composer/installers": "^1.0.24",
         "cweagans/composer-patches": "~1.0",
         "drupal/addtocalendar": "^3.1",
@@ -91,8 +92,14 @@
         },
         "patches": {
           "drupal/entity_embed": {
-            "2640398-32 - Entity Embed inline widgets": "https://www.drupal.org/files/issues/2018-08-30/entity_embed-inline-widgets-2640398-32.patch"
+              "2640398-32 - Entity Embed inline widgets": "https://www.drupal.org/files/issues/2018-08-30/entity_embed-inline-widgets-2640398-32.patch"
+          },
+          "drupal/single_datetime": {
+              "Drupal single date time pickerfix theme": "https://www.drupal.org/files/issues/2018-05-22/single_datetime-dark_theme_not_working-2971481-6.patch"
           }
+        },
+        "drupal-libraries": {
+            "datetimepicker": "https://github.com/xdan/datetimepicker/archive/2.5.20.zip"
         }
     },
     "autoload": {

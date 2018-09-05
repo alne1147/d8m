@@ -54,6 +54,48 @@
         ]
     },
     {
+        "name": "balbuf/drupal-libraries-installer",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/balbuf/drupal-libraries-installer.git",
+            "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/balbuf/drupal-libraries-installer/zipball/38492190898ed0b9274f1fc72a1fbc15da03d15b",
+            "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "composer/installers": "^1.1"
+        },
+        "time": "2018-01-25T01:57:45+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "BalBuf\\DrupalLibrariesInstaller\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BalBuf\\DrupalLibrariesInstaller\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Beemsterboer",
+                "homepage": "https://github.com/balbuf"
+            }
+        ],
+        "description": "Install Drupal libraries via a simple listing in your composer.json file"
+    },
+    {
         "name": "behat/mink",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -4294,18 +4336,18 @@
     },
     {
         "name": "drupal/single_datetime",
-        "version": "1.5.0",
-        "version_normalized": "1.5.0.0",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/single_datetime",
-            "reference": "8.x-1.5"
+            "reference": "8.x-1.6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/single_datetime-8.x-1.5.zip",
-            "reference": "8.x-1.5",
-            "shasum": "5db773b71fe02f7ea4566ea694b417cb30a4ae0a"
+            "url": "https://ftp.drupal.org/files/projects/single_datetime-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "4675b27db09b9cf67cb0a0aac3a55b49d3c09699"
         },
         "require": {
             "drupal/core": "*"
@@ -4316,29 +4358,37 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.5",
-                "datestamp": "1516975089",
+                "version": "8.x-1.6",
+                "datestamp": "1524950580",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
                 }
+            },
+            "patches_applied": {
+                "Drupal single date time pickerfix theme": "https://www.drupal.org/files/issues/2018-05-22/single_datetime-dark_theme_not_working-2971481-6.patch"
             }
         },
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
         "license": [
-            "GPL-2.0-or-later"
+            "GPL-2.0+"
         ],
         "authors": [
             {
-                "name": "valic",
-                "homepage": "https://www.drupal.org/user/980550"
+                "name": "Valentino Medimorec (valic)",
+                "homepage": "https://www.drupal.org/u/valic",
+                "role": "Maintainer"
             }
         ],
-        "description": "Date time picker form element using the xdan jQuery Plugin Date and Time Picker library - https://github.com/xdan/datetimepicker",
+        "description": "Date time picker form element using the xdan jQuery Plugin Date and Time Picker library",
         "homepage": "https://www.drupal.org/project/single_datetime",
+        "keywords": [
+            "Drupal"
+        ],
         "support": {
-            "source": "http://cgit.drupalcode.org/single_datetime"
+            "source": "http://cgit.drupalcode.org/single_datetime",
+            "issues": "https://www.drupal.org/project/issues/single_datetime"
         }
     },
     {

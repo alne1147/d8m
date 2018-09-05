@@ -26,6 +26,7 @@ class SingleDateTime extends FormElement {
       '#maxlength' => 512,
       '#process' => [[$class, 'processSingleDateTime']],
       '#pre_render' => [[$class, 'preRenderSingleDateTime']],
+      '#size' => 25,
       '#theme_wrappers' => ['form_element'],
       '#theme' => 'input__textfield',
     ];
@@ -60,7 +61,7 @@ class SingleDateTime extends FormElement {
     $disabled_days = [];
 
     // Get active days.
-    foreach ($element['#disable_days'] as $key => $value) {
+    foreach ($element['#disable_days'] as $value) {
       if (!empty($value)) {
         // Exception for Sunday - should be 0 (on widget options need to be 7).
         $disabled_days[] = (int) $value < 7 ? (int) $value : 0;
@@ -81,7 +82,28 @@ class SingleDateTime extends FormElement {
       'data-first-day' => $first_day,
       'data-disable-days' => Json::encode($disabled_days),
       'data-exclude-date' => $exclude_date,
+      'data-inline' => !empty($element['#inline']) ? 1 : 0,
+      'data-datetimepicker-theme' => $element['#datetimepicker_theme'],
     ];
+
+    // Year start.
+    if (!empty($element['#year_start'])) {
+      $settings['data-year-start'] = $element['#year_start'];
+    }
+
+    // Year end.
+    if (!empty($element['#year_end'])) {
+      $settings['data-year-end'] = $element['#year_end'];
+    }
+
+    // Min/Max date settings.
+    if (strlen($element['#min_date'])) {
+      $settings['data-min-date'] = $element['#min_date'];
+    }
+
+    if (strlen($element['#max_date'])) {
+      $settings['data-max-date'] = $element['#max_date'];
+    }
 
     // Push field type to JS for changing between date only and time fields.
     // Difference between date and date range fields.

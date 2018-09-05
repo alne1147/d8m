@@ -127,6 +127,7 @@ class ComposerStaticInitDrupal8
         array (
             'Behat\\Mink\\Driver\\' => 18,
             'Behat\\Mink\\' => 11,
+            'BalBuf\\DrupalLibrariesInstaller\\' => 32,
         ),
         'A' => 
         array (
@@ -435,6 +436,10 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/behat/mink/src',
         ),
+        'BalBuf\\DrupalLibrariesInstaller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/balbuf/drupal-libraries-installer/src',
+        ),
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
@@ -518,6 +523,7 @@ class ComposerStaticInitDrupal8
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+        'BalBuf\\DrupalLibrariesInstaller\\Plugin' => __DIR__ . '/..' . '/balbuf/drupal-libraries-installer/src/Plugin.php',
         'Behat\\Mink\\Driver\\BrowserKitDriver' => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src/BrowserKitDriver.php',
         'Behat\\Mink\\Driver\\GoutteDriver' => __DIR__ . '/..' . '/behat/mink-goutte-driver/src/GoutteDriver.php',
         'Behat\\Mink\\Driver\\Goutte\\Client' => __DIR__ . '/..' . '/behat/mink-goutte-driver/src/Goutte/Client.php',
