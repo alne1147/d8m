@@ -3398,17 +3398,17 @@
         },
         {
             "name": "drupal/quick_clone",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/quick_clone",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quick_clone-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "1cdf6a8585498d7cc39880cbdd56a17896f91248"
+                "url": "https://ftp.drupal.org/files/projects/quick_clone-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "9d86a2aac97b6f4cda0ca083595fa0552095267d"
             },
             "require": {
                 "drupal/core": "^8.2.0"
@@ -3426,8 +3426,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1510925887",
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1525943884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
