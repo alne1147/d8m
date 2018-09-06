@@ -7,11 +7,14 @@ dependencies:
     - field.storage.node.field_article_tags
     - field.storage.node.field_rows
     - field.storage.node.field_promote
+    - field.storage.media.field_media_file_1
+    - field.storage.media.field_media_image
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
   module:
     - search_api
     - node
+    - file
     - media
     - paragraphs
 id: acquia_search_index
@@ -115,6 +118,53 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  filename:
+    label: Filename
+    datasource_id: 'entity:file'
+    property_path: filename
+    type: string
+  field_media_file_1:
+    label: File
+    datasource_id: 'entity:media'
+    property_path: field_media_file_1
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+  field_media_image:
+    label: Image
+    datasource_id: 'entity:media'
+    property_path: field_media_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+  field_media_file_1_1:
+    label: File
+    datasource_id: 'entity:media'
+    property_path: field_media_file_1
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+  name:
+    label: Name
+    datasource_id: 'entity:media'
+    property_path: name
+    type: text
+  thumbnail:
+    label: Thumbnail
+    datasource_id: 'entity:media'
+    property_path: thumbnail
+    type: integer
+  alt:
+    label: 'Image » Alternative text'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_image:alt'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
 datasource_settings:
   'entity:node':
     bundles:
@@ -127,6 +177,7 @@ datasource_settings:
     languages:
       default: true
       selected: {  }
+  'entity:file': {  }
   'entity:media':
     bundles:
       default: true
@@ -188,38 +239,22 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - body
+      - title
+      - field_article_tags
+      - type
+      - field_rows
+      - processed
+      - field_media_file_1
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   type_boost:
     boosts:
-      'entity:paragraph':
-        datasource_boost: !!float 1
-        bundle_boosts:
-          bp_accordion: !!float 0
-          bp_accordion_section: !!float 0
-          bp_blank: !!float 0
-          bp_block: !!float 0
-          bp_carousel: !!float 0
-          bp_column_wrapper: !!float 0
-          bp_columns: !!float 0
-          bp_columns_three_uneven: !!float 0
-          bp_columns_two_uneven: !!float 0
-          bp_contact: !!float 0
-          bp_image: !!float 0
-          bp_modal: !!float 0
-          bp_simple: !!float 0
-          bp_tab_section: !!float 0
-          bp_tabs: !!float 0
-          bp_view: !!float 0
-          card_open_embed: !!float 0
-          full_column_hero: !!float 0
-          image_text: !!float 0
-          images: !!float 0
-          nested_paragraph: !!float 0
-          row_slide_container: !!float 0
-          row_three_column_hero: !!float 0
-          row_two_column_hero: !!float 0
-          text: !!float 0
-          text_image: !!float 0
-          user: !!float 0
       'entity:node':
         datasource_boost: !!float 1
         bundle_boosts:
@@ -227,6 +262,18 @@ processor_settings:
           event: !!float 0
           landing_page: !!float 0
           page: !!float 0
+      'entity:file':
+        datasource_boost: !!float 1
+      'entity:media':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          document: !!float 0
+          file: !!float 0
+          image: !!float 0
+      'entity:paragraph':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          card_basic: !!float 0
     weights:
       preprocess_index: 0
   html_filter:
@@ -239,6 +286,11 @@ processor_settings:
       - type
       - field_rows
       - processed
+      - filename
+      - field_media_file_1
+      - field_media_file_1_1
+      - name
+      - alt
     title: true
     alt: true
     tags:
