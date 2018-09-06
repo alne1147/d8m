@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.bp_accordion_section.bp_accordion_section_body
     - field.field.paragraph.bp_accordion_section.bp_accordion_section_title
+    - field.field.paragraph.bp_accordion_section.bp_show_button
     - paragraphs.paragraphs_type.bp_accordion_section
   module:
     - paragraphs
@@ -35,6 +36,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  bp_show_button:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
 hidden:
   created: true
   moderation_state: true

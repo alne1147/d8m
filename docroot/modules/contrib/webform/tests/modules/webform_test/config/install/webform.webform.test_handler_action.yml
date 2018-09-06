@@ -8,6 +8,7 @@ open: null
 close: null
 uid: null
 template: false
+archive: false
 id: test_handler_action
 title: 'Test: Handler: Action'
 description: 'Test action handler.'
@@ -80,17 +81,22 @@ settings:
   submission_label: ''
   submission_log: false
   submission_user_columns: {  }
+  submission_user_duplicate: false
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
   submission_locked_message: 'This is submission was automatically locked.'
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
+  wizard_progress_link: false
   wizard_start_label: ''
+  wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
@@ -101,6 +107,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: authenticated
   draft_multiple: false
   draft_auto_save: false
@@ -288,3 +295,4 @@ handlers:
       message: 'Submission has been unlocked.'
       message_type: status
       debug: true
+weight: 0

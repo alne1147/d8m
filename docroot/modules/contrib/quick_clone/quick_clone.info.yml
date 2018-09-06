@@ -7,7 +7,6 @@ package: Quick Clone
 dependencies:
   - node
   - drupal:system (>=8.2.0)
-  - drupal:paragraphs
   - drupal:entity_reference_revisions
 test_dependencies:
   - paragraphs:paragraphs
@@ -16,8 +15,8 @@ test_dependencies:
   - field_group:field_group
   - diff:diff
 
-# Information added by Drupal.org packaging script on 2017-11-17
-version: '8.x-1.0-beta2'
+# Information added by Drupal.org packaging script on 2018-05-10
+version: '8.x-1.0-beta3'
 core: '8.x'
 project: 'quick_clone'
-datestamp: 1510925891
+datestamp: 1525943890

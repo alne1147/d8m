@@ -90,14 +90,18 @@ class WebformSubmissionViewBuilder extends EntityViewBuilder implements WebformS
 
       if ($view_mode === 'preview') {
         $options = [
+          'view_mode' => $view_mode,
           'excluded_elements' => $webform->getSetting('preview_excluded_elements'),
           'exclude_empty' => $webform->getSetting('preview_exclude_empty'),
+          'exclude_empty_checkbox' => $webform->getSetting('preview_exclude_empty_checkbox'),
         ];
       }
       else {
         $options = [
-          'excluded_elements' => $webform->getSetting('excluded_elements'),
-          'exclude_empty' => $webform->getSetting('exclude_empty'),
+          'view_mode' => $view_mode,
+          'excluded_elements' => [],
+          'exclude_empty' => FALSE,
+          'exclude_empty_checkbox' => FALSE,
         ];
       }
 
@@ -193,7 +197,7 @@ class WebformSubmissionViewBuilder extends EntityViewBuilder implements WebformS
       '#type' => 'table',
       '#rows' => $rows,
       '#attributes' => [
-        'class' => ['webform-submission__table'],
+        'class' => ['webform-submission-table'],
       ],
     ];
   }
@@ -216,7 +220,6 @@ class WebformSubmissionViewBuilder extends EntityViewBuilder implements WebformS
    *
    * @see \Drupal\webform\WebformSubmissionConditionsValidatorInterface::isElementVisible
    * @see \Drupal\Core\Render\Element::isVisibleElement
-   *
    */
   protected function isElementVisible(array $element, WebformSubmissionInterface $webform_submission, array $options) {
     // Checked excluded elements.

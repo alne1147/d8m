@@ -9,7 +9,6 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
-use Drupal\datetime_range\Plugin\Field\FieldWidget\DateRangeWidgetBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItem;
 
@@ -24,111 +23,7 @@ use Drupal\datetime\Plugin\Field\FieldType\DateTimeItem;
  *   }
  * )
  */
-class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements ContainerFactoryPluginInterface {
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function defaultSettings() {
-    return array(
-      'hour_format' => '24h',
-      'allow_times' => '15',
-      'disable_days' => [],
-      'exclude_date' => '',
-    );
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsForm(array $form, FormStateInterface $form_state) {
-
-    $elements = array();
-    $elements['hour_format'] = array(
-      '#type' => 'select',
-      '#title' => $this->t('Hours Format'),
-      '#description' => $this->t('Select the hours format'),
-      '#options' => array(
-        '12h' => $this->t('12 Hours'),
-        '24h' => $this->t('24 Hours'),
-      ),
-      '#default_value' => $this->getSetting('hour_format'),
-      '#required' => TRUE,
-    );
-    $elements['allow_times'] = array(
-      '#type' => 'select',
-      '#title' => $this->t('Minutes granularity'),
-      '#description' => $this->t('Select granularity for minutes in calendar'),
-      '#options' => array(
-        '5' => $this->t('5 minutes'),
-        '10' => $this->t('10 minutes'),
-        '15' => $this->t('15 minutes'),
-        '30' => $this->t('30 minutes'),
-        '60' => $this->t('60 minutes'),
-      ),
-      '#default_value' => $this->getSetting('allow_times'),
-      '#required' => TRUE,
-    );
-    $elements['disable_days'] = array(
-      '#type' => 'checkboxes',
-      '#title' => $this->t('Disable specific days in week'),
-      '#description' => $this->t('Select days which are disabled in calendar, etc. weekends or just Friday'),
-      '#options' => array(
-        '1' => $this->t('Monday'),
-        '2' => $this->t('Tuesday'),
-        '3' => $this->t('Wednesday'),
-        '4' => $this->t('Thursday'),
-        '5' => $this->t('Friday'),
-        '6' => $this->t('Saturday'),
-        '7' => $this->t('Sunday'),
-      ),
-      '#default_value' => $this->getSetting('disable_days'),
-      '#required' => FALSE,
-    );
-    $elements['exclude_date'] = array(
-      '#type' => 'textarea',
-      '#title' => $this->t('Disable specific dates from calendar'),
-      '#description' => $this->t('Enter days in following format d.m.Y etc. 31.12.2018. Each date in new line. This is used for specific dates, if you want to disable all weekends use settings above, not this field.'),
-      '#default_value' => $this->getSetting('exclude_date'),
-      '#required' => FALSE,
-    );
-    return $elements;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsSummary() {
-    $summary = [];
-
-    $summary[] = t('Hours Format: @hour_format', ['@hour_format' => $this->getSetting('hour_format')]);
-    $summary[] = t('Minutes Granularity: @allow_times', ['@allow_times' => $this->getSetting('allow_times')]);
-
-    $options = [
-      '1' => $this->t('Monday'),
-      '2' => $this->t('Tuesday'),
-      '3' => $this->t('Wednesday'),
-      '4' => $this->t('Thursday'),
-      '5' => $this->t('Friday'),
-      '6' => $this->t('Saturday'),
-      '7' => $this->t('Sunday'),
-    ];
-
-    $disabled_days = [];
-    foreach ($this->getSetting('disable_days') as $key => $value) {
-      if (!empty($value)) {
-        $disabled_days[] = $options[$value];
-      }
-    }
-
-    $disabled_days = implode(',', $disabled_days);
-
-    $summary[] = t('Disabled days: @disabled_days', ['@disabled_days' => !empty($disabled_days) ? $disabled_days : t('None')]);
-
-    $summary[] = t('Disabled dates: @disabled_dates', ['@disabled_dates' => !empty($this->getSetting('exclude_date')) ? $this->getSetting('exclude_date') : t('None')]);
-
-    return $summary;
-  }
+class SingleDateTimeRangeWidget extends SingleDateTimeWidget implements ContainerFactoryPluginInterface {
 
   /**
    * {@inheritdoc}
@@ -216,7 +111,7 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
    * {@inheritdoc}
    */
   public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, array $third_party_settings, EntityStorageInterface $date_storage) {
-    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $third_party_settings);
+    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $third_party_settings, $date_storage);
 
     $this->dateStorage = $date_storage;
   }
@@ -240,6 +135,9 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
     $element = parent::formElement($items, $delta, $element, $form, $form_state);
+
+    // Wrap all of the select elements with a fieldset.
+    $element['#theme_wrappers'][] = 'fieldset';
 
     // Overwriting default validateStartEnd validation with our function.
     // validateStartEnd uses date object, we are submitting date as string.
@@ -286,7 +184,7 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
         break;
     }
 
-    $element['value'] += [
+    $element_defaults = [
       '#date_date_format' => $date_format,
       '#date_date_element' => $date_type,
       '#date_date_callbacks' => [],
@@ -297,20 +195,17 @@ class SingleDateTimeRangeWidget extends DateRangeWidgetBase implements Container
       '#allow_times' => $this->getSetting('allow_times'),
       '#disable_days' => $this->getSetting('disable_days'),
       '#exclude_date' => $this->getSetting('exclude_date'),
+      '#inline' => $this->getSetting('inline'),
+      '#datetimepicker_theme' => $this->getSetting('datetimepicker_theme'),
+      '#min_date' => $this->getSetting('min_date'),
+      '#max_date' => $this->getSetting('max_date'),
+      '#year_start' => $this->getSetting('year_start'),
+      '#year_end' => $this->getSetting('year_end'),
     ];
 
-    $element['end_value'] += [
-      '#date_date_format' => $date_format,
-      '#date_date_element' => $date_type,
-      '#date_date_callbacks' => [],
-      '#date_time_format' => $time_format,
-      '#date_time_element' => $time_type,
-      '#date_time_callbacks' => [],
-      '#hour_format' => $this->getSetting('hour_format'),
-      '#allow_times' => $this->getSetting('allow_times'),
-      '#disable_days' => $this->getSetting('disable_days'),
-      '#exclude_date' => $this->getSetting('exclude_date'),
-    ];
+    $element['value'] += $element_defaults;
+
+    $element['end_value'] += $element_defaults;
 
     // Make single date format from date / time parts.
     // Trim spaces in case of date type only.

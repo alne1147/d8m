@@ -10,6 +10,7 @@ return array(
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'BalBuf\\DrupalLibrariesInstaller\\Plugin' => $vendorDir . '/balbuf/drupal-libraries-installer/src/Plugin.php',
     'Behat\\Mink\\Driver\\BrowserKitDriver' => $vendorDir . '/behat/mink-browserkit-driver/src/BrowserKitDriver.php',
     'Behat\\Mink\\Driver\\GoutteDriver' => $vendorDir . '/behat/mink-goutte-driver/src/GoutteDriver.php',
     'Behat\\Mink\\Driver\\Goutte\\Client' => $vendorDir . '/behat/mink-goutte-driver/src/Goutte/Client.php',

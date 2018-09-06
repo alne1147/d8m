@@ -81,6 +81,18 @@ class WebformAdminConfigSubmissionsForm extends WebformAdminConfigBaseForm {
       '#required' => TRUE,
       '#default_value' => $settings['default_submission_locked_message'],
     ];
+    $form['submission_settings']['default_previous_submission_message'] = [
+      '#type' => 'webform_html_editor',
+      '#title' => $this->t('Default previous submission message'),
+      '#required' => TRUE,
+      '#default_value' => $settings['default_previous_submission_message'],
+    ];
+    $form['submission_settings']['default_previous_submissions_message'] = [
+      '#type' => 'webform_html_editor',
+      '#title' => $this->t('Default previous submissions message'),
+      '#required' => TRUE,
+      '#default_value' => $settings['default_previous_submissions_message'],
+    ];
     $form['submission_settings']['default_autofill_message'] = [
       '#type' => 'webform_html_editor',
       '#title' => $this->t('Default autofill message'),
@@ -93,7 +105,7 @@ class WebformAdminConfigSubmissionsForm extends WebformAdminConfigBaseForm {
       '#required' => TRUE,
       '#default_value' => $settings['default_submission_label'],
     ];
-    $form['submission_settings']['token_tree_link'] = $this->tokenManager->buildTreeLink();
+    $form['submission_settings']['token_tree_link'] = $this->tokenManager->buildTreeElement();
 
     // Submission Behaviors.
     $form['submission_behaviors'] = [
@@ -135,7 +147,7 @@ class WebformAdminConfigSubmissionsForm extends WebformAdminConfigBaseForm {
       '#title' => $this->t('Default per user submission limit message'),
       '#default_value' => $config->get('settings.default_limit_user_message'),
     ];
-    $form['submission_limits']['token_tree_link'] = $this->tokenManager->buildTreeLink();
+    $form['submission_limits']['token_tree_link'] = $this->tokenManager->buildTreeElement();
 
     // Submission purging.
     $form['purge'] = [

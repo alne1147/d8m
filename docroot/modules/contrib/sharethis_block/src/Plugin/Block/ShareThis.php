@@ -25,7 +25,6 @@ class ShareThis extends BlockBase {
       ];
     }
     $build['#attached']['library'][] = 'sharethis_block/sharethis.core';
-    $build['#theme'] = 'sharethis';
     return $build;
   }
 
