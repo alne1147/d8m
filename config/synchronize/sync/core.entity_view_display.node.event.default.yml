@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range

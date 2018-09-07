@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.promoted_search_display
     - field.field.node.page.body
+    - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
@@ -35,6 +36,8 @@ content:
   content_moderation_control:
     weight: -20
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_article_tags:
     type: entity_reference_label
     weight: 3

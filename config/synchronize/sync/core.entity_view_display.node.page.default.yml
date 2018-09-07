@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left

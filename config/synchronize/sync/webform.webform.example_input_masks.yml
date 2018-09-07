@@ -1,16 +1,15 @@
-uuid: 11c724a2-e2c5-40df-b217-186773dfede5
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
-_core:
-  default_config_hash: z_hkTDRHwbciOT1GXt2Hkca9ESZOUd_LmzUdCUzg_58
 open: null
 close: null
+weight: 0
 uid: null
 template: false
+archive: false
 id: example_input_masks
 title: 'Example: Input Masks'
 description: 'Examples of elements with <a href="https://github.com/RobinHerbots/jquery.inputmask">input masks</a>.'
@@ -46,22 +45,33 @@ settings:
   form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
-  form_login: false
-  form_login_message: ''
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
   submission_label: ''
   submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
   submission_user_columns: {  }
-  submission_login: false
-  submission_login_message: ''
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
   submission_exception_message: ''
   submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
+  wizard_progress_link: false
   wizard_start_label: ''
+  wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
@@ -72,6 +82,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: none
   draft_multiple: false
   draft_auto_save: false
@@ -146,3 +157,6 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
+uuid: 11c724a2-e2c5-40df-b217-186773dfede5
+_core:
+  default_config_hash: z_hkTDRHwbciOT1GXt2Hkca9ESZOUd_LmzUdCUzg_58

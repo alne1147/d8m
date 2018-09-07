@@ -1,0 +1,22 @@
+uuid: ff24e22e-b657-4413-842f-befb685ee646
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: null
+id: video
+label: Video
+description: 'Add Youtube and Vimeo videos.'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map: {  }

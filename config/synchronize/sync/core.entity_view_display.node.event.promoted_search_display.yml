@@ -6,15 +6,25 @@ dependencies:
     - core.entity_view_mode.node.promoted_search_display
     - field.field.node.event.body
     - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
+    - field.field.node.event.field_event_organizer
     - field.field.node.event.field_location
+    - field.field.node.event.field_menu_reference_left
+    - field.field.node.event.field_menu_reference_right
     - field.field.node.event.field_mini
+    - field.field.node.event.field_organizer_email
     - field.field.node.event.field_page_options
     - field.field.node.event.field_promote
     - field.field.node.event.field_related_content
     - field.field.node.event.field_rows
+    - field.field.node.event.field_show_date_and_time
+    - field.field.node.event.field_show_event_organizer
+    - field.field.node.event.field_show_event_tags
+    - field.field.node.event.field_show_organizer_email
+    - field.field.node.event.field_venue
     - node.type.event
   module:
     - datetime
@@ -31,6 +41,11 @@ content:
     label: hidden
     type: text_default
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content

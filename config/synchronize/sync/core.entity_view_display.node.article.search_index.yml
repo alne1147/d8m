@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.article.body
+    - field.field.node.article.field_archive
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_options
@@ -28,6 +29,11 @@ content:
     label: hidden
     type: text_default
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content

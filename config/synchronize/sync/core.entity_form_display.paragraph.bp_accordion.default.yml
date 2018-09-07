@@ -66,15 +66,15 @@ bundle: bp_accordion
 mode: default
 content:
   bp_accordion_expand:
-    type: boolean_checkbox
-    weight: 1
-    region: content
+    weight: 2
     settings:
       display_label: true
     third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   bp_accordion_section:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -84,19 +84,25 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  bp_show_indicators:
-    type: boolean_checkbox
-    weight: 2
+  bp_background:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
+  bp_show_indicators:
+    weight: 3
     settings:
       display_label: true
     third_party_settings: {  }
-  bp_width:
-    type: options_select
-    weight: 1
+    type: boolean_checkbox
     region: content
+  bp_width:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_bp_title_color:
     weight: 1
     settings: {  }
@@ -110,7 +116,6 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  bp_background: true
   created: true
   status: true
   uid: true

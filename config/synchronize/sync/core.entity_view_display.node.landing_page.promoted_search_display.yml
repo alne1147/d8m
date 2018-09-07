@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.promoted_search_display
+    - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_footer_options
@@ -24,6 +25,11 @@ targetEntityType: node
 bundle: landing_page
 mode: promoted_search_display
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_rows:
     weight: 1
     label: hidden

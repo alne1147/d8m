@@ -102,6 +102,7 @@ module:
   linkit: 0
   masquerade: 0
   media: 0
+  media_library: 0
   menu_block: 0
   menu_condition: 0
   menu_export: 0
@@ -120,6 +121,7 @@ module:
   purge_processor_cron: 0
   purge_processor_lateruntime: 0
   purge_queuer_coretags: 0
+  purge_tokens: 0
   purge_ui: 0
   quick_clone: 0
   rdf: 0

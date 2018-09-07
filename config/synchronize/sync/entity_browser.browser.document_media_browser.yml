@@ -6,9 +6,9 @@ dependencies:
     - media.type.document
     - media.type.image
     - views.view.media
-    - views.view.media_image_browser
   module:
     - dropzonejs_eb_widget
+    - entity_browser_entity_form
     - media
     - views
 _core:
@@ -80,13 +80,13 @@ widgets:
     weight: -8
     label: 'Upload an Image'
     id: dropzonejs_media_entity_inline_entity_form
-  3dfe23ba-73f9-47e7-9c29-74014e3c5db9:
+  524f551f-a563-4531-aa8e-ff39a569f06f:
     settings:
-      view: media_image_browser
-      view_display: entity_browser_1
-      submit_text: Place
-      auto_select: false
-    uuid: 3dfe23ba-73f9-47e7-9c29-74014e3c5db9
-    weight: -9
-    label: 'Image Gallery'
-    id: view
+      entity_type: media
+      bundle: video
+      form_mode: default
+      submit_text: Save
+    uuid: 524f551f-a563-4531-aa8e-ff39a569f06f
+    weight: 4
+    label: 'Embed Video'
+    id: entity_form

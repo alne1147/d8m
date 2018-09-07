@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_footer_options
@@ -23,9 +24,16 @@ targetEntityType: node
 bundle: landing_page
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_archive: true
   field_background_color: true
