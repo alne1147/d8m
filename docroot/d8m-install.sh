@@ -39,7 +39,7 @@ drush user-add-role content_administrator ci-contentadmin --y;
 drush user-add-role user_administrator ci-useradmin --y;
 drush user-add-role structure_administrator ci-structureadmin --y;
 
-drush -y user-unblock --name= ci-jwathen,ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
+drush -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-kharrison,ci-blawson,ci-nevarez,ci-amarshall;
 
 drush en ci_article_setup -y;
 drush en ci_media_types -y;
