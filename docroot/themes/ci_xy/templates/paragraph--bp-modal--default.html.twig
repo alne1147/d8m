@@ -126,7 +126,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
 {# Prints div with classes, and button to trigger the modal. #}
 <div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column">
+  <div class="paragraph__column ">
     {{ title_suffix }}
     {# Button trigger modal #}
     {% if content.field_modal_button_bg_color|render %}
@@ -160,11 +160,11 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
       </div>
 
       {% if content.bp_modal_body|render %}
-        <div class="modal-body">
+
           {% for key, item in content.bp_modal_body if key|first != '#' %}
             {{ item }}
           {% endfor %}
-        </div>
+
       {% endif %}
       {% if content.bp_modal_footer|render %}
         <div class="modal-footer">
@@ -176,6 +176,3 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     </div>
   </div>
 </div>
-
-
-

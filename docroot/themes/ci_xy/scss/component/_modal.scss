@@ -8,6 +8,10 @@
   border-top-right-radius: 5px;
   border-bottom-left-radius: $border-radius!important;
   border-bottom-right-radius: $border-radius!important;
+  .paragraph__card {
+    background-color: #fff;
+    border: 10px solid white;
+  }
 }
 .modal-header {
   border-top-left-radius: $border-radius;
