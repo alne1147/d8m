@@ -1,10 +1,15 @@
 uuid: 5e80e12e-ec4e-4791-9af0-8fc7850b743a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: _none
 id: document
 label: Document
-description: 'Documents that can be embedded in content.'
+description: 'Use local files for reusable media.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: true
