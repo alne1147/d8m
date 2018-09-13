@@ -3,19 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_article_tags
-    - field.storage.node.field_rows
-    - field.storage.node.field_promote
     - field.storage.media.field_media_file_1
     - field.storage.media.field_media_image
+    - field.storage.node.body
+    - field.storage.node.field_promote
+    - field.storage.node.field_article_tags
+    - field.storage.node.field_rows
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
   module:
     - search_api
-    - node
     - file
     - media
+    - node
     - paragraphs
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
@@ -117,39 +117,20 @@ field_settings:
       roles:
         anonymous: anonymous
       view_mode:
+        'entity:file':
+          file: ''
+        'entity:media':
+          document: ''
+          file: ''
+          image: ''
+          video: ''
         'entity:node':
           article: search_index
           event: search_index
           landing_page: search_index
           page: search_index
         'entity:paragraph':
-          bp_accordion: ''
-          bp_accordion_section: ''
-          bp_blank: ''
-          bp_block: ''
-          bp_carousel: ''
-          bp_column_wrapper: ''
-          bp_columns: ''
-          bp_columns_three_uneven: ''
-          bp_columns_two_uneven: ''
-          bp_contact: ''
-          bp_image: ''
-          bp_modal: ''
-          bp_simple: ''
-          bp_tab_section: ''
-          bp_tabs: ''
-          bp_view: ''
-          card_open_embed: ''
-          full_column_hero: ''
-          image_text: ''
-          images: ''
-          nested_paragraph: ''
-          row_slide_container: ''
-          row_three_column_hero: ''
-          row_two_column_hero: ''
-          text: ''
-          text_image: ''
-          user: ''
+          card_basic: default
   thumbnail:
     label: Thumbnail
     datasource_id: 'entity:media'
