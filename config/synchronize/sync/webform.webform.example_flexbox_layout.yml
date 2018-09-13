@@ -1,9 +1,12 @@
+uuid: be3b3229-eafb-4d77-b90a-cc803c811e7d
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
+_core:
+  default_config_hash: fm0bHIBLd-R6vbBZ4zfvxFZtZuiYgT6z9x5ycaX1U_8
 open: null
 close: null
 weight: 0
@@ -157,6 +160,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: be3b3229-eafb-4d77-b90a-cc803c811e7d
-_core:
-  default_config_hash: fm0bHIBLd-R6vbBZ4zfvxFZtZuiYgT6z9x5ycaX1U_8

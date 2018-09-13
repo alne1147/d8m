@@ -1,9 +1,12 @@
+uuid: 26699130-5856-467b-8521-924300cc1907
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: xJrzEtz7bpbCelU-IasmEqt7ASycFjWupdVGd8S0wMU
 open: null
 close: null
 weight: 0
@@ -157,6 +160,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 26699130-5856-467b-8521-924300cc1907
-_core:
-  default_config_hash: xJrzEtz7bpbCelU-IasmEqt7ASycFjWupdVGd8S0wMU

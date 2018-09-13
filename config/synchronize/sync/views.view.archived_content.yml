@@ -719,12 +719,12 @@ display:
           parse_mode: phrase
           min_length: null
           fields:
-            rendered_item: rendered_item
-            body: body
-            title: title
-            field_article_tags: field_article_tags
-            type: type
-            field_rows: field_rows
+            - body
+            - field_article_tags
+            - field_rows
+            - rendered_item
+            - title
+            - type
           plugin_id: search_api_fulltext
         type:
           id: type

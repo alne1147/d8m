@@ -1,9 +1,12 @@
+uuid: 233bb469-c9cc-4ab5-811c-d15fc79116bb
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: R5tUhqonaVOtC1lvbNDsA0KELk4UwUmCGsg4baEg1HI
 open: null
 close: null
 weight: 0
@@ -191,6 +194,3 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme: ''
-uuid: 233bb469-c9cc-4ab5-811c-d15fc79116bb
-_core:
-  default_config_hash: R5tUhqonaVOtC1lvbNDsA0KELk4UwUmCGsg4baEg1HI

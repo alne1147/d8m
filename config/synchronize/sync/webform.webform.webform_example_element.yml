@@ -1,9 +1,12 @@
+uuid: 3658e902-f464-49e7-bc1b-ce8122e54a9c
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_example_element
+_core:
+  default_config_hash: cafaDTnowsyyUHOIFxedYx9tpEWI9Y_Y1DkM_cBuyl0
 open: null
 close: null
 weight: 0
@@ -157,6 +160,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 3658e902-f464-49e7-bc1b-ce8122e54a9c
-_core:
-  default_config_hash: cafaDTnowsyyUHOIFxedYx9tpEWI9Y_Y1DkM_cBuyl0

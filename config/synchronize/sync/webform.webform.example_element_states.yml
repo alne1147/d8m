@@ -1,9 +1,12 @@
+uuid: 608ef52a-3b61-408f-9ad4-0b340574c7a5
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
+_core:
+  default_config_hash: M26yHrfPsOo1kxLL60NM4r1lzIisxATp4i6QUBJ0T08
 open: null
 close: null
 weight: 0
@@ -157,6 +160,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 608ef52a-3b61-408f-9ad4-0b340574c7a5
-_core:
-  default_config_hash: M26yHrfPsOo1kxLL60NM4r1lzIisxATp4i6QUBJ0T08

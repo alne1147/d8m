@@ -1,9 +1,12 @@
+uuid: 11c724a2-e2c5-40df-b217-186773dfede5
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
+_core:
+  default_config_hash: z_hkTDRHwbciOT1GXt2Hkca9ESZOUd_LmzUdCUzg_58
 open: null
 close: null
 weight: 0
@@ -157,6 +160,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 11c724a2-e2c5-40df-b217-186773dfede5
-_core:
-  default_config_hash: z_hkTDRHwbciOT1GXt2Hkca9ESZOUd_LmzUdCUzg_58

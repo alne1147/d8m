@@ -1,9 +1,12 @@
+uuid: 583b78d0-38f9-41c0-a921-427436c60269
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: vnZKWmDVCTTaiKV3WCfyyxl-ydocqD23kEAOxBODuEI
 open: null
 close: null
 weight: 0
@@ -191,6 +194,3 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme: ''
-uuid: 583b78d0-38f9-41c0-a921-427436c60269
-_core:
-  default_config_hash: vnZKWmDVCTTaiKV3WCfyyxl-ydocqD23kEAOxBODuEI

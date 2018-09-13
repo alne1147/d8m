@@ -767,12 +767,12 @@ display:
           parse_mode: phrase
           min_length: null
           fields:
-            rendered_item: rendered_item
-            body: body
-            title: title
-            field_article_tags: field_article_tags
-            type: type
-            field_rows: field_rows
+            - body
+            - field_article_tags
+            - field_rows
+            - rendered_item
+            - title
+            - type
           plugin_id: search_api_fulltext
         type:
           id: type
@@ -1401,16 +1401,16 @@ display:
           parse_mode: phrase
           min_length: null
           fields:
-            rendered_item: rendered_item
-            body: body
-            title: title
-            field_article_tags: field_article_tags
-            type: type
-            field_rows: field_rows
-            field_media_file_1: field_media_file_1
-            field_media_file_1_1: field_media_file_1_1
-            name: name
-            alt: alt
+            - alt
+            - body
+            - field_article_tags
+            - field_media_file_1
+            - field_media_file_1_1
+            - field_rows
+            - name
+            - rendered_item
+            - title
+            - type
           plugin_id: search_api_fulltext
         type:
           id: type
