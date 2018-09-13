@@ -238,6 +238,7 @@ permissions:
   - 'view article revisions'
   - 'view content moderation'
   - 'view events revisions'
+  - 'view files'
   - 'view landing_page revisions'
   - 'view latest version'
   - 'view media'

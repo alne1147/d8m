@@ -86,6 +86,7 @@ permissions:
   - 'use exclude node title'
   - 'use text format d8m_text_editor'
   - 'use text format open_embed'
+  - 'view files'
   - 'view paragraph content bp_accordion'
   - 'view paragraph content bp_accordion_section'
   - 'view paragraph content bp_block'

@@ -18,5 +18,6 @@ permissions:
   - 'assign roles'
   - 'assign structure_administrator role'
   - 'use exclude node title'
+  - 'view files'
   - 'view paragraph content mini_calendar'
   - 'view the administration theme'

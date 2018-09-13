@@ -133,6 +133,7 @@ permissions:
   - 'view any webform submission'
   - 'view article revisions'
   - 'view event revisions'
+  - 'view files'
   - 'view landing_page revisions'
   - 'view latest version'
   - 'view media'

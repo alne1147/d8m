@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_article_tags
     - field.storage.node.field_promote
     - search_api.index.acquia_search_index
-    - system.menu.main
     - taxonomy.vocabulary.free_tagging
   module:
     - image
@@ -1012,9 +1011,9 @@ display:
             label: ''
           plugin_id: search_api
       fields:
-        title:
-          id: title
-          table: search_api_datasource_acquia_search_index_entity_node
+        title_1:
+          id: title_1
+          table: search_api_index_acquia_search_index
           field: title
           relationship: none
           group_type: group
@@ -1048,7 +1047,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1063,7 +1062,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1081,7 +1080,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: node
           plugin_id: search_api_field
         body:
           id: body
@@ -1331,7 +1329,7 @@ display:
       path: search
       exposed_block: true
       menu:
-        type: normal
+        type: none
         title: Search
         description: ''
         expanded: false
@@ -1729,9 +1727,9 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-        title:
-          id: title
-          table: search_api_datasource_acquia_search_index_entity_node
+        title_1:
+          id: title_1
+          table: search_api_index_acquia_search_index
           field: title
           relationship: none
           group_type: group
@@ -1765,7 +1763,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1798,7 +1796,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: node
           plugin_id: search_api_field
         body:
           id: body

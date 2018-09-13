@@ -203,6 +203,7 @@ permissions:
   - 'view content moderation'
   - 'view event revisions'
   - 'view events revisions'
+  - 'view files'
   - 'view landing_page revisions'
   - 'view latest version'
   - 'view media'

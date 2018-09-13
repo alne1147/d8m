@@ -19,6 +19,7 @@ permissions:
   - 'use advanced search'
   - 'use exclude node title'
   - 'use text format d8m_text_editor'
+  - 'view files'
   - 'view media'
   - 'view paragraph content bp_accordion'
   - 'view paragraph content bp_accordion_section'
