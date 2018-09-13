@@ -22,6 +22,93 @@ name: 'Acquia Search Solr Index'
 description: ''
 read_only: false
 field_settings:
+  alt:
+    label: 'Image » Alternative text'
+    datasource_id: 'entity:media'
+    property_path: 'field_media_image:alt'
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  field_article_tags:
+    label: 'Related Tags'
+    datasource_id: 'entity:node'
+    property_path: field_article_tags
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_article_tags
+  field_media_file_1:
+    label: File
+    datasource_id: 'entity:media'
+    property_path: field_media_file_1
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+  field_media_file_1_1:
+    label: File
+    datasource_id: 'entity:media'
+    property_path: field_media_file_1
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+  field_media_image:
+    label: Image
+    datasource_id: 'entity:media'
+    property_path: field_media_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+  field_promote:
+    label: Promote
+    datasource_id: 'entity:node'
+    property_path: field_promote
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_promote
+  field_rows:
+    label: Rows
+    datasource_id: 'entity:node'
+    property_path: field_rows
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_rows
+  filename:
+    label: Filename
+    datasource_id: 'entity:file'
+    property_path: filename
+    type: string
+  name:
+    label: Name
+    datasource_id: 'entity:media'
+    property_path: name
+    type: text
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'body:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -30,6 +117,11 @@ field_settings:
       roles:
         anonymous: anonymous
       view_mode:
+        'entity:node':
+          article: search_index
+          event: search_index
+          landing_page: search_index
+          page: search_index
         'entity:paragraph':
           bp_accordion: ''
           bp_accordion_section: ''
@@ -58,114 +150,30 @@ field_settings:
           text: ''
           text_image: ''
           user: ''
-        'entity:node':
-          article: search_index
-          event: search_index
-          landing_page: search_index
-          page: search_index
-  body:
-    label: Body
-    datasource_id: 'entity:node'
-    property_path: body
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.body
-  title:
-    label: Title
-    datasource_id: 'entity:node'
-    property_path: title
-    type: text
-  field_article_tags:
-    label: 'Related Tags'
-    datasource_id: 'entity:node'
-    property_path: field_article_tags
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_article_tags
-  type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: text
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:node'
-    property_path: created
-    type: date
-  field_rows:
-    label: Rows
-    datasource_id: 'entity:node'
-    property_path: field_rows
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_rows
-  field_promote:
-    label: Promote
-    datasource_id: 'entity:node'
-    property_path: field_promote
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_promote
-  processed:
-    label: 'Body » Processed text'
-    datasource_id: 'entity:node'
-    property_path: 'body:processed'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.body
-  filename:
-    label: Filename
-    datasource_id: 'entity:file'
-    property_path: filename
-    type: string
-  field_media_file_1:
-    label: File
-    datasource_id: 'entity:media'
-    property_path: field_media_file_1
-    type: text
-    dependencies:
-      config:
-        - field.storage.media.field_media_file_1
-  field_media_image:
-    label: Image
-    datasource_id: 'entity:media'
-    property_path: field_media_image
-    type: integer
-    dependencies:
-      config:
-        - field.storage.media.field_media_image
-  field_media_file_1_1:
-    label: File
-    datasource_id: 'entity:media'
-    property_path: field_media_file_1
-    type: text
-    dependencies:
-      config:
-        - field.storage.media.field_media_file_1
-  name:
-    label: Name
-    datasource_id: 'entity:media'
-    property_path: name
-    type: text
   thumbnail:
     label: Thumbnail
     datasource_id: 'entity:media'
     property_path: thumbnail
     type: integer
-  alt:
-    label: 'Image » Alternative text'
-    datasource_id: 'entity:media'
-    property_path: 'field_media_image:alt'
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
     type: text
-    dependencies:
-      config:
-        - field.storage.media.field_media_image
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
 datasource_settings:
+  'entity:file': {  }
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
   'entity:node':
     bundles:
       default: false
@@ -174,14 +182,6 @@ datasource_settings:
         - event
         - landing_page
         - page
-    languages:
-      default: true
-      selected: {  }
-  'entity:file': {  }
-  'entity:media':
-    bundles:
-      default: true
-      selected: {  }
     languages:
       default: true
       selected: {  }
@@ -194,22 +194,6 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  stemmer:
-    all_fields: false
-    fields:
-      - rendered_item
-      - body
-      - title
-      - field_article_tags
-      - type
-      - field_rows
-    exceptions:
-      texan: texa
-      mexican: mexic
-    weights:
-      preprocess_index: 0
-      preprocess_query: 0
-  rendered_item: {  }
   add_url:
     plugin_id: add_url
     settings: {  }
@@ -224,44 +208,79 @@ processor_settings:
     suffix: '</strong>'
     weights:
       postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - alt
+      - body
+      - field_article_tags
+      - field_media_file_1
+      - field_media_file_1_1
+      - field_rows
+      - filename
+      - name
+      - processed
+      - rendered_item
+      - title
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - body
+      - field_article_tags
+      - field_media_file_1
+      - field_rows
+      - processed
+      - rendered_item
+      - title
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - body
+      - field_article_tags
+      - field_rows
+      - rendered_item
+      - title
+      - type
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
   tokenizer:
     all_fields: false
     fields:
-      - rendered_item
       - body
-      - title
       - field_article_tags
-      - type
       - field_rows
+      - rendered_item
+      - title
+      - type
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
     weights:
       preprocess_index: -6
       preprocess_query: -6
-  ignorecase:
-    all_fields: false
-    fields:
-      - rendered_item
-      - body
-      - title
-      - field_article_tags
-      - type
-      - field_rows
-      - processed
-      - field_media_file_1
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
   type_boost:
     boosts:
-      'entity:node':
-        datasource_boost: !!float 1
-        bundle_boosts:
-          article: !!float 0
-          event: !!float 0
-          landing_page: !!float 0
-          page: !!float 0
       'entity:file':
         datasource_boost: !!float 1
       'entity:media':
@@ -270,38 +289,19 @@ processor_settings:
           document: !!float 0
           file: !!float 0
           image: !!float 0
+      'entity:node':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          article: !!float 0
+          event: !!float 0
+          landing_page: !!float 0
+          page: !!float 0
       'entity:paragraph':
         datasource_boost: !!float 1
         bundle_boosts:
           card_basic: !!float 0
     weights:
       preprocess_index: 0
-  html_filter:
-    all_fields: true
-    fields:
-      - rendered_item
-      - body
-      - title
-      - field_article_tags
-      - type
-      - field_rows
-      - processed
-      - filename
-      - field_media_file_1
-      - field_media_file_1_1
-      - name
-      - alt
-    title: true
-    alt: true
-    tags:
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      b: 2
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
 tracker_settings:
   default:
     indexing_order: lifo
