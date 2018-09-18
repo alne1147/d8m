@@ -1,0 +1,17 @@
+uuid: 8160be1e-7279-497b-92c4-e5c24e14c40e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.basic_card_crops
+  module:
+    - crop
+name: basic_card_crop_is
+label: 'Basic Card Crop IS'
+effects:
+  d08848bf-4b4a-49e2-a888-37e16fc9d6a9:
+    uuid: d08848bf-4b4a-49e2-a888-37e16fc9d6a9
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: basic_card_crops

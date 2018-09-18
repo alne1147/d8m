@@ -1,0 +1,12 @@
+uuid: 259d1cd5-ba04-4825-b376-1cc9d09d9e3e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Basic Card Crops'
+id: basic_card_crops
+description: 'Image Cropping in Basic Cards.'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

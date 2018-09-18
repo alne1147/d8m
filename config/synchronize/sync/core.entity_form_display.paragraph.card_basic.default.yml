@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.card_basic.field_card_title
     - field.field.paragraph.card_basic.field_title_alignment
     - field.field.paragraph.card_basic.field_title_color
-    - image.style.max_1920
+    - image.style.large
     - paragraphs.paragraphs_type.card_basic
   module:
     - allowed_formats
@@ -119,13 +119,12 @@ content:
       show_crop_area: true
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: max_1920
-      crop_preview_image_style: max_1920
-      progress_indicator: throbber
+      preview_image_style: large
+      crop_preview_image_style: large
       crop_list:
-        - hero_cropping
-      crop_types_required:
-        - hero_cropping
+        - basic_card_crops
+      progress_indicator: throbber
+      crop_types_required: {  }
     third_party_settings: {  }
     type: image_widget_crop
     region: content
