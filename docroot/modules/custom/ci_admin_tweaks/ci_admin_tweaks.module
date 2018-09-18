@@ -68,12 +68,14 @@ function ci_admin_tweaks_entity_presave(EntityInterface $entity){
     $fid = $entity_arr['field_media_file_1'][0]['target_id'];
     $file = File::load($fid);
 
-    $uploaded_filename = $file->getFileName(); # UPLOADED FILENAME
-    # If File is Uploaded then Stash the Entity for use later
-    if ($uploaded_filename){
-      # STASH THE UPLOADED ENTITY INTO A SESSION VARIABLE
-      $tempstore = \Drupal::service('user.private_tempstore')->get('ci_admin_tweaks_file_replace_fileupload');
-      $tempstore->set('file', $file);
+    if (method_exists($file, 'getFileName')) {
+      $uploaded_filename = $file->getFileName(); # UPLOADED FILENAME
+      # If File is Uploaded then Stash the Entity for use later
+      if ($uploaded_filename){
+        # STASH THE UPLOADED ENTITY INTO A SESSION VARIABLE
+        $tempstore = \Drupal::service('user.private_tempstore')->get('ci_admin_tweaks_file_replace_fileupload');
+        $tempstore->set('file', $file);
+      }
     }
   }
 }
