@@ -1266,6 +1266,7 @@ display:
           plugin_id: entity_operations
       defaults:
         fields: false
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
