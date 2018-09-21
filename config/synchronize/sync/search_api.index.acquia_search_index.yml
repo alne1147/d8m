@@ -2,6 +2,13 @@ uuid: 09bca086-0622-4de1-96dd-e899d5a5d15b
 langcode: en
 status: true
 dependencies:
+  module:
+    - file
+    - media
+    - node
+    - search_api
+    - search_api_attachments
+    - paragraphs
   config:
     - field.storage.media.field_media_file_1
     - field.storage.media.field_media_image
@@ -11,12 +18,6 @@ dependencies:
     - field.storage.node.field_rows
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
-  module:
-    - search_api
-    - file
-    - media
-    - node
-    - paragraphs
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -43,6 +44,9 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: created
     type: date
+    dependencies:
+      module:
+        - node
   field_article_tags:
     label: 'Related Tags'
     datasource_id: 'entity:node'
@@ -96,11 +100,17 @@ field_settings:
     datasource_id: 'entity:file'
     property_path: filename
     type: string
+    dependencies:
+      module:
+        - file
   name:
     label: Name
     datasource_id: 'entity:media'
     property_path: name
     type: text
+    dependencies:
+      module:
+        - media
   processed:
     label: 'Body » Processed text'
     datasource_id: 'entity:node'
@@ -131,23 +141,39 @@ field_settings:
           page: search_index
         'entity:paragraph':
           card_basic: default
+  saa_field_media_file_1:
+    label: 'Search api attachments: File'
+    property_path: saa_field_media_file_1
+    type: text
   thumbnail:
     label: Thumbnail
     datasource_id: 'entity:media'
     property_path: thumbnail
     type: integer
+    dependencies:
+      module:
+        - media
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
+    dependencies:
+      module:
+        - node
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
     property_path: type
     type: text
+    dependencies:
+      module:
+        - node
 datasource_settings:
-  'entity:file': {  }
+  'entity:file':
+    bundles:
+      default: true
+      selected: {  }
   'entity:media':
     bundles:
       default: true
@@ -179,6 +205,13 @@ processor_settings:
     plugin_id: add_url
     settings: {  }
   aggregated_field: {  }
+  file_attachments:
+    excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
+    number_indexed: 0
+    number_first_bytes: '0'
+    max_filesize: '0'
+    excluded_private: 1
+    excluded_mimes: 'audio/x-aiff image/x-jg video/x-msvideo image/x-ms-bmp image/gif image/vnd.microsoft.icon video/quicktime audio/ogg video/ogg image/png image/x-photoshop audio/x-realaudio audio/x-pn-realaudio image/x-rgb video/x-flv'
   highlight:
     highlight: always
     highlight_partial: true
@@ -202,6 +235,7 @@ processor_settings:
       - name
       - processed
       - rendered_item
+      - saa_field_media_file_1
       - title
       - type
     title: true
@@ -270,6 +304,7 @@ processor_settings:
           document: !!float 0
           file: !!float 0
           image: !!float 0
+          video: !!float 0
       'entity:node':
         datasource_boost: !!float 1
         bundle_boosts:
