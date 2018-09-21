@@ -76,7 +76,6 @@ dependencies:
   - features
   - features_ui
   - field
-  - field_collection
   - field_group
   - field_slideshow
   - field_ui
