@@ -6,7 +6,7 @@ dependencies:
     - crop
 third_party_settings:
   crop:
-    image_field: _none
+    image_field: field_media_file_1
 id: document
 label: Document
 description: 'Use local files for reusable media.'
@@ -15,4 +15,5 @@ queue_thumbnail_downloads: false
 new_revision: true
 source_configuration:
   source_field: field_media_file_1
-field_map: {  }
+field_map:
+  name: name
