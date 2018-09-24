@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.file.field_article_tags
     - field.field.media.file.field_media_file
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.file
   module:
     - image
@@ -17,18 +17,25 @@ targetEntityType: media
 bundle: file
 mode: media_library
 content:
-  thumbnail:
-    type: image
+  name:
+    type: string
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      link_to_entity: false
+    third_party_settings: {  }
+  thumbnail:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:
   created: true
   field_article_tags: true
   field_media_file: true
-  name: true
   uid: true

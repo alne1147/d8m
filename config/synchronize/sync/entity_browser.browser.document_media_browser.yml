@@ -21,14 +21,16 @@ display_configuration:
   height: '640'
   link_text: 'Select entities'
   auto_open: true
-selection_display: no_display
+selection_display: multi_step_display
 selection_display_configuration:
   entity_type: media
   display: rendered_entity
   display_settings:
-    view_mode: embedded
+    view_mode: media_library
   select_text: 'Use selected'
   selection_hidden: false
+  view: acquia_search
+  view_display: default
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
@@ -37,7 +39,7 @@ widgets:
       view: media
       view_display: entity_browser_1
       submit_text: Place
-      auto_select: false
+      auto_select: true
     uuid: d6847c45-fb9c-43af-bc87-d211285668ac
     weight: -10
     label: 'Media Browser'

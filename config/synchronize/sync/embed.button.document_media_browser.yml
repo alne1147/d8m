@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - media.type.document
+    - media.type.image
+    - media.type.video
   module:
     - entity_embed
     - media
@@ -16,10 +18,14 @@ type_settings:
   entity_type: media
   bundles:
     - document
+    - image
+    - video
   display_plugins:
-    - 'entity_reference:entity_reference_label'
     - 'view_mode:media.embedded'
+    - 'view_mode:media.full'
     - 'view_mode:media.link'
+    - 'view_mode:media.media_library'
+    - 'entity_reference:media_thumbnail'
   entity_browser: document_media_browser
   entity_browser_settings:
     display_review: false

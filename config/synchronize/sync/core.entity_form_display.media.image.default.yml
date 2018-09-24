@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.field.media.image.field_article_tags
     - field.field.media.image.field_media_image
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.image
   module:
     - content_moderation
-    - focal_point
+    - image
     - path
 id: media.image.default
 targetEntityType: media
@@ -33,12 +33,10 @@ content:
     region: content
   field_media_image:
     settings:
+      preview_image_style: medium
       progress_indicator: throbber
-      preview_image_style: thumbnail
-      preview_link: true
-      offsets: '50,50'
     third_party_settings: {  }
-    type: image_focal_point
+    type: image_image
     weight: 26
     region: content
   moderation_state:
