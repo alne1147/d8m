@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "article_type"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "Blog Post",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-08-18T17:02:50+00:00",
@@ -55,14 +69,15 @@
     "metatag": [
         {
             "value": {
-                "title": "Blog Post | CI Drupal 8"
+                "title": "Blog Post | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/category\/blog-post"
             }
         }
     ],
     "path": [
         {
             "alias": "\/category\/blog-post",
-            "pid": 71,
+            "pid": 182,
             "langcode": "en",
             "lang": "en"
         }

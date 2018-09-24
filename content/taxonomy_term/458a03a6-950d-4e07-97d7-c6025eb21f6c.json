@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "article_type"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "News Article",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-08-18T17:02:43+00:00",
@@ -55,14 +69,15 @@
     "metatag": [
         {
             "value": {
-                "title": "News Article | CI Drupal 8"
+                "title": "News Article | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/category\/news-article"
             }
         }
     ],
     "path": [
         {
             "alias": "\/category\/news-article",
-            "pid": 1,
+            "pid": 170,
             "langcode": "en",
             "lang": "en"
         }

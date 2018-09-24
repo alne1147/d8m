@@ -33,15 +33,15 @@
             "value": 3216
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<p class=\"text-align-center\"><strong>This card takes up 1\/2<\/strong><\/p>\r\n\r\n<p class=\"text-align-center\">Quisque velit nisi, pretium ut lacinia in, elementum id enim.<\/p>\r\n\r\n<p class=\"text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p class=\"text-align-center\"><strong>This card takes up 1\/2<\/strong><\/p>\n<p class=\"text-align-center\">Quisque velit nisi, pretium ut lacinia in, elementum id enim.<\/p>\n<p class=\"text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n"
+            "processed": "<p class=\"text-align-center\"><strong>This card takes up 1\/2<\/strong><\/p>\n\n<p class=\"text-align-center\">Quisque velit nisi, pretium ut lacinia in, elementum id enim.<\/p>\n\n<p class=\"text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n"
         }
     ],
     "field_card_title": [

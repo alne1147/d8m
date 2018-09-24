@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/page_options"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/page_options\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "page_options"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "Second Menu - Right",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/page_options\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-07-28T15:09:02+00:00",
@@ -55,7 +69,8 @@
     "metatag": [
         {
             "value": {
-                "title": "Second Menu - Right | CI Drupal 8"
+                "title": "Second Menu - Right | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100010"
             }
         }
     ]

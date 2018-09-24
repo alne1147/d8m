@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,11 +136,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/page-content-options",
-            "pid": 7,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -148,22 +146,42 @@
         {
             "value": {
                 "title": "Page Content Options | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/page-content-options",
                 "description": "Page Content Options"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/page-content-options",
+            "pid": 180,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<p>Page Content Options<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<p>Page Content Options<\/p>\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

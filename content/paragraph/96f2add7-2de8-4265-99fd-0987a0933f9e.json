@@ -33,15 +33,15 @@
             "value": 2561
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\r\n\r\n<p>You can put any rows or cards here.&nbsp; It will show above all of the Landing Pages on your site.<\/p>\r\n\r\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\r\n\r\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\n<p>You can put any rows or cards here.\u00a0 It will show above all of the Landing Pages on your site.<\/p>\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\n"
+            "processed": "<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>This is a card in the Jumbotron Block.<\/strong><\/span><\/h2>\n\n<p>You can put any rows or cards here.\u00a0 It will show above all of the Landing Pages on your site.<\/p>\n\n<p>This Jumbotron Block can be edited by Structure Editor users.<\/p>\n\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Jumbotron\"<\/p>\n"
         }
     ]
 }

@@ -16,11 +16,6 @@
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json"
             }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/cards\/bobross-profile_image-0b9dd167a9bb16b5-300x300.jpeg"
-            }
         ]
     },
     "id": [
@@ -38,15 +33,15 @@
             "value": 3279
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -62,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -80,29 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
-                    }
-                ]
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/field_card_background_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/cards\/bobross-profile_image-0b9dd167a9bb16b5-300x300.jpeg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "79959d19-2c22-46f7-97d7-a226ac316187"
-                    }
-                ],
-                "uri": [
-                    {
-                        "value": "http:\/\/default\/sites\/default\/files\/cards\/bobross-profile_image-0b9dd167a9bb16b5-300x300.jpeg"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }

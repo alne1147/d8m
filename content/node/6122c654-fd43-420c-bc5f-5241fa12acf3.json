@@ -1,0 +1,187 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/best-fourteeners-beginners?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 63
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6122c654-fd43-420c-bc5f-5241fa12acf3"
+        }
+    ],
+    "vid": [
+        {
+            "value": 214
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2018-09-24T17:02:51+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Best Fourteeners for Beginners",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-24T16:59:09+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-24T17:02:51+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published",
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Best Fourteeners for Beginners | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/best-fourteeners-beginners",
+                "description": "Grays Peak\n\nNibh nisl condimentum id venenatis a condimentum vitae sapien. A scelerisque purus semper eget duis at tellus at. Pellentesque habitant morbi tristique senectus et netus. Phasellus faucibus scelerisque eleifend donec. Ultricies integer quis auctor elit sed vulputate."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/best-fourteeners-beginners",
+            "pid": 192,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<h2 class=\"presto-h2\"><strong>Grays Peak<\/strong><\/h2>\r\n\r\n<p>Nibh nisl condimentum id venenatis a condimentum vitae sapien. A scelerisque purus semper eget duis at tellus at. Pellentesque habitant morbi tristique senectus et netus. Phasellus faucibus scelerisque eleifend donec. Ultricies integer quis auctor elit sed vulputate.<\/p>\r\n\r\n<h2 class=\"presto-h2\"><strong>Torreys Peak<\/strong><\/h2>\r\n\r\n<p>Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sit amet porttitor eget dolor morbi. Commodo ullamcorper a lacus vestibulum sed arcu non. Dui sapien eget mi proin sed. Enim neque volutpat ac tincidunt vitae semper quis. Aliquet lectus proin nibh nisl condimentum id venenatis. Sodales ut etiam sit amet nisl purus in. In mollis nunc sed id semper risus. Cursus sit amet dictum sit amet justo donec enim. Eu facilisis sed odio morbi.<\/p>\r\n\r\n<h2 class=\"presto-h2\"><strong>Quandary Peak<\/strong><\/h2>\r\n\r\n<p>Porta nibh venenatis cras sed felis eget. Eget felis eget nunc lobortis. Bibendum est ultricies integer quis auctor elit. Lectus proin nibh nisl condimentum id. Vitae semper quis lectus nulla. Eu augue ut lectus arcu bibendum at. Ornare lectus sit amet est placerat in egestas erat. Quis imperdiet massa tincidunt nunc pulvinar sapien. Amet venenatis urna cursus eget nunc scelerisque viverra mauris.<\/p>\r\n\r\n<h2 class=\"presto-h2\"><strong>Mount Bierstadt<\/strong><\/h2>\r\n\r\n<p>Auctor eu augue ut lectus arcu. Commodo nulla facilisi nullam vehicula. Maecenas ultricies mi eget mauris. Dolor sit amet consectetur adipiscing. Semper auctor neque vitae tempus quam pellentesque nec. Metus vulputate eu scelerisque felis. Nulla pellentesque dignissim enim sit. Ligula ullamcorper malesuada proin libero nunc.<\/p>\r\n\r\n<h2 class=\"presto-h2\"><strong>Mount Elbert<\/strong><\/h2>\r\n\r\n<p>Libero id faucibus nisl tincidunt eget nullam non. Viverra suspendisse potenti nullam ac tortor. Varius duis at consectetur lorem donec massa sapien faucibus et. Aliquam ultrices sagittis orci a scelerisque purus. Neque vitae tempus quam pellentesque nec. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Quis enim lobortis scelerisque fermentum dui faucibus.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<h2 class=\"presto-h2\"><strong>Grays Peak<\/strong><\/h2>\n\n<p>Nibh nisl condimentum id venenatis a condimentum vitae sapien. A scelerisque purus semper eget duis at tellus at. Pellentesque habitant morbi tristique senectus et netus. Phasellus faucibus scelerisque eleifend donec. Ultricies integer quis auctor elit sed vulputate.<\/p>\n\n<h2 class=\"presto-h2\"><strong>Torreys Peak<\/strong><\/h2>\n\n<p>Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sit amet porttitor eget dolor morbi. Commodo ullamcorper a lacus vestibulum sed arcu non. Dui sapien eget mi proin sed. Enim neque volutpat ac tincidunt vitae semper quis. Aliquet lectus proin nibh nisl condimentum id venenatis. Sodales ut etiam sit amet nisl purus in. In mollis nunc sed id semper risus. Cursus sit amet dictum sit amet justo donec enim. Eu facilisis sed odio morbi.<\/p>\n\n<h2 class=\"presto-h2\"><strong>Quandary Peak<\/strong><\/h2>\n\n<p>Porta nibh venenatis cras sed felis eget. Eget felis eget nunc lobortis. Bibendum est ultricies integer quis auctor elit. Lectus proin nibh nisl condimentum id. Vitae semper quis lectus nulla. Eu augue ut lectus arcu bibendum at. Ornare lectus sit amet est placerat in egestas erat. Quis imperdiet massa tincidunt nunc pulvinar sapien. Amet venenatis urna cursus eget nunc scelerisque viverra mauris.<\/p>\n\n<h2 class=\"presto-h2\"><strong>Mount Bierstadt<\/strong><\/h2>\n\n<p>Auctor eu augue ut lectus arcu. Commodo nulla facilisi nullam vehicula. Maecenas ultricies mi eget mauris. Dolor sit amet consectetur adipiscing. Semper auctor neque vitae tempus quam pellentesque nec. Metus vulputate eu scelerisque felis. Nulla pellentesque dignissim enim sit. Ligula ullamcorper malesuada proin libero nunc.<\/p>\n\n<h2 class=\"presto-h2\"><strong>Mount Elbert<\/strong><\/h2>\n\n<p>Libero id faucibus nisl tincidunt eget nullam non. Viverra suspendisse potenti nullam ac tortor. Varius duis at consectetur lorem donec massa sapien faucibus et. Aliquam ultrices sagittis orci a scelerisque purus. Neque vitae tempus quam pellentesque nec. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Quis enim lobortis scelerisque fermentum dui faucibus.<\/p>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
+        }
+    ],
+    "field_landing_page_options": [
+        {
+            "value": "Show Site Background Image",
+            "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
+        }
+    ]
+}

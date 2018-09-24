@@ -33,15 +33,15 @@
             "value": 2671
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<p>Excepteur sint obcaecat cupiditat non proident culpa. Quae vero auctorem tractata ab fiducia dicuntur. Sed haec quis possit intrepidus aestimare tellus. Integer legentibus erat a ante historiarum dapibus.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Excepteur sint obcaecat cupiditat non proident culpa. Quae vero auctorem tractata ab fiducia dicuntur. Sed haec quis possit intrepidus aestimare tellus. Integer legentibus erat a ante historiarum dapibus.<\/p>\n<p>\u00a0<\/p>\n"
+            "processed": "<p>Excepteur sint obcaecat cupiditat non proident culpa. Quae vero auctorem tractata ab fiducia dicuntur. Sed haec quis possit intrepidus aestimare tellus. Integer legentibus erat a ante historiarum dapibus.<\/p>\n\n<p>\u00a0<\/p>\n"
         }
     ],
     "field_card_title": [

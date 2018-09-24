@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,11 +136,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/video-example",
-            "pid": 3,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -148,22 +146,42 @@
         {
             "value": {
                 "title": "Video Example | CI Drupal 8",
-                "description": "{\"preview_thumbnail\":\"\/sites\/default\/files\/styles\/video_embed_wysiwyg_preview\/public\/video_thumbnails\/wGQHQc_3ycE.jpg?itok=GoseoZ5q\",\"video_url\":\"https:\/\/youtu.be\/wGQHQc_3ycE\",\"settings\":{\"responsive\":1,\"width\":\"854\",\"height\":\"480\",\"autoplay\":1},\"settings_summary\":[\"Embedded Video (Responsive, autoplaying).\"]}"
+                "canonical_url": "http:\/\/default\/video-example",
+                "description": ""
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/video-example",
+            "pid": 169,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<p>{\"preview_thumbnail\":\"\/sites\/default\/files\/styles\/video_embed_wysiwyg_preview\/public\/video_thumbnails\/wGQHQc_3ycE.jpg?itok=GoseoZ5q\",\"video_url\":\"https:\/\/youtu.be\/wGQHQc_3ycE\",\"settings\":{\"responsive\":1,\"width\":\"854\",\"height\":\"480\",\"autoplay\":1},\"settings_summary\":[\"Embedded Video (Responsive, autoplaying).\"]}<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'container' -->\n<!-- BEGIN OUTPUT from 'themes\/contrib\/bootstrap\/templates\/system\/container.html.twig' -->\n<div class=\"video-embed-field-responsive-video form-group\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'video_embed_iframe__youtube' -->\n<!-- FILE NAME SUGGESTIONS:\n   * video-embed-iframe--youtube.html.twig\n   x video-embed-iframe.html.twig\n-->\n<!-- BEGIN OUTPUT from 'modules\/contrib\/video_embed_field\/templates\/video-embed-iframe.html.twig' -->\n<iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"https:\/\/www.youtube.com\/embed\/wGQHQc_3ycE?autoplay=1&amp;start=0&amp;rel=0\"><\/iframe>\n\n<!-- END OUTPUT from 'modules\/contrib\/video_embed_field\/templates\/video-embed-iframe.html.twig' -->\n\n<\/div>\n\n<!-- END OUTPUT from 'themes\/contrib\/bootstrap\/templates\/system\/container.html.twig' -->\n\n\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

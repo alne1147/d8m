@@ -33,15 +33,15 @@
             "value": 2951
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<p>The Following Roles have been configured on the pilot-dev D8M Environment:<\/p>\r\n\r\n<p>- Anonymous User - View rights for content and paragraphs<br \/>\r\n- Authenticated User - No changes (default Drupal rights)<br \/>\r\n- Administrator - No changes (full rights)<br \/>\r\n- Support Administrator - Almost full rights - minus administration and field definition<br \/>\r\n- User Administrator - Full Rights to user administration only<br \/>\r\n- Content Administrator - Almost full rights for content and paragraphs - minus administration and field definition<br \/>\r\n- Structure Administrator - Limited Rights for edits on Block Types<\/p>\r\n\r\n<p>NOT CONFIGURED FOR ALPHA:<br \/>\r\n- Content Publisher - workflow state rights only<br \/>\r\n- Content Editor - workflow state rights only<\/p>\r\n\r\n<p>Removed: Structure Editor<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>The Following Roles have been configured on the pilot-dev D8M Environment:<\/p>\n<p>- Anonymous User - View rights for content and paragraphs<br \/>\n- Authenticated User - No changes (default Drupal rights)<br \/>\n- Administrator - No changes (full rights)<br \/>\n- Support Administrator - Almost full rights - minus administration and field definition<br \/>\n- User Administrator - Full Rights to user administration only<br \/>\n- Content Administrator - Almost full rights for content and paragraphs - minus administration and field definition<br \/>\n- Structure Administrator - Limited Rights for edits on Block Types<\/p>\n<p>NOT CONFIGURED FOR ALPHA:<br \/>\n- Content Publisher - workflow state rights only<br \/>\n- Content Editor - workflow state rights only<\/p>\n<p>Removed: Structure Editor<\/p>\n"
+            "processed": "<p>The Following Roles have been configured on the pilot-dev D8M Environment:<\/p>\n\n<p>- Anonymous User - View rights for content and paragraphs<br \/>\n- Authenticated User - No changes (default Drupal rights)<br \/>\n- Administrator - No changes (full rights)<br \/>\n- Support Administrator - Almost full rights - minus administration and field definition<br \/>\n- User Administrator - Full Rights to user administration only<br \/>\n- Content Administrator - Almost full rights for content and paragraphs - minus administration and field definition<br \/>\n- Structure Administrator - Limited Rights for edits on Block Types<\/p>\n\n<p>NOT CONFIGURED FOR ALPHA:<br \/>\n- Content Publisher - workflow state rights only<br \/>\n- Content Editor - workflow state rights only<\/p>\n\n<p>Removed: Structure Editor<\/p>\n"
         }
     ],
     "field_card_title": [

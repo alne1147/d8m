@@ -78,7 +78,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -95,7 +95,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -203,11 +203,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/article-blog-post-2",
-            "pid": 18,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -215,21 +213,43 @@
         {
             "value": {
                 "title": "Article - Blog Post 2 | CI Drupal 8",
-                "description": "This is a test Article.\n\u00a0\nIt uses the following Article Options:\n- Type: Blog Post\n\u00a0\nDisplay\n- Show Author: No\n- Show Post Date: Yes\n\u00a0\nRelated Content\n- Show Recent Posts: Yes\n- Show Related Tags: No\n\u00a0\nTags Assigned: State\n\u00a0\n###\n\u00a0\nNulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+                "canonical_url": "http:\/\/default\/article-blog-post-2",
+                "description": "This is a test Article.\n\n\u00a0\n\nIt uses the following Article Options:\n\n- Type: Blog Post\n\n\u00a0\n\nDisplay\n\n- Show Author: No\n\n- Show Post Date: Yes\n\n\u00a0\n\nRelated Content\n\n- Show Recent Posts: Yes\n\n- Show Related Tags: No\n\n\u00a0\n\nTags Assigned: State\n\n\u00a0\n\n###\n\n\u00a0\n\nNulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/article-blog-post-2",
+            "pid": 183,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<h2>This is a test Article.<\/h2>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>It uses the following Article Options:<\/p>\r\n\r\n<p>- Type: Blog Post<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Display<\/p>\r\n\r\n<p>- Show Author: No<\/p>\r\n\r\n<p>- Show Post Date: Yes<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Related Content<\/p>\r\n\r\n<p>- Show Recent Posts: Yes<\/p>\r\n\r\n<p>- Show Related Tags: No<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Tags Assigned: State<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>###<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<h2>This is a test Article.<\/h2>\n\n<p>\u00a0<\/p>\n\n<p>It uses the following Article Options:<\/p>\n\n<p>- Type: Blog Post<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Display<\/p>\n\n<p>- Show Author: No<\/p>\n\n<p>- Show Post Date: Yes<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Related Content<\/p>\n\n<p>- Show Recent Posts: Yes<\/p>\n\n<p>- Show Related Tags: No<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Tags Assigned: State<\/p>\n\n<p>\u00a0<\/p>\n\n<p>###<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\n\n<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.<\/p>\n\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.<\/p>\n\n<p>\u00a0<\/p>\n",
             "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false,
             "lang": "en"
         }
     ],
     "field_display_options": [
         {
             "value": "show-post-date"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ]
 }

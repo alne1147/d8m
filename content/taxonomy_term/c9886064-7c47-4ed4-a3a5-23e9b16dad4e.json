@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "article_type"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "Press Release",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-08-18T17:02:34+00:00",
@@ -55,14 +69,15 @@
     "metatag": [
         {
             "value": {
-                "title": "Press Release | CI Drupal 8"
+                "title": "Press Release | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/category\/press-release"
             }
         }
     ],
     "path": [
         {
             "alias": "\/category\/press-release",
-            "pid": 91,
+            "pid": 185,
             "langcode": "en",
             "lang": "en"
         }

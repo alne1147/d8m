@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/related_content"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/related_content\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "related_content"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "Show Related Tags",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/related_content\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-09-05T16:57:54+00:00",
@@ -55,7 +69,8 @@
     "metatag": [
         {
             "value": {
-                "title": "Show Related Tags | CI Drupal 8"
+                "title": "Show Related Tags | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100018"
             }
         }
     ]

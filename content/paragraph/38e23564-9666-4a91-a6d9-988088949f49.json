@@ -33,15 +33,15 @@
             "value": 3026
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<p>Quam diu etiam furor iste tuus nos eludet? At nos hinc posthac, sitientis piros Afros. Cum ceteris in veneratione tui montes, nascetur mus. Gallia est omnis divisa in partes tres, quarum. Magna pars studiorum, prodita quaerimus.<\/p>\r\n\r\n<p>Plura mihi bona sunt, inclinet, amari petere vellent. A communi observantia non est recedendum. Prima luce, cum quibus mons aliud &nbsp;consensu ab eo. Nihil hic munitissimus habendi senatus locus, nihil horum? Contra legem facit qui id facit quod lex prohibet.<br \/>\r\nLorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ambitioni dedisse scripsisse iudicaretur. Nec dubitamus multa iter quae et nos invenerat. Quis aute iure reprehenderit in voluptate velit esse.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Quam diu etiam furor iste tuus nos eludet? At nos hinc posthac, sitientis piros Afros. Cum ceteris in veneratione tui montes, nascetur mus. Gallia est omnis divisa in partes tres, quarum. Magna pars studiorum, prodita quaerimus.<\/p>\n<p>Plura mihi bona sunt, inclinet, amari petere vellent. A communi observantia non est recedendum. Prima luce, cum quibus mons aliud \u00a0consensu ab eo. Nihil hic munitissimus habendi senatus locus, nihil horum? Contra legem facit qui id facit quod lex prohibet.<br \/>\nLorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ambitioni dedisse scripsisse iudicaretur. Nec dubitamus multa iter quae et nos invenerat. Quis aute iure reprehenderit in voluptate velit esse.<\/p>\n"
+            "processed": "<p>Quam diu etiam furor iste tuus nos eludet? At nos hinc posthac, sitientis piros Afros. Cum ceteris in veneratione tui montes, nascetur mus. Gallia est omnis divisa in partes tres, quarum. Magna pars studiorum, prodita quaerimus.<\/p>\n\n<p>Plura mihi bona sunt, inclinet, amari petere vellent. A communi observantia non est recedendum. Prima luce, cum quibus mons aliud \u00a0consensu ab eo. Nihil hic munitissimus habendi senatus locus, nihil horum? Contra legem facit qui id facit quod lex prohibet.<br \/>\nLorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ambitioni dedisse scripsisse iudicaretur. Nec dubitamus multa iter quae et nos invenerat. Quis aute iure reprehenderit in voluptate velit esse.<\/p>\n"
         }
     ],
     "field_card_title": [

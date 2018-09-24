@@ -33,15 +33,15 @@
             "value": 3025
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Link<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Default<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Primary<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-success\" href=\"#\"><span class=\"text\">Success<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-info\" href=\"#\"><span class=\"text\">Info<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Warning<\/span><\/a><\/p>\r\n\r\n<p><a class=\"btn btn-danger\" href=\"#\"><span class=\"text\">Danger<\/span><\/a><\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Link<\/span><\/a><\/p>\n<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Default<\/span><\/a><\/p>\n<p><a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Primary<\/span><\/a><\/p>\n<p><a class=\"btn btn-success\" href=\"#\"><span class=\"text\">Success<\/span><\/a><\/p>\n<p><a class=\"btn btn-info\" href=\"#\"><span class=\"text\">Info<\/span><\/a><\/p>\n<p><a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Warning<\/span><\/a><\/p>\n<p><a class=\"btn btn-danger\" href=\"#\"><span class=\"text\">Danger<\/span><\/a><\/p>\n"
+            "processed": "<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Link<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Default<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Primary<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-success\" href=\"#\"><span class=\"text\">Success<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-info\" href=\"#\"><span class=\"text\">Info<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Warning<\/span><\/a><\/p>\n\n<p><a class=\"btn btn-danger\" href=\"#\"><span class=\"text\">Danger<\/span><\/a><\/p>\n"
         }
     ]
 }

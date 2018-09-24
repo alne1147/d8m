@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,25 +136,42 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/accordion-example",
-            "pid": 5,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
     "metatag": [
         {
             "value": {
-                "title": "Accordion Example | CI Drupal 8"
+                "title": "Accordion Example | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/accordion-example"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/accordion-example",
+            "pid": 171,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

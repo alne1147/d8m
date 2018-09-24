@@ -33,15 +33,15 @@
             "value": 3131
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<p>This card is in the next row.<\/p>\r\n\r\n<p>Also, you can find test Content in the Menu under \"Content\".<\/p>\r\n\r\n<p>There are many test Pages and Articles with other examples of the content you can create in D8M.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>This card is in the next row.<\/p>\n<p>Also, you can find test Content in the Menu under \"Content\".<\/p>\n<p>There are many test Pages and Articles with other examples of the content you can create in D8M.<\/p>\n"
+            "processed": "<p>This card is in the next row.<\/p>\n\n<p>Also, you can find test Content in the Menu under \"Content\".<\/p>\n\n<p>There are many test Pages and Articles with other examples of the content you can create in D8M.<\/p>\n"
         }
     ]
 }

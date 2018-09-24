@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/jumbotron_options\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "jumbotron_options"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "Show Alternate Jumbotron",
@@ -39,6 +48,11 @@
             "value": 1
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/jumbotron_options\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-11-30T22:31:53+00:00",
@@ -55,7 +69,8 @@
     "metatag": [
         {
             "value": {
-                "title": "Show Alternate Jumbotron | CI Drupal 8"
+                "title": "Show Alternate Jumbotron | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100038"
             }
         }
     ]

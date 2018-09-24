@@ -33,15 +33,15 @@
             "value": 3076
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<p>- Example Call to Action -<\/p>\r\n\r\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\r\n\r\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\r\n\r\n<p><br \/>\r\n&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>- Example Call to Action -<\/p>\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\n<p>\n\u00a0<\/p>\n"
+            "processed": "<p>- Example Call to Action -<\/p>\n\n<h2><span style=\"font-family:museo sans,sans-serif;\"><strong>Get Involved!<\/strong><\/span><\/h2>\n\n<p><strong><a class=\"btn btn-default\" href=\"#\"><span class=\"text\">Donate<\/span><\/a> <a class=\"btn btn-primary\" href=\"#\"><span class=\"text\">Volunteer<\/span><\/a><\/strong> <a class=\"btn btn-warning\" href=\"#\"><span class=\"text\">Learn<\/span><\/a><\/p>\n\n<p><br \/>\n\u00a0<\/p>\n"
         }
     ]
 }

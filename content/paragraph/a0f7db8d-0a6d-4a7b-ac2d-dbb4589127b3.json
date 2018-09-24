@@ -33,15 +33,15 @@
             "value": 2969
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<p>Salutantibus vitae elit libero, a pharetra augue. Tityre, tu patulae recubans sub tegmine fagi &nbsp;dolor. Fabio vel iudice vincam, sunt in culpa qui officia. Magna pars studiorum, prodita quaerimus.<\/p>\r\n\r\n<p>Cum ceteris in veneratione tui montes, nascetur mus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quae vero auctorem tractata ab fiducia dicuntur. A communi observantia non est recedendum. Quam temere in vitiis, legem sancimus haerentia.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Salutantibus vitae elit libero, a pharetra augue. Tityre, tu patulae recubans sub tegmine fagi \u00a0dolor. Fabio vel iudice vincam, sunt in culpa qui officia. Magna pars studiorum, prodita quaerimus.<\/p>\n<p>Cum ceteris in veneratione tui montes, nascetur mus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quae vero auctorem tractata ab fiducia dicuntur. A communi observantia non est recedendum. Quam temere in vitiis, legem sancimus haerentia.<\/p>\n"
+            "processed": "<p>Salutantibus vitae elit libero, a pharetra augue. Tityre, tu patulae recubans sub tegmine fagi \u00a0dolor. Fabio vel iudice vincam, sunt in culpa qui officia. Magna pars studiorum, prodita quaerimus.<\/p>\n\n<p>Cum ceteris in veneratione tui montes, nascetur mus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quae vero auctorem tractata ab fiducia dicuntur. A communi observantia non est recedendum. Quam temere in vitiis, legem sancimus haerentia.<\/p>\n"
         }
     ],
     "field_card_title": [

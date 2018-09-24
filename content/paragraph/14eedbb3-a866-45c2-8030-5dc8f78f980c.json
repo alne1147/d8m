@@ -38,15 +38,15 @@
             "value": 3295
         }
     ],
-    "type": [
-        {
-            "target_id": "bp_block"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_block"
         }
     ],
     "_embedded": {
@@ -62,7 +62,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "46559874-9f7c-488c-8d90-3eedd93e16a1"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "46559874-9f7c-488c-8d90-3eedd93e16a1"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }

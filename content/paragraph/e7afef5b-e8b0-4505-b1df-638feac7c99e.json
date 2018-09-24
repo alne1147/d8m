@@ -1,0 +1,135 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 848
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e7afef5b-e8b0-4505-b1df-638feac7c99e"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3365
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-24T17:29:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "850"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p><span style=\"font-size: 18px;\">Creating a fun family friendly tavern that caters to your best friend.&nbsp;Complete with 7,000 sq. ft. of &nbsp;fully fenced private dog park.<br \/>\r\n<br \/>\r\nIn addition to the dog park we offer two&nbsp;fully stocked bars, with a huge <\/span><span style=\"font-size: 18px;\">selection of domestic beers,&nbsp;craft beers,&nbsp;and two&nbsp;patios that seat&nbsp;man's best friend.<br \/>\r\n<br \/>\r\nWatering Bowl is Denver's first dog friendly&nbsp;tavern.&nbsp;If you love your dog, and love taking them with you everywhere, this is the place for you.&nbsp;Not only do we have great food, great drinks and great pets, we strive to make every minute you spend&nbsp;with us&nbsp;spectacular.<\/span><\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p><span style=\"font-size: 18px;\">Creating a fun family friendly tavern that caters to your best friend.\u00a0Complete with 7,000 sq. ft. of \u00a0fully fenced private dog park.<br \/>\n<br \/>\nIn addition to the dog park we offer two\u00a0fully stocked bars, with a huge <\/span><span style=\"font-size: 18px;\">selection of domestic beers,\u00a0craft beers,\u00a0and two\u00a0patios that seat\u00a0man's best friend.<br \/>\n<br \/>\nWatering Bowl is Denver's first dog friendly\u00a0tavern.\u00a0If you love your dog, and love taking them with you everywhere, this is the place for you.\u00a0Not only do we have great food, great drinks and great pets, we strive to make every minute you spend\u00a0with us\u00a0spectacular.<\/span><\/p>\n"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "Watering Bowl"
+        }
+    ]
+}

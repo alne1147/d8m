@@ -33,15 +33,15 @@
             "value": 3126
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -136,7 +136,7 @@
         {
             "value": "<p><span style=\"color:#ffffff;\">This Row is set to use uneven widths.&nbsp; That's why the cards are different sizes.<\/span><\/p>\r\n\r\n<p><span style=\"color:#ffffff;\">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.<\/span><\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p><span style=\"color:#ffffff;\">This Row is set to use uneven widths.\u00a0 That's why the cards are different sizes.<\/span><\/p>\n<p><span style=\"color:#ffffff;\">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.<\/span><\/p>\n"
+            "processed": "<p><span style=\"color:#ffffff;\">This Row is set to use uneven widths.\u00a0 That's why the cards are different sizes.<\/span><\/p>\n\n<p><span style=\"color:#ffffff;\">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.<\/span><\/p>\n"
         }
     ]
 }

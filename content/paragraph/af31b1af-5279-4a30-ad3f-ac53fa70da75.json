@@ -33,15 +33,15 @@
             "value": 41
         }
     ],
-    "type": [
-        {
-            "target_id": "bp_simple"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_simple"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<h2>Slider Title<\/h2>\r\n\r\n<p>Pulvinar in rhoncus urna arcu, proin, scelerisque tincidunt? Placerat tortor? Aliquam porta aliquet magna odio.<\/p>\r\n\r\n<p>Vut lorem mauris, ridiculus ac cum, pulvinar lundium nunc pellentesque integer sed integer urna.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<h2>Slider Title<\/h2>\n<p>Pulvinar in rhoncus urna arcu, proin, scelerisque tincidunt? Placerat tortor? Aliquam porta aliquet magna odio.<\/p>\n<p>Vut lorem mauris, ridiculus ac cum, pulvinar lundium nunc pellentesque integer sed integer urna.<\/p>\n"
+            "processed": "<h2>Slider Title<\/h2>\n\n<p>Pulvinar in rhoncus urna arcu, proin, scelerisque tincidunt? Placerat tortor? Aliquam porta aliquet magna odio.<\/p>\n\n<p>Vut lorem mauris, ridiculus ac cum, pulvinar lundium nunc pellentesque integer sed integer urna.<\/p>\n"
         }
     ]
 }

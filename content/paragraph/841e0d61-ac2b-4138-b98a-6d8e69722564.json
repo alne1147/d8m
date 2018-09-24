@@ -20,9 +20,6 @@
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
             {
                 "href": ""
-            },
-            {
-                "href": ""
             }
         ]
     },
@@ -41,15 +38,15 @@
             "value": 3290
         }
     ],
-    "type": [
-        {
-            "target_id": "bp_columns"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns"
         }
     ],
     "_embedded": {
@@ -65,7 +62,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -83,28 +80,12 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_map"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "2f0da1ea-f76e-4e8b-8443-5efbd4a7af7b"
-                    }
-                ],
-                "target_revision_id": "3288"
-            },
             {
                 "_links": {
                     "self": {

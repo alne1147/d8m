@@ -33,15 +33,15 @@
             "value": 1981
         }
     ],
-    "type": [
-        {
-            "target_id": "bp_simple"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_simple"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -135,7 +135,7 @@
         {
             "value": "<section class=\"section--center mdl-grid\">\r\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.<br \/>\r\n<br \/>\r\not being fearful or judgemental about what you're hearing.<br \/>\r\n&nbsp;<\/div>\r\n<\/section>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<section class=\"section--center mdl-grid\"><div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.\n<p>ot being fearful or judgemental about what you're hearing.<br \/>\n\u00a0<\/p><\/div>\n<\/section>"
+            "processed": "<section class=\"section--center mdl-grid\">\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.<br \/>\n<br \/>\not being fearful or judgemental about what you're hearing.<br \/>\n\u00a0<\/div>\n<\/section>\n"
         }
     ]
 }
