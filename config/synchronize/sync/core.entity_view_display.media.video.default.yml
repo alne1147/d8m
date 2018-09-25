@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_description
     - field.field.media.video.field_media_oembed_video
     - media.type.video
   module:
@@ -12,6 +13,13 @@ targetEntityType: media
 bundle: video
 mode: default
 content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_media_oembed_video:
     type: oembed
     weight: 0

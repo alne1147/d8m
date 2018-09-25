@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.medium
     - image.style.thumbnail
   module:
     - entity_browser
@@ -887,7 +886,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: thumbnail
             image_link: ''
           group_column: ''
           group_columns: {  }
