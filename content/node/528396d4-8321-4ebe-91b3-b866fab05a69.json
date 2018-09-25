@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,11 +136,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/quam-diu-etiam-furor",
-            "pid": 15,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -148,22 +146,42 @@
         {
             "value": {
                 "title": "Quam diu etiam furor | CI Drupal 8",
-                "description": "Fictum, \u00a0deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.\nCurabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus."
+                "canonical_url": "http:\/\/default\/quam-diu-etiam-furor",
+                "description": "Fictum, \u00a0deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.\n\nCurabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/quam-diu-etiam-furor",
+            "pid": 173,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<p>Fictum, &nbsp;deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.<\/p>\r\n\r\n<p>Curabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<p>Fictum, \u00a0deserunt mollit anim laborum astutumque! Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Cras mattis iudicium purus sit amet fermentum. Ut enim ad minim veniam, quis nostrud exercitation. Non equidem invideo, miror magis posuere velit aliquet. Contra legem facit qui id facit quod lex prohibet.<\/p>\n\n<p>Curabitur blandit tempus ardua ridiculus sed magna. Unam incolunt Belgae, aliam Aquitani, tertiam. Excepteur sint obcaecat cupiditat non proident culpa. A communi observantia non est recedendum. Sed haec quis possit intrepidus aestimare tellus.<\/p>\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

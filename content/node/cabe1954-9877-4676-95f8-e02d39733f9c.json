@@ -82,7 +82,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -99,7 +99,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -235,11 +235,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/article-blog-post-1",
-            "pid": 23,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -247,21 +245,43 @@
         {
             "value": {
                 "title": "Article - Blog Post 1 | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/article-blog-post-1",
                 "description": "Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/article-blog-post-1",
+            "pid": 188,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<h2>This is a test Article.<\/h2>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>It uses the following Article Options:<\/p>\r\n\r\n<p>- Type: Blog Post<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Display<\/p>\r\n\r\n<p>- Show Author: No<\/p>\r\n\r\n<p>- Show Post Date: Yes<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Related Content<\/p>\r\n\r\n<p>- Show Recent Posts: No<\/p>\r\n\r\n<p>- Show Related Tags: No<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Tags Assigned: State, Local, City, County<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>###<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<h2>This is a test Article.<\/h2>\n\n<p>\u00a0<\/p>\n\n<p>It uses the following Article Options:<\/p>\n\n<p>- Type: Blog Post<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Display<\/p>\n\n<p>- Show Author: No<\/p>\n\n<p>- Show Post Date: Yes<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Related Content<\/p>\n\n<p>- Show Recent Posts: No<\/p>\n\n<p>- Show Related Tags: No<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Tags Assigned: State, Local, City, County<\/p>\n\n<p>\u00a0<\/p>\n\n<p>###<\/p>\n\n<p>\u00a0<\/p>\n\n<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\n\n<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.<\/p>\n\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh.<\/p>\n\n<p>\u00a0<\/p>\n",
             "summary": "Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false,
             "lang": "en"
         }
     ],
     "field_display_options": [
         {
             "value": "show-post-date"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ]
 }

@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,25 +136,42 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/integer-legentibus-erat",
-            "pid": 12,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
     "metatag": [
         {
             "value": {
-                "title": "Integer legentibus erat | CI Drupal 8"
+                "title": "Integer legentibus erat | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/integer-legentibus-erat"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/integer-legentibus-erat",
+            "pid": 181,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

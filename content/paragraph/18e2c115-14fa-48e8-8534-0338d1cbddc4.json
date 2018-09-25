@@ -1,0 +1,135 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 849
+        }
+    ],
+    "uuid": [
+        {
+            "value": "18e2c115-14fa-48e8-8534-0338d1cbddc4"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3366
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-24T17:30:11+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "850"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content_2"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<ul>\r\n\t<li>Limousine Service<\/li>\r\n\t<li>DJ Service<\/li>\r\n\t<li>TouchTunes Juke Boxes<\/li>\r\n\t<li>Covered Heated Canopy Tent<\/li>\r\n\t<li>Pet Photography<\/li>\r\n\t<li>Private Dog Park<\/li>\r\n<\/ul>\r\n\r\n<div id=\"wsb-canvas-template-container\" style=\"position: absolute; top: 24px; left: 8px;\">\r\n<div class=\"wsb-element-text\" data-type=\"element\" id=\"wsb-element-f293f7c6-c075-4f41-99d0-3feade82f1e4\">\r\n<div class=\"txt \">\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<ul>\n\t<li>Limousine Service<\/li>\n\t<li>DJ Service<\/li>\n\t<li>TouchTunes Juke Boxes<\/li>\n\t<li>Covered Heated Canopy Tent<\/li>\n\t<li>Pet Photography<\/li>\n\t<li>Private Dog Park<\/li>\n<\/ul>\n\n<div id=\"wsb-canvas-template-container\" style=\"position: absolute; top: 24px; left: 8px;\">\n<div class=\"wsb-element-text\" data-type=\"element\" id=\"wsb-element-f293f7c6-c075-4f41-99d0-3feade82f1e4\">\n<div class=\"txt \">\n<p>\u00a0<\/p>\n<\/div>\n<\/div>\n<\/div>\n"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "Services Available"
+        }
+    ]
+}

@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,11 +136,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/accordions-wysiwyg",
-            "pid": 14,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -148,22 +146,42 @@
         {
             "value": {
                 "title": "Accordions WYSIWYG | CI Drupal 8",
-                "description": "Accordion title 1\n\nMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
+                "canonical_url": "http:\/\/default\/accordions-wysiwyg",
+                "description": "Accordion title 1\n\t\n\tMe non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/accordions-wysiwyg",
+            "pid": 177,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Me non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Quo usque tandem abutere, Catilina, patientia nostra? Hi omnes lingua, institutis, legibus inter se differunt. Excepteur sint obcaecat cupiditat non proident culpa. Salutantibus vitae elit libero, a pharetra augue. Quisque ut dolor gravida, placerat libero vel, euismod. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Idque Caesaris facere voluntate liceret: sese habere. Plura mihi bona sunt, inclinet, amari petere vellent. Qui ipsorum lingua Celtae, nostra Galli appellantur. Ab illo tempore, ab est sed immemorabili. Sed haec quis possit intrepidus aestimare tellus.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<dl class=\"ckeditor-accordion\">\n\t<dt>Accordion title 1<\/dt>\n\t<dd>\n\t<p>Me non paenitet nullum festiviorem excogitasse ad hoc. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Quo usque tandem abutere, Catilina, patientia nostra? Hi omnes lingua, institutis, legibus inter se differunt. Excepteur sint obcaecat cupiditat non proident culpa. Salutantibus vitae elit libero, a pharetra augue. Quisque ut dolor gravida, placerat libero vel, euismod. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 3<\/dt>\n\t<dd>\n\t<p>Idque Caesaris facere voluntate liceret: sese habere. Plura mihi bona sunt, inclinet, amari petere vellent. Qui ipsorum lingua Celtae, nostra Galli appellantur. Ab illo tempore, ab est sed immemorabili. Sed haec quis possit intrepidus aestimare tellus.<\/p>\n\t<\/dd>\n<\/dl>\n\n<p>\u00a0<\/p>\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

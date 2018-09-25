@@ -5,7 +5,10 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
     },
     "tid": [
         {
@@ -28,6 +31,12 @@
             "target_id": "free_tagging"
         }
     ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "name": [
         {
             "value": "City",
@@ -39,6 +48,11 @@
             "value": 0
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
     "changed": [
         {
             "value": "2017-10-17T19:58:08+00:00",
@@ -55,7 +69,8 @@
     "metatag": [
         {
             "value": {
-                "title": "City | CI Drupal 8"
+                "title": "City | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100031"
             }
         }
     ]

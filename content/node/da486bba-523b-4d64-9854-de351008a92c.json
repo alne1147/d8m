@@ -23,11 +23,6 @@
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_block_options": [
-            {
-                "href": "http:\/\/default\/taxonomy\/term\/100012?_format=hal_json"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_related_content": [
             {
                 "href": "http:\/\/default\/taxonomy\/term\/100020?_format=hal_json",
@@ -80,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -97,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -119,23 +114,6 @@
                     }
                 ],
                 "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_block_options": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100012?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/page_options"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "46b43e61-d57a-4615-bf85-cec5d9fe764b"
-                    }
-                ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_related_content": [
@@ -206,11 +184,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/basic-page-options-1",
-            "pid": 24,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -218,22 +194,42 @@
         {
             "value": {
                 "title": "Basic Page - Options 1 | CI Drupal 8",
-                "description": "Page showing some of the new Basic Page Options.\nVivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.\nDonec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nVivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.\nDonec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\u00a0"
+                "canonical_url": "http:\/\/default\/basic-page-options-1",
+                "description": "Page showing some of the new Basic Page Options.\n\nVivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.\n\nDonec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nVivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.\n\nDonec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\u00a0"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/basic-page-options-1",
+            "pid": 184,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<p>Page showing some of the new Basic Page Options.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n\r\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\r\n\r\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<p>Page showing some of the new Basic Page Options.<\/p>\n\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\n\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.<\/p>\n\n<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>\n\n<p>\u00a0<\/p>\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

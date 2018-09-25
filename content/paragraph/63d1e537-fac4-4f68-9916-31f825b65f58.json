@@ -33,15 +33,15 @@
             "value": 2496
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<section class=\"section--center mdl-grid\">\r\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<br \/>\r\n<br \/>\r\n&nbsp;<\/div>\r\n<\/section>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<section class=\"section--center mdl-grid\"><div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.\n<p>\u00a0<\/p><\/div>\n<\/section>"
+            "processed": "<section class=\"section--center mdl-grid\">\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<br \/>\n<br \/>\n\u00a0<\/div>\n<\/section>\n"
         }
     ],
     "field_card_title": [

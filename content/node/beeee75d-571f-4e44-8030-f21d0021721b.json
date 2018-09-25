@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -136,11 +136,9 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/quisque-ut",
-            "pid": 4,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
@@ -148,22 +146,42 @@
         {
             "value": {
                 "title": "Quisque ut | CI Drupal 8",
-                "description": "Tityre, tu patulae recubans sub tegmine fagi \u00a0dolor. Curabitur est gravida et libero vitae dictum. Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Curabitur blandit tempus ardua ridiculus sed magna.\nMorbi fringilla convallis sapien, id pulvinar odio volutpat. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere."
+                "canonical_url": "http:\/\/default\/quisque-ut",
+                "description": "Tityre, tu patulae recubans sub tegmine fagi \u00a0dolor. Curabitur est gravida et libero vitae dictum. Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Curabitur blandit tempus ardua ridiculus sed magna.\n\nMorbi fringilla convallis sapien, id pulvinar odio volutpat. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/quisque-ut",
+            "pid": 174,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
         {
             "value": "<p>Tityre, tu patulae recubans sub tegmine fagi &nbsp;dolor. Curabitur est gravida et libero vitae dictum. Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Curabitur blandit tempus ardua ridiculus sed magna.<\/p>\r\n\r\n<p>Morbi fringilla convallis sapien, id pulvinar odio volutpat. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere.<\/p>\r\n\r\n<div style=\"width: 80%\">\r\n<h3>Ullamco laboris nisi ut aliquid ex ea commodi consequat.<\/h3>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:150px;float: right\">\r\n\t<caption style=\"border:solid 1px black\"><strong>Table title<\/strong><\/caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n\r\n<p>Quisque placerat facilisis egestas cillum dolore. Fictum, &nbsp;deserunt mollit anim laborum astutumque! Magna pars studiorum, prodita quaerimus. Curabitur blandit tempus ardua ridiculus sed magna. Contra legem facit qui id facit quod lex prohibet.<\/p>\r\n<\/div>\r\n",
             "format": "d8m_text_editor",
+            "processed": "<p>Tityre, tu patulae recubans sub tegmine fagi \u00a0dolor. Curabitur est gravida et libero vitae dictum. Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Curabitur blandit tempus ardua ridiculus sed magna.<\/p>\n\n<p>Morbi fringilla convallis sapien, id pulvinar odio volutpat. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere.<\/p>\n\n<div style=\"width: 80%\">\n<h3>Ullamco laboris nisi ut aliquid ex ea commodi consequat.<\/h3>\n\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:150px;float: right\">\n\t<caption style=\"border:solid 1px black\"><strong>Table title<\/strong><\/caption>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>\n\n<p>Quisque placerat facilisis egestas cillum dolore. Fictum, \u00a0deserunt mollit anim laborum astutumque! Magna pars studiorum, prodita quaerimus. Curabitur blandit tempus ardua ridiculus sed magna. Contra legem facit qui id facit quod lex prohibet.<\/p>\n<\/div>\n",
             "summary": "",
             "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [
         {
             "value": "Show Site Background Image",
             "lang": "en"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false
         }
     ]
 }

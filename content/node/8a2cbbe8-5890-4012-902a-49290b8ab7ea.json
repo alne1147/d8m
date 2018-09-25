@@ -92,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -109,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -270,24 +270,43 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/home",
-            "pid": 20,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
     "metatag": [
         {
             "value": {
-                "title": "Home | CI Drupal 8"
+                "title": "Home | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/home"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/home",
+            "pid": 190,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ],
     "field_background_color": [
         {
             "value": "FFFFFF"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ]
 }

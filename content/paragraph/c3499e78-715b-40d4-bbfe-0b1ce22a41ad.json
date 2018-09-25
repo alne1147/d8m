@@ -33,15 +33,15 @@
             "value": 1951
         }
     ],
-    "type": [
-        {
-            "target_id": "bp_simple"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_simple"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -135,7 +135,7 @@
         {
             "value": "<section class=\"section--center mdl-grid\">\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.<br \/>\n<br \/>\nThe magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.I would like to give you a backstage pass to my imagination.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.<br \/>\n<br \/>\nSometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because a horses butt muscle is thick.I wrestled a bear once. A 750lbs black bear.You ever roasted doughnuts?Listen to the silence. And when the silence is deafening, you're in the center of your own universe.<br \/>\n<br \/>\nGo with the feeling of the nature. Take it easy. Know why you're here. And remember to balance your internal energy with the environment.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.Did you feel that? Look at me - I'm not out of breath anymore!<br \/>\n<br \/>\nThe magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.Did you feel that? Look at me - I'm not out of breath anymore!The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.<br \/>\n&nbsp;<\/div>\n<\/section>\n",
             "format": "d8m_text_editor",
-            "processed": "<section class=\"section--center mdl-grid\"><div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.\n<p>The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.I would like to give you a backstage pass to my imagination.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.<\/p>\n<p>Sometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because a horses butt muscle is thick.I wrestled a bear once. A 750lbs black bear.You ever roasted doughnuts?Listen to the silence. And when the silence is deafening, you're in the center of your own universe.<\/p>\n<p>Go with the feeling of the nature. Take it easy. Know why you're here. And remember to balance your internal energy with the environment.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.Did you feel that? Look at me - I'm not out of breath anymore!<\/p>\n<p>The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.Did you feel that? Look at me - I'm not out of breath anymore!The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.<br \/>\n\u00a0<\/p><\/div>\n<\/section>"
+            "processed": "<section class=\"section--center mdl-grid\">\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. These kind of things only happen for the first time once.Have you urinated? Have you drained your bladder? Are you free? Because if you haven't it will only come out later. I'm giving you some information that your bodily fluids may penetrate your clothing fibre's without warning.<br \/>\n<br \/>\nThe magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.I would like to give you a backstage pass to my imagination.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.<br \/>\n<br \/>\nSometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because a horses butt muscle is thick.I wrestled a bear once. A 750lbs black bear.You ever roasted doughnuts?Listen to the silence. And when the silence is deafening, you're in the center of your own universe.<br \/>\n<br \/>\nGo with the feeling of the nature. Take it easy. Know why you're here. And remember to balance your internal energy with the environment.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.Did you feel that? Look at me - I'm not out of breath anymore!<br \/>\n<br \/>\nThe magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.Did you feel that? Look at me - I'm not out of breath anymore!The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.<br \/>\n\u00a0<\/div>\n<\/section>\n"
         }
     ]
 }

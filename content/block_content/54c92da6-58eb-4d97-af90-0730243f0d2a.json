@@ -63,6 +63,11 @@
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
     "default_langcode": [
         {
             "value": true,
@@ -79,7 +84,7 @@
         {
             "value": {
                 "title": "| CI Drupal 8",
-                "canonical_url": "http:\/\/default\/%3Cnone%3E"
+                "canonical_url": "http:\/\/default\/home"
             }
         }
     ],

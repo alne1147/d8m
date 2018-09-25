@@ -33,15 +33,15 @@
             "value": 2666
         }
     ],
-    "type": [
-        {
-            "target_id": "card_basic"
-        }
-    ],
     "langcode": [
         {
             "value": "en",
             "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
         }
     ],
     "_embedded": {
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "930f8446-e211-467e-bfed-9c5ac9207292"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<p>You can also put any rows or cards here.&nbsp; It will show under all of the pages on the site.<\/p>\r\n\r\n<p>This Footer Block can be edited by Structure Editor users.<\/p>\r\n\r\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Footer\"<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>You can also put any rows or cards here.\u00a0 It will show under all of the pages on the site.<\/p>\n<p>This Footer Block can be edited by Structure Editor users.<\/p>\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Footer\"<\/p>\n"
+            "processed": "<p>You can also put any rows or cards here.\u00a0 It will show under all of the pages on the site.<\/p>\n\n<p>This Footer Block can be edited by Structure Editor users.<\/p>\n\n<p>In the Menu, go to \"Structure &gt; Custom Block Library &gt; Block - Main Footer\"<\/p>\n"
         }
     ],
     "field_card_title": [

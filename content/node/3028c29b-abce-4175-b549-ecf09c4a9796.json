@@ -93,7 +93,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ]
             }
@@ -110,7 +110,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "7da3a501-cabf-47df-808d-8e8360570c19"
+                        "value": "3594d805-1aca-4823-a9d5-e33c215830c1"
                     }
                 ],
                 "lang": "en"
@@ -271,19 +271,32 @@
             "lang": "en"
         }
     ],
-    "path": [
+    "moderation_state": [
         {
-            "alias": "\/landing-page-options-1",
-            "pid": 17,
-            "langcode": "en",
+            "value": "published",
             "lang": "en"
         }
     ],
     "metatag": [
         {
             "value": {
-                "title": "Landing Page Options - 1 | CI Drupal 8"
+                "title": "Landing Page Options - 1 | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/landing-page-options-1"
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/landing-page-options-1",
+            "pid": 191,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "field_archive": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ],
     "field_background_color": [
@@ -294,6 +307,12 @@
     "field_landing_page_options": [
         {
             "value": "Show Custom Background Image"
+        }
+    ],
+    "field_promote": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ]
 }
