@@ -10,7 +10,7 @@ id: media.image.field_article_tags
 field_name: field_article_tags
 entity_type: media
 bundle: image
-label: 'Article Tags'
+label: 'Related Tags'
 description: ''
 required: false
 translatable: true

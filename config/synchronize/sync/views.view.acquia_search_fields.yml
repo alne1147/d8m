@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.media.field_article_tags
     - field.storage.media.field_description
     - field.storage.media.field_media_file_1
     - field.storage.node.body
@@ -1811,6 +1812,95 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
+        field_article_tags_1:
+          id: field_article_tags_1
+          table: search_api_datasource_acquia_search_index_entity_media
+          field: field_article_tags
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Related Tags'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: true
+          empty_zero: true
+          hide_alter_empty: false
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ','
+          field_api_classes: true
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_type:
+                display_method: label
+              footer_options:
+                display_method: label
+              free_tagging:
+                display_method: label
+              jumbotron_options:
+                display_method: label
+              mini_calendar:
+                display_method: label
+              page_options:
+                display_method: label
+              related_content:
+                display_method: label
+              venue:
+                display_method: label
+                view_mode: default
+          entity_type: media
+          plugin_id: search_api_field
         name:
           id: name
           table: search_api_index_acquia_search_index
@@ -1822,7 +1912,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"search-page__result search-result--content\">\r\n<h4>{{ name }} </h4>\r\n<p>{{ field_media_file_1 }}</p>\r\n<p>{{ thumbnail }}</p>\r\n<p>{{ alt }}</p>\r\n<p>{{ field_description }}</p>\r\n</div>\r\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-page__result search-result--content\">\r\n<h4>{{ name }} </h4>\r\n<p>{{ field_media_file_1 }}</p>\r\n<p>{{ thumbnail }}</p>\r\n<p>{{ alt }}</p>\r\n<p>{{ field_description }}</p>\r\n</div>\r\n<div class=\"search-page__result search-result--tags\"> {{ field_article_tags_1 }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1839,14 +1929,14 @@ display:
             nl2br: false
             max_length: 0
             word_boundary: false
-            ellipsis: true
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
             trim: false
             preserve_tags: ''
-            html: false
+            html: true
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -1892,6 +1982,7 @@ display:
         - url
         - user
       tags:
+        - 'config:field.storage.media.field_article_tags'
         - 'config:field.storage.media.field_description'
         - 'config:field.storage.media.field_media_file_1'
         - 'config:field.storage.node.body'
