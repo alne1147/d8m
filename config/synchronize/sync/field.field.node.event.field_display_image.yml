@@ -1,0 +1,28 @@
+uuid: 265e0b22-33d8-4aa9-a37d-b88f61d4bd76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_image
+    - media.type.image
+    - node.type.event
+id: node.event.field_display_image
+field_name: field_display_image
+entity_type: node
+bundle: event
+label: 'Display Image'
+description: 'Choose an image to display along side this Event''s summary in the site''s search results. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

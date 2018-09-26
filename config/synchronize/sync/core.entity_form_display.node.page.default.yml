@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
+    - field.field.node.page.field_display_image
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -19,6 +20,7 @@ dependencies:
     - allowed_formats
     - content_moderation
     - field_group
+    - media_library
     - metatag
     - paragraphs
     - path
@@ -106,20 +108,6 @@ third_party_settings:
         required_fields: true
       label: Relationships
       region: content
-    group_search:
-      children:
-        - field_promote
-      parent_name: group_search_tab
-      weight: 7
-      format_type: fieldset
-      format_settings:
-        label: Search
-        description: 'Feature this content at the top of site search results'
-        required_fields: true
-        id: ''
-        classes: ''
-      label: Search
-      region: content
     group_display:
       children:
         - field_landing_page_options
@@ -165,32 +153,20 @@ third_party_settings:
       region: content
     group_search_tab:
       children:
-        - group_search
-        - group_archive
+        - field_display_image
+        - field_promote
+        - field_archive
       parent_name: group_basic_page_options
       weight: 5
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Search Enhancements'
         formatter: closed
-        description: ''
-        required_fields: true
-      label: Search
-      region: content
-    group_archive:
-      children:
-        - field_archive
-      parent_name: group_search_tab
-      weight: 8
-      format_type: fieldset
-      format_settings:
-        label: Archive
-        description: 'This will exclude page from search results'
+        description: 'Search modifications for this Basic Page can be controlled below.'
         required_fields: true
         id: ''
         classes: ''
-      label: Archive
+      label: 'Search Enhancements'
       region: content
 id: node.page.default
 targetEntityType: node
@@ -211,12 +187,12 @@ content:
         hide_guidelines: '1'
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_archive:
-    weight: 7
+    weight: 30
     settings:
       display_label: true
     third_party_settings: {  }
@@ -230,6 +206,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_display_image:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: media_library_widget
     region: content
   field_landing_page_options:
     weight: 12
@@ -250,13 +232,13 @@ content:
     type: options_select
     region: content
   field_meta:
-    weight: 5
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_promote:
-    weight: 5
+    weight: 29
     settings:
       display_label: true
     third_party_settings: {  }
@@ -282,24 +264,24 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 9
+    weight: 7
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 11
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 10
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -307,7 +289,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -320,7 +302,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
@@ -329,12 +311,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 12
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

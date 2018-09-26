@@ -66,7 +66,7 @@ bundle: bp_accordion
 mode: default
 content:
   bp_accordion_expand:
-    weight: 2
+    weight: 1
     settings:
       display_label: true
     third_party_settings: {  }
@@ -84,14 +84,8 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  bp_background:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_show_indicators:
-    weight: 3
+    weight: 2
     settings:
       display_label: true
     third_party_settings: {  }
@@ -111,11 +105,12 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 4
+    weight: 3
     settings: {  }
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   created: true
   status: true
   uid: true

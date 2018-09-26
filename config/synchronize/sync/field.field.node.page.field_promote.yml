@@ -10,7 +10,7 @@ field_name: field_promote
 entity_type: node
 bundle: page
 label: Promote
-description: ''
+description: 'Pin this piece to the top of this site''s search results. '
 required: false
 translatable: false
 default_value:

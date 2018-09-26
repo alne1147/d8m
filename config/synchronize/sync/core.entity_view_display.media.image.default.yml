@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_article_tags
-    - field.field.media.image.field_description
     - field.field.media.image.field_media_image
     - media.type.image
   module:
@@ -14,21 +13,6 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
-  field_article_tags:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_description:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_media_image:
     label: hidden
     settings:
@@ -36,17 +20,12 @@ content:
       image_link: file
     third_party_settings: {  }
     type: image
-    weight: 1
-    region: content
-  name:
-    type: string
     weight: 0
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   created: true
+  field_article_tags: true
+  field_description: true
+  name: true
   thumbnail: true
   uid: true

@@ -10,6 +10,10 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_title
     - field.field.paragraph.bp_modal.bp_width
     - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_modal_button_bg_color
+    - field.field.paragraph.bp_modal.field_modal_title_bg_color
+    - field.field.paragraph.bp_modal.field_title_alignment
+    - field.field.paragraph.bp_modal.field_title_color
     - paragraphs.paragraphs_type.bp_modal
   module:
     - content_moderation
@@ -50,7 +54,8 @@ third_party_settings:
       region: content
     group_color:
       children:
-        - bp_background
+        - field_modal_title_bg_color
+        - field_modal_button_bg_color
       parent_name: group_card_modal_edit
       weight: 21
       format_type: tab
@@ -84,12 +89,6 @@ targetEntityType: paragraph
 bundle: bp_modal
 mode: default
 content:
-  bp_background:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   bp_modal_body:
     type: entity_reference_paragraphs
     weight: 3
@@ -124,6 +123,18 @@ content:
     third_party_settings: {  }
     type: fontawesome_icon_widget
     region: content
+  field_modal_button_bg_color:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_modal_title_bg_color:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
     weight: 1
@@ -131,11 +142,10 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  bp_background: true
   bp_modal_footer: true
   bp_width: true
   created: true
-  field_modal_button_bg_color: true
-  field_modal_title_bg_color: true
   field_title_alignment: true
   field_title_color: true
   status: true

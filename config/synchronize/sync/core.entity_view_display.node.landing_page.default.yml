@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_jumbotron
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_promote
     - field.field.node.landing_page.field_rows
+    - field.field.node.landing_page.field_summary
     - node.type.landing_page
   module:
     - entity_reference_revisions
@@ -25,12 +27,12 @@ bundle: landing_page
 mode: default
 content:
   content_moderation_control:
-    weight: -20
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_rows:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -39,7 +41,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -47,6 +49,7 @@ hidden:
   field_archive: true
   field_background_color: true
   field_background_image: true
+  field_display_image: true
   field_footer_options: true
   field_footer_selection: true
   field_jumbotron: true
@@ -55,3 +58,4 @@ hidden:
   field_meta: true
   field_meta_tags: true
   field_promote: true
+  field_summary: true

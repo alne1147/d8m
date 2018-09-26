@@ -58,6 +58,7 @@ hidden:
   field_article_tags: true
   field_date: true
   field_date_time_range: true
+  field_display_image: true
   field_event_organizer: true
   field_location: true
   field_menu_reference_left: true

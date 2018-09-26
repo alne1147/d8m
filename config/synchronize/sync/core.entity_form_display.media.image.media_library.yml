@@ -43,6 +43,7 @@ content:
 hidden:
   created: true
   field_article_tags: true
+  field_description: true
   path: true
   status: true
   uid: true

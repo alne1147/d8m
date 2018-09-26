@@ -29,6 +29,7 @@ content:
 hidden:
   created: true
   field_article_tags: true
+  field_description: true
   field_media_image: true
   name: true
   uid: true

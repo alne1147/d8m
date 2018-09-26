@@ -10,7 +10,7 @@ field_name: field_archive
 entity_type: node
 bundle: landing_page
 label: Archive
-description: ''
+description: 'Archive this Landing Page to remove it from the site''s search results.'
 required: false
 translatable: true
 default_value:

@@ -39,13 +39,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  bp_background:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   bp_show_indicators:
     weight: 4
     label: hidden
@@ -71,5 +64,6 @@ content:
     type: list_key
     region: content
 hidden:
+  bp_background: true
   created: true
   uid: true

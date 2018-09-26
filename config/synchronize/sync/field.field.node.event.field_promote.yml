@@ -10,7 +10,7 @@ field_name: field_promote
 entity_type: node
 bundle: event
 label: Promote
-description: ''
+description: 'Pin this Event to the top of this site''s search results. '
 required: false
 translatable: true
 default_value:
