@@ -17,6 +17,7 @@ dependencies:
     - field.storage.node.field_promote
     - field.storage.node.field_article_tags
     - field.storage.node.field_rows
+    - field.storage.node.field_summary
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
 id: acquia_search_index
@@ -104,6 +105,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_rows
+  field_summary:
+    label: Summary
+    datasource_id: 'entity:node'
+    property_path: field_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_summary
   filename:
     label: Filename
     datasource_id: 'entity:file'
@@ -241,6 +250,7 @@ processor_settings:
       - field_media_file_1
       - field_media_file_1_1
       - field_rows
+      - field_summary
       - filename
       - name
       - processed
