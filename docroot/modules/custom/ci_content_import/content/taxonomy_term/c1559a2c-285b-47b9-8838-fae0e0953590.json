@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100044?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100044
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c1559a2c-285b-47b9-8838-fae0e0953590"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "NCAA",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2018-03-26T21:37:31+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "NCAA | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100044"
+            }
+        }
+    ]
+}

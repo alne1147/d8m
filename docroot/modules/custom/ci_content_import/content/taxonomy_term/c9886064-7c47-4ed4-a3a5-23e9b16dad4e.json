@@ -1,0 +1,85 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/category\/press-release?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100013
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c9886064-7c47-4ed4-a3a5-23e9b16dad4e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "article_type"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Press Release",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-08-18T17:02:34+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Press Release | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/category\/press-release"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/category\/press-release",
+            "pid": 188,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}

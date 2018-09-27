@@ -1,0 +1,59 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/user\/5?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+        }
+    },
+    "uid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9cd275fa-6957-4f67-896b-ceeafb3f9f55"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "ci-twhatley"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-27T15:19:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-27T15:19:45+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "ci-twhatley | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/user\/5",
+                "description": "CI Drupal 8"
+            }
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 751
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e1053566-c7dc-4d42-98eb-9834d63dcca2"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3201
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bad5cbb9-bbae-41bf-91cc-4846b5c3be00"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bad5cbb9-bbae-41bf-91cc-4846b5c3be00"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-10-18T18:20:29+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "756"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_column_content"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>This is in a card<\/dt>\r\n\t<dd>\r\n\t<p>You can do interesting things here.<\/p>\r\n\r\n\t<p>News Articles can be dynamic content.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 2.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<dl class=\"ckeditor-accordion\">\n\t<dt>This is in a card<\/dt>\n\t<dd>\n\t<p>You can do interesting things here.<\/p>\n\n\t<p>News Articles can be dynamic content.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Accordion content 2.<\/p>\n\t<\/dd>\n<\/dl>\n\n<p>\u00a0<\/p>\n"
+        }
+    ]
+}

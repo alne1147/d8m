@@ -1,0 +1,136 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 421
+        }
+    ],
+    "uuid": [
+        {
+            "value": "86153937-7fbb-44c7-aa08-db47b4e0072e"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 2506
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bad5cbb9-bbae-41bf-91cc-4846b5c3be00"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bad5cbb9-bbae-41bf-91cc-4846b5c3be00"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-14T20:58:35+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "426"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_accordion_section_body"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>I love cheese, especially cheesy grin ricotta. Camembert de normandie mozzarella swiss cut the cheese when the cheese comes out everybody's happy feta parmesan who moved my cheese. Edam cheese strings mascarpone gouda mascarpone melted cheese ricotta airedale. Fromage cheese on toast taleggio red leicester chalk and cheese red leicester pepper jack roquefort. Pecorino jarlsberg squirty cheese.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p>I love cheese, especially cheesy grin ricotta. Camembert de normandie mozzarella swiss cut the cheese when the cheese comes out everybody's happy feta parmesan who moved my cheese. Edam cheese strings mascarpone gouda mascarpone melted cheese ricotta airedale. Fromage cheese on toast taleggio red leicester chalk and cheese red leicester pepper jack roquefort. Pecorino jarlsberg squirty cheese.<\/p>\n"
+        }
+    ]
+}
