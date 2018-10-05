@@ -50,6 +50,11 @@
       margin-bottom: 10px;
     }
   }
+  .views-col {
+    @media (max-width: $screen-xs-max) {
+      width: 100% !important;
+    }
+  }
 }
 .page-node-type-contact {
   .agency {
