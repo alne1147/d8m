@@ -1,0 +1,48 @@
+uuid: 89cef755-3b0d-4d11-a9ae-ef1fe579d34a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access document_media_browser entity browser pages'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use exclude node title'
+  - 'use text format restricted_html'
+  - 'view files'
+  - 'view media'
+  - 'view paragraph content bp_accordion'
+  - 'view paragraph content bp_accordion_section'
+  - 'view paragraph content bp_blank'
+  - 'view paragraph content bp_block'
+  - 'view paragraph content bp_carousel'
+  - 'view paragraph content bp_column_wrapper'
+  - 'view paragraph content bp_columns'
+  - 'view paragraph content bp_columns_three_uneven'
+  - 'view paragraph content bp_columns_two_uneven'
+  - 'view paragraph content bp_contact'
+  - 'view paragraph content bp_image'
+  - 'view paragraph content bp_modal'
+  - 'view paragraph content bp_simple'
+  - 'view paragraph content bp_tab_section'
+  - 'view paragraph content bp_tabs'
+  - 'view paragraph content bp_view'
+  - 'view paragraph content card_basic'
+  - 'view paragraph content card_icon'
+  - 'view paragraph content card_map'
+  - 'view paragraph content card_open_embed'
+  - 'view paragraph content full_column_hero'
+  - 'view paragraph content mini_calendar'
+  - 'view paragraph content modal_body'
+  - 'view paragraph content row_slide_container'
+  - 'view paragraph content row_three_column_hero'
+  - 'view paragraph content row_two_column_hero'
+  - 'view paragraph content section_body'
+  - 'view paragraph content webform'
