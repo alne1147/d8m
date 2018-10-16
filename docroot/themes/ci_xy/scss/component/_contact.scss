@@ -1,7 +1,6 @@
 .view-contact {
   .contact_card {
     position: relative;
-    height: 226.95px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     margin-right: 15px;
     margin-top: 5px;
@@ -10,6 +9,16 @@
     padding-bottom: 5px;
     background: whitesmoke;
     color: #000 !important;
+    @media (max-width: $screen-xs-max) {
+     padding-left: 20px;
+      .field--name-field-agency-logo {
+        align: left;
+      }
+      .field--name-field-agency {
+        align: right;
+      }
+    }
+  }
     .col-sm-3 {
       padding-left: 25px;
       padding-right: 10px;
@@ -26,6 +35,9 @@
     .agency {
       padding-top: 10px;
       padding-bottom: 10px;
+      .field--name-field-agency-logo {
+        align: right;
+      }
       .field--name-field-agency {
         text-transform: uppercase;
         font-size: 15px;
@@ -37,25 +49,24 @@
       }
     }
     .field--name-field-title {
-       text-transform: uppercase;
-       font-size: 14px;
-       font-weight: 600;
-       color: #666;
-     }
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      color: #666;
+    }
     .field--name-field-photo {
-      border: solid 4px #fff;
-      box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
-      margin-left: 15px;
-      margin-top: 15px;
-      margin-bottom: 10px;
+      .img-responsive {
+        border: solid 4px #fff;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
     }
   }
-  .views-col {
-    @media (max-width: $screen-xs-max) {
-      width: 100% !important;
-    }
-  }
-}
+
+
+
 .page-node-type-contact {
   .agency {
     padding-top: 10px;
