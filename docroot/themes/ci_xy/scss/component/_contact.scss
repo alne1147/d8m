@@ -1,7 +1,6 @@
 .view-contact {
   .contact_card {
     position: relative;
-    height: 226.95px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     margin-right: 15px;
     margin-top: 5px;
@@ -12,6 +11,12 @@
     color: #000 !important;
     @media (max-width: $screen-xs-max) {
      padding-left: 20px;
+      .field--name-field-agency-logo {
+        align: left;
+      }
+      .field--name-field-agency {
+        align: right;
+      }
     }
   }
     .col-sm-3 {
@@ -30,6 +35,9 @@
     .agency {
       padding-top: 10px;
       padding-bottom: 10px;
+      .field--name-field-agency-logo {
+        align: right;
+      }
       .field--name-field-agency {
         text-transform: uppercase;
         font-size: 15px;
