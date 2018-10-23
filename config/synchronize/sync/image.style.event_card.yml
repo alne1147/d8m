@@ -1,0 +1,15 @@
+uuid: facc402b-8bdc-4db0-835a-36908d65844f
+langcode: en
+status: true
+dependencies: {  }
+name: event_card
+label: 'Event Card'
+effects:
+  79f40fbd-9659-4208-b141-28feeb549fe4:
+    uuid: 79f40fbd-9659-4208-b141-28feeb549fe4
+    id: image_scale
+    weight: 1
+    data:
+      width: 625
+      height: 480
+      upscale: false

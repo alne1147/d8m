@@ -1,0 +1,30 @@
+uuid: 21c081d6-1341-4afc-a7a0-7241b0a92548
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.row_block
+    - block_content.type.simple_maps
+    - field.storage.node.field_jumbotron
+    - node.type.webform
+id: node.webform.field_jumbotron
+field_name: field_jumbotron
+entity_type: node
+bundle: webform
+label: 'Jumbotron Selection'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      row_block: row_block
+      simple_maps: simple_maps
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: row_block
+field_type: entity_reference
