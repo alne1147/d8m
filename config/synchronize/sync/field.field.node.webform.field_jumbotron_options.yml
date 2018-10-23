@@ -1,0 +1,33 @@
+uuid: 18efe738-c281-4f65-826b-c9e248e8c39e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jumbotron_options
+    - node.type.webform
+    - taxonomy.vocabulary.jumbotron_options
+  content:
+    - 'taxonomy_term:jumbotron_options:291fcb2f-367f-4c76-a74f-f996f6b7ea32'
+id: node.webform.field_jumbotron_options
+field_name: field_jumbotron_options
+entity_type: node
+bundle: webform
+label: Options
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 291fcb2f-367f-4c76-a74f-f996f6b7ea32
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      jumbotron_options: jumbotron_options
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
