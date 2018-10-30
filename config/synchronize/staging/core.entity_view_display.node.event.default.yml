@@ -1,0 +1,181 @@
+uuid: bacb31ff-2b26-4a7e-a264-7083994de659
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_archive
+    - field.field.node.event.field_article_tags
+    - field.field.node.event.field_breadcrumbs
+    - field.field.node.event.field_date
+    - field.field.node.event.field_date_time_range
+    - field.field.node.event.field_display_image
+    - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_location
+    - field.field.node.event.field_menu_reference_left
+    - field.field.node.event.field_menu_reference_right
+    - field.field.node.event.field_mini
+    - field.field.node.event.field_organizer_email
+    - field.field.node.event.field_page_options
+    - field.field.node.event.field_promote
+    - field.field.node.event.field_related_content
+    - field.field.node.event.field_rows
+    - field.field.node.event.field_show_date_and_time
+    - field.field.node.event.field_show_event_organizer
+    - field.field.node.event.field_show_event_tags
+    - field.field.node.event.field_show_organizer_email
+    - field.field.node.event.field_venue
+    - node.type.event
+  module:
+    - addtocalendar
+    - datetime_range
+    - entity_reference_revisions
+    - simple_gmap
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_add_to_cal:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: add_to_calendar
+    region: content
+  field_article_tags:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_date_time_range:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
+    third_party_settings:
+      addtocalendar:
+        addtocalendar_settings:
+          style: blue
+          display_text: 'Add to Calendar'
+          atc_title:
+            field: token
+            tokenized: Title
+          atc_description:
+            field: token
+            tokenized: Description
+          atc_location:
+            field: token
+            tokenized: Location
+          atc_organizer:
+            field: token
+            tokenized: 'Department of Local Affairs'
+          atc_organizer_email:
+            field: token
+            tokenized: no-reply@www.colorado.gov
+          atc_date_end:
+            field: token
+            tokenized: ''
+          atc_privacy: public
+          data_secure: auto
+          data_calendars:
+            iCalendar: 0
+            'Google Calendar': 0
+            Outlook: 0
+            'Outlook Online': 0
+            'Yahoo! Calendar': 0
+        addtocalendar_show: 0
+    type: daterange_default
+    region: content
+  field_event_organizer:
+    type: string
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_location:
+    type: simple_gmap
+    weight: 6
+    region: content
+    label: above
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '250'
+      static_scale: 1
+      include_link: true
+      link_text: use_address
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_text: false
+    third_party_settings: {  }
+  field_organizer_email:
+    type: basic_string
+    weight: 10
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_rows:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_venue:
+    weight: 7
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_archive: true
+  field_breadcrumbs: true
+  field_date: true
+  field_display_image: true
+  field_menu_reference_left: true
+  field_menu_reference_right: true
+  field_mini: true
+  field_page_options: true
+  field_promote: true
+  field_related_content: true
+  field_show_date_and_time: true
+  field_show_event_organizer: true
+  field_show_event_tags: true
+  field_show_organizer_email: true
