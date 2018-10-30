@@ -8,19 +8,13 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/fullsizeoutput_e1.jpeg",
+                "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/uid": [
             {
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_media_image": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/fullsizeoutput_e1.jpeg",
                 "lang": "en"
             }
         ]
@@ -53,7 +47,7 @@
     ],
     "revision_created": [
         {
-            "value": "2018-10-01T17:58:57+00:00",
+            "value": "2018-10-30T21:01:51+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -74,7 +68,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/fullsizeoutput_e1.jpeg"
+                        "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -82,7 +76,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3a78917b-2276-46e7-a0dc-336e8e29aac5"
+                        "value": "e4d56c61-1632-4a07-a095-7e804ded6af8"
                     }
                 ],
                 "lang": "en"
@@ -100,25 +94,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_media_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/fullsizeoutput_e1.jpeg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "3a78917b-2276-46e7-a0dc-336e8e29aac5"
+                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
                     }
                 ],
                 "lang": "en"

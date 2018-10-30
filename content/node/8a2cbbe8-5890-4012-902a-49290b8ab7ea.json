@@ -17,6 +17,12 @@
                 "lang": "en"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_breadcrumbs": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json",
+                "lang": "en"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_footer_options": [
             {
                 "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
@@ -59,7 +65,7 @@
     ],
     "vid": [
         {
-            "value": 1
+            "value": 237
         }
     ],
     "langcode": [
@@ -75,7 +81,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2017-06-22T15:29:14+00:00",
+            "value": "2018-10-30T21:47:20+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -92,7 +98,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
                     }
                 ]
             }
@@ -109,7 +115,25 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_breadcrumbs": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/breadcrumbs"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c6c71852-f1c1-473f-87bd-8fbeb2ddf6a5"
                     }
                 ],
                 "lang": "en"
@@ -182,7 +206,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3101"
+                "target_revision_id": "3399"
             },
             {
                 "_links": {
@@ -199,7 +223,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3116"
+                "target_revision_id": "3402"
             },
             {
                 "_links": {
@@ -216,7 +240,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3136"
+                "target_revision_id": "3405"
             }
         ]
     },
@@ -241,7 +265,7 @@
     ],
     "changed": [
         {
-            "value": "2018-01-09T17:19:43+00:00",
+            "value": "2018-10-30T21:47:20+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -287,7 +311,7 @@
     "path": [
         {
             "alias": "\/home",
-            "pid": 194,
+            "pid": 176,
             "langcode": "en",
             "lang": "en"
         }
