@@ -1,0 +1,18 @@
+uuid: 5d40eab4-b705-4d10-8399-4adda3596d75
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: breadcrumbs
+label: Breadcrumbs
+logic: or
+conditions:
+  14286506-c788-4f30-937a-fb6843751d60:
+    id: term
+    negate: 0
+    tid: '100052'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 14286506-c788-4f30-937a-fb6843751d60
+allow_other_conditions: true

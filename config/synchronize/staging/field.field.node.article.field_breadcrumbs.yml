@@ -1,0 +1,33 @@
+uuid: 8851199f-1ae5-4a05-bdd4-6b9c8a99d629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_breadcrumbs
+    - node.type.article
+    - taxonomy.vocabulary.breadcrumbs
+  content:
+    - 'taxonomy_term:breadcrumbs:7ffb215a-074f-41f6-98b0-ea94f9ad8c70'
+id: node.article.field_breadcrumbs
+field_name: field_breadcrumbs
+entity_type: node
+bundle: article
+label: Breadcrumbs
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 7ffb215a-074f-41f6-98b0-ea94f9ad8c70
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      breadcrumbs: breadcrumbs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

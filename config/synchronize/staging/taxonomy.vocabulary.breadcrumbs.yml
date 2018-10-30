@@ -1,0 +1,9 @@
+uuid: 84ee8dba-b83f-45e5-8954-c97c3fce14ed
+langcode: en
+status: true
+dependencies: {  }
+name: Breadcrumbs
+vid: breadcrumbs
+description: ''
+hierarchy: 0
+weight: 0

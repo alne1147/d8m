@@ -1,0 +1,33 @@
+uuid: 609ff575-b0ab-418f-b1b2-980f8de9510a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_breadcrumbs
+    - node.type.contact
+    - taxonomy.vocabulary.breadcrumbs
+  content:
+    - 'taxonomy_term:breadcrumbs:7ffb215a-074f-41f6-98b0-ea94f9ad8c70'
+id: node.contact.field_breadcrumbs
+field_name: field_breadcrumbs
+entity_type: node
+bundle: contact
+label: Breadcrumbs
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 7ffb215a-074f-41f6-98b0-ea94f9ad8c70
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      breadcrumbs: breadcrumbs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

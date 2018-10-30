@@ -1,0 +1,20 @@
+uuid: caf84c34-4bbd-4854-a6d9-06aad4f76486
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_breadcrumbs
+field_name: field_breadcrumbs
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

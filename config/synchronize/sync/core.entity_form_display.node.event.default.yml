@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
+    - field.field.node.event.field_breadcrumbs
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
@@ -116,6 +117,7 @@ third_party_settings:
         - group_related_content
         - group_mini_calendar
         - group_navigation_bar
+        - group_breadcrumbs
       parent_name: group_event_options
       weight: 33
       format_type: tab
@@ -258,6 +260,19 @@ third_party_settings:
         required_fields: true
       label: 'Navigation Bar'
       region: content
+    group_breadcrumbs:
+      children:
+        - field_breadcrumbs
+      parent_name: group_display
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
+      region: content
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -302,6 +317,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_breadcrumbs:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_date_time_range:
     weight: 1
