@@ -7,7 +7,7 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.breadcrumbs
   content:
-    - 'taxonomy_term:breadcrumbs:7ffb215a-074f-41f6-98b0-ea94f9ad8c70'
+    - 'taxonomy_term:breadcrumbs:c6c71852-f1c1-473f-87bd-8fbeb2ddf6a5'
 id: node.article.field_breadcrumbs
 field_name: field_breadcrumbs
 entity_type: node
@@ -18,7 +18,7 @@ required: true
 translatable: true
 default_value:
   -
-    target_uuid: 7ffb215a-074f-41f6-98b0-ea94f9ad8c70
+    target_uuid: c6c71852-f1c1-473f-87bd-8fbeb2ddf6a5
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

@@ -95,6 +95,7 @@ content:
 hidden:
   field_add_to_cal: true
   field_archive: true
+  field_breadcrumbs: true
   field_date_time_range: true
   field_display_image: true
   field_event_organizer: true

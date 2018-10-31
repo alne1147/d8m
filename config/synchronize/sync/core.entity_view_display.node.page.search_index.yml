@@ -41,6 +41,7 @@ content:
 hidden:
   field_archive: true
   field_article_tags: true
+  field_breadcrumbs: true
   field_display_image: true
   field_landing_page_options: true
   field_menu_reference_left: true
