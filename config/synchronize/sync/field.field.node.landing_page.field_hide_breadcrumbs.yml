@@ -1,0 +1,23 @@
+uuid: 348bbc93-9764-4204-9ac2-d797c9f779ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_breadcrumbs
+    - node.type.landing_page
+id: node.landing_page.field_hide_breadcrumbs
+field_name: field_hide_breadcrumbs
+entity_type: node
+bundle: landing_page
+label: 'Hide Breadcrumbs'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

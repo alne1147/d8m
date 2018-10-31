@@ -2,8 +2,6 @@ uuid: 998ab716-4861-4fe2-b63a-7def80ed69ac
 langcode: en
 status: true
 dependencies:
-  config:
-    - block_visibility_groups.block_visibility_group.breadcrumbs
   module:
     - block_visibility_groups
     - menu_condition
@@ -13,8 +11,8 @@ dependencies:
     - ci_xy
 id: ci_xy_breadcrumbs
 theme: ci_xy
-region: header
-weight: -6
+region: block_reserve
+weight: -12
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -26,7 +24,7 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: breadcrumbs
+    block_visibility_group: ''
     context_mapping: {  }
   menu_position:
     id: menu_position

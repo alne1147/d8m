@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.webform.body
     - field.field.node.webform.field_article_tags
+    - field.field.node.webform.field_hide_breadcrumbs
     - field.field.node.webform.field_hide_navigation_bar
     - field.field.node.webform.field_jumbotron
     - field.field.node.webform.field_jumbotron_options
@@ -188,6 +189,7 @@ third_party_settings:
     group_navigation_bar:
       children:
         - field_hide_navigation_bar
+        - field_hide_breadcrumbs
       parent_name: group_display
       weight: 14
       format_type: fieldset
@@ -232,6 +234,10 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_hide_breadcrumbs:
+    weight: 31
+    settings:
+      display_label: true
   field_hide_navigation_bar:
     weight: 10
     settings:

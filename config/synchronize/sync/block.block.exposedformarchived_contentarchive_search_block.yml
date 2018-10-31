@@ -14,7 +14,7 @@ dependencies:
 id: exposedformarchived_contentarchive_search_block
 theme: ci_xy
 region: block_reserve
-weight: 0
+weight: -14
 provider: null
 plugin: 'views_exposed_filter_block:archived_content-archive_search_block'
 settings:

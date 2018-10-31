@@ -7,11 +7,11 @@ dependencies:
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
-    - field.field.node.event.field_breadcrumbs
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
     - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_hide_breadcrumbs
     - field.field.node.event.field_hide_navigation_bar
     - field.field.node.event.field_location
     - field.field.node.event.field_menu_reference_left
@@ -167,10 +167,10 @@ content:
     third_party_settings: {  }
 hidden:
   field_archive: true
-  field_breadcrumbs: true
   field_date: true
   field_display_image: true
   field_hide_navigation_bar: true
+  field_hide_breadcrumbs: true
   field_menu_reference_left: true
   field_menu_reference_right: true
   field_mini: true
