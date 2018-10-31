@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_breadcrumbs
     - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
@@ -49,6 +50,7 @@ hidden:
   field_archive: true
   field_background_color: true
   field_background_image: true
+  field_breadcrumbs: true
   field_display_image: true
   field_footer_options: true
   field_footer_selection: true

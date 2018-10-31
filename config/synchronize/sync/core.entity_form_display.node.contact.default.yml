@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
+    - field.field.node.contact.field_breadcrumbs
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_image
@@ -79,6 +80,12 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_breadcrumbs:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_city:
     weight: 7
     settings:
@@ -106,6 +113,7 @@ content:
         view_mode: default
       field_widget_edit: false
       open: false
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

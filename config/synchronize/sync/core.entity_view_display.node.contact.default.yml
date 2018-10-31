@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
+    - field.field.node.contact.field_breadcrumbs
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_image
@@ -37,7 +38,7 @@ content:
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -83,7 +84,7 @@ content:
     type: string
     region: content
   field_email:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -118,7 +119,7 @@ content:
       include_text: false
     third_party_settings: {  }
   field_phone_number:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       title: ''
@@ -126,7 +127,7 @@ content:
     type: telephone_link
     region: content
   field_photo:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: contact_photo
@@ -135,7 +136,7 @@ content:
     type: image
     region: content
   field_title:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -151,8 +152,9 @@ content:
     type: string
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_breadcrumbs: true

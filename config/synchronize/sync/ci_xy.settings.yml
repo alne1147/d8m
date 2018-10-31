@@ -3,7 +3,7 @@ _core:
   default_config_hash: TxwSU0jOgBK6531PJDhvWiqDs4t5WpV1YylSMi-vpGc
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path:
   url: themes/ci_xy/favicon.ico
   use_default: 1
 schemas:
@@ -33,5 +33,7 @@ region_wells:
   sidebar_second: ''
   footer: ''
   global_footer: ''
+  block_reserve: ''
 table_responsive: '-1'
 table: ''
+breadcrumb_home: 1

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
+    - field.field.node.event.field_breadcrumbs
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
@@ -115,6 +116,7 @@ third_party_settings:
         - group_menu
         - group_related_content
         - group_mini_calendar
+        - group_breadcrumbs
       parent_name: group_event_options
       weight: 33
       format_type: tab
@@ -128,9 +130,10 @@ third_party_settings:
       region: content
     group_menu:
       children:
-        - field_page_options
+        - field_menu_reference_left
+        - field_menu_reference_right
       parent_name: group_display
-      weight: 4
+      weight: 3
       format_type: fieldset
       format_settings:
         label: Menu
@@ -144,7 +147,7 @@ third_party_settings:
       children:
         - field_related_content
       parent_name: group_display
-      weight: 5
+      weight: 4
       format_type: fieldset
       format_settings:
         label: 'Related Content'
@@ -172,7 +175,7 @@ third_party_settings:
       children:
         - field_mini
       parent_name: group_display
-      weight: 6
+      weight: 5
       format_type: fieldset
       format_settings:
         id: ''
@@ -243,6 +246,19 @@ third_party_settings:
         required_fields: true
       label: 'Add to Calendar'
       region: content
+    group_breadcrumbs:
+      children:
+        - field_breadcrumbs
+      parent_name: group_display
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
+      region: content
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -287,6 +303,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_breadcrumbs:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_date_time_range:
     weight: 1
@@ -333,6 +355,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_menu_reference_left:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_menu_reference_right:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_mini:
     weight: 21
     settings: {  }
@@ -346,12 +380,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
-    region: content
-  field_page_options:
-    weight: 33
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_promote:
     weight: 56
@@ -484,7 +512,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_date: true
-  field_menu_reference_left: true
-  field_menu_reference_right: true
+  field_page_options: true
   promote: true
   sticky: true
