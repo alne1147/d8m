@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_archive
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_breadcrumbs
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
     - field.field.node.article.field_hide_navigation_bar
@@ -99,6 +100,7 @@ third_party_settings:
       children:
         - group_byline
         - group_rekated_content
+        - group_breadcrumbs
         - group_na
       parent_name: group_article_options
       weight: 3
@@ -182,6 +184,19 @@ third_party_settings:
         required_fields: true
       label: 'Navigation Bar'
       region: content
+    group_breadcrumbs:
+      children:
+        - field_breadcrumbs
+      parent_name: group_display
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
+      region: content
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -226,6 +241,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_breadcrumbs:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_display_image:
     type: media_library_widget

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_archive
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_breadcrumbs
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
     - field.field.node.article.field_hide_navigation_bar
@@ -63,6 +64,7 @@ hidden:
   field_archive: true
   field_article_tags: true
   field_article_type: true
+  field_breadcrumbs: true
   field_display_image: true
   field_hide_navigation_bar: true
   field_meta_tags: true

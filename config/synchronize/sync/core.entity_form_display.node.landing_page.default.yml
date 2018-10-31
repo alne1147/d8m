@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
+    - field.field.node.landing_page.field_breadcrumbs
     - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
@@ -86,7 +87,7 @@ third_party_settings:
         - field_promote
         - field_archive
       parent_name: group_landing_page
-      weight: 11
+      weight: 12
       format_type: tab
       format_settings:
         label: 'Search Enhancements'
@@ -103,6 +104,7 @@ third_party_settings:
         - group_background
         - group_footer
         - group_navigation_bar
+        - group_breadcrumbs
       parent_name: group_landing_page
       weight: 10
       format_type: tab
@@ -169,6 +171,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Navigation Bar'
+      region: content
+    group_breadcrumbs:
+      children:
+        - field_breadcrumbs
+      parent_name: group_display
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
       region: content
 id: node.landing_page.default
 targetEntityType: node
@@ -246,6 +261,12 @@ content:
           entity_type: node
           bundle: landing_page
     type: image_image
+    region: content
+  field_breadcrumbs:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_display_image:
     weight: 28
