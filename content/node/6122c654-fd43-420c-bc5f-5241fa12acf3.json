@@ -16,12 +16,6 @@
                 "href": "http:\/\/default\/user\/1?_format=hal_json",
                 "lang": "en"
             }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_breadcrumbs": [
-            {
-                "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json",
-                "lang": "en"
-            }
         ]
     },
     "nid": [
@@ -36,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 241
+            "value": 263
         }
     ],
     "langcode": [
@@ -52,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-10-30T21:50:51+00:00",
+            "value": "2018-10-31T21:27:07+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -69,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -86,25 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/page\/field_breadcrumbs": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/breadcrumbs"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "c6c71852-f1c1-473f-87bd-8fbeb2ddf6a5"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ],
                 "lang": "en"
@@ -132,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-10-30T21:50:51+00:00",
+            "value": "2018-10-31T21:27:07+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -178,7 +154,7 @@
     "path": [
         {
             "alias": "\/best-fourteeners-beginners",
-            "pid": 172,
+            "pid": 171,
             "langcode": "en",
             "lang": "en"
         }
@@ -195,6 +171,12 @@
     "field_archive": [
         {
             "value": false
+        }
+    ],
+    "field_hide_breadcrumbs": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ],
     "field_landing_page_options": [

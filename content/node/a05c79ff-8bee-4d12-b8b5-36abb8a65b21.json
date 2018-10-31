@@ -22,12 +22,6 @@
                 "href": "http:\/\/default\/category\/blog-post?_format=hal_json"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_breadcrumbs": [
-            {
-                "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json",
-                "lang": "en"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_rows": [
             {
                 "href": "",
@@ -51,7 +45,7 @@
     ],
     "vid": [
         {
-            "value": 239
+            "value": 266
         }
     ],
     "langcode": [
@@ -67,7 +61,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-10-30T21:48:11+00:00",
+            "value": "2018-10-31T21:31:29+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -84,7 +78,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -101,7 +95,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "e3f12ec5-c9c4-4c8b-8237-a7f3da524841"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ],
                 "lang": "en"
@@ -124,24 +118,6 @@
                 ]
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_breadcrumbs": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100051?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/breadcrumbs"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "c6c71852-f1c1-473f-87bd-8fbeb2ddf6a5"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_rows": [
             {
                 "_links": {
@@ -158,7 +134,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3386"
+                "target_revision_id": "3495"
             },
             {
                 "_links": {
@@ -175,7 +151,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3397"
+                "target_revision_id": "3506"
             }
         ]
     },
@@ -200,7 +176,7 @@
     ],
     "changed": [
         {
-            "value": "2018-10-30T21:48:11+00:00",
+            "value": "2018-10-31T21:31:29+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -247,7 +223,7 @@
     "path": [
         {
             "alias": "\/denver-ranks-top-10-pet-friendly-cities",
-            "pid": 174,
+            "pid": 173,
             "langcode": "en",
             "lang": "en"
         }
@@ -265,6 +241,11 @@
         {
             "value": false,
             "lang": "en"
+        }
+    ],
+    "field_hide_breadcrumbs": [
+        {
+            "value": false
         }
     ],
     "field_promote": [
