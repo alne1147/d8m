@@ -8,11 +8,11 @@ id: breadcrumbs
 label: Breadcrumbs
 logic: or
 conditions:
-  14286506-c788-4f30-937a-fb6843751d60:
+  42d8a8b6-5be6-41ab-b318-7df9f95c27ab:
     id: term
     negate: 0
-    tid: '100052'
+    tid: '100051'
     context_mapping:
       node: '@node.node_route_context:node'
-    uuid: 14286506-c788-4f30-937a-fb6843751d60
+    uuid: 42d8a8b6-5be6-41ab-b318-7df9f95c27ab
 allow_other_conditions: true

@@ -3,7 +3,7 @@ _core:
   default_config_hash: TxwSU0jOgBK6531PJDhvWiqDs4t5WpV1YylSMi-vpGc
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path:
+  path: null
   url: themes/ci_xy/favicon.ico
   use_default: 1
 schemas:

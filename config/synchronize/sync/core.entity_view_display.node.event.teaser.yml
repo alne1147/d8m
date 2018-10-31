@@ -110,6 +110,7 @@ hidden:
   body: true
   field_add_to_cal: true
   field_archive: true
+  field_breadcrumbs: true
   field_date: true
   field_event_organizer: true
   field_location: true
