@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
     - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_hide_navigation_bar
     - field.field.node.event.field_location
     - field.field.node.event.field_menu_reference_left
     - field.field.node.event.field_menu_reference_right
@@ -115,6 +116,7 @@ third_party_settings:
         - group_menu
         - group_related_content
         - group_mini_calendar
+        - group_navigation_bar
       parent_name: group_event_options
       weight: 33
       format_type: tab
@@ -131,7 +133,7 @@ third_party_settings:
         - field_menu_reference_left
         - field_menu_reference_right
       parent_name: group_display
-      weight: 4
+      weight: 3
       format_type: fieldset
       format_settings:
         label: Menu
@@ -145,7 +147,7 @@ third_party_settings:
       children:
         - field_related_content
       parent_name: group_display
-      weight: 5
+      weight: 4
       format_type: fieldset
       format_settings:
         label: 'Related Content'
@@ -173,7 +175,7 @@ third_party_settings:
       children:
         - field_mini
       parent_name: group_display
-      weight: 6
+      weight: 5
       format_type: fieldset
       format_settings:
         id: ''
@@ -243,6 +245,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Add to Calendar'
+      region: content
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
       region: content
 id: node.event.default
 targetEntityType: node
@@ -325,6 +340,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_hide_navigation_bar:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_location:
     weight: 4
