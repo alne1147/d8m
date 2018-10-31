@@ -7,11 +7,11 @@ dependencies:
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
-    - field.field.node.event.field_breadcrumbs
     - field.field.node.event.field_date
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
     - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_hide_breadcrumbs
     - field.field.node.event.field_location
     - field.field.node.event.field_menu_reference_left
     - field.field.node.event.field_menu_reference_right
@@ -248,7 +248,7 @@ third_party_settings:
       region: content
     group_breadcrumbs:
       children:
-        - field_breadcrumbs
+        - field_hide_breadcrumbs
       parent_name: group_display
       weight: 6
       format_type: fieldset
@@ -278,7 +278,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -303,12 +303,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_breadcrumbs:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_date_time_range:
     weight: 1
@@ -346,6 +340,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_hide_breadcrumbs:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_location:
     weight: 4
@@ -454,24 +455,24 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 4
+    weight: 5
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -479,7 +480,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -501,12 +502,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }

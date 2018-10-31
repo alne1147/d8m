@@ -6,8 +6,8 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
-    - field.field.node.page.field_breadcrumbs
     - field.field.node.page.field_display_image
+    - field.field.node.page.field_hide_breadcrumbs
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -172,7 +172,7 @@ third_party_settings:
       region: content
     group_breadcrumbs:
       children:
-        - field_breadcrumbs
+        - field_hide_breadcrumbs
       parent_name: group_page_options
       weight: 13
       format_type: fieldset
@@ -222,17 +222,18 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_breadcrumbs:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_display_image:
     weight: 28
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_hide_breadcrumbs:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_landing_page_options:
     weight: 12

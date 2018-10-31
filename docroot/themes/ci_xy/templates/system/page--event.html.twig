@@ -100,11 +100,15 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content" >
     <div class="row">
       {# Breadcrumbs #}
-      {% if breadcrumb %}
+      {% if node.field_hide_breadcrumbs.value %}
+      {% else %}
+        {{ render_block('ci_xy_breadcrumbs') }}
+      {% endif %}
+      {# {% if breadcrumb %}
         {% block breadcrumb %}
           {{ breadcrumb }}
         {% endblock %}
-      {% endif %}
+      {% endif %}#}
       {# Header #}
       {% if page.header %}
           {% block header %}

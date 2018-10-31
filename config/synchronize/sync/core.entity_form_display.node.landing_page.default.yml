@@ -6,10 +6,10 @@ dependencies:
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
-    - field.field.node.landing_page.field_breadcrumbs
     - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
+    - field.field.node.landing_page.field_hide_breadcrumbs
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
@@ -159,7 +159,7 @@ third_party_settings:
       region: content
     group_breadcrumbs:
       children:
-        - field_breadcrumbs
+        - field_hide_breadcrumbs
       parent_name: group_display
       weight: 10
       format_type: fieldset
@@ -247,12 +247,6 @@ content:
           bundle: landing_page
     type: image_image
     region: content
-  field_breadcrumbs:
-    weight: 31
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_display_image:
     weight: 28
     settings: {  }
@@ -292,6 +286,13 @@ content:
           entity_type: node
           bundle: landing_page
     type: options_select
+    region: content
+  field_hide_breadcrumbs:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_jumbotron:
     weight: 9
