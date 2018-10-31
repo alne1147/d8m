@@ -1,0 +1,23 @@
+uuid: f6343cf6-3ad3-4cab-b821-6463ee2f5f15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_navigation_bar
+    - node.type.webform
+id: node.webform.field_hide_navigation_bar
+field_name: field_hide_navigation_bar
+entity_type: node
+bundle: webform
+label: 'Hide Navigation Bar'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -39,10 +39,10 @@
         align: right;
       }
       .field--name-field-agency {
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 500;
-        padding-top: 8px;
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: 500;
+          padding-top: 8px;
       }
       .col-sm-1 {
         padding-left: 5px;
@@ -73,15 +73,17 @@
     padding-bottom: 10px;
     .col-sm-1 {
       padding-right: 5px;
+      padding-top: 25px;
     }
     .col-sm-11 {
       padding-left: 5px;
     }
     .field--name-field-agency {
       text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 600;
-      padding-top:15px;
+      font-size: 18px;
+      font-weight: 500;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
   .field--name-field-photo {
