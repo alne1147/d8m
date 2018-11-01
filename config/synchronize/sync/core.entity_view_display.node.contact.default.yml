@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
-    - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_hide_breadcrumbs
     - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_image

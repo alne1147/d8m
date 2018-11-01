@@ -54,7 +54,6 @@ third_party_settings:
         - group_display
         - group_navigation_bar
         - group_breadcrumbs
-        - group_navigation_bar
       parent_name: group_basic_page_options
       weight: 3
       format_type: tab
@@ -243,13 +242,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
-    region: content
-  field_hide_navigation_bar:
-    weight: 12
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_hide_breadcrumbs:
     type: boolean_checkbox

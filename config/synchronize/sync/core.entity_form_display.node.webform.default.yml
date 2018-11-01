@@ -202,7 +202,6 @@ third_party_settings:
       region: content
     group_breadcrumbs:
       children:
-        - field_hide_navigation_bar
         - field_hide_breadcrumbs
       parent_name: group_display
       weight: 15
@@ -212,7 +211,7 @@ third_party_settings:
         classes: ''
         description: ''
         required_fields: true
-      label: 'Navigation Bar'
+      label: Breadcrumbs
       region: content
 _core:
   default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
@@ -252,10 +251,6 @@ content:
     type: boolean_checkbox
     weight: 10
     region: content
-    settings:
-      display_label: true
-  field_hide_navigation_bar:
-    weight: 10
     settings:
       display_label: true
     third_party_settings: {  }

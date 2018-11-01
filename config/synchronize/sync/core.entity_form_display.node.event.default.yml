@@ -355,13 +355,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_hide_navigation_bar:
-    weight: 11
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_hide_breadcrumbs:
     type: boolean_checkbox
     weight: 8

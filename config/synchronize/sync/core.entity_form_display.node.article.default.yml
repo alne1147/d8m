@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
-    - field.field.node.article.field_hide_navigation_bar
     - field.field.node.article.field_hide_breadcrumbs
     - field.field.node.article.field_hide_navigation_bar
     - field.field.node.article.field_meta_tags
@@ -103,7 +102,6 @@ third_party_settings:
         - group_rekated_content
         - group_na
         - group_breadcrumbs
-        - group_na
       parent_name: group_article_options
       weight: 3
       format_type: tab
@@ -263,13 +261,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  field_hide_navigation_bar:
-    weight: 13
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_hide_navigation_bar:
     weight: 13
     settings:
