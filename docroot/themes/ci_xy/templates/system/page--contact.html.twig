@@ -67,7 +67,13 @@
     {{ page.jumbotron }}
   </div>
 {% endif %}
- {% include directory ~ '/templates/includes/navbar.html.twig' %}
+
+ {% if node.field_hide_navigation_bar.value %}
+   <div class="no-nav-bar"> </div>
+ {% else %}
+   {% include directory ~ '/templates/includes/navbar.html.twig' %}
+ {% endif %}
+
 {# Main #}
 {% block main %}
      {% if bg_image_url|length %}

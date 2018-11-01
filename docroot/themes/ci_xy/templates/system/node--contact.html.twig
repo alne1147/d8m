@@ -127,10 +127,20 @@
         {{ content.field_map }}
       </div>
       <div class="col-sm-8">
-        <div class="row agency">
-          <div class="col-sm-1">{{ content.field_agency_logo }}</div>
-          <div class="col-sm-11">{{ content.field_agency }}</div>
-        </div>
+        {% if content.field_agency_logo.0 %}
+          <div class="row agency">
+            <div class="col-sm-1">{{ content.field_agency_logo }}</div>
+            <div class="col-sm-11">
+              <h3>{{ content.field_agency }}</h3>
+            </div>
+          </div>
+        {% else %}
+          <div class="row agency">
+            <div class="col-sm-12">
+              <h3>{{ content.field_agency }}</h3>
+            </div>
+          </div>
+        {% endif %}
           {{ content.body }}
       </div>
     </div>
