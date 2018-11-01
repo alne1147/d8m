@@ -68,8 +68,8 @@ content:
     third_party_settings: {  }
 hidden:
   field_archive: true
-  field_breadcrumbs: true
   field_display_image: true
+  field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
   field_meta_tags: true
   field_page_options: true

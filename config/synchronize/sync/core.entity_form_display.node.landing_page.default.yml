@@ -87,7 +87,7 @@ third_party_settings:
         - field_promote
         - field_archive
       parent_name: group_landing_page
-      weight: 12
+      weight: 11
       format_type: tab
       format_settings:
         label: 'Search Enhancements'
@@ -176,7 +176,7 @@ third_party_settings:
       children:
         - field_hide_breadcrumbs
       parent_name: group_display
-      weight: 10
+      weight: 11
       format_type: fieldset
       format_settings:
         id: ''
@@ -310,7 +310,14 @@ content:
     type: boolean_checkbox
     region: content
   field_hide_breadcrumbs:
-    weight: 31
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }

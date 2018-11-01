@@ -52,6 +52,7 @@ third_party_settings:
         - group_menus
         - group_display_relationships
         - group_display
+        - group_navigation_bar
         - group_breadcrumbs
         - group_navigation_bar
       parent_name: group_basic_page_options
@@ -189,7 +190,7 @@ third_party_settings:
       children:
         - field_hide_breadcrumbs
       parent_name: group_page_options
-      weight: 13
+      weight: 14
       format_type: fieldset
       format_settings:
         id: ''
@@ -251,7 +252,14 @@ content:
     type: boolean_checkbox
     region: content
   field_hide_breadcrumbs:
-    weight: 31
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
