@@ -1,0 +1,29 @@
+uuid: e3efa6ea-4512-43d5-a9d1-7df20c017bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_article_tags
+    - media.type.video
+    - taxonomy.vocabulary.free_tagging
+id: media.video.field_article_tags
+field_name: field_article_tags
+entity_type: media
+bundle: video
+label: 'Related Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      free_tagging: free_tagging
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

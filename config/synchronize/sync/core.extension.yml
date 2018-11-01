@@ -71,6 +71,7 @@ module:
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
+  entity_usage: 0
   entity_reference_revisions: 0
   exclude_node_title: 0
   facets: 0

@@ -42,6 +42,8 @@ content:
     region: content
 hidden:
   field_article_tags: true
+  field_jumbotron: true
+  field_jumbotron_options: true
   field_menu_reference_left: true
   field_menu_reference_right: true
   field_promote: true

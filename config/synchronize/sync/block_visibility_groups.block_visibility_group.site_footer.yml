@@ -20,8 +20,10 @@ conditions:
     id: 'entity_bundle:node'
     bundles:
       article: article
+      contact: contact
       event: event
       page: page
+      webform: webform
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
