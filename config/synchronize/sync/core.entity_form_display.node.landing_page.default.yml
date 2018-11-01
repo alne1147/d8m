@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
+    - field.field.node.landing_page.field_hide_navigation_bar
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
@@ -86,7 +87,7 @@ third_party_settings:
         - field_promote
         - field_archive
       parent_name: group_landing_page
-      weight: 12
+      weight: 11
       format_type: tab
       format_settings:
         label: 'Search Enhancements'
@@ -102,6 +103,7 @@ third_party_settings:
         - group_jumbotron
         - group_background
         - group_footer
+        - group_navigation_bar
         - group_breadcrumbs
       parent_name: group_landing_page
       weight: 10
@@ -157,11 +159,24 @@ third_party_settings:
         required_fields: true
       label: Footer
       region: content
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
       parent_name: group_display
-      weight: 10
+      weight: 11
       format_type: fieldset
       format_settings:
         id: ''
@@ -288,7 +303,14 @@ content:
     type: options_select
     region: content
   field_hide_breadcrumbs:
-    weight: 31
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_display_image
     - field.field.node.event.field_event_organizer
     - field.field.node.event.field_hide_breadcrumbs
+    - field.field.node.event.field_hide_navigation_bar
     - field.field.node.event.field_location
     - field.field.node.event.field_menu_reference_left
     - field.field.node.event.field_menu_reference_right
@@ -116,6 +117,7 @@ third_party_settings:
         - group_menu
         - group_related_content
         - group_mini_calendar
+        - group_navigation_bar
         - group_breadcrumbs
       parent_name: group_event_options
       weight: 33
@@ -246,11 +248,24 @@ third_party_settings:
         required_fields: true
       label: 'Add to Calendar'
       region: content
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
       parent_name: group_display
-      weight: 6
+      weight: 7
       format_type: fieldset
       format_settings:
         id: ''
@@ -342,7 +357,14 @@ content:
     type: string_textfield
     region: content
   field_hide_breadcrumbs:
-    weight: 2
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
@@ -493,7 +515,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60

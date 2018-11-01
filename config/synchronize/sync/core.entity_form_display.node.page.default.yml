@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_article_tags
     - field.field.node.page.field_display_image
     - field.field.node.page.field_hide_breadcrumbs
+    - field.field.node.page.field_hide_navigation_bar
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -51,6 +52,7 @@ third_party_settings:
         - group_menus
         - group_display_relationships
         - group_display
+        - group_navigation_bar
         - group_breadcrumbs
       parent_name: group_basic_page_options
       weight: 3
@@ -170,11 +172,24 @@ third_party_settings:
         classes: ''
       label: 'Search Enhancements'
       region: content
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: group_page_options
+      weight: 13
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
       parent_name: group_page_options
-      weight: 13
+      weight: 14
       format_type: fieldset
       format_settings:
         id: ''
@@ -229,7 +244,14 @@ content:
     type: media_library_widget
     region: content
   field_hide_breadcrumbs:
-    weight: 31
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }

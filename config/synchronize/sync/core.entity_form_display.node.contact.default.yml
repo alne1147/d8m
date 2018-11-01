@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_hide_breadcrumbs
+    - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
@@ -31,11 +32,24 @@ dependencies:
     - text
 third_party_settings:
   field_group:
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: ''
+      weight: 22
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
       parent_name: ''
-      weight: 22
+      weight: 23
       format_type: fieldset
       format_settings:
         id: ''
@@ -113,6 +127,13 @@ content:
     type: email_default
     region: content
   field_hide_breadcrumbs:
+    type: boolean_checkbox
+    weight: 24
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
     weight: 23
     settings:
       display_label: true

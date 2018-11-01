@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.webform.body
     - field.field.node.webform.field_article_tags
     - field.field.node.webform.field_hide_breadcrumbs
+    - field.field.node.webform.field_hide_navigation_bar
     - field.field.node.webform.field_jumbotron
     - field.field.node.webform.field_jumbotron_options
     - field.field.node.webform.field_menu_reference_left
@@ -60,6 +61,7 @@ third_party_settings:
         - group_jumbotron
         - group_menu
         - group_related_content
+        - group_navigation_bar
         - group_breadcrumbs
       parent_name: group_webform_options
       weight: 19
@@ -185,11 +187,24 @@ third_party_settings:
         required_fields: true
       label: Jumbotron
       region: content
+    group_navigation_bar:
+      children:
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 14
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
       parent_name: group_display
-      weight: 14
+      weight: 15
       format_type: fieldset
       format_settings:
         id: ''
@@ -233,7 +248,14 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_hide_breadcrumbs:
-    weight: 31
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 10
     settings:
       display_label: true
     third_party_settings: {  }

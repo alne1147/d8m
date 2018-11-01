@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_hide_breadcrumbs
+    - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
@@ -158,3 +159,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true

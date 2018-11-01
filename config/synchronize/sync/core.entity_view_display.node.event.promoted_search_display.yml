@@ -106,6 +106,7 @@ hidden:
   field_date_time_range: true
   field_display_image: true
   field_event_organizer: true
+  field_hide_breadcrumbs: true
   field_menu_reference_left: true
   field_menu_reference_right: true
   field_mini: true
