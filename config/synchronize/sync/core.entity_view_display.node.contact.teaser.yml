@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
+    - field.field.node.contact.field_hide_breadcrumbs
     - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
@@ -90,7 +91,9 @@ hidden:
   body: true
   field_address1: true
   field_address_2: true
+  field_breadcrumbs: true
   field_city: true
+  field_hide_breadcrumbs: true
   field_image: true
   field_map: true
   field_zip: true

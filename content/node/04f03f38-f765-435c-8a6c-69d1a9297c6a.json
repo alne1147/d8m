@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 212
+            "value": 264
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-09-24T16:58:51+00:00",
+            "value": "2018-10-31T21:29:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ],
                 "lang": "en"
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-24T16:58:51+00:00",
+            "value": "2018-10-31T21:29:34+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -184,6 +184,12 @@
     "field_email": [
         {
             "value": "email@example.com"
+        }
+    ],
+    "field_hide_breadcrumbs": [
+        {
+            "value": false,
+            "lang": "en"
         }
     ],
     "field_map": [

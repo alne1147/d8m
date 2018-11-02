@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/sites\/default\/files\/fullsizeoutput_e1.jpeg"
+            "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -19,7 +19,7 @@
     ],
     "uuid": [
         {
-            "value": "3a78917b-2276-46e7-a0dc-336e8e29aac5"
+            "value": "8fd7d04d-3b6e-41f4-a005-95b03223ae9f"
         }
     ],
     "langcode": [
@@ -40,7 +40,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -48,23 +48,23 @@
     },
     "filename": [
         {
-            "value": "fullsizeoutput_e1.jpeg"
+            "value": "no-thumbnail.png"
         }
     ],
     "uri": [
         {
-            "value": "public:\/\/fullsizeoutput_e1.jpeg",
-            "url": "\/sites\/default\/files\/fullsizeoutput_e1.jpeg"
+            "value": "public:\/\/media-icons\/generic\/no-thumbnail.png",
+            "url": "\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
         }
     ],
     "filemime": [
         {
-            "value": "image\/jpeg"
+            "value": "image\/png"
         }
     ],
     "filesize": [
         {
-            "value": 559805
+            "value": 564
         }
     ],
     "status": [
@@ -74,13 +74,13 @@
     ],
     "created": [
         {
-            "value": "2018-10-01T17:58:49+00:00",
+            "value": "2018-10-31T17:14:46+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2018-10-01T17:58:57+00:00",
+            "value": "2018-10-31T17:14:46+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ]

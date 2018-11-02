@@ -45,7 +45,7 @@
     ],
     "vid": [
         {
-            "value": 223
+            "value": 266
         }
     ],
     "langcode": [
@@ -61,7 +61,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-09-24T17:55:18+00:00",
+            "value": "2018-10-31T21:31:29+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -78,7 +78,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -95,7 +95,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ],
                 "lang": "en"
@@ -134,7 +134,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3361"
+                "target_revision_id": "3495"
             },
             {
                 "_links": {
@@ -151,7 +151,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3372"
+                "target_revision_id": "3506"
             }
         ]
     },
@@ -176,7 +176,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-24T17:55:18+00:00",
+            "value": "2018-10-31T21:31:29+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -223,7 +223,7 @@
     "path": [
         {
             "alias": "\/denver-ranks-top-10-pet-friendly-cities",
-            "pid": 185,
+            "pid": 173,
             "langcode": "en",
             "lang": "en"
         }
@@ -241,6 +241,11 @@
         {
             "value": false,
             "lang": "en"
+        }
+    ],
+    "field_hide_breadcrumbs": [
+        {
+            "value": false
         }
     ],
     "field_promote": [

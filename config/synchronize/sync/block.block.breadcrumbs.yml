@@ -1,0 +1,39 @@
+uuid: d00b93c8-53b6-4af5-b4b8-ca59e1c589c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - menu_condition
+    - system
+    - term_condition
+  theme:
+    - bartik
+id: breadcrumbs
+theme: bartik
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'

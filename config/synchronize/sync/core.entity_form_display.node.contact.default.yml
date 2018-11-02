@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
+    - field.field.node.contact.field_hide_breadcrumbs
     - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_image
     - field.field.node.contact.field_map
@@ -43,6 +44,21 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Navigation Bar'
+      region: content
+third_party_settings:
+  field_group:
+    group_breadcrumbs:
+      children:
+        - field_hide_breadcrumbs
+      parent_name: ''
+      weight: 23
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
       region: content
 id: node.contact.default
 targetEntityType: node
@@ -112,6 +128,20 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
+  field_hide_navigation_bar:
+    weight: 23
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_hide_breadcrumbs:
+    type: boolean_checkbox
+    weight: 24
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_hide_navigation_bar:
     weight: 23
     settings:

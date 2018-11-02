@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_date_time_range
     - field.field.node.event.field_display_image
     - field.field.node.event.field_event_organizer
+    - field.field.node.event.field_hide_breadcrumbs
     - field.field.node.event.field_hide_navigation_bar
     - field.field.node.event.field_location
     - field.field.node.event.field_menu_reference_left
@@ -168,6 +169,8 @@ hidden:
   field_archive: true
   field_date: true
   field_display_image: true
+  field_hide_navigation_bar: true
+  field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
   field_menu_reference_left: true
   field_menu_reference_right: true

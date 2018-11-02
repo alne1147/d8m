@@ -59,7 +59,7 @@
     ],
     "vid": [
         {
-            "value": 1
+            "value": 237
         }
     ],
     "langcode": [
@@ -75,7 +75,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2017-06-22T15:29:14+00:00",
+            "value": "2018-10-30T21:47:20+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -92,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ]
             }
@@ -109,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "79f399cc-0216-4084-8bf0-08e666d5bfca"
+                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
                     }
                 ],
                 "lang": "en"
@@ -182,7 +182,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3101"
+                "target_revision_id": "3399"
             },
             {
                 "_links": {
@@ -199,7 +199,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3116"
+                "target_revision_id": "3402"
             },
             {
                 "_links": {
@@ -216,7 +216,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3136"
+                "target_revision_id": "3405"
             }
         ]
     },
@@ -241,7 +241,7 @@
     ],
     "changed": [
         {
-            "value": "2018-01-09T17:19:43+00:00",
+            "value": "2018-10-30T21:47:20+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -287,7 +287,7 @@
     "path": [
         {
             "alias": "\/home",
-            "pid": 194,
+            "pid": 176,
             "langcode": "en",
             "lang": "en"
         }

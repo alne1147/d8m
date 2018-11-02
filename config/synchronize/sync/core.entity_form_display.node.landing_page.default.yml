@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
+    - field.field.node.landing_page.field_hide_breadcrumbs
     - field.field.node.landing_page.field_hide_navigation_bar
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
@@ -103,6 +104,7 @@ third_party_settings:
         - group_background
         - group_footer
         - group_navigation_bar
+        - group_breadcrumbs
       parent_name: group_landing_page
       weight: 10
       format_type: tab
@@ -169,6 +171,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Navigation Bar'
+      region: content
+    group_breadcrumbs:
+      children:
+        - field_hide_breadcrumbs
+      parent_name: group_display
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
       region: content
 id: node.landing_page.default
 targetEntityType: node
@@ -287,6 +302,13 @@ content:
           bundle: landing_page
     type: options_select
     region: content
+  field_hide_breadcrumbs:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_hide_navigation_bar:
     weight: 12
     settings:
