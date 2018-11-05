@@ -44,6 +44,7 @@ hidden:
   field_article_tags: true
   field_breadcrumbs: true
   field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true
   field_jumbotron: true
   field_jumbotron_options: true
   field_menu_reference_left: true

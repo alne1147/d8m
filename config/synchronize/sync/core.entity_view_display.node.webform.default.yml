@@ -53,7 +53,6 @@ content:
     region: content
 hidden:
   field_article_tags: true
-  field_hide_navigation_bar: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
   field_jumbotron: true

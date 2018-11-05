@@ -55,6 +55,7 @@ hidden:
   field_footer_options: true
   field_footer_selection: true
   field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true
   field_jumbotron: true
   field_jumbotron_options: true
   field_landing_page_options: true
