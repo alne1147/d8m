@@ -169,7 +169,6 @@ hidden:
   field_archive: true
   field_date: true
   field_display_image: true
-  field_hide_navigation_bar: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
   field_menu_reference_left: true

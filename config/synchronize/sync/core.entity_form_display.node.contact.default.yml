@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_image_browser
     - field.field.node.contact.body
     - field.field.node.contact.field_address1
     - field.field.node.contact.field_address_2
@@ -13,7 +12,6 @@ dependencies:
     - field.field.node.contact.field_email
     - field.field.node.contact.field_hide_breadcrumbs
     - field.field.node.contact.field_hide_navigation_bar
-    - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -23,7 +21,6 @@ dependencies:
     - node.type.contact
   module:
     - content_moderation
-    - entity_browser
     - field_group
     - image
     - path
@@ -35,8 +32,8 @@ third_party_settings:
     group_navigation_bar:
       children:
         - field_hide_navigation_bar
-      parent_name: ''
-      weight: 22
+      parent_name: group_display
+      weight: 11
       format_type: fieldset
       format_settings:
         id: ''
@@ -45,13 +42,11 @@ third_party_settings:
         required_fields: true
       label: 'Navigation Bar'
       region: content
-third_party_settings:
-  field_group:
     group_breadcrumbs:
       children:
         - field_hide_breadcrumbs
-      parent_name: ''
-      weight: 23
+      parent_name: group_display
+      weight: 12
       format_type: fieldset
       format_settings:
         id: ''
@@ -60,6 +55,61 @@ third_party_settings:
         required_fields: true
       label: Breadcrumbs
       region: content
+    group_contact_options:
+      children:
+        - group_contact
+        - group_display
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        label: 'Contact Options'
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: 'Contact Options'
+      region: content
+    group_contact:
+      children:
+        - title
+        - field_photo
+        - field_title
+        - field_email
+        - field_phone_number
+        - field_address1
+        - field_address_2
+        - field_city
+        - field_zip
+        - field_map
+        - body
+        - field_agency_logo
+        - field_agency
+      parent_name: group_contact_options
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Contact
+      region: content
+    group_display:
+      children:
+        - group_navigation_bar
+        - group_breadcrumbs
+      parent_name: group_contact_options
+      weight: 26
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Display
+      region: content
 id: node.contact.default
 targetEntityType: node
 bundle: contact
@@ -67,7 +117,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -76,19 +126,11 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address1:
-    weight: 5
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_address_2:
     weight: 6
     settings:
       size: 60
@@ -96,23 +138,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_agency:
-    weight: 12
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_agency_logo:
-    weight: 11
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_city:
+  field_address_2:
     weight: 7
     settings:
       size: 60
@@ -120,20 +146,37 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_agency:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_agency_logo:
+    weight: 12
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_city:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_email:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: email_default
-    region: content
-  field_hide_navigation_bar:
-    weight: 23
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_hide_breadcrumbs:
     type: boolean_checkbox
@@ -149,23 +192,8 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_image:
-    weight: 21
-    settings:
-      entity_browser: media_image_browser
-      field_widget_display: rendered_entity
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: default
-      field_widget_edit: false
-      open: false
-      field_widget_replace: false
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_map:
-    weight: 9
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -173,14 +201,14 @@ content:
     type: string_textfield
     region: content
   field_phone_number:
-    weight: 4
+    weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_photo:
-    weight: 1
+    weight: 2
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
@@ -188,7 +216,7 @@ content:
     type: image_image
     region: content
   field_title:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -196,7 +224,7 @@ content:
     type: string_textfield
     region: content
   field_zip:
-    weight: 8
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -205,19 +233,19 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 19
+    weight: 7
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 15
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -225,12 +253,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 20
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -238,7 +266,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -247,12 +275,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 17
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 18
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
