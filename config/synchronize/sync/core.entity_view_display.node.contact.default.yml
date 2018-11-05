@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.contact.field_email
     - field.field.node.contact.field_hide_breadcrumbs
     - field.field.node.contact.field_hide_navigation_bar
-    - field.field.node.contact.field_image
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -100,15 +99,6 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    weight: 14
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
     region: content
   field_map:
     type: simple_gmap

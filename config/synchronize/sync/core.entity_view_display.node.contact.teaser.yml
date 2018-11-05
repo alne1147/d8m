@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
     - field.field.node.contact.field_hide_breadcrumbs
-    - field.field.node.contact.field_image
+    - field.field.node.contact.field_hide_navigation_bar
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -94,6 +94,6 @@ hidden:
   field_breadcrumbs: true
   field_city: true
   field_hide_breadcrumbs: true
-  field_image: true
+  field_hide_navigation_bar: true
   field_map: true
   field_zip: true
