@@ -188,17 +188,18 @@ field_settings:
       module:
         - node
 datasource_settings:
-  'entity:file':
-    bundles:
-      default: true
-      selected: {  }
+  'entity:file': {  }
   'entity:media':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - document
+        - image
+        - video
     languages:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - en
   'entity:node':
     bundles:
       default: false
