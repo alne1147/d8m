@@ -32,7 +32,13 @@ drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddm
 
 drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
 
+drush ucrt ci-rchung --mail="richard.chung@egov.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-aturner --mail="ashley.turner@egov.com" --password="9xzfbddmus" --y;
+
 drush user-add-role administrator ci-amarshall --y;
+drush user-add-role administrator ci-rchung --y;
+drush user-add-role administrator ci-aturner	--y;
 drush user-add-role administrator ci-nevarez --y;
 drush user-add-role administrator ci-blawson --y;
 drush user-add-role support_administrator ci-twhatley --y;
@@ -46,6 +52,9 @@ drush -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-
 
 drush en ci_article_setup -y;
 drush en ci_media_types -y;
+
+drush en ci_templates -y;
+drush yaml-content-import-module ci_templates;
 drush en ci_admin_tweaks --y;
 drush en ci_theme_options --y;
 drush en ci_views_tweaks --y;

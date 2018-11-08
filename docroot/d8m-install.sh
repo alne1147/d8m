@@ -28,9 +28,15 @@ drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;
 
 drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;
 
+drush ucrt ci-rchung --mail="richard.chung@egov.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-aturner --mail="ashley.turner@egov.com" --password="9xzfbddmus" --y;
+
 drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
 
 drush user-add-role administrator ci-amarshall --y;
+drush user-add-role administrator ci-rchung --y;
+drush user-add-role administrator ci-aturner	--y;
 drush user-add-role administrator ci-nevarez --y;
 drush user-add-role administrator ci-blawson --y;
 drush user-add-role support_administrator ci-twhatley --y;

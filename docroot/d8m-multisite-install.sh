@@ -22,8 +22,12 @@ drush @sites ucrt ci-contentadmin --mail="contentadmin@example.com" --password="
 drush @sites ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;
 drush @sites ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;
 drush @sites ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
+drush @sites ucrt ci-rchung --mail="richard.chung@egov.com" --password="9xzfbddmus" --y;
+drush @sites ucrt ci-aturner --mail="ashley.turner@egov.com" --password="9xzfbddmus" --y;
 
 drush @sites user-add-role administrator ci-amarshall --y;
+drush @sites user-add-role administrator ci-rchung --y;
+drush @sites user-add-role administrator ci-aturner	--y;
 drush @sites user-add-role administrator ci-blawson --y;
 drush @sites user-add-role administrator ci-nevarez --y;
 drush @sites user-add-role support_administrator ci-twhatley --y;
