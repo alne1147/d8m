@@ -1,0 +1,7 @@
+name: 'ci_dc_import'
+type: module
+description: 'CI Import Content'
+# core: 8.x
+core: 8.x
+package: Custom
+type: module
