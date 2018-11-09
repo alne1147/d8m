@@ -1,0 +1,21 @@
+{# Jumbotron and Navbar #}
+{% if node.field_nav_bar_above.value %}
+  {% include directory ~ '/templates/includes/navbar.html.twig' %}
+  {% if page.jumbotron %}
+    <div class="jumbotron">
+      {{ page.jumbotron }}
+    </div>
+  {% endif %}
+{% else %}
+  {% if page.jumbotron %}
+    <div class="jumbotron">
+      {{ page.jumbotron }}
+    </div>
+  {% endif %}
+  {% if node.field_hide_navigation_bar.value %}
+    <div class="no-nav-bar"> </div>
+  {% else %}
+    {% include directory ~ '/templates/includes/navbar.html.twig' %}
+  {% endif %}
+{% endif %}
+
