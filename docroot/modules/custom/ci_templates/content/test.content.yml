@@ -2,6 +2,7 @@
 - entity: "media"
   bundle: "image"
   status: 1
+  uuid: d5f6d777-b487-4640-a25d-80a15c514163
   field_media_image:
     # To lookup and add files we'll need to use a different callback function.
     - '#process':
