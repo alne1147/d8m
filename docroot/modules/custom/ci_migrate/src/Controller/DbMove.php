@@ -68,12 +68,16 @@ class DbMove extends ControllerBase {
 	  $options['icon'] = reset($results);
 	  
 	  // 2. Fetch color
-	  // select opts.field_title_options_value, color.field_icon_color_jquery_colorpicker from field_data_field_title_options opts left join field_data_field_icon_color color on opts.field_title_options_value = color.entity_id where opts.entity_id = 3466;
+	  $query = $database_info->query('select icon.field_icon_color_jquery_colorpicker from pacific.field_data_field_title_options opts left join pacific.field_data_field_icon_color icon on opts.field_title_options_value = icon.entity_id where opts.entity_id = :nid', [':nid' => $nid]);
+	  $results = $query->fetchCol();
+	  $options['color'] = reset($results);
 	  
 	  // 3. Fetch hide param
-	  // select opts.field_title_options_value, hide.field_hide_title_value from field_data_field_title_options opts left join field_data_field_hide_title hide on opts.field_title_options_value = hide.entity_id where opts.entity_id = 3466;
+	  $query = $database_info->query('select icon.field_hide_title_value from pacific.field_data_field_title_options opts left join pacific.field_data_field_hide_title icon on opts.field_title_options_value = icon.entity_id where opts.entity_id = :nid', [':nid' => $nid]);
+	  $results = $query->fetchCol();
+	  $options['hide'] = reset($results);
 	  
-	  return serialized($options);
+	  return serialize($options);
   }
   private function getImages (int $nid, $types = []) {
 	  if (empty($types)) {
