@@ -602,26 +602,13 @@ class WebformCliService implements WebformCliServiceInterface {
    * {@inheritdoc}
    */
   public function drush_webform_libraries_composer() {
-    // Load existing composer.json file.
-    $data = json_decode('{
-  "name": "drupal/webform",
-  "description": "Enables the creation of webforms and questionnaires.",
-  "type": "drupal-module",
-  "license": "GPL-2.0+",
-  "minimum-stability": "dev",
-  "homepage": "https://drupal.org/project/webform",
-  "authors": [
-    {
-      "name": "Jacob Rockowitz (jrockowitz)",
-      "homepage": "https://www.drupal.org/u/jrockowitz",
-      "role": "Maintainer"
-    }
-  ],
-  "support": {
-    "issues": "https://drupal.org/project/issues/webform",
-    "source": "http://cgit.drupalcode.org/webform"
-  }
-}', FALSE, $this->drush_webform_composer_get_json_encode_options());
+    // Load existing composer.json file and unset certain properties.
+    $composer_path = drupal_get_path('module', 'webform') . '/composer.json';
+    $json = file_get_contents($composer_path);
+    $data = json_decode($json , FALSE, $this->drush_webform_composer_get_json_encode_options());
+    $data = (array) $data;
+    unset($data['extra'], $data['require-dev']);
+    $data = (object) $data;
 
     // Set disable tls.
     $this->drush_webform_composer_set_disable_tls($data);
@@ -630,7 +617,10 @@ class WebformCliService implements WebformCliServiceInterface {
     $data->repositories = (object) [];
     $data->require = (object) [];
     $this->drush_webform_composer_set_libraries($data->repositories, $data->require);
-
+    // Remove _webform property.
+    foreach ($data->repositories as &$repository) {
+      unset($repository['_webform']);
+    }
     $this->drush_print(json_encode($data, $this->drush_webform_composer_get_json_encode_options()));
   }
 
@@ -880,6 +870,9 @@ class WebformCliService implements WebformCliServiceInterface {
     // Remove <code> tag nested within <pre> tag.
     $html = preg_replace('#<pre><code>\s*#', "<code>\n", $html);
     $html = preg_replace('#\s*</code></pre>#', "\n</code>", $html);
+
+    // Fix code in webform-libraries.html.
+    $html = str_replace(' &gt; ', ' > ', $html);
 
     // Remove space after <br> tags.
     $html = preg_replace('/(<br[^>]*>)\s+/', '\1', $html);

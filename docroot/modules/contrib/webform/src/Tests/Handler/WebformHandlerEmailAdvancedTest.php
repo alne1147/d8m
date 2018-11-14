@@ -27,26 +27,8 @@ class WebformHandlerEmailAdvancedTest extends WebformTestBase {
   public function setUp() {
     parent::setUp();
 
-    // Create users.
-    $this->createUsers();
-  }
-
-  /**
-   * Create webform test users.
-   */
-  protected function createUsers() {
     // Create filter.
     $this->createFilters();
-
-    $this->normalUser = $this->drupalCreateUser([
-      'access user profiles',
-      $this->basicHtmlFilter->getPermissionName(),
-    ]);
-    $this->adminSubmissionUser = $this->drupalCreateUser([
-      'access user profiles',
-      'administer webform submission',
-      $this->basicHtmlFilter->getPermissionName(),
-    ]);
   }
 
   /**
@@ -61,6 +43,8 @@ class WebformHandlerEmailAdvancedTest extends WebformTestBase {
   public function testAdvancedEmailHandler() {
     /** @var \Drupal\webform\WebformInterface $webform */
     $webform = Webform::load('test_handler_email_advanced');
+
+    /**************************************************************************/
 
     // Generate a test submission with a file upload.
     $this->drupalLogin($this->rootUser);
@@ -170,14 +154,7 @@ class WebformHandlerEmailAdvancedTest extends WebformTestBase {
     $sent_email = $this->getLastEmail();
     $this->assertNotContains($sent_email['params']['body'], '<b>First name</b><br />John<br /><br />');
     $this->debug($sent_email['params']['body']);
-    $this->assertEqual($sent_email['params']['body'], '<html>
-<head>
-  <title>This has &lt;removed&gt;&quot;special&quot; &#039;chararacters&#039;</title>
-</head>
-<body>
-Testing 123…
-</body>
-</html>');
+    $this->assertEqual($sent_email['params']['body'], 'Testing 123…');
 
     // Check resent email has the same attachment.
     $this->assertEqual($sent_email['params']['attachments'][0]['filecontent'], "this is a sample txt file\nit has two lines\n");
