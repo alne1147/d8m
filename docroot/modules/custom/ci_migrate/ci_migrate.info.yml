@@ -1,0 +1,6 @@
+name: CI Migrate
+dependencies: {  }
+description: 'Migration from Pacific'
+core: 8.x
+package: Custom
+type: module
