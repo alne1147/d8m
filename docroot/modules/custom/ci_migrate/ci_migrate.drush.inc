@@ -18,10 +18,6 @@ function ci_migrate_drush_command() {
    'arguments' => [],
    'drupal dependencies' => ['ci_migrate'],
  ];
- $items['etlgroups'] = [
-   'arguments' => [],
-   'drupal dependencies' => ['ci_migrate'],
- ];
  return $items;
 }
 
