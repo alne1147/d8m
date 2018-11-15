@@ -18,6 +18,10 @@ function ci_migrate_drush_command() {
    'arguments' => [],
    'drupal dependencies' => ['ci_migrate'],
  ];
+ $items['etlusers'] = [
+   'arguments' => [],
+   'drupal dependencies' => ['ci_migrate'],
+ ];
  return $items;
 }
 
@@ -33,8 +37,8 @@ function drush_ci_migrate_etlterms() {
   return drush_print('ETL: Terms prepare complete!');
 }
 
-function drush_ci_migrate_etlgroups() {
+function drush_ci_migrate_etlusers() {
   $import = new DbMove();
-  $import->etlTerms();
-  return drush_print('ETL: Groups prepare complete!');
+  $import->etlUsers();
+  return drush_print('ETL: Users prepare complete!');
 }

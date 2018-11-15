@@ -20,6 +20,35 @@ class DbMove extends ControllerBase {
     $database_info = Database::getConnection($type, 'default');
     return $database_info;
   }
+  
+  public function etlUsers() {
+  	$database_info = Database::getConnection('legacy', 'default');
+	$query = $database_info->query('SELECT * FROM pacific.users');
+	$results = $query->fetchAll();
+	foreach ($results as $key => $value) {
+		$user = [];
+		$uid = $value->uid;
+		$user['uid'] = $uid;
+		$user['name'] = $value->name;
+		$user['pass'] = $value->pass;
+		$user['mail'] = $value->mail;
+		$user['status'] = $value->status;
+		$user['init'] = $value->init;
+		$user['created'] = $value->created;
+		
+		$roles = $database_info->query('SELECT rid FROM pacific.users_roles WHERE uid = :uid', [':uid' => $uid])->fetchCol();
+		$user['roles'] = implode(',', $roles);
+		$og_roles = $database_info->query('SELECT rid FROM pacific.og_users_roles WHERE uid = :uid', [':uid' => $uid])->fetchCol();
+		$user['og_roles'] = implode(',', $og_roles);
+		$user['first_name'] = $this->getUserFieldData($uid, 'entity_id', 'field_data_field_first_name', 'field_first_name_value');
+		$user['last_name'] = $this->getUserFieldData($uid, 'entity_id', 'field_data_field_last_name', 'field_last_name_value');
+		
+		$user['minisite_nids'] = $this->getUserFieldData($uid, 'etid', 'og_membership', 'gid');
+		$database_info->insert('d8mprep.user')
+          ->fields($user)
+          ->execute();
+	}
+  }
 
   public function etlTerms() {
 	$database_info = Database::getConnection('legacy', 'default');
@@ -164,10 +193,10 @@ class DbMove extends ControllerBase {
 	  return implode(',', $results);
 
   }
-
-  private function getFieldData(int $nid, $entity_field = 'nid', string $table, string $field, bool $trim = false) {
+  
+  private function getUserFieldData(int $uid, $entity_field = 'entity_id', string $table, string $field, bool $trim = false) {
       $database_info = Database::getConnection('legacy', 'default');
-      $query = $database_info->query('SELECT cf.' . $field . ' from pacific.node n inner join pacific.' . $table . ' cf on n.nid = cf.' . $entity_field . ' WHERE cf.' . $field . ' is not null and n.nid = :nid', [':nid' => $nid]
+      $query = $database_info->query('SELECT cf.' . $field . ' from pacific.users u inner join pacific.' . $table . ' cf on u.uid = cf.' . $entity_field . ' WHERE cf.' . $field . ' is not null and u.uid = :uid', [':uid' => $uid]
       );
       $results = $query->fetchCol();
       $formatted = implode(',', str_replace(["'", ";"], ["\'", ","], $results));
@@ -176,6 +205,18 @@ class DbMove extends ControllerBase {
       }
       return $formatted;
     }
+	
+    private function getFieldData(int $nid, $entity_field = 'nid', string $table, string $field, bool $trim = false) {
+        $database_info = Database::getConnection('legacy', 'default');
+        $query = $database_info->query('SELECT cf.' . $field . ' from pacific.node n inner join pacific.' . $table . ' cf on n.nid = cf.' . $entity_field . ' WHERE cf.' . $field . ' is not null and n.nid = :nid', [':nid' => $nid]
+        );
+        $results = $query->fetchCol();
+        $formatted = implode(',', str_replace(["'", ";"], ["\'", ","], $results));
+        if (strlen($formatted) > 255 && $trim) {
+          $formatted = '';
+        }
+        return $formatted;
+      }
 
 	private function getAlias(int $nid) {
 	    $alias = NULL;
