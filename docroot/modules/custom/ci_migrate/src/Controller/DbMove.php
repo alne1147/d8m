@@ -20,29 +20,17 @@ class DbMove extends ControllerBase {
     $database_info = Database::getConnection($type, 'default');
     return $database_info;
   }
-  
-  public function etlGroups() {
-  	$database_info = Database::getConnection('legacy', 'default');
+
+  public function etlTerms() {
+	$database_info = Database::getConnection('legacy', 'default');
 	$query = $database_info->query(
-	      "select td.vid, v.name as vocabulary, v.machine_name, td.tid, td.name, td.description, td.weight, th.parent 
+	      "select td.vid, v.name as vocabulary, v.machine_name, td.tid, td.name, td.description, td.weight, th.parent
 			from pacific.taxonomy_term_data td
 			left join pacific.taxonomy_term_hierarchy th
 		  	on td.tid = th.tid
 			left join pacific.taxonomy_vocabulary v
 			on v.vid = td.vid"
 	    );
-  }
-  
-  public function etlTerms() {
-	$database_info = Database::getConnection('legacy', 'default');
-	$query = $database_info->query(
-	      "select td.vid, v.name as vocabulary, v.machine_name, td.tid, td.name, td.description, td.weight, th.parent 
-			from pacific.taxonomy_term_data td
-			left join pacific.taxonomy_term_hierarchy th
-		  	on td.tid = th.tid
-			left join pacific.taxonomy_vocabulary v
-			on v.vid = td.vid"
-	    );	
 	    $results = $query->fetchAll();
 	    $row = [];
 	    foreach ($results as $key => $value) {
@@ -64,14 +52,14 @@ class DbMove extends ControllerBase {
 	        ->execute();
 	    }
   }
-  
+
   public function etlNodes() {
 	$database_info = Database::getConnection('legacy', 'default');
 	$query = $database_info->query(
 	      "SELECT nid, vid, type, language, uid, status, title, created, changed
 	        FROM pacific.node
 	        ORDER BY nid DESC LIMIT 0,100000"
-	    );	
+	    );
 	    $results = $query->fetchAll();
 	    $row = [];
 	    foreach ($results as $key => $value) {
@@ -113,7 +101,7 @@ class DbMove extends ControllerBase {
 	        ->execute();
 	    }
   }
-  
+
   private function getEventDate(int $nid) {
       $database_info = Database::getConnection('legacy', 'default');
       $query = $database_info->query('SELECT field_minisite_event_date_value, field_minisite_event_date_value2 from pacific.field_data_field_minisite_event_date WHERE entity_id is not null and entity_id = :nid', [':nid' => $nid]
@@ -124,7 +112,7 @@ class DbMove extends ControllerBase {
 	  }
       return '';
     }
-  
+
   private function getBlockOpts(int $nid) {
 	  $database_info = Database::getConnection('legacy', 'default');
 	  $option = [];
@@ -132,17 +120,17 @@ class DbMove extends ControllerBase {
 	  $query = $database_info->query('select icon.field_icon_value from pacific.field_data_field_title_options opts left join pacific.field_data_field_icon icon on opts.field_title_options_value = icon.entity_id where opts.entity_id = :nid', [':nid' => $nid]);
 	  $results = $query->fetchCol();
 	  $options['icon'] = reset($results);
-	  
+
 	  // 2. Fetch color
 	  $query = $database_info->query('select icon.field_icon_color_jquery_colorpicker from pacific.field_data_field_title_options opts left join pacific.field_data_field_icon_color icon on opts.field_title_options_value = icon.entity_id where opts.entity_id = :nid', [':nid' => $nid]);
 	  $results = $query->fetchCol();
 	  $options['color'] = reset($results);
-	  
+
 	  // 3. Fetch hide param
 	  $query = $database_info->query('select icon.field_hide_title_value from pacific.field_data_field_title_options opts left join pacific.field_data_field_hide_title icon on opts.field_title_options_value = icon.entity_id where opts.entity_id = :nid', [':nid' => $nid]);
 	  $results = $query->fetchCol();
 	  $options['hide'] = reset($results);
-	  
+
 	  return serialize($options);
   }
   private function getImages (int $nid, $types = []) {
@@ -158,9 +146,9 @@ class DbMove extends ControllerBase {
 	      $results = array_merge($results, $query->fetchCol());
 	  }
 	  return implode(',', $results);
-      
+
   }
-  
+
   private function getFiles (int $nid, $types = []) {
 	  if (empty($types)) {
 		  return '';
@@ -174,9 +162,9 @@ class DbMove extends ControllerBase {
 	      $results = array_merge($results, $query->fetchCol());
 	  }
 	  return implode(',', $results);
-      
+
   }
-  
+
   private function getFieldData(int $nid, $entity_field = 'nid', string $table, string $field, bool $trim = false) {
       $database_info = Database::getConnection('legacy', 'default');
       $query = $database_info->query('SELECT cf.' . $field . ' from pacific.node n inner join pacific.' . $table . ' cf on n.nid = cf.' . $entity_field . ' WHERE cf.' . $field . ' is not null and n.nid = :nid', [':nid' => $nid]
@@ -188,7 +176,7 @@ class DbMove extends ControllerBase {
       }
       return $formatted;
     }
-	
+
 	private function getAlias(int $nid) {
 	    $alias = NULL;
 	    $database_info = Database::getConnection('legacy', 'default');
@@ -200,7 +188,7 @@ class DbMove extends ControllerBase {
 	    }
 	    return $alias;
 	  }
-	  
+
 	  private function getDestType(string $type, int $nid) {
 
 	      switch ($type) {
