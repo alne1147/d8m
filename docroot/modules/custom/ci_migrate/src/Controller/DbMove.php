@@ -20,14 +20,58 @@ class DbMove extends ControllerBase {
     $database_info = Database::getConnection($type, 'default');
     return $database_info;
   }
-
-  public function etl() {
+  
+  public function etlGroups() {
+  	$database_info = Database::getConnection('legacy', 'default');
+	$query = $database_info->query(
+	      "select td.vid, v.name as vocabulary, v.machine_name, td.tid, td.name, td.description, td.weight, th.parent 
+			from pacific.taxonomy_term_data td
+			left join pacific.taxonomy_term_hierarchy th
+		  	on td.tid = th.tid
+			left join pacific.taxonomy_vocabulary v
+			on v.vid = td.vid"
+	    );
+  }
+  
+  public function etlTerms() {
+	$database_info = Database::getConnection('legacy', 'default');
+	$query = $database_info->query(
+	      "select td.vid, v.name as vocabulary, v.machine_name, td.tid, td.name, td.description, td.weight, th.parent 
+			from pacific.taxonomy_term_data td
+			left join pacific.taxonomy_term_hierarchy th
+		  	on td.tid = th.tid
+			left join pacific.taxonomy_vocabulary v
+			on v.vid = td.vid"
+	    );	
+	    $results = $query->fetchAll();
+	    $row = [];
+	    foreach ($results as $key => $value) {
+	      $nid = $value->nid;
+	      $row = [
+	        'tid' => $value->tid,
+	        'term_name' => $value->name,
+	        'vid' => $value->vid,
+			'vocabulary' => $value->vocabulary,
+			'vocabulary_machine' => $value->machine_name,
+			'description' => $value->description,
+			'weight' => $value->weight,
+			'parent' => $value->parent
+	      ];
+	      $rows[$nid] = $row;
+	      $database_info = Database::getConnection('prepare', 'default');
+	      $database_info->insert('d8mprep.term')
+	        ->fields($row)
+	        ->execute();
+	    }
+  }
+  
+  public function etlNodes() {
 	$database_info = Database::getConnection('legacy', 'default');
 	$query = $database_info->query(
 	      "SELECT nid, vid, type, language, uid, status, title, created, changed
 	        FROM pacific.node
-	        ORDER BY nid DESC LIMIT 0,500"
-	    );
+	        ORDER BY nid DESC LIMIT 0,100000"
+	    );	
 	    $results = $query->fetchAll();
 	    $row = [];
 	    foreach ($results as $key => $value) {
@@ -45,20 +89,42 @@ class DbMove extends ControllerBase {
 	        'alias' => $this->getAlias($nid),
 	        'status' => $value->status,
 	        'language' => $value->language,
-			'og_audience' => $this->getFieldData($nid, 'etid', 'og_membership', 'gid'),
+			'minisite_nids' => $this->getFieldData($nid, 'etid', 'og_membership', 'gid'),
 			'files' => $this->getFiles($nid, ['events', 'news', 'page']),
 			'images' => $this->getImages($nid, ['brand_co', 'minisite_banner', 'slider_image']),
 			'banner_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_url_of_banner', 'field_url_of_banner_value'),
 			'image_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_image_link', 'field_image_link_value'),
+			'optional_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_optional_link', 'field_optional_link_value'),
 			'block_opts' => $this->getBlockOpts($nid),
+			'event_date' => $this->getEventDate($nid),
+			'footer_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_footer_link_url', 'field_minisite_footer_link_url_value'),
+			'driving_url' => $this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_driving_url', 'field_minisite_driving_url_value'),
+			'driving_cat' => intval($this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_driving_category', 'field_minisite_driving_category_tid')),
+			'executive_office' => intval($this->getFieldData($nid, 'entity_id', 'field_data_field_executive_office', 'field_executive_office_tid')),
+			'state_agency' => intval($this->getFieldData($nid, 'entity_id', 'field_data_field_state_agency', 'field_state_agency_tid')),
+			'text_area_type' => intval($this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_text_area_type', 'field_minisite_text_area_type_tid')),
+			'minisite' => $this->getFieldData($nid, 'id', 'purl', 'value'),
+			'social_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_social_link_netwk', 'field_minisite_social_link_netwk_value'),
+			'minisite_social_link' => $this->getFieldData($nid, 'entity_id', 'field_data_field_minisite_social_link_url', 'field_minisite_social_link_url_value'),
 	      ];
-	      $rows[$nid] = $row;
 	      $database_info = Database::getConnection('prepare', 'default');
 	      $database_info->insert('d8mprep.node')
 	        ->fields($row)
 	        ->execute();
 	    }
   }
+  
+  private function getEventDate(int $nid) {
+      $database_info = Database::getConnection('legacy', 'default');
+      $query = $database_info->query('SELECT field_minisite_event_date_value, field_minisite_event_date_value2 from pacific.field_data_field_minisite_event_date WHERE entity_id is not null and entity_id = :nid', [':nid' => $nid]
+      );
+      $results = $query->fetchAll();
+	  if (count($results)) {
+		  return $results[0]->field_minisite_event_date_value . '~' . $results[0]->field_minisite_event_date_value2;
+	  }
+      return '';
+    }
+  
   private function getBlockOpts(int $nid) {
 	  $database_info = Database::getConnection('legacy', 'default');
 	  $option = [];
