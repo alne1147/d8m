@@ -10,16 +10,35 @@ use Drupal\ci_migrate\Controller\DbMove;
 */
 function ci_migrate_drush_command() {
  $items = array();
- $items['cietl'] = [
+ $items['etlnodes'] = [
    'arguments' => [],
    'drupal dependencies' => ['ci_migrate'],
-   'aliases' => ['cietl'],
+ ];
+ $items['etlterms'] = [
+   'arguments' => [],
+   'drupal dependencies' => ['ci_migrate'],
+ ];
+ $items['etlgroups'] = [
+   'arguments' => [],
+   'drupal dependencies' => ['ci_migrate'],
  ];
  return $items;
 }
 
-function drush_ci_migrate_cietl() {
+function drush_ci_migrate_etlnodes() {
   $import = new DbMove();
-  $import->etl();
-  return drush_print('ETL done!');
+  $import->etlNodes();
+  return drush_print('ETL: Nodes prepare complete!');
+}
+
+function drush_ci_migrate_etlterms() {
+  $import = new DbMove();
+  $import->etlTerms();
+  return drush_print('ETL: Terms prepare complete!');
+}
+
+function drush_ci_migrate_etlgroups() {
+  $import = new DbMove();
+  $import->etlTerms();
+  return drush_print('ETL: Groups prepare complete!');
 }
