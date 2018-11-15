@@ -103,9 +103,8 @@ class CalendarPager extends PagerPluginBase {
       }
       $current_position++;
     }
-    $display_id = $this->view->getDisplay()->display['id'];
 
-    return CalendarHelper::getViewsURL($this->view, $display_id, $arg_vals);
+    return $this->view->getUrl($arg_vals, $this->view->current_display);
   }
 
   /**

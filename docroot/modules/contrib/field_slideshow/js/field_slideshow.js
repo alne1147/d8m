@@ -195,14 +195,14 @@
         });
       }
       else {
-        $(window).load(function () {
+        $(window).on('load', function () {
           $('.field-slideshow').each(function () {
             rebuild_max_height($(this));
           });
         });
 
       }
-      $(window).resize(function () {
+      $(window).on('resize', function () {
         $('.field-slideshow').each(function () {
           rebuild_max_height($(this));
         });

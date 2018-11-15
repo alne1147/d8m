@@ -6,8 +6,8 @@ use Drupal\calendar\CalendarEvent;
 use Drupal\calendar\CalendarHelper;
 use Drupal\calendar\CalendarViewsTrait;
 use Drupal\Core\Entity\EntityFieldManagerInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItem;
-use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\views\Plugin\views\argument\Date;
 use Drupal\Core\Datetime\DateFormatter;
@@ -406,6 +406,14 @@ class Calendar extends RowPluginBase {
         return [];
       }
 
+      // @todo clean up
+//      $table_name  = $info['table_name'];
+      $delta_field = $info['delta_field'];
+//      $tz_handling = $info['tz_handling'];
+//      $tz_field    = $info['timezone_field'];
+//      $rrule_field = $info['rrule_field'];
+//      $is_field    = $info['is_field'];
+
       $event = new CalendarEvent($entity);
 
       // Retrieve the field value(s) that matched our query from the cached node.
@@ -434,8 +442,7 @@ class Calendar extends RowPluginBase {
             $storage_format = DATETIME_DATETIME_STORAGE_FORMAT;
           }
         }
-        $timezone = new \DateTimeZone(DateTimeItemInterface::STORAGE_TIMEZONE);
-        $item_start_date = $item_end_date = \DateTime::createFromFormat($storage_format, $row->{$info['query_name']}, $timezone);
+        $item_start_date = $item_end_date = \DateTime::createFromFormat($storage_format, $row->{$info['query_name']});
 
 //        $db_tz   = date_get_timezone_db($tz_handling, isset($item->$tz_field) ? $item->$tz_field : timezone_name_get($dateInfo->getTimezone()));
 //        $to_zone = date_get_timezone($tz_handling, isset($item->$tz_field)) ? $item->$tz_field : timezone_name_get($dateInfo->getTimezone());
@@ -463,6 +470,11 @@ class Calendar extends RowPluginBase {
       if (empty($item_start_date)) {
         continue;
       }
+
+      // Set the item date to the proper display timezone;
+      // @todo handle timezones
+//      $item_start_date->setTimezone(new dateTimezone($to_zone));
+//      $item_end_date->setTimezone(new dateTimezone($to_zone));
 
       $event->setStartDate($item_start_date);
       $event->setEndDate($item_end_date);
