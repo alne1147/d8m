@@ -1,6 +1,7 @@
-id: ci_files
 langcode: en
 status: true
+dependencies: {  }
+id: ci_files
 migration_group: default
 label: 'Ci files'
 source:

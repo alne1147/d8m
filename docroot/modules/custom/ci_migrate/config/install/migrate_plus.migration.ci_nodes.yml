@@ -1,9 +1,5 @@
 id: ci_nodes
 migration_group: default
-dependencies:
-  enforced:
-    module:
-      - ci_migrate
 label: Prepare Content
 source:
   plugin: ci_nodes
