@@ -9,7 +9,7 @@ migration_group: default
 label: 'Ci files'
 source:
   plugin: ci_files
-  key: migrate
+  key: prepare
   constants:
     source_base_path: 'https://colorado.gov/'
 process:
