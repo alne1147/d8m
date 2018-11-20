@@ -30,11 +30,6 @@ drush dcdi --y;
 drush uli;
 drush cim --partial sole --y;
 drush cim --partial post-sync --y;
-drush en menu_reference_render --y;
 drush cr --y;
-drush en yaml_content --y;
-drush en ci_templates -y;
-drush yaml-content-import-module ci_templates;
-drush en ci_dc_import;
 
 echo "That's the end of the D8M install script!"

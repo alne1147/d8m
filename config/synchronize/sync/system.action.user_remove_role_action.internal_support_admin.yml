@@ -1,0 +1,14 @@
+uuid: 4c8ed8fa-d2d4-4305-9e1e-af4bb739d382
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.internal_support_admin
+  module:
+    - user
+id: user_remove_role_action.internal_support_admin
+label: 'Remove the Internal Support Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: internal_support_admin

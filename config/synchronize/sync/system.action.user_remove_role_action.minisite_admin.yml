@@ -1,0 +1,14 @@
+uuid: bb3bc511-01b2-4d02-91ba-67d1fadbf228
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.minisite_admin
+  module:
+    - user
+id: user_remove_role_action.minisite_admin
+label: 'Remove the minisite admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: minisite_admin
