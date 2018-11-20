@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ci_files
+migration_group: default
+label: 'Ci files'
+source:
+  plugin: ci_files
+  key: upgrade
+  constants:
+    source_base_path: 'https://colorado.gov/'
+process:
+  filename: filename
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - filepath
+    -
+      plugin: urlencode
+  destination_full_path:
+    plugin: file_uri
+    source:
+      - filepath
+      - file_directory_path
+      - temp_directory_path
+      - is_public
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@destination_full_path'
+  filemime: filemime
+  status: status
+  changed: timestamp
+  uid: uid
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }
+_core:
+  default_config_hash: F8ZExO_qTrTt8rxdcXWJKJg6oNcq2JU2GLV_dSgaKZE

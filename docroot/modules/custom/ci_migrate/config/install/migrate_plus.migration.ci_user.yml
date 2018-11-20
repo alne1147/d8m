@@ -61,3 +61,4 @@ destination:
 migration_dependencies:
   required:
     - ci_user_role
+    - migrate_file

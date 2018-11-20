@@ -5,7 +5,7 @@ source:
   plugin: ci_nodes
   key: prepare
 process:
-  type: dest_type
+  type: type
   path: alias
   status: status
   created: created
@@ -14,107 +14,9 @@ process:
   sticky: sticky
   uid:
     plugin: migration_lookup
-    migration: d6_user
+    migration: ci_user
     source: uid
   title: title
-  field_short_title: field_short_title
-  field_subhead: field_subhead
-  field_primary_content:
-    plugin: node_paragraph_textarea
-    source: body
-  field_file_upload:
-    plugin: sub_process
-    source: field_upload
-    process:
-      target_id: target_id
-  field_video/0/value: field_video
-  field_related_content:
-    plugin: sub_process
-    source: field_related_content
-    process:
-      target_id: target_id
-  field_cases:
-    plugin: sub_process
-    source: field_cases
-    process:
-      target_id: target_id
-  field_issue:
-    plugin: sub_process
-    source: field_issue_tids
-    process:
-      target_id: target_id
-  field_region:
-    plugin: sub_process
-    source: field_region_tids
-    process:
-      target_id: target_id
-  field_work:
-    plugin: sub_process
-    source: field_work_tids
-    process:
-      target_id: target_id
-  field_publication_document_type:
-    plugin: sub_process
-    source: field_publication_document_type_tids
-    process:
-      target_id: target_id
-  field_new_ty:
-    plugin: sub_process
-    source: field_new_ty_tids
-    process:
-      target_id: target_id
-  field_state: field_state_tid
-  field_status: field_status_tid
-  field_owner: field_owner_nid
-  field_thumbnail_image/target_id:
-    plugin: media_generate
-    destination_field: field_media_image
-    value_key: mid
-    bundle: image
-    bundle_key: bundle
-    entity_type: media
-    ignore_case: true
-    source: field_thumb/fid
-  field_image/target_id:
-    plugin: media_generate
-    destination_field: field_media_image
-    value_key: mid
-    bundle: image
-    bundle_key: bundle
-    entity_type: media
-    ignore_case: true
-    source: field_image/fid
-  field_hero/target_id:
-    plugin: media_generate
-    destination_field: field_media_image
-    value_key: mid
-    bundle: image
-    bundle_key: bundle
-    entity_type: media
-    ignore_case: true
-    source: field_feature_banner/fid
-  field_link:
-    plugin: sub_process
-    source: field_link_arr
-    process:
-      uri: url
-      title: title
-  field_roles:
-    plugin: sub_process
-    source: field_roles_vals
-    process:
-      value: value
-  field_job_title:
-    plugin: get
-    source: field_job_title
-  field_expertise:
-    plugin: get
-    source: field_expertise
-  field_profile_title:
-    plugin: sub_process
-    source: field_profile_title_tids
-    process:
-      target_id: target_id
 destination:
   plugin: entity:node
   default_bundle: dest_type
