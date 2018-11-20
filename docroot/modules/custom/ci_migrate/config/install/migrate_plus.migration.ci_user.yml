@@ -8,6 +8,9 @@ class: Drupal\user\Plugin\migrate\User
 source:
   plugin: d7_user
   key: upgrade
+  constants:
+    base_path: 'https://www.colorado.gov/pacific/sites/default/files/pictures'
+    file_destination: 'public://pictures/'
 process:
   # If you are using this file to build a custom migration consider removing
   # the uid field to allow incremental migrations.
@@ -37,17 +40,24 @@ process:
     plugin: migration_lookup
     migration: d7_user_role
     source: roles
+  _user_picture_prep:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/base_path
+      - picture
   user_picture:
     -
-      plugin: default_value
+      plugin: skip_on_empty
+      method: process
       source: picture
-      default_value: null
     -
-      plugin: migration_lookup
-      migration: d7_file
+      plugin: image_import
+      destination: constants/file_destination
+      source: '@_user_picture_prep'
+      skip_on_missing_source: true
 destination:
   plugin: entity:user
 migration_dependencies:
   required:
     - ci_user_role
-    - ci_files
