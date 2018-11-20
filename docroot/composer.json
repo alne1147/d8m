@@ -41,6 +41,7 @@
         "drupal/jquery_colorpicker": "^1.4",
         "drupal/libraries": "^3.0",
         "drupal/masquerade": "^2.0",
+        "drupal/media_entity": "^1.8",
         "drupal/menu_block": "^1.5",
         "drupal/metatag": "^1.5",
         "drupal/migrate_file": "^1.1",
