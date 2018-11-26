@@ -1,0 +1,30 @@
+uuid: 4578d4cc-abc3-41df-84c0-3a42f8eea1f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_icon_position
+field_name: field_icon_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: icon-card-left
+      label: 'Icon on Left'
+    -
+      value: icon-card-right
+      label: 'Icon on Right'
+    -
+      value: icon-card-top
+      label: 'Icon Above'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

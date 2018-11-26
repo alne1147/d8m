@@ -125,15 +125,15 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% endif %}
 
 
-{% if content.field_title_color|render|striptags|trim %}
-{# Prints div with classes, and content without Width and Background. #}
+{# {% if content.field_title_color|render|striptags|trim %}
+{# Prints div with classes, and content without Width and Background.
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
     {{ title_suffix }}
     <div class="paragraph__title {{content.field_title_color[0] }}">
       {{ content.field_card_title }}
     </div>
-    {{ content|without('bp_width', 'field_icon_card_background', 'field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
+    {{ content|without('bp_width', 'field_icon_card_background', 'field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
     <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
       <div class="paragraph__card--icon"> {{ content.field_icon }} </div>
       <div class="paragraph__card--icon-text"> {{  content.field_text }} </div>
@@ -146,11 +146,74 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
       <div class="paragraph__title">
           {{ content.field_card_title }}
       </div>
-        {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text') }}
+        {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
       <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
-        <div class="paragraph__card--icon"> {{ content.field_icon }} </div>
-        <div class="paragraph__card--icon-text"> {{  content.field_text }} </div>
+        <div class="paragraph__card--icon col-sm-4"> {{ content.field_icon }} </div>
+        <div class="paragraph__card--icon-text col-sm-8"> {{  content.field_text }} </div>
       </a>
     </div>
   </div>
-{% endif %}
+{% endif %} #}
+
+
+{% if content.field_icon_position.0['#markup'] == 'icon-card-top' %}
+  <div class="icon-card-top">
+    <div{{ attributes.addClass(classes) }}>
+      <div class="paragraph__column">
+        <div class="paragraph__title">
+          {{ content.field_card_title }}
+        </div>
+        {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
+        <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
+          <div class="paragraph__card--icon"> {{ content.field_icon }} </div>
+          <div class="paragraph__card--icon-text"> {{  content.field_text }} </div>
+        </a>
+      </div>
+    </div>
+  </div>
+{% elseif content.field_icon_position.0['#markup']  == 'icon-card-left' %}
+  <div class="icon-card-left">
+    <div{{ attributes.addClass(classes) }}>
+        <div class="paragraph__column">
+          <div class="paragraph__title">
+            {{ content.field_card_title }}
+          </div>
+          {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
+          <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
+            <div class="paragraph__card--icon col-sm-4"> {{ content.field_icon }} </div>
+            <div class="paragraph__card--icon-text col-sm-8"> {{  content.field_text }} </div>
+          </a>
+        </div>
+      </div>
+    </div>
+{% elseif content.field_icon_position.0['#markup']  == 'icon-card-right' %}
+  <div class="icon-card-right">
+    <div{{ attributes.addClass(classes) }}>
+      <div class="paragraph__column">
+        <div class="paragraph__title">
+          {{ content.field_card_title }}
+        </div>
+        {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
+        <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
+          <div class="paragraph__card--icon-text col-sm-8"> {{  content.field_text }} </div>
+          <div class="paragraph__card--icon col-sm-4"> {{ content.field_icon }} </div>
+        </a>
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div class="icon-card-top">
+      <div{{ attributes.addClass(classes) }}>
+        <div class="paragraph__column">
+          <div class="paragraph__title">
+            {{ content.field_card_title }}
+          </div>
+          {{ content|without('bp_width', 'field_icon_card_background','field_icon', 'field_card_title', 'field_title_color', 'field_link', 'field_text', 'field_icon_position') }}
+          <a class="paragraph__card--icon-link" href="{{ content.field_link }}">
+            <div class="paragraph__card--icon-text"> {{  content.field_text }} </div>
+            <div class="paragraph__card--icon"> {{ content.field_icon }} </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endif %}

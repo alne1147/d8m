@@ -1,0 +1,126 @@
+uuid: d421369b-e2d9-49e6-8141-b4abf9377db2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_icon.field_icon
+    - field.field.paragraph.card_icon.field_icon_card_background
+    - field.field.paragraph.card_icon.field_icon_position
+    - field.field.paragraph.card_icon.field_link
+    - field.field.paragraph.card_icon.field_text
+    - paragraphs.paragraphs_type.card_icon
+  module:
+    - content_moderation
+    - field_group
+    - fontawesome
+    - link
+third_party_settings:
+  field_group:
+    group_card_icon_edit:
+      children:
+        - group_icon
+        - group_link
+        - group_color
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Card- Icon - Edit'
+      region: content
+    group_icon:
+      children:
+        - field_icon
+        - field_text
+        - field_icon_position
+      parent_name: group_card_icon_edit
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Icon
+      region: content
+    group_color:
+      children:
+        - field_icon_card_background
+      parent_name: group_card_icon_edit
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Color
+      region: content
+    group_link:
+      children:
+        - field_link
+      parent_name: group_card_icon_edit
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Link
+      region: content
+id: paragraph.card_icon.default
+targetEntityType: paragraph
+bundle: card_icon
+mode: default
+content:
+  field_icon:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_icon_card_background:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_icon_position:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 1
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true
