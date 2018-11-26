@@ -1,9 +1,9 @@
-uuid: bbb86329-8a8e-41c1-a143-1c03dc89fb3c
+uuid: bab1b7eb-f3ed-494e-bd68-76907b00b28d
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: r52v5_HIn-nEHGgdsasdS85IpBq6LEcXfJQY9hcjUvk
+  default_config_hash: qWIN7DAF4uUWJC4DsKRFrradtth0yvnMBosplOjxopo
 id: ci_user
 class: Drupal\user\Plugin\migrate\User
 field_plugin_method: null
@@ -29,22 +29,10 @@ process:
   login: login
   status: status
   timezone: timezone
-  langcode:
-    plugin: user_langcode
-    source: entity_language
-    fallback_to_site_default: false
-  preferred_langcode:
-    plugin: user_langcode
-    source: language
-    fallback_to_site_default: true
-  preferred_admin_langcode:
-    plugin: user_langcode
-    source: language
-    fallback_to_site_default: true
   init: init
   roles:
     plugin: migration_lookup
-    migration: d7_user_role
+    migration: ci_user_role
     source: roles
   _user_picture_prep:
     plugin: concat
