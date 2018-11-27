@@ -123,6 +123,8 @@ module:
   options: 0
   page_cache: 0
   panelbutton: 0
+  paragraphs_admin: 0
+  paragraphs_library: 0
   paragraphs_type_permissions: 0
   path: 0
   purge: 0

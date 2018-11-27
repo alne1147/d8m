@@ -822,324 +822,6 @@ $apachesolr_environment_ids = [ "acquia_search_server_1" ];
  * DO NOT EDIT BELOW THIS LINE =================================================
  */
  
-$acquia_search_available_cores = [
-
-  // Entry for CDIY-145117. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117/admin/ping
-  "CDIY-145117" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117",
-    "derived_key" => "782d0f4dcb6af6237010225476baf1a7b73cf681",
-  ],
-
-  // Entry for CDIY-145117.dev.default. Test at http://useast1-c1.acquia-search.com/solr/CDIY-145117.dev.default/admin/ping
-  "CDIY-145117.dev.default" => [
-    "host" => "useast1-c1.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.default",
-    "derived_key" => "8e4e9b45b93ad5e8ddb0f3f68e680a5b8830bad2",
-  ],
-
-  // Entry for CDIY-145117.test.default. Test at http://useast1-c1.acquia-search.com/solr/CDIY-145117.test.default/admin/ping
-  "CDIY-145117.test.default" => [
-    "host" => "useast1-c1.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.default",
-    "derived_key" => "3415143f07cc23971c8d45fb1441bb3a936c1686",
-  ],
-
-  // SHARED //
-  // Entry for CDIY-145117.dev.agcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.agcoloradogov/admin/ping
-  "CDIY-145117.dev.agcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.agcoloradogov",
-    "derived_key" => "781ecf80727eb2417d3ae500c5d5a16c1011dddb",
-  ],
-
-  // Entry for CDIY-145117.prod.agcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.agcoloradogov/admin/ping
-  "CDIY-145117.prod.agcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.agcoloradogov",
-    "derived_key" => "cecacbb873529eca76c685f15faa0a1422be41a9",
-  ],
-
-  // Entry for CDIY-145117.test.agcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.agcoloradogov/admin/ping
-  "CDIY-145117.test.agcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.agcoloradogov",
-    "derived_key" => "86cd524a8c235c3b86c8077633f9a41067c1eefc",
-  ],
-  // SHARED //
-  // Entry for CDIY-145117.dev.cdlecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.cdlecoloradogov/admin/ping
-	  "CDIY-145117.dev.cdlecoloradogov" => [
-	    "host" => "useast1-c26.acquia-search.com",
-	    "path" => "/solr/CDIY-145117.dev.agcoloradogov",
-	    "derived_key" => "781ecf80727eb2417d3ae500c5d5a16c1011dddb",
-	  ],
-
-  // Entry for CDIY-145117.prod.cdlecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.cdlecoloradogov/admin/ping
-  "CDIY-145117.prod.cdlecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.cdlecoloradogov",
-    "derived_key" => "77accc90f5606c4c9110e61540954614b0ba2c76",
-  ],
-
-  // Entry for CDIY-145117.test.cdlecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.cdlecoloradogov/admin/ping
-  "CDIY-145117.test.cdlecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.cdlecoloradogov",
-    "derived_key" => "99112d1176791a03b9f2143489992b1132b352e1",
-  ],
-
-  // Entry for CDIY-145117.dev.cdphecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.cdphecoloradogov/admin/ping
-  "CDIY-145117.dev.cdphecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.cdphecoloradogov",
-    "derived_key" => "7cd1880f0109dd49f16fab7a8b1904561a9f2258",
-  ],
-
-  // Entry for CDIY-145117.prod.cdphecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.cdphecoloradogov/admin/ping
-  "CDIY-145117.prod.cdphecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.cdphecoloradogov",
-    "derived_key" => "1b15859de15ee8b8eed8503495ecee6b6f931881",
-  ],
-
-  // Entry for CDIY-145117.test.cdphecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.cdphecoloradogov/admin/ping
-  "CDIY-145117.test.cdphecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.cdphecoloradogov",
-    "derived_key" => "0f925a4a6fa5e5db0c8db30951ad373f3f30d7c5",
-  ],
-
-  // Entry for CDIY-145117.dev.cdpscoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.cdpscoloradogov/admin/ping
-  "CDIY-145117.dev.cdpscoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.cdpscoloradogov",
-    "derived_key" => "fe66e937d3469d1d0d857159a75647cbaa644cdf",
-  ],
-
-  // Entry for CDIY-145117.prod.cdpscoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.cdpscoloradogov/admin/ping
-  "CDIY-145117.prod.cdpscoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.cdpscoloradogov",
-    "derived_key" => "f8bd814c06fff90e499675c7c55e60d6712939cf",
-  ],
-
-  // Entry for CDIY-145117.test.cdpscoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.cdpscoloradogov/admin/ping
-  "CDIY-145117.test.cdpscoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.cdpscoloradogov",
-    "derived_key" => "3349e86c433ec548b8c48c76ebc6d631334d3e4a",
-  ],
-
-  // Entry for CDIY-145117.dev.cicoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.cicoloradogov/admin/ping
-  "CDIY-145117.dev.cicoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.cicoloradogov",
-    "derived_key" => "4793e027a7f176fc49cf97c6bf7e68c6e53726cc",
-  ],
-
-  // Entry for CDIY-145117.prod.cicoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.cicoloradogov/admin/ping
-  "CDIY-145117.prod.cicoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.cicoloradogov",
-    "derived_key" => "04f78b6efa8de3bca31e4b761e3810bc7d4f7a8b",
-  ],
-
-  // Entry for CDIY-145117.test.cicoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.cicoloradogov/admin/ping
-  "CDIY-145117.test.cicoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.cicoloradogov",
-    "derived_key" => "6c84834e1780b79d61a51b235f5e998ae52d12f6",
-  ],
-
-  // Entry for CDIY-145117.dev.dhsemcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.dhsemcoloradogov/admin/ping
-  "CDIY-145117.dev.dhsemcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.dhsemcoloradogov",
-    "derived_key" => "94d0dbd6544e3854e3ec99a10c81e0140fb5fc62",
-  ],
-
-  // Entry for CDIY-145117.prod.dhsemcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.dhsemcoloradogov/admin/ping
-  "CDIY-145117.prod.dhsemcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.dhsemcoloradogov",
-    "derived_key" => "e8bd5dc0697bfa0596128db7d4807866bebeeddf",
-  ],
-
-  // Entry for CDIY-145117.test.dhsemcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.dhsemcoloradogov/admin/ping
-  "CDIY-145117.test.dhsemcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.dhsemcoloradogov",
-    "derived_key" => "31afbcbab79e8e2b0bdbd7feeb943e0024ee917c",
-  ],
-
-  // Entry for CDIY-145117.dev.dolacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.dolacoloradogov/admin/ping
-  "CDIY-145117.dev.dolacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.dolacoloradogov",
-    "derived_key" => "9519f282ce10761ff2d7ba3d11bb0169f196e7d4",
-  ],
-
-  // Entry for CDIY-145117.prod.dolacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.dolacoloradogov/admin/ping
-  "CDIY-145117.prod.dolacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.dolacoloradogov",
-    "derived_key" => "88d6a2c0938639be004c25497a253a33b70349c8",
-  ],
-
-  // Entry for CDIY-145117.test.dolacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.dolacoloradogov/admin/ping
-  "CDIY-145117.test.dolacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.dolacoloradogov",
-    "derived_key" => "fb6a33ec46801d7312e74a50cffde9d64be7a34e",
-  ],
-
-  // Entry for CDIY-145117.dev.doracoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.doracoloradogov/admin/ping
-  "CDIY-145117.dev.doracoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.doracoloradogov",
-    "derived_key" => "5bb50088a860f6c1edf72158d860387107edd077",
-  ],
-
-  // Entry for CDIY-145117.prod.doracoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.doracoloradogov/admin/ping
-  "CDIY-145117.prod.doracoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.doracoloradogov",
-    "derived_key" => "398770e0cdfaf26abd68b0b3a23c23ff686510fb",
-  ],
-
-  // Entry for CDIY-145117.test.doracoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.doracoloradogov/admin/ping
-  "CDIY-145117.test.doracoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.doracoloradogov",
-    "derived_key" => "eb5daa4c774818186016a29308c2699420f343b4",
-  ],
-
-  // Entry for CDIY-145117.dev.dpacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.dpacoloradogov/admin/ping
-  "CDIY-145117.dev.dpacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.dpacoloradogov",
-    "derived_key" => "270229fb834186578b5cd481c49dd957db613cda",
-  ],
-
-  // Entry for CDIY-145117.prod.dpacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.dpacoloradogov/admin/ping
-  "CDIY-145117.prod.dpacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.dpacoloradogov",
-    "derived_key" => "3ef8799c44ddbc50db3e5e1958cc4f21a68cd851",
-  ],
-
-  // Entry for CDIY-145117.test.dpacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.dpacoloradogov/admin/ping
-  "CDIY-145117.test.dpacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.dpacoloradogov",
-    "derived_key" => "380ca8c988b67847673ce8f827329b6ea6961611",
-  ],
-
-  // Entry for CDIY-145117.dev.estescoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.estescoloradogov/admin/ping
-  "CDIY-145117.dev.estescoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.estescoloradogov",
-    "derived_key" => "29c9e9ce284fad757b20083918d48651bf631d22",
-  ],
-
-  // Entry for CDIY-145117.prod.estescoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.estescoloradogov/admin/ping
-  "CDIY-145117.prod.estescoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.estescoloradogov",
-    "derived_key" => "af8cf556ba685b4b83198f86ba5458d0a954ac0e",
-  ],
-
-  // Entry for CDIY-145117.test.estescoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.estescoloradogov/admin/ping
-  "CDIY-145117.test.estescoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.estescoloradogov",
-    "derived_key" => "02a41cb99e798873131a781dfdb1254952097f16",
-  ],
-
-  // Entry for CDIY-145117.dev.hcpfcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.hcpfcoloradogov/admin/ping
-  "CDIY-145117.dev.hcpfcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.hcpfcoloradogov",
-    "derived_key" => "a617cc8438f6d1dd45b9346a7b89c47fbc888c66",
-  ],
-
-  // Entry for CDIY-145117.prod.hcpfcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.hcpfcoloradogov/admin/ping
-  "CDIY-145117.prod.hcpfcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.hcpfcoloradogov",
-    "derived_key" => "616b7dbdada45c08917e4ac3e71cde72a2f8fb35",
-  ],
-
-  // Entry for CDIY-145117.test.hcpfcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.hcpfcoloradogov/admin/ping
-  "CDIY-145117.test.hcpfcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.hcpfcoloradogov",
-    "derived_key" => "eeb46f93fe70204fa1402d03c2b8d5ad3f936b16",
-  ],
-
-  // Entry for CDIY-145117.dev.revenuecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.revenuecoloradogov/admin/ping
-  "CDIY-145117.dev.revenuecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.revenuecoloradogov",
-    "derived_key" => "77994ccfe72c62c931fbdbe6bfd674b761f86c06",
-  ],
-
-  // Entry for CDIY-145117.prod.revenuecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.revenuecoloradogov/admin/ping
-  "CDIY-145117.prod.revenuecoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.revenuecoloradogov",
-    "derived_key" => "897bd82827df2159df8557fb97218fbd50b337c7",
-  ],
-
-  // Entry for CDIY-145117.test.revenuecoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.revenuecoloradogov/admin/ping
-  "CDIY-145117.test.revenuecoloradogov" => [
-	  "host" => "useast1-c26.acquia-search.com",
-	  "path" => "/solr/CDIY-145117.dev.revenuecoloradogov",
-    "derived_key" => "e07c78ccdb9be494b4dd59225da9cbfc8b800817",
-  ],
-
-  // Entry for CDIY-145117.dev.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.sipacoloradogov/admin/ping
-  "CDIY-145117.dev.sipacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.sipacoloradogov",
-    "derived_key" => "acb35a52001a6866bc6416eae14cb4da6c54719f",
-  ],
-
-  // Entry for CDIY-145117.prod.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.sipacoloradogov/admin/ping
-  "CDIY-145117.prod.sipacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.sipacoloradogov",
-    "derived_key" => "a7de9869dcca0250040592377deb72918d8c3fc8",
-  ],
-
-  // Entry for CDIY-145117.test.sipacoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.sipacoloradogov/admin/ping
-  "CDIY-145117.test.sipacoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.sipacoloradogov",
-    "derived_key" => "be0e13e60be9efcbd1449855c842fca077837410",
-  ],
-
-  // Entry for CDIY-145117.dev.slbcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.dev.slbcoloradogov/admin/ping
-  "CDIY-145117.dev.slbcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.dev.slbcoloradogov",
-    "derived_key" => "34ae8a31a883629f6b1ae0a69b7b918ab37a3ded",
-  ],
-
-  // Entry for CDIY-145117.prod.slbcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.prod.slbcoloradogov/admin/ping
-  "CDIY-145117.prod.slbcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.prod.slbcoloradogov",
-    "derived_key" => "b421dd90e1fca2eac5b122cf6afba24f2e51beb1",
-  ],
-
-  // Entry for CDIY-145117.test.slbcoloradogov. Test at http://useast1-c26.acquia-search.com/solr/CDIY-145117.test.slbcoloradogov/admin/ping
-  "CDIY-145117.test.slbcoloradogov" => [
-    "host" => "useast1-c26.acquia-search.com",
-    "path" => "/solr/CDIY-145117.test.slbcoloradogov",
-    "derived_key" => "19ee64af069c909ca17fa1a33ee380f69aec9225",
-  ],
-];
 
 // Default to the FALLBACK core. 
 $core_id = $acquia_search_environment_mapping["FALLBACK"];
@@ -1193,3 +875,40 @@ $config['image.settings']['allow_insecure_derivatives'] = TRUE;
 
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
+
+
+$config['system.site']['machine_name'] = 'ag';
+$config['system.site']['minisite_nid'] = '46786';
+$settings['hash_salt'] = 'iudwh4899fj34o';
+$config['system.logging']['error_level'] = 'verbose';
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+$settings['rebuild_access'] = TRUE;
+$settings['skip_permissions_hardening'] = TRUE;
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';
+
+$databases['default']['default'] = array(
+   'driver' => 'mysql',
+   'database' => 'd8m',
+    'username' => 'root',
+   'password' => 'root',
+   'host' => 'localhost',
+    'prefix' => '',
+  );
+  
+  $databases['upgrade']['default'] = array(
+     'driver' => 'mysql',
+     'database' => 'pacific',
+      'username' => 'root',
+     'password' => 'root',
+     'host' => 'localhost',
+      'prefix' => '',
+    );
+    $databases['prepare']['default'] = array(
+       'driver' => 'mysql',
+       'database' => 'd8mprep',
+        'username' => 'root',
+       'password' => 'root',
+       'host' => 'localhost',
+        'prefix' => '',
+      );

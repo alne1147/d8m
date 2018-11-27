@@ -1,0 +1,22 @@
+uuid: 0714d3e8-f44a-46fe-935b-686473694ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jumbo_slides
+id: node.jumbo_slides.status
+field_name: status
+entity_type: node
+bundle: jumbo_slides
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

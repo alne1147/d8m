@@ -1,0 +1,23 @@
+uuid: 02fce401-859c-497b-8ea1-3f75e769c712
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jumbotron_link
+    - node.type.jumbo_slides
+  module:
+    - link
+id: node.jumbo_slides.field_jumbotron_link
+field_name: field_jumbotron_link
+entity_type: node
+bundle: jumbo_slides
+label: 'Jumbotron Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

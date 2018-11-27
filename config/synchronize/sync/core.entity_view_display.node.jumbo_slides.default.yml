@@ -1,0 +1,52 @@
+uuid: 0a1c95ac-5801-453b-8dfa-c298e20ca9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jumbo_slides.body
+    - field.field.node.jumbo_slides.field_jumbotron_image
+    - field.field.node.jumbo_slides.field_jumbotron_link
+    - node.type.jumbo_slides
+  module:
+    - link
+    - text
+    - user
+id: node.jumbo_slides.default
+targetEntityType: node
+bundle: jumbo_slides
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_jumbotron_image:
+    type: entity_reference_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_jumbotron_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

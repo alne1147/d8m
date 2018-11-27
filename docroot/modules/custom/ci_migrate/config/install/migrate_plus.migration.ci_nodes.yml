@@ -10,13 +10,15 @@ process:
   status: status
   created: created
   changed: changed
-  promote: promote
-  sticky: sticky
   uid:
     plugin: migration_lookup
     migration: ci_user
     source: uid
   title: title
+  'body/body_value': body
+  'body/summary': teaser
+  'body/format': 'full_html'
+  
 destination:
   plugin: entity:node
   default_bundle: dest_type

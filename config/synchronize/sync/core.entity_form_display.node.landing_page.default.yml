@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
     - field.field.node.landing_page.field_hide_navigation_bar
+    - field.field.node.landing_page.field_jumbo
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
@@ -120,6 +121,7 @@ third_party_settings:
       children:
         - field_jumbotron_options
         - field_jumbotron
+        - field_jumbo
       parent_name: group_display
       weight: 7
       format_type: fieldset
@@ -315,6 +317,18 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_jumbo:
+    type: entity_reference_paragraphs
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_jumbotron:
     weight: 9

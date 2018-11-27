@@ -1,0 +1,50 @@
+uuid: bf1fb207-3133-4375-b08e-80481597d179
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbo.field_banner
+    - field.field.paragraph.jumbo.field_banner_body
+    - field.field.paragraph.jumbo.field_banner_link
+    - field.field.paragraph.jumbo.field_banner_title
+    - paragraphs.paragraphs_type.jumbo
+  module:
+    - image
+id: paragraph.jumbo.default
+targetEntityType: paragraph
+bundle: jumbo
+mode: default
+content:
+  field_banner:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_banner_body:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_banner_link:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_banner_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

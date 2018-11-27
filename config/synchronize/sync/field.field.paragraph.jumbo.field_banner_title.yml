@@ -1,0 +1,19 @@
+uuid: 1f100fd4-cbc3-4722-b8fb-576ffa477762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_title
+    - paragraphs.paragraphs_type.jumbo
+id: paragraph.jumbo.field_banner_title
+field_name: field_banner_title
+entity_type: paragraph
+bundle: jumbo
+label: 'Banner Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

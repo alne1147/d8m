@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
     - field.field.node.landing_page.field_hide_navigation_bar
+    - field.field.node.landing_page.field_jumbo
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
@@ -33,6 +34,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_jumbo:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_rows:
     weight: 2
     label: hidden

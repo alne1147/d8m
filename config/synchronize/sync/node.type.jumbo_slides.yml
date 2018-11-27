@@ -1,0 +1,29 @@
+uuid: cc6fd49f-e1b2-40bd-a822-a3a1cd68007d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: null
+    fields_display_mode: null
+    publish_enable: false
+    publish_past_date: null
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Jumbo Slides'
+type: jumbo_slides
+description: 'Add Jumbotron Slide Images to re-use throughout the site.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

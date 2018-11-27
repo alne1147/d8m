@@ -1,0 +1,30 @@
+uuid: ed832093-99fe-4334-b879-b0b35fca647b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jumbo_slides.body
+    - node.type.jumbo_slides
+  module:
+    - text
+    - user
+id: node.jumbo_slides.teaser
+targetEntityType: node
+bundle: jumbo_slides
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

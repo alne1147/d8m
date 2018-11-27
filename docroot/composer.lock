@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77f3491c90966225110e5e0debbd2d7e",
+    "content-hash": "e4259b9c48063f8710e4acd851d14795",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1918,6 +1918,60 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/config_update"
             }
+        },
+        {
+            "name": "drupal/content_sync",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_sync",
+                "reference": "4c259ebbde12c4ca02612112bcaddb3ba581d0f3"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0+3-dev",
+                    "datestamp": "1524798184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Blanca.Esqueda",
+                    "homepage": "https://www.drupal.org/user/3082389"
+                },
+                {
+                    "name": "chris.smith",
+                    "homepage": "https://www.drupal.org/user/1812018"
+                },
+                {
+                    "name": "dabito",
+                    "homepage": "https://www.drupal.org/user/2400660"
+                },
+                {
+                    "name": "david4lim",
+                    "homepage": "https://www.drupal.org/user/934262"
+                }
+            ],
+            "description": "Allows to import/export content using YAML files",
+            "homepage": "https://www.drupal.org/project/content_sync",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_sync"
+            },
+            "time": "2018-05-12T00:09:17+00:00"
         },
         {
             "name": "drupal/context",
@@ -9655,6 +9709,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/calendar": 20,
+        "drupal/content_sync": 20,
         "drupal/dropzonejs": 20,
         "drupal/embed_image_style_permissions": 20,
         "drupal/field_slideshow": 20,
