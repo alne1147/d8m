@@ -1,0 +1,135 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 925
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f5a46b8e-9bbe-412a-a1d2-fe58974708c4"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3577
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-11-27T22:24:44+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "926"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_tab_section_body"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>Nullam maximus aliquet nibh non pretium. Etiam eu neque interdum, gravida lectus eu, tempus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales porta ante, a volutpat purus ultricies et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vel libero orci. Maecenas in elit semper, lobortis lacus vitae, bibendum ligula. Nam vitae velit massa. Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p>Nullam maximus aliquet nibh non pretium. Etiam eu neque interdum, gravida lectus eu, tempus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales porta ante, a volutpat purus ultricies et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vel libero orci. Maecenas in elit semper, lobortis lacus vitae, bibendum ligula. Nam vitae velit massa. Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "More Stuff"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/62?_format=hal_json"
+            "href": "http:\/\/default\/woman?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/contact"
@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 264
+            "value": 284
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-10-31T21:29:34+00:00",
+            "value": "2018-11-28T17:24:12+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
                     }
                 ],
                 "lang": "en"
@@ -95,7 +95,7 @@
     ],
     "title": [
         {
-            "value": "Business Woman",
+            "value": "Woman",
             "lang": "en"
         }
     ],
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-10-31T21:29:34+00:00",
+            "value": "2018-11-28T17:24:12+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -146,10 +146,18 @@
     "metatag": [
         {
             "value": {
-                "title": "Business Woman | CI Drupal 8",
-                "canonical_url": "http:\/\/default\/node\/62",
+                "title": "Woman | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/woman",
                 "description": "Arcu bibendum at varius vel pharetra vel turpis nunc eget. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Varius vel pharetra vel turpis nunc. Lectus magna fringilla urna porttitor rhoncus dolor purus non. Pretium fusce id velit ut tortor pretium. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Porta lorem mollis aliquam ut porttitor leo a diam. Neque sodales ut etiam sit amet nisl purus in. Velit laoreet id donec ultrices tincidunt arcu non sodales."
             }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/woman",
+            "pid": 173,
+            "langcode": "en",
+            "lang": "en"
         }
     ],
     "body": [
@@ -186,7 +194,18 @@
             "value": "email@example.com"
         }
     ],
+    "field_first_name": [
+        {
+            "value": "Business"
+        }
+    ],
     "field_hide_breadcrumbs": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "field_hide_navigation_bar": [
         {
             "value": false,
             "lang": "en"

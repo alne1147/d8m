@@ -1,0 +1,135 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 927
+        }
+    ],
+    "uuid": [
+        {
+            "value": "3b9658b5-2a4d-487f-8150-76bef06ef12b"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3579
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "card_basic"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-11-27T22:25:09+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "928"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_tab_section_body"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>Aenean finibus quis massa facilisis iaculis. Aliquam et est convallis, ullamcorper magna ut, gravida sapien. Nunc eget purus a nulla tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt egestas. Aliquam porta, risus eget aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa id est.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p>Aenean finibus quis massa facilisis iaculis. Aliquam et est convallis, ullamcorper magna ut, gravida sapien. Nunc eget purus a nulla tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt egestas. Aliquam porta, risus eget aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa id est.<\/p>\n"
+        }
+    ],
+    "field_card_title": [
+        {
+            "value": "Things and Stuff"
+        }
+    ]
+}

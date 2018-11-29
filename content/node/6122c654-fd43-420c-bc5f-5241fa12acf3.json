@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
                     }
                 ],
                 "lang": "en"
@@ -154,7 +154,7 @@
     "path": [
         {
             "alias": "\/best-fourteeners-beginners",
-            "pid": 171,
+            "pid": 172,
             "langcode": "en",
             "lang": "en"
         }
@@ -177,6 +177,11 @@
         {
             "value": false,
             "lang": "en"
+        }
+    ],
+    "field_hide_navigation_bar": [
+        {
+            "value": false
         }
     ],
     "field_landing_page_options": [

@@ -1,25 +1,25 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
+            "href": "http:\/\/default\/sites\/default\/files\/cu.jpg"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
         },
         "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/user\/0?_format=hal_json"
             }
         ]
     },
     "fid": [
         {
-            "value": 2
+            "value": 3
         }
     ],
     "uuid": [
         {
-            "value": "8fd7d04d-3b6e-41f4-a005-95b03223ae9f"
+            "value": "4afb2735-5b43-4d41-98ba-d23f897d4c00"
         }
     ],
     "langcode": [
@@ -32,7 +32,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/0?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -40,7 +40,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "167423a6-b064-4600-b26c-9560165d4edb"
+                        "value": "88ca0871-39fd-4ea0-a62d-f5ae3bdea012"
                     }
                 ]
             }
@@ -48,23 +48,23 @@
     },
     "filename": [
         {
-            "value": "no-thumbnail.png"
+            "value": "cu.jpg"
         }
     ],
     "uri": [
         {
-            "value": "public:\/\/media-icons\/generic\/no-thumbnail.png",
-            "url": "\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
+            "value": "public:\/\/cu.jpg",
+            "url": "\/sites\/default\/files\/cu.jpg"
         }
     ],
     "filemime": [
         {
-            "value": "image\/png"
+            "value": "image\/jpeg"
         }
     ],
     "filesize": [
         {
-            "value": 564
+            "value": 83069
         }
     ],
     "status": [
@@ -74,13 +74,13 @@
     ],
     "created": [
         {
-            "value": "2018-10-31T17:14:46+00:00",
+            "value": "2018-11-27T20:33:29+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2018-10-31T17:14:46+00:00",
+            "value": "2018-11-27T20:33:29+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ]
