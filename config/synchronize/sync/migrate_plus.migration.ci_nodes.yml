@@ -1,9 +1,9 @@
-uuid: 816afc12-4b5e-4d88-a461-734abfaf3a04
+uuid: d3a9a6ec-28f9-44e7-a1f2-155708bd1bd7
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: '-lSuR3rRtSttDeJkNK6WPinwg6Rl6ashx-Kf1441E84'
+  default_config_hash: UF5DT6poUZLtSE5rqyoZvG41k16exIASPw7H2Jf0nBQ
 id: ci_nodes
 class: null
 field_plugin_method: null
@@ -15,22 +15,33 @@ source:
   plugin: ci_nodes
   key: prepare
 process:
-  type: type
+  type: dest_type
   path: alias
   status: status
   created: created
   changed: changed
-  promote: promote
-  sticky: sticky
   uid:
     plugin: migration_lookup
     migration: ci_user
     source: uid
   title: title
+  body/body_value: body
+  body/summary: teaser
+  body/format: full_html
+  field_jumbotron_image/target_id:
+    plugin: media_generate
+    destination_field: field_media_image
+    value_key: mid
+    bundle: image
+    entity_type: media
+    ignore_case: true
+    source: images/fid
+  field_jumbotron_link: image_link
 destination:
   plugin: 'entity:node'
   default_bundle: dest_type
   type: dest_type
 migration_dependencies:
-  required: {  }
+  required:
+    - ci_user
   optional: {  }
