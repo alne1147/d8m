@@ -61,18 +61,9 @@
 {# Sliver Banner/Top Search Bar #}
 {% include directory ~ '/templates/includes/sliver-banner-search.html.twig' %}
 {{ page.search }}
-{# Jumbotron #}
-{% if page.jumbotron %}
-  <div class="jumbotron">
-    {{ page.jumbotron }}
-  </div>
-{% endif %}
 
-{% if node.field_hide_navigation_bar.value %}
-  <div class="no-nav-bar"> </div>
-{% else %}
- {% include directory ~ '/templates/includes/navbar.html.twig' %}
-{% endif %}
+{# Jumbotrom and Top Navigation Bar#}
+   {% include directory ~ '/templates/includes/jumbo-nav.html.twig' %}
 
 {# Main #}
 {% block main %}
