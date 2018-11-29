@@ -7,7 +7,7 @@ source:
   plugin: ci_files
   key: upgrade
   constants:
-    source_base_path: 'https://colorado.gov/'
+    source_base_path: 'http://pacific/pacific'
 process:
   filename: filename
   source_full_path:

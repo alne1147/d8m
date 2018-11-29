@@ -42,6 +42,8 @@ class CiNodes extends SqlBase {
     $query->fields('n', $keys);
 	$config = \Drupal::config('system.site');
 	$query->condition('n.minisite_nids', '%' . db_like($config->get('minisite_nid')) . '%', 'LIKE');
+	$query->condition('n.dest_type', ['article', 'jumbo_slides', 'landing_page', 'minisite', 'page'], 'IN');
+	$query->orderBy('nid', 'ASC');
     return $query;
   }
 
@@ -61,7 +63,11 @@ class CiNodes extends SqlBase {
    */
   public function prepareRow(Row $row) {
     $nid = $row->getSourceProperty('nid');
-    
+	$row->setDestinationProperty('bundle', $row->getSourceProperty('dest_type'));
+	$row->setDestinationProperty('default_bundle', $row->getSourceProperty('dest_type'));
+	$row->setDestinationProperty('type', $row->getSourceProperty('dest_type'));
+	print_r("\n");
+print_r($row);    
     return $row;
   }
 

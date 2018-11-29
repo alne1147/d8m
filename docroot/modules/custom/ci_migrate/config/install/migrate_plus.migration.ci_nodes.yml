@@ -5,7 +5,7 @@ source:
   plugin: ci_nodes
   key: prepare
 process:
-  type: type
+  type: dest_type
   path: alias
   status: status
   created: created
@@ -18,11 +18,20 @@ process:
   'body/body_value': body
   'body/summary': teaser
   'body/format': 'full_html'
-  
+  field_jumbotron_image/target_id:
+    plugin: media_generate
+    destination_field: field_media_image
+    value_key: mid
+    bundle: image
+    entity_type: media
+    ignore_case: true
+    source: images/fid
+  field_jumbotron_link: image_link
 destination:
   plugin: entity:node
   default_bundle: dest_type
   type: dest_type
 migration_dependencies:
-  required: {  }
+  required: 
+    - ci_user
   optional: {  }

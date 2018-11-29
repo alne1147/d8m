@@ -28,8 +28,8 @@ class CiUsers extends SqlBase {
     $keys = ['uid', 'name', 'mail', 'status', 'init', 'created', 'first_name', 'last_name'];
     $query = $this->select('user', 'u');
     $query->fields('u', $keys);
-	$config = \Drupal::config('system.site');
-	$query->condition('u.minisite_nids', '%' . db_like($config->get('minisite_nid')) . '%', 'LIKE');
+	// $config = \Drupal::config('system.site');
+	// $query->condition('u.minisite_nids', '%' . db_like($config->get('minisite_nid')) . '%', 'LIKE');
     return $query;
   }
 
@@ -49,7 +49,6 @@ class CiUsers extends SqlBase {
    */
   public function prepareRow(Row $row) {
     $uid = $row->getSourceProperty('uid');
-print_r("\n" . $uid);
     return parent::prepareRow($row);
   }
 

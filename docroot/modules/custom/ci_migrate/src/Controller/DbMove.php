@@ -87,7 +87,8 @@ class DbMove extends ControllerBase {
 	$query = $database_info->query(
 	      "SELECT nid, vid, type, language, uid, status, title, created, changed
 	        FROM pacific.node
-	        ORDER BY nid DESC LIMIT 0,100000"
+		  # WHERE nid > 111806
+	        ORDER BY nid DESC"
 	    );
 	    $results = $query->fetchAll();
 	    $row = [];
