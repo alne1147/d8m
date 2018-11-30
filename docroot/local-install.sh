@@ -27,14 +27,14 @@ drush en google_analytics --y;
 drush cim --partial sync --y;
 drush cr --y;
 drush dcdi --y;
-drush uli;
+drush en yaml_content --y;
+drush en ci_templates -y;
+drush yaml-content-import-module ci_templates;
 drush cim --partial sole --y;
 drush cim --partial post-sync --y;
 drush en menu_reference_render --y;
 drush cr --y;
-drush en yaml_content --y;
-drush en ci_templates -y;
-drush yaml-content-import-module ci_templates;
-drush en ci_dc_import;
+drush uli;
+# drush en ci_dc_import --y;
 
 echo "That's the end of the D8M install script!"

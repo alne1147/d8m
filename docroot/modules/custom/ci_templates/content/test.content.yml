@@ -19,6 +19,11 @@
   type: "page"
   title: "Paragraph Example"
   status: 1
+  body:
+      - value: |
+          <p>Lorem ipsum...</p>
+          <drupal-entity data-embed-button="document_media_browser" data-entity-embed-display="view_mode:media.embedded" data-entity-type="media" data-entity-uuid="d5f6d777-b487-4640-a25d-80a15c514163"></drupal-entity>
+        format: 'd8m_text_editor'
   # Populate an example paragraph field.
   field_rows:
     # Define a nested entity directly as a field item value.
