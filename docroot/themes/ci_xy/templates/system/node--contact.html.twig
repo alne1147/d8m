@@ -93,13 +93,7 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
-  <div class="col-sm-12" role="heading">
-    <div class="page-header"></div>
-      <h1{{ title_attributes }}>
-        {{ content.field_first_name }}  {{ label }}
-      </h1>
-    </div>
-  </div>
+
   {% if display_submitted %}
     {#<footer>#}
 
@@ -114,7 +108,7 @@
     <div class="row">
       <div class="col-sm-4">
         {{ content.field_photo }}
-        <h3 class="contact-name">{{ content.field_first_name }} {{ label }}</h3>
+        <h3 class="contact-name">{{ content.field_first_name }}{{ content.field_last_name }} </h3>
         <h4>{{ content.field_title }}</h4>
         <h5>{{ content.field_agency }}</h5>
         {{ content.field_phone_number }}

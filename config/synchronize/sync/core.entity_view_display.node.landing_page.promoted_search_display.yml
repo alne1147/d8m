@@ -59,5 +59,6 @@ hidden:
   field_landing_page_options: true
   field_meta: true
   field_meta_tags: true
+  field_nav_bar_above: true
   field_promote: true
   field_summary: true

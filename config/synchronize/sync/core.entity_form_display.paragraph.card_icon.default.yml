@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.card_icon.field_icon
     - field.field.paragraph.card_icon.field_icon_card_background
+    - field.field.paragraph.card_icon.field_icon_position
     - field.field.paragraph.card_icon.field_link
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
@@ -33,6 +34,7 @@ third_party_settings:
       children:
         - field_icon
         - field_text
+        - field_icon_position
       parent_name: group_card_icon_edit
       weight: 1
       format_type: tab
@@ -85,6 +87,12 @@ content:
     type: fontawesome_icon_widget
     region: content
   field_icon_card_background:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_icon_position:
     weight: 4
     settings: {  }
     third_party_settings: {  }

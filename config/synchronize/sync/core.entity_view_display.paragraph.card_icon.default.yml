@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.card_icon.field_icon
     - field.field.paragraph.card_icon.field_icon_card_background
+    - field.field.paragraph.card_icon.field_icon_position
     - field.field.paragraph.card_icon.field_link
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
@@ -17,7 +18,7 @@ bundle: card_icon
 mode: default
 content:
   field_icon:
-    weight: 3
+    weight: 0
     label: hidden
     settings:
       layers: false
@@ -25,14 +26,21 @@ content:
     type: fontawesome_icon_formatter
     region: content
   field_icon_card_background:
-    weight: 5
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
+  field_icon_position:
+    type: list_key
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_text:
-    weight: 4
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false

@@ -88,14 +88,14 @@
         {% endblock %}
       {% endif %} #}
       {# Header #}
-      {#{% if page.header %}
+      {% if page.header %}
           {% block header %}
               <div class="col-sm-12" role="heading">
                 {{ page.header }}
 
               </div>
           {% endblock %}
-      {% endif %}#}
+      {% endif %}
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}

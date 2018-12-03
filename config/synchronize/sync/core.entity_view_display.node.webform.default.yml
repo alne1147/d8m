@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.webform.field_jumbotron_options
     - field.field.node.webform.field_menu_reference_left
     - field.field.node.webform.field_menu_reference_right
+    - field.field.node.webform.field_nav_bar_above
     - field.field.node.webform.field_promote
     - field.field.node.webform.field_related_content
     - field.field.node.webform.webform
@@ -59,5 +60,6 @@ hidden:
   field_jumbotron_options: true
   field_menu_reference_left: true
   field_menu_reference_right: true
+  field_nav_bar_above: true
   field_promote: true
   field_related_content: true
