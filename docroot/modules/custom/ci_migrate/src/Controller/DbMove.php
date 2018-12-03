@@ -87,8 +87,8 @@ class DbMove extends ControllerBase {
 	$query = $database_info->query(
 	      "SELECT nid, vid, type, language, uid, status, title, created, changed
 	        FROM pacific.node
-		  # WHERE nid > 111806
-	        ORDER BY nid DESC"
+		  # WHERE nid > 111801
+	        ORDER BY nid ASC"
 	    );
 	    $results = $query->fetchAll();
 	    $row = [];
@@ -234,8 +234,21 @@ class DbMove extends ControllerBase {
 	  private function getDestType(string $type, int $nid) {
 
 	      switch ($type) {
+          case 'slider_image':
+            $dest_type = 'jumbo_slides';
+            break;
+          case 'minisite_page':
+            $dest_type = 'page';
+            break;
+          case 'minisite_news':
+          case 'blog':
+            $dest_type = 'article';
+            break;
+          case 'minisite':
+            $dest_type = 'landing_page';
+            break;
 	        default:
-	        $dest_type = $type;
+	          $dest_type = $type;
 	      }
 
 	      return $dest_type;

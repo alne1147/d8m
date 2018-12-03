@@ -15,9 +15,11 @@ process:
     migration: ci_user
     source: uid
   title: title
-  'body/body_value': body
+  'body/value': body
   'body/summary': teaser
-  'body/format': 'full_html'
+  'body/format': 
+    plugin: default_value
+    default_value: 'd8m_text_editor'
   field_jumbotron_image/target_id:
     plugin: media_generate
     destination_field: field_media_image
@@ -25,8 +27,8 @@ process:
     bundle: image
     entity_type: media
     ignore_case: true
-    source: images/fid
-  field_jumbotron_link: image_link
+    source: images
+  field_jumbotron_link/value: image_link
 destination:
   plugin: entity:node
   default_bundle: dest_type
