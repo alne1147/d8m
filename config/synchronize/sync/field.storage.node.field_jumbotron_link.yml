@@ -1,16 +1,18 @@
-uuid: 79c85ec8-cb40-4c59-a178-6bab5748726f
+uuid: da77e005-29c4-4b37-9211-a565aa9436ed
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
 id: node.field_jumbotron_link
 field_name: field_jumbotron_link
 entity_type: node
-type: link
-settings: {  }
-module: link
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

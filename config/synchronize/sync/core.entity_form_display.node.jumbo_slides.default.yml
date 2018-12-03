@@ -11,7 +11,6 @@ dependencies:
   module:
     - content_moderation
     - entity_browser
-    - link
     - path
     - scheduler
     - text
@@ -40,22 +39,23 @@ content:
     weight: 124
     settings:
       entity_browser: media_image_browser
-      field_widget_display: label
+      field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
       selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
       field_widget_replace: false
       open: false
-      field_widget_display_settings: {  }
     third_party_settings: {  }
     region: content
   field_jumbotron_link:
-    weight: 123
+    weight: 125
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: link_default
+    type: string_textfield
     region: content
   moderation_state:
     type: moderation_state_default
