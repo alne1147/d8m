@@ -767,7 +767,7 @@ $config_directories['staging'] = '../config/synchronize/staging';
 $config_directories['sole'] = '../config/ag.colorado.gov/sole';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
-$conf['file_temporary_path'] = 'tmp';
+$settings['file_temporary_path'] = 'tmp';
 $config['system.site']['name'] = 'Department of Agriculture';
 // <DDSETTINGS>
 // Please don't edit anything between <DDSETTINGS> tags.
