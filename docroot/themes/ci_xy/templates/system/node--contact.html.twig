@@ -89,11 +89,17 @@
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      <a href="{{ url }}" rel="bookmark"> {{ content.field_first_name }}  {{ label }}  </a>
     </h2>
   {% endif %}
   {{ title_suffix }}
-
+  <div class="col-sm-12" role="heading">
+    <div class="page-header"></div>
+      <h1{{ title_attributes }}>
+        {{ content.field_first_name }}  {{ label }}
+      </h1>
+    </div>
+  </div>
   {% if display_submitted %}
     {#<footer>#}
 
@@ -108,12 +114,12 @@
     <div class="row">
       <div class="col-sm-4">
         {{ content.field_photo }}
-        <h3>{{  label }}</h3>
+        <h3 class="contact-name">{{ content.field_first_name }} {{ label }}</h3>
         <h4>{{ content.field_title }}</h4>
         <h5>{{ content.field_agency }}</h5>
         {{ content.field_phone_number }}
         {{ content.field_email }}
-        <p class=empty-class><p>
+        <p class="empty-class"><p>
         {{ content.field_address1 }}
         {{ content.field_address_2 }}
         <div class="postal_address">
@@ -123,7 +129,7 @@
           {% endif %}
           {{ content.field_zip }}
         </div>
-        <p class=empty-class><p>
+        <p class="empty-class"><p>
         {{ content.field_map }}
       </div>
       <div class="col-sm-8">
@@ -148,4 +154,3 @@
 
 
 </article>
-

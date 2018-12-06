@@ -1,0 +1,23 @@
+uuid: 5669d97a-aa46-4ac3-9bc6-828ce90aaac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nav_bar_above
+    - node.type.landing_page
+id: node.landing_page.field_nav_bar_above
+field_name: field_nav_bar_above
+entity_type: node
+bundle: landing_page
+label: 'Display Navigation bar above Jumbotron'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
