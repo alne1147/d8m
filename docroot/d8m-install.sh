@@ -49,21 +49,20 @@ drush -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-
 
 drush en ci_article_setup -y;
 drush en ci_media_types -y;
-drush en ci_admin_tweaks --y;
-drush en ci_theme_options --y;
-drush en ci_views_tweaks --y;
-drush en redirect --y;
+drush en ci_admin_tweaks -y;
+drush en ci_theme_options -y;
+drush en ci_views_tweaks -y;
+drush en redirect -y;
 drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
-drush en google_analytics --y;
-drush cim --partial sync --y;
-drush cr --y;
-drush dcdi --y;
-drush cim --partial post-sync --y;
-drush cim --partial sole --y;
-drush cim --partial staging --y;
-drush en memcache --y;
-drush en menu_reference_render --y;
-drush cr --y;
+drush en google_analytics -y;
+drush cim --partial sync -y;
+drush en default_content -y;
+drush cr -y;
+drush dcdi -y;
+drush en yaml_content -y;
+drush cim --partial sole -y;
+drush cim --partial post-sync -y;
+drush cr -y;
 
 echo "That's the end of the D8M install script!"
