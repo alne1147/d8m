@@ -339,6 +339,30 @@ display:
           expose:
             label: ''
           plugin_id: standard
+        field_first_name_value:
+          id: field_first_name_value
+          table: node__field_first_name
+          field: field_first_name_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'First Name'
+          plugin_id: standard
+        field_title_value:
+          id: field_title_value
+          table: node__field_title
+          field: field_title_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Last Name'
+          plugin_id: standard
       title: Contact
       header: {  }
       footer: {  }
@@ -352,6 +376,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -374,6 +400,21 @@ display:
         weight: 0
         context: '0'
         menu_name: admin
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+      defaults:
+        sorts: false
     cache_metadata:
       max-age: 0
       contexts:
@@ -417,6 +458,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
         - user.permissions
       tags:

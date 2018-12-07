@@ -27,7 +27,7 @@ drush en google_analytics --y;
 drush cim --partial sync --y;
 drush cr --y;
 drush dcdi --y;
-drush uli;
+drush en yaml_content --y;
 drush cim --partial sole --y;
 drush cim --partial post-sync --y;
 drush cr --y;

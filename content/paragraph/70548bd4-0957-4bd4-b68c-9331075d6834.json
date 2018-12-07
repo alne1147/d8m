@@ -1,0 +1,137 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/section_body"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/section_body\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/section_body\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 916
+        }
+    ],
+    "uuid": [
+        {
+            "value": "70548bd4-0957-4bd4-b68c-9331075d6834"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3560
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "section_body"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/section_body\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/section_body\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-11-27T22:18:32+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "917"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "bp_accordion_section_body"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_background": [
+        {
+            "value": "color__brand-slate--strong",
+            "lang": "en"
+        }
+    ],
+    "field_card_body": [
+        {
+            "value": "<p>Nunc eget purus a nulla tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt egestas. Aliquam porta, risus eget aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa id est. Cras tincidunt semper nisi, a suscipit enim gravida et. Suspendisse semper ipsum nec tellus efficitur, pellentesque facilisis ligula molestie. Curabitur non egestas diam, non pretium nunc. Praesent convallis turpis lacinia, tincidunt magna vel, convallis ipsum.<\/p>\r\n",
+            "format": "d8m_text_editor",
+            "processed": "<p>Nunc eget purus a nulla tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt egestas. Aliquam porta, risus eget aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa id est. Cras tincidunt semper nisi, a suscipit enim gravida et. Suspendisse semper ipsum nec tellus efficitur, pellentesque facilisis ligula molestie. Curabitur non egestas diam, non pretium nunc. Praesent convallis turpis lacinia, tincidunt magna vel, convallis ipsum.<\/p>\n",
+            "lang": "en"
+        }
+    ]
+}

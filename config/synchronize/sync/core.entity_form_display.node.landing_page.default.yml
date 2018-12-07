@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_nav_bar_above
     - field.field.node.landing_page.field_promote
     - field.field.node.landing_page.field_rows
     - field.field.node.landing_page.field_summary
@@ -163,6 +164,7 @@ third_party_settings:
       region: content
     group_navigation_bar:
       children:
+        - field_nav_bar_above
         - field_hide_navigation_bar
       parent_name: group_display
       weight: 10
@@ -306,13 +308,13 @@ content:
     region: content
   field_hide_breadcrumbs:
     type: boolean_checkbox
-    weight: 14
+    weight: 34
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_hide_navigation_bar:
-    weight: 12
+    weight: 34
     settings:
       display_label: true
     third_party_settings: {  }
@@ -375,6 +377,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_nav_bar_above:
+    weight: 33
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_promote:
     weight: 29

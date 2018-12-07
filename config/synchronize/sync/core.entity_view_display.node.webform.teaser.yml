@@ -49,6 +49,7 @@ hidden:
   field_jumbotron_options: true
   field_menu_reference_left: true
   field_menu_reference_right: true
+  field_nav_bar_above: true
   field_promote: true
   field_related_content: true
   webform: true

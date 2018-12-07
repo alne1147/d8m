@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns_three_uneven
     - paragraphs.paragraphs_type.bp_columns_two_uneven
     - paragraphs.paragraphs_type.full_column_hero
+    - paragraphs.paragraphs_type.row_slide_container
     - paragraphs.paragraphs_type.row_three_column_hero
     - paragraphs.paragraphs_type.row_two_column_hero
   module:
@@ -26,6 +27,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
@@ -33,6 +35,7 @@ settings:
       full_column_hero: full_column_hero
       row_two_column_hero: row_two_column_hero
       row_three_column_hero: row_three_column_hero
+      row_slide_container: row_slide_container
     target_bundles_drag_drop:
       bp_accordion:
         weight: -39
@@ -91,4 +94,31 @@ settings:
       row_three_column_hero:
         enabled: true
         weight: -21
+      bp_column_wrapper:
+        weight: 37
+        enabled: false
+      card_icon:
+        weight: 46
+        enabled: false
+      card_map:
+        weight: 47
+        enabled: false
+      card_open_embed:
+        weight: 48
+        enabled: false
+      mini_calendar:
+        weight: 50
+        enabled: false
+      modal_body:
+        weight: 51
+        enabled: false
+      row_slide_container:
+        enabled: true
+        weight: 52
+      section_body:
+        weight: 55
+        enabled: false
+      webform:
+        weight: 56
+        enabled: false
 field_type: entity_reference_revisions

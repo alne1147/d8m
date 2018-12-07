@@ -8,7 +8,7 @@ id: node.contact.title
 field_name: title
 entity_type: node
 bundle: contact
-label: Name
+label: 'Page Title'
 description: ''
 required: true
 translatable: true
