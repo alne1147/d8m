@@ -65,4 +65,4 @@ drush cim --partial sole -y;
 drush cim --partial post-sync -y;
 drush cr -y;
 
-echo "That's the end of the D8M install script!"
+echo "That's the end of the D8M-install script!"
