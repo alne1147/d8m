@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -136,6 +136,11 @@
     "field_icon_card_background": [
         {
             "value": "color__ink--strong"
+        }
+    ],
+    "field_icon_position": [
+        {
+            "value": "icon-card-top"
         }
     ],
     "field_text": [

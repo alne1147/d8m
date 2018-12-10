@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<section class=\"section--center mdl-grid\">\r\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<br \/>\r\n<br \/>\r\nIt's OK to get Rib-grease on your face, because you're allowing people to see that you're proud of these ribs.I would like to give you a backstage pass to my<br \/>\r\n&nbsp;<\/div>\r\n<\/section>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<section class=\"section--center mdl-grid\">\n<div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<br \/>\n<br \/>\nIt's OK to get Rib-grease on your face, because you're allowing people to see that you're proud of these ribs.I would like to give you a backstage pass to my<br \/>\n\u00a0<\/div>\n<\/section>\n"
+            "processed": "<section class=\"section--center mdl-grid\"><div class=\"mdl-card mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone\" id=\"bi-out\">Busey ipsum dolor sit amet. I wrestled a bear once. A 750lbs black bear.These kind of things only happen for the first time once.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.<br \/><br \/>\nIt's OK to get Rib-grease on your face, because you're allowing people to see that you're proud of these ribs.I would like to give you a backstage pass to my<br \/>\n\u00a0<\/div>\n<\/section>"
         }
     ],
     "field_card_title": [

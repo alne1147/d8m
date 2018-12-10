@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_nav_bar_above
     - field.field.node.landing_page.field_promote
+    - field.field.node.landing_page.field_refer_slider
     - field.field.node.landing_page.field_rows
     - field.field.node.landing_page.field_summary
     - image.style.thumbnail
@@ -122,6 +123,7 @@ third_party_settings:
       children:
         - field_jumbotron_options
         - field_jumbotron
+        - field_refer_slider
         - field_jumbo
       parent_name: group_jumbotrons
       weight: 7
@@ -336,7 +338,7 @@ content:
     region: content
   field_jumbo:
     type: entity_reference_paragraphs
-    weight: 10
+    weight: 11
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -344,7 +346,25 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        5035e174-a019-469e-8ce7-0087500b6ac4:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100051'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
     region: content
   field_jumbotron:
     weight: 9
@@ -405,6 +425,30 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_refer_slider:
+    weight: 10
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        929a62c9-c759-4235-886f-dedf7d60bed0:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100052'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: options_buttons
     region: content
   field_rows:
     weight: 8

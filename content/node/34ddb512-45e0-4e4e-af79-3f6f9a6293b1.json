@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -146,15 +146,14 @@
         {
             "value": {
                 "title": "A Basic Page Template | CI Drupal 8",
-                "canonical_url": "http:\/\/default\/basic-page-template",
-                "description": ""
+                "canonical_url": "http:\/\/default\/basic-page-template"
             }
         }
     ],
     "path": [
         {
             "alias": "\/basic-page-template",
-            "pid": 178,
+            "pid": 181,
             "langcode": "en",
             "lang": "en"
         }
@@ -163,7 +162,7 @@
         {
             "value": "<drupal-entity data-embed-button=\"document_media_browser\" data-entity-embed-display=\"view_mode:media.embedded\" data-entity-type=\"media\" data-entity-uuid=\"d5f6d777-b487-4640-a25d-80a15c514163\"><\/drupal-entity>\r\n",
             "format": "d8m_text_editor",
-            "processed": "\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'entity_embed_container' -->\n<!-- BEGIN OUTPUT from 'modules\/contrib\/entity_embed\/templates\/entity-embed-container.html.twig' -->\n<span class=\"embedded-entity\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'media' -->\n<!-- FILE NAME SUGGESTIONS:\n   * media--source-image.html.twig\n   * media--image--embedded.html.twig\n   * media--image.html.twig\n   * media--embedded.html.twig\n   x media.html.twig\n-->\n<!-- BEGIN OUTPUT from 'core\/modules\/media\/templates\/media.html.twig' -->\n<div>\n  \n  \n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'field' -->\n<!-- FILE NAME SUGGESTIONS:\n   * field--media--field-media-image--image.html.twig\n   * field--media--field-media-image.html.twig\n   * field--media--image.html.twig\n   * field--field-media-image.html.twig\n   * field--image.html.twig\n   x field.html.twig\n-->\n<!-- BEGIN OUTPUT from 'themes\/contrib\/bootstrap\/templates\/field\/field.html.twig' -->\n\n            <div class=\"field field--name-field-media-image field--type-image field--label-hidden field--item\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image_formatter' -->\n<!-- BEGIN OUTPUT from 'core\/modules\/image\/templates\/image-formatter.html.twig' -->\n  <a href=\"http:\/\/default\/sites\/default\/files\/cu.jpg\">\n\n<!-- THEME DEBUG -->\n<!-- THEME HOOK: 'image' -->\n<!-- BEGIN OUTPUT from 'themes\/contrib\/bootstrap\/templates\/system\/image.html.twig' -->\n<img src=\"\/sites\/default\/files\/cu.jpg\" width=\"920\" height=\"613\" typeof=\"foaf:Image\" class=\"img-responsive\" \/>\n\n<!-- END OUTPUT from 'themes\/contrib\/bootstrap\/templates\/system\/image.html.twig' -->\n\n<\/a>\n\n<!-- END OUTPUT from 'core\/modules\/image\/templates\/image-formatter.html.twig' -->\n\n<\/div>\n      \n<!-- END OUTPUT from 'themes\/contrib\/bootstrap\/templates\/field\/field.html.twig' -->\n\n\n<\/div>\n\n<!-- END OUTPUT from 'core\/modules\/media\/templates\/media.html.twig' -->\n\n<\/span>\n\n<!-- END OUTPUT from 'modules\/contrib\/entity_embed\/templates\/entity-embed-container.html.twig' -->\n\n\n",
+            "processed": "",
             "summary": "",
             "lang": "en"
         }

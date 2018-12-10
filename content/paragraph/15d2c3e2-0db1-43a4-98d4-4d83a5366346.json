@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 1.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 2.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 3.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<dl class=\"ckeditor-accordion\">\n\t<dt>Accordion title 1<\/dt>\n\t<dd>\n\t<p>Accordion content 1.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Accordion content 2.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 3<\/dt>\n\t<dd>\n\t<p>Accordion content 3.<\/p>\n\t<\/dd>\n<\/dl>\n\n<p>\u00a0<\/p>\n"
+            "processed": "<dl class=\"ckeditor-accordion\"><dt>Accordion title 1<\/dt>\n\t<dd>\n\t<p>Accordion content 1.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Accordion content 2.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 3<\/dt>\n\t<dd>\n\t<p>Accordion content 3.<\/p>\n\t<\/dd>\n<\/dl><p>\u00a0<\/p>\n"
         }
     ]
 }

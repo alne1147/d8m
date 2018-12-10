@@ -87,7 +87,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -104,7 +104,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -265,7 +265,7 @@
     "path": [
         {
             "alias": "\/landing-page-layout",
-            "pid": 176,
+            "pid": 188,
             "langcode": "en",
             "lang": "en"
         }
@@ -291,6 +291,11 @@
         {
             "value": false,
             "lang": "en"
+        }
+    ],
+    "field_nav_bar_above": [
+        {
+            "value": false
         }
     ],
     "field_promote": [

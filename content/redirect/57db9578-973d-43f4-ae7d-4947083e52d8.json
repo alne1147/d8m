@@ -5,12 +5,7 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/redirect\/redirect"
-        },
-        "http:\/\/drupal.org\/rest\/relation\/redirect\/redirect\/uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ]
+        }
     },
     "rid": [
         {
@@ -32,25 +27,6 @@
             "value": "redirect"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/redirect\/redirect\/uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
-                    }
-                ]
-            }
-        ]
-    },
     "redirect_source": [
         {
             "path": "business-woman",

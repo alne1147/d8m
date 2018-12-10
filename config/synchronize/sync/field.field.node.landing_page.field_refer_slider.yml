@@ -1,0 +1,28 @@
+uuid: f0305284-50dc-47b2-8e8e-6d7c52adfe3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_refer_slider
+    - node.type.jumbo_slides
+    - node.type.landing_page
+id: node.landing_page.field_refer_slider
+field_name: field_refer_slider
+entity_type: node
+bundle: landing_page
+label: 'Refer Slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      jumbo_slides: jumbo_slides
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
