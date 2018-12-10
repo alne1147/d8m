@@ -2,7 +2,7 @@
 
 $sites = [
     
-	'd8m' => 'ag',
+
 	
     // Dept. of Agriculture
     'ag.dev.colorado.gov' => 'ag.colorado.gov',
