@@ -70,6 +70,7 @@ third_party_settings:
       children:
         - group_layout_options
         - group_landing_page_options
+        - group_jumbotrons
         - group_display
         - group_search_tab
       parent_name: ''
@@ -89,7 +90,7 @@ third_party_settings:
         - field_promote
         - field_archive
       parent_name: group_landing_page
-      weight: 11
+      weight: 12
       format_type: tab
       format_settings:
         label: 'Search Enhancements'
@@ -102,13 +103,12 @@ third_party_settings:
       region: content
     group_display:
       children:
-        - group_jumbotron
         - group_background
         - group_footer
         - group_navigation_bar
         - group_breadcrumbs
       parent_name: group_landing_page
-      weight: 10
+      weight: 11
       format_type: tab
       format_settings:
         id: ''
@@ -123,7 +123,7 @@ third_party_settings:
         - field_jumbotron_options
         - field_jumbotron
         - field_jumbo
-      parent_name: group_display
+      parent_name: group_jumbotrons
       weight: 7
       format_type: fieldset
       format_settings:
@@ -188,6 +188,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Breadcrumbs
+      region: content
+    group_jumbotrons:
+      children:
+        - group_jumbotron
+      parent_name: group_landing_page
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Jumbotron
       region: content
 id: node.landing_page.default
 targetEntityType: node
