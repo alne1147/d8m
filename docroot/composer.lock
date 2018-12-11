@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53715102448e80da5d31a9ed59426479",
+    "content-hash": "45740cf876c613c8727dd12b16359d3d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2772,52 +2772,6 @@
             }
         },
         {
-            "name": "drupal/embed_image_style_permissions",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/embed_image_style_permissions",
-                "reference": "5db6b4d866203bdb0fc6e4c735ab43ec8fa76806"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/entity_browser": "~1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1504217644",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "ahebrank",
-                    "homepage": "https://www.drupal.org/user/3190515"
-                }
-            ],
-            "description": "Set access permissions on individual image styles",
-            "homepage": "https://www.drupal.org/project/embed_image_style_permissions",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/embed_image_style_permissions",
-                "issues": "https://www.drupal.org/project/issues/embed_image_style_permissions"
-            }
-        },
-        {
             "name": "drupal/entity",
             "version": "1.0.0-rc1",
             "source": {
@@ -2882,17 +2836,17 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "1.6.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser",
-                "reference": "8.x-1.6"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "ed80f338cc002e188df21967cf2222a01a88f90c"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "683a7a252c947433c7b78bb838d6d8973c13cf77"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2900,18 +2854,17 @@
             "require-dev": {
                 "drupal/ctools": "*",
                 "drupal/inline_entity_form": "*",
-                "drupal/media_entity": "*",
                 "drupal/paragraphs": "*",
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev",
+                    "dev-2.x": "2.x-dev",
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.6",
+                    "version": "8.x-2.0",
                     "datestamp": "1536328684",
                     "security-coverage": {
                         "status": "covered",
@@ -4984,8 +4937,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -10048,7 +10000,6 @@
         "drupal/calendar": 20,
         "drupal/content_sync": 20,
         "drupal/dropzonejs": 20,
-        "drupal/embed_image_style_permissions": 20,
         "drupal/field_slideshow": 20,
         "drupal/roleassign": 20,
         "behat/mink": 20,
