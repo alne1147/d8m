@@ -60,9 +60,14 @@ class Term extends ConditionPluginBase {
     $form['tid'] = array(
       '#type' => 'entity_autocomplete',
       '#title' => $this->t('Select a taxonomy term'),
-      '#default_value' => $this->configuration['tid'],
       '#target_type' => 'taxonomy_term',
     );
+
+    if (isset($this->configuration['tid'])) {
+      if ($entity = \Drupal\taxonomy\Entity\Term::load($this->configuration['tid'])) {
+        $form['tid']['#default_value'] = $entity;
+      }
+    }
 
     return parent::buildConfigurationForm($form, $form_state);
   }
