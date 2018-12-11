@@ -3,7 +3,7 @@
 Field Slideshow
 
 Provides a Slideshow format for displaying Image fields,
-using the JQuery Cycle plugin.
+using the JQuery Cycle 2 plugin.
 
 Compared to Views slideshows, building the slideshow from multiple nodes,
 this module builds it from a single node, if you're using a multi-valued
@@ -11,11 +11,16 @@ Image field.
 
 --- INSTALLATION --------------------------------------------------------
 
-1 - Extract the module into /modules directory
-2 - Download the JQuery Cycle plugin here :
-    http://jquery.malsup.com/cycle/download.html
+1 - use composer require 'drupal/field_slideshow:^3.x'
+2 - Download the JQuery Cycle 2 plugin here :
+    https://github.com/zakgreene/cycle2/
+    (It is fork from original Cycle2 repo
+    which support the latest jQuery version)
     (don't choose the Lite version), and move the downloaded
-    jquery.cycle.all.js file into /sites/all/libraries/jquery.cycle/
+    jquery.cycle2.min.js file into /libraries/jquery.cycle2/
+3 - Optionally download swipe plugin from
+    http://malsup.github.io/min/jquery.cycle2.swipe.min.js
+4 - Install Drupal Colorbox module if you want to use colorbox modal.
 
 --- USAGE ---------------------------------------------------------------
 
@@ -31,41 +36,3 @@ Image field.
 5 - Click the settings wheel in the slideshow-formatted multiple
     image field to edit advanced settings.
 6 - Save! and here you go.
-
---- Slideshow with fieldcollection -----------------------------------------
-
-1 - Enable Field Collection at admin/modules.
-2 - Create or edit a content type at /admin/structure/types and
-    add or edit field Collection field which has an image field.
-    Select the format as "Slideshow" and click the settings wheel
-    and set the desired options.
-3 - Choose the field collection image field in the "Image Field" list.
-4 - Assign the appropriate settings for your slideshow.
-5 - Update and save the settings.
-    Here you for slideshow with field collection !!
-
---- KNOWN ISSUES --------------------------------------------------------
-
-1 - Media and Image crop not supported.
-2 - Colorbox works for Default view mode only.
-
---- FUTURE ENCHANCEMENTS ------------------------------------------------
-
-1 - Slideshow Jcarousel will be added in future.
-
---- AVAILABLE OPTIONS ---------------------------------------------------
-
-Image styles
-Caption
-Link
-Transition effect
-Transition speed
-Timeout
-Order
-Pager (numbers, thumbnails)
-Prev/Next controls
-Pause on hover
-
-Integration with Colorbox.
-
-Written by Deepika

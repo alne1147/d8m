@@ -1,50 +1,15 @@
-field_slideshow.jquery.cycle.min:
+field_slideshow.cycle2:
   version: VERSION
   js:
-    /libraries/jquery.cycle/jquery.cycle.all.min.js: {}
-
-field_slideshow.jquery.cycle.all:
-  version: VERSION
-  js:
-    /libraries/jquery.cycle/jquery.cycle.all.js: {}
-
-field_slideshow.jquery.imagesloaded:
-  version: VERSION
-  js:
-    /libraries/jquery.imagesloaded/jquery.imagesloaded.js: {}
-
-field_slideshow.jquery.carousel.min:
-  version: VERSION
-  js:
-    /libraries/jquery.jcarousel/lib/jquery.jcarousel.min.js: {}
-
-field_slideshow.jquery.carousel:
-  version: VERSION
-  js:
-    /libraries/jquery.jcarousel/lib/jquery.jcarousel.js: {}
-
-field_slideshow.jquery.carousel.skin.tango:
-  version: VERSION
-  css:
-    theme:
-      /libraries/jquery.jcarousel/skins/tango/skins.css: {}
-
-field_slideshow.jquery.carousel.skin.ie7:
-  version: VERSION
-  css:
-    theme:
-      /libraries/jquery.jcarousel/skins/ie7/skins.css: {}
-
-
-field_slideshow.view:
-  version: VERSION
-  css:
-    theme:
-      css/field_slideshow.css: {}
-  js:
+    /libraries/jquery.cycle2/jquery.cycle2.min.js: {}
     js/field_slideshow.js: {}
   dependencies:
     - core/jquery
     - core/drupal
     - core/jquery.once
     - core/drupalSettings
+
+field_slideshow.cycle2swipe:
+  version: VERSION
+  js:
+    /libraries/jquery.cycle2/jquery.cycle2.swipe.min.js: {}
