@@ -7,10 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitDrupal8
 {
     public static $files = array (
-        '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -323,6 +323,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Driver\\' => 
         array (
             0 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
+            1 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
         ),
         'Drupal\\Core\\Composer\\' => 
         array (
@@ -331,6 +332,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Core',
+            1 => __DIR__ . '/../..' . '/core/lib/Drupal/Core',
         ),
         'Drupal\\Component\\Uuid\\' => 
         array (
@@ -423,6 +425,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
+            1 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -939,6 +942,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Component\\Utility\\Environment' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Environment.php',
         'Drupal\\Component\\Utility\\Html' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Html.php',
         'Drupal\\Component\\Utility\\Image' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Image.php',
+        'Drupal\\Component\\Utility\\Mail' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Mail.php',
         'Drupal\\Component\\Utility\\NestedArray' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/NestedArray.php',
         'Drupal\\Component\\Utility\\Number' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Number.php',
         'Drupal\\Component\\Utility\\OpCodeCache' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/OpCodeCache.php',
@@ -2188,6 +2192,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Core\\Render\\Placeholder\\SingleFlushStrategy' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/Placeholder/SingleFlushStrategy.php',
         'Drupal\\Core\\Render\\PlaceholderingRenderCache' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/PlaceholderingRenderCache.php',
         'Drupal\\Core\\Render\\Plugin\\DisplayVariant\\SimplePageVariant' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/Plugin/DisplayVariant/SimplePageVariant.php',
+        'Drupal\\Core\\Render\\PreviewFallbackInterface' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/PreviewFallbackInterface.php',
         'Drupal\\Core\\Render\\RenderCache' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/RenderCache.php',
         'Drupal\\Core\\Render\\RenderCacheInterface' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/RenderCacheInterface.php',
         'Drupal\\Core\\Render\\RenderContext' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Render/RenderContext.php',

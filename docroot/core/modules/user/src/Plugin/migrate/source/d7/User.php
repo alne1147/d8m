@@ -115,8 +115,6 @@ class User extends FieldableEntity {
         }
       }
     }
-	
-	print_r($row);
 
     return parent::prepareRow($row);
   }
