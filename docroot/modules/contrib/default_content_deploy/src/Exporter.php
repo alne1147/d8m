@@ -4,7 +4,7 @@ namespace Drupal\default_content_deploy;
 
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Entity\ContentEntityType;
-use Drush\Drush;
+use Drupal\Core\Session\UserSession;
 
 /**
  * A service for handling export of default content.
@@ -12,7 +12,7 @@ use Drush\Drush;
 class Exporter extends DefaultContentDeployBase {
 
   /**
-   * Export entites by entity type, id or bundle.
+   * Export entities by entity type, id or bundle.
    *
    * @param string $entityType
    *   Entity Type.
@@ -25,11 +25,16 @@ class Exporter extends DefaultContentDeployBase {
    *
    * @return int
    *   Number of exported entities.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   public function export($entityType,
                          $entityBundle = '',
                          $entityIds = '',
                          $skipEntities = '') {
+    // Switch to limitless admin account.
+    // It solves limitations during export a user entities.
+    $this->accountSwitcher->switchTo(new UserSession(['uid' => 1]));
     $exportedEntities = [];
     // Get entities for export.
     $exportedEntityIds = $this->getEntityIdsForExport($entityType, $entityBundle, $entityIds, $skipEntities);
@@ -43,6 +48,7 @@ class Exporter extends DefaultContentDeployBase {
     // Export all entities to folder.
     $this->exporter->writeDefaultContent($exportedEntities, $this->getContentFolder());
 
+    $this->accountSwitcher->switchBack();
     return count($exportedEntityIds);
   }
 
@@ -60,18 +66,23 @@ class Exporter extends DefaultContentDeployBase {
    *
    * @return int
    *   Number of exported entities.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   public function exportWithReferences($entityType,
                                        $entityBundle = '',
                                        $entityIds = '',
                                        $skipEntities = '') {
+    // Switch to limitless admin account.
+    // It solves limitations during export a user entities.
+    $this->accountSwitcher->switchTo(new UserSession(['uid' => 1]));
     // Get entities for export.
     $exportedEntityIds = $this->getEntityIdsForExport($entityType, $entityBundle, $entityIds, $skipEntities);
     foreach ($exportedEntityIds as $entityId) {
       $exportedEntityByType = $this->exporter->exportContentWithReferences($entityType, $entityId);
       $this->exporter->writeDefaultContent($exportedEntityByType, $this->getContentFolder());
     }
-
+    $this->accountSwitcher->switchBack();
     return count($exportedEntityIds);
   }
 
@@ -83,6 +94,8 @@ class Exporter extends DefaultContentDeployBase {
    *
    * @return array
    *   Return number of exported entities grouped by entity type.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   public function exportSite($skipEntityType = '') {
     $count = [];
@@ -142,6 +155,8 @@ class Exporter extends DefaultContentDeployBase {
    *
    * @return array
    *   Return array of entity ids.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   protected function getEntityIdsForExport($entityType,
                                            $entityBundle,
@@ -150,9 +165,6 @@ class Exporter extends DefaultContentDeployBase {
     $exportedEntityIds = [];
     $contentEntityTypes = $this->getContentEntityTypes();
     if (!$this->validateEntityType($entityType, $contentEntityTypes)) {
-      // @todo Is any better method how to call writeln()?
-      Drush::output()->writeln(dt('List of available content entity types:'));
-      Drush::output()->writeln(implode(', ', array_keys($contentEntityTypes)));
       throw new \InvalidArgumentException(sprintf('Entity type "%s" does not exist', $entityType));
     }
 
@@ -165,6 +177,7 @@ class Exporter extends DefaultContentDeployBase {
     // Add all entities by given bundle.
     if (!empty($entityBundle)) {
       $query = $this->entityTypeManager->getStorage($entityType)->getQuery();
+      $query = $query->accessCheck(FALSE);
       $bundles = explode(parent::DELIMITER, $entityBundle);
       $bundleType = 'type';
       if ($entityType == 'taxonomy_term') {
@@ -181,6 +194,7 @@ class Exporter extends DefaultContentDeployBase {
     // If no bundle and no specific IDs, export all entities of given type.
     if (empty($entityBundle) && empty($entityIds)) {
       $query = $this->entityTypeManager->getStorage($entityType)->getQuery();
+      $query = $query->accessCheck(FALSE);
       $exportedEntityIds = $query->execute();
     }
 

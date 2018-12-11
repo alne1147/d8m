@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1e2e48c1fc6a0dbb506f52d78f3bfd0",
+    "content-hash": "62f9044c95bdb45d59dbb49633fdab74",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2604,6 +2604,68 @@
             "homepage": "https://www.drupal.org/project/default_content",
             "support": {
                 "source": "http://cgit.drupalcode.org/default_content"
+            }
+        },
+        {
+            "name": "drupal/default_content_deploy",
+            "version": "1.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/default_content_deploy",
+                "reference": "8.x-1.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/default_content_deploy-8.x-1.0-alpha6.zip",
+                "reference": "8.x-1.0-alpha6",
+                "shasum": "8db0fd01a1ea6b996bfbb7f9135cf458bfee94fd"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/default_content": "1.0-alpha7",
+                "php": ">=5.6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1543055880",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Klíma",
+                    "homepage": "https://www.drupal.org/user/340058",
+                    "email": "author@example.com"
+                },
+                {
+                    "name": "Jakub Hnilička",
+                    "homepage": "https://www.drupal.org/user/2784335"
+                },
+                {
+                    "name": "Radoslav Terezka"
+                }
+            ],
+            "description": "Drupal 8 module for deploying content in *.json files. Sponsored by: HBF s.r.o., http://hbf.sk, https://drupal.org/hbf",
+            "homepage": "https://www.drupal.org/project/default_content_deploy",
+            "support": {
+                "source": "http://cgit.drupalcode.org/default_content_deploy"
             }
         },
         {

@@ -4,6 +4,8 @@ namespace Drupal\default_content_deploy;
 
 use Drupal\Core\Database\Connection;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Session\UserSession;
+use Drupal\Core\Session\AccountSwitcherInterface;
 use Drupal\Core\Site\Settings;
 use Drupal\default_content\Exporter;
 use Psr\Log\LoggerAwareTrait;
@@ -33,6 +35,8 @@ class DefaultContentDeployBase {
 
   protected $serializer;
 
+  protected $accountSwitcher;
+
   /**
    * DefaultContentDeployBase constructor.
    *
@@ -46,17 +50,21 @@ class DefaultContentDeployBase {
    *   Entity Type Manager.
    * @param \Symfony\Component\Serializer\Serializer $serializer
    *   Serializer.
+   * @param \Drupal\Core\Session\AccountSwitcherInterface
+   *   The account switcher service.
    */
   public function __construct(Connection $database,
                               Exporter $exporter,
                               Settings $settings,
                               EntityTypeManagerInterface $entityTypeManager,
-                              Serializer $serializer) {
+                              Serializer $serializer,
+                              AccountSwitcherInterface $account_switcher) {
     $this->database = $database;
     $this->exporter = $exporter;
     $this->settings = $settings;
     $this->entityTypeManager = $entityTypeManager;
     $this->serializer = $serializer;
+    $this->accountSwitcher = $account_switcher;
   }
 
   /**
@@ -78,40 +86,51 @@ class DefaultContentDeployBase {
    * Or you can override content folder in settings.php file.
    *
    * If no configuration is found, directory is created
-   * automatically at 'public://content_' . $hash_salt;
+   * automatically at public://content_{hash_salt_derived_key};
    *
    * @example Recommended usage:
-   *   $config['content_directory'] = '../content';
+   *   $settings['default_content_deploy_content_directory'] = '../content';
    * @example Backward compatibility usage:
    *   $config_directories['content_directory'] = '../content';
+   *   $config['content_directory'] = '../content';
    *
    * @return string
    *   Return path to the content folder.
    */
   public function getContentFolder() {
-    // Use of $config['content_directory'] is recommended.
     global $config;
-    if (isset($config) && isset($config['content_directory'])) {
-      return $config['content_directory'];
-    }
-    // Use of $config_directories['content_directory'] is not recommended,
+    // Using $settings["default_content_deploy_content_directory"]
+    // is recommended.
+    if ($contentDir = $this->settings->get('default_content_deploy_content_directory')) {
+      return $contentDir;
+    };
+
+    // Using $config_directories['content_directory'] is deprecated,
     // because it causes unnecessary questions during drush cim or cex commands.
     // But it was (by mistake) implemented in 8.x-1.0-alpha1 and 8.x-1.0-alpha2,
     // so we have to maintain backward compatibility.
-    // @todo Remove backward compatibility before beta version.
+    // Using $config['content_directory'] is newer, but also deprecated.
+    // @todo Remove both $configs backward compatibility before beta version.
+
+    if (isset($config) && isset($config['content_directory'])) {
+      $contentDir = $config['content_directory'];
+      $this->logger()
+        ->warning(dt('Using $config["content_directory"] is deprecated. Use $settings["default_content_deploy_content_directory"] in your settings.php.'));
+      return $contentDir;
+    }
     try {
       $contentDir = config_get_config_directory('content_directory');
       $this->logger()
-        ->warning(dt('Use $config["content_directory"] instead of deprecated $config_directories["content_directory"] in your settings.php.'));
+        ->warning(dt('Use $config_directories["content_directory"] is deprecated. Use $settings["default_content_deploy_content_directory"] in your settings.php.'));
       return $contentDir;
     }
     catch (\Exception $exception) {
       // The $config_directories['content_directory'] not found.
-      // It is OK. $config_directories is not preferred way.
+      // It is OK. $config_directories is deprecated.
     }
-    // No config found. Fall back to public:// directory.
+    // No content directory found in the settings.
     // Get part of hashed Drupal salt due to security reason
-    // and construct content directory name.
+    // and construct content directory name in public://.
     $hash_salt = substr(sha1($this->settings->getHashSalt()), 0, 8);
     return 'public://content_' . $hash_salt;
   }
