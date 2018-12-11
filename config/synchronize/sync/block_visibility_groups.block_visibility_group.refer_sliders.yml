@@ -1,0 +1,9 @@
+uuid: 608511de-efad-406f-b23d-889d35f69cd4
+langcode: en
+status: true
+dependencies: {  }
+id: refer_sliders
+label: 'Refer Sliders'
+logic: and
+conditions: {  }
+allow_other_conditions: false
