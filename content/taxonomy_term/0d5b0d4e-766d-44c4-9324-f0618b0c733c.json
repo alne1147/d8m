@@ -45,7 +45,7 @@
     ],
     "weight": [
         {
-            "value": 1
+            "value": 3
         }
     ],
     "_embedded": {
@@ -55,7 +55,7 @@
     },
     "changed": [
         {
-            "value": "2017-11-30T22:31:53+00:00",
+            "value": "2018-12-10T22:41:18+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }

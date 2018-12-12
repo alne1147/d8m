@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "ea459126-e5e9-4a7a-ba04-b4e86bb617e9"
+                        "value": "ee01ef8c-6c57-4915-b3c9-18735d76a0a0"
                     }
                 ]
             }
@@ -130,7 +130,7 @@
         {
             "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>More information about Colorado<\/dt>\r\n\t<dd>\r\n\t<p><a href=\"https:\/\/www.colorado.com\/\">Colorado Tourism<\/a><\/p>\r\n\t<\/dd>\r\n\t<dt>Information on Rocky Mountain National Park<\/dt>\r\n\t<dd>\r\n\t<p><a href=\"https:\/\/www.nps.gov\/romo\/index.htm\">Rocky Mountain National Park<\/a><\/p>\r\n\t<\/dd>\r\n\t<dt>Other Information<\/dt>\r\n\t<dd>\r\n\t<p><a href=\"http:\/\/www.google.com\">Google<\/a><\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<dl class=\"ckeditor-accordion\">\n\t<dt>More information about Colorado<\/dt>\n\t<dd>\n\t<p><a href=\"https:\/\/www.colorado.com\/\">Colorado Tourism<\/a><\/p>\n\t<\/dd>\n\t<dt>Information on Rocky Mountain National Park<\/dt>\n\t<dd>\n\t<p><a href=\"https:\/\/www.nps.gov\/romo\/index.htm\">Rocky Mountain National Park<\/a><\/p>\n\t<\/dd>\n\t<dt>Other Information<\/dt>\n\t<dd>\n\t<p><a href=\"http:\/\/www.google.com\">Google<\/a><\/p>\n\t<\/dd>\n<\/dl>\n\n<p>\u00a0<\/p>\n"
+            "processed": "<dl class=\"ckeditor-accordion\"><dt>More information about Colorado<\/dt>\n\t<dd>\n\t<p><a href=\"https:\/\/www.colorado.com\/\">Colorado Tourism<\/a><\/p>\n\t<\/dd>\n\t<dt>Information on Rocky Mountain National Park<\/dt>\n\t<dd>\n\t<p><a href=\"https:\/\/www.nps.gov\/romo\/index.htm\">Rocky Mountain National Park<\/a><\/p>\n\t<\/dd>\n\t<dt>Other Information<\/dt>\n\t<dd>\n\t<p><a href=\"http:\/\/www.google.com\">Google<\/a><\/p>\n\t<\/dd>\n<\/dl><p>\u00a0<\/p>\n"
         }
     ],
     "field_card_title": [
