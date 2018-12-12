@@ -93,15 +93,9 @@ class DefaultContentDeployCommands extends DrushCommands {
     $entity_bundles = $options['bundle'];
     $skip_entities = $options['skip_entities'];
 
-    try {
-      $count = $this->exporter->export($entityType, $entity_bundles, $entity_ids, $skip_entities);
-      $this->logger->notice(dt('Exported @count entities.', ['@count' => $count]));
-    }
-    catch (\InvalidArgumentException $e) {
-      $this->logger->notice($e->getMessage());
-      $this->logger->notice(dt('List of available content entity types:'));
-      $this->logger->notice(implode(', ', array_keys($this->exporter->getContentEntityTypes())));
-    }
+    $count = $this->exporter->export($entityType, $entity_bundles, $entity_ids, $skip_entities);
+
+    $this->logger->notice(dt('Exported @count entities.', ['@count' => $count]));
   }
 
   /**
@@ -144,15 +138,8 @@ class DefaultContentDeployCommands extends DrushCommands {
     $entity_bundles = $options['bundle'];
     $skip_entities = $options['skip_entities'];
 
-    try {
-      $count = $this->exporter->exportWithReferences($entityType, $entity_bundles, $entity_ids, $skip_entities);
-      $this->logger->notice(dt('Exported @count entities with references.', ['@count' => $count]));
-    }
-    catch (\InvalidArgumentException $e) {
-      $this->logger->notice($e->getMessage());
-      $this->logger->notice(dt('List of available content entity types:'));
-      $this->logger->notice(implode(', ', array_keys($this->exporter->getContentEntityTypes())));
-    }
+    $count = $this->exporter->exportWithReferences($entityType, $entity_bundles, $entity_ids, $skip_entities);
+    $this->logger->notice(dt('Exported @count entities with references.', ['@count' => $count]));
   }
 
   /**

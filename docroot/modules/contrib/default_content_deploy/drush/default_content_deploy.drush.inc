@@ -129,15 +129,9 @@ function drush_default_content_deploy_export($entity_type_id) {
 
   /** @var \Drupal\default_content_deploy\Exporter $exporter */
   $exporter = \Drupal::service('default_content_deploy.exporter');
-  try {
-    $count = $exporter->export($entity_type_id, $entity_bundles, $entity_ids, $skip_entities);
-    drush_log(dt('Exported @count entities.', ['@count' => $count]), 'success');
-  }
-  catch (\InvalidArgumentException $e) {
-    drush_print($e->getMessage());
-    drush_print(dt('List of available content entity types:'));
-    drush_print(implode(', ', array_keys($exporter->getContentEntityTypes())));
-  }
+  $count = $exporter->export($entity_type_id, $entity_bundles, $entity_ids, $skip_entities);
+
+  drush_log(dt('Exported @count entities.', ['@count' => $count]), 'success');
 }
 
 /**
@@ -161,15 +155,8 @@ function drush_default_content_deploy_export_with_references($entity_type_id) {
 
   /** @var \Drupal\default_content_deploy\Exporter $exporter */
   $exporter = \Drupal::service('default_content_deploy.exporter');
-  try {
-    $count = $exporter->exportWithReferences($entity_type_id, $entity_bundles, $entity_ids, $skip_entities);
-    drush_log(dt('Exported @count entities with references.', ['@count' => $count]), 'success');
-  }
-  catch (\InvalidArgumentException $e) {
-    drush_print($e->getMessage());
-    drush_print(dt('List of available content entity types:'));
-    drush_print(implode(', ', array_keys($exporter->getContentEntityTypes())));
-  }
+  $count = $exporter->exportWithReferences($entity_type_id, $entity_bundles, $entity_ids, $skip_entities);
+  drush_log(dt('Exported @count entities with references.', ['@count' => $count]), 'success');
 }
 
 /**
