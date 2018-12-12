@@ -155,6 +155,7 @@ module:
   slick: 0
   slick_paragraphs: 0
   slick_ui: 0
+  slick_views: 0
   styles_api: 0
   superfish: 0
   system: 0

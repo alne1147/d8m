@@ -37,21 +37,6 @@ dependencies:
     - scheduler
 third_party_settings:
   field_group:
-    group_landing_page_options:
-      children:
-        - title
-      parent_name: group_landing_page
-      weight: 9
-      format_type: tab
-      format_settings:
-        label: Title
-        formatter: closed
-        description: 'Title is for administrative purposes only and will not be shown on page.'
-        required_fields: true
-        id: ''
-        classes: ''
-      label: Title
-      region: content
     group_layout_options:
       children:
         - field_rows
@@ -70,7 +55,6 @@ third_party_settings:
     group_landing_page:
       children:
         - group_layout_options
-        - group_landing_page_options
         - group_jumbotrons
         - group_display
         - group_search_tab

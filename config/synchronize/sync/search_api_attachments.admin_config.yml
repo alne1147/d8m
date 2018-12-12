@@ -2,7 +2,8 @@ extraction_method: solr_extractor
 preserve_cache: true
 solr_extractor_configuration:
   solr_server: acquia_search_server
-pdftotext_extractor_configuration: {  }
+pdftotext_extractor_configuration:
+  pdftotext_path: pdftotext
 tika_extractor_configuration:
   java_path: java
   tika_path: ''

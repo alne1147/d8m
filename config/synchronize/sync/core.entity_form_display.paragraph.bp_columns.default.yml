@@ -31,7 +31,7 @@ third_party_settings:
       children:
         - field_row_title
       parent_name: group_row_equal_columns_options
-      weight: 24
+      weight: 27
       format_type: tab
       format_settings:
         id: ''
@@ -45,7 +45,7 @@ third_party_settings:
       children:
         - bp_width
       parent_name: group_row_equal_columns_options
-      weight: 26
+      weight: 29
       format_type: tab
       format_settings:
         id: ''
@@ -59,7 +59,7 @@ third_party_settings:
       children:
         - bp_background
       parent_name: group_row_equal_columns_options
-      weight: 25
+      weight: 28
       format_type: tab
       format_settings:
         label: Color
