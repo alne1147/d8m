@@ -9,7 +9,7 @@ dependencies:
     - video_embed_wysiwyg
 name: 'Full HTML'
 format: full_html
-weight: 0
+weight: -10
 filters:
   filter_collapse_text:
     id: filter_collapse_text

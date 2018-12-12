@@ -8,7 +8,7 @@ dependencies:
     - video_embed_wysiwyg
 name: 'CI Text Editor'
 format: d8m_text_editor
-weight: -10
+weight: -8
 filters:
   filter_align:
     id: filter_align
