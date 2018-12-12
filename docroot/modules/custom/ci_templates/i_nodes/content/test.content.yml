@@ -30,4 +30,25 @@
               - 'image'
               - filename: 'cu.jpg'
               alt: "Don't forget the alt text."
-        
+
+- entity: "node"
+  type: "article"
+  title: "Tagged Article"
+  status: 1
+  body:
+    # Using a pipe we can define content across multiple lines.
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+      voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+      perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+      ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+      interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  # Using the tags below assumes the tags were created manually or imported earlier.
+  field_article_type:
+    # This is done via a preprocessor.
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'article_type'
+            name: 'News Article'
