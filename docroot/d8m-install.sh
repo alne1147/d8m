@@ -61,8 +61,11 @@ drush en default_content -y;
 drush cr -y;
 drush dcdi -y;
 drush en yaml_content -y;
+drush yaml-content-import modules/custom/ci_templates/i_images;
+drush yaml-content-import modules/custom/ci_templates/i_nodes;
 drush cim --partial sole -y;
 drush cim --partial post-sync -y;
 drush cr -y;
+drush uli;
 
 echo "That's the end of the D8M-install script!"
