@@ -1,2 +1,2 @@
 <?php
-$options['backup-dir'] = 'files/';
+$options['backup-dir'] = 'files';
