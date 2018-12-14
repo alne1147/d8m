@@ -33,10 +33,6 @@ $aliases['ag'] = array(
   'root' => $root,
   'uri' => 'ag.colorado.gov',
 );
-$aliases['ag'] = array(
-  'root' => $root,
-  'uri' => 'ag',
-);
 $aliases['cdle'] = array(
   'root' => $root,
   'uri' => 'cdle.colorado.gov',
