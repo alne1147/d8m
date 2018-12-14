@@ -10,7 +10,7 @@
 echo "Backing Up"
 
 d=$(date +%Y-%m-%d)
-cd ../../../docroot/
+cd /var/www/html/coloradod8mdev/docroot
 drush @ag sql-dump --gzip --result-file=files/agGov-deploy-backup-$d.sql
 drush @ag sql-dump --gzip --result-file=files/ag-deploy-backup-$d.sql
 drush @cdle sql-dump --gzip --result-file=files/cdle-deploy-backup-$d.sql
