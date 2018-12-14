@@ -1,6 +1,4 @@
-MY_MESSAGE="Hello World"
 d=$(date +%Y-%m-%d)
-echo $MY_MESSAGE
 drush @ag sql-dump --gzip --result-file=files/agGov-deploy-backup-$d.sql
 drush @ag.colorado.gov sql-dump --gzip --result-file=files/ag-deploy-backup-$d.sql
 drush @cdle.colorado.gov sql-dump --gzip --result-file=files/cdle-deploy-backup-$d.sql
