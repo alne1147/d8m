@@ -11,4 +11,4 @@ echo "Hello, Cloud!"
 
 cd /var/www/html/coloradod8mdev/docroot
 drush @sites updatedb --y
-drush @sites cr --ygit s
+drush @sites cr --y
