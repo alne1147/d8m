@@ -45,7 +45,47 @@ $aliases['cdphe'] = array(
   'root' => $root,
   'uri' => 'cdphe.colorado.gov',
 );
+$aliases['cdps'] = array(
+  'root' => $root,
+  'uri' => 'cdps.colorado.gov',
+);
 $aliases['ci'] = array(
   'root' => $root,
   'uri' => 'ci.colorado.gov',
+);
+$aliases['dhsem'] = array(
+  'root' => $root,
+  'uri' => 'dhsem.colorado.gov',
+);
+$aliases['dola'] = array(
+  'root' => $root,
+  'uri' => 'dola.colorado.gov',
+);
+$aliases['dora'] = array(
+  'root' => $root,
+  'uri' => 'dora.colorado.gov',
+);
+$aliases['dpa'] = array(
+  'root' => $root,
+  'uri' => 'dpa.colorado.gov',
+);
+$aliases['estes'] = array(
+  'root' => $root,
+  'uri' => 'estes.colorado.gov',
+);
+$aliases['hcpf'] = array(
+  'root' => $root,
+  'uri' => 'hcpf.colorado.gov',
+);
+$aliases['revenue'] = array(
+  'root' => $root,
+  'uri' => 'revenue.colorado.gov',
+);
+$aliases['sipa'] = array(
+  'root' => $root,
+  'uri' => 'sipa.colorado.gov',
+);
+$aliases['slb'] = array(
+  'root' => $root,
+  'uri' => 'slb.colorado.gov',
 );
