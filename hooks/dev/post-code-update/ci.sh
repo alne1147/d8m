@@ -8,7 +8,5 @@
 
 
 echo "Backing Up"
-
-d=$(date +%Y-%m-%d)
 cd /var/www/html/coloradod8mdev/docroot
 sh backup.sh
