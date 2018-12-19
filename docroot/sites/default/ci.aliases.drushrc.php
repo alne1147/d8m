@@ -33,6 +33,10 @@ $aliases['ag'] = array(
   'root' => $root,
   'uri' => 'ag.colorado.gov',
 );
+$aliases['cdhs'] = array(
+  'root' => $root,
+  'uri' => 'cdhs.colorado.gov',
+);
 $aliases['cdle'] = array(
   'root' => $root,
   'uri' => 'cdle.colorado.gov',
@@ -44,6 +48,14 @@ $aliases['cdphe'] = array(
 $aliases['cdps'] = array(
   'root' => $root,
   'uri' => 'cdps.colorado.gov',
+);
+$aliases['cdss'] = array(
+  'root' => $root,
+  'uri' => 'cdss.colorado.gov',
+);
+$aliases['ceo'] = array(
+  'root' => $root,
+  'uri' => 'ceo.colorado.gov',
 );
 $aliases['ci'] = array(
   'root' => $root,
