@@ -1,0 +1,35 @@
+uuid: 34fea757-175c-48d4-90ec-f201f6bb1476
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.image.field_article_tags
+    - field.field.media.image.field_description
+    - field.field.media.image.field_media_image
+    - image.style.max_1920
+    - media.type.image
+  module:
+    - background_image_formatter
+id: media.image.full
+targetEntityType: media
+bundle: image
+mode: full
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: max_1920
+      background_image_output_type: inline
+      background_image_selector: hero__responsive_
+    third_party_settings: {  }
+    type: background_image_formatter
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_article_tags: true
+  field_description: true
+  name: true
+  thumbnail: true
+  uid: true
