@@ -843,7 +843,7 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.ym
 
 $databases['default']['default'] = array(
    'driver' => 'mysql',
-   'database' => 'd8m',
+   'database' => 'ag',
     'username' => 'root',
    'password' => 'root',
    'host' => 'localhost',
