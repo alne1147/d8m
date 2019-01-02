@@ -1,9 +1,18 @@
 uuid: 608511de-efad-406f-b23d-889d35f69cd4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - term_condition
 id: refer_sliders
 label: 'Refer Sliders'
 logic: and
-conditions: {  }
+conditions:
+  424e9319-eb7d-4d4a-b944-699f872dd9b4:
+    id: term
+    negate: 0
+    tid: '100052'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 424e9319-eb7d-4d4a-b944-699f872dd9b4
 allow_other_conditions: false
