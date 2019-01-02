@@ -3,6 +3,7 @@ docroot/sites/*/settings.local*.php
 
 # Ignore paths that contain user-generated content.
 docroot/files
+docroot/sites/default/drushrc.php
 docroot/sites/*/files
 docroot/sites/*/private
 !docroot/sites/all/services.yml
