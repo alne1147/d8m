@@ -7,8 +7,6 @@
 # output. It will work in any hook directory.
 
 
-echo "Hello, Cloud!"
-
+echo "Backing Up"
 cd /var/www/html/coloradod8mdev/docroot
-drush @sites updatedb --y
-drush @sites cr --ygit s
+sh backup.sh

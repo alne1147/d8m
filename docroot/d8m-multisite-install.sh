@@ -40,23 +40,25 @@ drush @sites user-add-role structure_administrator ci-structureadmin --y;
 
 drush @sites -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-supportadmin,ci-twhatley,ci-blawson,ci-nevarez,ci-amarshall;
 
-drush @sites en ci_article_setup -y;
-drush @sites en ci_media_types -y;
-drush @sites en ci_admin_tweaks --y;
-drush @sites en ci_theme_options --y;
-drush @sites en ci_views_tweaks --y;
-drush @sites en redirect --y;
-drush @sites -y config-set system.performance css.preprocess 0;
-drush @sites -y config-set system.performance js.preprocess 0;
-drush @sites en google_analytics --y;
-drush @sites cim --partial sync --y;
-drush @sites cr --y;
-drush @sites dcdi --y;
-drush @sites cim --partial post-sync --y;
-drush @sites cim --partial sole --y;
-drush @sites cim --partial staging --y;
-drush @sites en memcache --y;
-drush @sites en menu_reference_render --y;
-drush @sites cr --y;
+drush @sites  en ci_article_setup -y;
+drush @sites  en ci_media_types -y;
+drush @sites  en ci_admin_tweaks -y;
+drush @sites  en ci_theme_options -y;
+drush @sites  en ci_views_tweaks -y;
+drush @sites  en redirect -y;
+drush @sites  -y config-set system.performance css.preprocess 0;
+drush @sites  -y config-set system.performance js.preprocess 0;
+drush @sites  en google_analytics -y;
+drush @sites  cim --partial sync -y;
+drush @sites  en default_content -y;
+drush @sites  cr -y;
+drush @sites  dcdi -y;
+drush @sites  en yaml_content -y;
+drush @sites  yaml-content-import modules/custom/ci_templates/i_images;
+drush @sites  yaml-content-import modules/custom/ci_templates/i_nodes;
+drush @sites  cim --partial sole -y;
+drush @sites  cim --partial post-sync -y;
+drush @sites  cr -y;
+drush @sites uli;
 
 echo "That's the end of the D8M install script!"

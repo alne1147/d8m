@@ -825,14 +825,14 @@ $apachesolr_environment_ids = [ "acquia_search_server_1" ];
 
 $settings['memcache']['stampede_protection'] = TRUE;
 $config['image.settings']['allow_insecure_derivatives'] = TRUE;
-$settings['file_private_path'] = 'sites/ag/files/private';
+$settings['file_private_path'] = 'sites/dpa/files/private';
 
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
 
 
-$config['system.site']['machine_name'] = 'ag';
-$config['system.site']['minisite_nid'] = '46786';
+$config['system.site']['machine_name'] = 'dpa';
+$config['system.site']['minisite_nid'] = '120';
 $settings['hash_salt'] = 'iudwh4899fj34o';
 $config['system.logging']['error_level'] = 'verbose';
 $config['system.performance']['css']['preprocess'] = FALSE;
@@ -843,7 +843,7 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.ym
 
 $databases['default']['default'] = array(
    'driver' => 'mysql',
-   'database' => 'ag',
+   'database' => 'dpa',
     'username' => 'root',
    'password' => 'root',
    'host' => 'localhost',
