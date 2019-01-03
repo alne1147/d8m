@@ -831,8 +831,8 @@ global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
 
 
-$config['system.site']['machine_name'] = 'ag';
-$config['system.site']['minisite_nid'] = '46786';
+$config['system.site']['machine_name'] = 'cdphe';
+$config['system.site']['minisite_nid'] = '10801';
 $settings['hash_salt'] = 'iudwh4899fj34o';
 $config['system.logging']['error_level'] = 'verbose';
 $config['system.performance']['css']['preprocess'] = FALSE;
@@ -843,7 +843,7 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.ym
 
 $databases['default']['default'] = array(
    'driver' => 'mysql',
-   'database' => 'ag',
+   'database' => 'cdphe',
     'username' => 'root',
    'password' => 'root',
    'host' => 'localhost',

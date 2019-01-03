@@ -2,7 +2,6 @@
 
 $sites = [
     
-  // 'nexus' => 'cdphe',
 	
     // Dept. of Agriculture
     'ag.dev.colorado.gov' => 'ag.colorado.gov',
