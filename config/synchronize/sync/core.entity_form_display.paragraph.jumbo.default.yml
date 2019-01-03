@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.jumbo.bp_background
     - field.field.paragraph.jumbo.field_banner
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
+    - field.field.paragraph.jumbo.field_title_color
     - image.style.thumbnail
     - paragraphs.paragraphs_type.jumbo
   module:
@@ -16,8 +18,14 @@ targetEntityType: paragraph
 bundle: jumbo
 mode: default
 content:
+  bp_background:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_banner:
-    weight: 2
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -25,7 +33,7 @@ content:
     type: image_image
     region: content
   field_banner_body:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -33,7 +41,7 @@ content:
     type: string_textarea
     region: content
   field_banner_link:
-    weight: 3
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -47,6 +55,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_title_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true
