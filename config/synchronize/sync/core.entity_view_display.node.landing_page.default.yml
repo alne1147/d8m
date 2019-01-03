@@ -25,6 +25,7 @@ dependencies:
     - node.type.landing_page
   module:
     - entity_reference_revisions
+    - slick_paragraphs
     - user
 id: node.landing_page.default
 targetEntityType: node
@@ -37,12 +38,20 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_jumbo:
-    type: entity_reference_revisions_entity_view
+    type: slick_paragraphs_vanilla
     weight: 3
     label: hidden
     settings:
       view_mode: default
-      link: ''
+      override: false
+      overridables: {  }
+      skin_arrows: ''
+      skin_dots: ''
+      cache: 0
+      current_view_mode: ''
+      optionset: default
+      skin: ''
+      style: ''
     third_party_settings: {  }
     region: content
   field_rows:

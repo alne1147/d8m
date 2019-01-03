@@ -1,0 +1,21 @@
+uuid: 8fa9a8cb-5f29-4eed-b613-577dd9b4c6b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.jumbo
+  module:
+    - options
+id: paragraph.jumbo.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: jumbo
+label: 'Body Background'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: a9d53a85-fc38-484c-ad3d-dc2535217247
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_color
+    - node.type.jumbo_slides
+  module:
+    - options
+id: node.jumbo_slides.field_title_color
+field_name: field_title_color
+entity_type: node
+bundle: jumbo_slides
+label: 'Title Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

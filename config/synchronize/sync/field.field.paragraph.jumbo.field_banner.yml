@@ -11,7 +11,7 @@ id: paragraph.jumbo.field_banner
 field_name: field_banner
 entity_type: paragraph
 bundle: jumbo
-label: Banner
+label: 'Banner Image'
 description: ''
 required: false
 translatable: false
