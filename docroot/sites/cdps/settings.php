@@ -825,7 +825,7 @@ $apachesolr_environment_ids = [ "acquia_search_server_1" ];
 
 $settings['memcache']['stampede_protection'] = TRUE;
 $config['image.settings']['allow_insecure_derivatives'] = TRUE;
-$settings['file_private_path'] = 'sites/ag/files/private';
+$settings['file_private_path'] = 'sites/cdps/files/private';
 
 global $content_directories;
 $content_directories['sync'] = $app_root.'/../content/sync';
