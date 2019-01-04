@@ -55,19 +55,20 @@
   .jumbo_slide__title {
     width: 100%;
     font-family: "museo-sans",sans-serif;
-    font-size: 23px;
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 8px 12px 0px;
     h2 {
       margin: 0px;
-      padding: 10px 10px 15px 15px;
+      padding: 10px 10px 0px 15px;
     }
   }
   .jumbo_slide__body {
     width: 100%;
+    padding-left: 15px;
     p {
-      padding: 10px 10px 15px 15px;
+      padding: 0px 10px 20px 15px;
       margin-bottom: 0px;
+      font-size: $font-size-base!important;
     }
   }
   [class^="hero__responsive_"] {
@@ -89,7 +90,6 @@
     .paragraph__title {
       width: 40%;
       font-family: "museo-sans",sans-serif;
-      font-size: 23px;
       font-weight: 500;
       padding: 8px 12px;
       border-radius: $border-radius;
@@ -101,13 +101,13 @@
     .paragraph__body {
       width: 40%;
       font-family: "museo-sans",sans-serif;
-      font-size: 23px;
       font-weight: 500;
       padding: 8px 12px;
       border-radius: $border-radius;
       p {
-        padding: 10px 10px 15px 15px;
+        padding: 0px 10px 15px 15px;
         margin-bottom: 0px;
+        font-size: $font-size-base!important;
       }
     }
     .paragraph__title, .paragraph__body {
@@ -121,4 +121,25 @@
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+.view-jumbo-sliders {
+  .slick__arrow {
+    .slick-prev::before, .slick-next::before {
+      top: 250px;
+    }
+    .slick-prev::before {
+      left: 150px;
+    }
+    .slick-next::before {
+      right: 150px;
+    }
+  }
+}
+
+.landing-page {
+  .slick__arrow {
+    .slick-prev::before, .slick-next::before{
+      top: 250px;
+    }
+  }
 }
