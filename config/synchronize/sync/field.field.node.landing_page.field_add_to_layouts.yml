@@ -1,0 +1,23 @@
+uuid: 825fefb6-9b64-4a04-b925-19525b4070c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_to_layouts
+    - node.type.landing_page
+id: node.landing_page.field_add_to_layouts
+field_name: field_add_to_layouts
+entity_type: node
+bundle: landing_page
+label: 'Add to Layouts'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

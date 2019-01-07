@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.contact.body
+    - field.field.node.contact.field_add_to_layouts
     - field.field.node.contact.field_address1
     - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
@@ -133,6 +134,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_layouts:
+    weight: 41
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_address1:
     weight: 33
     settings:

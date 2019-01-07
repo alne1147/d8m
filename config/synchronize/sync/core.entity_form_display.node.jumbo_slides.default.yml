@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.media_image_browser
     - field.field.node.jumbo_slides.body
+    - field.field.node.jumbo_slides.field_add_to_layouts
     - field.field.node.jumbo_slides.field_body_color
     - field.field.node.jumbo_slides.field_jumbotron_image
     - field.field.node.jumbo_slides.field_jumbotron_link
@@ -36,6 +37,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_layouts:
+    weight: 27
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_body_color:
     weight: 13
     settings: {  }

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_add_to_layouts
     - field.field.node.page.field_archive
     - field.field.node.page.field_article_tags
     - field.field.node.page.field_display_image
@@ -221,6 +222,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_layouts:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_archive:
     weight: 30
     settings:

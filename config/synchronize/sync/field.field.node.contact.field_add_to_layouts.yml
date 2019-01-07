@@ -1,0 +1,23 @@
+uuid: 1d8d1827-e6c9-4a0e-88a3-ad2d5e003254
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_to_layouts
+    - node.type.contact
+id: node.contact.field_add_to_layouts
+field_name: field_add_to_layouts
+entity_type: node
+bundle: contact
+label: 'Add to Layouts'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

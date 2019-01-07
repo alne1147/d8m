@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_add_to_layouts
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
@@ -69,6 +70,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_add_to_layouts: true
   field_archive: true
   field_background_color: true
   field_background_image: true
