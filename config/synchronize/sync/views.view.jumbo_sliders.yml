@@ -71,7 +71,7 @@ display:
         type: slick
         options:
           vanilla: true
-          optionset: default
+          optionset: jumbo
           skin: ''
           layout: ''
           optionset_thumbnail: ''
