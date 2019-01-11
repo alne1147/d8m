@@ -92,7 +92,6 @@
       font-family: "museo-sans",sans-serif;
       font-weight: 500;
       padding: 8px 12px;
-      border-radius: $border-radius;
       .div {
         margin: 0px;
         padding: 10px 10px 15px 15px;
@@ -103,7 +102,6 @@
       font-family: "museo-sans",sans-serif;
       font-weight: 500;
       padding: 8px 12px;
-      border-radius: $border-radius;
       p {
         padding: 0px 10px 15px 15px;
         margin-bottom: 0px;
@@ -136,10 +134,10 @@
   }
 }
 
-.landing-page {
+.page-node-type-landing-page {
   .slick__arrow {
     .slick-prev::before, .slick-next::before{
-      top: 250px;
+      top: 200px;
     }
   }
 }
