@@ -1,4 +1,6 @@
 {# Jumbotron and Navbar #}
+
+{# Nav Bar above Jumbotron #}
 {% if node.field_nav_bar_above.value %}
   {% include directory ~ '/templates/includes/navbar.html.twig' %}
   {% if page.jumbotron %}
@@ -6,6 +8,7 @@
       {{ page.jumbotron }}
     </div>
   {% endif %}
+{# Nav Bar below Jumbotron #}
 {% else %}
   {% if page.jumbotron %}
     <div class="jumbotron">
@@ -18,4 +21,3 @@
     {% include directory ~ '/templates/includes/navbar.html.twig' %}
   {% endif %}
 {% endif %}
-

@@ -1,0 +1,62 @@
+uuid: 4da8f3e3-1b83-4731-bbce-15025cf5425a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.inline_jumbotron
+    - field.storage.node.field_jumbo
+  module:
+    - block_visibility_groups
+    - fieldblock
+    - menu_condition
+    - slick_paragraphs
+    - term_condition
+  theme:
+    - ci_xy
+id: contentfield
+theme: ci_xy
+region: jumbotron
+weight: 0
+provider: null
+plugin: 'fieldblock:node'
+settings:
+  id: 'fieldblock:node'
+  label: 'Content field'
+  provider: fieldblock
+  label_display: '0'
+  label_from_field: true
+  field_name: field_jumbo
+  formatter_id: slick_paragraphs_vanilla
+  formatter_settings:
+    optionset: jumbo
+    skin: ''
+    view_mode: default
+    override: false
+    overridables:
+      arrows: '0'
+      autoplay: '0'
+      dots: '0'
+      draggable: '0'
+      infinite: '0'
+      mouseWheel: '0'
+      randomize: '0'
+      variableWidth: '0'
+    cache: 0
+    current_view_mode: _custom
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: inline_jumbotron
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
