@@ -5,29 +5,30 @@
             <div class="container">
                 {{ page.footer }}
             </div>
-          {# global footer #}
-          {% block global_footer %}
-              <div class="footer__global-footer" role="contentinfo">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-9">
-                              <ul class="footer__global-footer--links">
-                                  <li>&#169; {{ node.createdtime | date("Y") }} State of Colorado</li>
-                                  <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
-                                  <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
-                                  <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
-                                  <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
-                              </ul>
-                          </div>
-                          <div class="col-md-3">
-                              <div class="footer__logo">
-                                  <a class="logo--cogov" href="https://www.colorado.gov"></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          {% endblock %}
         </footer>
     {% endblock %}
 {% endif %}
+
+{# global footer #}
+{% block global_footer %}
+    <div class="footer__global-footer {{ footer_color }}" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <ul class="footer__global-footer--links">
+                        <li>&#169; {{ node.createdtime | date("Y") }} State of Colorado</li>
+                        <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
+                        <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
+                        <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
+                        <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer__logo">
+                        <a class="logo--cogov" href="https://www.colorado.gov"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -4,10 +4,11 @@ namespace Drupal\quick_clone\Controller;
 
 use DateTime;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Entity\EntityStorageException;
-use Drupal\Core\Entity\EntityTypeManager;
 use Drupal\Core\Routing\TrustedRedirectResponse;
 use Drupal\Core\Url;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\node\NodeInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -17,28 +18,23 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class CloneController extends ControllerBase {
 
   /**
-   * CloneController constructor.
-   */
-  public function __construct(EntityTypeManager $entityTypeManager) {
-    $this->entityTypeManager = $entityTypeManager;
-  }
-
-  /**
    * Quick_clone.
    *
    * @param int $id
    *   Id of the current node.
    *
-   * @throws \InvalidArgumentException
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    * @throws \Drupal\Core\Entity\EntityStorageException
    *
    * @return string
    *   Return Hello string.
    */
   public function quickClone($id) {
-    $original_entity = $this->entityTypeManager->getStorage('node')->load($id);
+    $original_entity = $this->entityTypeManager()->getStorage('node')->load($id);
+    /** @var \Drupal\node\NodeInterface $original_entity */
     if (!$original_entity instanceof NodeInterface) {
-      throw new EntityStorageException(sprintf('Node with id %d does not exist',  $id));
+      throw new EntityStorageException(sprintf('Node with id %d does not exist', $id));
     }
 
     $new_node = $original_entity->createDuplicate();
@@ -64,12 +60,7 @@ class CloneController extends ControllerBase {
           }
         }
       }
-      $translated_node->setTitle(t('Clone of @title', ['@title' => $original_entity->getTitle()], ['langcode' => $langcode]));
-
-      $date_time = new DateTime();
-      $translated_node->setCreatedTime($date_time->getTimestamp());
-      $translated_node->save();
-
+      $this->processNewNode($translated_node, $original_entity, $langcode);
       drupal_set_message(
         $this->t("Node @title has been created. <a href='/node/@id/edit' target='_blank'>Edit now</a>", [
           '@id' => $translated_node->id(),
@@ -84,10 +75,19 @@ class CloneController extends ControllerBase {
   }
 
   /**
-   * {@inheritdoc}
+   * @param \Drupal\node\NodeInterface $translated_node
+   * @param \Drupal\node\NodeInterface $original_entity
+   * @param                            $langcode
+   *
+   * @return int
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public static function create(ContainerInterface $container) {
-    return new static($container->get('entity_type.manager'));
+  public function processNewNode(NodeInterface $translated_node, NodeInterface $original_entity, $langcode) {
+    $translated_node->setTitle($this->t('Clone of @title', ['@title' => $original_entity->getTitle()], ['langcode' => $langcode]));
+    $now = new DrupalDateTime('now');
+    $now->setTimezone(new \DateTimeZone(DateTimeItemInterface::STORAGE_TIMEZONE));
+    $translated_node->setCreatedTime($now->getTimestamp());
+    return $translated_node->save();
   }
 
 }

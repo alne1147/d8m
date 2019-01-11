@@ -19,7 +19,7 @@ function quick_clone_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.quick_clone':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Module wich allow cloning nodes with paragarph fields') . '</p>';
+      $output .= '<p>' . t('Module which allow cloning nodes with paragarph fields') . '</p>';
       return $output;
 
     default:
@@ -54,10 +54,10 @@ function quick_clone_entity_operation(EntityInterface $entity) {
 }
 
 /**
- * Implement hook_menu_local_tasks_alter().
+ * Implements hook_menu_local_tasks_alter().
  */
 function quick_clone_menu_local_tasks_alter(&$data, $route_name) {
-  /** @var Node $node */
+  /** @var Drupal\node\Entity\Node $node */
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node && $node instanceof Node) {
     if ((strpos($route_name, 'entity.node.edit_form') === 0) || (strpos($route_name, 'entity.node.canonical') === 0)) {

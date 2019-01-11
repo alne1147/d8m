@@ -1,3 +1,16 @@
 .is--empty {
   display: none;
 }
+.tabs--primary
+{
+  display:none;
+}
+.user-logged-in .tabs--primary
+{
+  display:block;
+}
+
+.page-node-type-landing-page h1.page-header
+{
+  display:none;
+}
