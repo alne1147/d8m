@@ -67,7 +67,7 @@ class CiNodes extends SqlBase {
 	$row->setDestinationProperty('default_bundle', $row->getSourceProperty('dest_type'));
 	$row->setDestinationProperty('type', $row->getSourceProperty('dest_type'));
 	print_r("\n");
-print_r($row);    
+print_r($row);
     return $row;
   }
 

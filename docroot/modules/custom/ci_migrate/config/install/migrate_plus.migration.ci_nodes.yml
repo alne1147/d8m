@@ -21,13 +21,18 @@ process:
     plugin: default_value
     default_value: 'd8m_text_editor'
   field_jumbotron_image/target_id:
-    plugin: media_generate
-    destination_field: field_media_image
-    value_key: mid
-    bundle: image
-    entity_type: media
-    ignore_case: true
-    source: images
+    -
+      plugin: skip_on_empty
+      method: process
+      source: images
+    -
+      plugin: media_generate
+      destination_field: field_media_image
+      value_key: mid
+      bundle: image
+      entity_type: media
+      ignore_case: true
+      source: images
   field_jumbotron_link/value: image_link
 destination:
   plugin: entity:node

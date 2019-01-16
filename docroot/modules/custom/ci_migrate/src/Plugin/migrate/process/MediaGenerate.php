@@ -70,6 +70,7 @@ class MediaGenerate extends EntityGenerate {
     // First load the target_id of the file referenced via the migration.
     /* @var /Drupal/file/entity/File $file */
     if (!$dest_value) {
+      print_r($dest_value); exit; //152931
       throw new MigrateException('Referenced file does not exist: ' . $dest_value);
     }
 
