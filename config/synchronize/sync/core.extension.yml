@@ -170,6 +170,7 @@ module:
   twig_blocks: 0
   update: 0
   user: 0
+  userprotect: 0
   video_embed_field: 0
   video_embed_wysiwyg: 0
   views_templates: 0

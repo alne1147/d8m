@@ -20,5 +20,8 @@ permissions:
   - 'search Google CSE'
   - 'search content'
   - 'skip comment approval'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
   - 'view date repeats'
   - 'view own unpublished content'
