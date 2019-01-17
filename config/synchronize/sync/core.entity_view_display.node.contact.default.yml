@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.contact.body
+    - field.field.node.contact.field_add_to_layouts
     - field.field.node.contact.field_address1
     - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
@@ -176,4 +177,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_add_to_layouts: true
   field_hide_breadcrumbs: true

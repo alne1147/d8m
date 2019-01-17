@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_add_to_cal
+    - field.field.node.event.field_add_to_layouts
     - field.field.node.event.field_archive
     - field.field.node.event.field_article_tags
     - field.field.node.event.field_date
@@ -302,6 +303,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: add_to_calendar_widget_type
+    region: content
+  field_add_to_layouts:
+    weight: 58
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_archive:
     weight: 57

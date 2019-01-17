@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_add_to_layouts
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
@@ -200,6 +201,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_layouts:
+    weight: 35
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_archive:
     weight: 30
     settings:

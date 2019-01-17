@@ -1,0 +1,23 @@
+uuid: 5e188f45-de12-41c2-8e67-4ceea367c295
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_to_layouts
+    - node.type.event
+id: node.event.field_add_to_layouts
+field_name: field_add_to_layouts
+entity_type: node
+bundle: event
+label: 'Add to Layouts'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

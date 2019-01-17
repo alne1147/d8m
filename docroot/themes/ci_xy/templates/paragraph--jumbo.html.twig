@@ -129,25 +129,42 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {# Prints div with classes, and content without Width and Background. #}
     <div{{ attributes.addClass(classes) }}>
       <div class="paragraph__column">
+
         {{ title_suffix }}
-        <div class="paragraph__title {{content.field_title_color[0] }}">
-            {{ content.field_banner_title }}
-        </div>
-        <div class="paragraph__body {{ content.bp_background[0] }}">
-        {{ content|without('bp_width', 'bp_background', 'field_title_color', 'field_banner_title', 'field_banner') }}
-        </div>
+          {% if content.field_banner_title[0] %}
+            <div class="paragraph__title {{content.field_title_color[0] }}">
+                {{ content.field_banner_title }}
+            </div>
+          {% else %}
+            <div class="no_title"></div>
+          {% endif %}
+          {% if content.field_banner_body[0] %}
+            <div class="paragraph__body {{ content.bp_background[0] }}">
+            {{ content|without('bp_width', 'bp_background', 'field_title_color', 'field_banner_title', 'field_banner') }}
+            </div>
+          {% else %}
+              <div class="no_body"></div>
+          {% endif %}
       </div>
     </div>
 
 {% else %}
     <div{{ attributes.addClass(classes) }}>
       <div class="paragraph__column">
-        <div class="paragraph__title">
-            {{ content.field_banner_title }}
-        </div>
-        <div class="paragraph__body {{ content.bp_background[0] }}">
-          {{ content|without('bp_width', 'bp_background', 'field_title_color', 'field_banner_title', 'field_banner') }}
-        </div>
+        {% if content.field_banner_title[0]  %}
+          <div class="paragraph__title">
+              {{ content.field_banner_title }}
+          </div>
+        {% else %}
+          <div class="no_title"></div>
+        {% endif %}
+        {% if content.field_banner_body[0] %}
+            <div class="paragraph__body {{ content.bp_background[0] }}">
+              {{ content|without('bp_width', 'bp_background', 'field_title_color', 'field_banner_title', 'field_banner') }}
+            </div>
+        {% else %}
+            <div class="no_body"></div>
+        {% endif %}
       </div>
     </div>
 {% endif %}

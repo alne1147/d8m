@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.field_add_to_layouts
     - field.field.node.webform.field_article_tags
     - field.field.node.webform.field_hide_breadcrumbs
     - field.field.node.webform.field_hide_navigation_bar
@@ -239,6 +240,13 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_add_to_layouts:
+    weight: 33
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_article_tags:
     weight: 30

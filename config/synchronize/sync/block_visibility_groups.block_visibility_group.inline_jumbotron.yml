@@ -1,0 +1,18 @@
+uuid: d3dfbf2e-5351-47df-b0b7-938c520d13ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+id: inline_jumbotron
+label: 'Inline Jumbotron'
+logic: and
+conditions:
+  a3d31b8c-66ff-4723-b842-5261857f22a9:
+    id: term
+    negate: 0
+    tid: '100051'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a3d31b8c-66ff-4723-b842-5261857f22a9
+allow_other_conditions: false
