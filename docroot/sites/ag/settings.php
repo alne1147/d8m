@@ -33,9 +33,6 @@ $config_directories['sole'] = '../config/ag.colorado.gov/sole';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 
-$settings['file_public_path'] = '/sites/ag/files';
-$settings['file_private_path'] = 'sites/ag/files-private';
-
 $settings['file_temporary_path'] = 'tmp';
 $config['system.site']['name'] = 'Department of Agriculture';
 // <DDSETTINGS>
