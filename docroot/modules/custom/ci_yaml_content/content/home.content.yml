@@ -1,0 +1,74 @@
+- entity: "node"
+  type: "landing_page"
+  title: "Home Page"
+  status: 1
+  moderation_state:
+      value: 'published'
+  field_jumbotron_options:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'jumbotron_options'
+            name: 'Show Site Jumbotron'
+  field_rows:
+    - entity: 'paragraph'
+      type: 'bp_columns'
+      bp_column_content:
+      - entity: 'paragraph'
+        type: 'card_basic'
+        field_card_body:
+        - value: |
+            <h1 class="text-align-center"><span style="font-family:museo sans,sans-serif;"><strong>Welcome!</strong></span></h1>
+
+            <p class="text-align-center">This is a sample Home Page on the D8M Platform.</p>
+
+            <p class="text-align-center">This is just a simple card with text, but cards can be used in a variety of ways.</p>
+          format: 'd8m_text_editor'
+    - entity: 'paragraph'
+      type: 'bp_columns'
+      bp_column_content:
+      - entity: 'paragraph'
+        type: 'card_basic'
+        field_card_title:
+        - value: 'This Card Has A Title'
+        field_card_body:
+        - value: |
+            <p>You can add content to cards and place them anywhere in a row on your pages.</p>
+
+            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.</p>
+          format: 'd8m_text_editor'
+      - entity: 'paragraph'
+        type: 'card_basic'
+        field_card_body:
+        - value: |
+            <dl class="ckeditor-accordion">
+                <dt><span style="background-color:#000080;">Accordion title 1</span></dt>
+                <dd>
+                <p>You can add Expanding Text Accordions To Cards</p>
+                </dd>
+                <dt><span style="background-color:#006400;">Accordion title 2</span></dt>
+                <dd>
+                <p>Cards can be added to any Row</p>
+                </dd>
+                <dt>Accordion title 3</dt>
+                <dd>
+                <p>Rows will expand to accommodate accordions.</p>
+
+                <p>Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                </dd>
+            </dl>
+          format: 'd8m_text_editor'
+    - entity: 'paragraph'
+      type: 'bp_columns'
+      bp_column_content:
+      - entity: 'paragraph'
+        type: 'card_basic'
+        field_card_body:
+        - value: |
+            <p>This card is in the next row.</p>
+
+            <p>Also, you can find test Content in the Menu under "Content".</p>
+
+            <p>There are many test Pages and Articles with other examples of the content you can create in D8M.</p>
+          format: 'd8m_text_editor'

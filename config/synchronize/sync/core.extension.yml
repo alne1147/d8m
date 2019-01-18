@@ -27,13 +27,16 @@ module:
   chosen_lib: 0
   ci_admin_tweaks: 0
   ci_article_setup: 0
+  ci_default_content: 0
   ci_js: 0
+  ci_layouts: 0
   ci_menu_tweaks: 0
   ci_migrate: 0
   ci_search_form: 0
   ci_templates: 0
   ci_theme_options: 0
   ci_views_tweaks: 0
+  ci_yaml_content: 0
   ckeditor: 0
   ckeditor_a11ychecker: 0
   ckeditor_accordion: 0
@@ -61,7 +64,6 @@ module:
   dblog: 0
   default_content: 0
   default_content_deploy: 0
-  devel: 0
   draggableviews: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
@@ -80,10 +82,10 @@ module:
   features: 0
   features_ui: 0
   field: 0
-  fieldblock: 0
   field_group: 0
   field_slideshow: 0
   field_ui: 0
+  fieldblock: 0
   file: 0
   file_browser: 0
   filter: 0
