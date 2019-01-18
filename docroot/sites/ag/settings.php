@@ -20,10 +20,8 @@ if (isset($_ENV["AH_PRODUCTION"]) && $_ENV["AH_PRODUCTION"] == 1) {
 
 }
 
-if (isset($_ENV["AH_SITE_ENVIRONMENT"])) {
-  if (file_exists('/var/www/site-php')) {
-    require '/var/www/site-php/coloradod8m/ag-settings.inc';
-  }
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/coloradod8m/ag-settings.inc';
 }
 
 $config_directories['sync'] = '../config/synchronize/sync'; $config_directories['post-sync'] = '../config/synchronize/post-sync';
@@ -67,3 +65,9 @@ $apachesolr_environment_ids = [ "acquia_search_server_1" ];
 
 $settings['memcache']['stampede_protection'] = TRUE;
 $config['image.settings']['allow_insecure_derivatives'] = TRUE;
+
+if (!isset($_ENV["AH_ENVIRONMENT"])) {
+  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+    include $app_root . '/' . $site_path . '/settings.local.php';
+  }
+}
