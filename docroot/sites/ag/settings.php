@@ -17,14 +17,13 @@ if (isset($_ENV["AH_PRODUCTION"]) && $_ENV["AH_PRODUCTION"] == 1) {
   $config['system.performance']['css']['preprocess'] = FALSE;
   $config['system.performance']['js']['preprocess'] = FALSE;
   $settings['update_free_access'] = TRUE;
+
 }
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
- include $app_root . '/' . $site_path . '/settings.local.php';
-}
-
-if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/coloradod8m/ag-settings.inc';
+if (isset($_ENV["AH_PRODUCTION"])) {
+  if (file_exists('/var/www/site-php')) {
+    require '/var/www/site-php/coloradod8m/ag-settings.inc';
+  }
 }
 
 $config_directories['sync'] = '../config/synchronize/sync'; $config_directories['post-sync'] = '../config/synchronize/post-sync';
