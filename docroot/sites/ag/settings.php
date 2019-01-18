@@ -20,7 +20,7 @@ if (isset($_ENV["AH_PRODUCTION"]) && $_ENV["AH_PRODUCTION"] == 1) {
 
 }
 
-if (isset($_ENV["AH_PRODUCTION"])) {
+if (isset($_ENV["AH_SITE_ENVIRONMENT"])) {
   if (file_exists('/var/www/site-php')) {
     require '/var/www/site-php/coloradod8m/ag-settings.inc';
   }
