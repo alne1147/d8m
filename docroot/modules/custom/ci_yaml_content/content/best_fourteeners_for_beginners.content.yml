@@ -1,0 +1,64 @@
+- entity: "node"
+  type: "page"
+  title: "Best Fourteeners for Beginners"
+  status: 1
+  moderation_state:
+      value: 'published'
+  body:
+    - format: "d8m_text_editor"
+      value: |
+        <h2 class="presto-h2"><strong>Grays Peak</strong></h2>
+
+        <p>Nibh nisl condimentum id venenatis a condimentum vitae sapien. A scelerisque purus semper eget duis at tellus at. Pellentesque habitant morbi tristique senectus et netus. Phasellus faucibus scelerisque eleifend donec. Ultricies integer quis auctor elit sed vulputate.</p>
+
+        <h2 class="presto-h2"><strong>Torreys Peak</strong></h2>
+
+        <p>Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sit amet porttitor eget dolor morbi. Commodo ullamcorper a lacus vestibulum sed arcu non. Dui sapien eget mi proin sed. Enim neque volutpat ac tincidunt vitae semper quis. Aliquet lectus proin nibh nisl condimentum id venenatis. Sodales ut etiam sit amet nisl purus in. In mollis nunc sed id semper risus. Cursus sit amet dictum sit amet justo donec enim. Eu facilisis sed odio morbi.</p>
+
+        <h2 class="presto-h2"><strong>Quandary Peak</strong></h2>
+
+        <p>Porta nibh venenatis cras sed felis eget. Eget felis eget nunc lobortis. Bibendum est ultricies integer quis auctor elit. Lectus proin nibh nisl condimentum id. Vitae semper quis lectus nulla. Eu augue ut lectus arcu bibendum at. Ornare lectus sit amet est placerat in egestas erat. Quis imperdiet massa tincidunt nunc pulvinar sapien. Amet venenatis urna cursus eget nunc scelerisque viverra mauris.</p>
+
+        <h2 class="presto-h2"><strong>Mount Bierstadt</strong></h2>
+
+        <p>Auctor eu augue ut lectus arcu. Commodo nulla facilisi nullam vehicula. Maecenas ultricies mi eget mauris. Dolor sit amet consectetur adipiscing. Semper auctor neque vitae tempus quam pellentesque nec. Metus vulputate eu scelerisque felis. Nulla pellentesque dignissim enim sit. Ligula ullamcorper malesuada proin libero nunc.</p>
+
+        <h2 class="presto-h2"><strong>Mount Elbert</strong></h2>
+
+        <p>Libero id faucibus nisl tincidunt eget nullam non. Viverra suspendisse potenti nullam ac tortor. Varius duis at consectetur lorem donec massa sapien faucibus et. Aliquam ultrices sagittis orci a scelerisque purus. Neque vitae tempus quam pellentesque nec. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Quis enim lobortis scelerisque fermentum dui faucibus.</p>
+  field_rows:
+    - entity: 'paragraph'
+      type: 'bp_columns'
+      bp_column_content:
+      - entity: 'paragraph'
+        type: 'bp_carousel'
+        bp_slide_interval:
+        - value: '5000'
+        bp_slide_content:
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'mtWilson.jpg'
+            alt: 'Snow covered peaks'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'MaroonBell.jpg'
+            alt: 'Maroon bell mountains with lake in front'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'gore-range-vail.jpg'
+            alt: 'Mountains dusted with snow in Vail'

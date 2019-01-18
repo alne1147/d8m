@@ -1,0 +1,10 @@
+name: CI YAML Content
+type: module
+description: Import content via Yaml.
+# core: 8.x
+
+
+version: '8.x'
+core: '8.x'
+project: 'ci_yaml_content'
+datestamp: 1530741526
