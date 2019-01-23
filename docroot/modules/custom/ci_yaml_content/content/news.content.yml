@@ -59,11 +59,27 @@
       bp_slide_interval:
       - value: '5000'
       bp_slide_content:
-      - entity: 'paragraph'
-        type: 'bp_image'
-        bp_image_field:
-        - '#process':
-            callback: 'file'
-            args:
-              - 'image'
-              - filename: 'businesswoman.jpg'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'columbine.jpg'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'MaroonBell.jpg'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'blue-sky-clouds.jpg'

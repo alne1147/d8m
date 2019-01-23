@@ -1,6 +1,6 @@
 - entity: "node"
   type: "landing_page"
-  title: "Home Page"
+  title: "Home"
   status: 1
   moderation_state:
       value: 'published'
@@ -10,7 +10,29 @@
         args:
           - 'taxonomy_term'
           - vid: 'jumbotron_options'
-            name: 'Show Site Jumbotron'
+            name: 'Refer Sliders'
+  field_refer_slider:
+    - target_type: 'node'
+      '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'jumbo_slides'
+            title: 'Garden of the Gods'
+    - target_type: 'node'
+      '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'jumbo_slides'
+            title: 'The Skies are Blue'
+  field_footer_selection:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'footer_options'
+            name: 'Show Site Footer'
   field_rows:
     - entity: 'paragraph'
       type: 'bp_columns'

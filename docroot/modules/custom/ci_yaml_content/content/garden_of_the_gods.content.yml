@@ -1,0 +1,22 @@
+- entity: "node"
+  type: "jumbo_slides"
+  title: "Garden of the Gods"
+  status: 1
+  moderation_state:
+      value: 'published'
+  body:
+    - value: |
+        <p>Vix adversarium reprehendunt ea. Nominati perpetua elaboraret ut his, duo ex solum solet fierent, in
+        cetero mandamus pro. Cum in detracto iudicabit, inani menandri ex sea. Id commodo nonumes euripidis sea,
+        eum id facer voluptaria.</p>
+      format: 'd8m_text_editor'
+  field_jumbotron_image:
+    - entity: 'media'
+      bundle: 'image'
+      field_media_image:
+      - '#process':
+          callback: 'file'
+          args:
+            - 'image'
+            - filename: 'garden-of-the-gods.jpg'
+        alt: 'Garden of the gods'
