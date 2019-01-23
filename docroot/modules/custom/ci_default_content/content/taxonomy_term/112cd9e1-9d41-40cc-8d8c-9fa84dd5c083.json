@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100018?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/related_content"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/related_content\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100018
+        }
+    ],
+    "uuid": [
+        {
+            "value": "112cd9e1-9d41-40cc-8d8c-9fa84dd5c083"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "related_content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Show Related Tags",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/related_content\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-09-05T16:57:54+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Show Related Tags | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100018"
+            }
+        }
+    ]
+}

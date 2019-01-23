@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100010?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/page_options"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/page_options\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100010
+        }
+    ],
+    "uuid": [
+        {
+            "value": "18bcb273-2a26-49f7-b6b4-e6ea17629d10"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "page_options"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Second Menu - Right",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/page_options\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-07-28T15:09:02+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Second Menu - Right | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100010"
+            }
+        }
+    ]
+}

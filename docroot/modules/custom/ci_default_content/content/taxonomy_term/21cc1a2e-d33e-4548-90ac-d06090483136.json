@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100036?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100036
+        }
+    ],
+    "uuid": [
+        {
+            "value": "21cc1a2e-d33e-4548-90ac-d06090483136"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "County",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-10-17T19:58:08+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "County | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100036"
+            }
+        }
+    ]
+}
