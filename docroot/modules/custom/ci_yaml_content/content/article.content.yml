@@ -66,23 +66,48 @@
           - entity: 'paragraph'
             type: 'card_basic'
             field_card_title:
-            - value: "Card Title Man"
+            - value: "Card Title"
             field_card_body:
               - value: |
-                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum dolor sit amet, volutpat neglegentur pro at, prima graeci necessitatibus at sed. Eum
+                  te movet tamquam argumentum. Libris assueverit et nec, mea minim simul efficiantur an, ne mea possim
+                  deserunt instructior. Nam nemore alterum aliquando an.</p>
+
+                  <p>Vix adversarium reprehendunt ea. Nominati perpetua elaboraret ut his, duo ex solum solet fierent,
+                  in cetero mandamus pro. Cum in detracto iudicabit, inani menandri ex sea. Id commodo nonumes euripidis
+                  sea, eum id facer voluptaria.</p>
                 format: 'd8m_text_editor'
+          - entity: 'paragraph'
+            type: 'card_map'
+            field_location:
+              - value: "Denver, CO"
         - entity: 'paragraph'
-          type: 'bp_columns'
-          bp_column_content:
+          type: 'bp_columns_two_uneven'
+          bp_column_style_2:
+          - value: "paragraph--style--75-25"
+          bp_column_content_2:
           - entity: 'paragraph'
             type: 'card_basic'
             field_card_title:
-            - value: "Marzipan pudding"
+            - value: "Vix Quem"
             field_card_body:
               - value: |
-                  <p>Marzipan pudding macaroon chocolate. Ice cream dessert chocolate. Lollipop carrot cake gummi
-                  bears. Marshmallow tiramisu cotton candy gummies dessert cookie apple pie pie lollipop. Ice
-                  cream chocolate bar jujubes tiramisu tiramisu biscuit sweet cake. Jelly liquorice powder jelly-o
-                  sugar plum fruitcake. Candy canes cake wafer lollipop topping jujubes carrot cake dessert.
-                  Cupcake lollipop gummies cupcake chocolate bar chupa chups </p>
+                  <p>Vix quem suavitate cu, sit suscipiantur disputationi eu, eu sed rebum convenire intellegat. Assum
+                  diceret in mei. Erant voluptaria id has. Te probatus accusata nec. Tantas doming ut est, at vis quodsi
+                   apeirian moderatius, ea nam veniam ceteros. An nec nihil graecis laboramus, est iuvaret percipitur
+                   cu, stet saepe legere vel no.</p>
+
+                    <p>An his veritus placerat, mea vivendo sententiae ad. Cu vide essent sea, eum te debitis persecuti
+                    incorrupte. Ea aliquam eruditi his, in novum prodesset sit. Te tacimates partiendo est, usu an
+                    detracto rationibus inciderint. Eirmod feugait ius ne, diceret principes referrentur vis ex.</p>
+                format: 'd8m_text_editor'
+          - entity: 'paragraph'
+            type: 'card_basic'
+            field_card_title:
+            - value: "Eum ad corpora"
+            field_card_body:
+              - value: |
+                  <p>Eum ad corpora ancillae facilisi, in platonem euripidis consequuntur vis. Ea elit probo impetus
+                  pri, brute luptatum in nec, recusabo volutpat in duo. Eu sit epicurei consequat, has ea unum lobortis,
+                  ius ea partem nusquam phaedrum.</p>
                 format: 'd8m_text_editor'
