@@ -4,10 +4,14 @@ namespace Drupal\default_content;
 
 use Drupal\Component\Graph\Graph;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Entity\RevisionableInterface;
 use Drupal\Core\Session\AccountSwitcherInterface;
 use Drupal\default_content\Event\DefaultContentEvents;
 use Drupal\default_content\Event\ImportEvent;
+use Drupal\entity_reference_revisions\EntityReferenceRevisionsFieldItemList;
 use Drupal\hal\LinkManager\LinkManagerInterface;
 use Drupal\user\EntityOwnerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -114,15 +118,18 @@ class Importer implements ImporterInterface {
   /**
    * {@inheritdoc}
    */
-  public function importContent($module) {
+  public function importContent($module, $update_existing = FALSE) {
     $created = [];
+    $updated = [];
+    $revision_links = [];
     $folder = drupal_get_path('module', $module) . "/content";
 
     if (file_exists($folder)) {
       $root_user = $this->entityTypeManager->getStorage('user')->load(1);
       $this->accountSwitcher->switchTo($root_user);
       $file_map = [];
-      foreach ($this->entityTypeManager->getDefinitions() as $entity_type_id => $entity_type) {
+      $definitions = $this->entityTypeManager->getDefinitions();
+      foreach ($definitions as $entity_type_id => $entity_type) {
         $reflection = new \ReflectionClass($entity_type->getClass());
         // We are only interested in importing content entities.
         if ($reflection->implementsInterface(ConfigEntityInterface::class)) {
@@ -178,19 +185,89 @@ class Importer implements ImporterInterface {
         if (!empty($file_map[$link])) {
           $file = $file_map[$link];
           $entity_type_id = $file->entity_type_id;
-          $class = $this->entityTypeManager->getDefinition($entity_type_id)->getClass();
+          /* @var $entity_type \Drupal\Core\Entity\EntityTypeInterface */
+          $entity_type = $definitions[$entity_type_id];
           $contents = $this->parseFile($file);
-          $entity = $this->serializer->deserialize($contents, $class, 'hal_json', ['request_method' => 'POST']);
-          $entity->enforceIsNew(TRUE);
+
+          /* @var $entity \Drupal\Core\Entity\EntityInterface */
+          $entity = $this->serializer->deserialize($contents, $entity_type->getClass(), 'hal_json', ['request_method' => 'POST']);
+
+          // Ensure we use the proper target_revision_id for edges.
+          if (!empty($details['edges']) && !empty($revision_links)) {
+            foreach ($details['edges'] as $uuid => $bool) {
+              foreach ($entity as $data) {
+                // If this is a field that requires the revision id ensure it
+                // has the one assigned during the import and not the one stored
+                // in the export.
+                if ($data instanceof EntityReferenceRevisionsFieldItemList) {
+                  foreach ($data as $item) {
+                    if ($target_entity = $item->getProperties(TRUE)['entity']) {
+                      if (isset($revision_links[$target_entity->getTargetDefinition()->getEntityTypeId()][$target_entity->getTargetIdentifier()])) {
+                        $target_entity->setValue([
+                          'target_id' => $target_entity->getTargetIdentifier(),
+                          'target_revision_id' => $revision_links[$target_entity->getTargetDefinition()->getEntityTypeId()][$target_entity->getTargetIdentifier()],
+                        ]);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          $is_new = TRUE;
+
+          $old_entity = $this->lookupEntity($entity, $entity_type);
+
+          if ($old_entity && $update_existing) {
+            // All unique keys need to match the old entity.
+            $entity->{$entity_type->getKey('uuid')} = $old_entity->uuid();
+            $entity->{$entity_type->getKey('id')} = $old_entity->id();
+            $is_new = FALSE;
+            if ($this->isRevisionableEntity($entity)) {
+              $entity->{$entity_type->getKey('revision')} = $old_entity->getRevisionId();
+            }
+          }
+          elseif (!$old_entity) {
+            // Don't import site level IDs if they are used.
+            if ($this->existEntityId($entity, $entity_type)) {
+              $entity->{$entity_type->getKey('id')} = NULL;
+            }
+            $entity->{$entity_type->getKey('revision')} = NULL;
+          }
+
+          !$is_new && $old_entity ? $entity->setOriginalId($old_entity->id()) : $entity->enforceIsNew($is_new);
+          if ($this->isRevisionableEntity($entity)) {
+            $entity->setNewRevision($is_new);
+          }
+
           // Ensure that the entity is not owned by the anonymous user.
           if ($entity instanceof EntityOwnerInterface && empty($entity->getOwnerId())) {
             $entity->setOwner($root_user);
           }
-          $entity->save();
-          $created[$entity->uuid()] = $entity;
+
+          if ($old_entity && $update_existing) {
+            $updated[$entity->uuid()] = $entity;
+            $entity->save();
+            if ($this->isRevisionableEntity($entity)) {
+              $revision_links[$entity->getEntityTypeId()][$entity->id()] = $entity->{$entity_type->getKey('revision')}->value;
+            }
+          }
+          elseif (!$old_entity) {
+            $created[$entity->uuid()] = $entity;
+            $entity->save();
+            if ($this->isRevisionableEntity($entity)) {
+              $revision_links[$entity->getEntityTypeId()][$entity->id()] = $entity->{$entity_type->getKey('revision')}->value;
+            }
+          }
         }
       }
-      $this->eventDispatcher->dispatch(DefaultContentEvents::IMPORT, new ImportEvent($created, $module));
+      if (!empty($created)) {
+        $this->eventDispatcher->dispatch(DefaultContentEvents::IMPORT, new ImportEvent($created, $module));
+      }
+      if (!empty($updated)) {
+        $this->eventDispatcher->dispatch(DefaultContentEvents::UPDATE, new ImportEvent($updated, $module));
+      }
       $this->accountSwitcher->switchBack();
     }
     // Reset the tree.
@@ -198,6 +275,62 @@ class Importer implements ImporterInterface {
     // Reset link domain.
     $this->linkManager->setLinkDomain(FALSE);
     return $created;
+  }
+
+  /**
+   * Lookup whether an entity already exists.
+   *
+   * For most typical entities this is done by uuid.
+   * For core user 1 this is done by id.
+   *
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   The entity that will be imported.
+   * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
+   *   The entity type for this entity.
+   *
+   * @return \Drupal\Core\Entity\EntityInterface|null
+   *   The old entity, or NULL if no entity.
+   */
+  public function lookupEntity(EntityInterface $entity, EntityTypeInterface $entity_type) {
+    $entity_storage = $this->entityTypeManager->getStorage($entity_type->id());
+
+    $lookup_properties = [$entity_type->getKey('uuid') => $entity->uuid()];
+    // Alter the lookup properties for known core irregularities.
+    if ($entity_type->id() === 'user' && $entity->id() == 1) {
+      $lookup_properties = [$entity_type->getKey('id') => $entity->id()];
+    }
+
+    $entity_query = $entity_storage->getQuery()->accessCheck(FALSE);
+    foreach ($lookup_properties as $key => $value) {
+      // Cast scalars to array so we can consistently use an IN condition.
+      $entity_query->condition($key, (array) $value, 'IN');
+    }
+    $result = $entity_query->execute();
+
+    $old_entity = $result ? $entity_storage->load(current($result)) : [];
+
+    return $old_entity;
+  }
+
+  /**
+   * Check if an imported entity id already exists.
+   *
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   The entity that will be imported.
+   * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
+   *   The entity type of this entity.
+   *
+   * @return bool
+   *   TRUE if current entity's id exists.
+   */
+  public function existEntityId(EntityInterface $entity, EntityTypeInterface $entity_type) {
+    if ($entity->id()) {
+      $entity_storage = $this->entityTypeManager->getStorage($entity_type->id());
+      $entity_query = $entity_storage->getQuery()->accessCheck(FALSE);
+      $entity_query->condition($entity_type->getKey('id'), (array) $entity->id(), 'IN');
+      $result = $entity_query->execute();
+      return !empty($result);
+    }
   }
 
   /**
@@ -253,6 +386,19 @@ class Importer implements ImporterInterface {
       $this->vertexes[$item_link] = (object) ['id' => $item_link];
     }
     return $this->vertexes[$item_link];
+  }
+
+  /**
+   * Checks a given entity for revision support.
+   *
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   A typical drupal entity object.
+   *
+   * @return bool
+   *   Whether this entity supports revisions.
+   */
+  protected function isRevisionableEntity(EntityInterface $entity) {
+    return $entity instanceof RevisionableInterface && $entity->getEntityType()->isRevisionable();
   }
 
 }

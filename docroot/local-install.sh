@@ -2,9 +2,10 @@
 
 # D8M Install Local
 
-drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
+drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y;
 
-drush config-set system.site mail "no-reply@www.colorado.gov" -y
+drush config-set system.site mail "no-reply@www.colorado.gov" -y;
+drush cset system.site uuid c7d57e0e-5172-4247-acff-130f37b56d47 -y;
 
 drush role-create administrator -y;
 drush role-create support_administrator -y;
@@ -18,6 +19,7 @@ drush en ci_media_types -y;
 drush en ci_admin_tweaks -y;
 drush en ci_theme_options -y;
 drush en ci_views_tweaks -y;
+drush en acquia_connector -y;
 drush en redirect -y;
 drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
