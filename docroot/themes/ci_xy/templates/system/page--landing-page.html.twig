@@ -84,10 +84,12 @@
         <div role="main" class="js-quickedit-main-content">
           {#<div class="row">#}
           {# Breadcrumbs #}
+            <div class="container">
           {% if node.field_hide_breadcrumbs.value %}
           {% else %}
             {{ render_block('ci_xy_breadcrumbs') }}
           {% endif %}
+            </div>
           {#{% if breadcrumb %}
             {% block breadcrumb %}
               {{ breadcrumb }}
