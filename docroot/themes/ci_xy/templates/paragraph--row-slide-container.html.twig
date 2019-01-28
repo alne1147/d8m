@@ -51,9 +51,11 @@
 {% endif %}
 
 {# Prints div with classes, and content without Width and Background. #}
-<div{{ attributes.addClass(classes) }}>
-  <div>
-    {{ title_suffix }}
-    {{ content|without('bp_width', 'bp_background') }}
+<div class="container">
+  <div{{ attributes.addClass(classes) }}>
+    <div>
+      {{ title_suffix }}
+      {{ content|without('bp_width', 'bp_background') }}
+    </div>
   </div>
 </div>
