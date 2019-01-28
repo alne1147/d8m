@@ -27,14 +27,16 @@
   &.slick-next {
     &:before {
       position: absolute;
-      right: 5px;
+      right: 10px;
+      top: 3px;
       content: '\f105';
     }
   }
   &.slick-prev {
     &:before {
       position: absolute;
-      left: 5px;
+      left: 10px;
+      top: 3px;
       content: '\f104';
     }
   }
