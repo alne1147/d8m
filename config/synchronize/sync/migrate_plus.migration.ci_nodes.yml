@@ -1,9 +1,9 @@
-uuid: 3ec3af6f-6e98-4b85-870a-9ffd37e48adc
+uuid: afb9dc8b-1c34-4a4c-abd7-e7d7c20dba85
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: x39UwX7dbfBQ5dWEJc1h8te3krgCynB7H-xzaMWGobk
+  default_config_hash: 3gPhRGi2yndhy-xopbdS8bKuU33jcSez8-Y5Fo_7t-A
 id: ci_nodes
 class: null
 field_plugin_method: null
@@ -31,13 +31,18 @@ process:
     plugin: default_value
     default_value: d8m_text_editor
   field_jumbotron_image/target_id:
-    plugin: media_generate
-    destination_field: field_media_image
-    value_key: mid
-    bundle: image
-    entity_type: media
-    ignore_case: true
-    source: images
+    -
+      plugin: skip_on_empty
+      method: process
+      source: images
+    -
+      plugin: media_generate
+      destination_field: field_media_image
+      value_key: mid
+      bundle: image
+      entity_type: media
+      ignore_case: true
+      source: images
   field_jumbotron_link/value: image_link
 destination:
   plugin: 'entity:node'
