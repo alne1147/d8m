@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.jumbo.bp_background
     - field.field.paragraph.jumbo.field_banner
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
-    - field.field.paragraph.jumbo.field_title_color
     - image.style.thumbnail
     - paragraphs.paragraphs_type.jumbo
   module:
@@ -18,12 +16,6 @@ targetEntityType: paragraph
 bundle: jumbo
 mode: default
 content:
-  bp_background:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_banner:
     weight: 4
     settings:
@@ -55,12 +47,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_title_color:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true
