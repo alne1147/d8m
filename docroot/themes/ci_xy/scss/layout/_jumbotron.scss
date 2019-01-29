@@ -86,29 +86,33 @@
 .paragraph--type--jumbo {
   .paragraph__column {
     margin: 30px;
+    color: #ffffff;
   }
-    .paragraph__title {
-      width: 40%;
+    .jumbo_paragraph_title {
       font-family: "museo-sans",sans-serif;
       font-weight: 500;
       padding: 8px 12px;
+      width: 40%;
+      font-size: 34px;
       .div {
+        width: 40%;
         margin: 0px;
         padding: 10px 10px 15px 15px;
       }
     }
-    .paragraph__body {
-      width: 40%;
+    .jumbo_paragraph_body {
       font-family: "museo-sans",sans-serif;
+      width: 40%;
       font-weight: 500;
       padding: 8px 12px;
       p {
+        width: 40%;
         padding: 0px 10px 15px 15px;
         margin-bottom: 0px;
         font-size: $font-size-base!important;
       }
     }
-    .paragraph__title, .paragraph__body {
+    .jumbo_paragraph_title, .jumbo_paragraph_body {
       @media (max-width: $screen-sm) {
         width: 100%;
       }
