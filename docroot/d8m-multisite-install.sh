@@ -56,7 +56,7 @@ drush @sites  en default_content -y;
 drush @sites  cr -y;
 drush @sites  dcdi -y;
 drush @sites  en yaml_content -y;
-drush @sites yaml-content-import-module ci_yaml_content;
+drush @sites yaml-content-import-module ci_yaml_content -y;
 #drush @sites  yaml-content-import modules/custom/ci_templates/i_images;
 #drush @sites  yaml-content-import modules/custom/ci_templates/i_nodes;
 drush @sites  cim --partial sole -y;

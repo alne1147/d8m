@@ -144,11 +144,6 @@
  * @code
  *   'prefix' => 'main_',
  * @endcode
- *
- * Per-table prefixes are deprecated as of Drupal 8.2, and will be removed in
- * Drupal 9.0. After that, only a single prefix for all tables will be
- * supported.
- *
  * To provide prefixes for specific tables, set 'prefix' as an array.
  * The array's keys are the table names and the values are the prefixes.
  * The 'default' element is mandatory and holds the prefix for any tables
@@ -270,11 +265,6 @@ $config_directories = array();
  * by the user.
  *
  * @see install_select_profile()
- *
- * @deprecated in Drupal 8.3.0 and will be removed before Drupal 9.0.0. The
- *   install profile is written to the core.extension configuration. If a
- *   service requires the install profile use the 'install_profile' container
- *   parameter. Functional code can use \Drupal::installProfile().
  */
 # $settings['install_profile'] = '';
 
@@ -295,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'PeLNpn3khYftaTWiuajfRln_0wYqOtkc9U9WeZQu4EafwZLy21b9t3wnzNtUAm5vHAvojVgYSQ';
+$settings['hash_salt'] = 'NONE';
 
 /**
  * Deployment identifier.
@@ -318,7 +308,7 @@ $settings['hash_salt'] = 'PeLNpn3khYftaTWiuajfRln_0wYqOtkc9U9WeZQu4EafwZLy21b9t3
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = TRUE;
 
 /**
  * External access proxy settings:
@@ -502,8 +492,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-$settings['file_chmod_directory'] = 0775;
-$settings['file_chmod_file'] = 0664;
+# $settings['file_chmod_directory'] = 0775;
+# $settings['file_chmod_file'] = 0664;
 
 /**
  * Public file base URL:
@@ -540,7 +530,7 @@ $settings['file_chmod_file'] = 0664;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+ $settings['file_private_path'] = 'files/private';
 
 /**
  * Session write interval:
@@ -760,109 +750,31 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
- if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
- }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+ include $app_root . '/' . $site_path . '/settings.local.php';
+}
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
 // settings.php for development on your local workstation, set $db_url
 // (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
 if (file_exists('/var/www/site-php')) {
-  require('/var/www/site-php/coloradod8m/coloradod8m-settings.inc');
+  require '/var/www/site-php/coloradod8m/cdphe-settings.inc';
 }
+
 $config_directories['sync'] = '../config/synchronize/sync'; $config_directories['post-sync'] = '../config/synchronize/post-sync';
 $config_directories['staging'] = '../config/synchronize/staging';
-$config_directories['sole'] = '../config/synchronize/sole';
+$config_directories['sole'] = '../config/cdphe.colorado.gov/sole';
 $settings['install_profile'] = 'ci_start';
 $config['content_directory'] = '../content';
 $conf['file_temporary_path'] = 'tmp';
-
-#!/usr/local/bin/php
-
-/**
- * Acquia Search: Solr URL override depending on Acquia environment
- * -----------------------------------------------------------------
- * 
- * NOTE: This file is provided as-is. Please test!
- * 
- *  Instructions:
- *  
- *  * Read "EDIT" sections below and edit accordingly.
- *  * Place this snippet at the end of your settings.php file(s).
- *  * If using Acquia Site Factory, instead place it in a post-settings hook.
- *
- *
- */
-
-// EDIT below to set up the mappings between your available cores and the
-//   Acquia Hosting environments. Core ID must match one from 
-//   $acquia_search_available_cores (below), otherwise no overriding will happen.
-$acquia_search_environment_mapping = [
-
-  // EDIT: Add all environments below
-  // syntax is:   "value of $_ENV[AH_SITE_ENVIRONMENT]" => "core ID"
-  "prod" => "CDIY-145117",
-  "test" => "CDIY-145117.test.default",
-  "dev" => "CDIY-145117.dev.defualt",
-  
-  // EDIT: Fallback Core ID for other environments (or local environments)
-  "FALLBACK" => "CDIY-145117.dev.default",
-];
-
-// EDIT below to contain the search API server machine name(s) to override.
-// (Only needed if using D7 search_api_acquia.module)
-$searchapi_server_ids = [ "acquia_search" ];
-
-// EDIT below to contain the apachesolr.module environment IDs to override.
-// (Only needed if using D7 acquia_search.module)
-$apachesolr_environment_ids = [ "acquia_search_server_1" ];
-
-/**
- * DO NOT EDIT BELOW THIS LINE =================================================
- */
- 
+$config['system.site']['name'] = 'Department of Public Health & Environment';
+// <DDSETTINGS>
+// Please don't edit anything between <DDSETTINGS> tags.
+// This section is autogenerated by Acquia Dev Desktop.
+if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_cdphe_colorado_gov.inc')) {
+  require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_coloradod8m_dev_cdphe_colorado_gov.inc';
+}
+// </DDSETTINGS>
 
 $settings['memcache']['stampede_protection'] = TRUE;
-$config['image.settings']['allow_insecure_derivatives'] = TRUE;
-$settings['file_private_path'] = 'sites/ag/files/private';
-
-global $content_directories;
-$content_directories['sync'] = $app_root.'/../content/sync';
-
-
-$config['system.site']['machine_name'] = 'ag';
-$config['system.site']['minisite_nid'] = '46786';
-$settings['hash_salt'] = 'iudwh4899fj34o';
-$config['system.logging']['error_level'] = 'verbose';
-$config['system.performance']['css']['preprocess'] = FALSE;
-$config['system.performance']['js']['preprocess'] = FALSE;
-$settings['rebuild_access'] = TRUE;
-$settings['skip_permissions_hardening'] = TRUE;
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';
-
-$databases['default']['default'] = array(
-   'driver' => 'mysql',
-   'database' => 'ag',
-    'username' => 'root',
-   'password' => 'root',
-   'host' => 'localhost',
-    'prefix' => '',
-  );
-  
-  $databases['upgrade']['default'] = array(
-     'driver' => 'mysql',
-     'database' => 'pacific',
-      'username' => 'root',
-     'password' => 'root',
-     'host' => 'localhost',
-      'prefix' => '',
-    );
-    $databases['prepare']['default'] = array(
-       'driver' => 'mysql',
-       'database' => 'd8mprep',
-        'username' => 'root',
-       'password' => 'root',
-       'host' => 'localhost',
-        'prefix' => '',
-      );
