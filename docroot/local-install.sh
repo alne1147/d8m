@@ -3,6 +3,7 @@
 # D8M Install Local
 
 drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y;
+drush cset system.site uuid c7d57e0e-5172-4247-acff-130f37b56d47 -y;
 
 drush config-set system.site mail "no-reply@www.colorado.gov" -y;
 drush cset system.site uuid c7d57e0e-5172-4247-acff-130f37b56d47 -y;
