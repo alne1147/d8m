@@ -15,4 +15,4 @@ sh dpa.colorado.gov/install.sh &&
 sh estes.colorado.gov/install.sh &&
 sh sipa.colorado.gov/install.sh &&
 sh slb.colorado.gov/install.sh &&
-sh slb.colorado.gov/install.sh &&
+sh slb.colorado.gov/install.sh
