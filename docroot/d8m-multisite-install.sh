@@ -17,7 +17,7 @@ drush @sites   config-set system.site mail "no-reply@www.colorado.gov" -y
 #// User additions and role assignments.
 
 drush @sites ucrt ci-nevarez --mail="alfredo.nevarez@www.colorado.gov" --password="9xzfbddmus" --y;
-drush @sites ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;  
+drush @sites ucrt ci-blawson --mail="blawson@www.colorado.gov" --password="9xzfbddmus" --y;
 drush @sites ucrt ci-twhatley --mail="travis.whatley@www.colorado.gov" --password="9xzfbddmus" --y;
 drush @sites ucrt ci-supportadmin --mail="supportadmin@example.com" --password="9xzfbddmus" --y;
 drush @sites ucrt ci-contentadmin --mail="contentadmin@example.com" --password="9xzfbddmus" --y;
