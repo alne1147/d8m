@@ -80,18 +80,9 @@
 </header>
 {% endblock %}
 {{ page.search }}
-{# Jumbotron #}
-{% if page.jumbotron %}
-  <div class="jumbotron">
-    {{ page.jumbotron }}
-  </div>
-{% endif %}
 
- {% if node.field_hide_navigation_bar.value %}
-   <div class="no-nav-bar"> </div>
- {% else %}
-   {% include directory ~ '/templates/includes/navbar.html.twig' %}
- {% endif %}
+{# Jumbotrom and Top Navigation Bar#}
+   {% include directory ~ '/templates/includes/jumbo-nav.html.twig' %}
 
 {# Main #}
 {% block main %}
@@ -106,11 +97,15 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content" >
     <div class="row">
       {# Breadcrumbs #}
-      {% if breadcrumb %}
+      {% if node.field_hide_breadcrumbs.value %}
+      {% else %}
+        {{ render_block('ci_xy_breadcrumbs') }}
+      {% endif %}
+      {# {% if breadcrumb %}
         {% block breadcrumb %}
           {{ breadcrumb }}
         {% endblock %}
-      {% endif %}
+      {% endif %}#}
       {# Header #}
       {% if page.header %}
           {% block header %}

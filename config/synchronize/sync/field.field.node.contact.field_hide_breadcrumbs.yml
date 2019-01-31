@@ -1,0 +1,23 @@
+uuid: 2c79a24e-5ec3-4a06-bd5b-52f9ef9a891f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_breadcrumbs
+    - node.type.contact
+id: node.contact.field_hide_breadcrumbs
+field_name: field_hide_breadcrumbs
+entity_type: node
+bundle: contact
+label: 'Hide Breadcrumbs'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

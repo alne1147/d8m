@@ -1,0 +1,19 @@
+services:
+  yaml_content.content_loader:
+    class: Drupal\yaml_content\ContentLoader\ContentLoader
+    arguments:
+      - '@service_container'
+  yaml_content.load_helper:
+    class: Drupal\yaml_content\Service\LoadHelper
+    arguments:
+      - '@yaml_content.content_loader'
+      - '@logger.channel.yaml_content'
+      - '@string_translation'
+  yaml_content.entity_load_helper:
+    class: Drupal\yaml_content\Service\EntityLoadHelper
+    arguments:
+      - '@service_container'
+  logger.channel.yaml_content:
+    parent: logger.channel_base
+    arguments:
+      - 'yaml_content'

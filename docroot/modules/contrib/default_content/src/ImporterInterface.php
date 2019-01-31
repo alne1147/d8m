@@ -12,10 +12,12 @@ interface ImporterInterface {
    *
    * @param string $module
    *   The module to create the default content from.
+   * @param bool $update_existing
+   *   Whether to update existing entities or ignore them.
    *
    * @return \Drupal\Core\Entity\EntityInterface[]
    *   An array of created entities keyed by their UUIDs.
    */
-  public function importContent($module);
+  public function importContent($module, $update_existing = FALSE);
 
 }

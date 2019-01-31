@@ -1,0 +1,85 @@
+- entity: "node"
+  type: "article"
+  title: "News"
+  status: 1
+  moderation_state:
+      value: 'published'
+  body:
+    - format: "d8m_text_editor"
+      value: |
+          <div id="lipsum">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam semper magna, vitae porttitor
+           lectus. Integer ante velit, convallis sed nisl sit amet, fermentum vulputate augue. Mauris elementum rhoncus
+           purus at bibendum. Quisque non lacus nec justo porta ullamcorper eget sed diam. Aenean finibus quis massa f
+           acilisis iaculis. Aliquam et est convallis, ullamcorper magna ut, gravida sapien. Nunc eget purus a nulla
+           tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt egestas. Aliquam porta, risus eget
+           aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa id est. Cras tincidunt semper nisi, a
+           suscipit enim gravida et. Suspendisse semper ipsum nec tellus efficitur, pellentesque facilisis ligula
+           molestie. Curabitur non egestas diam, non pretium nunc. Praesent convallis turpis lacinia, tincidunt magna
+           vel, convallis ipsum.</p>
+
+          <p>Proin in dictum leo. Maecenas rutrum efficitur odio eu aliquam. Vestibulum mauris enim, pellentesque non
+          orci in, rhoncus commodo quam. Aenean tempor justo vel blandit pharetra. Vestibulum bibendum mollis
+          pellentesque. Pellentesque dapibus gravida gravida. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Nunc vel ligula neque. Nam condimentum at ligula ut aliquam.</p>
+
+          <p>Aliquam tincidunt vitae felis sit amet facilisis. Ut posuere nisi eu nunc rhoncus malesuada. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur nec iaculis felis.
+          Quisque tempus, elit quis tincidunt bibendum, arcu nisl commodo sem, id sodales risus justo molestie lorem.
+          Cras euismod ipsum vel faucibus lacinia. Ut a velit gravida, vestibulum ante eu, condimentum purus. Nunc ac
+          efficitur augue, sed tincidunt est.</p>
+
+          <p>Morbi sodales sapien eu tellus lacinia, non vehicula magna maximus. Aenean eget arcu hendrerit, cursus
+          justo at, hendrerit mauris. Etiam ullamcorper nisi nulla, et efficitur diam volutpat convallis. Pellentesque
+          feugiat, neque id aliquet vestibulum, nisl velit gravida eros, quis ornare erat odio eget nibh. Nullam maximus
+          aliquet nibh non pretium. Etiam eu neque interdum, gravida lectus eu, tempus ipsum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Cras sodales porta ante, a volutpat purus ultricies et. Vestibulum ante ipsum primis
+          in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vel libero orci. Maecenas in elit semper,
+          lobortis lacus vitae, bibendum ligula. Nam vitae velit massa. Quisque lorem mi, congue et urna eget, mattis
+          hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.</p>
+
+          <p>Proin lacinia velit a vestibulum rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Nulla facilisis tortor mattis nulla dignissim, non suscipit magna ornare. Nam placerat purus a ipsum rutrum,
+          quis congue urna ultricies. Donec pulvinar ullamcorper pellentesque. Morbi rutrum in nisl nec condimentum.
+          Nunc odio est, maximus placerat massa nec, consequat placerat justo.</p>
+          </div>
+  field_article_type:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'article_type'
+            name: 'News Article'
+  field_rows:
+  - entity: 'paragraph'
+    type: 'bp_columns'
+    bp_column_content:
+    - entity: 'paragraph'
+      type: 'bp_carousel'
+      bp_slide_interval:
+      - value: '5000'
+      bp_slide_content:
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'columbine.jpg'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'MaroonBell.jpg'
+        - entity: 'paragraph'
+          type: 'bp_image'
+          bp_image_field:
+          - '#process':
+              callback: 'file'
+              args:
+                - 'image'
+                - filename: 'blue-sky-clouds.jpg'

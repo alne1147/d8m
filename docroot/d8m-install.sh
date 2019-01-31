@@ -3,6 +3,7 @@
 # D8M Install Local
 
 drush site-install ci_start --account-name="ci-admin" --site-name="CI Drupal 8" -y
+drush cset system.site uuid c7d57e0e-5172-4247-acff-130f37b56d47 -y;
 
 drush role-create administrator  --y;
 drush role-create support_administrator --y;
@@ -28,9 +29,15 @@ drush ucrt ci-useradmin --mail="userad@example.com" --password="9xzfbddmus" --y;
 
 drush ucrt ci-structureadmin --mail="structure@example.com" --password="9xzfbddmus" --y;
 
+drush ucrt ci-rchung --mail="richard.chung@egov.com" --password="9xzfbddmus" --y;
+
+drush ucrt ci-aturner --mail="ashley.turner@egov.com" --password="9xzfbddmus" --y;
+
 drush ucrt ci-amarshall --mail="amanda.marshall@www.colorado.gov" --password="9xzfbddmus" --y;
 
 drush user-add-role administrator ci-amarshall --y;
+drush user-add-role administrator ci-rchung --y;
+drush user-add-role administrator ci-aturner	--y;
 drush user-add-role administrator ci-nevarez --y;
 drush user-add-role administrator ci-blawson --y;
 drush user-add-role support_administrator ci-twhatley --y;
@@ -43,21 +50,23 @@ drush -y user-unblock --name= ci-structureadmin,ci-useradmin,ci-contentadmin,ci-
 
 drush en ci_article_setup -y;
 drush en ci_media_types -y;
-drush en ci_admin_tweaks --y;
-drush en ci_theme_options --y;
-drush en ci_views_tweaks --y;
-drush en redirect --y;
+drush en ci_admin_tweaks -y;
+drush en ci_theme_options -y;
+drush en ci_views_tweaks -y;
+drush en redirect -y;
 drush -y config-set system.performance css.preprocess 0;
 drush -y config-set system.performance js.preprocess 0;
-drush en google_analytics --y;
-drush cim --partial sync --y;
-drush cr --y;
-drush dcdi --y;
-drush cim --partial post-sync --y;
-drush cim --partial sole --y;
-drush cim --partial staging --y;
-drush en memcache --y;
-drush en menu_reference_render --y;
-drush cr --y;
+drush en google_analytics -y;
+drush cim --partial sync -y;
+drush en default_content -y;
+drush cr -y;
+drush dcdi -y;
+drush en yaml_content -y;
+drush yaml-content-import-module ci_yaml_content;
+drush cim --partial sole -y;
+drush cim --partial post-sync -y;
+drush en ci_layouts -y;
+drush cr -y;
+drush uli;
 
-echo "That's the end of the D8M install script!"
+echo "That's the end of the D8M-install script!"

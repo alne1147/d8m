@@ -61,17 +61,10 @@
 {# Sliver Banner/Top Search Bar #}
 {% include directory ~ '/templates/includes/sliver-banner-search.html.twig' %}
 {{ page.search }}
-{# Jumbotron #}
-{% if page.jumbotron %}
-  <div class="jumbotron">
-    {{ page.jumbotron }}
-  </div>
-{% endif %}
- {% if node.field_hide_navigation_bar.value %}
-   <div class="no-nav-bar"> </div>
- {% else %}
-   {% include directory ~ '/templates/includes/navbar.html.twig' %}
- {% endif %}
+
+{# Jumbotrom and Top Navigation Bar#}
+   {% include directory ~ '/templates/includes/jumbo-nav.html.twig' %}
+
 {# Main #}
 {% block main %}
   {% if node.field_landing_page_options.value == 'Show Site Background Image' %}
@@ -91,11 +84,17 @@
         <div role="main" class="js-quickedit-main-content">
           {#<div class="row">#}
           {# Breadcrumbs #}
-          {% if breadcrumb %}
+            <div class="container">
+          {% if node.field_hide_breadcrumbs.value %}
+          {% else %}
+            {{ render_block('ci_xy_breadcrumbs') }}
+          {% endif %}
+            </div>
+          {#{% if breadcrumb %}
             {% block breadcrumb %}
               {{ breadcrumb }}
             {% endblock %}
-          {% endif %}
+          {% endif %}#}
           {# Header #}
           {% if page.header %}
             {% block header %}

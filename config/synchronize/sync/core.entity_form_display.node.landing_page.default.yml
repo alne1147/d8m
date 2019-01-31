@@ -3,18 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_add_to_layouts
     - field.field.node.landing_page.field_archive
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_display_image
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
+    - field.field.node.landing_page.field_hide_breadcrumbs
+    - field.field.node.landing_page.field_hide_navigation_bar
+    - field.field.node.landing_page.field_jumbo
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
     - field.field.node.landing_page.field_landing_page_options
     - field.field.node.landing_page.field_meta
     - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_nav_bar_above
     - field.field.node.landing_page.field_promote
+    - field.field.node.landing_page.field_refer_slider
     - field.field.node.landing_page.field_rows
     - field.field.node.landing_page.field_summary
     - image.style.thumbnail
@@ -32,21 +38,6 @@ dependencies:
     - scheduler
 third_party_settings:
   field_group:
-    group_landing_page_options:
-      children:
-        - title
-      parent_name: group_landing_page
-      weight: 9
-      format_type: tab
-      format_settings:
-        label: Title
-        formatter: closed
-        description: 'Title is for administrative purposes only and will not be shown on page.'
-        required_fields: true
-        id: ''
-        classes: ''
-      label: Title
-      region: content
     group_layout_options:
       children:
         - field_rows
@@ -65,7 +56,7 @@ third_party_settings:
     group_landing_page:
       children:
         - group_layout_options
-        - group_landing_page_options
+        - group_jumbotrons
         - group_display
         - group_search_tab
       parent_name: ''
@@ -85,7 +76,7 @@ third_party_settings:
         - field_promote
         - field_archive
       parent_name: group_landing_page
-      weight: 11
+      weight: 12
       format_type: tab
       format_settings:
         label: 'Search Enhancements'
@@ -98,11 +89,12 @@ third_party_settings:
       region: content
     group_display:
       children:
-        - group_jumbotron
         - group_background
         - group_footer
+        - group_navigation_bar
+        - group_breadcrumbs
       parent_name: group_landing_page
-      weight: 10
+      weight: 11
       format_type: tab
       format_settings:
         id: ''
@@ -116,7 +108,9 @@ third_party_settings:
       children:
         - field_jumbotron_options
         - field_jumbotron
-      parent_name: group_display
+        - field_refer_slider
+        - field_jumbo
+      parent_name: group_jumbotrons
       weight: 7
       format_type: fieldset
       format_settings:
@@ -155,6 +149,47 @@ third_party_settings:
         required_fields: true
       label: Footer
       region: content
+    group_navigation_bar:
+      children:
+        - field_nav_bar_above
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
+    group_breadcrumbs:
+      children:
+        - field_hide_breadcrumbs
+      parent_name: group_display
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
+      region: content
+    group_jumbotrons:
+      children:
+        - group_jumbotron
+      parent_name: group_landing_page
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Jumbotron
+      region: content
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -166,6 +201,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_to_layouts:
+    weight: 35
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_archive:
     weight: 30
     settings:
@@ -272,6 +314,50 @@ content:
           bundle: landing_page
     type: options_select
     region: content
+  field_hide_breadcrumbs:
+    type: boolean_checkbox
+    weight: 34
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 34
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_jumbo:
+    type: entity_reference_paragraphs
+    weight: 11
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings:
+      conditional_fields:
+        5035e174-a019-469e-8ce7-0087500b6ac4:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100051'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    region: content
   field_jumbotron:
     weight: 9
     settings: {  }
@@ -318,12 +404,43 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
+  field_nav_bar_above:
+    weight: 33
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_promote:
     weight: 29
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_refer_slider:
+    weight: 10
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        929a62c9-c759-4235-886f-dedf7d60bed0:
+          dependee: field_jumbotron_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '100052'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: options_buttons
     region: content
   field_rows:
     weight: 8

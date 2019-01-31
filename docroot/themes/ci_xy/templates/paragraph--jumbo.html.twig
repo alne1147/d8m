@@ -1,0 +1,152 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph in Bootstrap Paragraphs.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   - id: The paragraph ID.
+ *   - bundle: The type of the paragraph, for example, "image" or "text".
+ *   - authorid: The user ID of the paragraph author.
+ *   - createdtime: Formatted creation date. Preprocess functions can
+ *     reformat it by calling format_date() with the desired parameters on
+ *     $variables['paragraph']->getCreatedTime().
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('bootstrap_paragraphs/bootstrap-paragraphs') }}
+
+{# Renders Width field. #}
+{# Sets class name from values in database. #}
+{% if content.bp_width|render %}
+  {% set layout_width = content.bp_width['#items'].getString() %}
+  {% set layout_width_classes = [
+    'paragraph--width--tiny' == layout_width ? 'paragraph--width--tiny',
+    'paragraph--width--narrow' == layout_width ? 'paragraph--width--narrow',
+    'paragraph--width--medium' == layout_width ? 'paragraph--width--medium',
+    'paragraph--width--wide' == layout_width ? 'paragraph--width--wide',
+    'paragraph--width--full' == layout_width ? 'paragraph--width--full',
+  ]
+  %}
+{% endif %}
+
+{# Renders Background field. #}
+{# Sets class name from values in database.
+{% if content.bp_background|render %}
+  {% set layout_background = content.bp_background['#items'].getString() %}
+  {% set layout_background_classes = [
+    'color__brand-green--strong' == layout_background ? 'color__brand-green--strong',
+    'color__brand-slate--strong' == layout_background ? 'color__brand-slate--strong',
+    'color__brand-silver--strong' == layout_background ? 'color__brand-silver--strong',
+    'color__brand-orange--strong' == layout_background ? 'color__brand-orange--strong',
+    'color__brand-brown--strong' == layout_background ? 'color__brand-brown--strong',
+    'color__brand-blue--strong' == layout_background ? 'color__brand-blue--strong',
+    'color__white--strong' == layout_background ? 'color__white--strong',
+    'color__black--strong' == layout_background ? 'color__black--strong',
+    'color__evening--strong' == layout_background ? 'color__evening--strong',
+    'color__charcoal--strong' == layout_background ? 'color__charcoal--strong',
+    'color__blackboard--strong' == layout_background ? 'color__blackboard--strong',
+    'color__grey-sand--strong' == layout_background ? 'color__grey-sand--strong',
+    'color__sleek-grey--strong' == layout_background ? 'color__sleek-grey--strong',
+    'color__lemon-grass--strong' == layout_background ? 'color__lemon-grass--strong',
+    'color__walnut--strong' == layout_background ? 'color__walnut--strong',
+    'color__beige--strong' == layout_background ? 'color__beige--strong',
+    'color__spice--strong' == layout_background ? 'color__spice--strong',
+    'color__brick-red--strong' == layout_background ? 'color__brick-red--strong',
+    'color__scarlet--strong' == layout_background ? 'color__scarlet--strong',
+    'color__cognac--strong' == layout_background ? 'color__cognac--strong',
+    'color__tiger-orange--strong' == layout_background ? 'color__tiger-orange--strong',
+    'color__wheat--strong' == layout_background ? 'color__wheat--strong',
+    'color__sunflower--strong' == layout_background ? 'color__sunflower--strong',
+    'color__lemon--strong' == layout_background ? 'color__lemon--strong',
+    'color__eggplant--strong' == layout_background ? 'color__eggplant--strong',
+    'color__grape--strong' == layout_background ? 'color__grape--strong',
+    'color__ink--strong' == layout_background ? 'color__ink--strong',
+    'color__sky-blue--strong' == layout_background ? 'color__sky-blue--strong',
+    'color__pacific-blue--strong' == layout_background ? 'color__pacific-blue--strong',
+    'color__aqua--strong' == layout_background ? 'color__aqua--strong',
+    'color__pastel-blue--strong' == layout_background ? 'color__pastel-blue--strong',
+    'color__ice--strong' == layout_background ? 'color__ice--strong',
+    'color__forest--strong' == layout_background ? 'color__forest--strong',
+    'color__neon-green--strong' == layout_background ? 'color__neon-green--strong',
+    'color__cucumber--strong' == layout_background ? 'color__cucumber--strong',
+    'color__fern--strong' == layout_background ? 'color__fern--strong',
+    'color__mineral-green--strong' == layout_background ? 'color__mineral-green--strong',
+    'color__pine-needle--strong' == layout_background ? 'color__pine-needle--strong',
+    'color__corduroy--strong' == layout_background ? 'color__corduroy--strong',
+    'color__sea-foam--strong' == layout_background ? 'color__sea-foam--strong',
+  ]
+  %}
+{% endif %}#}
+
+{# The template default set classes. #}
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+{# Merges Width field with classes. #}
+{% set width_field = content.bp_width|render %}
+{% if width_field %}
+  {% set classes = classes|merge(layout_width_classes) %}
+{% endif %}
+
+{# Merges Background field with classes.
+{% set background_field = content.bp_background|render %}
+{% if background_field %}
+  {% set classes = classes|merge(layout_background_classes) %}
+{% endif %} #}
+
+<div class="jumbo_image" style="background-image: url('{{ file_url(content.field_banner['#items'].entity.uri.value) }}');">
+    <div class= "container-fluid color__brand-slate--dark">
+      <div class="main-content">
+    {# Prints div with classes, and content without Width and Background. #}
+        <div{{ attributes.addClass(classes) }}>
+          <div class="paragraph__column">
+            {{ title_suffix }}
+              {% if content.field_banner_title[0] %}
+                <div class="jumbo_paragraph_title">
+                    {{ content.field_banner_title }}
+                </div>
+              {% else %}
+                <div class="no_title"></div>
+              {% endif %}
+              {% if content.field_banner_body[0] %}
+                <div class="jumbo_paragraph_body">
+                {{ content|without('bp_width', 'field_banner_title', 'field_banner', 'field_banner_link') }}
+                    <a href="{{ content.field_banner_link[0] }}">Read More</a>
+                </div>
+              {% else %}
+                  <div class="no_body"></div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -2,11 +2,11 @@
   .contact_card {
     position: relative;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    margin-right: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     background: whitesmoke;
     color: #000 !important;
     @media (max-width: $screen-xs-max) {
@@ -19,6 +19,13 @@
       }
     }
   }
+  .grow:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
     .col-sm-3 {
       padding-left: 25px;
       padding-right: 10px;
@@ -37,33 +44,47 @@
       padding-bottom: 10px;
       .field--name-field-agency-logo {
         align: right;
+        padding-left: 16px;
       }
       .field--name-field-agency {
           text-transform: uppercase;
           font-size: 15px;
           font-weight: 500;
-          padding-top: 8px;
+          padding-top: 10px;
+          padding-left: 15px;
       }
-      .col-sm-1 {
-        padding-left: 5px;
+      .col-md-11 {
+        padding-left: 0px;
+      }
+      .col-md-1 {
+        padding-right: 0px;
       }
     }
     .field--name-field-title {
       text-transform: uppercase;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       color: #666;
     }
     .field--name-field-photo {
       .img-responsive {
         border: solid 4px #fff;
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-        margin-left: 15px;
-        margin-top: 15px;
+        margin-left: 5px;
+        margin-top: 5px;
         margin-bottom: 10px;
       }
     }
-  }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 
 
@@ -117,5 +138,21 @@
     .field--name-field-zip {
       display: inline;
     }
+  }
+}
+.contact {
+  .field--name-field-first-name {
+    display: inline;
+  }
+  .col-sm-12 {
+    padding-left: 0px
+  }
+}
+.contact-name {
+  .field--name-field-first-name {
+    display: inline;
+  }
+  .field--name-field-last-name {
+    display: inline;
   }
 }

@@ -75,14 +75,24 @@ class SingleDateTime extends FormElement {
       $exclude_date = explode("\n", $element['#exclude_date']);
     }
 
+    // Default, build array for all hours.
+    $allowed_hours = range(0, 23);
+
+    // If we have specifics, use that list.
+    if (!empty($element['#allowed_hours'])) {
+      $allowed_hours = explode(',', $element['#allowed_hours']);
+    }
+
     // Default settings.
     $settings = [
       'data-hour-format' => $element['#hour_format'],
-      'data-allow-times' => intval($element['#allow_times']),
+      'data-allow-times' => (int) $element['#allow_times'],
+      'data-allowed-hours' => Json::encode($allowed_hours),
       'data-first-day' => $first_day,
       'data-disable-days' => Json::encode($disabled_days),
       'data-exclude-date' => $exclude_date,
       'data-inline' => !empty($element['#inline']) ? 1 : 0,
+      'data-mask' => !empty($element['#mask']) ? 1 : 0,
       'data-datetimepicker-theme' => $element['#datetimepicker_theme'],
     ];
 
@@ -120,8 +130,14 @@ class SingleDateTime extends FormElement {
     // Append our attributes to element.
     $element['#attributes'] += $settings;
 
+    // Disable Chrome autofill on widget.
+    $element['#attributes']['autocomplete'] = 'off';
+
+    // Prevent keyboard on mobile devices.
+    $element['#attributes']['onfocus'] = 'blur();';
+
     // Attach library.
-    $complete_form['#attached']['library'][] = 'single_datetime/datetimepicker';
+    $element['#attached']['library'][] = 'single_datetime/datetimepicker';
 
     return $element;
   }

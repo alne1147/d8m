@@ -2,11 +2,20 @@
 
 namespace Drupal\field_slideshow\Plugin\Field\FieldFormatter;
 
-use Drupal\image\Plugin\Field\FieldFormatter\ImageFormatter;
-use Drupal\image\Entity\ImageStyle;
-use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\Extension\ModuleHandler;
+use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Render\Renderer;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Url;
+use Drupal\field_slideshow\FieldSlideshowPagerPluginManager;
+use Drupal\image\Plugin\Field\FieldFormatter\ImageFormatter;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Plugin implementation of the 'slideshow' formatter.
@@ -19,507 +28,510 @@ use Drupal\Core\Url;
  *   }
  * )
  */
-class FieldSlideshow extends ImageFormatter {
+class FieldSlideshow extends ImageFormatter implements ContainerFactoryPluginInterface {
+
   /**
-   * {@inheritdoc}
+   * ModuleHandler service.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandler
+   */
+  protected $moduleHandler;
+
+  /**
+   * Renderer service.
+   *
+   * @var \Drupal\Core\Render\Renderer
+   */
+  protected $renderer;
+
+  /**
+   * FieldSlideshowPager manager.
+   *
+   * @var \Drupal\field_slideshow\FieldSlideshowPagerPluginManager
+   */
+  protected $pagerManager;
+
+  /**
+   * FieldSlideshow constructor.
+   *
+   * @param string $plugin_id
+   *   Plugin id.
+   * @param string $plugin_definition
+   *   Plugin definition.
+   * @param \Drupal\Core\Field\FieldDefinitionInterface $field_definition
+   *   Field definition.
+   * @param array $settings
+   *   Settings.
+   * @param string $label
+   *   Label.
+   * @param string $view_mode
+   *   View mode.
+   * @param array $third_party_settings
+   *   Third part settings.
+   * @param \Drupal\Core\Session\AccountInterface $current_user
+   *   Current user.
+   * @param \Drupal\Core\Entity\EntityStorageInterface $image_style_storage
+   *   Image style storage.
+   * @param \Drupal\Core\Extension\ModuleHandler $moduleHandler
+   *   Module handler.
+   * @param \Drupal\Core\Render\Renderer $renderer
+   *   Renderer.
+   * @param \Drupal\field_slideshow\FieldSlideshowPagerPluginManager $pagerManager
+   *   PagerManager.
+   */
+  public function __construct(
+    $plugin_id,
+    $plugin_definition,
+    FieldDefinitionInterface $field_definition,
+    array $settings,
+    $label,
+    $view_mode,
+    array $third_party_settings,
+    AccountInterface $current_user,
+    EntityStorageInterface $image_style_storage,
+    ModuleHandler $moduleHandler,
+    Renderer $renderer,
+    FieldSlideshowPagerPluginManager $pagerManager
+  ) {
+
+    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $label, $view_mode, $third_party_settings, $current_user, $image_style_storage);
+    $this->moduleHandler = $moduleHandler;
+    $this->renderer = $renderer;
+    $this->pagerManager = $pagerManager;
+  }
+
+  /**
+   * Use symfony dependency injection container.
+   *
+   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
+   *   Container.
+   * @param array $configuration
+   *   Configuration.
+   * @param string $plugin_id
+   *   Plugin id.
+   * @param mixed $plugin_definition
+   *   Plugin definition.
+   *
+   * @return \Drupal\Core\Plugin\ContainerFactoryPluginInterface|\Drupal\field_slideshow\Plugin\Field\FieldFormatter\FieldSlideshow|\Drupal\image\Plugin\Field\FieldFormatter\ImageFormatter
+   *   Container.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+
+    return new static(
+      $plugin_id,
+      $plugin_definition,
+      $configuration['field_definition'],
+      $configuration['settings'],
+      $configuration['label'],
+      $configuration['view_mode'],
+      $configuration['third_party_settings'],
+      $container->get('current_user'),
+      $container->get('entity_type.manager')->getStorage('image_style'),
+      $container->get('module_handler'),
+      $container->get('renderer'),
+      $container->get('plugin.manager.field_slideshow_pager')
+    );
+  }
+
+  /**
+   * Default settings.
+   *
+   * @return array
+   *   Array settings.
    */
   public static function defaultSettings() {
-    return array(
-      'image_style'                         => '',
-      'image_link'                          => '',
-      'slideshow_colorbox_image_style'      => '',
-      'slideshow_colorbox_slideshow'        => '',
-      'slideshow_colorbox_slideshow_speed'  => '4000',
-      'slideshow_colorbox_transition'       => 'elastic',
-      'slideshow_colorbox_speed'            => '350',
-      'slideshow_caption'                   => '',
-      'slideshow_caption_link'              => '',
-      'slideshow_fx'                        => 'fade',
-      'slideshow_speed'                     => '1000',
-      'slideshow_timeout'                   => '4000',
-      'slideshow_order'                     => '',
-      'slideshow_controls'                  => 0,
-      'slideshow_controls_pause'            => 0,
-      'slideshow_controls_position'         => 'after',
-      'slideshow_pause'                     => 0,
-      'slideshow_start_on_hover'            => 0,
-      'slideshow_pager'                     => '',
-      'slideshow_pager_position'            => 'after',
-      'slideshow_pager_image_style'         => '',
-    ) + parent::defaultSettings();
+    return [
+      'slideshow' => [
+        'fx' => 'fade',
+        'allowWrap' => TRUE,
+        'autoHeight' => 0,
+        'delay' => 0,
+        'hideNonActive' => TRUE,
+        'loader' => 'false',
+        'loop' => 0,
+        'pauseOnHover' => FALSE,
+        'paused' => FALSE,
+        'random' => FALSE,
+        'reverse' => FALSE,
+        'speed' => 500,
+        'startingSlide' => 0,
+        'swipe' => FALSE,
+        'sync' => TRUE,
+        'timeout' => 4000,
+      ],
+      'slideshow_pager' => [
+        'pager' => [
+          'after' => 'after',
+        ],
+        'pager_type' => 'thumbnails',
+        'controls' => TRUE,
+      ],
+      'colorbox_image_style' => NULL,
+    ] + parent::defaultSettings();
   }
+
   /**
-   * {@inheritdoc}
-   */
-  public function settingsForm(array $form, FormStateInterface $form_state) {
-    // Get image_style and image_link form elements from parent method.
-    $element = parent::settingsForm($form, $form_state);
-    $link_types = array(
-      'content' => t('Content'),
-      'file' => t('File'),
-    );
-    $captions = array(
-      'title'   => t('Title text'),
-      'alt'     => t('Alt text'),
-    );
-    if (\Drupal::moduleHandler()->moduleExists('colorbox')) {
-      $element['image_link']['#options']['colorbox'] = 'Colorbox';
-      $element['slideshow_colorbox_image_style'] = array(
-        '#title'          => t('Colorbox image style'),
-        '#type'           => 'select',
-        '#default_value'  => $this->getSetting('slideshow_colorbox_image_style'),
-        '#empty_option'   => t('None (original image)'),
-        '#options'        => image_style_options(FALSE),
-        '#states' => array(
-          'visible' => array(
-            ':input[name$="[settings_edit_form][settings][image_link]"]' => array('value' => 'colorbox'),
-          ),
-        ),
-      );
-      $colorbox_slideshow = array(
-        'automatic' => t('Automatic'),
-        'manual'    => t('Manual'),
-      );
-      $element['slideshow_colorbox_slideshow'] = array(
-        '#title'          => t('Colorbox slideshow'),
-        '#type'           => 'select',
-        '#default_value'  => $this->getSetting('slideshow_colorbox_slideshow'),
-        '#empty_option'   => t('No slideshow'),
-        '#options'        => $colorbox_slideshow,
-        '#states' => array(
-          'visible' => array(
-            ':input[name$="[settings_edit_form][settings][image_link]"]' => array('value' => 'colorbox'),
-          ),
-        ),
-      );
-      $element['slideshow_colorbox_slideshow_speed'] = array(
-        '#title'          => t('Colorbox slideshow speed'),
-        '#type'           => 'textfield',
-        '#size'           => 5,
-        '#default_value'  => $this->getSetting('slideshow_colorbox_slideshow_speed'),
-        '#description'    => t('Time between transitions (ms).'),
-        '#states' => array(
-          'invisible' => array(
-            ':input[name$="[settings_edit_form][settings][slideshow_colorbox_slideshow]"]' => array('value' => ''),
-          ),
-        ),
-      );
-      $colorbox_transitions = array(
-        'none'    => t('None'),
-        'elastic' => t('Elastic'),
-        'fade'    => t('Fade'),
-      );
-      $element['slideshow_colorbox_transition'] = array(
-        '#title'          => t('Colorbox transition'),
-        '#type'           => 'select',
-        '#default_value'  => $this->getSetting('slideshow_colorbox_transition'),
-        '#options'        => $colorbox_transitions,
-        '#states' => array(
-          'visible' => array(
-            ':input[name$="[settings_edit_form][settings][image_link]"]' => array('value' => 'colorbox'),
-          ),
-        ),
-      );
-      $element['slideshow_colorbox_speed'] = array(
-        '#title'          => t('Colorbox transition speed'),
-        '#type'           => 'textfield',
-        '#size'           => 5,
-        '#default_value'  => $this->getSetting('slideshow_colorbox_speed'),
-        '#description'    => t('Duration of transition (ms).'),
-        '#states' => array(
-          'visible' => array(
-            ':input[name$="[settings_edit_form][settings][image_link]"]' => array('value' => 'colorbox'),
-          ),
-        ),
-      );
-    }
-    $element['slideshow_caption'] = array(
-      '#title'          => t('Caption'),
-      '#type'           => 'select',
-      '#default_value'  => $this->getSetting('slideshow_caption'),
-      '#empty_option'   => t('Nothing'),
-      '#options'        => $captions,
-    );
-    $element['slideshow_caption_link'] = array(
-      '#title'          => t('Caption link'),
-      '#type'           => 'select',
-      '#default_value'  => $this->getSetting('slideshow_caption_link'),
-      '#empty_option'   => t('Nothing'),
-      '#options'        => $link_types,
-      '#states' => array(
-        'invisible' => array(
-          ':input[name$="[settings_edit_form][settings][slideshow_caption]"]' => array('value' => ''),
-        ),
-      ),
-    );
-    $element['slideshow_fx'] = array(
-      '#title'          => t('Transition effect'),
-      '#type'           => 'select',
-      '#default_value'  => $this->getSetting('slideshow_fx'),
-      '#options'        => array(
-        'blindX'      => t('blindX'),
-        'blindY'      => t('blindY'),
-        'blindZ'      => t('blindZ'),
-        'cover'       => t('cover'),
-        'curtainX'    => t('curtainX'),
-        'curtainY'    => t('curtainY'),
-        'fade'        => t('fade'),
-        'fadeZoom'    => t('fadeZoom'),
-        'growX'       => t('growX'),
-        'growY'       => t('growY'),
-        'scrollUp'    => t('scrollUp'),
-        'scrollDown'  => t('scrollDown'),
-        'scrollLeft'  => t('scrollLeft'),
-        'scrollRight' => t('scrollRight'),
-        'scrollHorz'  => t('scrollHorz'),
-        'scrollVert'  => t('scrollVert'),
-        'shuffle'     => t('shuffle'),
-        'slideX'      => t('slideX'),
-        'slideY'      => t('slideY'),
-        'toss'        => t('toss'),
-        'turnUp'      => t('turnUp'),
-        'turnDown'    => t('turnDown'),
-        'turnLeft'    => t('turnLeft'),
-        'turnRight'   => t('turnRight'),
-        'uncover'     => t('uncover'),
-        'wipe'        => t('wipe'),
-        'zoom'        => t('zoom'),
-      ),
-    );
-    $element['slideshow_speed'] = array(
-      '#title'          => t('Transition speed'),
-      '#type'           => 'textfield',
-      '#size'           => 5,
-      '#default_value'  => $this->getSetting('slideshow_speed'),
-      '#description'    => t('Duration of transition (ms).'),
-      '#required'       => TRUE,
-    );
-    $element['slideshow_timeout'] = array(
-      '#title'          => t('Timeout'),
-      '#type'           => 'textfield',
-      '#size'           => 5,
-      '#default_value'  => $this->getSetting('slideshow_timeout'),
-      '#description'    => t('Time between transitions (ms). Enter 0 to disable automatic transitions (then, enable pager and/or controls).'),
-      '#required'       => TRUE,
-    );
-    $element['slideshow_order'] = array(
-      '#title'          => t('Order'),
-      '#type'           => 'select',
-      '#default_value'  => $this->getSetting('slideshow_order'),
-      '#empty_option'   => t('Normal'),
-      '#options'        => array(
-        'reverse' => t('Reverse'),
-        'random'  => t('Random'),
-      ),
-    );
-    $element['slideshow_controls'] = array(
-      '#title'          => t('Create prev/next controls'),
-      '#type'           => 'checkbox',
-      '#default_value'  => $this->getSetting('slideshow_controls'),
-    );
-    $element['slideshow_controls_pause'] = array(
-      '#title'          => t('Create play/pause button'),
-      '#type'           => 'checkbox',
-      '#default_value'  => $this->getSetting('slideshow_controls_pause'),
-      '#states' => array(
-        'visible' => array(
-          ':input[name$="[settings_edit_form][settings][slideshow_controls]"]' => array('checked' => TRUE),
-        ),
-      ),
-    );
-    $element['slideshow_controls_position'] = array(
-      '#title'          => t('Prev/next controls position'),
-      '#type'           => 'select',
-      '#options'        => array('before' => t('Before'), 'after' => t('After')),
-      '#default_value'  => $this->getSetting('slideshow_controls_position'),
-      '#states' => array(
-        'visible' => array(
-          ':input[name$="[settings_edit_form][settings][slideshow_controls]"]' => array('checked' => TRUE),
-        ),
-      ),
-    );
-    $element['slideshow_pause'] = array(
-      '#title'          => t('Pause on hover'),
-      '#type'           => 'checkbox',
-      '#default_value'  => $this->getSetting('slideshow_pause'),
-    );
-    $element['slideshow_start_on_hover'] = array(
-      '#title'          => t('Activate on hover'),
-      '#type'           => 'checkbox',
-      '#default_value'  => $this->getSetting('slideshow_start_on_hover'),
-    );
-    $element['slideshow_pager'] = array(
-      '#title'          => t('Pager'),
-      '#type'           => 'select',
-      '#options'        => array('number' => t('Slide number'), 'image' => t('Image')),
-      '#empty_option'   => t('None'),
-      '#default_value'  => $this->getSetting('slideshow_pager'),
-    );
-    $element['slideshow_pager_position'] = array(
-      '#title'          => t('Pager position'),
-      '#type'           => 'select',
-      '#options'        => array('before' => t('Before'), 'after' => t('After')),
-      '#default_value'  => $this->getSetting('slideshow_pager_position'),
-      '#states' => array(
-        'invisible' => array(
-          ':input[name$="[settings_edit_form][settings][slideshow_pager]"]' => array('value' => ''),
-        ),
-      ),
-    );
-    $element['slideshow_pager_image_style'] = array(
-      '#title'          => t('Pager image style'),
-      '#type'           => 'select',
-      '#default_value'  => $this->getSetting('slideshow_pager_image_style'),
-      '#empty_option'   => t('None (original image)'),
-      '#options'        => image_style_options(FALSE),
-      '#states' => array(
-        'visible' => array(
-          ':input[name$="[settings_edit_form][settings][slideshow_pager]"]' => array('value' => 'image'),
-        ),
-      ),
-    );
-    return $element;
-  }
-  /**
-   * {@inheritdoc}
+   * Settings summary.
+   *
+   * @return array|string[]
+   *   Summary array.
    */
   public function settingsSummary() {
-    // Get summary of image_style and image_link from parent method.
     $summary = parent::settingsSummary();
     $image_styles = image_style_options(FALSE);
-    // Unset possible 'No defined styles' option.
-    unset($image_styles['']);
+    $slideshow = array_filter($this->getSetting('slideshow'));
+    $pager = array_filter($this->getSetting('slideshow_pager'));
+    $colorbox = $this->getSetting('colorbox_image_style');
+    $colorbox_link = $this->getSetting('image_link');
 
-    // Colorbox!
-    $image_link_setting = $this->getSetting('image_link');
-    if (isset($image_link_setting) && $image_link_setting == 'colorbox') {
-      $link_type_message = t('Link to: @link', array('@link' => $this->getSetting('image_link')));
-      $link_type_message .= ' (';
+    if ($colorbox && $colorbox_link == 'colorbox') {
+      $summary[] = 'Colorbox: ' . $image_styles[$colorbox];
+    }
 
-      $colorbox_img_style_settings = $this->getSetting('slideshow_colorbox_image_style');
-      if (!empty($colorbox_img_style_settings)) {
-        $link_type_message .= t('Image style: @style', array('@style' => $image_styles[$this->getSetting('slideshow_colorbox_image_style')]));
+    foreach ($slideshow as $key => $value) {
+      if ($value == 1) {
+        $value = 'TRUE';
       }
-      else {
-        $link_type_message .= t('Original image');
-      }
+      $summary[] = ucfirst($key) . ': ' . $value;
+    }
 
-      $colorbox_slideshow_settings = $this->getSetting('slideshow_colorbox_slideshow');
-      if (isset($colorbox_slideshow_settings)) {
-        $colorbox_slideshow = array(
-          'automatic' => t('Automatic'),
-          'manual'    => t('Manual'),
-        );
-        if (isset($colorbox_slideshow[$this->getSetting('slideshow_colorbox_slideshow')])) {
-          $link_type_message .= ', with Slideshow (' . $colorbox_slideshow[$this->getSetting('slideshow_colorbox_slideshow')] . ' - Speed: ' . $this->getSetting('slideshow_colorbox_slideshow_speed') . ')';
-        }
-      }
-      $link_type_message .= ')';
-      $summary[] = $link_type_message;
+    if (isset($pager['pager']) && array_filter($pager['pager'])) {
+      $summary[] = 'Pager:' . implode(',', array_filter($pager['pager']));
     }
-    $caption_types = array(
-      'title' => t('Title text'),
-      'alt'   => t('Alt text'),
-    );
-    // Display this setting only if there's a caption.
-    $caption_types_settings = $this->getSetting('slideshow_caption');
-    if (isset($caption_types[$caption_types_settings])) {
-      $caption_message = t('Caption: @caption', array('@caption' => $caption_types[$caption_types_settings]));
-      $link_types_settings = $this->getSetting('slideshow_caption_link');
-      if (isset($link_types[$link_types_settings])) {
-        $caption_message .= ' (' . t('Link to: @link', array('@link' => $link_types[$link_types_settings])) . ')';
-      }
-      $summary[] = $caption_message;
-    }
-    $summary[] = t('Transition effect: @effect', array('@effect' => $this->getSetting('slideshow_fx')));
-    $summary[] = t('Speed: @speed', array('@speed' => $this->getSetting('slideshow_speed')));
-    $summary[] = t('Timeout: @timeout', array('@timeout' => $this->getSetting('slideshow_timeout')));
-    $orders = array(
-      'reverse' => t('Reverse order'),
-      'random'  => t('Random order'),
-    );
-    $orders_settings = $this->getSetting('slideshow_order');
-    if (isset($orders[$orders_settings])) {
-      $summary[] = $orders[$orders_settings];
-    }
-    $pause_button_text = "";
-    $slideshow_controls_pause = $this->getSetting('slideshow_controls_pause');
-    $slideshow_controls = $this->getSetting('slideshow_controls');
-    $slideshow_pause = $this->getSetting('slideshow_pause');
-    $slideshow_start_on_hover = $this->getSetting('slideshow_start_on_hover');
 
-    if (isset($slideshow_controls_pause) && $slideshow_controls_pause) {
-      $pause_button_text = " " . t("(with play/pause)");
+    if (isset($pager['controls'])) {
+      $summary[] = 'Controls';
     }
-    if (isset($slideshow_controls) && $slideshow_controls) {
-      $summary[] = t('Create prev/next controls') . $pause_button_text;
-    }
-    if (isset($slideshow_pause) && $slideshow_pause) {
-      $summary[] = t('Pause on hover');
-    }
-    if (isset($slideshow_start_on_hover) && $slideshow_start_on_hover) {
-      $summary[] = t('Activate on hover');
-    }
-    switch ($this->getSetting('slideshow_pager')) {
-      case 'number':
-        $summary[] = t('Pager') . ': ' . t('Slide number');
-        break;
 
-      case 'image':
-        $pager_image_message = t('Pager') . ': ' . t('Image') . ' (';
-        if (isset($image_styles[$this->getSetting('slideshow_pager_image_style')])) {
-          $pager_image_message .= t('Image style: @style', array('@style' => $image_styles[$this->getSetting('slideshow_pager_image_style')]));
-        }
-        else {
-          $pager_image_message .= t('Original image');
-        }
-        $pager_image_message .= ')';
-        $summary[] = $pager_image_message;
-        break;
-    }
     return $summary;
   }
+
   /**
-   * {@inheritdoc}
+   * Settings form.
+   *
+   * @param array $form
+   *   Form.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   Form state.
+   *
+   * @return array|mixed
+   *   Form array.
+   */
+  public function settingsForm(array $form, FormStateInterface $form_state) {
+    $form = parent::settingsForm($form, $form_state);
+
+    // Colorbox support.
+    if ($this->moduleHandler->moduleExists('colorbox')) {
+      $form['image_link']['#options']['colorbox'] = 'Colorbox';
+      $form['colorbox_image_style'] = [
+        '#title'          => $this->t('Colorbox image style'),
+        '#type'           => 'select',
+        '#default_value'  => $this->getSetting('colorbox_image_style'),
+        '#empty_option'   => $this->t('None (original image)'),
+        '#options'        => image_style_options(FALSE),
+        '#states' => [
+          'visible' => [
+            ':input[name$="[settings_edit_form][settings][image_link]"]' => [
+              'value' => 'colorbox',
+            ],
+          ],
+        ],
+      ];
+
+    }
+
+    $form['slideshow'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Slideshow settings'),
+      '#open' => FALSE,
+    ];
+
+    $form['slideshow']['fx'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Transition'),
+      '#required' => TRUE,
+      '#options' => $this->getTransitions(),
+      '#default_value' => $this->getSetting('slideshow')['fx'],
+    ];
+
+    $form['slideshow']['allowWrap'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow wrap'),
+      '#default_value' => $this->getSetting('slideshow')['allowWrap'],
+    ];
+
+    $form['slideshow']['autoHeight'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Auto height'),
+      '#default_value' => $this->getSetting('slideshow')['autoHeight'],
+    ];
+
+    $form['slideshow']['delay'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Delay'),
+      '#description' => $this->t('The number of milliseconds to add onto, or substract from, the time before the first slide transition occurs.'),
+      '#default_value' => $this->getSetting('slideshow')['delay'],
+    ];
+
+    $form['slideshow']['hideNonActive'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Hide non active'),
+      '#description' => $this->t('Determines whether or not Cycle2 hides the inactive slides.'),
+      '#default_value' => $this->getSetting('slideshow')['hideNonActive'],
+    ];
+
+    $form['slideshow']['loader'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Loader'),
+      '#options' => [
+        'true' => 'True',
+        'false' => 'False',
+        'wait' => 'Wait',
+      ],
+      '#default_value' => $this->getSetting('slideshow')['loader'],
+    ];
+
+    $form['slideshow']['loop'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Loop'),
+      '#description' => $this->t('The number of times an auto-advancing slideshow should loop before terminating. If the value is less than 1 then the slideshow will loop continuously. Set to 1 to loop once, etc. Setting the allow-wrap option to false will override looping.'),
+      '#min' => 0,
+      '#step' => 1,
+      '#default_value' => $this->getSetting('slideshow')['loop'],
+    ];
+
+    $form['slideshow']['pauseOnHover'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Pause on hover'),
+      '#description' => $this->t('If true an auto-running slideshow will be paused while the mouse is over the slideshow.'),
+      '#default_value' => $this->getSetting('slideshow')['pauseOnHover'],
+    ];
+
+    $form['slideshow']['paused'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Paused'),
+      '#description' => $this->t('If true the slideshow will begin in a paused state.'),
+      '#default_value' => $this->getSetting('slideshow')['paused'],
+    ];
+
+    $form['slideshow']['random'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Random'),
+      '#description' => $this->t("If true the order of the slides will be randomized. This only effects slides that are initially in the markup, not slides added via the add command or via Cycle2's image loader functionality."),
+      '#default_value' => $this->getSetting('slideshow')['random'],
+    ];
+
+    $form['slideshow']['reverse'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Reverse'),
+      '#description' => $this->t('If true the slideshow will proceed in reverse order and transitions that support this option will run a reverse animation.'),
+      '#default_value' => $this->getSetting('slideshow')['reverse'],
+    ];
+
+    $form['slideshow']['speed'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Speed'),
+      '#description' => $this->t('The speed of the transition effect in milliseconds.'),
+      '#min' => 0,
+      '#step' => 1,
+      '#default_value' => $this->getSetting('slideshow')['speed'],
+    ];
+
+    $form['slideshow']['startingSlide'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Starting slide'),
+      '#description' => $this->t('The zero-based index of the slide that should be initially displayed.'),
+      '#min' => 0,
+      '#step' => 1,
+      '#default_value' => $this->getSetting('slideshow')['startingSlide'],
+    ];
+
+    $form['slideshow']['swipe'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Swipe'),
+      '#description' => $this->t('Set to true to enable swipe gesture support for advancing the slideshow forward or back. You should downlad cycle2.swipe plugin and place it in /libraries/jquery.cycle2/ directory.'),
+      '#default_value' => $this->getSetting('slideshow')['swipe'],
+    ];
+
+    $form['slideshow']['sync'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Sync'),
+      '#description' => $this->t('If true then animation of the incoming and outgoing slides will be synchronized. If false then the animation for the incoming slide will not start until the animation for the outgoing slide completes.'),
+      '#default_value' => $this->getSetting('slideshow')['sync'],
+    ];
+
+    $form['slideshow']['timeout'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Tmeout'),
+      '#description' => $this->t('The time between slide transitions in milliseconds.'),
+      '#min' => 0,
+      '#step' => 1,
+      '#default_value' => $this->getSetting('slideshow')['timeout'],
+    ];
+
+    $form['slideshow_pager'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Slideshow pager settings'),
+      '#open' => FALSE,
+    ];
+
+    $form['slideshow_pager']['pager'] = [
+      '#type' => 'checkboxes',
+      '#title' => $this->t('Pager'),
+      '#options' => [
+        'before' => $this->t('Before'),
+        'after' => $this->t('After'),
+      ],
+      '#default_value' => $this->getSetting('slideshow_pager')['pager'],
+    ];
+
+    $form['slideshow_pager']['pager_type'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Pager type'),
+      '#options' => $this->getPagerTypes(),
+      '#default_value' => $this->getSetting('slideshow_pager')['pager_type'],
+    ];
+
+    $form['slideshow_pager']['controls'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Controls'),
+      '#default_value' => $this->getSetting('slideshow_pager')['controls'],
+    ];
+
+    return $form;
+  }
+
+  /**
+   * Prepare transitions.
+   *
+   * @return array
+   *   Array with transitions.
+   */
+  protected function getTransitions() {
+    return [
+      'fade' => 'fade',
+      'fadeout' => 'fadeout',
+      'none' => 'none',
+      'scrollHorz' => 'scrollHorz',
+    ];
+  }
+
+  /**
+   * Helper function to generate available plugins.
+   *
+   * @return array
+   *   Array of plugins.
+   */
+  protected function getPagerTypes() {
+    $options = $this->pagerManager->getDefinitions();
+    $pagers = [];
+
+    foreach ($options as $option) {
+      $pagers[$option['id']] = $option['label'];
+    }
+
+    return $pagers;
+  }
+
+  /**
+   * View elements.
+   *
+   * @param \Drupal\Core\Field\FieldItemListInterface $items
+   *   Items.
+   * @param string $langcode
+   *   Langcode.
+   *
+   * @return array
+   *   Rendered array.
+   *
+   * @throws \Exception
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
-    // Get image html from parent method.
-    $images = parent::viewElements($items, $langcode);
-
-    static $slideshow_count;
-    $slideshow_count = (is_int($slideshow_count)) ? $slideshow_count + 1 : 1;
+    $itemListInterface = $items;
+    $id = Html::getUniqueId('field-slideshow-id');
+    $slideshow_settings = $this->getSetting('slideshow');
     $files = $this->getEntitiesToView($items, $langcode);
+    $items = parent::viewElements($items, $langcode);
+    $pager = NULL;
 
-    // Check plugins.
-    if (\Drupal::moduleHandler()->moduleExists('libraries')) {
-      if (!file_exists(DRUPAL_ROOT . '/libraries/jquery.cycle/jquery.cycle.all.min.js') && !file_exists(DRUPAL_ROOT . '/libraries/jquery.cycle/jquery.cycle.all.js')) {
-        $url = Url::fromRoute('system.status');
-        drupal_set_message(t('JQuery Cycle must be installed in order to run the slideshow. Please go to !page for instructions.', array('!page' => \Drupal::l(t('Status Report'), $url))), 'warning', FALSE);
-      }
+    if (!count($items)) {
+      return [];
     }
-    else {
-      $url = Url::fromUri('http://drupal.org/project/libraries');
-      drupal_set_message(t('Please install the %module module in order to use Field Slideshow.', array('%module' => \Drupal::l('Libraries API', $url))), 'warning', FALSE);
+
+    if (count($items) > 1) {
+      $pager = $this->getSetting('slideshow_pager');
+      $pagerType = $this->pagerManager->createInstance($pager['pager_type']);
+      $pager['pager_type'] = $pagerType->viewPager($itemListInterface);
     }
-    $elements = array();
-    $entity = array();
-    $links = array(
-      'image_link'          => 'path',
-      'slideshow_caption_link'  => 'caption_path',
-    );
-    // Loop through required links (because image and
-    // caption can have different links).
-    foreach ($items as $delta => $item) {
-      $uri = array();
-      // Set Image caption.
-      if ($this->getSetting('slideshow_caption') != '') {
-        $caption_settings = $this->getSetting('slideshow_caption');
-        if ($caption_settings == 'title') {
-          $item_settings[$delta]['caption'] = $item->getValue()['title'];
-        }
-        elseif ($caption_settings == 'alt') {
-          $item_settings[$delta]['caption'] = $item->getValue()['alt'];
-        }
-        $item->set('caption', $item_settings[$delta]['caption']);
+
+    $output = [];
+
+    // Load cycle2swipe if needed.
+    if ($slideshow_settings['swipe']) {
+      $libraries[] = 'field_slideshow/field_slideshow.cycle2swipe';
+    }
+
+    $libraries[] = 'field_slideshow/field_slideshow.cycle2';
+
+    if ($this->getSetting('image_link') === 'colorbox') {
+      $colorbox_style_setting = $this->getSetting('colorbox_image_style');
+
+      if (!empty($colorbox_style_setting)) {
+        $image_style = $this->imageStyleStorage->load($colorbox_style_setting);
       }
-      // Set Image and Caption Link.
-      foreach ($links as $setting => $path) {
-        if ($this->getSetting($setting) != '') {
-          switch ($this->getSetting($setting)) {
-            case 'content':
-              $entity = $item->getEntity();
-              if (!$entity->isNew()) {
-                $uri = $entity->urlInfo();
-                $uri = !empty($uri) ? $uri : '';
-                $item->set($path, $uri);
-              }
-              break;
 
-            case 'file':
-              foreach ($files as $file_delta => $file) {
-                $image_uri = $file->getFileUri();
-                $uri = Url::fromUri(file_create_url($image_uri));
-                $uri = !empty($uri) ? $uri : '';
-                $items[$file_delta]->set($path, $uri);
-              }
-              break;
+      $options = [
+        'attributes' => [
+          'class' => [
+            'colorbox',
+          ],
+          'data-colorbox-gallery' => 'gallery-' . $id,
+        ],
+      ];
 
-            case 'colorbox':
-              $attrib = array();
-
-              // Check if we need a thumbnail and change the link.
-              $entity = $item->getEntity();
-              foreach ($files as $file_delta => $file) {
-                $image_uri = $file->getFileUri();
-                $uri = Url::fromUri(file_create_url($image_uri));
-                $uri = !empty($uri) ? $uri : '';
-                if ($this->getSetting('slideshow_colorbox_image_style') != '') {
-                  $uri = ImageStyle::load($this->getSetting('slideshow_colorbox_image_style'))->buildUrl($image_uri);
-                  $attrib['uri'] = $uri;
-                }
-                else {
-                  $attrib['uri'] = $uri->getUri();
-                }
-                // Add correct attributes.
-                $attrib['attributes'] = array(
-                  'class' => array('colorbox'),
-                  'rel'   => 'field-slideshow[' . 'nid' . '-' . $entity->id() . ']',
-                );
-                if ($this->getSetting('slideshow_caption') != ''  && isset($items[$file_delta]->getValue()['caption'])) {
-                  $attrib['attributes']['title'] = $items[$file_delta]->getValue()['caption'];
-                }
-
-                $colorbox_slideshow = $this->getSetting('slideshow_colorbox_slideshow');
-                if (!empty($colorbox_slideshow)) {
-                  $attrib['attributes']['class'] = array('colorbox');
-                  $attrib['uri'] .= (strpos($attrib['uri'], '?') === FALSE) ? '?' : '&';
-                  $attrib['uri'] .= 'slideshow=true&slideshowAuto=' . (($this->getSetting('slideshow_colorbox_slideshow') == 'automatic') ? 'true' : 'false') . '&slideshowSpeed=' . $this->getSetting('slideshow_colorbox_slideshow_speed') . '&speed=' . $this->getSetting('slideshow_colorbox_speed') . '&transition=' . $this->getSetting('slideshow_colorbox_transition');
-                }
-                $items[$file_delta]->set($path, $attrib);
-              }
-              break;
+      foreach ($items as $key => $item) {
+        // Create colorbox image url with image style.
+        $original_url = $url = $files[$key]->getFileUri();
+        if (isset($image_style)) {
+          $url = $image_style->buildUri($original_url);
+          if (!file_exists($url)) {
+            $image_style->createDerivative($original_url, $url);
           }
         }
+
+        $url = Url::fromUri(file_create_url($url), $options);
+
+        // Image-formatter.html.twig does not give
+        // ability to add url attributes like class.
+        $img = $this->renderer->render($items[$key]);
+        $link = Link::fromTextAndUrl($img, $url);
+        $items[$key] = $link->toString();
       }
+
+      // We can't use dependency injection for this
+      // service because colorbox is optional.
+      \Drupal::service('colorbox.attachment')->attach($output);
     }
 
-    $pager = array(
-      '#theme'                => 'field_slideshow_pager',
-      '#items'                => $items,
-      '#pager'                => $this->getSetting('slideshow_pager'),
-      '#pager_image_style'    => $this->getSetting('slideshow_pager_image_style'),
-      '#slideshow_id'         => $slideshow_count,
-    );
-    $controls = array(
-      '#theme'                => 'field_slideshow_controls',
-      '#slideshow_id'         => $slideshow_count,
-      '#controls_pause'       => $this->getSetting('slideshow_controls_pause'),
-    );
+    $output = array_merge_recursive($output, [
+      '#theme' => 'field_slideshow',
+      '#items' => $items,
+      '#pager' => $pager,
+      '#id' => $id,
+      '#attached' => [
+        'library' => $libraries,
+        'drupalSettings' => [
+          'field_slideshow' => [
+            $id => $slideshow_settings,
+          ],
+        ],
+      ],
+    ]);
 
-    $elements[] = array(
-      '#theme'                => 'field_slideshow',
-      '#items'                => $items,
-      '#image_style'          => $this->getSetting('image_style'),
-      '#image'                => $images,
-      '#order'                => $this->getSetting('slideshow_order'),
-      '#controls'             => ($this->getSetting('slideshow_controls') == 1 ? $controls : array()),
-      '#controls_position'    => $this->getSetting('slideshow_controls_position'),
-      '#pager'                => $this->getSetting('slideshow_pager') !== '' ? $pager : array(),
-      '#pager_position'       => $this->getSetting('slideshow_pager_position'),
-      '#entity'               => $entity,
-      '#slideshow_id'         => $slideshow_count,
-      '#js_variables'         => array(
-        'fx'                   => $this->getSetting('slideshow_fx'),
-        'speed'                => $this->getSetting('slideshow_speed'),
-        'timeout'              => $this->getSetting('slideshow_timeout'),
-        'pause'                => $this->getSetting('slideshow_pause'),
-        'start_on_hover'       => $this->getSetting('slideshow_start_on_hover'),
-        // Need to access the following variables in js too.
-        'pager'                => $this->getSetting('slideshow_pager'),
-        'controls'             => $this->getSetting('slideshow_controls') === 1 ? $controls : array(),
-      ),
-    );
-    return $elements;
+    return $output;
   }
 
 }

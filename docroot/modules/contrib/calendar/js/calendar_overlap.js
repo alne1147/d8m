@@ -73,7 +73,7 @@
 
     // Scroll the viewport to the first item
       function calendar_scrollToFirst() {
-        if ($('div.first_item').length) {
+        if ($('div.first_item').length > 0) {
           var y = $('div.first_item').offset().top - $('#single-day-container').offset().top;
           $('#single-day-container').scrollTop(y);
         }

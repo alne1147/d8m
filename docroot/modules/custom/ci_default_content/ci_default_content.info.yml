@@ -1,0 +1,10 @@
+name: CI Default Content
+type: module
+description: Import content via Default Content module.
+# core: 8.x
+
+
+version: '8.x'
+core: '8.x'
+project: 'ci_default_content'
+datestamp: 1530741526

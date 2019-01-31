@@ -1,0 +1,107 @@
+uuid: de0e3867-a040-47ff-b9f4-470a7456ba21
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: txt
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - BGColor
+            - TextColor
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
+            - '-'
+            - Outdent
+            - Indent
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
+            - JustifyLeft
+            - HorizontalRule
+            - '-'
+            - FontSize
+            - Font
+            - btbutton
+            - Accordion
+            - '-'
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - Linkit
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - video_embed
+            - document_media_browser
+        -
+          name: Tools
+          items:
+            - Source
+            - Templates
+            - A11ychecker
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    templates:
+      template_path: ''
+      replace_content: 0
+    wordcount:
+      enable: 1
+      show_paragraphs: 0
+      show_word_count: 1
+      show_char_count: 1
+      count_spaces: 0
+      count_html: 0
+      max_words: '-1'
+      max_chars: '-1'
+    colorbutton:
+      colors: ''
+    linkit:
+      linkit_profile: ci_linkit
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

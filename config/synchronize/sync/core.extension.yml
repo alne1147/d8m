@@ -1,7 +1,6 @@
 module:
   acquia_connector: 0
   acquia_purge: 0
-  acquia_search: 0
   addtocalendar: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -28,11 +27,16 @@ module:
   chosen_lib: 0
   ci_admin_tweaks: 0
   ci_article_setup: 0
+  ci_default_content: 0
   ci_js: 0
+  ci_layouts: 0
   ci_menu_tweaks: 0
+  ci_migrate: 0
   ci_search_form: 0
+  ci_templates: 0
   ci_theme_options: 0
   ci_views_tweaks: 0
+  ci_yaml_content: 0
   ckeditor: 0
   ckeditor_a11ychecker: 0
   ckeditor_accordion: 0
@@ -41,6 +45,7 @@ module:
   ckeditor_font: 0
   ckeditor_templates: 0
   ckwordcount: 0
+  collapse_text: 0
   colorbutton: 0
   conditional_fields: 0
   config: 0
@@ -59,6 +64,7 @@ module:
   dblog: 0
   default_content: 0
   default_content_deploy: 0
+  devel: 0
   draggableviews: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
@@ -66,12 +72,12 @@ module:
   editor: 0
   editor_file: 0
   embed: 0
-  embed_image_style_permissions: 0
   entity: 0
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entity_usage: 0
   exclude_node_title: 0
   facets: 0
   features: 0
@@ -80,6 +86,7 @@ module:
   field_group: 0
   field_slideshow: 0
   field_ui: 0
+  fieldblock: 0
   file: 0
   file_browser: 0
   filter: 0
@@ -108,11 +115,19 @@ module:
   menu_reference_render: 0
   menu_ui: 0
   metatag: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_file: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
   node: 0
   notification: 0
   options: 0
   page_cache: 0
   panelbutton: 0
+  paragraphs_admin: 0
+  paragraphs_library: 0
   paragraphs_type_permissions: 0
   path: 0
   purge: 0
@@ -144,6 +159,7 @@ module:
   slick: 0
   slick_paragraphs: 0
   slick_ui: 0
+  slick_views: 0
   styles_api: 0
   superfish: 0
   system: 0
@@ -158,6 +174,7 @@ module:
   twig_blocks: 0
   update: 0
   user: 0
+  userprotect: 0
   video_embed_field: 0
   video_embed_wysiwyg: 0
   views_templates: 0
@@ -171,6 +188,7 @@ module:
   webform_templates: 0
   webform_ui: 0
   workflows: 0
+  yaml_content: 0
   menu_link_content: 1
   pathauto: 1
   webform_bootstrap: 1

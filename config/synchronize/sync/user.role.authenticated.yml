@@ -5,22 +5,26 @@ dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
+  - 'access own webform submissions'
+  - 'change own password'
+  - 'create blog content'
+  - 'delete own webform submissions'
+  - 'edit own webform submissions'
   - 'post comments'
+  - 'search Google CSE'
   - 'search content'
   - 'skip comment approval'
-  - 'use advanced search'
-  - 'use exclude node title'
-  - 'use text format d8m_text_editor'
-  - 'view files'
-  - 'view media'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
+  - 'view date repeats'
+  - 'view own unpublished content'
   - 'view paragraph content bp_accordion'
   - 'view paragraph content bp_accordion_section'
   - 'view paragraph content bp_block'
@@ -28,7 +32,6 @@ permissions:
   - 'view paragraph content bp_columns'
   - 'view paragraph content bp_columns_three_uneven'
   - 'view paragraph content bp_columns_two_uneven'
-  - 'view paragraph content bp_contact'
   - 'view paragraph content bp_image'
   - 'view paragraph content bp_modal'
   - 'view paragraph content bp_tab_section'
@@ -39,6 +42,7 @@ permissions:
   - 'view paragraph content card_map'
   - 'view paragraph content card_open_embed'
   - 'view paragraph content full_column_hero'
+  - 'view paragraph content jumbo'
   - 'view paragraph content mini_calendar'
   - 'view paragraph content modal_body'
   - 'view paragraph content row_slide_container'
@@ -46,4 +50,3 @@ permissions:
   - 'view paragraph content row_two_column_hero'
   - 'view paragraph content section_body'
   - 'view paragraph content webform'
-  - 'view the administration theme'

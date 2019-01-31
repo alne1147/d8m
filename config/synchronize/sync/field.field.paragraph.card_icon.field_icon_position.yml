@@ -1,0 +1,23 @@
+uuid: 68665e0a-3f84-4f73-acd6-cd4a20125cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_position
+    - paragraphs.paragraphs_type.card_icon
+  module:
+    - options
+id: paragraph.card_icon.field_icon_position
+field_name: field_icon_position
+entity_type: paragraph
+bundle: card_icon
+label: 'Icon Position'
+description: 'Icon position relative to text.'
+required: false
+translatable: false
+default_value:
+  -
+    value: icon-card-top
+default_value_callback: ''
+settings: {  }
+field_type: list_string

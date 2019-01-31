@@ -1,0 +1,20 @@
+id: ci_user
+label: User accounts
+audit: true
+source:
+  plugin: ci_users
+  key: prepare
+process:
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  status: status
+  init: init
+  field_first_name: first_name
+  field_last_name: last_name
+destination:
+  plugin: entity:user
+migration_dependencies:
+  required: {}

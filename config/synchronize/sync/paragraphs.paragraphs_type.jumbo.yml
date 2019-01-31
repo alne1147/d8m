@@ -1,0 +1,9 @@
+uuid: ac9377a9-3dc3-477b-9240-6848dda06d60
+langcode: en
+status: true
+dependencies: {  }
+id: jumbo
+label: 'Jumbo Slide'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

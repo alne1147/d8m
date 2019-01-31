@@ -1,0 +1,66 @@
+uuid: 0a1c95ac-5801-453b-8dfa-c298e20ca9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jumbo_slides.body
+    - field.field.node.jumbo_slides.field_add_to_layouts
+    - field.field.node.jumbo_slides.field_body_color
+    - field.field.node.jumbo_slides.field_jumbotron_image
+    - field.field.node.jumbo_slides.field_jumbotron_link
+    - field.field.node.jumbo_slides.field_title_color
+    - node.type.jumbo_slides
+  module:
+    - options
+    - text
+    - user
+id: node.jumbo_slides.default
+targetEntityType: node
+bundle: jumbo_slides
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_body_color:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_jumbotron_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_jumbotron_link:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_color:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_add_to_layouts: true

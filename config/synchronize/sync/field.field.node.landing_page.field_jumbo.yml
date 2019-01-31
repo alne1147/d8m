@@ -1,0 +1,118 @@
+uuid: 121c835c-a0e7-41f0-b323-26251c5f6e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jumbo
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.jumbo
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_jumbo
+field_name: field_jumbo
+entity_type: node
+bundle: landing_page
+label: Jumbo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      jumbo: jumbo
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 30
+        enabled: false
+      bp_accordion_section:
+        weight: 31
+        enabled: false
+      bp_blank:
+        weight: 32
+        enabled: false
+      bp_block:
+        weight: 33
+        enabled: false
+      bp_carousel:
+        weight: 34
+        enabled: false
+      bp_column_wrapper:
+        weight: 35
+        enabled: false
+      bp_columns:
+        weight: 36
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 37
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 38
+        enabled: false
+      bp_contact:
+        weight: 39
+        enabled: false
+      bp_image:
+        weight: 40
+        enabled: false
+      bp_modal:
+        weight: 41
+        enabled: false
+      bp_simple:
+        weight: 42
+        enabled: false
+      bp_tab_section:
+        weight: 43
+        enabled: false
+      bp_tabs:
+        weight: 44
+        enabled: false
+      bp_view:
+        weight: 45
+        enabled: false
+      card_basic:
+        weight: 46
+        enabled: false
+      card_icon:
+        weight: 47
+        enabled: false
+      card_map:
+        weight: 48
+        enabled: false
+      card_open_embed:
+        weight: 49
+        enabled: false
+      from_library:
+        weight: 50
+        enabled: false
+      full_column_hero:
+        weight: 51
+        enabled: false
+      mini_calendar:
+        weight: 52
+        enabled: false
+      jumbo:
+        enabled: true
+        weight: 53
+      modal_body:
+        weight: 53
+        enabled: false
+      row_slide_container:
+        weight: 54
+        enabled: false
+      row_three_column_hero:
+        weight: 55
+        enabled: false
+      row_two_column_hero:
+        weight: 56
+        enabled: false
+      section_body:
+        weight: 57
+        enabled: false
+      webform:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

@@ -2,13 +2,27 @@
 
 $sites = [
     
+	
     // Dept. of Agriculture
     'ag.dev.colorado.gov' => 'ag.colorado.gov',
     'ag.stg.colorado.gov' => 'ag.colorado.gov',
     
     // Dept. of Public Safety
+    'cdhs.dev.colorado.gov' => 'cdhs.colorado.gov',
+    'cdhs.stg.colorado.gov' => 'cdhs.colorado.gov',
+    
+    // Dept. of Public Safety
     'cdps.dev.colorado.gov' => 'cdps.colorado.gov',
     'cdps.stg.colorado.gov' => 'cdps.colorado.gov',
+    
+    
+    // Decision Support Systems
+    'cdss.dev.colorado.gov' => 'cdss.colorado.gov',
+    'cdss.stg.colorado.gov' => 'cdss.colorado.gov',
+    
+    // Energy Office
+    'ceo.dev.colorado.gov' => 'ceo.colorado.gov',
+    'ceo.stg.colorado.gov' => 'ceo.colorado.gov',
     
     // Dept. of Personnel and Administration
     'dpa.dev.colorado.gov' => 'dpa.colorado.gov',

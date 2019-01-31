@@ -38,14 +38,20 @@ hidden:
   field_archive: true
   field_background_color: true
   field_background_image: true
+  field_breadcrumbs: true
   field_display_image: true
   field_footer_options: true
   field_footer_selection: true
+  field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true
+  field_jumbo: true
   field_jumbotron: true
   field_jumbotron_options: true
   field_landing_page_options: true
   field_meta: true
   field_meta_tags: true
+  field_nav_bar_above: true
   field_promote: true
+  field_refer_slider: true
   field_rows: true
   field_summary: true

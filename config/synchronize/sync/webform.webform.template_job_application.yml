@@ -194,3 +194,4 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme: ''
+      theme_name: ''

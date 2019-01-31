@@ -1190,3 +1190,6 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
 
 $settings['memcache']['stampede_protection'] = TRUE;
 $config['image.settings']['allow_insecure_derivatives'] = TRUE;
+
+global $content_directories;
+$content_directories['sync'] = $app_root.'/../content/sync';

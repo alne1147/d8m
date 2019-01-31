@@ -72,6 +72,40 @@ class WebformElementHelper {
   protected static $ignoredSubPropertiesRegExp;
 
   /**
+   * Determine if an element and its key is a renderable array.
+   *
+   * @param array|mixed $element
+   *   An element.
+   * @param string
+   *   The element key.
+   *
+   * @return bool
+   *   TRUE if an element and its key is a renderable array.
+   */
+  public static function isElement($element, $key) {
+    return (Element::child($key) && is_array($element));
+  }
+
+  /**
+   * Determine if an element has children.
+   *
+   * @param array|mixed $element
+   *   An element.
+   *
+   * @return bool
+   *   TRUE if an element has children.
+   * @see \Drupal\Core\Render\Element::children
+   */
+  public static function hasChildren($element) {
+    foreach ($element as $key => $value) {
+      if ($key === '' || $key[0] !== '#') {
+        return TRUE;
+      }
+    }
+    return FALSE;
+  }
+
+  /**
    * Determine if an element is a webform element and should be enhanced.
    *
    * @param array $element
@@ -368,6 +402,11 @@ class WebformElementHelper {
    *   An associative array of translated element properties.
    */
   public static function applyTranslation(array &$element, array $translation) {
+    // Apply all translated properties to the element.
+    // This allows default properties to be translated, which includes
+    // composite element titles.
+    $element += $translation;
+
     foreach ($element as $key => &$value) {
       // Make sure to only merge properties.
       if (!Element::property($key) || empty($translation[$key])) {
@@ -400,7 +439,7 @@ class WebformElementHelper {
   public static function getFlattened(array $elements) {
     $flattened_elements = [];
     foreach ($elements as $key => &$element) {
-      if (Element::property($key) || !is_array($element)) {
+      if (!WebformElementHelper::isElement($element, $key)) {
         continue;
       }
 
@@ -571,7 +610,7 @@ class WebformElementHelper {
    * @return array
    *   An associative array containing an element's states.
    */
-  public static function getStates(array $element) {
+  public static function &getStates(array &$element) {
     // Composite and multiple elements use use a custom states wrapper
     // which will changes '#states' to '#_webform_states'.
     // @see \Drupal\webform\Utility\WebformElementHelper::fixStatesWrapper
@@ -582,7 +621,10 @@ class WebformElementHelper {
       return $element['#states'];
     }
     else {
-      return [];
+      // Return empty states variable to prevent the below notice.
+      // 'Only variable references should be returned by reference'.
+      $empty_states = [];
+      return $empty_states;
     }
   }
 
@@ -615,7 +657,7 @@ class WebformElementHelper {
    * Randomoize an associative array of element values and disable page caching.
    *
    * @param array $values
-   *   An associative array of element values,
+   *   An associative array of element values.
    *
    * @return array
    *   Randomized associative array of element values.

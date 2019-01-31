@@ -875,7 +875,7 @@ class CalendarHelper extends DateHelper {
       $router = \Drupal::getContainer()->get('router.route_provider');
       $route_name = $granularity_links[$granularity];
       // Check if route exists. $router->getRoutesByName will throw error if no match.
-      $routes = $router->getRoutesByNames([$route_name]);
+      $routes =$router->getRoutesByNames([$route_name]);
       if ($routes) {
         return Url::fromRoute($route_name, static::getViewRouteParameters($arguments));
       }
@@ -900,10 +900,6 @@ class CalendarHelper extends DateHelper {
    */
   static function getViewsURL(ViewExecutable $view, $display_id, $args = []) {
     $route_parameters = static::getViewRouteParameters($args);
-    // Avoid exception if current display is not a page
-    if (substr($display_id, 0, 4) != 'page'){
-      $display_id = 'page_' . $view->style_plugin->options['calendar_type'];
-    }
     $route_name = static::getDisplayRouteName($view->id(), $display_id);
     return Url::fromRoute($route_name, $route_parameters);
   }

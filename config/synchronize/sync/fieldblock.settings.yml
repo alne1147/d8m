@@ -1,0 +1,18 @@
+enabled_entity_types:
+  node: node
+  taxonomy_term: taxonomy_term
+  user: user
+  block_content: '0'
+  contact_message: '0'
+  content_moderation_state: '0'
+  crop: '0'
+  file: '0'
+  media: '0'
+  paragraphs_library_item: '0'
+  redirect: '0'
+  scheduled_update: '0'
+  search_api_task: '0'
+  shortcut: '0'
+  webform_submission: '0'
+  menu_link_content: '0'
+  paragraph: '0'

@@ -1,0 +1,54 @@
+uuid: afb9dc8b-1c34-4a4c-abd7-e7d7c20dba85
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3gPhRGi2yndhy-xopbdS8bKuU33jcSez8-Y5Fo_7t-A
+id: ci_nodes
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: 'Prepare Content'
+source:
+  plugin: ci_nodes
+  key: prepare
+process:
+  type: dest_type
+  path: alias
+  status: status
+  created: created
+  changed: changed
+  uid:
+    plugin: migration_lookup
+    migration: ci_user
+    source: uid
+  title: title
+  body/value: body
+  body/summary: teaser
+  body/format:
+    plugin: default_value
+    default_value: d8m_text_editor
+  field_jumbotron_image/target_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: images
+    -
+      plugin: media_generate
+      destination_field: field_media_image
+      value_key: mid
+      bundle: image
+      entity_type: media
+      ignore_case: true
+      source: images
+  field_jumbotron_link/value: image_link
+destination:
+  plugin: 'entity:node'
+  default_bundle: dest_type
+  type: dest_type
+migration_dependencies:
+  required:
+    - ci_user
+  optional: {  }

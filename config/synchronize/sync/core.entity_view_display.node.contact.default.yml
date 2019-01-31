@@ -4,13 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.contact.body
+    - field.field.node.contact.field_add_to_layouts
     - field.field.node.contact.field_address1
     - field.field.node.contact.field_address_2
     - field.field.node.contact.field_agency
     - field.field.node.contact.field_agency_logo
     - field.field.node.contact.field_city
     - field.field.node.contact.field_email
-    - field.field.node.contact.field_image
+    - field.field.node.contact.field_first_name
+    - field.field.node.contact.field_hide_breadcrumbs
+    - field.field.node.contact.field_hide_navigation_bar
+    - field.field.node.contact.field_last_name
     - field.field.node.contact.field_map
     - field.field.node.contact.field_phone_number
     - field.field.node.contact.field_photo
@@ -32,17 +36,17 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 7
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address1:
-    weight: 10
+    weight: 12
     label: hidden
     settings:
       link_to_entity: false
@@ -50,7 +54,7 @@ content:
     type: string
     region: content
   field_address_2:
-    weight: 11
+    weight: 13
     label: hidden
     settings:
       link_to_entity: false
@@ -58,7 +62,7 @@ content:
     type: string
     region: content
   field_agency:
-    weight: 9
+    weight: 11
     label: hidden
     settings:
       link_to_entity: false
@@ -66,7 +70,7 @@ content:
     type: string
     region: content
   field_agency_logo:
-    weight: 8
+    weight: 10
     label: hidden
     settings:
       image_style: logo
@@ -75,7 +79,7 @@ content:
     type: image
     region: content
   field_city:
-    weight: 12
+    weight: 14
     label: hidden
     settings:
       link_to_entity: false
@@ -83,24 +87,41 @@ content:
     type: string
     region: content
   field_email:
-    weight: 3
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: email_mailto
     region: content
-  field_image:
-    type: entity_reference_entity_view
-    weight: 14
+  field_first_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hide_navigation_bar:
+    weight: 16
     label: above
     settings:
-      view_mode: default
-      link: false
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
+    type: boolean
+    region: content
+  field_last_name:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_map:
     type: simple_gmap
-    weight: 6
+    weight: 8
     region: content
     label: hidden
     settings:
@@ -118,7 +139,7 @@ content:
       include_text: false
     third_party_settings: {  }
   field_phone_number:
-    weight: 4
+    weight: 7
     label: hidden
     settings:
       title: ''
@@ -126,7 +147,7 @@ content:
     type: telephone_link
     region: content
   field_photo:
-    weight: 1
+    weight: 4
     label: hidden
     settings:
       image_style: contact_photo
@@ -135,7 +156,7 @@ content:
     type: image
     region: content
   field_title:
-    weight: 2
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -143,7 +164,7 @@ content:
     type: string
     region: content
   field_zip:
-    weight: 13
+    weight: 15
     label: hidden
     settings:
       link_to_entity: false
@@ -151,8 +172,10 @@ content:
     type: string
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_add_to_layouts: true
+  field_hide_breadcrumbs: true

@@ -14,7 +14,7 @@ dependencies:
 id: viewreferenceblock
 theme: ci_xy
 region: block_reserve
-weight: 0
+weight: -13
 provider: null
 plugin: 'block_content:53a51a1b-e9cc-400b-a4ff-4fc640572154'
 settings:

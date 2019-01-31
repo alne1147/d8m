@@ -19,6 +19,7 @@ use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\Core\StreamWrapper\StreamWrapperInterface;
 use Drupal\user\Entity\User;
 use Drupal\user\UserInterface;
+use Drupal\webform\Plugin\WebformElement\WebformManagedFileBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -41,12 +42,20 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
   protected $currentUser;
 
   /**
+   * Webform access rules manager service.
+   *
+   * @var \Drupal\webform\WebformAccessRulesManagerInterface
+   */
+  protected $accessRulesManager;
+
+  /**
    * WebformSubmissionStorage constructor.
    */
-  public function __construct(EntityTypeInterface $entity_type, Connection $database, EntityManagerInterface $entity_manager, CacheBackendInterface $cache, LanguageManagerInterface $language_manager, AccountProxyInterface $current_user) {
+  public function __construct(EntityTypeInterface $entity_type, Connection $database, EntityManagerInterface $entity_manager, CacheBackendInterface $cache, LanguageManagerInterface $language_manager, AccountProxyInterface $current_user, WebformAccessRulesManagerInterface $access_rules_manager) {
     parent::__construct($entity_type, $database, $entity_manager, $cache, $language_manager);
 
     $this->currentUser = $current_user;
+    $this->accessRulesManager = $access_rules_manager;
   }
 
   /**
@@ -59,7 +68,8 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
       $container->get('entity.manager'),
       $container->get('cache.entity'),
       $container->get('language_manager'),
-      $container->get('current_user')
+      $container->get('current_user'),
+      $container->get('webform.access_rules_manager')
     );
   }
 
@@ -203,6 +213,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
    */
   public function deleteAll(WebformInterface $webform = NULL, EntityInterface $source_entity = NULL, $limit = NULL, $max_sid = NULL) {
     $query = $this->getQuery();
+    $query->accessCheck(FALSE);
     $this->addQueryConditions($query, $webform, $source_entity, NULL);
     if ($max_sid) {
       $query->condition('sid', $max_sid, '<=');
@@ -228,6 +239,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     ];
 
     $query = $this->getQuery();
+    $query->accessCheck(FALSE);
     $this->addQueryConditions($query, $webform, $source_entity, $account, $options);
 
     // Issue: Query count method is not working for SQL Lite.
@@ -241,6 +253,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
    */
   public function getMaxSubmissionId(WebformInterface $webform = NULL, EntityInterface $source_entity = NULL, AccountInterface $account = NULL) {
     $query = $this->getQuery();
+    $query->accessCheck(FALSE);
     $this->addQueryConditions($query, $webform, $source_entity, $account);
     $query->sort('sid', 'DESC');
     $query->range(0, 1);
@@ -542,6 +555,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
    */
   public function getDefaultColumns(WebformInterface $webform = NULL, EntityInterface $source_entity = NULL, AccountInterface $account = NULL, $include_elements = TRUE) {
     $columns = $this->getColumns($webform, $source_entity, $account, $include_elements);
+
     // Unset columns.
     unset(
       // Admin columns.
@@ -552,6 +566,14 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
       $columns['completed'],
       $columns['changed']
     );
+
+    // Hide certain unnecessary columns, that have default set to FALSE.
+    foreach ($columns as $column_name => $column) {
+      if (isset($column['default']) && $column['default'] === FALSE) {
+        unset($columns[$column_name]);
+      }
+    }
+
     return $columns;
   }
 
@@ -560,6 +582,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
    */
   public function getSubmissionsColumns() {
     $columns = $this->getColumns(NULL, NULL, NULL, FALSE);
+
     // Unset columns.
     // Note: 'serial' is displayed instead of 'sid'.
     unset(
@@ -678,6 +701,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     if ($view_any && empty($source_entity)) {
       $columns['entity'] = [
         'title' => $this->t('Submitted to'),
+        'sort' => FALSE,
       ];
     }
 
@@ -1026,6 +1050,8 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     foreach ($entities as $entity) {
       $this->invokeWebformElements('postDelete', $entity);
       $this->invokeWebformHandlers('postDelete', $entity);
+
+      WebformManagedFileBase::deleteFiles($entity);
     }
 
     // Remove empty webform submission specific file directory
@@ -1091,6 +1117,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     $days_to_seconds = 60 * 60 * 24;
 
     $query = $this->entityManager->getStorage('webform')->getQuery();
+    $query->accessCheck(FALSE);
     $query->condition('settings.purge', [self::PURGE_DRAFT, self::PURGE_COMPLETED, self::PURGE_ALL], 'IN');
     $query->condition('settings.purge_days', 0, '>');
     $webforms_to_purge = array_values($query->execute());
@@ -1101,6 +1128,10 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
       $webforms_to_purge = $this->entityManager->getStorage('webform')->loadMultiple($webforms_to_purge);
       foreach ($webforms_to_purge as $webform) {
         $query = $this->getQuery();
+        // Since results of this query are never displayed to the user and we
+        // actually need to query the entire dataset of webform submissions, we
+        // are disabling access check.
+        $query->accessCheck(FALSE);
         $query->condition('created', REQUEST_TIME - ($webform->getSetting('purge_days') * $days_to_seconds), '<');
         $query->condition('webform_id', $webform->id());
         switch ($webform->getSetting('purge')) {
@@ -1333,6 +1364,11 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     ];
 
     $query = $this->getQuery();
+    // Because draft is somewhat different from a complete webform submission,
+    // we allow to bypass access check. Moreover, draft here is enforced to be
+    // authored by the $account user. Thus we hardly open any security breach
+    // here.
+    $query->accessCheck(FALSE);
     $this->addQueryConditions($query, $webform, $source_entity, $account, $options);
 
     // Only load the most recent draft.
@@ -1355,6 +1391,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
 
     // Move all anonymous submissions to UID of this account.
     $query = $this->getQuery();
+    $query->accessCheck(FALSE);
     $query->condition('uid', 0);
     $query->condition('sid', $_SESSION['webform_submissions'], 'IN');
     $query->sort('sid');
@@ -1430,7 +1467,7 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     if ($this->currentUser->hasPermission('view own webform submission')) {
       return TRUE;
     }
-    elseif ($webform->checkAccessRules('view_own', $this->currentUser)->isAllowed()) {
+    elseif ($this->accessRulesManager->checkWebformSubmissionAccess('view_own', $this->currentUser, $webform_submission)->isAllowed()) {
       return TRUE;
     }
     elseif ($webform->getSetting('form_convert_anonymous')) {
@@ -1470,6 +1507,9 @@ class WebformSubmissionStorage extends SqlContentEntityStorage implements Webfor
     // Cleanup sids because drafts could have been purged or the webform
     // submission could have been deleted.
     $_SESSION['webform_submissions'] = $this->getQuery()
+      // Disable access check because user having 'sid' in his $_SESSION already
+      // implies he has access to it.
+      ->accessCheck(FALSE)
       ->condition('sid', $_SESSION['webform_submissions'], 'IN')
       ->sort('sid')
       ->execute();

@@ -1,0 +1,50 @@
+uuid: 96dbb999-2741-4244-aeed-bf55ac6379ef
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: llYL0uFKY-cMU01Dp-6q87_yYap8LAeVtZNQaGZGliw
+id: ci_files
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: 'Ci files'
+source:
+  plugin: ci_files
+  key: upgrade
+  constants:
+    source_base_path: 'http://pacific/pacific'
+process:
+  filename: filename
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - filepath
+    -
+      plugin: urlencode
+  destination_full_path:
+    plugin: file_uri
+    source:
+      - filepath
+      - file_directory_path
+      - temp_directory_path
+      - is_public
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@destination_full_path'
+  filemime: filemime
+  status: status
+  changed: timestamp
+  uid: uid
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }

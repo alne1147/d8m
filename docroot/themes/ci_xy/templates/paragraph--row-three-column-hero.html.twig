@@ -146,7 +146,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% endif %}
 
 <div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column">
-    {{ content|without('bp_width', 'bp_background','bp_column_style_3') }}
+  <div class="paragraph__column" style="background-image: url('{{ file_url(content.field_row_background_image['#items'].entity.uri.value) }}'); -webkit-background-size: cover;">
+
+  {{ content|without('bp_width', 'bp_background','bp_column_style_3','field_row_background_image') }}
   </div>
 </div>

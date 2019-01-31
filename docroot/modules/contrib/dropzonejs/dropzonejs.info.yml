@@ -1,13 +1,7 @@
 name: dropzonejs
 type: module
 description: DropzoneJS
-# core: 8.x
+core: 8.x
 package: Media
 dependencies:
   - drupal:file
-
-# Information added by Drupal.org packaging script on 2018-09-06
-version: '8.x-2.0-alpha3+8-dev'
-core: '8.x'
-project: 'dropzonejs'
-datestamp: 1536235248

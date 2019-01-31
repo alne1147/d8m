@@ -1,0 +1,23 @@
+uuid: 4e4fff69-269b-41ee-be1e-b1e32dca0b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_breadcrumbs
+    - node.type.webform
+id: node.webform.field_hide_breadcrumbs
+field_name: field_hide_breadcrumbs
+entity_type: node
+bundle: webform
+label: 'Hide Breadcrumbs'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

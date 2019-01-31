@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_add_to_layouts
     - field.field.node.article.field_archive
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
+    - field.field.node.article.field_hide_breadcrumbs
+    - field.field.node.article.field_hide_navigation_bar
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_page_options
     - field.field.node.article.field_promote
@@ -59,10 +62,13 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_add_to_layouts: true
   field_archive: true
   field_article_tags: true
   field_article_type: true
   field_display_image: true
+  field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true
   field_meta_tags: true
   field_page_options: true
   field_promote: true

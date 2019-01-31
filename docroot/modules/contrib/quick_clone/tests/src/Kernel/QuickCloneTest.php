@@ -149,7 +149,7 @@ class QuickCloneTest extends KernelTestBase {
     $node = Node::create([
       'title' => $this->randomMachineName(),
       'type' => 'article',
-      'node_paragraph_field' => array($paragraph, $paragraph_nested_parent),
+      'node_paragraph_field' => [$paragraph, $paragraph_nested_parent],
     ]);
     $node->save();
 

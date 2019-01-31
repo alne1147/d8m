@@ -16,7 +16,7 @@ dependencies:
   module:
     - allowed_formats
     - field_group
-    - image_widget_crop
+    - image
     - text
 third_party_settings:
   field_group:
@@ -116,17 +116,10 @@ content:
   field_card_background_image:
     weight: 2
     settings:
-      show_crop_area: true
-      show_default_crop: true
-      warn_multiple_usages: true
       preview_image_style: large
-      crop_preview_image_style: large
-      crop_list:
-        - basic_card_crops
       progress_indicator: throbber
-      crop_types_required: {  }
     third_party_settings: {  }
-    type: image_widget_crop
+    type: image_image
     region: content
   field_card_body:
     weight: 1

@@ -1,0 +1,23 @@
+uuid: 1c1ca7b0-7477-49f8-9959-f0a64120442f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_to_layouts
+    - node.type.webform
+id: node.webform.field_add_to_layouts
+field_name: field_add_to_layouts
+entity_type: node
+bundle: webform
+label: 'Add to Layouts'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,45 @@
+uuid: 4e48a5db-37b0-4a78-bc04-5aadbce973ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.refer_sliders
+    - views.view.jumbo_sliders
+  module:
+    - block_visibility_groups
+    - menu_condition
+    - term_condition
+    - views
+  theme:
+    - ci_xy
+id: views_block__jumbo_sliders_block_1
+theme: ci_xy
+region: jumbotron
+weight: 0
+provider: null
+plugin: 'views_block:jumbo_sliders-block_1'
+settings:
+  id: 'views_block:jumbo_sliders-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: refer_sliders
+    context_mapping: {  }
+  menu_position:
+    id: menu_position
+    menu_parent: ''
+    negate: null
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'

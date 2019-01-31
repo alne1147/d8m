@@ -11,6 +11,13 @@
     margin-bottom: 0;
     padding: 0;
   }
+  .container-fluid
+  {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   .field--name-field-card-body {
     > h1:nth-child(1),
     > h2:nth-child(1),
@@ -49,5 +56,99 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+}
+.view-jumbo-sliders, .page-node-type-jumbo-slides  {
+  .jumbo_slide__title {
+    width: 100%;
+    font-family: "museo-sans",sans-serif;
+    font-weight: 500;
+    padding: 8px 12px 0px;
+    h2 {
+      margin: 0px;
+      padding: 10px 10px 0px 15px;
+    }
+  }
+  .jumbo_slide__body {
+    width: 100%;
+    padding-left: 15px;
+    p {
+      padding: 0px 10px 20px 15px;
+      margin-bottom: 0px;
+      font-size: $font-size-base!important;
+    }
+  }
+  [class^="hero__responsive_"] {
+    height: 450px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+.block-views-blockjumbo-sliders-block-1 {
+  .form-group {
+    margin-bottom: 0px;
+  }
+}
+.paragraph--type--jumbo {
+  .paragraph__column {
+    margin: 0px;
+    color: #ffffff;
+  }
+    .jumbo_paragraph_title {
+      font-family: "museo-sans",sans-serif;
+      font-weight: 500;
+      padding: 8px 12px;
+      width: 80%;
+      font-size: 34px;
+      .div {
+        width: 80%;
+        margin: 0px;
+        padding: 10px 10px 15px 15px;
+      }
+    }
+    .jumbo_paragraph_body {
+      font-family: "museo-sans",sans-serif;
+      width: 80%;
+      font-weight: 500;
+      padding: 8px 12px;
+      p {
+        width: 80%;
+        padding: 0px 10px 15px 15px;
+        margin-bottom: 0px;
+        font-size: $font-size-base!important;
+      }
+    }
+    .jumbo_paragraph_title, .jumbo_paragraph_body {
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+    }
+}
+.jumbo_image {
+  min-height: 450px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.view-jumbo-sliders {
+  .slick__arrow {
+    .slick-prev::before, .slick-next::before {
+      top: 250px;
+    }
+    .slick-prev::before {
+      left: 150px;
+    }
+    .slick-next::before {
+      right: 150px;
+    }
+  }
+}
+
+.page-node-type-landing-page {
+  .slick__arrow {
+    .slick-prev::before, .slick-next::before{
+      top: 200px;
+    }
   }
 }

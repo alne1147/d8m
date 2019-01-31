@@ -62,7 +62,7 @@
     'paragraph--color paragraph--color--rgba-black-slight' == layout_background ? 'paragraph--color paragraph--color--rgba-black-slight',
     'paragraph--color paragraph--color--rgba-black-light' == layout_background ? 'paragraph--color paragraph--color--rgba-black-light',
     'paragraph--color paragraph--color--rgba-black-strong' == layout_background ? 'paragraph--color paragraph--color--rgba-black-strong',
-    'paragraph--color paragraph--color--rgba-blue-slight' == layout_background ? 'paragraph--color paragraph--color--rgba-black-strong',
+    'paragraph--color paragraph--color--rgba-blue-slight' == layout_background ? 'paragraph--color paragraph--color--rgba-blue-slight',
     'paragraph--color paragraph--color--rgba-blue-light' == layout_background ? 'paragraph--color paragraph--color--rgba-blue-light',
     'paragraph--color paragraph--color--rgba-blue-strong' == layout_background ? 'paragraph--color paragraph--color--rgba-blue-strong',
     'paragraph--color paragraph--color--rgba-bluegrey-slight' == layout_background ? 'paragraph--color paragraph--color--rgba-bluegrey-slight',
@@ -169,7 +169,6 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {# Prints Carousel template. #}
 {{ content|without('bp_slide_content','bp_slide_interval', 'bp_width', 'bp_background') }}
 <div{{ attributes.addClass(classes).setAttribute('id', paragraph_id).setAttribute('data-interval', slide_interval_classes).setAttribute('data-ride', 'carousel') }}>
-  {{ title_suffix }}
   <ol class="carousel-indicators">
     {% for key, item in content.bp_slide_content if key|first != '#' %}
       <li class="{% if loop.first %}active{% endif %}" data-slide-to="{{ key }}" data-target="#{{ paragraph_id }}"></li>

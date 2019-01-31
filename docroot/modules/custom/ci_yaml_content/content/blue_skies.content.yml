@@ -1,0 +1,23 @@
+- entity: "node"
+  type: "jumbo_slides"
+  title: "The Skies are Blue"
+  status: 1
+  moderation_state:
+      value: 'published'
+  body:
+    - value: |
+        <p>Nemore iudicabit mel ex, veri scripserit vix ad. Ea dictas malorum accusamus cum, ius cu nostrud recteque,
+        cu sit consul dissentiet. Ea tibique iudicabit pro, fabulas legendos accusamus ius at. Mel bonorum recusabo
+        ne, soleat mandamus quaerendum ad quo, aeque percipitur sed no.</p>
+      format: 'd8m_text_editor'
+  field_jumbotron_image:
+    - entity: 'media'
+      bundle: 'image'
+      field_media_image:
+      - '#process':
+          callback: 'file'
+          args:
+            - 'image'
+            - filename: 'blue-sky-clouds.jpg'
+            - name: 'Blue Skies'
+        alt: 'Blue skies with fluffy clouds'

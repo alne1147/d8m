@@ -1,0 +1,23 @@
+uuid: cdf1b34b-02f2-4751-ac6c-ca29c1221ff2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_to_layouts
+    - node.type.jumbo_slides
+id: node.jumbo_slides.field_add_to_layouts
+field_name: field_add_to_layouts
+entity_type: node
+bundle: jumbo_slides
+label: 'Add to Layouts'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

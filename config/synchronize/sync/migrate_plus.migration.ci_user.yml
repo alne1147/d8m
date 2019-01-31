@@ -1,0 +1,30 @@
+uuid: 3f5c59af-2e84-40e4-8729-1364515f6ba2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KcArmd8qlfGJMSqO8UR99T0Wt-0vbwFXkiXlJOjRTfw
+id: ci_user
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'User accounts'
+source:
+  plugin: ci_users
+  key: prepare
+process:
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  status: status
+  init: init
+  field_first_name: first_name
+  field_last_name: last_name
+destination:
+  plugin: 'entity:user'
+migration_dependencies:
+  required: {  }

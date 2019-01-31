@@ -97,9 +97,12 @@ hidden:
   field_add_to_cal: true
   field_archive: true
   field_article_tags: true
+  field_breadcrumbs: true
   field_date_time_range: true
   field_display_image: true
   field_event_organizer: true
+  field_hide_breadcrumbs: true
+  field_hide_navigation_bar: true
   field_menu_reference_left: true
   field_menu_reference_right: true
   field_mini: true

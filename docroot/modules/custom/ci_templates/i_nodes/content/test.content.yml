@@ -1,0 +1,54 @@
+- entity: "node"
+  type: "page"
+  title: "Paragraph Example"
+  status: 1
+  body:
+      - value: |
+          <p>Lorem ipsum...</p>
+          <drupal-entity data-embed-button="document_media_browser" data-entity-embed-display="view_mode:media.embedded" data-entity-type="media" data-entity-uuid="d5f6d777-b487-4640-a25d-80a15c514163"></drupal-entity>
+        format: 'd8m_text_editor'
+  # Populate an example paragraph field.
+  field_rows:
+    # Define a nested entity directly as a field item value.
+    - entity: 'paragraph'
+      type: 'bp_columns'
+      field_row_title:
+        - value: "Paragraph Headline"
+      bp_column_content:
+      - entity: 'paragraph'
+        type: 'card_basic'
+        field_card_title:
+        - value: "Card Title Man"
+        field_card_body:
+              - value: |
+                  <p>Lorem ipsum...</p>
+                format: 'd8m_text_editor'
+        field_card_background_image:
+          - '#process':
+              callback: 'file'
+              args:
+              - 'image'
+              - filename: 'cu.jpg'
+              alt: "Don't forget the alt text."
+
+- entity: "node"
+  type: "article"
+  title: "Tagged Article"
+  status: 1
+  body:
+    # Using a pipe we can define content across multiple lines.
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vobis
+      voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore
+      perceptarum. Tum Quintus: Est plane, Piso, ut dicis, inquit.Primum cur
+      ista res digna odio est, nisi quod est turpis? Duo Reges: constructio
+      interrete. Rhetorice igitur, inquam, nos mavis quam dialectice disputare?</p>
+  # Using the tags below assumes the tags were created manually or imported earlier.
+  field_article_type:
+    # This is done via a preprocessor.
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'article_type'
+            name: 'News Article'

@@ -1,0 +1,113 @@
+- entity: "node"
+  type: "article"
+  title: "Denver Ranks in Top 10 Pet Friendly Cities"
+  status: 1
+  moderation_state:
+      value: 'published'
+  body:
+    - format: "d8m_text_editor"
+      value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+         magna aliqua. In hac habitasse platea dictumst vestibulum rhoncus est. Volutpat commodo sed egestas egestas
+         fringilla phasellus faucibus scelerisque eleifend. Mi proin sed libero enim sed faucibus turpis in eu. Sem
+         fringilla ut morbi tincidunt augue interdum velit. Et malesuada fames ac turpis egestas integer. Eros in cursus
+         turpis massa tincidunt dui ut ornare. Mi quis hendrerit dolor magna. Facilisi etiam dignissim diam quis enim.
+         Est pellentesque elit ullamcorper dignissim. Volutpat lacus laoreet non curabitur gravida arcu ac tortor
+         dignissim. Ullamcorper malesuada proin libero nunc consequat interdum varius. Sed euismod nisi porta lorem.
+         Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Consectetur adipiscing elit ut
+         aliquam purus. Vitae proin sagittis nisl rhoncus mattis. A diam sollicitudin tempor id eu nisl nunc mi.
+         Sodales neque sodales ut etiam sit. Est ultricies integer quis auctor elit sed vulputate mi sit.</p>
+
+        <p>Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Arcu felis bibendum ut tristique et egestas
+        quis. Cursus eget nunc scelerisque viverra mauris in. Vel pharetra vel turpis nunc. Facilisi etiam dignissim
+        diam quis enim lobortis scelerisque fermentum dui. Quis auctor elit sed vulputate mi sit amet mauris commodo.
+        At elementum eu facilisis sed odio. Senectus et netus et malesuada fames. Mi eget mauris pharetra et ultrices
+        neque. Lacinia at quis risus sed vulputate odio ut. Auctor neque vitae tempus quam pellentesque nec nam aliquam.
+        Odio aenean sed adipiscing diam. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet.
+        Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Molestie ac feugiat sed lectus vestibulum. Ut
+        tristique et egestas quis ipsum suspendisse ultrices. Sit amet purus gravida quis. Tincidunt eget nullam non
+        nisi. Lectus proin nibh nisl condimentum id venenatis. In ornare quam viverra orci sagittis eu volutpat odio facilisis.</p>
+
+        <p>Urna duis convallis convallis tellus id interdum velit laoreet. Massa tempor nec feugiat nisl. Sed adipiscing
+         diam donec adipiscing tristique risus nec. Suspendisse in est ante in. At augue eget arcu dictum varius duis.
+         Eget lorem dolor sed viverra ipsum nunc aliquet. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.
+         Neque ornare aenean euismod elementum nisi quis eleifend. Montes nascetur ridiculus mus mauris vitae. Sagittis
+         aliquam malesuada bibendum arcu.</p>
+
+        <p>Sollicitudin tempor id eu nisl nunc mi ipsum. A erat nam at lectus urna duis. At tempor commodo ullamcorper
+        a lacus vestibulum sed arcu. Proin nibh nisl condimentum id venenatis a condimentum vitae. Volutpat diam ut
+        venenatis tellus in metus vulputate eu. Amet consectetur adipiscing elit pellentesque habitant morbi. Facilisis
+        mauris sit amet massa vitae. Ullamcorper sit amet risus nullam eget. Cursus euismod quis viverra nibh cras
+        pulvinar. Urna neque viverra justo nec. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Elementum
+        integer enim neque volutpat ac tincidunt.</p>
+
+        <p>Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Elementum tempus egestas sed sed
+        risus pretium quam. Curabitur gravida arcu ac tortor dignissim convallis. Blandit libero volutpat sed cras
+        ornare arcu. Porta lorem mollis aliquam ut porttitor leo a. Pellentesque id nibh tortor id aliquet lectus proin
+        nibh. Arcu risus quis varius quam quisque id diam vel. Egestas congue quisque egestas diam in arcu. Cras
+        fermentum odio eu feugiat pretium nibh. Ante in nibh mauris cursus. Velit dignissim sodales ut eu sem integer
+        vitae. Metus aliquam eleifend mi in nulla.</p>
+  field_article_type:
+      # This is done via a preprocessor.
+      - '#process':
+          callback: 'reference'
+          args:
+            - 'taxonomy_term'
+            - vid: 'article_type'
+              name: 'Blog Post'
+  field_rows:
+      # Define a nested entity directly as a field item value.
+      - entity: 'paragraph'
+        type: 'row_slide_container'
+        field_slider_content:
+        - entity: 'paragraph'
+          type: 'bp_columns'
+          bp_column_content:
+          - entity: 'paragraph'
+            type: 'card_basic'
+            field_card_title:
+            - value: "Card Title"
+            field_card_body:
+              - value: |
+                  <p>Lorem ipsum dolor sit amet, volutpat neglegentur pro at, prima graeci necessitatibus at sed. Eum
+                  te movet tamquam argumentum. Libris assueverit et nec, mea minim simul efficiantur an, ne mea possim
+                  deserunt instructior. Nam nemore alterum aliquando an.</p>
+
+                  <p>Vix adversarium reprehendunt ea. Nominati perpetua elaboraret ut his, duo ex solum solet fierent,
+                  in cetero mandamus pro. Cum in detracto iudicabit, inani menandri ex sea. Id commodo nonumes euripidis
+                  sea, eum id facer voluptaria.</p>
+                format: 'd8m_text_editor'
+          - entity: 'paragraph'
+            type: 'card_map'
+            field_location:
+              - value: "Denver, CO"
+        - entity: 'paragraph'
+          type: 'bp_columns_two_uneven'
+          bp_column_style_2:
+          - value: "paragraph--style--75-25"
+          bp_column_content_2:
+          - entity: 'paragraph'
+            type: 'card_basic'
+            field_card_title:
+            - value: "Vix Quem"
+            field_card_body:
+              - value: |
+                  <p>Vix quem suavitate cu, sit suscipiantur disputationi eu, eu sed rebum convenire intellegat. Assum
+                  diceret in mei. Erant voluptaria id has. Te probatus accusata nec. Tantas doming ut est, at vis quodsi
+                   apeirian moderatius, ea nam veniam ceteros. An nec nihil graecis laboramus, est iuvaret percipitur
+                   cu, stet saepe legere vel no.</p>
+
+                    <p>An his veritus placerat, mea vivendo sententiae ad. Cu vide essent sea, eum te debitis persecuti
+                    incorrupte. Ea aliquam eruditi his, in novum prodesset sit. Te tacimates partiendo est, usu an
+                    detracto rationibus inciderint. Eirmod feugait ius ne, diceret principes referrentur vis ex.</p>
+                format: 'd8m_text_editor'
+          - entity: 'paragraph'
+            type: 'card_basic'
+            field_card_title:
+            - value: "Eum ad corpora"
+            field_card_body:
+              - value: |
+                  <p>Eum ad corpora ancillae facilisi, in platonem euripidis consequuntur vis. Ea elit probo impetus
+                  pri, brute luptatum in nec, recusabo volutpat in duo. Eu sit epicurei consequat, has ea unum lobortis,
+                  ius ea partem nusquam phaedrum.</p>
+                format: 'd8m_text_editor'

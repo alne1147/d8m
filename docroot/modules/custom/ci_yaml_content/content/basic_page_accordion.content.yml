@@ -1,0 +1,58 @@
+- entity: "node"
+  type: "page"
+  title: "Basic Page Accordion"
+  status: 1
+  moderation_state:
+      value: 'published'
+  field_rows:
+    - entity: 'paragraph'
+      type: 'bp_accordion'
+      field_bp_title_color:
+      - value: 'color__brand-blue--strong'
+      bp_accordion_section:
+      - entity: 'paragraph'
+        type: 'bp_accordion_section'
+        bp_accordion_section_title:
+        - value: 'First Accordion Section'
+        bp_accordion_section_body:
+        - entity: 'paragraph'
+          type: 'section_body'
+          bp_background: 'color__brand-slate--strong'
+          field_card_body:
+          - value: |
+              <p>Nunc eget purus a nulla tincidunt accumsan. Quisque euismod odio massa. Mauris placerat tincidunt
+              egestas. Aliquam porta, risus eget aliquet sollicitudin, nisi erat mattis felis, id viverra eros massa
+              id est. Cras tincidunt semper nisi, a suscipit enim gravida et. Suspendisse semper ipsum nec tellus
+              efficitur, pellentesque facilisis ligula molestie. Curabitur non egestas diam, non pretium nunc.
+              Praesent convallis turpis lacinia, tincidunt magna vel, convallis ipsum.</p>
+            format: 'd8m_text_editor'
+      - entity: 'paragraph'
+        type: 'bp_accordion_section'
+        bp_accordion_section_title:
+        - value: 'Second Accordion Section'
+        bp_accordion_section_body:
+        - entity: 'paragraph'
+          type: 'section_body'
+          bp_background: 'color__brand-slate--strong'
+          field_card_body:
+          - value: |
+              <p>Ut posuere nisi eu nunc rhoncus malesuada. Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Curabitur nec iaculis felis. Quisque tempus, elit quis tincidunt
+              bibendum, arcu nisl commodo sem, id sodales risus justo molestie lorem. Cras euismod ipsum vel faucibus
+              lacinia. Ut a velit gravida, vestibulum ante eu, condimentum purus. Nunc ac efficitur augue, sed tincidunt est.</p>
+            format: 'd8m_text_editor'
+      - entity: 'paragraph'
+        type: 'bp_accordion_section'
+        bp_accordion_section_title:
+        - value: 'Third Accordion Section'
+        bp_accordion_section_body:
+        - entity: 'paragraph'
+          type: 'section_body'
+          bp_background: 'color__brand-slate--strong'
+          field_card_body:
+          - value: |
+              <p>Cras sodales porta ante, a volutpat purus ultricies et. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia Curae; Phasellus vel libero orci. Maecenas in elit semper, lobortis
+              lacus vitae, bibendum ligula. Nam vitae velit massa. Quisque lorem mi, congue et urna eget, mattis
+              hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.</p>
+            format: 'd8m_text_editor'

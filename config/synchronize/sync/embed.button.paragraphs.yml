@@ -1,0 +1,16 @@
+uuid: 7c667083-4da6-4e2a-9c6e-0cb0f6615802
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - node
+label: Paragraphs
+id: paragraphs
+type_id: entity
+type_settings:
+  bundles: null
+  display_plugins: null
+  entity_browser: null
+  entity_browser_settings: null
+icon_uuid: null

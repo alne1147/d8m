@@ -105,6 +105,34 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
   /**
    * {@inheritdoc}
    */
+  public function getDateType() {
+    return $this->configFactory->get('webform_scheduled_email.settings')->get('schedule_type');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDateTypeLabel() {
+    return ($this->getDateType() === 'datetime') ? $this->t('date/time') : $this->t('date');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDateFormat() {
+    return ($this->getDateType() === 'datetime') ? 'Y-m-d H:i:s' : 'Y-m-d';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDateFormatLabel() {
+    return ($this->getDateType() === 'datetime') ? 'YYYY-MM-DD HH:MM:SS' : 'YYYY-MM-DD';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function hasScheduledEmail(WebformSubmissionInterface $webform_submission, $handler_id) {
     return ($this->load($webform_submission, $handler_id)) ? TRUE : FALSE;
   }
@@ -144,6 +172,8 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
     // WORKAROUND:
     // Convert [*:html_date] to [*:custom:Y-m-d].
     $send = preg_replace('/^\[(date|webform_submission:(?:[^:]+)):html_date\]$/', '[\1:custom:Y-m-d]', $send);
+    // Convert [*:html_datetime] to [*:custom:Y-m-d H:i:s].
+    $send = preg_replace('/^\[(date|webform_submission:(?:[^:]+)):html_datetime\]$/', '[\1:custom:Y-m-d H:i:s]', $send);
 
     // Replace tokens.
     $send = $this->tokenManager->replace($send, $webform_submission);
@@ -158,7 +188,8 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
     if ($days) {
       date_add($date, date_interval_create_from_date_string("$days days"));
     }
-    return date_format($date, 'Y-m-d');
+
+    return date_format($date, $this->getDateFormat());
   }
 
   /****************************************************************************/
@@ -450,6 +481,7 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
       self::EMAIL_UNSCHEDULED => $this->t('unscheduled'),
       self::EMAIL_SENT => $this->t('sent'),
       self::EMAIL_NOT_SENT => $this->t('not sent'),
+      self::EMAIL_SKIPPED => $this->t('skipped'),
     ];
     $summary = [];
     foreach ($stats as $type => $total) {
@@ -583,6 +615,7 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
     $stats = [
       self::EMAIL_SENT => 0,
       self::EMAIL_NOT_SENT => 0,
+      self::EMAIL_SKIPPED => 0,
     ];
     if (empty($limit)) {
       return $stats;
@@ -630,18 +663,24 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
         continue;
       }
 
-      // Get and send message.
-      $message = $handler->getMessage($webform_submission);
-      $status = $handler->sendMessage($webform_submission, $message);
-
-      $action = ($status) ? $this->t('sent') : $this->t('not sent');
+      if (!$handler->checkConditions($webform_submission)) {
+        // Skip sending email.
+        $action = $this->t('skipped (conditions not met)');
+        $stat = self::EMAIL_SKIPPED;
+      }
+      else {
+        $message = $handler->getMessage($webform_submission);
+        $status = $handler->sendMessage($webform_submission, $message);
+        $action = ($status) ? $this->t('sent') : $this->t('not sent');
+        $stat = ($status) ? self::EMAIL_SENT : self::EMAIL_NOT_SENT;
+      }
 
       // Log scheduled email sent to submission log table.
       if ($webform->hasSubmissionLog()) {
         $t_args = ['@action' => $action, '@handler' => $handler->label()];
         $this->submissionStorage->log($webform_submission, [
           'handler_id' => $handler_id,
-          'operation' => 'scheduled email sent',
+          'operation' => 'scheduled email skipped',
           'message' => $this->t('Scheduled email @action for @handler handler.', $t_args),
         ]);
       }
@@ -655,7 +694,8 @@ class WebformScheduledEmailManager implements WebformScheduledEmailManagerInterf
       ];
       $this->logger->notice('%submission: Scheduled email @action for %handler handler.', $context);
 
-      $stats[$stats ? self::EMAIL_SENT : self::EMAIL_NOT_SENT]++;
+      // Increment stat.
+      $stats[$stat]++;
     }
 
     // Delete sent emails from table.

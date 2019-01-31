@@ -4,11 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.field_add_to_layouts
     - field.field.node.webform.field_article_tags
+    - field.field.node.webform.field_hide_breadcrumbs
+    - field.field.node.webform.field_hide_navigation_bar
     - field.field.node.webform.field_jumbotron
     - field.field.node.webform.field_jumbotron_options
     - field.field.node.webform.field_menu_reference_left
     - field.field.node.webform.field_menu_reference_right
+    - field.field.node.webform.field_nav_bar_above
     - field.field.node.webform.field_promote
     - field.field.node.webform.field_related_content
     - field.field.node.webform.webform
@@ -59,6 +63,8 @@ third_party_settings:
         - group_jumbotron
         - group_menu
         - group_related_content
+        - group_navigation_bar
+        - group_breadcrumbs
       parent_name: group_webform_options
       weight: 19
       format_type: tab
@@ -183,6 +189,33 @@ third_party_settings:
         required_fields: true
       label: Jumbotron
       region: content
+    group_navigation_bar:
+      children:
+        - field_nav_bar_above
+        - field_hide_navigation_bar
+      parent_name: group_display
+      weight: 14
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Navigation Bar'
+      region: content
+    group_breadcrumbs:
+      children:
+        - field_hide_breadcrumbs
+      parent_name: group_display
+      weight: 15
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Breadcrumbs
+      region: content
 _core:
   default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
 id: node.webform.default
@@ -208,6 +241,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_add_to_layouts:
+    weight: 33
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_article_tags:
     weight: 30
     settings:
@@ -216,6 +256,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_hide_breadcrumbs:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_hide_navigation_bar:
+    weight: 32
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_jumbotron:
     weight: 11
@@ -262,6 +316,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_nav_bar_above:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_promote:
     weight: 26
