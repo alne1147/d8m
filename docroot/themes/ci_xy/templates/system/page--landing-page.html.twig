@@ -68,13 +68,13 @@
 {# Main #}
 {% block main %}
   {% if node.field_landing_page_options.value == 'Show Site Background Image' %}
-<div id="xyBackground" style="background-image: url('{{ bg_image_url }}'); -webkit-background-size: cover;">
+<div id="xyBackground" style="background: url('{{ bg_image_url }}'); no-repeat center center fixed; -webkit-background-size: cover;  -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
   {# <div>Site BG Image</div> #}
   {% elseif node.field_landing_page_options.value == 'Show Site Background Color' %}
   <div id="xyBackground" class="{{ global_bg_color }}">
     {# <div>Site BG Color</div> #}
     {% elseif node.field_landing_page_options.value == 'Show Custom Background Image' %}
-    <div id="xyBackground" style="background-image: url('{{ file_url(node.field_background_image.entity.fileuri) }}');; -webkit-background-size: cover;">
+    <div id="xyBackground" style="background: url('{{ file_url(node.field_background_image.entity.fileuri) }}'); no-repeat center center fixed; -webkit-background-size: cover;  -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
       {# <div>Custom BG Image</div> #}
       {% elseif node.field_landing_page_options.value == 'Show Custom Background Color' %}
       <div id="xyBackground" style="background-color:#{{ node.field_background_color.value }};">

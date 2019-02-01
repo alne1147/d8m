@@ -143,7 +143,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% endif %}
 
 <div{{ attributes.addClass(classes) }}>
-  <div class="paragraph__column" style="background-image: url('{{ file_url(content.field_row_background_image['#items'].entity.uri.value) }}'); -webkit-background-size: cover;">
+  <div class="paragraph__column" style="background: url('{{ file_url(content.field_row_background_image['#items'].entity.uri.value) }}'); no-repeat center center fixed -webkit-background-size: cover;  -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
     {{ content|without('bp_width', 'bp_background', 'bp_column_style_2','field_row_background_image') }}
   </div>
 </div>
