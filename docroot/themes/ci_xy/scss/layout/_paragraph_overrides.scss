@@ -778,3 +778,13 @@ d/* ----------------------------------------------------------------------------
     width: 66.66666667%;
   }
 }
+.paragraph--type--full-column-hero,
+.paragraph--type--row-two-column-hero,
+.paragraph--type--row-three-column-hero {
+   .paragraph__column {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+     float: left;
+  }
+}
