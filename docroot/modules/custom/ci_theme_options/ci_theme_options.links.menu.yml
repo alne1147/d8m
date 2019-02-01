@@ -3,4 +3,4 @@ ci_theme_options.admin:
   description: 'Change colors of the current theme.'
   parent: system.admin_structure
   route_name: ci_theme_options.config
-  weight: 100
+  weight: 0
