@@ -13,6 +13,7 @@ third_party_settings:
     scheme: public
     directory: inline-files
     extensions: txt
+    max_size: ''
 format: d8m_text_editor
 editor: ckeditor
 settings:
@@ -90,7 +91,7 @@ settings:
     colorbutton:
       colors: ''
     linkit:
-      linkit_profile: default
+      linkit_profile: ci_linkit
     video_embed:
       defaults:
         children:
