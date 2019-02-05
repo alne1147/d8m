@@ -11,7 +11,7 @@ id: node.jumbo_slides.field_title_color
 field_name: field_title_color
 entity_type: node
 bundle: jumbo_slides
-label: 'Title Color'
+label: 'Text Background Color'
 description: ''
 required: false
 translatable: false
