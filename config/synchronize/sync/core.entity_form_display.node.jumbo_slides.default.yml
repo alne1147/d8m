@@ -6,7 +6,6 @@ dependencies:
     - entity_browser.browser.media_image_browser
     - field.field.node.jumbo_slides.body
     - field.field.node.jumbo_slides.field_add_to_layouts
-    - field.field.node.jumbo_slides.field_body_color
     - field.field.node.jumbo_slides.field_jumbotron_image
     - field.field.node.jumbo_slides.field_jumbotron_link
     - field.field.node.jumbo_slides.field_title_color
@@ -24,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 12
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -33,26 +32,20 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_add_to_layouts:
-    weight: 27
+    weight: 15
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_body_color:
-    weight: 13
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_jumbotron_image:
     type: entity_browser_entity_reference
-    weight: 14
+    weight: 13
     settings:
       entity_browser: media_image_browser
       field_widget_display: rendered_entity
@@ -66,7 +59,7 @@ content:
     third_party_settings: {  }
     region: content
   field_jumbotron_link:
-    weight: 15
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -74,20 +67,20 @@ content:
     type: string_textfield
     region: content
   field_title_color:
-    weight: 1
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 10
+    weight: 9
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -95,12 +88,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 3
     region: content
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -108,14 +101,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -128,7 +121,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -137,12 +130,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }

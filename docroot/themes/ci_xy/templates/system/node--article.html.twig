@@ -72,10 +72,6 @@
  * @ingroup themeable
  */
 #}
-
-
-
-
 {%
   set classes = [
   node.bundle|clean_class,
@@ -87,38 +83,30 @@
 ]
 %}
 
-<div class="container">
-    <div class="hero__responsive_jumbo"> {{ content.field_jumbotron_image }} </div>
-    <article{{ attributes.addClass(classes) }}>
+<article{{ attributes.addClass(classes) }}>
 
-        {#{{ title_prefix }}
-      {% if not page %}
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      {% endif %}
-      {{ title_suffix }}#}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
 
-           {# {% block header %}#}
-                  <div class="jumbo_slide__title {{ content.field_title_color[0] }}">
-                      <h2{{ title_attributes }}>
-                        {{ node.title.value }}
-                        </h2>
-                  </div>
+  {% if display_submitted %}
+    {#<footer>#}
 
-                     {# {% endblock %} #}
+  <div class="article_byline"{{ author_attributes }}>
+    <div class ="author_date hide"> {{ date }}</div><br>
+    <div class ="author_name hide">Submitted by {{ node.uid.entity.field_display_name.value }}</div>
+      {{ metadata }}
+  </div>
+    {#</footer>#}
+  {% endif %}
 
-      {% if display_submitted %}
-        {#<footer>#}
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
 
-          <div{{ author_attributes }}>
-            <div class ="author_date hide"> {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
-            {{ metadata }}
-          </div>
-        {#</footer>#}
-      {% endif %}
-            <div class="jumbo_slide__body {{ content.field_title_color[0] }}">
-            <div{{ content_attributes }}>
-                {{ content|without('field_jumbotron_image', 'field_title_color')}}
-            </div>
-            </div>
-   </article>
-</div>
+</article>
+
