@@ -96,8 +96,9 @@
   {% if display_submitted %}
     {#<footer>#}
 
-      <div class="test"{{ author_attributes }}>
-    <div class ="author_date hide"> {{ date }}</div><div class ="author_name hide">Submitted by {{ node.uid.entity.field_display_name.value }}</div>
+  <div class="article_byline"{{ author_attributes }}>
+    <div class ="author_date hide"> {{ date }}</div><br>
+    <div class ="author_name hide">Submitted by {{ node.uid.entity.field_display_name.value }}</div>
       {{ metadata }}
   </div>
     {#</footer>#}
