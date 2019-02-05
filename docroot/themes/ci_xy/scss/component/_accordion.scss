@@ -12,11 +12,15 @@
     border: none;
     border-radius: inherit;
     box-shadow: none;
+    .paragraph--type--section-body {
+      margin-bottom: 1rem;
+    }
     &.panel-default {
       position: relative;
       .panel-heading {
         border-bottom: 0;
         border-radius: 3px;
+        margin-bottom: 1rem;
       }
     }
     .panel-heading a:after {
