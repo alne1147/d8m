@@ -34,3 +34,23 @@
 .field--name-field-add-to-cal {
   padding: 15px 0px;
 }
+
+.event--organization {
+  .field {
+    margin: 0 0 12.5px;
+  }
+  .field--name-field-article-tags {
+    .field--item {
+      display: inline-block;
+    }
+  }
+}
+.event {
+  .container {
+    margin-top: 25px;
+    padding-left: 0px;
+  }
+  .row {
+    margin-top: 28px
+  }
+}

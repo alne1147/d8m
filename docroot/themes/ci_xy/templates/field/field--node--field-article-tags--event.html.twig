@@ -76,9 +76,7 @@
       <div class="field__items">
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {%- if not loop.last -%},
-      {% endif %}
+      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>{% if not loop.last %},{% endif %}
     {% endfor %}
     {% if multiple %}
       </div>
