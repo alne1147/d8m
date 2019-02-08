@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
+    - field.field.node.article.field_file
     - field.field.node.article.field_hide_breadcrumbs
     - field.field.node.article.field_hide_navigation_bar
     - field.field.node.article.field_meta_tags
@@ -22,6 +23,7 @@ dependencies:
     - allowed_formats
     - content_moderation
     - field_group
+    - file
     - media_library
     - metatag
     - paragraphs
@@ -262,6 +264,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_file:
+    weight: 29
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   field_hide_breadcrumbs:
     type: boolean_checkbox

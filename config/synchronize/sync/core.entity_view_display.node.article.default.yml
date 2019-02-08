@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_display_image
     - field.field.node.article.field_display_options
+    - field.field.node.article.field_file
     - field.field.node.article.field_hide_breadcrumbs
     - field.field.node.article.field_hide_navigation_bar
     - field.field.node.article.field_meta_tags
@@ -20,6 +21,7 @@ dependencies:
     - node.type.article
   module:
     - entity_reference_revisions
+    - file
     - options
     - text
     - user
@@ -46,6 +48,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_file:
+    weight: 5
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
     region: content
   field_rows:
     weight: 3
