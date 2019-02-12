@@ -48,13 +48,13 @@
     @media (max-width: $screen-md) {
       &.sf-accordion.sf-expanded {
         position: relative;
-        top: 22px!important;
+        top: 22px !important;
       }
     }
     @media (max-width: $screen-md-2) {
       &.sf-accordion.sf-expanded {
         position: relative;
-        top: 25px!important;
+        top: 25px !important;
       }
     }
     li {
@@ -71,70 +71,71 @@
         color: #fff;
         transition: all 200ms ease-in-out;
         &:hover {
-          background-color: rgba(0,0,0, 0.15);
+          background-color: rgba(0, 0, 0, 0.15);
         }
         &.sf-with-ul {
           padding-right: 1.5em;
         }
         @media (max-width: $screen-md-2) {
-          border-bottom: 1px solid rgba(0,0,0,0.2);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         }
       }
     }
-    ul {
-      li {
-        background-color: $color-brand-slate;
-        text-align: left;
-        &.sf-clone-parent {
-          background-color: transparent;
-        }
-        a {
-          &:hover:before {
-            content: "";
-            position: absolute;
-            background: rgba(255,255,255,0.5);
-            border-radius: 45%;
-            top: 45%;
-            left:15px;
-            width: 5px;
-            height: 5px;
-            &:not(.sf-with-ul) {
-              content: none;
-            }
-            @media (max-width: $screen-md-2) {
-              display: none;
-            }
+  }
+  ul.sf-menu {
+    li {
+      background-color: $color-brand-slate;
+      text-align: left;
+      &.sf-clone-parent {
+        background-color: transparent;
+      }
+      a {
+        &:hover:before {
+          content: "";
+          position: absolute;
+          background: rgba(255,255,255,0.5);
+          border-radius: 45%;
+          top: 45%;
+          left:15px;
+          width: 5px;
+          height: 5px;
+          &:not(.sf-with-ul) {
+            content: none;
           }
-          &.sf-with-ul {
-            &:hover:before {
-              content: none;
-            }
-            @media (min-width: $screen-md-2 + 1) {
-              .sf-sub-indicator {
-                top: 50%;
-                &:after {
-                  position: absolute;
-                  left: 90%;
-                  height: 14px;
-                  transform: rotate(-90deg);
-                }
+          @media (max-width: $screen-md-2) {
+            display: none;
+          }
+        }
+        &.sf-with-ul {
+          &:hover:before {
+            content: none;
+          }
+          @media (min-width: $screen-md-2 + 1) {
+            .sf-sub-indicator {
+              top: 50%;
+              &:after {
+                position: absolute;
+                left: 90%;
+                height: 14px;
+                transform: rotate(-90deg);
               }
             }
-            + ul {
-              top: 0;
-            }
+          }
+          + ul {
+            top: 0;
           }
         }
-        @media (max-width: $screen-md-2) {
-          a {
-            padding-left: 2.5em;
-            &.sf-accordion-button {
-              padding-left: 1.5em;
-            }
+      }
+      @media (max-width: $screen-md-2) {
+        a {
+          padding-left: 2.5em;
+          &.sf-accordion-button {
+            padding-left: 1.5em;
           }
         }
       }
     }
+  }
     &.sf-accordion {
       .menuparent {
         position: relative;
@@ -212,5 +213,5 @@
     left: 0;
     top: 3.5em;
   }
-}
+
 

@@ -24,7 +24,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron": [
             {
-                "href": "http:\/\/default\/block\/46?_format=hal_json"
+                "href": "http:\/\/default\/block\/36?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron_options": [
@@ -59,7 +59,7 @@
     ],
     "vid": [
         {
-            "value": 276
+            "value": 15
         }
     ],
     "langcode": [
@@ -75,7 +75,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-11-27T22:17:17+00:00",
+            "value": "2019-02-08T18:18:07+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -92,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "43a454f2-d504-4d81-84ee-b6d8ac2eea86"
                     }
                 ]
             }
@@ -109,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "43a454f2-d504-4d81-84ee-b6d8ac2eea86"
                     }
                 ],
                 "lang": "en"
@@ -136,7 +136,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/block\/46?_format=hal_json"
+                        "href": "http:\/\/default\/block\/36?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/block_content\/row_block"
@@ -144,7 +144,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8798985c-32a3-4197-b569-faaf6630c411"
+                        "value": "b57691bc-d731-4ffa-b746-8fb2775f1335"
                     }
                 ]
             }
@@ -182,7 +182,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3544"
+                "target_revision_id": "102"
             },
             {
                 "_links": {
@@ -199,7 +199,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3549"
+                "target_revision_id": "107"
             },
             {
                 "_links": {
@@ -216,7 +216,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "3551"
+                "target_revision_id": "110"
             }
         ]
     },
@@ -241,7 +241,7 @@
     ],
     "changed": [
         {
-            "value": "2018-11-27T22:17:17+00:00",
+            "value": "2019-02-08T18:18:07+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -287,7 +287,7 @@
     "path": [
         {
             "alias": "\/template-landing-page-4",
-            "pid": 192,
+            "pid": 183,
             "langcode": "en",
             "lang": "en"
         }
