@@ -788,3 +788,15 @@ d/* ----------------------------------------------------------------------------
      float: left;
   }
 }
+.paragraph__column--container-wrapper {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.article, .page{
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
