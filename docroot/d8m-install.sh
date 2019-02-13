@@ -64,6 +64,8 @@ drush yaml-content-import-module ci_yaml_content;
 drush cim --partial sole -y;
 drush cim --partial post-sync -y;
 drush en ci_layouts -y;
+drush pm-uninstall ci_layouts -y;
+drush en ci_layouts -y;
 drush cr -y;
 drush uli;
 
