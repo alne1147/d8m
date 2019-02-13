@@ -8,3 +8,6 @@ docroot/sites/*/files
 docroot/sites/*/private
 !docroot/sites/all/services.yml
 !docroot/sites/all/
+
+# Ignore local drushrc file
+drush/drushrc.local.php
