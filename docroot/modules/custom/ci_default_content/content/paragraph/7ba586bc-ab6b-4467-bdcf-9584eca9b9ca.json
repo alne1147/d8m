@@ -38,7 +38,7 @@
     ],
     "revision_id": [
         {
-            "value": 3516
+            "value": 126
         }
     ],
     "langcode": [
@@ -65,7 +65,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ],
                 "lang": "en"
@@ -83,7 +83,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ]
             }
@@ -103,7 +103,7 @@
                         "value": "1fefa6a5-5d4b-4750-8bc8-a53693e837d1"
                     }
                 ],
-                "target_revision_id": "3515"
+                "target_revision_id": "124"
             },
             {
                 "_links": {
@@ -119,7 +119,7 @@
                         "value": "0a18669e-659c-4e32-a8d5-f8b0652b362c"
                     }
                 ],
-                "target_revision_id": "3517"
+                "target_revision_id": "125"
             }
         ]
     },
@@ -157,12 +157,6 @@
         }
     ],
     "default_langcode": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
-    "revision_translation_affected": [
         {
             "value": true,
             "lang": "en"

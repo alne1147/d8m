@@ -59,7 +59,7 @@
     ],
     "vid": [
         {
-            "value": 15
+            "value": 4
         }
     ],
     "langcode": [
@@ -75,7 +75,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2019-02-08T18:18:07+00:00",
+            "value": "2019-02-13T17:27:32+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -92,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "43a454f2-d504-4d81-84ee-b6d8ac2eea86"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ]
             }
@@ -109,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "43a454f2-d504-4d81-84ee-b6d8ac2eea86"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ],
                 "lang": "en"
@@ -182,7 +182,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "102"
+                "target_revision_id": "47"
             },
             {
                 "_links": {
@@ -199,7 +199,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "107"
+                "target_revision_id": "52"
             },
             {
                 "_links": {
@@ -216,7 +216,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "110"
+                "target_revision_id": "55"
             }
         ]
     },
@@ -241,7 +241,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-08T18:18:07+00:00",
+            "value": "2019-02-13T17:27:32+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -294,7 +294,7 @@
     ],
     "field_add_to_layouts": [
         {
-            "value": false,
+            "value": true,
             "lang": "en"
         }
     ],

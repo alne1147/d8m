@@ -30,7 +30,7 @@
     ],
     "revision_id": [
         {
-            "value": 3532
+            "value": 114
         }
     ],
     "langcode": [
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "8d1ab31e-d514-499e-bf4e-56d1666cf17f"
+                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
                     }
                 ]
             }
@@ -120,17 +120,11 @@
             "lang": "en"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "en"
-        }
-    ],
     "field_card_body": [
         {
             "value": "<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion title 1<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 1.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 2<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 2.<\/p>\r\n\t<\/dd>\r\n\t<dt>Accordion title 3<\/dt>\r\n\t<dd>\r\n\t<p>Accordion content 3.<\/p>\r\n\t<\/dd>\r\n<\/dl>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<dl class=\"ckeditor-accordion\"><dt>Accordion title 1<\/dt>\n\t<dd>\n\t<p>Accordion content 1.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Accordion content 2.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 3<\/dt>\n\t<dd>\n\t<p>Accordion content 3.<\/p>\n\t<\/dd>\n<\/dl><p>\u00a0<\/p>\n"
+            "processed": "<dl class=\"ckeditor-accordion\">\n\t<dt>Accordion title 1<\/dt>\n\t<dd>\n\t<p>Accordion content 1.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 2<\/dt>\n\t<dd>\n\t<p>Accordion content 2.<\/p>\n\t<\/dd>\n\t<dt>Accordion title 3<\/dt>\n\t<dd>\n\t<p>Accordion content 3.<\/p>\n\t<\/dd>\n<\/dl>\n\n<p>\u00a0<\/p>\n"
         }
     ]
 }

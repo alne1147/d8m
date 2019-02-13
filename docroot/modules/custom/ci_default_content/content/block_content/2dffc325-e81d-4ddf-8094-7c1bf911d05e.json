@@ -27,7 +27,7 @@
     ],
     "revision_id": [
         {
-            "value": 47
+            "value": 7
         }
     ],
     "langcode": [
@@ -107,7 +107,7 @@
                         "value": "fbb9712f-7eb2-49d3-8507-3568422c40d7"
                     }
                 ],
-                "target_revision_id": "3511"
+                "target_revision_id": "19"
             },
             {
                 "_links": {
@@ -123,7 +123,7 @@
                         "value": "be16f904-9400-4524-a8cd-7f8ed6cda95b"
                     }
                 ],
-                "target_revision_id": "3514"
+                "target_revision_id": "22"
             }
         ]
     }
