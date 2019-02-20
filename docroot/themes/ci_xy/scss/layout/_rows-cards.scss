@@ -58,6 +58,9 @@
             margin-bottom:0px;
           }
         }
+        .paragraph--type--card-basic {
+          display: flex;
+        }
         //&:first-child {
         //  padding-left:0;
         //}
@@ -155,6 +158,8 @@
     }
   //}
 }
+
+
 .main-container .paragraph .paragraph__column--container-wrapper .container {
   width: 100%;
 }
