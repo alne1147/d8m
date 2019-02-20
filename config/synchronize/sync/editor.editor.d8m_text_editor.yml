@@ -63,6 +63,7 @@ settings:
             - Templates
             - Table
             - Maximize
+            - DrupalFontAwesome
         -
           name: Styling
           items:

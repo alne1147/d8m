@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - collapse_text
     - editor
     - entity_embed
     - video_embed_wysiwyg
@@ -80,3 +81,11 @@ filters:
     status: true
     weight: -46
     settings: {  }
+  filter_collapse_text:
+    id: filter_collapse_text
+    provider: collapse_text
+    status: false
+    weight: 0
+    settings:
+      default_title: 'Click here to expand or collapse this section'
+      form: '1'
