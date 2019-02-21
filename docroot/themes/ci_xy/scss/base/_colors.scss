@@ -212,7 +212,8 @@
   .sf-menu a,
   .fontawesome-icon svg,
   .paragraph__card--icon-link,
-  .footer__global-footer--links li {
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-blue);
   }
   // Accordion Carets
