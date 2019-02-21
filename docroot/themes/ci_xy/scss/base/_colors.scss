@@ -40,6 +40,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-green);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-green);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-green);
     border-bottom: 1px solid set-title-text-color($color-brand-green);
@@ -65,6 +70,11 @@
   .fontawesome-icon svg,
   .paragraph__card--icon-link {
     color: set-title-text-color($color-brand-slate);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-slate);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-slate);
@@ -98,6 +108,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-silver);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-silver);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-silver);
     border-bottom: 1px solid set-title-text-color($color-brand-silver);
@@ -129,6 +144,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-orange);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-orange);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-orange);
@@ -162,6 +182,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-brand-brown);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-brown);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-brown);
     border-bottom: 1px solid set-title-text-color($color-brand-brown);
@@ -187,9 +212,13 @@
   .sf-menu a,
   .fontawesome-icon svg,
   .paragraph__card--icon-link,
-  .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li {
     color: set-title-text-color($color-brand-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-blue);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-brand-blue);
@@ -225,6 +254,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-black);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-black);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-black);
     border-bottom: 1px solid set-title-text-color($color-black);
@@ -243,6 +277,11 @@
   .fontawesome-icon svg,
   .paragraph__card--icon-link {
     color: set-title-text-color($color-white);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-white);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-white);
@@ -277,6 +316,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-evening);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-evening);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-evening);
     border-bottom: 1px solid set-title-text-color($color-evening);
@@ -306,6 +350,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-charcoal);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-charcoal);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-charcoal);
     border-bottom: 1px solid set-title-text-color($color-charcoal);
@@ -332,6 +381,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-blackboard);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-blackboard);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-blackboard);
@@ -360,6 +414,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grey-sand);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-grey-sand);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-grey-sand);
@@ -392,6 +451,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-sleek-grey);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sleek-grey);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-sleek-grey);
     border-bottom: 1px solid set-title-text-color($color-sleek-grey);
@@ -422,6 +486,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon-grass);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-lemon-grass);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-lemon-grass);
@@ -455,6 +524,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-walnut);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-walnut);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-walnut);
     border-bottom: 1px solid set-title-text-color($color-walnut);
@@ -481,6 +555,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-beige);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-beige);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-beige);
@@ -516,6 +595,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-spice);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-spice);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-spice);
     border-bottom: 1px solid set-title-text-color35($color-spice);
@@ -545,6 +629,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-brick-red);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brick-red);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-brick-red);
     border-bottom: 1px solid set-title-text-color35($color-brick-red);
@@ -572,6 +661,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-scarlet);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-scarlet);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-scarlet);
@@ -603,6 +697,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-cognac);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-cognac);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-cognac);
     border-bottom: 1px solid set-title-text-color($color-cognac);
@@ -629,6 +728,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-tiger-orange);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-tiger-orange);
   }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-tiger-orange);
@@ -660,6 +764,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-wheat);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-wheat);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-wheat);
     border-bottom: 1px solid set-title-text-color35($color-wheat);
@@ -690,6 +799,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sunflower);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sunflower);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-sunflower);
     border-bottom: 1px solid set-title-text-color35($color-sunflower);
@@ -719,6 +833,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-lemon);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-lemon);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-lemon);
@@ -753,6 +872,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-eggplant);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-eggplant);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-eggplant);
     border-bottom: 1px solid set-title-text-color($color-eggplant);
@@ -779,6 +903,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-grape);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-grape);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-grape);
@@ -809,6 +938,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ink);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-ink);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-ink);
     border-bottom: 1px solid set-title-text-color($color-ink);
@@ -835,6 +969,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-sky-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sky-blue);
   }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-sky-blue);
@@ -866,6 +1005,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-pacific-blue);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-pacific-blue);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-pacific-blue);
     border-bottom: 1px solid set-title-text-color35($color-pacific-blue);
@@ -895,6 +1039,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color35($color-aqua);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-aqua);
   }
   .field--name-field-card-body a {
     color: set-title-text-color35($color-aqua);
@@ -926,6 +1075,11 @@
   .footer__global-footer--links li a {
     color: set-title-text-color($color-pastel-blue);
   }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-pastel-blue);
+  }
   .field--name-field-card-body a {
     color: set-title-text-color($color-pastel-blue);
     border-bottom: 1px solid set-title-text-color($color-pastel-blue);
@@ -955,6 +1109,11 @@
   .footer__global-footer--links li,
   .footer__global-footer--links li a {
     color: set-title-text-color($color-ice);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-ice);
   }
   .field--name-field-card-body a {
     color: set-title-text-color($color-ice);
