@@ -1,0 +1,15 @@
+uuid: 847dec06-b7e2-4741-a63d-aede4063f729
+langcode: en
+status: true
+dependencies: {  }
+name: medium_thumbnail_250x250_
+label: 'Medium Thumbnail (250x250)'
+effects:
+  c390c4c3-fb80-48da-b317-c97ea5193f03:
+    uuid: c390c4c3-fb80-48da-b317-c97ea5193f03
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      upscale: false
