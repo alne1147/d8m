@@ -1,27 +1,29 @@
-uuid: 34fea757-175c-48d4-90ec-f201f6bb1476
+uuid: 0fa9a226-47a6-497d-a383-578ef6d8d1d4
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.jumbo
     - field.field.media.image.field_article_tags
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
+    - image.style.max_1920
     - media.type.image
   module:
-    - image
-id: media.image.full
+    - background_image_formatter
+id: media.image.jumbo
 targetEntityType: media
 bundle: image
-mode: full
+mode: jumbo
 content:
   field_media_image:
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: max_1920
+      background_image_output_type: inline
+      background_image_selector: hero__responsive_
     third_party_settings: {  }
-    type: image
+    type: background_image_formatter
     weight: 0
     region: content
 hidden:
