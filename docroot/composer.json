@@ -42,7 +42,7 @@
         "drupal/field_group": "^3.0",
         "drupal/field_slideshow": "^3.0",
         "drupal/focal_point": "^1.0",
-        "drupal/fontawesome": "^2.3",
+        "drupal/fontawesome": "^2.12",
         "drupal/google_analytics": "^2.3",
         "drupal/image_widget_crop": "^2.1",
         "drupal/inline_entity_form": "^1.0",
