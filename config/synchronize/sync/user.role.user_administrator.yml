@@ -9,6 +9,10 @@ label: 'User Administrator'
 weight: 4
 is_admin: null
 permissions:
+  - 'access image style for extra_large_thumbnail_650x650_'
+  - 'access image style for large_thumbnail_450x450_'
+  - 'access image style for medium_thumbnail_250x250_'
+  - 'access image style for small_thumbnail_100x100_'
   - 'access toolbar'
   - 'access user profiles'
   - 'administer users'
