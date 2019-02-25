@@ -1,7 +1,9 @@
 <?php
 
 $sites = [
-	
+
+  'nexus' => 'default',
+
     // Dept. of Agriculture
     'ag.dev.colorado.gov' => 'ag.colorado.gov',
     'ag.stg.colorado.gov' => 'ag.colorado.gov',
