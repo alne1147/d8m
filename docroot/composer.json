@@ -7,6 +7,7 @@
         "balbuf/drupal-libraries-installer": "^1.0",
         "composer/installers": "^1.0.24",
         "cweagans/composer-patches": "~1.0",
+        "drupal/acquia_connector": "^1.16",
         "drupal/addtocalendar": "^3.1",
         "drupal/admin_toolbar": "^1.23",
         "drupal/anchor_link": "^1.6",
