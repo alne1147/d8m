@@ -65,7 +65,6 @@ module:
   dblog: 0
   default_content: 0
   default_content_deploy: 0
-  devel: 0
   draggableviews: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0

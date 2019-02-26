@@ -59,9 +59,11 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_add_to_layouts: true
   field_archive: true
   field_display_image: true
   field_display_options: true
+  field_file: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
   field_meta_tags: true

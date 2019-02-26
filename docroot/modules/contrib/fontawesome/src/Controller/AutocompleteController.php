@@ -6,6 +6,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Component\Utility\Tags;
+use Drupal\Component\Utility\Unicode;
 
 /**
  * Defines a route controller for entity autocomplete form elements.
@@ -21,7 +22,7 @@ class AutocompleteController extends ControllerBase {
     // Get the typed string from the URL, if it exists.
     if ($input = $request->query->get('q')) {
       $typed_string = Tags::explode($input);
-      $typed_string = mb_strtolower(array_pop($typed_string));
+      $typed_string = Unicode::strtolower(array_pop($typed_string));
 
       // Load the icon data so we can check for a valid icon.
       $iconData = fontawesome_extract_icons();
