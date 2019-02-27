@@ -57,7 +57,7 @@
         "drupal/migrate_upgrade": "^3.0",
         "drupal/paragraphs": "^1.6",
         "drupal/pathauto": "^1.1",
-        "drupal/quick_clone": "1.x-dev",
+        "drupal/quick_node_clone": "^1.11",
         "drupal/redirect": "^1.2",
         "drupal/roleassign": "1.x-dev",
         "drupal/scheduled_updates": "^1.0",
