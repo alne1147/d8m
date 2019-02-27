@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/36?_format=hal_json"
+            "href": "https:\/\/nexus\/block\/36?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/row_block"
@@ -84,7 +84,7 @@
         {
             "value": {
                 "title": "| CI Drupal 8",
-                "canonical_url": "http:\/\/default\/home"
+                "canonical_url": "https:\/\/nexus\/home"
             }
         }
     ],
