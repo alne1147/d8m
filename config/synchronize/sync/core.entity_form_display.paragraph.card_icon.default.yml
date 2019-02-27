@@ -10,9 +10,8 @@ dependencies:
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
   module:
-    - content_moderation
     - field_group
-    - fontawesome
+    - fontawesome_iconpicker
     - link
 third_party_settings:
   field_group:
@@ -32,9 +31,9 @@ third_party_settings:
       region: content
     group_icon:
       children:
-        - field_icon
         - field_text
         - field_icon_position
+        - field_icon
       parent_name: group_card_icon_edit
       weight: 1
       format_type: tab
@@ -81,10 +80,13 @@ bundle: card_icon
 mode: default
 content:
   field_icon:
-    weight: 2
-    settings: {  }
+    weight: 5
+    settings:
+      type: default
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: fontawesome_icon_widget
+    type: fontawesome_iconpicker
     region: content
   field_icon_card_background:
     weight: 4
