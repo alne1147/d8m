@@ -56,3 +56,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_add_to_layouts: true
+  field_body_color: true

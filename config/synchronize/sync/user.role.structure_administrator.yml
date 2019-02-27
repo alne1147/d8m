@@ -125,4 +125,5 @@ permissions:
   - 'view paragraph content row_three_column_hero'
   - 'view paragraph content row_two_column_hero'
   - 'view paragraph content section_body'
+  - 'view restricted block content'
   - 'view the administration theme'
