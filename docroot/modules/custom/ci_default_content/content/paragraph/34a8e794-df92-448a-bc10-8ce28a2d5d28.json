@@ -20,17 +20,17 @@
     },
     "id": [
         {
-            "value": 906
+            "value": 948
         }
     ],
     "uuid": [
         {
-            "value": "f31e772e-5a98-47e5-957e-6fbee2f061f5"
+            "value": "34a8e794-df92-448a-bc10-8ce28a2d5d28"
         }
     ],
     "revision_id": [
         {
-            "value": 111
+            "value": 108
         }
     ],
     "langcode": [
@@ -89,14 +89,14 @@
     ],
     "created": [
         {
-            "value": "2018-11-27T21:57:10+00:00",
+            "value": "2019-02-28T21:44:31+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
         {
-            "value": "907"
+            "value": "949"
         }
     ],
     "parent_type": [
@@ -120,22 +120,22 @@
             "lang": "en"
         }
     ],
-    "bp_background": [
+    "revision_translation_affected": [
         {
-            "value": "color__pacific-blue--strong",
+            "value": true,
             "lang": "en"
         }
     ],
     "field_card_body": [
         {
-            "value": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
+            "value": "<p>Let's put some happy little clouds in our world. Let's build some happy little clouds up here. In nature, dead trees are just as normal as live trees.<\/p>\r\n\r\n<p>You create the dream - then you bring it into your world. If what you're doing doesn't make you happy - you're doing the wrong thing. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. The man who does the best job is the one who is happy at his job. All you need is a dream in your heart, and an almighty knife. At home you have unlimited time.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
+            "processed": "<p>Let's put some happy little clouds in our world. Let's build some happy little clouds up here. In nature, dead trees are just as normal as live trees.<\/p>\n\n<p>You create the dream - then you bring it into your world. If what you're doing doesn't make you happy - you're doing the wrong thing. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. The man who does the best job is the one who is happy at his job. All you need is a dream in your heart, and an almighty knife. At home you have unlimited time.<\/p>\n"
         }
     ],
     "field_card_title": [
         {
-            "value": "I'm a Consumer"
+            "value": "Create the Dream"
         }
     ]
 }

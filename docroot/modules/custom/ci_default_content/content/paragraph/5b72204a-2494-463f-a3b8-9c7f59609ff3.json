@@ -20,17 +20,17 @@
     },
     "id": [
         {
-            "value": 906
+            "value": 947
         }
     ],
     "uuid": [
         {
-            "value": "f31e772e-5a98-47e5-957e-6fbee2f061f5"
+            "value": "5b72204a-2494-463f-a3b8-9c7f59609ff3"
         }
     ],
     "revision_id": [
         {
-            "value": 111
+            "value": 107
         }
     ],
     "langcode": [
@@ -89,14 +89,14 @@
     ],
     "created": [
         {
-            "value": "2018-11-27T21:57:10+00:00",
+            "value": "2019-02-28T21:35:48+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
         {
-            "value": "907"
+            "value": "949"
         }
     ],
     "parent_type": [
@@ -120,22 +120,22 @@
             "lang": "en"
         }
     ],
-    "bp_background": [
+    "revision_translation_affected": [
         {
-            "value": "color__pacific-blue--strong",
+            "value": true,
             "lang": "en"
         }
     ],
     "field_card_body": [
         {
-            "value": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
+            "value": "<p>We'll take a little bit of Van Dyke Brown. Work on one thing at a time. Don't get carried away - we have plenty of time. If you don't think every day is a good day - try missing a few. You'll see. You need to have a very firm paint to do this. Son of a gun.<\/p>\r\n\r\n<p>This is your world, whatever makes you happy you can put in it. Go crazy. Take your time. Speed will come later. I'm sort of a softy, I couldn't shoot Bambi except with a camera.<\/p>\r\n\r\n<p>Even trees need a friend. We all need friends. This is a fantastic little painting. Use what happens naturally, don't fight it. This is a happy place, little squirrels live here and play. There we go.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
+            "processed": "<p>We'll take a little bit of Van Dyke Brown. Work on one thing at a time. Don't get carried away - we have plenty of time. If you don't think every day is a good day - try missing a few. You'll see. You need to have a very firm paint to do this. Son of a gun.<\/p>\n\n<p>This is your world, whatever makes you happy you can put in it. Go crazy. Take your time. Speed will come later. I'm sort of a softy, I couldn't shoot Bambi except with a camera.<\/p>\n\n<p>Even trees need a friend. We all need friends. This is a fantastic little painting. Use what happens naturally, don't fight it. This is a happy place, little squirrels live here and play. There we go.<\/p>\n"
         }
     ],
     "field_card_title": [
         {
-            "value": "I'm a Consumer"
+            "value": "Happy Little Tree"
         }
     ]
 }

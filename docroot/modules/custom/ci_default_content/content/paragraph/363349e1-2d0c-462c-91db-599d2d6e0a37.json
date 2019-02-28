@@ -20,17 +20,17 @@
     },
     "id": [
         {
-            "value": 906
+            "value": 951
         }
     ],
     "uuid": [
         {
-            "value": "f31e772e-5a98-47e5-957e-6fbee2f061f5"
+            "value": "363349e1-2d0c-462c-91db-599d2d6e0a37"
         }
     ],
     "revision_id": [
         {
-            "value": 111
+            "value": 122
         }
     ],
     "langcode": [
@@ -89,14 +89,14 @@
     ],
     "created": [
         {
-            "value": "2018-11-27T21:57:10+00:00",
+            "value": "2019-02-28T21:52:43+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
         {
-            "value": "907"
+            "value": "952"
         }
     ],
     "parent_type": [
@@ -120,22 +120,22 @@
             "lang": "en"
         }
     ],
-    "bp_background": [
+    "revision_translation_affected": [
         {
-            "value": "color__pacific-blue--strong",
+            "value": true,
             "lang": "en"
         }
     ],
     "field_card_body": [
         {
-            "value": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
+            "value": "<p>If you overwork it you become a cloud killer. There's nothing worse than a cloud killer. Maybe there's a little something happening right here. Put light against light - you have nothing. Put dark against dark - you have nothing. It's the contrast of light and dark that each give the other one meaning. All those little son of a guns. Don't forget to tell these special people in your life just how special they are to you. This is the way you take out your flustrations.<\/p>\r\n\r\n<p>We need dark in order to show light. Fluff that up. You can work and carry-on and put lots of little happy things in here. In life you need colors. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. Everybody's different. Trees are different. Let them all be individuals.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
+            "processed": "<p>If you overwork it you become a cloud killer. There's nothing worse than a cloud killer. Maybe there's a little something happening right here. Put light against light - you have nothing. Put dark against dark - you have nothing. It's the contrast of light and dark that each give the other one meaning. All those little son of a guns. Don't forget to tell these special people in your life just how special they are to you. This is the way you take out your flustrations.<\/p>\n\n<p>We need dark in order to show light. Fluff that up. You can work and carry-on and put lots of little happy things in here. In life you need colors. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. Everybody's different. Trees are different. Let them all be individuals.<\/p>\n"
         }
     ],
     "field_card_title": [
         {
-            "value": "I'm a Consumer"
+            "value": "Flustrations"
         }
     ]
 }

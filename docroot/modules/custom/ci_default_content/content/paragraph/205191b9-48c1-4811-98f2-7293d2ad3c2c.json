@@ -20,17 +20,17 @@
     },
     "id": [
         {
-            "value": 906
+            "value": 950
         }
     ],
     "uuid": [
         {
-            "value": "f31e772e-5a98-47e5-957e-6fbee2f061f5"
+            "value": "205191b9-48c1-4811-98f2-7293d2ad3c2c"
         }
     ],
     "revision_id": [
         {
-            "value": 111
+            "value": 121
         }
     ],
     "langcode": [
@@ -89,14 +89,14 @@
     ],
     "created": [
         {
-            "value": "2018-11-27T21:57:10+00:00",
+            "value": "2019-02-28T21:52:19+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
         {
-            "value": "907"
+            "value": "952"
         }
     ],
     "parent_type": [
@@ -120,22 +120,22 @@
             "lang": "en"
         }
     ],
-    "bp_background": [
+    "revision_translation_affected": [
         {
-            "value": "color__pacific-blue--strong",
+            "value": true,
             "lang": "en"
         }
     ],
     "field_card_body": [
         {
-            "value": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
+            "value": "<p>That's a son of a gun of a cloud. Now let's put some happy little clouds in here. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. How do you make a round circle with a square knife? That's your challenge for the day. The more we do this - the more it will do good things to our heart. When things happen - enjoy them. They're little gifts.<\/p>\r\n\r\n<p>We start with a vision in our heart, and we put it on canvas. These little son of a guns hide in your brush and you just have to push them out. Any little thing can be your friend if you let it be. All you have to do is let your imagination go wild. Just think about these things in your mind - then bring them into your world.<\/p>\r\n\r\n<p>Every day I learn. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. You can create anything that makes you happy.<\/p>\r\n",
             "format": "d8m_text_editor",
-            "processed": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
+            "processed": "<p>That's a son of a gun of a cloud. Now let's put some happy little clouds in here. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. How do you make a round circle with a square knife? That's your challenge for the day. The more we do this - the more it will do good things to our heart. When things happen - enjoy them. They're little gifts.<\/p>\n\n<p>We start with a vision in our heart, and we put it on canvas. These little son of a guns hide in your brush and you just have to push them out. Any little thing can be your friend if you let it be. All you have to do is let your imagination go wild. Just think about these things in your mind - then bring them into your world.<\/p>\n\n<p>Every day I learn. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. You can create anything that makes you happy.<\/p>\n"
         }
     ],
     "field_card_title": [
         {
-            "value": "I'm a Consumer"
+            "value": "Cloud Killer"
         }
     ]
 }

@@ -4,33 +4,41 @@
             "href": ""
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
         },
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
             {
                 "href": "https:\/\/nexus\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
             {
                 "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
             }
         ]
     },
     "id": [
         {
-            "value": 906
+            "value": 949
         }
     ],
     "uuid": [
         {
-            "value": "f31e772e-5a98-47e5-957e-6fbee2f061f5"
+            "value": "68a07b55-dadf-4bf9-b611-95e2a91d57e3"
         }
     ],
     "revision_id": [
         {
-            "value": 111
+            "value": 109
         }
     ],
     "langcode": [
@@ -41,11 +49,11 @@
     ],
     "type": [
         {
-            "target_id": "card_basic"
+            "target_id": "bp_columns"
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
             {
                 "_links": {
                     "self": {
@@ -63,7 +71,7 @@
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
             {
                 "_links": {
                     "self": {
@@ -79,6 +87,40 @@
                     }
                 ]
             }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5b72204a-2494-463f-a3b8-9c7f59609ff3"
+                    }
+                ],
+                "target_revision_id": "107"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "34a8e794-df92-448a-bc10-8ce28a2d5d28"
+                    }
+                ],
+                "target_revision_id": "108"
+            }
         ]
     },
     "status": [
@@ -89,24 +131,24 @@
     ],
     "created": [
         {
-            "value": "2018-11-27T21:57:10+00:00",
+            "value": "2019-02-28T21:33:17+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "parent_id": [
         {
-            "value": "907"
+            "value": "69"
         }
     ],
     "parent_type": [
         {
-            "value": "paragraph"
+            "value": "node"
         }
     ],
     "parent_field_name": [
         {
-            "value": "bp_column_content"
+            "value": "field_rows"
         }
     ],
     "behavior_settings": [
@@ -120,22 +162,16 @@
             "lang": "en"
         }
     ],
-    "bp_background": [
+    "revision_translation_affected": [
         {
-            "value": "color__pacific-blue--strong",
+            "value": true,
             "lang": "en"
         }
     ],
-    "field_card_body": [
+    "field_row_title": [
         {
-            "value": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\r\n",
-            "format": "d8m_text_editor",
-            "processed": "<p>Quisque lorem mi, congue et urna eget, mattis hendrerit risus. Nulla euismod lacinia urna, nec tristique magna accumsan id.<\/p>\n"
-        }
-    ],
-    "field_card_title": [
-        {
-            "value": "I'm a Consumer"
+            "value": "Testing Content Import",
+            "lang": "en"
         }
     ]
 }
