@@ -44,10 +44,6 @@
             {
                 "href": "",
                 "lang": "en"
-            },
-            {
-                "href": "",
-                "lang": "en"
             }
         ]
     },
@@ -63,7 +59,7 @@
     ],
     "vid": [
         {
-            "value": 16
+            "value": 20
         }
     ],
     "langcode": [
@@ -79,7 +75,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2019-02-28T21:53:49+00:00",
+            "value": "2019-02-26T22:56:53+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -96,7 +92,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ]
             }
@@ -113,7 +109,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ],
                 "lang": "en"
@@ -186,7 +182,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "112"
+                "target_revision_id": "136"
             },
             {
                 "_links": {
@@ -203,7 +199,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "117"
+                "target_revision_id": "141"
             },
             {
                 "_links": {
@@ -220,24 +216,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "120"
-            },
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "16224e6b-dada-4b82-9ced-e85d28cbf553"
-                    }
-                ],
-                "lang": "en",
-                "target_revision_id": "123"
+                "target_revision_id": "55"
             }
         ]
     },
@@ -262,7 +241,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-28T21:53:49+00:00",
+            "value": "2019-02-26T22:56:53+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }

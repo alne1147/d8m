@@ -30,7 +30,7 @@
     ],
     "revision_id": [
         {
-            "value": 101
+            "value": 122
         }
     ],
     "langcode": [
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ],
                 "lang": "en"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ]
             }
@@ -122,9 +122,7 @@
     ],
     "field_icon": [
         {
-            "icon_name": "briefcase",
-            "style": "fas",
-            "settings": "a:2:{s:7:\"masking\";a:2:{s:4:\"mask\";s:0:\"\";s:5:\"style\";s:3:\"fas\";}s:16:\"power_transforms\";a:3:{s:5:\"scale\";a:2:{s:4:\"type\";s:0:\"\";s:5:\"value\";s:0:\"\";}s:10:\"position_y\";a:2:{s:4:\"type\";s:0:\"\";s:5:\"value\";s:0:\"\";}s:10:\"position_x\";a:2:{s:4:\"type\";s:0:\"\";s:5:\"value\";s:0:\"\";}}}"
+            "value": "fa-briefcase"
         }
     ],
     "field_icon_card_background": [

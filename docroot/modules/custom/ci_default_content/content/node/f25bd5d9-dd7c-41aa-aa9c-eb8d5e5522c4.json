@@ -31,10 +31,6 @@
             {
                 "href": "",
                 "lang": "en"
-            },
-            {
-                "href": "",
-                "lang": "en"
             }
         ]
     },
@@ -50,7 +46,7 @@
     ],
     "vid": [
         {
-            "value": 15
+            "value": 18
         }
     ],
     "langcode": [
@@ -66,7 +62,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2019-02-28T21:47:46+00:00",
+            "value": "2019-02-26T22:23:03+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -83,7 +79,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ]
             }
@@ -100,7 +96,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "9ea1e928-028e-46a1-9064-bdd726120313"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ],
                 "lang": "en"
@@ -156,24 +152,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "106"
-            },
-            {
-                "_links": {
-                    "self": {
-                        "href": ""
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "68a07b55-dadf-4bf9-b611-95e2a91d57e3"
-                    }
-                ],
-                "lang": "en",
-                "target_revision_id": "109"
+                "target_revision_id": "127"
             }
         ]
     },
@@ -198,7 +177,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-28T21:47:46+00:00",
+            "value": "2019-02-26T22:23:03+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
