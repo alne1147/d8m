@@ -1,0 +1,15 @@
+uuid: ce5334f6-0c0b-4a8c-b2a2-bbb3fe613555
+langcode: en
+status: true
+dependencies: {  }
+name: large_thumbnail_450x450_
+label: 'Large Thumbnail (450x450)'
+effects:
+  2b47e366-b0f5-4f16-bc95-aed493ad3c51:
+    uuid: 2b47e366-b0f5-4f16-bc95-aed493ad3c51
+    id: image_scale
+    weight: 1
+    data:
+      width: 450
+      height: 450
+      upscale: false

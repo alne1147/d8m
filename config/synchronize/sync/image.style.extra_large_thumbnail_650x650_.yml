@@ -1,0 +1,15 @@
+uuid: 7b9f9d25-a235-4697-bcb6-055e93ed41f5
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large_thumbnail_650x650_
+label: 'Extra Large Thumbnail (650x650)'
+effects:
+  c97dd3ab-8d00-488a-9518-b751a2a2fb79:
+    uuid: c97dd3ab-8d00-488a-9518-b751a2a2fb79
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: 650
+      upscale: false

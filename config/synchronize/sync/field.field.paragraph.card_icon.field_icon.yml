@@ -1,12 +1,10 @@
-uuid: a9b2285c-db47-487e-931a-22cc945e9129
+uuid: 5ab6d72f-b2da-4057-b6c6-1d9c68c4275d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_icon
     - paragraphs.paragraphs_type.card_icon
-  module:
-    - fontawesome
 id: paragraph.card_icon.field_icon
 field_name: field_icon
 entity_type: paragraph
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: fontawesome_icon
+field_type: string

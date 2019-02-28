@@ -41,6 +41,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_add_to_layouts: true
   field_article_tags: true
   field_breadcrumbs: true
   field_hide_breadcrumbs: true

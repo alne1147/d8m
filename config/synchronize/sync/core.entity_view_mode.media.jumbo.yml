@@ -1,0 +1,10 @@
+uuid: ae5cbca0-f56c-4ed6-828c-040c85c4074c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.jumbo
+label: Jumbo
+targetEntityType: media
+cache: true

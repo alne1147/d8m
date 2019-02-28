@@ -119,7 +119,6 @@ dependencies:
   - purge_processor_lateruntime
   - purge_queuer_coretags
   - purge_ui
-  - quick_clone
   - rdf
   - responsive_image
   - role_delegation

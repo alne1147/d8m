@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
+            "href": "https:\/\/nexus\/taxonomy\/term\/100038?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
@@ -70,7 +70,7 @@
         {
             "value": {
                 "title": "Show Alternate Jumbotron | CI Drupal 8",
-                "canonical_url": "http:\/\/default\/taxonomy\/term\/100038"
+                "canonical_url": "https:\/\/nexus\/taxonomy\/term\/100038"
             }
         }
     ]

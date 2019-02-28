@@ -10,7 +10,7 @@ dependencies:
     - field.field.paragraph.card_icon.field_text
     - paragraphs.paragraphs_type.card_icon
   module:
-    - fontawesome
+    - fontawesome_iconpicker
     - options
 id: paragraph.card_icon.default
 targetEntityType: paragraph
@@ -18,12 +18,12 @@ bundle: card_icon
 mode: default
 content:
   field_icon:
-    weight: 0
+    weight: 4
     label: hidden
     settings:
-      layers: false
+      size: fa-1x
     third_party_settings: {  }
-    type: fontawesome_icon_formatter
+    type: fontawesome_iconpicker_formatter_type
     region: content
   field_icon_card_background:
     weight: 2

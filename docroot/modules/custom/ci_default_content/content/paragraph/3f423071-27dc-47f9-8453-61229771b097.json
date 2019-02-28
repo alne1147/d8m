@@ -8,13 +8,13 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/paragraph\/card_basic\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json"
             }
         ]
     },
@@ -49,7 +49,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -57,7 +57,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ],
                 "lang": "en"
@@ -67,7 +67,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -75,7 +75,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ]
             }
