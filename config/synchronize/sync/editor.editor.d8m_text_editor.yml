@@ -49,7 +49,6 @@ settings:
           items:
             - Blockquote
             - video_embed
-            - image
             - document_media_browser
         -
           name: Tools
