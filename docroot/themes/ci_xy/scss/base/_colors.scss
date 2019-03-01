@@ -37,7 +37,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body{
     color: set-title-text-color($color-brand-green);
   }
   // Accordion Carets
@@ -68,7 +70,9 @@
   .panel-title > a,
   .sf-menu a,
   .field--name-field-icon svg,
-  .paragraph__card--icon-link {
+  .paragraph__card--icon-link,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-brand-slate);
   }
   // Accordion Carets
@@ -105,7 +109,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-brand-silver);
   }
   // Accordion Carets
@@ -142,7 +148,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-brand-orange);
   }
   // Accordion Carets
@@ -179,7 +187,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-brand-brown);
   }
   // Accordion Carets
@@ -213,7 +223,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-brand-blue);
   }
   // Accordion Carets
@@ -252,7 +264,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-black);
   }
   // Accordion Carets
@@ -314,7 +328,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-evening);
   }
   // Accordion Carets
@@ -348,7 +364,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-charcoal);
   }
   // Accordion Carets
@@ -380,7 +398,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-blackboard);
   }
   // Accordion Carets
@@ -413,7 +433,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-grey-sand);
   }
   // Accordion Carets
@@ -449,7 +471,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-sleek-grey);
   }
   // Accordion Carets
@@ -485,7 +509,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-lemon-grass);
   }
   // Accordion Carets
@@ -522,7 +548,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-walnut);
   }
   // Accordion Carets
@@ -554,7 +582,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-beige);
   }
   // Accordion Carets
@@ -593,7 +623,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-spice);
   }
   // Accordion Carets
@@ -627,7 +659,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-brick-red);
   }
   // Accordion Carets
@@ -660,7 +694,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-scarlet);
   }
   // Accordion Carets
@@ -695,7 +731,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-cognac);
   }
   // Accordion Carets
@@ -727,7 +765,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-tiger-orange);
   }
   // Accordion Carets
@@ -762,7 +802,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-wheat);
   }
   // Accordion Carets
@@ -797,7 +839,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-sunflower);
   }
   // Accordion Carets
@@ -832,7 +876,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-lemon);
   }
   // Accordion Carets
@@ -870,7 +916,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-eggplant);
   }
   // Accordion Carets
@@ -902,7 +950,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-grape);
   }
   // Accordion Carets
@@ -936,7 +986,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-ink);
   }
   // Accordion Carets
@@ -968,7 +1020,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-sky-blue);
   }
   // Accordion Carets
@@ -1003,7 +1057,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-pacific-blue);
   }
   // Accordion Carets
@@ -1038,7 +1094,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-aqua);
   }
   // Accordion Carets
@@ -1073,7 +1131,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-pastel-blue);
   }
   // Accordion Carets
@@ -1108,7 +1168,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-ice);
   }
   // Accordion Carets
@@ -1147,7 +1209,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-forest);
   }
   .field--name-field-card-body a {
@@ -1174,7 +1238,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-neon-green);
   }
   .field--name-field-card-body a {
@@ -1204,7 +1270,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color35($color-cucumber);
   }
   .field--name-field-card-body a {
@@ -1236,7 +1304,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-fern);
   }
   .field--name-field-card-body a {
@@ -1265,7 +1335,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-mineral-green);
   }
   .field--name-field-card-body a {
@@ -1292,7 +1364,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-pine-needle);
   }
   .field--name-field-card-body a {
@@ -1319,7 +1393,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-corduroy);
   }
   .field--name-field-card-body a {
@@ -1346,7 +1422,9 @@
   .field--name-field-icon svg,
   .paragraph__card--icon-link,
   .footer__global-footer--links li,
-  .footer__global-footer--links li a {
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
     color: set-title-text-color($color-sea-foam);
   }
   .field--name-field-card-body a {
