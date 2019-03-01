@@ -32,6 +32,7 @@ permissions:
   - 'access webform submission log'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer protected pages configuration'
   - 'administer redirects'
   - 'administer taxonomy'
   - 'bypass paragraphs type content access'
