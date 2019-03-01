@@ -47,10 +47,7 @@
     // Search Auto Submit functions
     Drupal.behaviors.SearchAutoSubmit = {
         attach: function (context, settings) {
-            $('#edit-type').on('change', function () {
-                var $form = $(this).closest('form');
-                $form.find('button[type=submit]').click();
-            });
+            
             $('#edit-field-article-tags').focusout(function () {
                 var $form = $(this).closest('form');
                 $form.find('button[type=submit]').click();
