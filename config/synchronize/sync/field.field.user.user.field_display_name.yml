@@ -12,9 +12,11 @@ entity_type: user
 bundle: user
 label: 'Display Name'
 description: 'Your name as visitors of the site will see it.'
-required: true
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: '[user:field_first_name]'
 default_value_callback: ''
 settings: {  }
 field_type: string
