@@ -1,35 +1,35 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/template-landing-page-1?_format=hal_json"
+            "href": "https:\/\/nexus\/template-landing-page-1?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/revision_uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_footer_options": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+                "href": "https:\/\/nexus\/taxonomy\/term\/100039?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron": [
             {
-                "href": "http:\/\/default\/block\/45?_format=hal_json"
+                "href": "https:\/\/nexus\/block\/45?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_jumbotron_options": [
             {
-                "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
+                "href": "https:\/\/nexus\/taxonomy\/term\/100038?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/landing_page\/field_rows": [
@@ -51,7 +51,7 @@
     ],
     "vid": [
         {
-            "value": 18
+            "value": 6
         }
     ],
     "langcode": [
@@ -76,7 +76,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -84,7 +84,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ]
             }
@@ -93,7 +93,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -101,7 +101,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "82b84d3c-d81c-423d-9ae9-0f2bc94a1190"
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
                     }
                 ],
                 "lang": "en"
@@ -111,7 +111,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100039?_format=hal_json"
+                        "href": "https:\/\/nexus\/taxonomy\/term\/100039?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
@@ -128,7 +128,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/block\/45?_format=hal_json"
+                        "href": "https:\/\/nexus\/block\/45?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/block_content\/row_block"
@@ -145,7 +145,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/taxonomy\/term\/100038?_format=hal_json"
+                        "href": "https:\/\/nexus\/taxonomy\/term\/100038?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
@@ -174,7 +174,7 @@
                     }
                 ],
                 "lang": "en",
-                "target_revision_id": "126"
+                "target_revision_id": "68"
             }
         ]
     },
@@ -238,7 +238,7 @@
         {
             "value": {
                 "title": "Template - Landing Page- 1 | CI Drupal 8",
-                "canonical_url": "http:\/\/default\/template-landing-page-1"
+                "canonical_url": "https:\/\/nexus\/template-landing-page-1"
             }
         }
     ],
