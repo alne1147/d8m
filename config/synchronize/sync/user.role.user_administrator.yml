@@ -21,7 +21,6 @@ permissions:
   - 'assign content_publisher role'
   - 'assign roles'
   - 'assign structure_administrator role'
-  - 'assign support_administrator role'
   - 'use exclude node title'
   - 'view files'
   - 'view paragraph content mini_calendar'
