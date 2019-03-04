@@ -60,17 +60,12 @@
 }
 .view-jumbo-sliders, .page-node-type-jumbo-slides  {
   .jumbo_slide__title {
-    width: 100%;
-    font-family: "museo-sans",sans-serif;
-    font-weight: 500;
-    padding: 8px 12px 0px 0px;
     h2 {
       margin: 0px;
-      padding: 10px 10px 0px;
+      padding: 10px 10px 15px;
     }
   }
   .jumbo_slide__body {
-    width: 100%;
     p {
       padding: 0px 10px 20px 15px;
       margin-bottom: 0px;
@@ -82,6 +77,9 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    .field--type-image {
+      margin: 0;
+    }
   }
 }
 .block-views-blockjumbo-sliders-block-1 {
