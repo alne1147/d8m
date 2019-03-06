@@ -1,0 +1,76 @@
+From f84f307d105b47415e69efcbc4ea34a99014f259 Mon Sep 17 00:00:00 2001
+From: Alejandro Garza <alejandro.garza@acquia.com>
+Date: Thu, 10 Aug 2017 15:37:34 -0400
+Subject: [PATCH] Fixes bugs from PR 484; fix Http adapter for extraction
+ requests
+
+---
+ library/Solarium/Core/Client/Adapter/Http.php | 21 +++++++++++++++++--
+ .../Tests/Core/Client/Adapter/HttpTest.php    | 10 ++++++---
+ 2 files changed, 26 insertions(+), 5 deletions(-)
+
+diff --git a/library/Solarium/Core/Client/Adapter/Http.php b/library/Solarium/Core/Client/Adapter/Http.php
+index 740bc9bf..3932d1f1 100644
+--- a/library/Solarium/Core/Client/Adapter/Http.php
++++ b/library/Solarium/Core/Client/Adapter/Http.php
+@@ -111,13 +111,30 @@ public function createContext($request, $endpoint)
+ 
+         if ($method == Request::METHOD_POST) {
+             if ($request->getFileUpload()) {
++                $boundary = '----------' . md5(time());
++                $CRLF = "\r\n";
++                $file = $request->getFileUpload();
++                // Add the proper boundary to the Content-Type header
++                $headers = $request->getHeaders();
++                // Remove the Content-Type header, because we will replace it with something else.
++                if (($key = array_search("Content-Type: multipart/form-data", $headers)) !== false) {
++                  unset($headers[$key]);
++                }
++                $request->setHeaders($headers);
++                $request->addHeader("Content-Type: multipart/form-data; boundary={$boundary}");
++                $data =  "--{$boundary}" . $CRLF;
++                $data .= 'Content-Disposition: form-data; name="upload"; filename=' . $file . $CRLF;
++                $data .= 'Content-Type: application/octet-stream' . $CRLF . $CRLF;
++                $data .= file_get_contents($file) . $CRLF;
++                $data .= '--' . $boundary . '--';
++                $content_length = strlen($data);
++                $request->addHeader("Content-Length: $content_length\r\n");
+                 stream_context_set_option(
+                     $context,
+                     'http',
+                     'content',
+-                    file_get_contents($request->getFileUpload())
++                    $data
+                 );
+-                $request->addHeader('Content-Type: multipart/form-data');
+             } else {
+                 $data = $request->getRawData();
+                 if (null !== $data) {
+diff --git a/tests/Solarium/Tests/Core/Client/Adapter/HttpTest.php b/tests/Solarium/Tests/Core/Client/Adapter/HttpTest.php
+index 0dcfb9d7..0494611a 100644
+--- a/tests/Solarium/Tests/Core/Client/Adapter/HttpTest.php
++++ b/tests/Solarium/Tests/Core/Client/Adapter/HttpTest.php
+@@ -184,16 +184,20 @@ public function testCreateContextPostFileRequest()
+ 
+         $context = $this->adapter->createContext($request, $endpoint);
+ 
++        // Remove content from comparison, since we can't determine the
++        // random boundary string.
++        $stream_context_get_options = stream_context_get_options($context);
++        unset($stream_context_get_options['http']['content']);
++        unset($stream_context_get_options['http']['header']);
++
+         $this->assertEquals(
+             array(
+                 'http' => array(
+                     'method' => $method,
+                     'timeout' => $timeout,
+-                    'content' => file_get_contents(__FILE__),
+-                    'header' => 'Content-Type: multipart/form-data',
+                 )
+             ),
+-            stream_context_get_options($context)
++            $stream_context_get_options
+         );
+     }
+ 

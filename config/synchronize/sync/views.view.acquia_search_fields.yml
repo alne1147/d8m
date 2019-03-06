@@ -628,24 +628,11 @@ display:
           content: 'Displaying @start - @end of @total'
           plugin_id: result
       footer: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: '0 Results Found'
-            format: full_html
-          plugin_id: text
+      empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: false
+      use_ajax: true
       use_more: false
       use_more_always: true
       use_more_text: more
@@ -744,6 +731,15 @@ display:
             - body
             - field_article_tags
             - field_description
+            - field_media_file_1
+            - field_media_file_1_1
+            - field_rows
+            - field_summary
+            - name
+            - rendered_item
+            - saa_field_media_file_1
+            - title
+            - type
           plugin_id: search_api_fulltext
         type:
           id: type
