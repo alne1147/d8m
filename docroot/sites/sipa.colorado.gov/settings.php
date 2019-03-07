@@ -778,6 +778,7 @@ $config['acquia_search.settings']['connection_override'] = [
     'index_id' => 'CDIY-145117.dev.cicoloradogov',
     'derived_key' => '4793e027a7f176fc49cf97c6bf7e68c6e53726cc',
 ];
+$conf['acquia_purge_passivemode'] = TRUE;
 
 // <DDSETTINGS>
 // Please don't edit anything between <DDSETTINGS> tags.
