@@ -144,52 +144,61 @@
       }
     }
     .slick-prev::before, .slick-next::before {
-      background: rgba(255,255,255,.3);
-      display:block;
+      background: rgba(255,255,255,.4);
       border-radius: 50%;
       box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
-      transition: background-color .2s;
-      width: 48px;
-      height: 48px;
+      display:block;
       position: absolute;
+      transition: background-color .2s;
+
       @media (min-width:$screen-xxs) {
-        top: 7%;
-        transform: translateY(-7%);
+        top: 7.5%;
+        transform: translateY(-7.5%);
+        width: 40px;
+        height: 40px;
+        line-height: 1.3;
       }
       @media (min-width: $screen-sm) {
         top: 11%;
         transform: translateY(-11%);
+        line-height: 1.13;
       }
       @media (min-width: $screen-md-2) {
         top: 14%;
         transform: translateY(-14%);
+        width: 48px;
+        height: 48px;
+        line-height: 1.3;
       }
-      line-height: 1.3;
     }
     .slick-prev:hover:before, .slick-next:hover:before {
       background: rgba(255,255,255,.6);
     }
     .slick-prev::before {
       @media (min-width: $screen-xxs) {
+        padding-left: 13px;
         left: 40px;
       }
-      @media (min-width: $screen-xs + 1) {
+      @media (min-width: $screen-sm) {
+        left: 30px;
+      }
+      @media (min-width: $screen-md-lg) {
+        padding-left: 16px;
         left: 150px;
       }
-      //left: 150px;
-      padding-left: 14px;
     }
     .slick-next::before {
-      right: 150px;
-      padding-left: 19px;
+      @media (min-width: $screen-xxs) {
+        padding-left: 16px;
+        right: 40px;
+      }
+      @media (min-width: $screen-sm) {
+        right: 30px;
+      }
+      @media (min-width: $screen-md-lg) {
+        padding-left: 19px;
+        right: 150px;
+      }
     }
   }
 }
-
-// .page-node-type-landing-page {
-//   .slick__arrow {
-//     .slick-prev::before, .slick-next::before{
-//       top: 200px;
-//     }
-//   }
-// }
