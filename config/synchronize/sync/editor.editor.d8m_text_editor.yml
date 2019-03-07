@@ -49,7 +49,7 @@ settings:
           items:
             - Blockquote
             - video_embed
-            - document_media_browser
+            - file_browser
         -
           name: Tools
           items:
@@ -78,7 +78,7 @@ settings:
       language_list: un
     templates:
       template_path: ''
-      replace_content: 0
+      replace_content: 1
     wordcount:
       enable: 1
       show_paragraphs: 0
