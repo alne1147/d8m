@@ -1,0 +1,203 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bp_columns"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 912
+        }
+    ],
+    "uuid": [
+        {
+            "value": "73eebb52-e989-44c5-9568-0439cb1f09c0"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 141
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bp_columns"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/bp_columns\/bp_column_content": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_icon"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6d811d12-8a00-494f-b975-c4bd6e385364"
+                    }
+                ],
+                "target_revision_id": "137"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_icon"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "85fa3dc1-c130-4784-8312-de2dce2440d4"
+                    }
+                ],
+                "target_revision_id": "138"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_icon"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f1d8e1da-fcd2-4112-99d6-086e43c70fbe"
+                    }
+                ],
+                "target_revision_id": "139"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_icon"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d4d3842c-fc7a-4794-8e4e-565510fc4b56"
+                    }
+                ],
+                "target_revision_id": "140"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-11-27T21:58:29+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "71"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_rows"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/category\/blog-post?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/article_type"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100015
+        }
+    ],
+    "uuid": [
+        {
+            "value": "01db6953-1030-403d-912a-f742343310cb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "article_type"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Blog Post",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/article_type\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-08-18T17:02:50+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Blog Post | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/category\/blog-post"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/category\/blog-post",
+            "pid": 178,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}

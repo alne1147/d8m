@@ -1,0 +1,175 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/row_two_column_hero"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/uid": [
+            {
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/revision_uid": [
+            {
+                "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/bp_column_content_2": [
+            {
+                "href": "",
+                "lang": "en"
+            },
+            {
+                "href": "",
+                "lang": "en"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 864
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9240477a-962c-4fef-ae5b-112c98494091"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 128
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "row_two_column_hero"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "https:\/\/nexus\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "391abbbd-b90b-43f8-b1ae-aba500b1bf2f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/row_two_column_hero\/bp_column_content_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "774ed46b-92f8-4ccc-af24-9c6529d34631"
+                    }
+                ],
+                "lang": "en",
+                "target_revision_id": "27"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/card_basic"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "809589d8-fcdf-4cd2-9ca6-d00b51bbb7fa"
+                    }
+                ],
+                "lang": "en",
+                "target_revision_id": "28"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-24T19:35:19+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "66"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_rows"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "bp_column_style_2": [
+        {
+            "value": "paragraph--style--33-66",
+            "lang": "en"
+        }
+    ]
+}
