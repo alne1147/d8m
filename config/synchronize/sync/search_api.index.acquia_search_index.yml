@@ -6,6 +6,7 @@ dependencies:
     - field.storage.media.field_media_image
     - field.storage.node.body
     - field.storage.node.field_article_tags
+    - field.storage.node.field_article_type
     - field.storage.media.field_description
     - field.storage.media.field_media_file_1
     - field.storage.node.field_promote
@@ -57,6 +58,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_article_tags
+  field_article_type:
+    label: 'Article Type'
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
   field_description:
     label: Description
     datasource_id: 'entity:media'
@@ -188,10 +197,7 @@ field_settings:
       module:
         - node
 datasource_settings:
-  'entity:file':
-    bundles:
-      default: true
-      selected: {  }
+  'entity:file': {  }
   'entity:media':
     bundles:
       default: true
