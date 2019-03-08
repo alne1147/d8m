@@ -1,16 +1,18 @@
-uuid: 2f7ffeb6-793a-4258-b9a1-566c3645fa4b
+uuid: 8466dd71-0fca-49cf-aee3-9deadb570577
 langcode: en
 status: true
 dependencies:
   module:
-    - fontawesome
     - paragraphs
-id: paragraph.field_button_icon
-field_name: field_button_icon
+id: paragraph.field_icon_button
+field_name: field_icon_button
 entity_type: paragraph
-type: fontawesome_icon
-settings: {  }
-module: fontawesome
+type: string
+settings:
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
