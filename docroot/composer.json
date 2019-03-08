@@ -41,6 +41,7 @@
         "drupal/features": "^3.7",
         "drupal/field_group": "^3.0",
         "drupal/field_slideshow": "^3.0",
+        "drupal/filebrowser": "^2.0",
         "drupal/focal_point": "^1.0",
         "drupal/fontawesome": "^2.12",
         "drupal/google_analytics": "^2.3",
