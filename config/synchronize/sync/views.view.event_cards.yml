@@ -76,11 +76,11 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 2
+          columns: 4
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: col-sm-6
+          col_class_custom: col-sm-3
           row_class_default: true
           row_class_custom: ''
       row:
