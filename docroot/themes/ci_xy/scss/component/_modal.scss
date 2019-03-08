@@ -1,5 +1,5 @@
 .btn-modal {
-  .field--name-field-button-icon {
+  .field--name-field-icon-button {
     margin-bottom: .5em;
   }
 }
@@ -11,6 +11,10 @@
   .paragraph__card {
     background-color: #fff;
     border: 10px solid white;
+  }
+  .field--name-field-webform {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 .modal-header {
@@ -25,3 +29,4 @@
   font-size: floor(($font-size-base * 1.3));
   font-weight: $font-weight-500;
 }
+

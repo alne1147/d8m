@@ -1,7 +1,7 @@
 - entity: "menu_link_content"
   title: "Home"
   menu_name: "main"
-  weight: 0
+  weight: -1
   # Defaults to enabled if omitted, but can be disabled by setting to 0.
   enabled: 1
   link:

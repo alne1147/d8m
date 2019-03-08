@@ -9,16 +9,15 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_footer
     - field.field.paragraph.bp_modal.bp_modal_title
     - field.field.paragraph.bp_modal.bp_width
-    - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_icon_button
     - field.field.paragraph.bp_modal.field_modal_button_bg_color
     - field.field.paragraph.bp_modal.field_modal_title_bg_color
     - field.field.paragraph.bp_modal.field_title_alignment
     - field.field.paragraph.bp_modal.field_title_color
     - paragraphs.paragraphs_type.bp_modal
   module:
-    - content_moderation
     - field_group
-    - fontawesome
+    - fontawesome_iconpicker
     - paragraphs
 third_party_settings:
   field_group:
@@ -39,7 +38,7 @@ third_party_settings:
     group_button_text:
       children:
         - bp_modal_button_text
-        - field_button_icon
+        - field_icon_button
       parent_name: group_card_modal_edit
       weight: 20
       format_type: tab
@@ -117,11 +116,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_button_icon:
+  field_icon_button:
     weight: 3
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
+      type: ''
     third_party_settings: {  }
-    type: fontawesome_icon_widget
+    type: fontawesome_iconpicker
     region: content
   field_modal_button_bg_color:
     type: options_select

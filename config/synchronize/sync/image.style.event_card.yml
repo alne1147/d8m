@@ -5,10 +5,11 @@ dependencies: {  }
 name: event_card
 label: 'Event Card'
 effects:
-  5f8f3fa6-b1ef-4995-9b9c-8f36b8bf1780:
-    uuid: 5f8f3fa6-b1ef-4995-9b9c-8f36b8bf1780
-    id: image_resize
-    weight: 1
+  2f9ed18a-6d4e-4f95-b25d-159dd6920559:
+    uuid: 2f9ed18a-6d4e-4f95-b25d-159dd6920559
+    id: image_scale_and_crop
+    weight: 2
     data:
-      width: 625
-      height: 480
+      width: 373
+      height: 260
+      anchor: center-center

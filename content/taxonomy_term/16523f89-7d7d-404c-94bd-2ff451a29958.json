@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100045?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/mini_calendar"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/mini_calendar\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100045
+        }
+    ],
+    "uuid": [
+        {
+            "value": "16523f89-7d7d-404c-94bd-2ff451a29958"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "mini_calendar"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Show Mini Calendar - Right",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/mini_calendar\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2018-05-01T17:54:47+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Show Mini Calendar - Right | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100045"
+            }
+        }
+    ]
+}

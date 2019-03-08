@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.bp_modal.bp_modal_footer
     - field.field.paragraph.bp_modal.bp_modal_title
     - field.field.paragraph.bp_modal.bp_width
-    - field.field.paragraph.bp_modal.field_button_icon
+    - field.field.paragraph.bp_modal.field_icon_button
     - field.field.paragraph.bp_modal.field_modal_button_bg_color
     - field.field.paragraph.bp_modal.field_modal_title_bg_color
     - field.field.paragraph.bp_modal.field_title_alignment
@@ -17,7 +17,7 @@ dependencies:
     - paragraphs.paragraphs_type.bp_modal
   module:
     - entity_reference_revisions
-    - fontawesome
+    - fontawesome_iconpicker
     - options
 _core:
   default_config_hash: 0PmBiXZLN2ZxqXMPlJWXpjOMtxB8o0Ivt44Gl3E4HpE
@@ -36,7 +36,7 @@ content:
     third_party_settings: {  }
     region: content
   bp_modal_button_text:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -58,13 +58,13 @@ content:
     third_party_settings: {  }
     type: list_key
     region: content
-  field_button_icon:
-    weight: 2
+  field_icon_button:
+    weight: 1
     label: hidden
     settings:
-      layers: false
+      size: fa-1x
     third_party_settings: {  }
-    type: fontawesome_icon_formatter
+    type: fontawesome_iconpicker_formatter_type
     region: content
   field_modal_button_bg_color:
     type: list_key

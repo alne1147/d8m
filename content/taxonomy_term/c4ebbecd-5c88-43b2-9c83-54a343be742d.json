@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100031?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100031
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c4ebbecd-5c88-43b2-9c83-54a343be742d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "City",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-10-17T19:58:08+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "City | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100031"
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100041?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/jumbotron_options"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/jumbotron_options\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100041
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d7cd9d76-2c57-4a5a-842b-475bfe9f9cef"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "jumbotron_options"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "No Jumbotron",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/jumbotron_options\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-12-04T17:11:06+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "No Jumbotron | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100041"
+            }
+        }
+    ]
+}

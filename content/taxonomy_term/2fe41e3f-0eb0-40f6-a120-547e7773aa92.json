@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/nexus\/taxonomy\/term\/100039?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/footer_options"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/footer_options\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100039
+        }
+    ],
+    "uuid": [
+        {
+            "value": "2fe41e3f-0eb0-40f6-a120-547e7773aa92"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "footer_options"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Show Site Footer",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 1
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/footer_options\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2017-12-04T17:18:31+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Show Site Footer | CI Drupal 8",
+                "canonical_url": "https:\/\/nexus\/taxonomy\/term\/100039"
+            }
+        }
+    ]
+}
