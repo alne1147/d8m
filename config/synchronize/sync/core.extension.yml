@@ -91,6 +91,7 @@ module:
   fieldblock: 0
   file: 0
   file_browser: 0
+  file_entity: 0
   file_management: 0
   file_management_view: 0
   filebrowser: 0

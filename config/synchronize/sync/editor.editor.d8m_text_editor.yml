@@ -47,11 +47,9 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
             - video_embed
+            - document_media_browser
             - file_browser
-            - DrupalFile
-            - DrupalImage
         -
           name: Tools
           items:
@@ -70,6 +68,7 @@ settings:
           items:
             - Format
             - Styles
+            - Blockquote
             - Font
             - TextColor
             - BGColor

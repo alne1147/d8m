@@ -14,6 +14,7 @@ permissions:
   - 'search Google CSE'
   - 'search content'
   - 'view any atom'
+  - 'view files'
   - 'view media'
   - 'view paragraph content bp_accordion'
   - 'view paragraph content bp_accordion_section'

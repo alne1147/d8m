@@ -1,0 +1,38 @@
+uuid: 695b4481-f1d2-4242-834b-cf7b3039c392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.document.field_related_tags
+    - file_entity.type.document
+  module:
+    - path
+id: file.document.default
+targetEntityType: file
+bundle: document
+mode: default
+content:
+  field_related_tags:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  filename:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

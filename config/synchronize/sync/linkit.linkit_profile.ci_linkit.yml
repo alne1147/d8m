@@ -2,7 +2,11 @@ uuid: 8e89ed07-6791-4e6a-91d3-23bc054a3dda
 langcode: en
 status: true
 dependencies:
+  config:
+    - image.style.linkit_result_thumbnail
   module:
+    - file
+    - image
     - node
 id: ci_linkit
 label: 'CI Linkit'
@@ -35,3 +39,17 @@ matchers:
         image: image
         video: video
       group_by_bundle: true
+  33c3595d-2493-4085-afb5-fc82531ab1ea:
+    uuid: 33c3595d-2493-4085-afb5-fc82531ab1ea
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        document: document
+        image: image
+      group_by_bundle: true
+      images:
+        show_dimensions: false
+        show_thumbnail: true
+        thumbnail_image_style: linkit_result_thumbnail

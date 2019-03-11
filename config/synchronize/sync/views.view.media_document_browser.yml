@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.media.embedded
     - image.style.thumbnail
-    - media.type.document
     - media.type.image
     - media.type.video
     - taxonomy.vocabulary.free_tagging
@@ -589,7 +588,6 @@ display:
           admin_label: ''
           operator: in
           value:
-            document: document
             image: image
             video: video
           group: 1
@@ -602,19 +600,19 @@ display:
             operator: bundle_op
             identifier: bundle
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
               support_administrator: '0'
               user_administrator: '0'
+              administrator: '0'
               content_administrator: '0'
               content_publisher: '0'
               content_editor: '0'
               structure_administrator: '0'
-            reduce: false
+            reduce: true
           is_grouped: false
           group_info:
             label: ''

@@ -148,6 +148,7 @@ hidden:
   bp_modal_footer: true
   bp_width: true
   created: true
+  field_button_icon: true
   field_title_alignment: true
   field_title_color: true
   status: true

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media.type.document
     - media.type.image
     - views.view.media
   module:
@@ -14,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: J64CNAkrLn2UvL0lKlIEBn2kOHeXElHCK6bW_8qomww
 name: document_media_browser
-label: 'Document Media Browser'
+label: Media
 display: iframe
 display_configuration:
   width: 100%
@@ -26,11 +25,9 @@ selection_display_configuration:
   entity_type: media
   display: rendered_entity
   display_settings:
-    view_mode: media_library
+    view_mode: default
   select_text: 'Use selected'
   selection_hidden: false
-  view: acquia_search
-  view_display: default
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
@@ -44,25 +41,6 @@ widgets:
     weight: -10
     label: 'Media Browser'
     id: view
-  d33cd08c-6874-4cb3-86fa-d58df113874f:
-    settings:
-      form_mode: default
-      media_type: document
-      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
-      dropzone_description: 'Have you checked if this file is already in the media library?'
-      max_filesize: 32M
-      extensions: 'txt doc xls pdf ppt pps odt ods odp'
-      clientside_resize: false
-      resize_width: null
-      resize_height: null
-      resize_quality: !!float 1
-      resize_method: contain
-      thumbnail_method: contain
-      submit_text: Select
-    uuid: d33cd08c-6874-4cb3-86fa-d58df113874f
-    weight: -7
-    label: 'Upload a Document'
-    id: dropzonejs_media_entity_inline_entity_form
   b4babffd-4c88-4b8e-afd4-19c5dc9e810d:
     settings:
       form_mode: default

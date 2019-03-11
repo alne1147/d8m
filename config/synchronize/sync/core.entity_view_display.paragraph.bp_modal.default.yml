@@ -84,6 +84,7 @@ hidden:
   bp_background: true
   bp_modal_footer: true
   created: true
+  field_button_icon: true
   field_title_alignment: true
   field_title_color: true
   uid: true
