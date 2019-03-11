@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'file:file:db2cad05-1e3b-4b35-b163-99d7d036130c'
+    - 'file:undefined:db2cad05-1e3b-4b35-b163-99d7d036130c'
   module:
     - entity_embed
     - file
@@ -21,5 +21,5 @@ type_settings:
     - 'file:file_default'
   entity_browser: browse_files
   entity_browser_settings:
-    display_review: true
+    display_review: false
 icon_uuid: db2cad05-1e3b-4b35-b163-99d7d036130c
