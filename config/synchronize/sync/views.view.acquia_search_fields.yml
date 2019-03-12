@@ -800,12 +800,12 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '<'
+          operator: '<='
           value:
             min: ''
             max: ''
             value: ''
-            type: date
+            type: offset
           group: 1
           exposed: true
           expose:
