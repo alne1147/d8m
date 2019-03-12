@@ -35,6 +35,14 @@ d/* ----------------------------------------------------------------------------
   margin-left: 0;
   margin-right: 0;
 }
+.paragraph {
+  &.paragraph--type--bp-accordion {
+    .paragraph__column {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
 .paragraph > .paragraph__column {
   position: relative;
   min-height: 1px;
@@ -794,9 +802,13 @@ d/* ----------------------------------------------------------------------------
     padding-left: 0px;
   }
 }
-.article, .page{
-  .container {
+.article, .page {
+  .container,
+  .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
   }
+}
+.field--name-field-media-image, .field--type-image {
+  margin: 10px;
 }

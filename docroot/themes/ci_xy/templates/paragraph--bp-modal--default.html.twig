@@ -131,12 +131,12 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {# Button trigger modal #}
     {% if content.field_modal_button_bg_color|render %}
       <button type="button" class="btn btn-lg btn-modal {{ content.field_modal_button_bg_color[0] }}" data-toggle="modal" data-target="#{{ paragraph_id }}">
-        {{ content.field_button_icon }}
+        {{ content.field_icon_button }}
         {{ content.bp_modal_button_text }}
       </button>
     {% else %}
         <button type="button" class="btn btn-primary btn-lg btn-modal {{ content.field_modal_button_bg_color[0] }}" data-toggle="modal" data-target="#{{ paragraph_id }}">
-          {{ content.field_button_icon }}
+          {{ content.field_icon_button }}
           {{ content.bp_modal_button_text }}
         </button>
     {% endif %}

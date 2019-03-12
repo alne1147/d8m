@@ -42,10 +42,10 @@ a {
         transform: translateY(-4px);
       }
       .paragraph__card--icon {
-        .fontawesome-icons {
+        .field--name-field-icon {
           padding-bottom: .5em;
           //text-align: center;
-          .fontawesome-icon svg {
+           svg {
             color: $color-black;
             font-size: 2.5em;
             @media (max-width: $screen-xs-max) {
@@ -86,11 +86,13 @@ a {
   }
 }
 .icon-card-top {
+  display: flex;
   text-align: center;
   width: 100%;
   }
 
 .icon-card-left {
+  display: flex;
   width: 100%;
   .paragraph--type--card-icon {
     .paragraph__card--icon-link {
@@ -108,6 +110,7 @@ a {
   }
 }
 .icon-card-right {
+  display: flex;
   width: 100%;
   .paragraph--type--card-icon {
     .paragraph__card--icon-link {

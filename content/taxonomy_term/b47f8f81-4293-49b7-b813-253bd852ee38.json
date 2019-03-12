@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100050?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/free_tagging"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100050
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b47f8f81-4293-49b7-b813-253bd852ee38"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "free_tagging"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Rocky Mountian National Park",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/free_tagging\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2018-09-24T19:31:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Rocky Mountian National Park | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100050"
+            }
+        }
+    ]
+}

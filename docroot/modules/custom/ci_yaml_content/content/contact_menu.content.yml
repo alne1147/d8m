@@ -1,0 +1,8 @@
+- entity: "menu_link_content"
+  title: "Contacts"
+  menu_name: "main"
+  weight: 0
+  # Defaults to enabled if omitted, but can be disabled by setting to 0.
+  enabled: 1
+  link:
+    uri: "internal:/display_contact"

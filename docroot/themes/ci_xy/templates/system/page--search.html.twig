@@ -141,13 +141,14 @@
                         {% endblock %}
                     {% endif %}
                     {# Sidebar First #}
-                    {% if page.sidebar_first %}
+                   
                         {% block sidebar_first %}
                             <aside class="col-sm-3" role="complementary">
                                 {{ page.sidebar_first }}
+                              
                             </aside>
                         {% endblock %}
-                    {% endif %}
+                   
                     {# Content #}
                     {% set content_classes = [
                     page.sidebar_first and page.sidebar_second ? 'col-sm-6',
@@ -162,7 +163,7 @@
                                 <div class="highlighted">{{ page.highlighted }}</div>
 
                                 {#{{ render_block('acquia_searchsearch_block') }}#}
-                                {{ render_block('exposedformacquia_search_fieldssearch_block') }}
+                                {# {{ render_block('exposedformacquia_search_fieldssearch_block') }} #}
 
                             {% endblock %}
 

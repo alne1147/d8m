@@ -1,0 +1,8 @@
+- entity: "menu_link_content"
+  title: "Events"
+  menu_name: "main"
+  weight: 0
+  # Defaults to enabled if omitted, but can be disabled by setting to 0.
+  enabled: 1
+  link:
+    uri: "internal:/event-cards"

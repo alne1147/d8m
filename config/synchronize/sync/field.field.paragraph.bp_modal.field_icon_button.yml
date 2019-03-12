@@ -1,0 +1,19 @@
+uuid: 442c48f1-835b-42ac-a197-81359be98565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_button
+    - paragraphs.paragraphs_type.bp_modal
+id: paragraph.bp_modal.field_icon_button
+field_name: field_icon_button
+entity_type: paragraph
+bundle: bp_modal
+label: 'Icon Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

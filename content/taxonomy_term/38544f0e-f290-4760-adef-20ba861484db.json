@@ -1,0 +1,97 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/taxonomy\/term\/100048?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/venue"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/venue\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 100048
+        }
+    ],
+    "uuid": [
+        {
+            "value": "38544f0e-f290-4760-adef-20ba861484db"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "venue"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Rocky Mountian National Park",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/venue\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2018-09-24T19:31:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Rocky Mountian National Park | CI Drupal 8",
+                "canonical_url": "http:\/\/default\/taxonomy\/term\/100048"
+            }
+        }
+    ],
+    "field_address": [
+        {
+            "value": "1000 Highway 36 Estes Park, CO "
+        }
+    ],
+    "field_email": [
+        {
+            "value": "rmnp@example.com"
+        }
+    ],
+    "field_organizer": [
+        {
+            "value": "The Rangers"
+        }
+    ],
+    "field_phone_number": [
+        {
+            "value": "Rocky Mountain National Park 1000 Highway 36 Estes Park, CO "
+        }
+    ]
+}

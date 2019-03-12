@@ -58,6 +58,9 @@
             margin-bottom:0px;
           }
         }
+        .paragraph--type--card-basic {
+          display: flex;
+        }
         //&:first-child {
         //  padding-left:0;
         //}
@@ -72,6 +75,7 @@
         }
         &.paragraph__card {
           > .paragraph__column {
+            width: 100%;
             padding-top: 0;
             > .paragraph__title {
               float: left;
@@ -155,6 +159,8 @@
     }
   //}
 }
+
+
 .main-container .paragraph .paragraph__column--container-wrapper .container {
   width: 100%;
 }

@@ -2,24 +2,25 @@ uuid: 09bca086-0622-4de1-96dd-e899d5a5d15b
 langcode: en
 status: true
 dependencies:
-  module:
-    - file
-    - media
-    - node
-    - search_api
-    - search_api_attachments
-    - paragraphs
   config:
-    - field.storage.media.field_description
-    - field.storage.media.field_media_file_1
     - field.storage.media.field_media_image
     - field.storage.node.body
-    - field.storage.node.field_promote
     - field.storage.node.field_article_tags
+    - field.storage.node.field_article_type
+    - field.storage.media.field_description
+    - field.storage.media.field_media_file_1
+    - field.storage.node.field_promote
     - field.storage.node.field_rows
     - field.storage.node.field_summary
     - search_api.server.acquia_search_server
     - core.entity_view_mode.node.search_index
+  module:
+    - node
+    - file
+    - media
+    - search_api
+    - search_api_attachments
+    - paragraphs
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -57,6 +58,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_article_tags
+  field_article_type:
+    label: 'Article Type'
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
   field_description:
     label: Description
     datasource_id: 'entity:media'

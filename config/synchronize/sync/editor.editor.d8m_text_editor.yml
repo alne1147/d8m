@@ -47,10 +47,9 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
             - video_embed
-            - image
             - document_media_browser
+            - file_browser
         -
           name: Tools
           items:
@@ -63,11 +62,13 @@ settings:
             - Templates
             - Table
             - Maximize
+            - DrupalFontAwesome
         -
           name: Styling
           items:
             - Format
             - Styles
+            - Blockquote
             - Font
             - TextColor
             - BGColor
@@ -78,7 +79,7 @@ settings:
       language_list: un
     templates:
       template_path: ''
-      replace_content: 0
+      replace_content: 1
     wordcount:
       enable: 1
       show_paragraphs: 0
@@ -89,7 +90,7 @@ settings:
       max_words: '-1'
       max_chars: '-1'
     colorbutton:
-      colors: ''
+      colors: '000000,ffffff,00953a,5c666f,d0d2d3,ef7521,65503c,6ec4ed,262228,373737,525249,999899,a9aba0,483627,d3ccbc,f5f5f5,6a3833,84322c,f6323e,ad431c,bc6123,cc9700,d8c722,f7d44b,49274a,946183,062f4f,328cc1,009add,25cad3,4dc1df,8fc6e8,235c37,82bc00,72a84f,546121,3f5b57,46797a,5f7774,95a495'
     linkit:
       linkit_profile: ci_linkit
     video_embed:

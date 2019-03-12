@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.media.embedded
     - image.style.medium
+    - media.type.image
+    - media.type.video
   enforced:
     module:
       - media_library
@@ -351,7 +353,9 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value:
+            image: image
+            video: video
           group: 1
           exposed: true
           expose:
@@ -360,15 +364,21 @@ display:
             description: ''
             use_operator: false
             operator: bundle_op
-            identifier: type
+            identifier: bundle
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              support_administrator: '0'
+              user_administrator: '0'
               administrator: '0'
-            reduce: false
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: true
           is_grouped: false
           group_info:
             label: 'Media type'
@@ -460,13 +470,15 @@ display:
         - 'url.query_args:sort_by'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.document.default'
         - 'config:core.entity_view_display.media.document.embedded'
         - 'config:core.entity_view_display.media.document.link'
         - 'config:core.entity_view_display.media.file.default'
         - 'config:core.entity_view_display.media.file.embedded'
         - 'config:core.entity_view_display.media.file.media_library'
-        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.full'
+        - 'config:core.entity_view_display.media.image.jumbo'
         - 'config:core.entity_view_display.media.image.media_library'
         - 'config:core.entity_view_display.media.video.default'
   page:
@@ -504,6 +516,8 @@ display:
         - 'config:core.entity_view_display.media.file.embedded'
         - 'config:core.entity_view_display.media.file.media_library'
         - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.full'
+        - 'config:core.entity_view_display.media.image.jumbo'
         - 'config:core.entity_view_display.media.image.media_library'
         - 'config:core.entity_view_display.media.video.default'
   widget:
@@ -772,5 +786,7 @@ display:
         - 'config:core.entity_view_display.media.file.embedded'
         - 'config:core.entity_view_display.media.file.media_library'
         - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.full'
+        - 'config:core.entity_view_display.media.image.jumbo'
         - 'config:core.entity_view_display.media.image.media_library'
         - 'config:core.entity_view_display.media.video.default'
