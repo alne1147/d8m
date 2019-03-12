@@ -94,14 +94,7 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    {#<footer>#}
 
-  <div class="article_byline"{{ author_attributes }}>
-    <div class ="author_date hide"> {{ date }}</div><br>
-    <div class ="author_name hide">Submitted by {{ node.uid.entity.field_display_name.value }}</div>
-      {{ metadata }}
-  </div>
-    {#</footer>#}
   {% endif %}
 
   <div{{ content_attributes }}>
