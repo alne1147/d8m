@@ -42,6 +42,8 @@ a {
         transform: translateY(-4px);
       }
       .paragraph__card--icon {
+        display: flex;
+        justify-content: center;
         .field--name-field-icon {
           padding-bottom: .5em;
           //text-align: center;
@@ -97,14 +99,13 @@ a {
   .paragraph--type--card-icon {
     .paragraph__card--icon-link {
       padding: 1.5em 0em;
-      .col-sm-4 {
-        padding-bottom: 20px;
+      .col-sm-2 {
+        padding-bottom: 15px;
         text-align: left;
         padding-left: 25px;
         }
-      .col-sm-8 {
-        padding-bottom: 20px;
-        text-align: center;
+      .col-sm-10 {
+        padding-bottom: 15px;
       }
     }
   }
@@ -115,14 +116,13 @@ a {
   .paragraph--type--card-icon {
     .paragraph__card--icon-link {
       padding: 1.5em 0em;
-      .col-sm-4 {
-        padding-bottom: 20px;
+      .col-sm-2 {
+        padding-bottom: 15px;
         text-align: right;
         padding-right: 25px;
       }
-      .col-sm-8 {
-        padding-bottom: 20px;
-        text-align: center;
+      .col-sm-10 {
+        padding-bottom: 15px;
       }
     }
   }
