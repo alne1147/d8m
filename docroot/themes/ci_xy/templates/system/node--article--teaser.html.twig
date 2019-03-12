@@ -85,36 +85,20 @@
 
 <article{{ attributes.addClass(classes) }}>
 
-  {% if display_submitted %}
-    {#<footer>#}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
 
-      <div{{ author_attributes }}>
-    <div class ="author_date hide"> {{ createdDate }}</div><div class ="author_name hide">Submitted by {{ node.Owner.field_display_name.value }}</div>
-      {{ metadata }}
-  </div>
-    {#</footer>#}
+  {% if display_submitted %}
+
   {% endif %}
 
-  <a href="{{ url }}" rel="bookmark"> <div class="contact_card grow"{{ content_attributes }}>
-      <div class="row">
-        <div class="col-sm-3">
-          {{ content.field_photo }}
-        </div>
-        <div class="col-sm-9">
-            <h4{#{{ title_attributes }}#}>
-              {{ label }}
-            </h4>
-          {{  content.field_title}}
-          <p class="empty-class"><p>
-          {{ content.field_address }}
-          {{ content.field_phone_number }}
-          {{ content.field_email }}
-        </div>
-      </div>
-      <div class="row agency no-gutters">
-        <div class="col-md-2  col-xs-2">{{ content.field_agency_logo }}</div>
-        <div class="col-md-10 col-xs-10">{{ content.field_agency }}</div>
-      </div>
-  </div></a>
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
 
 </article>

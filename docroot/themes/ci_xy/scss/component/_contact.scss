@@ -10,7 +10,7 @@
     background: whitesmoke;
     color: #000 !important;
     @media (max-width: $screen-xs-max) {
-     padding-left: 20px;
+      padding-left: 20px;
       .field--name-field-agency-logo {
         align: left;
       }
@@ -24,57 +24,55 @@
     -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
-}
-
-    .col-sm-3 {
-      padding-left: 25px;
-      padding-right: 10px;
-      padding-bottom: 15px;
+  .col-sm-3 {
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+  }
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 1;
+  }
+  .empty-class {
+    margin-bottom: 5px;
+  }
+  .agency {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .field--name-field-agency-logo {
+      align: right;
+      padding-left: 20px;
     }
-    h4 {
-      margin-top: 5px;
-      margin-bottom: 0px;
-      line-height: 1;
-    }
-    .empty-class {
-      margin-bottom: 5px;
-    }
-    .agency {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      .field--name-field-agency-logo {
-        align: right;
-        padding-left: 16px;
-      }
-      .field--name-field-agency {
-          text-transform: uppercase;
-          font-size: 15px;
-          font-weight: 500;
-          padding-top: 10px;
-          padding-left: 15px;
-      }
-      .col-md-11 {
-        padding-left: 0px;
-      }
-      .col-md-1 {
-        padding-right: 0px;
-      }
-    }
-    .field--name-field-title {
+    .field--name-field-agency {
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 500;
-      color: #666;
+      padding-top: 20px;
     }
-    .field--name-field-photo {
-      .img-responsive {
-        border: solid 4px #fff;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-      }
+    .col-md-10 {
+      padding-left: 0px;
     }
+    .col-md-2 {
+      padding-right: 0px;
+    }
+  }
+  .field--name-field-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+  .field--name-field-photo {
+    .img-responsive {
+      border: solid 4px #fff;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}
 
 .row.no-gutters {
   margin-right: 0;
@@ -92,12 +90,17 @@
   .agency {
     padding-top: 10px;
     padding-bottom: 10px;
-    .col-sm-1 {
+    .col-sm-2 {
       padding-right: 5px;
       padding-top: 25px;
     }
-    .col-sm-11 {
-      padding-left: 5px;
+    .col-sm-10 {
+      padding-left: 0px;
+      margin-top: 5px;
+
+    }
+    .no-logo {
+      margin-left: 40px;
     }
     .field--name-field-agency {
       text-transform: uppercase;
@@ -105,6 +108,10 @@
       font-weight: 500;
       padding-top: 15px;
       padding-bottom: 15px;
+      padding-left: 0px;
+    }
+    .field--name-field-agency-logo {
+      padding-left: 25px;
     }
   }
   .field--name-field-photo {
@@ -155,4 +162,8 @@
   .field--name-field-last-name {
     display: inline;
   }
+}
+#draggableviews-table-contact-page-1 {
+  border-collapse: separate;
+  border-spacing: 20px;
 }
