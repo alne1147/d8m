@@ -44,20 +44,5 @@
             });
         }
     };
-    // Search Auto Submit functions
-    Drupal.behaviors.SearchAutoSubmit = {
-        attach: function (context, settings) {
-            
-            $('#edit-field-article-tags').focusout(function () {
-                var $form = $(this).closest('form');
-                $form.find('button[type=submit]').click();
-            });
-            // Date Range Refinement
-            $('#submit-date-range').click(function () {
-                var startDate = $('#edit-created').val();
-                var endDate = $('#edit-created-lt').val();
-                $("#views-exposed-form-acquia-search-fields-search-block").submit();
-            });
-        }
-    };
+
 }(jQuery));

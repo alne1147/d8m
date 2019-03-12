@@ -15,10 +15,6 @@ dependencies:
     - search_api.index.acquia_search_index
     - taxonomy.vocabulary.article_type
     - taxonomy.vocabulary.free_tagging
-  content:
-    - 'taxonomy_term:article_type:01db6953-1030-403d-912a-f742343310cb'
-    - 'taxonomy_term:article_type:458a03a6-950d-4e07-97d7-c6025eb21f6c'
-    - 'taxonomy_term:article_type:c9886064-7c47-4ed4-a3a5-23e9b16dad4e'
   module:
     - file
     - image
@@ -637,7 +633,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: true
+      use_ajax: false
       use_more: false
       use_more_always: true
       use_more_text: more
@@ -660,7 +656,7 @@ display:
     display_options:
       display_extenders: {  }
       path: search
-      exposed_block: false
+      exposed_block: true
       menu:
         type: none
         title: Search
@@ -729,7 +725,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: phrase
+          parse_mode: terms
           min_length: null
           fields:
             - alt
@@ -746,60 +742,6 @@ display:
             - title
             - type
           plugin_id: search_api_fulltext
-        field_article_type:
-          id: field_article_type
-          table: search_api_index_acquia_search_index
-          field: field_article_type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            100015: 100015
-            100014: 100014
-            100013: 100013
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_article_type_op
-            label: 'Article Type'
-            description: ''
-            use_operator: false
-            operator: field_article_type_op
-            identifier: field_article_type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              support_administrator: '0'
-              user_administrator: '0'
-              administrator: '0'
-              content_administrator: '0'
-              content_publisher: '0'
-              content_editor: '0'
-              structure_administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: article_type
-          hierarchy: false
-          error_message: true
-          plugin_id: search_api_term
         created:
           id: created
           table: search_api_index_acquia_search_index
@@ -858,7 +800,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '<='
+          operator: '<'
           value:
             min: ''
             max: ''
@@ -879,9 +821,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
               support_administrator: '0'
               user_administrator: '0'
+              administrator: '0'
               content_administrator: '0'
               content_publisher: '0'
               content_editor: '0'
@@ -953,6 +895,57 @@ display:
           type: textfield
           limit: true
           vid: free_tagging
+          hierarchy: false
+          error_message: true
+          plugin_id: search_api_term
+        field_article_type:
+          id: field_article_type
+          table: search_api_index_acquia_search_index
+          field: field_article_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_article_type_op
+            label: 'Article Type'
+            description: ''
+            use_operator: false
+            operator: field_article_type_op
+            identifier: field_article_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              support_administrator: '0'
+              user_administrator: '0'
+              administrator: '0'
+              content_administrator: '0'
+              content_publisher: '0'
+              content_editor: '0'
+              structure_administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: article_type
           hierarchy: false
           error_message: true
           plugin_id: search_api_term
