@@ -1085,8 +1085,8 @@ display:
             max_length: 300
             word_boundary: true
             ellipsis: true
-            more_link: false
-            more_link_text: ''
+            more_link: true
+            more_link_text: 'Read More'
             more_link_path: ''
             strip_tags: true
             trim: true
