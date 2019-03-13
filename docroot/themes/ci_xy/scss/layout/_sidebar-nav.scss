@@ -7,11 +7,13 @@
   text-decoration: none;
 }
 
-
+.sidebar-nav,
+.region-sidebar-first {
+  background-color: $color-grey-sand;
+}
 .sidebar-nav,
 .region-sidebar-first,
 .region-sidebar-second {
-  background-color: $color-grey-sand;
   margin-bottom: 2em;
   @media (min-width: $screen-md-2-min) {
     padding:0;

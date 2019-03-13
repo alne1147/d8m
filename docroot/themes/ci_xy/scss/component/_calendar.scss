@@ -1,5 +1,39 @@
 .view-mini-calendar {
+    font-family: $font-family-meseo-sans-serif;
     h5 {
-        font-family: $font-family-meseo-sans-serif;
+    font-family: $font-family-meseo-sans-serif;
+    text-align: center;
+        a {
+            color: $color-brand-slate;
+        }
+    } 
+    .calendar-calendar {
+        td {
+            padding: .3em;
+            border: 0;
+            &.days {
+                font-weight: $font-weight-500;
+                color: $color-black;
+            }
+            &.today {
+                background-color: transparent;
+                color: $color-black;
+                font-weight: $font-weight-500;
+                .mini-day-on {
+                    a {
+                        color: $color-black;
+                        font-weight: $font-weight-500;
+                    }
+                }
+            }
+            .mini-day-on {
+                a {
+                    color: $color-brand-slate;
+                    border-bottom: 4px solid #00953a;
+                    font-weight: $font-weight-300;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
