@@ -628,7 +628,17 @@ display:
           empty: false
           content: 'Displaying @start - @end of @total'
           plugin_id: result
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
       empty: {  }
       relationships: {  }
       arguments: {  }
