@@ -1,0 +1,10 @@
+uuid: 70c9cdfa-10d0-482b-a826-48abc52a6d67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.block_view
+label: 'Block View'
+targetEntityType: node
+cache: true
