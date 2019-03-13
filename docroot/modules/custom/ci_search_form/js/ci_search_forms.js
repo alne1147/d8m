@@ -22,6 +22,16 @@
                 $promoted.addClass("col-sm-9");
                 $promoted.next().addClass("col-sm-3");
             }
+            
+          // If no tags on promoted search row, make column col-sm-12
+          $('.search-result--tags').each(function() {
+            var itembubble = $(this);
+            if (itembubble.html() == '') {
+              itembubble.addClass('hidden');
+              $(this).prev().removeClass('col-sm-9').addClass('col-sm-12');
+            }
+          });
+
             // Refine Search Results for Smartphone view
             var $refineresults = $('.search-page--refine-wrapper p');
             var $refineresultsrow = $('.search-page--refine-wrapper .row');
@@ -44,20 +54,5 @@
             });
         }
     };
-    // Search Auto Submit functions
-    Drupal.behaviors.SearchAutoSubmit = {
-        attach: function (context, settings) {
-            
-            $('#edit-field-article-tags').focusout(function () {
-                var $form = $(this).closest('form');
-                $form.find('button[type=submit]').click();
-            });
-            // Date Range Refinement
-            $('#submit-date-range').click(function () {
-                var startDate = $('#edit-created').val();
-                var endDate = $('#edit-created-lt').val();
-                $("#views-exposed-form-acquia-search-fields-search-block").submit();
-            });
-        }
-    };
+
 }(jQuery));

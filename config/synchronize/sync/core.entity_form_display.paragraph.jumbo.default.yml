@@ -7,10 +7,10 @@ dependencies:
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
-    - image.style.thumbnail
+    - image.style.large
     - paragraphs.paragraphs_type.jumbo
   module:
-    - image
+    - focal_point
 id: paragraph.jumbo.default
 targetEntityType: paragraph
 bundle: jumbo
@@ -19,10 +19,12 @@ content:
   field_banner:
     weight: 4
     settings:
+      preview_image_style: large
+      preview_link: true
+      offsets: '50,50'
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
+    type: image_focal_point
     region: content
   field_banner_body:
     weight: 2

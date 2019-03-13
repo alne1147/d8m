@@ -20,7 +20,7 @@
       padding-left:0;
       padding-right:0;
       >.paragraph__title {
-        border-radius: $border-radius;
+        // border-radius: $border-radius;
       }
     }
   }
@@ -78,10 +78,10 @@
             width: 100%;
             padding-top: 0;
             > .paragraph__title {
-              float: left;
+              // float: left;
               width:100%;
               background-color: $color-pacific-blue;
-              border-radius: $border-radius;
+              // border-radius: $border-radius;
             }
             .field--name-field-card-title {
               color: $color-white;
@@ -173,10 +173,10 @@
 
 .paragraph__title
 {
-	float: left;
+	// float: left;
 	width: 100%;
 	background-color: #009add;
-	border-radius: .3rem;
+	// border-radius: .3rem;
 }
 
 .viewsreference--view-title

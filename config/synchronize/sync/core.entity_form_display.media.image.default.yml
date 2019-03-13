@@ -6,11 +6,11 @@ dependencies:
     - field.field.media.image.field_article_tags
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
-    - image.style.medium
+    - image.style.large_thumbnail_450x450_
     - media.type.image
   module:
     - content_moderation
-    - image
+    - focal_point
     - path
 id: media.image.default
 targetEntityType: media
@@ -42,10 +42,12 @@ content:
     region: content
   field_media_image:
     settings:
-      preview_image_style: medium
+      preview_image_style: large_thumbnail_450x450_
+      preview_link: true
+      offsets: '50,50'
       progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_focal_point
     weight: 3
     region: content
   moderation_state:

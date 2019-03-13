@@ -19,7 +19,8 @@
       position: relative;
       .panel-heading {
         border-bottom: 0;
-        border-radius: 3px;
+        //border-radius: 3px; 
+        border-radius: 0;
         margin-bottom: 1rem;
       }
     }
@@ -98,9 +99,9 @@
        > a {  
          background-color: #009add!important;  
          border-bottom:0 !important;  
-         -webkit-border-radius: .3rem;  
-         -moz-border-radius: .3rem;  
-         border-radius: .3rem;
+        //  -webkit-border-radius: .3rem;  
+        //  -moz-border-radius: .3rem;  
+        //  border-radius: .3rem;
          font-family: $font-family-meseo-sans-serif;
          font-size: floor(($font-size-base * 1.3));
          font-weight: $font-weight-500;
@@ -119,9 +120,9 @@
            }
          }
          > span {
-          -webkit-border-radius: .3rem;
-          -moz-border-radius: .3rem;
-          border-radius: .3rem;
+          // -webkit-border-radius: .3rem;
+          // -moz-border-radius: .3rem;
+          // border-radius: .3rem;
           display: block;
           padding: 10px 15px 10px 50px;
           color: #fff;
