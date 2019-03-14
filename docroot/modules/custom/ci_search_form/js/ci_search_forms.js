@@ -25,9 +25,9 @@
             
           // If no tags on promoted search row, make column col-sm-12
           $('.search-result--tags').each(function() {
-            var itembubble = $(this);
-            if (itembubble.html() == '') {
-              itembubble.addClass('hidden');
+            var prtags = $(this);
+            if (prtags.html() == '') {
+              prtags.addClass('hidden');
               $(this).prev().removeClass('col-sm-9').addClass('col-sm-12');
             }
           });
