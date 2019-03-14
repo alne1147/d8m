@@ -153,7 +153,6 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-
           {{ page.content }}
         {% endblock %}
       </section>
@@ -165,9 +164,15 @@
           </aside>
         {% endblock %}
       {% endif %}
+        {# Lower Content #}
+        {% block lower_content %}
+            <div class="col-sm-12">
+            {{ render_block('views_block__events_block_1') }}
+            </div>
+        {% endblock %}
     </div>
   </div>
-    </div>
+</div>
 {% endblock %}
 
       {% include directory ~ '/templates/includes/footer.html.twig' %}

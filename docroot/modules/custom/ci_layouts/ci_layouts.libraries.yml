@@ -1,0 +1,5 @@
+ci_layouts:
+  version: 1.x
+  css:
+    layout:
+      css/ci_layout_style.css: {}

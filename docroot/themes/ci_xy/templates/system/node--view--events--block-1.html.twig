@@ -85,12 +85,12 @@
 
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
+ {# {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-  {% endif %}
+  {% endif %}#}
   {{ title_suffix }}
 
   {% if display_submitted %}
@@ -104,12 +104,12 @@
     {#</footer>#}
   {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location') }}
-  </div>
+    {# <div{{ content_attributes }}>
+    {# {{ content|without('field_article_tags', 'field_event_organizer', 'field_organizer_email', 'field_venue', 'field_location', 'content.field_date_time_range', 'content.field_event_organizer', 'content.field_organizer_email', 'content.field_article_tags', 'content.field_location', 'content.field_venue' ) }}
+     </div>#}
 
   {# Events grid set using the events.js #}
- {# <div class="row">
+   <div class="row">
     <div class="container">
       <div class="event--organization">
         {% if node.field_show_date_and_time.value %}
@@ -136,5 +136,5 @@
         {% endif %}
       </div>
     </div>
-  </div>#}
+  </div>
 </article>

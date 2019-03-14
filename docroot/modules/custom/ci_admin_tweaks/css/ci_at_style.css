@@ -11,3 +11,9 @@ a.toolbar-icon.acquia-inactive-subscription {
 a.toolbar-icon.use-ajax.toolbar-item {
    visibility: hidden;
 }
+/*
+Hide Title color for pop-up card
+ */
+.form-item-field-rows-0-subform-bp-column-content-0-subform-bp-modal-body-0-subform-field-title-color {
+  display: none;
+}
