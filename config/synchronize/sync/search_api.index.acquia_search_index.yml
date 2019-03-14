@@ -2,26 +2,25 @@ uuid: 09bca086-0622-4de1-96dd-e899d5a5d15b
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.media.field_media_image
-    - field.storage.node.body
-    - field.storage.node.field_article_tags
-    - field.storage.node.field_article_type
-    - field.storage.media.field_description
-    - field.storage.media.field_media_file_1
-    - field.storage.node.field_promote
-    - field.storage.node.field_rows
-    - field.storage.node.field_summary
-    - search_api.server.acquia_search_server
-    - core.entity_view_mode.node.search_index
   module:
-    - node
     - file
     - media
+    - node
     - search_api
     - search_api_attachments
     - content_moderation
     - paragraphs
+  config:
+    - field.storage.media.field_description
+    - field.storage.media.field_media_file_1
+    - field.storage.media.field_media_image
+    - field.storage.node.field_article_type
+    - field.storage.node.body
+    - field.storage.node.field_promote
+    - field.storage.node.field_article_tags
+    - field.storage.node.field_rows
+    - field.storage.node.field_summary
+    - search_api.server.acquia_search_server
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -35,14 +34,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_media_image
-  body:
-    label: Body
-    datasource_id: 'entity:node'
-    property_path: body
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.body
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -147,28 +138,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  rendered_item:
-    label: 'Rendered HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:file':
-          file: ''
-        'entity:media':
-          document: ''
-          file: ''
-          image: ''
-          video: ''
-        'entity:node':
-          article: search_index
-          event: search_index
-          landing_page: search_index
-          page: search_index
-        'entity:paragraph':
-          card_basic: default
   saa_field_media_file_1:
     label: 'Search api attachments: File'
     property_path: saa_field_media_file_1
@@ -266,7 +235,6 @@ processor_settings:
     all_fields: true
     fields:
       - alt
-      - body
       - field_article_tags
       - field_article_type
       - field_description
@@ -277,7 +245,6 @@ processor_settings:
       - filename
       - name
       - processed
-      - rendered_item
       - saa_field_media_file_1
       - title
       - type
@@ -295,12 +262,9 @@ processor_settings:
   ignorecase:
     all_fields: false
     fields:
-      - body
       - field_article_tags
       - field_media_file_1
       - field_rows
-      - processed
-      - rendered_item
       - title
       - type
     weights:
@@ -310,10 +274,8 @@ processor_settings:
   stemmer:
     all_fields: false
     fields:
-      - body
       - field_article_tags
       - field_rows
-      - rendered_item
       - title
       - type
     exceptions:
@@ -325,10 +287,8 @@ processor_settings:
   tokenizer:
     all_fields: false
     fields:
-      - body
       - field_article_tags
       - field_rows
-      - rendered_item
       - title
       - type
     spaces: ''
