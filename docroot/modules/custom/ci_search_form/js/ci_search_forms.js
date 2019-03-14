@@ -22,6 +22,16 @@
                 $promoted.addClass("col-sm-9");
                 $promoted.next().addClass("col-sm-3");
             }
+            
+          // If no tags on promoted search row, make column col-sm-12
+          $('.search-result--tags').each(function() {
+            var prtags = $(this);
+            if (prtags.html() == '') {
+              prtags.addClass('hidden');
+              $(this).prev().removeClass('col-sm-9').addClass('col-sm-12');
+            }
+          });
+
             // Refine Search Results for Smartphone view
             var $refineresults = $('.search-page--refine-wrapper p');
             var $refineresultsrow = $('.search-page--refine-wrapper .row');
