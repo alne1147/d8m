@@ -58,7 +58,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 25
+          items_per_page: 15
           offset: 0
           id: 0
           total_pages: null
@@ -631,7 +631,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          content: 'Displaying @start - @end of @total'
+          content: 'Displaying @start - @end of @total results found.'
           plugin_id: result
       empty: {  }
       relationships: {  }
