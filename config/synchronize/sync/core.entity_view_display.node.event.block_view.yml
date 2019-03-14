@@ -1,8 +1,9 @@
-uuid: bacb31ff-2b26-4a7e-a264-7083994de659
+uuid: afafe939-b983-4462-83de-58e349c689a3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.block_view
     - field.field.node.event.body
     - field.field.node.event.field_add_to_cal
     - field.field.node.event.field_add_to_layouts
@@ -32,45 +33,24 @@ dependencies:
   module:
     - addtocalendar
     - datetime_range
-    - entity_reference_revisions
     - simple_gmap
-    - text
     - user
-id: node.event.default
+id: node.event.block_view
 targetEntityType: node
 bundle: event
-mode: default
+mode: block_view
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_add_to_cal:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: add_to_calendar
-    region: content
   field_article_tags:
     type: entity_reference_label
-    weight: 8
+    weight: 3
     region: content
     label: above
     settings:
       link: false
     third_party_settings: {  }
   field_date_time_range:
-    weight: 2
-    label: hidden
+    weight: 0
+    label: above
     settings:
       timezone_override: ''
       format_type: long
@@ -111,7 +91,7 @@ content:
     region: content
   field_event_organizer:
     type: string
-    weight: 9
+    weight: 4
     region: content
     label: above
     settings:
@@ -119,7 +99,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: simple_gmap
-    weight: 6
+    weight: 1
     region: content
     label: above
     settings:
@@ -138,22 +118,13 @@ content:
     third_party_settings: {  }
   field_organizer_email:
     type: basic_string
-    weight: 10
+    weight: 5
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-  field_rows:
-    weight: 5
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   field_venue:
-    weight: 7
+    weight: 2
     label: above
     settings:
       link: true
@@ -161,12 +132,10 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  links:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  body: true
+  content_moderation_control: true
+  field_add_to_cal: true
   field_add_to_layouts: true
   field_archive: true
   field_date: true
@@ -179,7 +148,9 @@ hidden:
   field_page_options: true
   field_promote: true
   field_related_content: true
+  field_rows: true
   field_show_date_and_time: true
   field_show_event_organizer: true
   field_show_event_tags: true
   field_show_organizer_email: true
+  links: true

@@ -5,6 +5,7 @@
  */
 function ci_layouts_page_attachments(array &$attachments) {
     $attachments['#attached']['library'][] = 'ci_admin_tweaks/admin-tweaks';
+    $attachments['#attached']['library'][] = 'ci_layouts/ci_layouts';
 }
 
 function ci_layouts_theme($existing, $type, $theme, $path) {
