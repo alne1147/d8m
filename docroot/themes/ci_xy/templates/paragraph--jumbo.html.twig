@@ -123,7 +123,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   {% set classes = classes|merge(layout_background_classes) %}
 {% endif %} #}
 
-<div class="jumbo_image" style="background-image: url('{{ file_url(content.field_banner['#items'].entity.uri.value) }}');">
+<div class="jumbo_image" style="background-image: url(' {{ content.field_banner|field_value }} ');">
     <div class= "container-fluid color__brand-slate--dark">
       <div class="main-content">
     {# Prints div with classes, and content without Width and Background. #}

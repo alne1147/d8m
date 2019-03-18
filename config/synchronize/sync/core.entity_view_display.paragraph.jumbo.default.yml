@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
+    - image.style.flexslider_full
     - paragraphs.paragraphs_type.jumbo
   module:
     - image
@@ -19,10 +20,9 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: flexslider_full
     third_party_settings: {  }
-    type: image
+    type: image_url
     region: content
   field_banner_body:
     weight: 3
