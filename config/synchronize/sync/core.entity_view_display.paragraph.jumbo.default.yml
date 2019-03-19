@@ -3,48 +3,46 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.jumbo.field_banner
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
-    - image.style.flexslider_full
+    - field.field.paragraph.jumbo.field_jumbotron_image
     - paragraphs.paragraphs_type.jumbo
-  module:
-    - image
 id: paragraph.jumbo.default
 targetEntityType: paragraph
 bundle: jumbo
 mode: default
 content:
-  field_banner:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: flexslider_full
-    third_party_settings: {  }
-    type: image_url
-    region: content
   field_banner_body:
-    weight: 3
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_banner_link:
-    weight: 1
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_banner_title:
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_banner_title:
+  field_jumbotron_image:
+    type: entity_reference_entity_view
     weight: 2
     label: hidden
     settings:
-      link_to_entity: false
+      view_mode: jumbo
+      link: false
     third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }

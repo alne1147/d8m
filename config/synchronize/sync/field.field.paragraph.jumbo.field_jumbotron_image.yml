@@ -1,0 +1,28 @@
+uuid: 2a938af0-a481-41d2-9620-417b2ee9029a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jumbotron_image
+    - media.type.image
+    - paragraphs.paragraphs_type.jumbo
+id: paragraph.jumbo.field_jumbotron_image
+field_name: field_jumbotron_image
+entity_type: paragraph
+bundle: jumbo
+label: 'Jumbotron Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

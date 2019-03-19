@@ -109,9 +109,12 @@
       {% endif %}
 
       <div class="jumbo_slide__body {{ content.field_title_color[0] }}">
-        <div class="container">
+        <div class="container" style="padding-bottom: 20px">
           <div{{ content_attributes }}>
-            {{ content|without('field_jumbotron_image', 'field_title_color')}}
+            {{ content.body|field_value }}
+              {% if content.field_jumbotron_link[0] %}
+                  <a href="{{ content.field_jumbotron_link[0] }}" class="slider-link">Read More</a>
+              {% endif %}
           </div>
         </div>  
       </div>

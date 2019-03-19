@@ -122,8 +122,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {% if background_field %}
   {% set classes = classes|merge(layout_background_classes) %}
 {% endif %} #}
-
-<div class="jumbo_image" style="background-image: url(' {{ content.field_banner|field_value }} ');">
+<div class="jumbo_image" style="background-image:url('{% spaceless %}{{ content.field_jumbotron_image|escape|striptags('<!-- -->') }}{% endspaceless %}');">
     <div class= "container-fluid color__brand-slate--dark">
       <div class="main-content">
     {# Prints div with classes, and content without Width and Background. #}
@@ -139,7 +138,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
               {% endif %}
               {% if content.field_banner_body[0] %}
                 <div class="jumbo_paragraph_body">
-                {{ content|without('bp_width', 'field_banner_title', 'field_banner', 'field_banner_link') }}
+                {{ content|without('bp_width','field_jumbotron_image', 'field_banner_title', 'field_banner', 'field_banner_link') }}
                  {% if content.field_banner_link[0] %}
                     <a href="{{ content.field_banner_link[0] }}">Read More</a>
                  {% endif %}
