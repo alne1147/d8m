@@ -87,7 +87,8 @@
 ]
 %}
 <div>
-    <div class="hero__responsive_jumbo">{{ content.field_jumbotron_image }}</div>
+    <div class="jumbo_image" style="background-image:url('{% spaceless %}{{ content.field_jumbotron_image|escape|striptags('<!-- -->') }}{% endspaceless %}');"></div>
+
     <article{{ attributes.addClass(classes) }}>
       {#{{ title_prefix }}
       {% if not page %}
