@@ -9,9 +9,9 @@ _core:
 name: flexslider_full
 label: 'Flexslider Full'
 effects:
-  3ed992ac-b5cb-4b8b-96a9-27b74405ad28:
-    uuid: 3ed992ac-b5cb-4b8b-96a9-27b74405ad28
-    id: focal_point_crop
+  629bdbca-4fac-4d37-94e1-c8f478353eda:
+    uuid: 629bdbca-4fac-4d37-94e1-c8f478353eda
+    id: focal_point_scale_and_crop
     weight: 2
     data:
       width: 1200
