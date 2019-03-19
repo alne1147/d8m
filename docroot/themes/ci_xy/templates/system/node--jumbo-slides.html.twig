@@ -90,13 +90,6 @@
     <div class="jumbo_image" style="background-image:url('{% spaceless %}{{ content.field_jumbotron_image|escape|striptags('<!-- -->') }}{% endspaceless %}');"></div>
 
     <article{{ attributes.addClass(classes) }}>
-      {#{{ title_prefix }}
-      {% if not page %}
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      {% endif %}
-      {{ title_suffix }}#}
-
-      {# {% block header %}#}
       <div class="jumbo_slide__title {{ content.field_title_color[0] }}">
         <div class="container">
           <h2{{ title_attributes }}>
