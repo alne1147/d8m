@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.jumbo_slides.body
     - field.field.node.jumbo_slides.field_add_to_layouts
+    - field.field.node.jumbo_slides.field_body_color
     - field.field.node.jumbo_slides.field_jumbotron_image
     - field.field.node.jumbo_slides.field_jumbotron_link
     - field.field.node.jumbo_slides.field_title_color
@@ -20,9 +21,10 @@ mode: default
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_trimmed
     weight: 1
-    settings: {  }
+    settings:
+      trim_length: 500
     third_party_settings: {  }
     region: content
   field_jumbotron_image:
@@ -35,15 +37,15 @@ content:
     third_party_settings: {  }
     region: content
   field_jumbotron_link:
-    weight: 3
+    type: string
+    weight: 4
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_title_color:
-    weight: 4
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

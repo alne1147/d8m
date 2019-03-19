@@ -3,29 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.jumbo.field_banner
+    - entity_browser.browser.media_image_browser
     - field.field.paragraph.jumbo.field_banner_body
     - field.field.paragraph.jumbo.field_banner_link
     - field.field.paragraph.jumbo.field_banner_title
-    - image.style.large
+    - field.field.paragraph.jumbo.field_jumbotron_image
     - paragraphs.paragraphs_type.jumbo
   module:
-    - focal_point
+    - entity_browser
 id: paragraph.jumbo.default
 targetEntityType: paragraph
 bundle: jumbo
 mode: default
 content:
-  field_banner:
-    weight: 4
-    settings:
-      preview_image_style: large
-      preview_link: true
-      offsets: '50,50'
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_focal_point
-    region: content
   field_banner_body:
     weight: 2
     settings:
@@ -49,6 +39,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_jumbotron_image:
+    type: entity_browser_entity_reference
+    weight: 6
+    settings:
+      entity_browser: media_image_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
     region: content
 hidden:
   created: true
