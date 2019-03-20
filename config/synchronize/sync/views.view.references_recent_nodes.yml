@@ -11,7 +11,7 @@ dependencies:
     - taxonomy
     - user
 id: references_recent_nodes
-label: 'Recent Articles – Selectable'
+label: 'Category Pick'
 module: views
 description: 'View of Recent Nodes'
 tag: ''
@@ -318,7 +318,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Recent Articles'
+      title: 'Recent Articles - Selectable'
       header: {  }
       footer: {  }
       empty: {  }
@@ -440,6 +440,7 @@ display:
       footer: {  }
       defaults:
         footer: false
+      block_description: Selectable
     cache_metadata:
       max-age: -1
       contexts:
