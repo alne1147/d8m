@@ -213,10 +213,16 @@
 {
   margin-top:10px;
 }
+.view-article-blocks .view-footer {
+  padding-left: 0px;
+}
+.views-exposed-form#views-exposed-form-references-recent-nodes-ref-nodes {
+  padding-left: 0px;
+}
 .view-article-blocks .view-footer a,
 .js-form-item-field-article-type-target-id
 {
-float:right;
+float:left;
 }
 #views-exposed-form-references-recent-nodes-ref-nodes label.control-label
 {
@@ -230,6 +236,7 @@ float:right;
 .view-article-blocks .views-row
 {
   margin-bottom:10px;
+
 }
 select#cal_selectbox
 {
@@ -247,4 +254,21 @@ select#cal_selectbox
 }
 .title--alignment-right {
   text-align: right;
+}
+.view-article-blocks, .view-references-recent-nodes {
+  .views-row {
+    .views-field-created {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
+#views-exposed-form-references-recent-nodes-ref-nodes label.control-label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.paragraph--type--bp-view {
+  .paragraph__title {
+    margin-bottom: 10px;
+  }
 }
