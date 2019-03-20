@@ -761,7 +761,8 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/coloradod8m/cdhs-settings.inc';
 }
-
+$config['image.settings']['suppress_itok_output'] = TRUE;
+$config['image.settings']['allow_insecure_derivatives'] = TRUE;
 $config_directories['sync'] = '../config/synchronize/sync'; $config_directories['post-sync'] = '../config/synchronize/post-sync';
 $config_directories['staging'] = '../config/synchronize/staging';
 $config_directories['sole'] = '../config/cdhs.colorado.gov/sole';
