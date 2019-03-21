@@ -91,10 +91,8 @@ module:
   fieldblock: 0
   file: 0
   file_browser: 0
-  file_entity: 0
   file_management: 0
   file_management_view: 0
-  filebrowser: 0
   filter: 0
   filter_perms: 0
   flexslider: 0
@@ -137,7 +135,6 @@ module:
   paragraphs_library: 0
   paragraphs_type_permissions: 0
   path: 0
-  protected_pages: 0
   purge: 0
   purge_drush: 0
   purge_processor_cron: 0
