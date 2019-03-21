@@ -22,6 +22,7 @@ conditions:
       article: article
       contact: contact
       event: event
+      jumbo_slides: jumbo_slides
       page: page
       webform: webform
     negate: false
