@@ -6,9 +6,11 @@ dependencies:
     - field.field.paragraph.card_basic.bp_background
     - field.field.paragraph.card_basic.bp_width
     - field.field.paragraph.card_basic.field_alignment
+    - field.field.paragraph.card_basic.field_border
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
     - field.field.paragraph.card_basic.field_card_title
+    - field.field.paragraph.card_basic.field_title_alignment
     - field.field.paragraph.card_basic.field_title_color
     - image.style.max_1920
     - paragraphs.paragraphs_type.card_basic
@@ -42,6 +44,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_border:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
   field_card_background_image:
     weight: 2
     label: hidden

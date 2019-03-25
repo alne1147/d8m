@@ -122,6 +122,7 @@ set classes = [
 'paragraph__card',
 'paragraph',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
+content.field_border.0["#markup"],
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
@@ -148,8 +149,10 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 {# Prints div with classes, and content without Width and Background. #}
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
-    <div class="paragraph__title {{ content.field_title_color[0] }} {{ content.field_title_alignment[0] }}" >
-    {{ content.field_card_title }}
+    <div class="paragraph__title title_color {{ content.field_title_color[0] }} {{ content.field_title_alignment[0] }}" >
+      <h3>
+        {{ content.field_card_title }}
+      </h3>
     </div>
       {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment', 'field_title_alignment') }}
       {{ content.field_card_background_image }}
@@ -159,7 +162,9 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
     <div class="paragraph__title {{ content.field_title_alignment[0] }}">
-      {{ content.field_card_title }}
+      <h3>
+        {{ content.field_card_title }}
+      </h3>
     </div>
       {{ content.field_card_body|without('bp_width', 'bp_background','field_alignment', 'field_title_alignment') }}
       {{ content.field_card_background_image }}

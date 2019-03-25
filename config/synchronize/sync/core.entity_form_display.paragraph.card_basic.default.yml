@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.card_basic.bp_background
     - field.field.paragraph.card_basic.bp_width
     - field.field.paragraph.card_basic.field_alignment
+    - field.field.paragraph.card_basic.field_border
     - field.field.paragraph.card_basic.field_card_background_image
     - field.field.paragraph.card_basic.field_card_body
     - field.field.paragraph.card_basic.field_card_title
@@ -26,6 +27,7 @@ third_party_settings:
         - group_background_color
         - group_background_image
         - group_alignment
+        - group_border
       parent_name: ''
       weight: 0
       format_type: tabs
@@ -96,6 +98,20 @@ third_party_settings:
         classes: ''
       label: Title
       region: content
+    group_border:
+      children:
+        - field_border
+      parent_name: group_basic_card_edit
+      weight: 31
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Border
+      region: content
 id: paragraph.card_basic.default
 targetEntityType: paragraph
 bundle: card_basic
@@ -112,6 +128,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_border:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_card_background_image:
     weight: 2

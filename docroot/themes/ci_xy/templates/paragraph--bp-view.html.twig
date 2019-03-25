@@ -108,6 +108,7 @@
   'paragraph__card',
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
+  content.field_border.0["#markup"],
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
@@ -129,10 +130,10 @@
 <div{{ attributes.addClass(classes) }}>
   <div class="paragraph__column">
     {{ title_suffix }}
-    <div class="paragraph__title {{content.field_title_color[0] }} {{ content.field_title_alignment[0] }}">
+    <div class="paragraph__title title_color {{content.field_title_color[0] }} {{ content.field_title_alignment[0] }}">
       {{ content.field_card_title }}
     </div>
-    {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment') }}
+    {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment', 'field_border') }}
   </div>
 </div>
 
@@ -142,7 +143,7 @@
       <div class="paragraph__title {{ content.field_title_alignment[0] }}">
           {{ content.field_card_title }}
       </div>
-        {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment') }}
+        {{ content|without('bp_width', 'bp_background', 'field_card_title', 'field_title_color', 'field_title_alignment', 'field_border') }}
     </div>
   </div>
 
