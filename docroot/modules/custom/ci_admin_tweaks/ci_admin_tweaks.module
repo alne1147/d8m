@@ -162,3 +162,14 @@ function ci_admin_tweaks_entity_update(EntityInterface $entity) {
     }
   }
 }
+function ci_admin_tweaks_element_info_alter(array &$types) {
+  if (isset($types['radios'])) {
+    $types['radios']['#process'][] = 'remove_radio_na';
+  }
+}
+function remove_radio_na($element) {
+  if ($element['#field_name']=='field_border') {
+    unset($element['_none']);
+  }
+  return $element;
+}
