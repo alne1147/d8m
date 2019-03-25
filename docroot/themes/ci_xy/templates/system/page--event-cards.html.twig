@@ -74,7 +74,13 @@
       {% else %}
     <div id="xyBackground">
         {% endif %}
-
+       {% block navbar %}
+            <div class="top-nav {{ nav_color }} ">
+                <nav class="container">
+                    {{ render_block('mainnavigation_2') }}
+                </nav>
+            </div>
+        {% endblock %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content" >
     <div class="row">
       {# Breadcrumbs #}
