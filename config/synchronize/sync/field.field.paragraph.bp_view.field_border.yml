@@ -1,0 +1,23 @@
+uuid: 196a74b3-f0de-44fa-8c15-758d26496e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_border
+    - paragraphs.paragraphs_type.bp_view
+  module:
+    - options
+id: paragraph.bp_view.field_border
+field_name: field_border
+entity_type: paragraph
+bundle: bp_view
+label: Border
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: no_border
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_width
+    - field.field.paragraph.bp_view.field_border
     - field.field.paragraph.bp_view.field_card_title
     - field.field.paragraph.bp_view.field_dynamic_views
+    - field.field.paragraph.bp_view.field_title_alignment
     - field.field.paragraph.bp_view.field_title_color
     - paragraphs.paragraphs_type.bp_view
   module:
@@ -28,6 +30,13 @@ content:
     region: content
   bp_width:
     weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_border:
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }

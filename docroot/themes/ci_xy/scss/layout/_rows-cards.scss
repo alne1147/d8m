@@ -272,3 +272,79 @@ select#cal_selectbox
     margin-bottom: 10px;
   }
 }
+.region-content :not(.region-footer) {
+  .paragraph {
+    .paragraph__column {
+      .paragraph__column--container-wrapper {
+        .paragraph--type--card-basic, .paragraph--type--bp-view {
+          .paragraph__column {
+            .paragraph__title {
+              background-color: transparent;
+              .field--name-field-card-title {
+                color: $color-black;
+                font-size: 32px;
+                font-weight: $font-weight-500;
+              }
+            }
+            .field--type-viewsreference {
+              padding-left: 12px;
+            }
+            .field--name-field-card-body {
+              p {
+                padding-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.paragraph--type--card-basic.card_border, .paragraph--type--bp-view.card_border {
+  border-style: solid;
+  border-color: #d8d8d8;
+  padding: 25px;
+  .paragraph__title {
+    h3 {
+      margin-top: 0px;
+    }
+  }
+  .paragraph__title.title_color {
+
+  }
+  p:last-child {
+    margin: 0;
+  }
+}
+.paragraph--type--card-basic.card_shadow, .paragraph--type--bp-view.card_shadow {
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,.15);
+  padding: 25px;
+  .paragraph__title {
+    h3 {
+      margin-top: 0px;
+    }
+  }
+  .paragraph__title.title_color {
+
+  }
+  p:last-child {
+    margin: 0;
+  }
+}
+.region-content :not(.region-footer) {
+  .paragraph {
+    .paragraph__column {
+      .paragraph__column--container-wrapper {
+        .paragraph--type--card-basic, .paragraph--type--bp-view {
+          .paragraph__column {
+            .paragraph__title.title_color {
+              .field--name-field-card-title {
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,12 +5,13 @@ dependencies:
   config:
     - field.field.paragraph.bp_view.bp_background
     - field.field.paragraph.bp_view.bp_width
+    - field.field.paragraph.bp_view.field_border
     - field.field.paragraph.bp_view.field_card_title
     - field.field.paragraph.bp_view.field_dynamic_views
+    - field.field.paragraph.bp_view.field_title_alignment
     - field.field.paragraph.bp_view.field_title_color
     - paragraphs.paragraphs_type.bp_view
   module:
-    - content_moderation
     - field_group
     - viewsreference
 third_party_settings:
@@ -20,6 +21,7 @@ third_party_settings:
         - group_view
         - group_title
         - group_color
+        - group_border
       parent_name: ''
       weight: 0
       format_type: tabs
@@ -72,6 +74,20 @@ third_party_settings:
         required_fields: true
       label: Color
       region: content
+    group_border:
+      children:
+        - field_border
+      parent_name: group_card_view_edit
+      weight: 9
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Border
+      region: content
 _core:
   default_config_hash: W2kdovIcfQyP_l5f4G2NKrJZaACTJhEaBu1gD0RAGMs
 id: paragraph.bp_view.default
@@ -84,6 +100,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_border:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_card_title:
     weight: 12
