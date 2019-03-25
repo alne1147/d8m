@@ -1,0 +1,23 @@
+uuid: 50aea488-bb5c-49f3-bd02-41db614b5339
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_border
+    - paragraphs.paragraphs_type.card_basic
+  module:
+    - options
+id: paragraph.card_basic.field_border
+field_name: field_border
+entity_type: paragraph
+bundle: card_basic
+label: Border
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: no_border
+default_value_callback: ''
+settings: {  }
+field_type: list_string
