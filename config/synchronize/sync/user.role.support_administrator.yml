@@ -77,7 +77,6 @@ permissions:
   - 'administer responsive images'
   - 'administer sharethis_block'
   - 'administer shortcuts'
-  - 'administer taxonomy'
   - 'administer url aliases'
   - 'administer users'
   - 'administer webform'
