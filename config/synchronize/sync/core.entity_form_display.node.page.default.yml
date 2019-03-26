@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.page.field_file
     - field.field.node.page.field_hide_breadcrumbs
     - field.field.node.page.field_hide_navigation_bar
+    - field.field.node.page.field_image_upload
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -19,12 +20,15 @@ dependencies:
     - field.field.node.page.field_promote
     - field.field.node.page.field_related_content
     - field.field.node.page.field_rows
+    - image.style.thumbnail
     - node.type.page
   module:
     - allowed_formats
     - content_moderation
     - field_group
     - file
+    - image
+    - insert
     - media_library
     - metatag
     - paragraphs
@@ -225,7 +229,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_add_to_layouts:
-    weight: 31
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
@@ -254,7 +258,7 @@ content:
     type: media_library_widget
     region: content
   field_file:
-    weight: 32
+    weight: 12
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -273,6 +277,51 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_image_upload:
+    weight: 11
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      insert:
+        styles:
+          image: image
+          insert__auto: 0
+          link: 0
+          icon_link: 0
+          audio: 0
+          video: 0
+          basic_card_crop_is: 0
+          carousel_images: 0
+          contact_photo: 0
+          contact_thumbnail: 0
+          crop_thumbnail: 0
+          event_card: 0
+          extra_large_thumbnail_650x650_: 0
+          file_entity_browser_small: 0
+          file_entity_browser_thumbnail: 0
+          flexslider_full: 0
+          flexslider_thumbnail: 0
+          large: 0
+          large_thumbnail_450x450_: 0
+          linkit_result_thumbnail: 0
+          logo: 0
+          max_1920: 0
+          medium: 0
+          medium_thumbnail_250x250_: 0
+          small_thumbnail_100x100_: 0
+          thumbnail: 0
+          thumbnail_logo: 0
+          video_embed_wysiwyg_preview: 0
+        default: insert__auto
+        auto_image_style: image
+        link_image: ''
+        width: '800'
+        align: '1'
+        caption: 0
+        rotate: 0
+    type: image_image
     region: content
   field_landing_page_options:
     weight: 12

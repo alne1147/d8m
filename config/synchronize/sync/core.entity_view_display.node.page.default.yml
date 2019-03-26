@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.page.field_file
     - field.field.node.page.field_hide_breadcrumbs
     - field.field.node.page.field_hide_navigation_bar
+    - field.field.node.page.field_image_upload
     - field.field.node.page.field_landing_page_options
     - field.field.node.page.field_menu_reference_left
     - field.field.node.page.field_menu_reference_right
@@ -71,6 +72,7 @@ hidden:
   field_display_image: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
+  field_image_upload: true
   field_landing_page_options: true
   field_menu_reference_left: true
   field_menu_reference_right: true

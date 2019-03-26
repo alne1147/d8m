@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
     - field.field.node.landing_page.field_hide_navigation_bar
+    - field.field.node.landing_page.field_image_upload
     - field.field.node.landing_page.field_jumbo
     - field.field.node.landing_page.field_jumbotron
     - field.field.node.landing_page.field_jumbotron_options
@@ -87,6 +88,7 @@ hidden:
   field_footer_selection: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
+  field_image_upload: true
   field_jumbotron: true
   field_jumbotron_options: true
   field_landing_page_options: true
