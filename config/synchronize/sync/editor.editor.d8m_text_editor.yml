@@ -48,6 +48,7 @@ settings:
           name: Media
           items:
             - video_embed
+            - DrupalImage
             - document_media_browser
             - file_browser
         -

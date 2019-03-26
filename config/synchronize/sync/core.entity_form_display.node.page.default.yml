@@ -287,6 +287,10 @@ content:
       insert:
         styles:
           image: image
+          extra_large_thumbnail_650x650_: extra_large_thumbnail_650x650_
+          large_thumbnail_450x450_: large_thumbnail_450x450_
+          medium_thumbnail_250x250_: medium_thumbnail_250x250_
+          small_thumbnail_100x100_: small_thumbnail_100x100_
           insert__auto: 0
           link: 0
           icon_link: 0
@@ -298,26 +302,22 @@ content:
           contact_thumbnail: 0
           crop_thumbnail: 0
           event_card: 0
-          extra_large_thumbnail_650x650_: 0
           file_entity_browser_small: 0
           file_entity_browser_thumbnail: 0
           flexslider_full: 0
           flexslider_thumbnail: 0
           large: 0
-          large_thumbnail_450x450_: 0
           linkit_result_thumbnail: 0
           logo: 0
           max_1920: 0
           medium: 0
-          medium_thumbnail_250x250_: 0
-          small_thumbnail_100x100_: 0
           thumbnail: 0
           thumbnail_logo: 0
           video_embed_wysiwyg_preview: 0
         default: insert__auto
         auto_image_style: image
         link_image: ''
-        width: '800'
+        width: ''
         align: '1'
         caption: 0
         rotate: 0

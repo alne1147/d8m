@@ -1,0 +1,38 @@
+uuid: ad8f844b-228a-4ea7-b9d2-6d243a697c8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_upload
+    - node.type.landing_page
+  module:
+    - image
+id: node.landing_page.field_image_upload
+field_name: field_image_upload
+entity_type: node
+bundle: landing_page
+label: 'Image Upload'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '4 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
