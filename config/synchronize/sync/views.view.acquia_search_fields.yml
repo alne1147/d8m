@@ -730,19 +730,19 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: phrase
           min_length: null
           fields:
             - alt
             - body
             - field_article_tags
+            - field_article_type
             - field_description
             - field_media_file_1
             - field_media_file_1_1
             - field_rows
             - field_summary
             - name
-            - rendered_item
             - saa_field_media_file_1
             - title
             - type
@@ -1021,9 +1021,9 @@ display:
             label: ''
           plugin_id: search_api
       fields:
-        field_summary:
-          id: field_summary
-          table: search_api_datasource_acquia_search_index_entity_node
+        field_summary_1:
+          id: field_summary_1
+          table: search_api_index_acquia_search_index
           field: field_summary
           relationship: none
           group_type: group
@@ -1089,7 +1089,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: node
           plugin_id: search_api_field
         field_promote:
           id: field_promote
@@ -1340,10 +1339,10 @@ display:
                 display_method: label
                 view_mode: default
           plugin_id: search_api_field
-        processed:
-          id: processed
+        body:
+          id: body
           table: search_api_index_acquia_search_index
-          field: processed
+          field: body
           relationship: none
           group_type: group
           admin_label: ''
@@ -1369,7 +1368,7 @@ display:
             max_length: 500
             word_boundary: true
             ellipsis: true
-            more_link: false
+            more_link: true
             more_link_text: ''
             more_link_path: ''
             strip_tags: true
@@ -1384,15 +1383,32 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: '{{ field_summary }}'
+          empty: '{{ field_summary_1 }} '
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
-          link_to_item: false
-          use_highlighting: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 500
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
           multi_type: separator
-          multi_separator: ', '
-          plugin_id: search_api
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
         title:
           id: title
           table: search_api_datasource_acquia_search_index_entity_node
@@ -1475,7 +1491,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"search-page__result search-result--content\">\r\n<h3>{{ title_1 }} </h3>\r\n<p>{{ field_display_image }} {{ processed }}</p>\r\n{{ title }} \r\n</div>\r\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
+            text: "<div class=\"search-page__result search-result--content\">\r\n<h3>{{ title_1 }} </h3>\r\n<p>{{ field_display_image }} {{ body }}</p>\r\n{{ title }} \r\n</div>\r\n<div class=\"search-page__result search-result--tags\">{{ field_article_tags }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1623,6 +1639,7 @@ display:
         - url.query_args
         - user
       tags:
+        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_article_tags'
         - 'config:field.storage.node.field_display_image'
         - 'config:field.storage.node.field_promote'

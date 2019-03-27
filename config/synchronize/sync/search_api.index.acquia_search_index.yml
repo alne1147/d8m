@@ -34,6 +34,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.media.field_media_image
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -235,6 +243,7 @@ processor_settings:
     all_fields: true
     fields:
       - alt
+      - body
       - field_article_tags
       - field_article_type
       - field_description
