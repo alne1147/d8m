@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.article.field_promote
     - field.field.node.article.field_related_content
     - field.field.node.article.field_rows
+    - field.field.node.article.field_summary
     - node.type.article
   module:
     - entity_reference_revisions
@@ -85,3 +86,4 @@ hidden:
   field_page_options: true
   field_promote: true
   field_related_content: true
+  field_summary: true

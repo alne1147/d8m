@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.page.field_promote
     - field.field.node.page.field_related_content
     - field.field.node.page.field_rows
+    - field.field.node.page.field_summary
     - node.type.page
   module:
     - entity_reference_revisions
@@ -80,3 +81,4 @@ hidden:
   field_meta_tags: true
   field_promote: true
   field_related_content: true
+  field_summary: true
