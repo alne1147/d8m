@@ -153,7 +153,6 @@ module:
   scheduled_updates: 0
   scheduler: 0
   search_api: 0
-  search_api_attachments: 0
   search_api_solr: 0
   serialization: 0
   sharethis_block: 0

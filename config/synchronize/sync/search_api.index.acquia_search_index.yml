@@ -2,25 +2,24 @@ uuid: 09bca086-0622-4de1-96dd-e899d5a5d15b
 langcode: en
 status: true
 dependencies:
-  module:
-    - file
-    - media
-    - node
-    - search_api
-    - search_api_attachments
-    - content_moderation
-    - paragraphs
   config:
+    - field.storage.media.field_media_image
+    - field.storage.node.body
+    - field.storage.node.field_article_tags
+    - field.storage.node.field_article_type
     - field.storage.media.field_description
     - field.storage.media.field_media_file_1
-    - field.storage.media.field_media_image
-    - field.storage.node.field_article_type
-    - field.storage.node.body
     - field.storage.node.field_promote
-    - field.storage.node.field_article_tags
     - field.storage.node.field_rows
     - field.storage.node.field_summary
     - search_api.server.acquia_search_server
+  module:
+    - node
+    - file
+    - media
+    - search_api
+    - content_moderation
+    - paragraphs
 id: acquia_search_index
 name: 'Acquia Search Solr Index'
 description: ''
@@ -146,10 +145,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  saa_field_media_file_1:
-    label: 'Search api attachments: File'
-    property_path: saa_field_media_file_1
-    type: text
   status:
     label: Published
     datasource_id: 'entity:node'
@@ -222,13 +217,6 @@ processor_settings:
     plugin_id: add_url
     settings: {  }
   aggregated_field: {  }
-  file_attachments:
-    excluded_extensions: 'aif art avi bmp gif ico mov oga ogv png psd ra ram rgb flv'
-    number_indexed: 0
-    number_first_bytes: '0'
-    max_filesize: '0'
-    excluded_private: 1
-    excluded_mimes: 'audio/x-aiff image/x-jg video/x-msvideo image/x-ms-bmp image/gif image/vnd.microsoft.icon video/quicktime audio/ogg video/ogg image/png image/x-photoshop audio/x-realaudio audio/x-pn-realaudio image/x-rgb video/x-flv'
   highlight:
     highlight: always
     highlight_partial: true
@@ -254,7 +242,6 @@ processor_settings:
       - filename
       - name
       - processed
-      - saa_field_media_file_1
       - title
       - type
     title: true
