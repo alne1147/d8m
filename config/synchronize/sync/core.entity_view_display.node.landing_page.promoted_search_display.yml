@@ -55,6 +55,7 @@ hidden:
   field_footer_selection: true
   field_hide_breadcrumbs: true
   field_hide_navigation_bar: true
+  field_image_upload: true
   field_jumbo: true
   field_jumbotron: true
   field_jumbotron_options: true
