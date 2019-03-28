@@ -1,0 +1,25 @@
+uuid: afb63d3d-4ec5-46dc-8016-ec61998e5080
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8J9aFZdUzbHV6w1y727kflHq31ev3U3wy7U-zSWDkeE
+id: member
+label: 'Member profile'
+description: 'Configuration for site members'
+conf:
+  extensions: 'jpg png gif'
+  maxsize: !!float 2
+  quota: !!float 50
+  maxwidth: 1024
+  maxheight: 1024
+  replace: 1
+  folders:
+    -
+      path: 'users/user[user:uid]'
+      permissions:
+        all: true
+    -
+      path: .
+      permissions:
+        all: true
