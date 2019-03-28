@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.medium
+    - image.style.small_thumbnail_100x100_
     - image.style.thumbnail
+    - media.type.document
     - media.type.image
     - media.type.video
     - taxonomy.vocabulary.free_tagging
@@ -620,6 +621,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            document: document
             image: image
             video: video
           group: 1
@@ -864,7 +866,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: small_thumbnail_100x100_
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1061,7 +1063,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/content/media-table
+      path: admin/content/media
       display_description: ''
     cache_metadata:
       max-age: -1

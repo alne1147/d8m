@@ -49,8 +49,6 @@ settings:
           items:
             - video_embed
             - ImceImage
-            - document_media_browser
-            - file_browser
         -
           name: Tools
           items:
