@@ -27,7 +27,6 @@ permissions:
   - 'access toolbar'
   - 'access webform overview'
   - 'access webform submission log'
-  - 'administer imce'
   - 'administer menu'
   - 'change own username'
   - 'clone article content'

@@ -20,6 +20,10 @@ conf:
       permissions:
         all: true
     -
-      path: .
+      path: files
       permissions:
-        all: true
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
+        upload_files: true
+        resize_images: true

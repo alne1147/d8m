@@ -30,7 +30,6 @@ permissions:
   - 'access toolbar'
   - 'access webform overview'
   - 'access webform submission log'
-  - 'administer imce'
   - 'administer media'
   - 'administer menu'
   - 'administer nodes'
