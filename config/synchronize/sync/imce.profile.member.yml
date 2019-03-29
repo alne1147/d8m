@@ -19,3 +19,11 @@ conf:
       path: 'users/user[user:uid]'
       permissions:
         all: true
+    -
+      path: files
+      permissions:
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
+        upload_files: true
+        resize_images: true

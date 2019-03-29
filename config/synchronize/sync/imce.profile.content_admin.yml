@@ -1,0 +1,19 @@
+uuid: bcaae6d8-0ac3-451f-9d6d-6d9c928fb7ab
+langcode: en
+status: true
+dependencies: {  }
+id: content_admin
+label: 'Content Admin'
+description: 'Configuration for Content Administrator'
+conf:
+  extensions: ''
+  maxsize: null
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 1
+  folders:
+    -
+      path: .
+      permissions:
+        all: true

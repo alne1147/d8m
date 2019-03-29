@@ -1,6 +1,10 @@
 abs_urls: false
 admin_theme: false
 roles_profiles:
+  content_administrator:
+    public: content_admin
+  content_publisher:
+    public: member
   content_editor:
     public: member
 _core:
