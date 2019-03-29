@@ -17,3 +17,14 @@ Hide Title color for pop-up card
 .form-item-field-rows-0-subform-bp-column-content-0-subform-bp-modal-body-0-subform-field-title-color {
   display: none;
 }
+
+#edit-group-search-tab.seven-details
+{
+  padding:20px;
+  border:0px;
+}
+
+.seven-details
+{
+  border:0px solid white !important;
+}
