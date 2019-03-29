@@ -31,6 +31,7 @@ dependencies:
     - content_moderation
     - field_group
     - image
+    - imce
     - insert
     - jquery_colorpicker
     - media_library
@@ -192,6 +193,20 @@ third_party_settings:
         required_fields: true
       label: Jumbotron
       region: content
+    group_attachments:
+      children:
+        - field_image_upload
+      parent_name: ''
+      weight: 14
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Attachments
+      region: content
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -336,6 +351,8 @@ content:
       preview_image_style: thumbnail
       progress_indicator: throbber
     third_party_settings:
+      imce:
+        enabled: true
       insert:
         styles:
           insert__auto: insert__auto
