@@ -179,6 +179,7 @@ module:
   tour: 0
   twig_blocks: 0
   twig_field_value: 0
+  update: 0
   user: 0
   userprotect: 0
   video_embed_field: 0
