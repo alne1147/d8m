@@ -812,3 +812,10 @@ d/* ----------------------------------------------------------------------------
 .field--name-field-media-image, .field--type-image {
   margin: 10px;
 }
+.field--name-body {
+  p {
+    img {
+      padding: 10px;
+    }
+  }
+}

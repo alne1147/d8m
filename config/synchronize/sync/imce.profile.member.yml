@@ -19,7 +19,3 @@ conf:
       path: 'users/user[user:uid]'
       permissions:
         all: true
-    -
-      path: .
-      permissions:
-        all: true
