@@ -300,7 +300,7 @@ content:
           link: 0
           audio: 0
           video: 0
-        default: insert__auto
+        default: icon_link
     type: file_generic
     region: content
   field_hide_breadcrumbs:

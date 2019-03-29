@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_display_image
+    - field.field.node.landing_page.field_file
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
@@ -30,6 +31,7 @@ dependencies:
     - conditional_fields
     - content_moderation
     - field_group
+    - file
     - image
     - imce
     - insert
@@ -196,6 +198,7 @@ third_party_settings:
     group_attachments:
       children:
         - field_image_upload
+        - field_file
       parent_name: ''
       weight: 14
       format_type: tab
@@ -296,6 +299,23 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_file:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+      insert:
+        styles:
+          icon_link: icon_link
+          insert__auto: 0
+          link: 0
+          audio: 0
+          video: 0
+        default: icon_link
+    type: file_generic
     region: content
   field_footer_options:
     weight: 10
