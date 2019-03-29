@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.landing_page.field_background_color
     - field.field.node.landing_page.field_background_image
     - field.field.node.landing_page.field_display_image
+    - field.field.node.landing_page.field_file
     - field.field.node.landing_page.field_footer_options
     - field.field.node.landing_page.field_footer_selection
     - field.field.node.landing_page.field_hide_breadcrumbs
@@ -27,6 +28,7 @@ dependencies:
     - node.type.landing_page
   module:
     - entity_reference_revisions
+    - file
     - slick_paragraphs
     - user
 id: node.landing_page.default
@@ -39,6 +41,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_file:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
   field_jumbo:
     type: slick_paragraphs_vanilla
     weight: 3
