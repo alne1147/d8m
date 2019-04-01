@@ -11,6 +11,7 @@ dependencies:
   module:
     - content_moderation
     - focal_point
+    - imce
     - path
 id: media.image.default
 targetEntityType: media
@@ -46,7 +47,9 @@ content:
       preview_link: true
       offsets: '50,50'
       progress_indicator: throbber
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_focal_point
     weight: 3
     region: content

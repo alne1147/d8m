@@ -9,6 +9,8 @@ dependencies:
     - media.type.document
   module:
     - file
+    - imce
+    - insert
 id: media.document.default
 targetEntityType: media
 bundle: document
@@ -34,7 +36,17 @@ content:
   field_media_file_1:
     settings:
       progress_indicator: throbber
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
+      insert:
+        default: insert__auto
+        styles:
+          insert__auto: 0
+          link: 0
+          icon_link: 0
+          audio: 0
+          video: 0
     type: file_generic
     weight: 1
     region: content
