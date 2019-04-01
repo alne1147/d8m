@@ -28,3 +28,9 @@ Hide Title color for pop-up card
 {
   border:0px solid white !important;
 }
+
+.imce-filefield-link
+{
+	margin-bottom:5px;
+	display:block;
+}
