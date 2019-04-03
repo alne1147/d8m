@@ -8,7 +8,7 @@
 // [1]
 .header {
   background-color: #fff;
-  padding:12px 0 6px 0;
+  padding:14px 0 12px 0;
   width: 100%;
   .row {
     @media (min-width: $screen-sm) {
@@ -20,9 +20,9 @@
       display: block;
     &--image {
       @media (max-width: $screen-xs-min) {
-        height: 30px;
+        height: 45px;
       }
-      height:40px;
+      height:60px;
     }
   }
   // [2]
