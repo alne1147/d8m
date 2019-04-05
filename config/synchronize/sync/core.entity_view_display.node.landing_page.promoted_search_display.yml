@@ -51,6 +51,7 @@ hidden:
   field_background_image: true
   field_breadcrumbs: true
   field_display_image: true
+  field_file: true
   field_footer_options: true
   field_footer_selection: true
   field_hide_breadcrumbs: true
