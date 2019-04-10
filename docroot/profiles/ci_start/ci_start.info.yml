@@ -73,8 +73,6 @@ dependencies:
   - entity_reference_revisions
   - exclude_node_title
   - exclude_node_title
-  - features
-  - features_ui
   - field
   - field_group
   - field_slideshow
